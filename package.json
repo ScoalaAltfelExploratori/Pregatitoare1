@@ -1,0 +1,13 @@
+{
+  "name": "robo-explorator-offline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aventură offline de programare pentru clasa pregătitoare",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check app.js && node --check game-engine.js && node --check robo-audio.js"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

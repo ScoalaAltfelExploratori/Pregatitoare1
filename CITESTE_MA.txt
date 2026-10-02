@@ -1,20 +1,23 @@
-ROBO EXPLORATOR - ȘCOALA ALTFEL
+ROBO EXPLORATOR · V1 · CLASA PREGĂTITOARE
 
-1. Dezarhivează întregul pachet.
-2. Deschide index.html în Chrome, Edge sau Firefox.
-3. Pentru prezentare, alege „Povestea”.
-4. Apasă „Ecran complet” sau F11.
+1. Păstrează întregul pachet în același director.
+2. Deschide index.html în Chrome, Edge sau Firefox. Nu trebuie instalat nimic.
+3. Prima misiune: două săgeți spre dreapta, apoi „Pornește Robo”.
+4. La reușită, continuă cu „Următoarea misiune”. Sunt patru misiuni, de la 3×3 la 5×5. În finală, ia cheia înainte să deschizi cufărul.
+5. „Unde crezi că ajunge?” oferă trei săgeți. Alege o căsuță și verifică răspunsul.
+6. Activează opțional sunetul din bara de sus. Totul funcționează offline.
+7. Povestea și Fișa de explorator sunt în bara de navigare.
 
-Funcționează fără internet și fără instalare.
-Folosește butoanele mari de pe ecran sau săgețile tastaturii.
-PDF-urile sunt în folderul materiale.
+„Pornește Robo” continuă din poziția curentă, doar cu săgețile noi.
+Poți ajunge întâi la cheie, apoi adaugi drumul până la cufăr și pornești din nou.
+Pașii bifați sunt deja făcuți; cheia rămâne la Robo. „Șterge cele noi” îi păstrează.
+„La start” reia încercarea de la început, cu programul păstrat și cheia pe hartă.
 
-Activitate: aproximativ 32 de minute, pentru copii de 7 ani.
-Materiale: o fișă, un creion și un pion/capac pentru fiecare pereche.
-La tablă, „Arată un drum” încarcă o soluție a hărții curente.
+Progresul se salvează în browser când stocarea locală este disponibilă.
+Instrumentele adultului, inclusiv harta originală și resetarea aventurii, sunt sub joc.
 
-Soluții pentru fișele PDF (pot exista și alte drumuri valide):
-Misiunea 1: → → ↑ ↑ ↑ → → ↑
-Misiunea 2: ← ↑ ↑ → → → ↑ ↑
+Pentru tablă: „Ecran complet” sau F11. Verifică atingerea, volumul și tipărirea înainte de clasă.
 
-Înainte de clasă, verifică atingerea și tipărirea pe tabla/laptopul folosit.
+Documentație: Readme.md. Taskuri viitoare: BACKLOG.md.
+PDF-urile din materiale/ sunt fișele și storyboardul originale pentru 5×5.
+Soluții PDF: Misiunea 1: → → ↑ ↑ ↑ → → ↑. Misiunea 2: ← ↑ ↑ → → → ↑ ↑.
