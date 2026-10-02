@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Robo Explorator · Școala altfel</title>
+<meta name="description" content="Programăm un robot, reparăm greșeli și inventăm hărți. O aventură de programare pentru copii de 7 ani.">
+<meta name="theme-color" content="#087d81">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23087d81'/%3E%3Cpath d='M8 16h16M17 9l7 7-7 7' stroke='white' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="app-header">
+  <a class="brand" href="#joaca"><span class="brand-icon" aria-hidden="true">🤖</span><span>Robo <b>Explorator</b></span></a>
+  <nav aria-label="Activități"><button class="nav-button selected" data-view="game" aria-pressed="true">Joacă</button><button class="nav-button" data-view="story" aria-pressed="false">Povestea</button><button class="nav-button" data-view="sheet" aria-pressed="false">Fișa de explorator</button></nav>
+  <button id="fullscreen" class="quiet small">Ecran complet</button>
+</header>
+<main>
+ <section id="game-view" aria-label="Jocul robotului">
+  <div class="section-title"><div><p class="eyebrow">MISIUNEA CLASEI</p><h1>Condu-l pe Robo la comoară.</h1></div><span class="pill" id="map-label">Harta de început</span></div>
+  <div class="game-layout">
+   <div class="map-panel"><div class="map-meta"><span>O săgeată = un pătrățel</span><span id="step-count">La start</span></div><div id="board" class="board" role="img" aria-label="Harta robotului"></div><div class="legend"><span>🤖 Robo</span><span>🌲 Obstacol</span><span>💎 Comoară</span></div></div>
+   <div class="program-panel">
+    <h2>1. Alege săgețile</h2>
+    <div class="direction-pad" aria-label="Comenzile robotului"><button data-dir="U" aria-label="Sus"><strong>↑</strong><span>Sus</span></button><button data-dir="L" aria-label="Stânga"><strong>←</strong><span>Stânga</span></button><button data-dir="D" aria-label="Jos"><strong>↓</strong><span>Jos</span></button><button data-dir="R" aria-label="Dreapta"><strong>→</strong><span>Dreapta</span></button></div>
+    <div class="queue-heading"><h2>2. Programul nostru</h2><span id="command-count">0 / 32</span></div>
+    <div id="queue" class="queue" aria-label="Comenzi în ordine"></div>
+    <p class="hint">Atinge o comandă din șir ca să o ștergi.</p>
+    <div class="edit-actions"><button id="undo" class="quiet">Ultima înapoi</button><button id="clear" class="quiet">Șterge tot</button></div>
+    <div class="run-actions"><button id="run" class="primary">Pornește Robo</button><button id="stop" class="quiet" hidden>Oprește</button><button id="restart" class="quiet">La start</button></div>
+    <div id="status" class="status" role="status" aria-live="polite">Alege săgețile. Robo le va urma în ordine.</div>
+   </div>
+  </div>
+  <div class="class-tools"><button id="new-map" class="new-map">✨ Hartă nouă</button><button id="bug-map">Găsește greșeala</button><button id="first-map">Prima hartă</button><button id="solution" class="quiet">Arată un drum</button><button id="print-game" class="quiet">Tipărește harta</button></div>
+  <details class="rules"><summary>Regulile fabricii de hărți</summary><ol><li>Robo și comoara ocupă locuri diferite.</li><li>Copacii nu apar peste Robo sau comoară.</li><li>Păstrăm cel puțin un drum liber.</li></ol><p>Programul alege alte poziții și verifică drumul. Aceleași reguli pot produce multe hărți.</p></details>
+ </section>
+ <section id="story-view" hidden aria-label="Povestea pentru clasă">
+  <div class="story-top"><span id="scene-counter" class="pill"></span><span id="scene-time"></span></div>
+  <article class="story-slide"><div class="story-copy"><p class="eyebrow" id="scene-kicker"></p><h1 id="scene-title"></h1><p id="scene-line" class="story-line"></p><button id="scene-action" class="primary">Încearcă</button></div><div id="scene-visual" class="scene-visual"></div></article>
+  <div class="story-controls"><button id="previous">Înapoi</button><div id="story-dots" aria-label="Alege scena"></div><button id="next" class="primary">Următoarea scenă</button></div>
+  <details class="presenter-notes"><summary>Notițe pentru părinte</summary><p id="scene-notes"></p><p id="scene-question"></p></details>
+ </section>
+ <section id="sheet-view" hidden aria-label="Fișa de explorator">
+  <div class="section-title"><div><p class="eyebrow">LUCRĂM ÎN PERECHI</p><h1>Unul programează. Celălalt testează.</h1></div></div>
+  <p class="sheet-description">Puneți un pion pe Robo. Desenați săgețile, urmați-le în ordine, apoi schimbați rolurile.</p>
+  <div class="sheet-tools"><button id="print-sheet" class="primary">Tipărește fișa</button><button id="refresh-sheet">Altă hartă</button></div>
+  <div id="sheet-preview" class="sheet-preview"></div>
+ </section>
+</main>
+<footer><span>Școala altfel · Aventură de programare</span><span>Gândim · Încercăm · Reparăm</span></footer>
+<div id="print-area" aria-hidden="true"></div>
+<script src="game-engine.js"></script><script src="app.js"></script>
+</body></html>

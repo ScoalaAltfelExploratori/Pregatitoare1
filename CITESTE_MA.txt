@@ -1,0 +1,20 @@
+ROBO EXPLORATOR - ȘCOALA ALTFEL
+
+1. Dezarhivează întregul pachet.
+2. Deschide index.html în Chrome, Edge sau Firefox.
+3. Pentru prezentare, alege „Povestea”.
+4. Apasă „Ecran complet” sau F11.
+
+Funcționează fără internet și fără instalare.
+Folosește butoanele mari de pe ecran sau săgețile tastaturii.
+PDF-urile sunt în folderul materiale.
+
+Activitate: aproximativ 32 de minute, pentru copii de 7 ani.
+Materiale: o fișă, un creion și un pion/capac pentru fiecare pereche.
+La tablă, „Arată un drum” încarcă o soluție a hărții curente.
+
+Soluții pentru fișele PDF (pot exista și alte drumuri valide):
+Misiunea 1: → → ↑ ↑ ↑ → → ↑
+Misiunea 2: ← ↑ ↑ → → → ↑ ↑
+
+Înainte de clasă, verifică atingerea și tipărirea pe tabla/laptopul folosit.
