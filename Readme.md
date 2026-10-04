@@ -97,6 +97,12 @@ Progresul se păstrează când browserul permite stocarea locală. Finalizarea u
 
 Progresul vechi se păstrează: salvările v2/v3 continuă lecțiile, iar salvările cu opt misiuni terminate sunt limitate la cele șapte actuale. Prototipul v1 păstrează primele trei lecții. Etapele noi se salvează separat în `robo-explorator-lessons-v1`, fără resetarea progresului existent. Fără stocare, jocul funcționează în sesiunea curentă. Mutarea pachetului sau schimbarea browserului poate însemna un progres separat. Nu se salvează date despre copii.
 
+## Publicare
+
+Site-ul public este [Robo Explorator](https://scoalaaltfelexploratori.github.io/Pregatitoare1/). GitHub Pages publică automat ramura `main`; un push pe o ramură de lucru nu actualizează site-ul.
+
+La publicarea unor modificări JavaScript sau CSS, actualizează împreună parametrul `v` al fișierelor din `index.html`. Acesta împiedică încărcarea fișierelor vechi din cache alături de pagina nouă. Verifică reușita „pages build and deployment” și prima lecție pe site-ul public înainte de a distribui linkul.
+
 ## Dezvoltare și verificare
 
 Aplicația nu are dependențe la rulare. Pentru teste:
