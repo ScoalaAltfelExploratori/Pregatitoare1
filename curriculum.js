@@ -1,18 +1,29 @@
 (function(root){
  'use strict';
  const E=typeof module!=='undefined'&&module.exports?require('./game-engine.js'):root.RoboEngine;
+ function corridor(commands){
+  let p=[0,4];const free=new Set([p.join(',')]);
+  for(const d of commands){p=[p[0]+E.DIR[d][0],p[1]+E.DIR[d][1]];free.add(p.join(','));}
+  const obstacles=[];for(let y=0;y<5;y++)for(let x=0;x<5;x++)if(!free.has(x+','+y))obstacles.push(x+','+y);
+  return {size:5,start:[0,4],goal:p,obstacles};
+ }
+ const extras=l=>l.challenges||(l.challenge?[l.challenge]:[]);
  const lessons=[
   {group:'Bază',stages:[
-   {id:'one',name:'O singură săgeată',brief:'Alege →. Pornește și observă: o săgeată mută Robo un pătrățel.',observe:'Copilul arată căsuța în care va ajunge Robo după o săgeată.',changes:{goal:[1,2],directions:['R']}},
-   {id:'two',name:'Două săgeți',brief:'Arată drumul cu degetul. Punem două săgeți, apoi pornim.',observe:'Copilul leagă două săgeți de două deplasări.',changes:{directions:['R']}}
+   {id:'one',name:'O singură săgeată',brief:'Alege →. Pornește și observă: o săgeată mută Robo un pătrățel.',observe:'Copilul arată căsuța în care va ajunge Robo după o săgeată.',changes:{goal:[1,2]}},
+   {id:'two',name:'Două săgeți',brief:'Arată drumul cu degetul. Punem două săgeți, apoi pornim.',observe:'Copilul leagă două săgeți de două deplasări.',changes:{}}
   ]},
   {group:'Bază',stages:[
-   {id:'bend',name:'Schimbăm direcția',brief:'Întâi →, apoi ↑. Unde ajunge Robo? Arătăm înainte să pornim.',observe:'Copilul urmărește în ordine două direcții pe ecran; Robo nu se rotește.',changes:{goal:[1,1],directions:['R','U']}},
-   {id:'three',name:'Trei săgeți',brief:'Arătăm drumul până la floare. Alegem trei săgeți, apoi verificăm.',observe:'Copilul poate arăta unde se oprește Robo după primele două săgeți.',changes:{directions:['R','U']}}
+   {id:'bend',name:'Schimbăm direcția',brief:'Întâi →, apoi ↑. Unde ajunge Robo? Arătăm înainte să pornim.',observe:'Copilul urmărește în ordine două direcții pe ecran; Robo nu se rotește.',changes:{goal:[1,1]}},
+   {id:'three',name:'Trei săgeți',brief:'Arătăm drumul până la căsuță. Alegem trei săgeți, apoi verificăm.',observe:'Copilul poate arăta unde se oprește Robo după primele două săgeți.',changes:{}}
   ]},
   {group:'Bază',stages:[
-   {id:'one-tree',name:'Un singur copac',brief:'Copacul blochează drumul. Îl ocolim cu săgețile pe care le știm.',observe:'Copilul explică de ce nu putem merge prin copac și arată un ocol.',changes:{size:3,start:[0,2],goal:[2,1],obstacles:['1,2'],directions:['R','U']}}
-  ],challenge:{id:'challenge',name:'Provocare: doi copaci',observe:'Încercăm harta mai mare numai după ce copilul poate explica ocolul.'}},
+   {id:'one-tree',name:'Un singur copac',suggested:'four-directions',brief:'Copacul blochează drumul. Îl ocolim cu săgețile pe care le știm.',observe:'Copilul explică de ce nu putem merge prin copac și arată un ocol.',changes:{size:3,start:[0,2],goal:[2,1],obstacles:['1,2']}}
+  ],challenges:[
+   {id:'challenge',name:'Provocare: doi copaci',observe:'Încercăm harta mai mare numai după ce copilul poate explica ocolul.'},
+   {id:'four-directions',name:'5×5: toate cele patru săgeți',suggested:'spiral',brief:'Ocolim pădurea până la căsuță. Avem nevoie de →, ↑, ← și ↓. Construim drumul în bucăți.',observe:'Copilul urmărește toate cele patru direcții; poate opri și continua din aceeași căsuță.',changes:{...corridor(['R','U','U','L','U','U','R','R','R','R','D','D']),goalIcon:'🏡',goalName:'căsuță'}},
+   {id:'spiral',name:'5×5: comoara din mijloc',brief:'Comoara este în mijloc. Urmărim poteca în jurul copacilor și folosim toate săgețile.',observe:'Copilul planifică pe rând fiecare porțiune, inclusiv întoarcerea spre stânga și coborârea.',changes:{...corridor(['R','R','R','R','U','U','U','U','L','L','L','L','D','D','R','R']),goalIcon:'💎',goalName:'comoară'}}
+  ]},
   {group:'Continuare',stages:[
    {id:'nearby',name:'Cheia este aproape',brief:'Mergem → ↑ până la cheie. Ne oprim să observăm, apoi continuăm → ↓ la cufăr.',observe:'Copilul spune ce luăm întâi și observă că a doua pornire păstrează cheia.',changes:{size:3,start:[0,2],keyPosition:[1,1],goal:[2,2],obstacles:[],pauseAfterKey:true}}
   ],challenge:{id:'challenge',name:'Provocare: comoara îndepărtată',observe:'Construim traseul lung în bucăți; nu cerem memorarea celor 12 pași.'}},
@@ -27,19 +38,19 @@
    {id:'combine',name:'Repetăm și verificăm',extension:true,scattered:true,brief:'Acum combinăm: repetăm de 3 ori → și 🌱?. Vedem DA, NU, DA; apoi → ↑ prin poartă.',observe:'Copilul anticipează ce face aceeași regulă pe floare și pe locul gol.',changes:{gardenStyle:null,repeatCount:3}}
   ],challenge:{id:'challenge',name:'Provocare: trei flori la rând',observe:'Putem relua modelul cunoscut cu trei repetări.'}},
   {group:'Extensie',stages:[
-   {id:'one-row',name:'Un nume pentru pași cunoscuți',brief:'Rețeta „Udă un rând” înseamnă → 💧 → 💧. O folosim o dată, apoi ↑ spre carte.',observe:'Copilul arată cele patru comenzi ascunse în numele rețetei.',changes:{size:3,start:[0,2],goal:[2,1],obstacles:[],flowers:['1,2','2,2'],gate:null,rowStarts:[{position:[0,2],name:'A'}]}},
-   {id:'two-rows',name:'Aceeași rețetă în două locuri',brief:'Folosim rețeta la A. Mergem ← ← ↑ ↑ ↑ până la B și o folosim din nou. La final → →.',observe:'Copilul recunoaște aceeași secvență refolosită din altă poziție; adultul ajută la traseul lung.'}
-  ]}
+   {id:'one-row',name:'Un nume pentru pași cunoscuți',brief:'Rețeta „Udă un rând” înseamnă → 💧 → 💧. O folosim o dată, apoi ↑ la căsuță.',observe:'Copilul arată cele patru comenzi ascunse în numele rețetei.',changes:{size:3,start:[0,2],goal:[2,1],obstacles:[],flowers:['1,2','2,2'],gate:null,rowStarts:[{position:[0,2],name:'A'}]}},
+   {id:'two-rows',name:'5×5: trei rânduri, aceeași rețetă',brief:'Udăm rândul A. Mergem ← ← ↑ ↑ la B și refolosim rețeta. Repetăm drumul la C și udăm și acolo. La final → → la căsuță.',observe:'Copilul folosește aceeași rețetă de trei ori, recunoaște rândurile A, B, C și separă udarea de drumul dintre ele.',changes:{size:5,start:[0,4],goal:[4,0],obstacles:['1,3','2,3','3,3','4,3','1,1','2,1','3,1','4,1'],flowers:['1,4','2,4','1,2','2,2','1,0','2,0'],gate:[3,0],rowStarts:[{position:[0,4],name:'A'},{position:[0,2],name:'B'},{position:[0,0],name:'C'}]}}
+  ],challenge:{id:'classic-two-rows',name:'Provocare: două rânduri îndepărtate',observe:'Putem relua traseul anterior cu două folosiri ale rețetei și patru flori.'}}
  ];
- function choices(index){const l=lessons[index];if(!l)throw Error('Lecție necunoscută.');return [...l.stages,...(l.challenge?[l.challenge]:[])].map(s=>({id:s.id,name:s.name,extension:!!s.extension}));}
+ function choices(index){const l=lessons[index];if(!l)throw Error('Lecție necunoscută.');return [...l.stages,...extras(l)].map(s=>({id:s.id,name:s.name,extension:!!s.extension,challenge:!l.stages.includes(s)}));}
  function get(index,stageId){
   const lesson=lessons[index];if(!lesson)throw Error('Lecție necunoscută.');
-  const stages=[...lesson.stages,...(lesson.challenge?[lesson.challenge]:[])];
+  const stages=[...lesson.stages,...extras(lesson)];
   const stage=stages.find(s=>s.id===stageId)||lesson.stages[0],at=lesson.stages.indexOf(stage);
   const map=E.mission(index,{scattered:!!stage.scattered});
   Object.assign(map,JSON.parse(JSON.stringify(stage.changes||{})));
   if(stage.brief)map.brief=stage.brief;
-  map.lesson={index,stage:stage.id,name:stage.name,group:stage.extension?'Extensie':lesson.group,number:at+1,count:lesson.stages.length,next:at>=0&&at<lesson.stages.length-1?lesson.stages[at+1].id:null,observe:stage.observe,challenge:at<0};
+  map.lesson={index,stage:stage.id,name:stage.name,group:stage.extension?'Extensie':lesson.group,number:at+1,count:lesson.stages.length,next:at>=0&&at<lesson.stages.length-1?lesson.stages[at+1].id:null,observe:stage.observe,challenge:at<0,suggested:stage.suggested||null};
   map.label=map.lesson.group+' · '+(at<0?'Provocare':(at+1)+' / '+lesson.stages.length)+' · '+map.size+'×'+map.size;
   return map;
  }

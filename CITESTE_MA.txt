@@ -4,12 +4,14 @@ Păstrează întregul pachet împreună și deschide index.html în browser.
 Nu sunt necesare internet, conturi sau instalare.
 
 PRIMA ÎNTÂLNIRE
-1. Prima baterie: o săgeată →; apoi două săgeți → →.
-2. Floarea de pe deal: → ↑; apoi trei săgeți.
+1. Prima comoară: o săgeată →; apoi două săgeți → →.
+2. Drumul spre căsuță: → ↑; apoi trei săgeți.
 3. Intercalează anticiparea cu două săgeți și primul caz Detectivul Robo.
 4. Ocolim copacul: un obstacol pe hartă 3×3, cu ↑ → →.
 Aici se poate încheia întâlnirea. Celelalte activități sunt opționale.
-Apar pe rând numai instrumentele necesare etapei.
+Toate cele patru săgeți sunt vizibile de la început. Acțiunile apar pe rând.
+După ocolul 3×3 sunt două poteci opționale 5×5 care cer toate direcțiile.
+Fiecare hartă se termină la o comoară sau la o căsuță.
 
 CONTINUĂRI, ÎN RITMUL CLASEI
 Cheia: → ↑ până la cheie, pauză de observație, apoi → ↓ la cufăr.
@@ -19,6 +21,10 @@ După recunoașterea perechii introducem „Repetă de 2 ori”.
 Decizia se exersează separat: 🌱?, →, 🌱?, →. Observăm NU și DA.
 Întrebarea așteaptă până când adultul apasă „Verificăm răspunsul”.
 Combinarea repetiției cu decizia și rețeta sunt extensii ulterioare.
+Rețeta „Udă un rând”: o folosire pe 3×3, apoi imediat o grădină 5×5.
+Udăm șase flori în trei rânduri, A, B, C, cu aceeași rețetă de trei ori.
+Între rânduri mergem ← ← ↑ ↑; la final → → prin poartă la căsuță.
+Râul umple celulele, iar podul coborât unește cele două maluri.
 
 „Pornește Robo” continuă din poziția curentă cu comenzile rămase.
 Cheia, podul, florile și pașii făcuți se păstrează între porniri.
@@ -28,6 +34,10 @@ Pașii bifați nu se șterg; „Șterge cele noi” păstrează ce am făcut.
 „Oprește” permite continuarea fără repetarea acțiunilor.
 
 INSTRUMENTELE ADULTULUI
+Deschide „Pentru adult”, sus în dreapta. Aici sunt lecțiile, modurile de joc,
+povestea, fișele, sunetul și explicațiile detaliate.
+Meniul oprește rularea fără să piardă pașii. Închide-l cu Escape sau
+„Înapoi la copii”, apoi continuă cu „Pornește Robo”.
 Alege orice lecție și etapă; „Observăm” arată reperul de urmărit.
 Hărțile vechi, mai lungi, rămân în selector ca provocări.
 Schimbarea etapei reia încercarea.
@@ -42,11 +52,13 @@ Detectivul are cazuri cu 2, 3 și 4 săgeți: schimbăm una dintre două variant
 „Programăm” readuce aventura de unde a rămas.
 
 Povestea urmează parcursul de bază; fișa pentru perechi are două comenzi.
-Sunetul este opțional și pornește din bara de sus.
+Sunetul este opțional și pornește din „Pentru adult”.
 Progresul lecțiilor și etapelor se salvează când browserul permite.
 Salvările vechi se păstrează. Programul încercării nu se salvează la închidere.
 
-Pe laptop: harta în stânga, comenzile în dreapta; meniul „Lecții” este sus.
+Pe laptop: harta în stânga, comenzile mari în dreapta.
+În timpul rulării vedem toate direcțiile, dezactivate, și săgeata activă
+din program. „Oprește” permite din nou adăugarea comenzilor. „↶ Șterge ultima” șterge ultima comandă nouă.
 Pe telefon: panourile se așază unul sub altul.
 Pentru tablă: „Ecran complet” sau F11.
 Verifică atingerea, lizibilitatea, volumul și tipărirea înainte de clasă.

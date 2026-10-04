@@ -5,15 +5,15 @@
  const NAME={U:'sus',D:'jos',L:'stânga',R:'dreapta',A:'activează maneta',W:'udă floarea',F:'dacă este o floare aici, udă'};
  const key=p=>p.join(',');
  const same=(a,b)=>a[0]===b[0]&&a[1]===b[1];
- function firstMap(){return {size:5,start:[0,4],goal:[4,0],obstacles:['1,0','1,1','1,2','3,2','3,3','4,3'],label:'Harta de început'};}
+ function firstMap(){return {size:5,start:[0,4],goal:[4,0],obstacles:['1,0','1,1','1,2','3,2','3,3','4,3'],label:'Harta de început',goalIcon:'💎',goalName:'comoară'};}
  const MISSIONS=[
-  {id:'battery',title:'Prima baterie',brief:'Două săgeți spre dreapta. Robo își găsește energia!',size:3,start:[0,2],goal:[2,2],obstacles:[],goalIcon:'🔋',goalName:'baterie'},
-  {id:'flower',title:'Floarea de pe deal',brief:'Schimbăm direcția! Ajută-l pe Robo să găsească floarea.',size:3,start:[0,2],goal:[1,0],obstacles:[],goalIcon:'🌼',goalName:'floare'},
-  {id:'bridge',title:'Ocolim copacul',brief:'Doi copaci sunt în drum. Pe unde îi putem ocoli?',size:4,start:[0,3],goal:[2,1],obstacles:['1,3','0,1'],goalIcon:'⭐',goalName:'stea'},
+  {id:'battery',title:'Prima comoară',brief:'Două săgeți spre dreapta. Robo ajunge la comoară!',size:3,start:[0,2],goal:[2,2],obstacles:[],goalIcon:'💎',goalName:'comoară'},
+  {id:'flower',title:'Drumul spre căsuță',brief:'Schimbăm direcția! Ajută-l pe Robo să ajungă la căsuță.',size:3,start:[0,2],goal:[1,0],obstacles:[],goalIcon:'🏡',goalName:'căsuță'},
+  {id:'bridge',title:'Ocolim copacul',brief:'Doi copaci sunt în drum. Pe unde îi putem ocoli?',size:4,start:[0,3],goal:[2,1],obstacles:['1,3','0,1'],goalIcon:'💎',goalName:'comoară'},
   {id:'key-treasure',title:'Cheia și comoara',brief:'Mai întâi luăm cheia. Apoi mergem la cufăr și deschidem comoara!',size:5,start:[0,4],keyPosition:[4,0],goal:[4,4],obstacles:['1,3','1,2','3,1','3,3'],goalIcon:'💎',goalName:'cufăr'},
-  {id:'lever-bridge',title:'Podul și maneta',brief:'Mergi la manetă și adaugă „Activează”. Podul coboară! Traversează râul până la steag.',size:5,start:[0,4],goal:[4,2],obstacles:['3,2','4,4'],lever:[0,2],bridge:[2,3],water:['2,0','2,1','2,2','2,3','2,4'],goalIcon:'🏁',goalName:'steag',actions:['A']},
+  {id:'lever-bridge',title:'Podul și maneta',brief:'Mergi la manetă și adaugă „Activează”. Podul coboară! Traversează râul până la căsuță.',size:5,start:[0,4],goal:[4,2],obstacles:['3,2','4,4'],lever:[0,2],bridge:[2,3],water:['2,0','2,1','2,2','2,3','2,4'],goalIcon:'🏡',goalName:'căsuță',actions:['A']},
   {id:'flower-garden',title:'Grădina lui Robo',brief:'Udă cele trei flori ca să deschizi poarta. Încearcă să repeți „→, Udă” de 3 ori!',size:5,start:[0,3],goal:[4,2],obstacles:['0,2','1,2','2,2','3,2','4,4'],flowers:['1,3','2,3','3,3'],gate:[4,3],goalIcon:'🏡',goalName:'căsuța grădinarului',actions:['W'],allowRepeat:true,gardenStyle:'rows'},
-  {id:'robo-recipe',title:'Rețeta lui Robo',brief:'O rețetă, două locuri! Folosește „Udă un rând” de la A, mergi la B și folosește aceeași rețetă din nou.',size:5,start:[0,4],goal:[4,1],obstacles:['1,2','2,2','3,2','4,2'],flowers:['1,4','2,4','1,1','2,1'],gate:[3,1],rowStarts:[{position:[0,4],name:'A'},{position:[0,1],name:'B'}],goalIcon:'📖',goalName:'cartea rețetelor',actions:['W'],recipes:{'water-row':{name:'Udă un rând',commands:['R','W','R','W']}}}
+  {id:'robo-recipe',title:'Rețeta lui Robo',brief:'O rețetă, două locuri! Folosește „Udă un rând” de la A, mergi la B și folosește aceeași rețetă din nou.',size:5,start:[0,4],goal:[4,1],obstacles:['1,2','2,2','3,2','4,2'],flowers:['1,4','2,4','1,1','2,1'],gate:[3,1],rowStarts:[{position:[0,4],name:'A'},{position:[0,1],name:'B'}],goalIcon:'🏡',goalName:'căsuța grădinarului',actions:['W'],recipes:{'water-row':{name:'Udă un rând',commands:['R','W','R','W']}}}
  ];
  function mission(index,{scattered=false}={}){
   const source=MISSIONS[index];
@@ -23,9 +23,9 @@
   return map;
  }
  const DETECTIVE_CASES=[
-  {goal:[2,2],obstacles:[],goalIcon:'🔋',goalName:'baterie',commands:['R','U'],repairIndex:1,choices:['U','R']},
-  {goal:[2,1],obstacles:['0,0'],goalIcon:'🌼',goalName:'floare',commands:['U','U','R'],repairIndex:1,choices:['R','U']},
-  {goal:[2,0],obstacles:['1,1'],goalIcon:'⭐',goalName:'stea',commands:['R','R','D','U'],repairIndex:2,choices:['U','R']}
+  {goal:[2,2],obstacles:[],goalIcon:'💎',goalName:'comoară',commands:['R','U'],repairIndex:1,choices:['U','R']},
+  {goal:[2,1],obstacles:['0,0'],goalIcon:'🏡',goalName:'căsuță',commands:['U','U','R'],repairIndex:1,choices:['R','U']},
+  {goal:[2,0],obstacles:['1,1'],goalIcon:'💎',goalName:'comoară',commands:['R','R','D','U'],repairIndex:2,choices:['U','R']}
  ];
  function detectiveCase(index){
   const source=DETECTIVE_CASES[index];
@@ -47,7 +47,7 @@
  function initialWorld(){return {bridgeOpen:false,watered:[]};}
  function copyWorld(world={}){return {bridgeOpen:Boolean(world.bridgeOpen),watered:[...(world.watered||[])]};}
  function gateOpen(map,world){return !map.flowers||map.flowers.every(p=>world.watered.includes(p));}
- function availableCommands(map){return [...(map.directions||Object.keys(DIR)),...(map.actions||[])];}
+ function availableCommands(map){return [...Object.keys(DIR),...(map.actions||[])];}
  // Repeats and named calls share an atomic cursor, so stopping never replays an action.
  function expand(program,maxSteps=32,recipes={}){
   if(!Array.isArray(program))throw Error('Program invalid.');
@@ -132,7 +132,7 @@
   const start=[Math.floor(random()*size),size-1],candidates=[];
   for(let y=0;y<size-2;y++)for(let x=0;x<size;x++)if(Math.abs(x-start[0])+Math.abs(y-start[1])>=minDistance)candidates.push([x,y]);
   const goal=candidates[Math.floor(random()*candidates.length)];
-  const map={size,start,goal,obstacles:[],label:'Hartă nouă'};
+  const map={size,start,goal,obstacles:[],label:'Hartă nouă',goalIcon:'💎',goalName:'comoară'};
   const cells=[];for(let y=0;y<size;y++)for(let x=0;x<size;x++)if(!same([x,y],start)&&!same([x,y],goal))cells.push([x,y]);
   for(let i=cells.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[cells[i],cells[j]]=[cells[j],cells[i]];}
   const wanted=size===3?0:size===4?2:6+Math.floor(random()*3);
@@ -152,7 +152,9 @@
  function predictionRound(seed,size=3,length=3){
   const map=generate(seed,{size,minDistance:3});
   map.label='Oare unde se oprește?';
-  return {map,commands:solve(map).slice(0,length===2?2:3)};
+  const commands=solve(map).slice(0,length===2?2:3);
+  map.goal=commands.reduce((p,d)=>[p[0]+DIR[d][0],p[1]+DIR[d][1]],[...map.start]);
+  return {map,commands};
  }
  const API={DIR,ARROW,NAME,key,same,firstMap,step,solve,generate,evaluate,mission,missionCount:MISSIONS.length,detectiveCase,detectiveCount:DETECTIVE_CASES.length,readProgress,predictionRound,initialWorld,copyWorld,gateOpen,availableCommands,expand,cloneProgram,executedPrefix};
  if(typeof module!=='undefined'&&module.exports)module.exports=API;else root.RoboEngine=API;

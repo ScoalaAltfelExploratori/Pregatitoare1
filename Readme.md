@@ -8,14 +8,18 @@ Deschide `index.html` în Chrome, Edge sau Firefox. Nu sunt necesare internet, c
 
 La prima deschidere apare „O singură săgeată”: alege → și apasă „Pornește Robo”. Următoarea etapă adaugă încă o săgeată. Un browser cu progres salvat continuă aventura; adultul poate alege prima lecție din panoul său.
 
-Pe laptop și tablă, harta este în stânga, iar comenzile și programul în dreapta. Programul lung se derulează separat; pornirea și oprirea rămân vizibile. Pe telefon, panourile se așază unul sub altul. Pentru proiecție: „Ecran complet” sau F11.
+Pe laptop și tablă, harta este în stânga, iar comenzile și programul în dreapta. Ecranul copiilor păstrează obiectivul scurt, harta, săgețile mari și pornirea. Navigarea, sunetul, fișele, lecțiile, contoarele și ștergerea întregului program sunt în meniul „Pentru adult”, sus în dreapta. Pe telefon, panourile se așază unul sub altul. Pentru proiecție: „Ecran complet” din meniul adultului sau F11.
+
+Cele patru direcții ↑ ← ↓ → sunt vizibile și disponibile încă din prima etapă. Rămân vizibile în timpul rulării și după reușită; sunt dezactivate cât Robo execută programul. În timpul rulării se retrag doar controalele acțiunilor și blocurilor. Săgeata activă rămâne evidențiată pe durata deplasării. „Oprește” permite din nou editarea. Programul lung se derulează separat. Întrebarea DA/NU apare lângă program și păstrează harta mare; în acel moment înlocuiește mesajul obișnuit. După reușită rămân drumul făcut și continuarea aleasă explicit.
+
+Deschiderea meniului „Pentru adult” oprește rularea, inclusiv o întrebare în așteptare, fără să piardă pașii făcuți. „Înapoi la copii” sau Escape închide meniul; pornirea continuă din poziția curentă. Instrucțiunile detaliate ale lecției rămân în acest meniu. Pe ecranul copiilor, „↶ Șterge ultima” șterge ultima comandă nouă; atingerea unei comenzi noi o șterge doar pe aceea.
 
 ## Parcursul lecțiilor
 
 | Lecția | Etapele introduse | Traseu introductiv |
 | --- | --- | --- |
-| 1. Prima baterie · Bază | O săgeată, apoi două identice; apare doar → | →, apoi → → |
-| 2. Floarea de pe deal · Bază | O schimbare de direcție, apoi trei săgeți; apare și ↑ | → ↑, apoi → ↑ ↑ |
+| 1. Prima comoară · Bază | O săgeată, apoi două identice; toate direcțiile sunt vizibile | →, apoi → → |
+| 2. Drumul spre căsuță · Bază | O schimbare de direcție, apoi trei săgeți | → ↑, apoi → ↑ ↑ |
 | Detectivul Robo | După lecția 2: reparăm o singură săgeată dintre două | Două săgeți, două variante |
 | 3. Ocolim copacul · Bază | Un obstacol pe 3×3, cu săgețile deja cunoscute | ↑ → → |
 | 4. Cheia și comoara · Continuare | Întâi cheia, apoi cufărul | → ↑, pauză, → ↓ |
@@ -30,6 +34,8 @@ Prima întâlnire se poate încheia după cele trei lecții de bază. „Unde cr
 
 Hărțile vechi se păstrează ca provocări: doi copaci pe 4×4, comoara de 12 pași, podul de 9 pași și grădina cu trei flori. Harta veche cu doi copaci păstrează și copacul de la rândul 2, coloana 1. Schimbarea etapei pregătește o încercare nouă.
 
+După ocolul 3×3 se pot alege două poteci 5×5: „Toate cele patru săgeți” (12 pași, până la căsuță) și „Comoara din mijloc” (16 pași). Obstacolele cer folosirea tuturor celor patru direcții. Sunt provocări opționale, care se pot construi în bucăți. Toate hărțile au ca destinație o comoară sau o căsuță; obiectele și acțiunile sunt pași pe parcurs.
+
 ## Pornirea continuă programul
 
 - „Pornește Robo” execută numai comenzile încă nefăcute, din poziția curentă. Poți construi drumul în bucăți. Cheia, podul, florile și răspunsurile se păstrează.
@@ -43,7 +49,7 @@ Limita este de 8 pași pe 3×3, 16 pe 4×4 și 32 pe 5×5 sau în jocul liber. F
 
 ## Acțiunile, repetiția și decizia
 
-„⚙ Activează” se execută pe manetă. Abia atunci podul coboară și permite traversarea. „💧 Udă” se execută pe floare. O acțiune în alt loc explică problema și oprește programul, păstrând pașii corecți.
+„⚙ Activează” se execută pe manetă. Abia atunci podul coboară și permite traversarea. Râul umple fiecare celulă; podul are două jumătăți ridicate care, după activare, se unesc dintr-un mal în celălalt. „💧 Udă” se execută pe floare. O acțiune în alt loc explică problema și oprește programul, păstrând pașii corecți.
 
 Grădina are cinci etape:
 
@@ -61,13 +67,13 @@ Repetiția grupează exact două comenzi simple, de 2 sau 3 ori. Nu există repe
 
 ## Rețeta opțională
 
-„📖 Udă un rând” este numele secvenței pregătite → 💧 → 💧. Prima etapă o folosește o singură dată pe 3×3, apoi Robo merge ↑ la carte.
+„📖 Udă un rând” este numele secvenței pregătite → 💧 → 💧. Prima etapă o folosește o singură dată pe 3×3, apoi Robo merge ↑ la căsuță.
 
-A doua etapă reia harta lungă: folosește rețeta la A, mergi ← ← ↑ ↑ ↑ până la B, folosește-o din nou, apoi → → la carte. Sunt 15 pași, care pot fi pregătiți în bucăți. Este o primă procedură cu nume; definiția este vizibilă și nu se editează. „Desfă în comenzi” modifică numai folosirea aleasă.
+Imediat după introducerea 3×3 urmează o grădină 5×5 cu trei rânduri, A, B și C, și șase flori. Folosește rețeta la A, mergi ← ← ↑ ↑ până la B și folosește-o din nou. Repetă deplasarea ← ← ↑ ↑ până la C, udă al treilea rând, apoi mergi → → prin poartă la căsuță. Sunt 22 de pași și trei folosiri ale aceleiași rețete; programul poate fi construit și pornit în bucăți. Varianta anterioară cu două rânduri rămâne disponibilă în selectorul adultului. Este o primă procedură cu nume; definiția este vizibilă și nu se editează. „Desfă în comenzi” modifică numai folosirea aleasă.
 
 ## Anticiparea și Detectivul Robo
 
-„Unde crezi că ajunge?” oferă două săgeți, cu opțiune pentru trei. Copiii aleg o căsuță și apasă „Verificăm împreună”. „Altă provocare” pregătește o rundă nouă. Cu tastatura: Tab pentru focalizare, săgețile pentru alegerea căsuței, Enter sau Spațiu pentru confirmare.
+„Unde crezi că ajunge?” oferă două săgeți, cu opțiune pentru trei. Harta arată robotul, fără o comoară care să sugereze răspunsul. Copiii aleg o căsuță și apasă „Verificăm împreună”. Comoara se dezvăluie la destinație după verificare. „Altă provocare” pregătește o rundă nouă. Cu tastatura: Tab pentru focalizare, săgețile pentru alegerea căsuței, Enter sau Spațiu pentru confirmare.
 
 Detectivul are trei cazuri 3×3, cu 2, 3 și 4 săgeți. Începe cu primul: o singură înlocuire dintre două variante mari. „Testăm drumul” arată efectul; „Arată săgeata” indică locul de reparat fără să dea răspunsul. Fără punctaj, cronometru sau limită de încercări. După o schimbare, Robo revine la start pentru a testa drumul reparat. Cazurile următoare sunt opționale.
 
@@ -83,7 +89,7 @@ Tipărire: A4, portret, scară 100%, fără anteturile și subsolurile browserul
 
 Instrumentele adultului includ selectorul de lecție și etapă, reperul de observare, ritmul întrebării, jocul liber cu hartă generată, harta originală, soluția din starea curentă și tipărirea. Resetarea aventurii cere confirmare în panou.
 
-Sunetul este oprit inițial și se activează din bara de sus. Efectele sunt generate local; nu există replici vocale. Animațiile respectă preferința sistemului pentru mișcare redusă.
+Sunetul este oprit inițial și se activează din „Pentru adult”. Efectele sunt generate local; nu există replici vocale. Animațiile respectă preferința sistemului pentru mișcare redusă.
 
 ## Salvare și compatibilitate
 

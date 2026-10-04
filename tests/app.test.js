@@ -5,7 +5,7 @@ const path = require('node:path');
 const { JSDOM } = require('jsdom');
 const E = require('../game-engine.js');
 const C = require('../curriculum.js');
-const classicStages = ['two', 'three', 'challenge', 'challenge', 'challenge', 'challenge', 'two-rows'];
+const classicStages = ['two', 'three', 'challenge', 'challenge', 'challenge', 'challenge', 'classic-two-rows'];
 const root = path.join(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const progressKey = 'robo-explorator-progress-v1';
@@ -316,7 +316,7 @@ test('povestea deschide cazul simplu, iar fișa de detectiv include săgețile �
   app.click('run'); await app.advance(350); app.document.querySelector('[data-view="story"]').click();
   await app.advance(5000); app.document.querySelector('[data-view="game"]').click();
   assert.deepEqual(robotPosition(app), [1, 2]);
-  app.click('program-mode'); assert.equal(app.get('game-title').textContent, 'Prima baterie');
+  app.click('program-mode'); assert.equal(app.get('game-title').textContent, 'Prima comoară');
 });
 
 test('aventura completă deblochează șapte misiuni, salvează și permite rejucarea', async t => {
@@ -349,7 +349,7 @@ test('reîncărcarea reia următoarea misiune; stocarea refuzată permite totuș
   privateMode.add(['R', 'R']); privateMode.click('run'); await privateMode.advance(2000);
   assert.match(privateMode.get('status').textContent, /doar până închidem pagina/);
   privateMode.click('next-mission');
-  assert.equal(privateMode.get('game-title').textContent, 'Floarea de pe deal');
+  assert.equal(privateMode.get('game-title').textContent, 'Drumul spre căsuță');
 });
 
 test('oprirea și schimbarea misiunii anulează rularea în curs', async t => {
@@ -362,7 +362,7 @@ test('oprirea și schimbarea misiunii anulează rularea în curs', async t => {
   assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed, 1);
   app.click('run'); await app.advance(350);
   app.get('mission-trail').children[0].click(); await app.advance(10000);
-  assert.equal(app.get('game-title').textContent, 'Prima baterie');
+  assert.equal(app.get('game-title').textContent, 'Prima comoară');
   assert.equal(app.get('step-count').textContent, 'La start');
   assert.equal(app.get('queue').children.length, 0);
   assert.equal(app.get('completion').hidden, true);
@@ -377,7 +377,7 @@ test('anticiparea cere alegere, verifică răspunsuri și restaurează programul
   assert.throws(() => app.tool().execute({ commands: ['R'] }), /Revino la Programăm/);
   const board = app.get('board'), cells = [...board.children], size = 3;
   const at = index => [index % size, Math.floor(index / size)];
-  const map = { size, start: at(cells.findIndex(c => c.classList.contains('robot'))), goal: at(cells.findIndex(c => c.classList.contains('goal'))), obstacles: [] };
+  const map = { size, start: at(cells.findIndex(c => c.classList.contains('robot'))), goal: [-1,-1], obstacles: [] };
   const arrows = { '↑': 'U', '↓': 'D', '←': 'L', '→': 'R' };
   const program = [...app.get('queue').children].map(c => arrows[c.textContent.slice(-1)]);
   const end = E.evaluate(map, program).position;
@@ -392,7 +392,7 @@ test('anticiparea cere alegere, verifică răspunsuri și restaurează programul
   app.get('board').querySelector('.robot').click(); app.click('run'); await app.advance(3000);
   assert.match(app.get('status').textContent, /Bună încercare!/);
   app.click('program-mode');
-  assert.equal(app.get('game-title').textContent, 'Prima baterie');
+  assert.equal(app.get('game-title').textContent, 'Prima comoară');
   assert.equal(app.get('queue').children.length, 1);
   assert.equal(app.get('queue').children[0].textContent, '1→');
 });
@@ -426,7 +426,7 @@ test('detectivul, limita de comenzi, resetarea și fișa respectă starea activ�
   app.click('reset-adventure'); assert.equal(app.get('reset-confirmation').hidden, false);
   app.click('cancel-reset'); assert.equal(app.get('reset-confirmation').hidden, true);
   assert.match(app.get('map-label').textContent, /Cazul 1 din 3/);
-  app.click('confirm-reset'); assert.equal(app.get('game-title').textContent, 'Prima baterie');
+  app.click('confirm-reset'); assert.equal(app.get('game-title').textContent, 'Prima comoară');
 });
 
 test('finala refuză cufărul fără cheie și nu acordă progres pentru simpla colectare', async t => {
@@ -494,7 +494,7 @@ test('schimbarea misiunii după colectarea cheii anulează finalizarea întârzi
   app.add(E.solve(E.mission(3))); app.click('run'); await app.advance(6000);
   assert.equal(app.get('key-objective').classList.contains('complete'), true);
   app.get('mission-trail').children[0].click(); await app.advance(10000);
-  assert.equal(app.get('game-title').textContent, 'Prima baterie');
+  assert.equal(app.get('game-title').textContent, 'Prima comoară');
   assert.equal(app.get('mission-objectives').hidden, true);
   assert.equal(app.get('completion').hidden, true);
   assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed, 3);
@@ -873,8 +873,8 @@ test('WebMCP protejează apelurile, iar limita numără comenzile din rețetă',
 test('parcursul de bază introduce 1, 2, apoi 3 comenzi, Detectivul și un singur copac', async t => {
   const app = setup({ guided: true }); t.after(app.close);
   assert.equal(app.get('lesson-stage').value, 'one');
-  assert.equal(app.document.querySelector('[data-dir="U"]').hidden, true);
-  assert.throws(() => app.tool().execute({ commands: ['U'] }), /indisponibilă/);
+  for (const d of ['U','D','L','R']) assert.equal(app.document.querySelector('[data-dir="'+d+'"]').hidden, false);
+  app.tool().execute({ commands: ['U'] }); app.click('clear');
   app.add(['R']); app.click('run'); await app.advance(1000);
   assert.match(app.get('status').textContent, /1 pas\./);
   assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed, 0);
@@ -899,6 +899,13 @@ test('parcursul de bază introduce 1, 2, apoi 3 comenzi, Detectivul și un singu
   assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed, 3);
   assert.match(app.get('completion-message').textContent, /încheia aici/);
   assert.match(app.get('next-mission').textContent, /Opțional/);
+  app.click('next-mission');
+  assert.equal(app.get('lesson-stage').value,'four-directions');
+  app.add(E.solve(C.get(2,'four-directions')));app.click('run');await app.advance(12000);
+  app.click('next-mission');assert.equal(app.get('lesson-stage').value,'spiral');
+  app.add(E.solve(C.get(2,'spiral')));app.click('run');await app.advance(14000);
+  assert.equal(app.get('completion').hidden,false);
+  app.click('next-mission');assert.equal(app.get('teacher-lesson').value,'3');
 });
 
 test('cheia și maneta scurte se opresc pentru observație, apoi continuă fără resetare', async t => {
@@ -988,6 +995,9 @@ test('anticiparea începe cu două săgeți și trei rămân o alegere pe harta 
   const app=setup({guided:true,progress:'{"version":3,"completed":6}'});t.after(app.close);
   app.click('predict-mode');assert.equal(app.get('board').children.length,9);assert.equal(app.get('queue').children.length,2);
   assert.equal(app.get('board').querySelectorAll('.tree').length,0);
+  assert.equal(app.get('board').querySelectorAll('.goal').length,0);
+  assert.equal(app.get('goal-legend').hidden,true);
+  assert.doesNotMatch(app.get('board').getAttribute('aria-label'),/Destinație/);
   app.get('prediction-count').value='3';app.get('prediction-count').dispatchEvent(new app.w.Event('change'));
   assert.equal(app.get('queue').children.length,3);assert.match(app.get('prediction-title').textContent,/3 săgeți/);
   app.click('program-mode');assert.equal(app.get('lesson-stage').value,'one-row');
@@ -1007,4 +1017,78 @@ test('rețeta începe cu o folosire, iar fișele și povestea urmează etapele s
   app.w.print=()=>{};app.click('print-game');
   assert.equal(app.get('print-area').querySelectorAll('.sheet-queue>span').length,5);
   assert.doesNotMatch(app.get('print-area').textContent,/poartă|două locuri/);
+});
+
+test('grădina 5×5 refolosește rețeta pe trei rânduri și continuă fără resetare', async t => {
+  const app=setup({guided:true,progress:'{"version":3,"completed":6}'});t.after(app.close);
+  app.click('call-recipe');app.add(['U']);app.click('run');await app.advance(4500);app.click('next-mission');
+  assert.equal(app.get('board').children.length,25);
+  assert.equal(app.get('board').querySelectorAll('.flower-tile').length,6);
+  app.click('call-recipe');app.click('run');await app.advance(4000);
+  assert.match(app.get('status').textContent,/Rândul A este udat.*la B/);
+  assert.equal(app.get('board').querySelectorAll('.watered').length,2);
+  app.add(['L','L','U','U']);app.click('call-recipe');app.click('run');await app.advance(4100);app.click('stop');
+  const pos=robotPosition(app),watered=app.get('board').querySelectorAll('.watered').length;
+  await app.advance(10000);assert.deepEqual(robotPosition(app),pos);
+  assert.equal(app.get('board').querySelectorAll('.watered').length,watered);
+  app.click('run');await app.advance(5000);
+  assert.equal(app.get('board').querySelectorAll('.watered').length,4);
+  assert.equal(app.get('board').querySelectorAll('.gate-open').length,0);
+  assert.match(app.get('status').textContent,/Rândul B este udat.*la C/);
+  app.add(['L','L','U','U']);app.click('call-recipe');app.add(['R','R']);app.click('run');await app.advance(9000);
+  assert.equal(app.get('board').querySelectorAll('.watered').length,6);
+  assert.equal(app.get('board').querySelectorAll('.gate-open').length,1);
+  assert.deepEqual(robotPosition(app),[4,0]);assert.match(app.get('status').textContent,/22 pași/);
+  assert.equal(app.sounds.filter(s=>s==='win').length,2);
+  app.w.print=()=>{};app.click('print-game');
+  assert.equal(app.get('print-area').querySelectorAll('.sheet-queue>span').length,22);
+  app.click('restart');assert.equal(app.get('board').querySelectorAll('.watered').length,0);
+  assert.deepEqual(robotPosition(app),[0,4]);
+});
+
+test('comoara anticipării se dezvăluie la destinație după verificare', async t => {
+  const app=setup({guided:true});t.after(app.close);app.click('predict-mode');
+  let p=robotPosition(app);
+  for(const card of app.get('queue').children){
+    const d=Object.keys(E.DIR).find(d=>card.textContent.includes(E.ARROW[d]));
+    p=[p[0]+E.DIR[d][0],p[1]+E.DIR[d][1]];
+  }
+  assert.equal(app.get('board').querySelectorAll('.goal').length,0);
+  app.get('board').children[p[1]*3+p[0]].click();app.click('run');await app.advance(3000);
+  assert.deepEqual(robotPosition(app),p);
+  assert.equal(app.get('board').querySelectorAll('.goal .chest-icon').length,1);
+  assert.equal(app.get('goal-legend').hidden,false);
+});
+
+test('meniul adultului oprește întrebarea fără udare și revenirea păstrează programul', async t => {
+  const app=setup({guided:true,progress:'{"version":3,"completed":5}'});t.after(app.close);app.stage('decision');
+  app.add(['R','F','R']);app.click('run');await app.advance(720);
+  const menu=app.get('adult-menu');menu.open=true;menu.dispatchEvent(new app.w.Event('toggle'));
+  assert.equal(app.get('stop').hidden,true);assert.equal(app.get('check-decision').hidden,true);
+  assert.equal(app.get('decision-feedback').hidden,true);assert.equal(app.get('status').hidden,false);
+  await app.advance(60000);
+  assert.deepEqual(robotPosition(app),[1,2]);assert.equal(app.get('board').querySelectorAll('.watered').length,0);
+  const count=app.get('queue').children.length;
+  menu.querySelector('summary').dispatchEvent(new app.w.KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true}));
+  assert.equal(app.get('queue').children.length,count);
+  menu.querySelector('summary').dispatchEvent(new app.w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+  assert.equal(menu.open,false);assert.equal(app.document.activeElement,menu.querySelector('summary'));
+  app.click('run');app.click('check-decision');await app.advance(2000);
+  assert.match(app.get('status').textContent,/3 pași/);assert.equal(app.get('board').querySelectorAll('.watered').length,1);
+});
+
+test('săgeata rămâne evidențiată pe durata mutării, iar oprirea păstrează pasul făcut', async t => {
+  const app=setup({guided:true});t.after(app.close);app.stage('two');app.add(['R','R']);
+  app.get('run').focus();app.click('run');
+  assert.equal(app.document.activeElement,app.get('stop'));
+  await app.advance(300);
+  assert.deepEqual(robotPosition(app),[1,2]);
+  assert.equal(app.get('queue').querySelector('.active').getAttribute('aria-label'),'Pas executat 1: dreapta');
+  app.click('stop');
+  assert.equal(app.get('queue').querySelectorAll('.active').length,0);
+  assert.equal(app.get('queue').querySelectorAll('.executed').length,1);
+  assert.equal(app.document.activeElement,app.get('run'));
+  app.click('run');await app.advance(1000);
+  assert.match(app.get('status').textContent,/2 pași/);
+  assert.equal(app.document.activeElement,app.get('restart'));
 });

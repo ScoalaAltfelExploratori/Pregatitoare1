@@ -4,7 +4,7 @@ Obiectiv: o aventură offline, în limba română, pentru clasa pregătitoare, u
 
 Legendă: `[ ]` de făcut · `[x]` implementat și verificat. Prioritatea P0 reprezintă prima versiune.
 
-Elementele V1 și verificările de mai jos păstrează istoricul implementării. Parcursul actual este cel introdus prin P1-12 și descris în Readme.md.
+Elementele V1 și verificările de mai jos păstrează istoricul implementării. Parcursul actual include P1-12–P1-14 și este descris în Readme.md.
 
 ## V1 · Primele aventuri (P0)
 
@@ -33,6 +33,10 @@ Elementele V1 și verificările de mai jos păstrează istoricul implementării.
 - [x] **P1-10 · Prima decizie integrată.** Misiunea 6, „Grădina lui Robo”, are variantele „Flori la rând” și „Flori răsfirate”. În a doua, repetăm de trei ori → și „Dacă este o floare aici → Udă”: DA/NU/DA, apoi poarta și căsuța. Întrebarea și răspunsul sunt vizibile lângă hartă, cu rezultatele păstrate în repetiție. Include oprire/reluare fără efecte dublate, fișă și migrarea progresului din vechea variantă cu opt misiuni.
 - [x] **P1-11 · Harta și programul alăturate.** Pe desktop, harta în stânga și programul în dreapta; paleta și Pornire/Oprire rămân vizibile, programul lung se derulează separat. Selector compact de misiuni, repetiție într-un panou pliabil, afișare adaptată pe telefon.
 - [x] **P1-12 · Lecții graduale pentru clasa pregătitoare.** Parcurs de bază: o săgeată, două identice, schimbare de direcție, trei comenzi, primul Detectiv și un copac pe 3×3. Cheia și maneta au introduceri de patru pași cu pauză de observație. Grădina introduce separat udarea, recunoașterea modelului, repetiția, decizia și combinarea; rețeta începe cu o singură folosire. Hărțile lungi rămân provocări. Adultul alege etapa și vede un reper de observare. Întrebarea așteaptă implicit adultul; anticiparea începe cu două săgeți. Povestea și fișele urmează etapele scurte. Progresul vechi se păstrează, iar etapele intermediare se salvează separat.
+
+- [x] **P1-13 · Ecran concentrat pe activitatea copiilor.** Navigarea, lecțiile, explicațiile lungi și contoarele sunt reunite în „Pentru adult”. Obiectivul copiilor este scurt, săgețile și comenzile sunt mai mari, iar paleta se retrage în timpul rulării. Comanda activă rămâne evidențiată pe durata mișcării. Întrebarea DA/NU apare lângă program, fără să micșoreze harta sau să dubleze mesajele. Meniul adultului oprește în siguranță rularea, permite revenirea cu Escape și păstrează pașii. Anticiparea nu mai afișează o destinație care să sugereze alegerea.
+
+- [x] **P1-14 · Direcții și destinații consecvente.** Toate cele patru săgeți sunt disponibile de la început și rămân vizibile la rulare. Două poteci 5×5 cer toate direcțiile, cu final la căsuță sau comoară. Toate lecțiile, Detectivul și jocul liber au una dintre aceste două destinații; anticiparea dezvăluie comoara la verificare. După rețeta introductivă 3×3 urmează imediat grădina 5×5 cu trei rânduri, șase flori și aceeași rețetă folosită de trei ori. Râul umple celula, iar podul coborât unește malurile.
 
 ## V2 · Creăm împreună (P2)
 
@@ -120,3 +124,19 @@ Elementele V1 și verificările de mai jos păstrează istoricul implementării.
 - Povestea introduce o singură săgeată și se poate încheia după parcursul de bază. Fișele au spații adaptate programului scurt; rețeta introductivă nu cere încă două locuri sau poartă.
 - În browser: primul pas și avansarea, finalul lecției cu trei săgeți și accesul la Detectiv, întrebarea manuală pe gol/floare, apoi DA/NU/DA în repetiție și reușita în 8 pași. Consola nu raportează erori sau avertismente.
 - Inspectate afișările la 1280×720, 1024×768 și 390×844: harta și comenzile alăturate pe desktop, fără depășire orizontală pe telefon. Testarea ritmului cu elevii și PDF-urile noi rămân deschise.
+
+## Verificare · Design simplificat · 4 octombrie 2026
+
+- `npm run check` și toate cele 76 de teste trec. Testele noi verifică pauza sigură la deschiderea meniului adultului, protejarea programului de săgețile tastaturii folosite în meniu, închiderea cu Escape și continuarea fără udări repetate.
+- Verificată evidențierea săgeții pe durata deplasării, inclusiv după aplicarea pasului, și mutarea focalizării între pornire, oprire și reluare. Anticiparea afișează robotul fără o destinație care să sugereze răspunsul.
+- În browser: meniu deschis în timpul întrebării, închis cu Escape, reluare și reușită; anticipare corectă; repararea primului caz Detectivul; prima lecție rezolvată pe telefon. Consola nu raportează erori sau avertismente.
+- Verificate 1280×720, 1024×768 și 390×844. În grădina combinată, harta rămâne de aproximativ 400 px la 1280×720, inclusiv în timpul întrebării; programul și verificarea sunt vizibile în panoul din dreapta. Meniul încape în lățimea telefonului; revenirea la desktop restabilește afișarea alăturată.
+- Ghidul și instrucțiunile scurte indică noul meniu „Pentru adult”. Evaluarea atenției și a lizibilității cu elevii rămâne o probă în clasă, fără a presupune că testele tehnice o înlocuiesc.
+
+
+## Verificare · Consecvență și hărți 5×5 · 4 octombrie 2026
+
+- `npm run check` și toate cele 80 de teste trec. Fiecare etapă are soluție; cele două poteci noi necesită toate cele patru direcții, inclusiv când verificarea exclude pe rând câte una.
+- Verificate trecerea opțională prin cele două poteci, toate destinațiile (comoară sau căsuță) și dezvăluirea comorii la sfârșitul anticipării.
+- Grădina 5×5 vine imediat după introducerea 3×3: trei folosiri ale rețetei, șase flori, poartă și căsuță, în 22 de pași. Testul acoperă construirea în bucăți, oprirea în mijlocul celui de-al doilea rând, reluarea fără udări repetate, resetarea și cele 22 de spații ale fișei.
+- În browser: pod ridicat/coborât pe toată lățimea celulei, râu complet, grădină terminată în 22 de pași și săgeți vizibile inclusiv în timpul întrebării manuale. Verificate 1280×720, 1024×768 și 390×844, fără depășire orizontală; panourile desktop rămân în înălțimea ecranului.

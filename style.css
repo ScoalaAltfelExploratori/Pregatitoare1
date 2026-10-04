@@ -55,8 +55,7 @@
 .tile.river,.tile.river.visited{background:#c6eefa;box-shadow:inset 0 -4px 0 #96cddb}
 .waves{color:#309dbd;font-size:48px;font-weight:700}
 .bridge-icon,.lever-icon{display:block;width:clamp(32px,4.5vw,64px);height:auto}
-.bridge-deck{transform:rotate(-65deg);transform-origin:32px 32px}
-.bridge-open .bridge-deck{transform:none}
+
 .tile.lever-tile{background:#ffe6bc;box-shadow:inset 0 -4px 0 #e8c68a}
 .tile.lever-tile.activated,.tile.flower-tile.watered,.tile.gate-tile.gate-open{background:#d2eee1;box-shadow:inset 0 -4px 0 #99cdb3}
 .tile.flower-tile{background:#f7e2c4;box-shadow:inset 0 -4px 0 #e7c79e}
@@ -274,3 +273,119 @@
  .direction-pad button{max-width:150px}.direction-pad{flex-grow:0}
 }
 @media(max-width:730px){.lesson-tools{grid-template-columns:1fr}.lesson-tools>p,.lesson-tools>.decision-timing{grid-column:auto}}
+
+/* Ecran pentru copii: harta, comenzile și un singur mesaj de lucru. */
+.adult-menu{margin-left:auto;position:relative;z-index:30;font-size:15px}
+.adult-menu>summary{cursor:pointer;list-style:none;padding:8px 14px;border:1px solid #bdced1;border-radius:12px;min-height:42px;color:#45616c;background:#fff;font-weight:700}
+.adult-menu>summary:after{content:' ▾'}.adult-menu[open]>summary:after{content:' ▴'}
+.adult-panel{position:fixed;right:18px;top:66px;width:min(740px,calc(100vw - 36px));max-height:calc(100dvh - 84px);overflow:auto;overscroll-behavior:contain;background:#fff;border:2px solid #b9d6da;border-radius:20px;box-shadow:0 12px 48px #173d4d40;padding:20px;line-height:1.5}
+.adult-panel-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px;font-size:20px}
+.adult-panel-heading button{font-size:15px;min-height:44px;padding:8px 14px}
+.adult-panel nav{display:flex;flex-wrap:wrap;margin-bottom:10px;width:auto}
+.adult-panel .header-actions{justify-content:flex-start;display:flex;flex-wrap:wrap;margin-bottom:14px}
+.adult-panel .play-toolbar{display:flex;flex-direction:column;align-items:stretch;gap:10px;margin-bottom:16px}
+.adult-panel .activity-tabs{flex-wrap:wrap}.adult-panel .activity-tabs button{font-size:14px;min-height:44px}
+.adult-panel .mission-picker{width:100%;position:static}
+.adult-panel .mission-trail{position:static;box-shadow:none;margin-top:8px;max-height:260px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.adult-panel .adult-context{padding:14px;background:#f0f7f7;border-radius:14px;margin-bottom:16px}
+.adult-panel .map-selection{width:auto;max-width:none;text-align:left;margin:8px 0}
+.adult-panel .eyebrow{font-size:12px}.adult-panel #teacher-guidance{margin:8px 0 0}
+.adult-panel .teacher-tools,.adult-panel .teacher-tools[open]{position:static;max-height:none;border:0;box-shadow:none;padding:0;margin:0;background:transparent}
+.adult-panel .teacher-tools>summary{font-size:17px;min-height:44px;padding:9px 0}
+.adult-panel .lesson-tools{font-size:15px}.adult-panel .class-tools{gap:8px}
+.adult-panel .class-tools button{min-height:44px;font-size:14px}
+.adult-program{display:flex;align-items:center;flex-wrap:wrap;gap:8px 20px;margin-top:20px;padding-top:14px;border-top:1px solid #dbe7e9}
+.adult-program .execution-note{width:100%;font-size:14px;margin:0}
+.game-screen .app-header{padding:10px 22px;gap:14px;min-height:64px}
+.game-screen #game-view>.section-title{margin:0 0 10px}
+.game-screen #game-title{font-size:30px;line-height:1.15}
+.game-screen #mission-brief{font-size:19px;line-height:1.4;margin:7px 0 0;max-width:none}
+.game-screen .map-meta{font-size:14px;color:#426170}
+.game-screen .map-panel .legend{font-size:13px;gap:6px 16px}
+.game-screen #board{max-width:none}
+.game-screen .board-stage{max-width:520px}
+.game-screen .direction-pad button{background:#eff7ff;border-color:#9dbcd5;color:#164f7a;min-height:76px;min-width:72px;max-width:124px;padding:5px 12px}
+.game-screen .direction-pad button strong{font-size:44px;line-height:1}
+.game-screen .direction-pad button span{font-size:15px}
+.game-screen .direction-pad{flex:0 1 auto;gap:8px}
+.game-screen .queue{background:#f9fcff;border:2px solid #bcd4e2;border-radius:20px;padding:16px;gap:12px;align-content:flex-start;align-items:flex-start;position:relative}
+.game-screen .queue .command{flex:0 0 70px;width:70px;height:74px;min-height:74px;background:#eaf3ff;color:#174f7f;border:2px solid #aac5df;border-radius:13px;font-size:43px;line-height:1;box-shadow:0 3px 0 #d0dfea;display:flex;align-items:center;justify-content:center}
+.game-screen .queue .command small{font-size:12px;left:5px;top:4px}
+.game-screen .queue .command .done-mark{font-size:16px;right:4px;bottom:3px}
+.game-screen .queue .command.executed{background:#edf2ef;color:#547262;border-color:#c6d6cc;box-shadow:none}
+.game-screen .queue .command.active,.game-screen .queue .command.chosen{background:#155ac4;color:#fff;border-color:#155ac4;outline:4px solid #efb83d;outline-offset:2px;opacity:1}
+.game-screen .queue:empty{display:flex;flex-direction:column;flex-wrap:nowrap;align-content:normal;align-items:center;justify-content:center;color:#5e788c;gap:8px;min-height:130px}
+.game-screen .queue:empty:before{content:'＋';font-size:40px;line-height:1;background:#eaf3ff;border:2px dashed #a9c7df;border-radius:13px;padding:10px 20px;color:#316289}
+.game-screen .queue:empty:after{content:'Aici punem săgețile';font-size:18px}
+.game-screen .queue-heading h2,.game-screen #editor-title{font-size:21px}
+.game-screen #undo{min-height:44px;font-size:16px;padding:7px 10px;color:#315970}
+.game-screen .run-actions .primary{font-size:23px;min-height:58px;border-radius:16px}
+.game-screen .run-actions .quiet{font-size:16px;min-height:52px}
+.game-screen #stop{background:#fff0db;border:2px solid #bb7928;color:#714811;font-weight:800}
+.game-screen .status{font-size:17px;line-height:1.4;min-height:52px;max-height:100px;padding:12px 15px;background:#e4f0f9;margin-top:10px}
+.game-screen .status.success{background:#e1f0e6}.game-screen .status.error{background:#fff0db}
+.game-screen .completion{background:#e7f4ea;border:1px solid #b3d4bd;border-radius:16px;padding:10px;margin-top:10px}
+.game-screen .completion>span{font-size:15px;line-height:1.4}
+.game-screen .completion button{font-size:15px;min-height:44px}
+.game-screen #game-view[data-state="won"] #run{display:none}
+.game-screen #game-view[data-state="running"] #action-pad,.game-screen #game-view[data-state="running"] #repeat-editor,.game-screen #game-view[data-state="running"] #recipe-editor,.game-screen #game-view[data-state="running"] #decision-editor{display:none}
+.game-screen #game-view[data-state="running"] #run,.game-screen #game-view[data-state="running"] #restart{display:none}
+.game-screen #game-view[data-state="running"] .run-actions{justify-content:flex-end}
+.game-screen #game-view[data-state="running"] #stop{min-width:145px}
+.game-screen .program-footer .decision-feedback{padding:12px 15px;margin:10px 0 0;border:2px solid #c4a552;border-radius:16px;font-size:20px;line-height:1.3;background:#fff7df}
+.game-screen .program-footer .decision-feedback p{font-size:16px;margin:6px 0 0}
+.game-screen #check-decision{min-height:44px;font-size:17px}
+.game-screen .queue .decision-block{font-size:16px;flex-basis:240px;width:240px;padding:12px}
+.game-screen .queue .decision-block .decision-then{font-size:15px}
+.game-screen .queue .decision-block.active{opacity:1}
+.game-screen .queue .decision-result{font-size:13px}
+.game-screen .queue .repeat-block{flex-basis:100%;width:100%;padding:12px}
+.game-screen .repeat-heading{font-size:17px}
+.game-screen .repeat-command{font-size:35px}
+.game-screen .repeat-command small{font-size:13px}
+.game-screen .repeat-expanded{font-size:14px}
+.game-screen .repeat-decision-result{font-size:13px}
+.game-screen .decision-editor>button{font-size:16px;min-height:68px}
+.game-screen .decision-editor>button span{font-size:15px}
+.game-screen .action-pad button{min-height:76px;font-size:21px}
+.game-screen .recipe-editor{padding:9px 12px}.game-screen .recipe-editor>b{font-size:16px}
+.game-screen .recipe-editor button{min-height:44px;font-size:16px}
+.game-screen .queue .repeat-edit{font-size:14px;min-height:44px}
+@media screen and (min-width:960px) and (min-height:720px){
+ .game-screen>main{padding:14px 22px 16px}
+ #game-view{gap:8px}
+ .game-screen .game-layout{grid-template-columns:minmax(300px,1fr) minmax(420px,1fr);gap:24px}
+ .game-screen .map-panel{padding:16px;border-radius:24px}
+ .game-screen .program-panel{gap:10px}
+ .game-screen #program-editor{gap:8px}
+ .game-screen .queue{flex:1 1 140px;min-height:110px}
+ .game-screen #game-view[data-mode="detective"] .queue,.game-screen #game-view[data-mode="predict"] .queue{flex:0 0 auto;min-height:112px}
+}
+@media(max-width:959px){
+ .game-screen .app-header{display:flex;flex-wrap:nowrap;padding:10px 16px}
+ .game-screen .brand{font-size:20px}.game-screen .brand-icon{font-size:26px}
+ .adult-menu>summary{font-size:13px;padding:8px 10px;white-space:nowrap}
+ .game-screen>main{padding:18px 16px}
+ .game-screen #game-title{font-size:28px}.game-screen #mission-brief{font-size:18px}
+ .game-screen .map-panel{padding:12px;margin-bottom:18px}
+ .game-screen .program-panel{display:flex;flex-direction:column;gap:12px}
+ .game-screen .direction-pad{display:flex;flex-wrap:wrap;margin:0 0 12px}
+ .game-screen .direction-pad button{flex:1;min-width:62px;max-width:100px}
+ .game-screen .queue-toolbar{margin-top:0}.game-screen .queue{min-height:120px}
+ .game-screen .queue .command{flex-basis:62px;width:62px;height:68px;min-height:68px;font-size:40px}
+ .game-screen .program-footer{margin:0}.game-screen .queue-heading h2{font-size:20px}
+ .game-screen .action-pad{margin:0 0 12px}.game-screen #queue-hint{display:none}
+ .adult-panel{right:10px;top:68px;width:calc(100% - 20px);padding:14px;max-height:calc(100dvh - 80px)}
+ .adult-panel-heading{font-size:17px}.adult-panel-heading button{font-size:14px;padding:7px 10px}
+ .adult-panel .mission-picker .mission-trail{grid-template-columns:1fr}
+}
+@media print{.adult-menu{display:none}}
+
+/* Water fills the cell; both bridge leaves meet from bank to bank. */
+.tile.river{padding:0;border:0;overflow:hidden;background:#9ddced;box-shadow:none}
+.tile.river>span:first-child,#board .tile.river.robot>span:first-child{position:absolute;inset:0;display:block;width:100%;height:100%;opacity:1}
+.tile.river .bridge-icon,.tile.river .river-surface{display:block;width:100%;height:100%;max-width:none}
+.bridge-leaf-left{transform:rotate(-55deg);transform-origin:3px 50px}
+.bridge-leaf-right{transform:rotate(55deg);transform-origin:97px 50px}
+.bridge-open .bridge-leaf-left,.bridge-open .bridge-leaf-right{transform:none}
+.tile.river .lock-badge{top:auto;right:3px;bottom:3px;font-size:clamp(15px,2vw,25px);line-height:1;padding:3px}
