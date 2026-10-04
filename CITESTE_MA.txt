@@ -1,23 +1,55 @@
-ROBO EXPLORATOR · V1 · CLASA PREGĂTITOARE
+ROBO EXPLORATOR · V1.1 · CLASA PREGĂTITOARE
 
-1. Păstrează întregul pachet în același director.
-2. Deschide index.html în Chrome, Edge sau Firefox. Nu trebuie instalat nimic.
-3. Prima misiune: două săgeți spre dreapta, apoi „Pornește Robo”.
-4. La reușită, continuă cu „Următoarea misiune”. Sunt patru misiuni, de la 3×3 la 5×5. În finală, ia cheia înainte să deschizi cufărul.
-5. „Unde crezi că ajunge?” oferă trei săgeți. Alege o căsuță și verifică răspunsul.
-6. Activează opțional sunetul din bara de sus. Totul funcționează offline.
-7. Povestea și Fișa de explorator sunt în bara de navigare.
+Păstrează întregul pachet împreună și deschide index.html în browser.
+Nu sunt necesare internet, conturi sau instalare.
 
-„Pornește Robo” continuă din poziția curentă, doar cu săgețile noi.
-Poți ajunge întâi la cheie, apoi adaugi drumul până la cufăr și pornești din nou.
-Pașii bifați sunt deja făcuți; cheia rămâne la Robo. „Șterge cele noi” îi păstrează.
-„La start” reia încercarea de la început, cu programul păstrat și cheia pe hartă.
+PRIMA ÎNTÂLNIRE
+1. Prima baterie: o săgeată →; apoi două săgeți → →.
+2. Floarea de pe deal: → ↑; apoi trei săgeți.
+3. Intercalează anticiparea cu două săgeți și primul caz Detectivul Robo.
+4. Ocolim copacul: un obstacol pe hartă 3×3, cu ↑ → →.
+Aici se poate încheia întâlnirea. Celelalte activități sunt opționale.
+Apar pe rând numai instrumentele necesare etapei.
 
-Progresul se salvează în browser când stocarea locală este disponibilă.
-Instrumentele adultului, inclusiv harta originală și resetarea aventurii, sunt sub joc.
+CONTINUĂRI, ÎN RITMUL CLASEI
+Cheia: → ↑ până la cheie, pauză de observație, apoi → ↓ la cufăr.
+Maneta: ↑ ⚙ Activează, observăm podul, apoi → →.
+Grădina: o floare cu → 💧 →; apoi două flori cu comenzi simple.
+După recunoașterea perechii introducem „Repetă de 2 ori”.
+Decizia se exersează separat: 🌱?, →, 🌱?, →. Observăm NU și DA.
+Întrebarea așteaptă până când adultul apasă „Verificăm răspunsul”.
+Combinarea repetiției cu decizia și rețeta sunt extensii ulterioare.
 
-Pentru tablă: „Ecran complet” sau F11. Verifică atingerea, volumul și tipărirea înainte de clasă.
+„Pornește Robo” continuă din poziția curentă cu comenzile rămase.
+Cheia, podul, florile și pașii făcuți se păstrează între porniri.
+La cheia și maneta introductive, pauza de observație este automată.
+Pașii bifați nu se șterg; „Șterge cele noi” păstrează ce am făcut.
+„La start” resetează explicit încercarea, dar păstrează programul.
+„Oprește” permite continuarea fără repetarea acțiunilor.
 
-Documentație: Readme.md. Taskuri viitoare: BACKLOG.md.
-PDF-urile din materiale/ sunt fișele și storyboardul originale pentru 5×5.
-Soluții PDF: Misiunea 1: → → ↑ ↑ ↑ → → ↑. Misiunea 2: ← ↑ ↑ → → → ↑ ↑.
+INSTRUMENTELE ADULTULUI
+Alege orice lecție și etapă; „Observăm” arată reperul de urmărit.
+Hărțile vechi, mai lungi, rămân în selector ca provocări.
+Schimbarea etapei reia încercarea.
+Poți activa răspunsul automat la întrebare după două secunde.
+„Arată un drum” calculează continuarea din poziția curentă.
+„Tipărește harta” adaptează fișa etapei.
+Resetarea întregii aventuri cere confirmarea din panou.
+
+„Unde crezi că ajunge?” începe cu două săgeți; poți alege trei.
+Detectivul are cazuri cu 2, 3 și 4 săgeți: schimbăm una dintre două variante.
+Începeți cu primul caz, fără punctaj sau limită de încercări.
+„Programăm” readuce aventura de unde a rămas.
+
+Povestea urmează parcursul de bază; fișa pentru perechi are două comenzi.
+Sunetul este opțional și pornește din bara de sus.
+Progresul lecțiilor și etapelor se salvează când browserul permite.
+Salvările vechi se păstrează. Programul încercării nu se salvează la închidere.
+
+Pe laptop: harta în stânga, comenzile în dreapta; meniul „Lecții” este sus.
+Pe telefon: panourile se așază unul sub altul.
+Pentru tablă: „Ecran complet” sau F11.
+Verifică atingerea, lizibilitatea, volumul și tipărirea înainte de clasă.
+
+Ghid complet: Readme.md. Taskuri viitoare: BACKLOG.md.
+PDF-urile din materiale/ rămân fișele originale pentru 5×5.

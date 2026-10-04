@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23087d81'/%3E%3Cpath d='M8 16h16M17 9l7 7-7 7' stroke='white' stroke-width='4' fill='none'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="game-screen">
 <header class="app-header">
   <a class="brand" href="#joaca"><span class="brand-icon" aria-hidden="true">🤖</span><span>Robo <b>Explorator</b></span></a>
   <nav aria-label="Activități"><button class="nav-button selected" data-view="game" aria-pressed="true">Joacă</button><button class="nav-button" data-view="story" aria-pressed="false">Povestea</button><button class="nav-button" data-view="sheet" aria-pressed="false">Fișa de explorator</button></nav>
@@ -16,32 +16,42 @@
 </header>
 <main>
  <section id="game-view" aria-label="Jocul robotului">
-  <div class="adventure-heading"><p class="eyebrow">AVENTURA CLASEI</p><span id="adventure-progress">0 din 4 misiuni</span></div>
-  <div id="mission-trail" class="mission-trail" role="group" aria-label="Misiunile aventurii"></div>
-  <div class="activity-tabs" role="group" aria-label="Alege jocul"><button id="program-mode" class="selected" aria-pressed="true">🧭 Programăm</button><button id="predict-mode" aria-pressed="false">🔎 Unde crezi că ajunge?</button></div>
-  <div class="section-title"><div><p class="eyebrow" id="activity-label">MISIUNEA 1</p><h1 id="game-title">Prima baterie</h1><p id="mission-brief" class="mission-brief">Două săgeți spre dreapta. Robo își găsește energia!</p></div><span class="pill" id="map-label">Misiunea 1 · 3×3</span></div>
+  <div class="play-toolbar"><details id="mission-picker" class="mission-picker"><summary id="adventure-heading">🗺 Lecții <span id="adventure-progress">0 din 7 misiuni</span></summary><div id="mission-trail" class="mission-trail" role="group" aria-label="Misiunile aventurii"></div></details>
+  <div class="activity-tabs" role="group" aria-label="Alege jocul"><button id="program-mode" class="selected" aria-pressed="true">🧭 Programăm</button><button id="predict-mode" aria-pressed="false">🔎 Unde crezi că ajunge?</button><button id="detective-mode" aria-pressed="false">🛠 Detectivul Robo</button></div>
+  </div>
+  <div class="section-title"><div><p class="eyebrow" id="activity-label">MISIUNEA 1</p><h1 id="game-title">Prima baterie</h1><p id="mission-brief" class="mission-brief">O săgeată mută Robo un pătrățel!</p></div><div class="map-selection"><span class="pill" id="map-label">Misiunea 1 · 3×3</span><div id="garden-options" class="garden-options" role="group" aria-label="Alege grădina" hidden><button id="garden-rows" aria-pressed="true">🌷 Flori la rând</button><button id="garden-scattered" aria-pressed="false">🌱 Flori răsfirate</button><span>Schimbarea grădinii reia încercarea.</span></div></div></div>
   <div class="game-layout">
-   <div class="map-panel"><div class="map-meta"><span>O săgeată = un pătrățel</span><span id="step-count">La start</span></div><div class="board-stage" id="board-stage"><div id="board" class="board" role="group" aria-label="Harta robotului"></div><div id="robo-token" class="robo-token" aria-hidden="true"><svg class="robo-sprite" viewBox="0 0 100 110"><path d="M50 13V5" stroke="#174653" stroke-width="5"/><circle cx="50" cy="5" r="5" fill="#ffcb50"/><path d="M20 66L11 81M80 66L89 81" stroke="#147c83" stroke-width="9" stroke-linecap="round"/><path d="M36 89V101M64 89V101" stroke="#174653" stroke-width="10" stroke-linecap="round"/><rect x="26" y="58" width="48" height="35" rx="13" fill="#fff0cf" stroke="#147c83" stroke-width="4"/><circle cx="50" cy="75" r="7" fill="#ffcb50"/><rect x="14" y="14" width="72" height="49" rx="18" fill="#21aaa7" stroke="#147c83" stroke-width="4"/><rect x="23" y="23" width="54" height="29" rx="11" fill="#effffc"/><g class="robo-eyes" fill="#174653"><circle cx="36" cy="36" r="5"/><circle cx="64" cy="36" r="5"/></g><path class="robo-mouth" d="M44 44Q50 50 56 44" fill="none" stroke="#174653" stroke-width="3" stroke-linecap="round"/></svg></div></div><div class="legend"><span>🤖 Robo</span><span>🌲 Obstacol</span><span id="key-legend" hidden>🔑 Cheie</span><span id="goal-legend">🔋 Baterie</span><span id="guess-legend" hidden>📍 Alegerea noastră</span></div></div>
+   <div class="map-panel"><div id="mission-objectives" class="mission-objectives" role="group" aria-label="Pașii misiunii" hidden><span id="key-objective">1. 🔑 Ia cheia</span><span id="chest-objective">2. 🔒 Deschide cufărul</span></div><div class="map-meta"><span>O săgeată = un pătrățel</span><span id="step-count">La start</span></div><div id="board-frame" class="board-frame"><div class="board-stage" id="board-stage"><div id="board" class="board" role="group" aria-label="Harta robotului"></div><div id="robo-token" class="robo-token" aria-hidden="true"><svg class="robo-sprite" viewBox="0 0 100 110"><path d="M50 13V5" stroke="#174653" stroke-width="5"/><circle cx="50" cy="5" r="5" fill="#ffcb50"/><path d="M20 66L11 81M80 66L89 81" stroke="#147c83" stroke-width="9" stroke-linecap="round"/><path d="M36 89V101M64 89V101" stroke="#174653" stroke-width="10" stroke-linecap="round"/><rect x="26" y="58" width="48" height="35" rx="13" fill="#fff0cf" stroke="#147c83" stroke-width="4"/><circle cx="50" cy="75" r="7" fill="#ffcb50"/><rect x="14" y="14" width="72" height="49" rx="18" fill="#21aaa7" stroke="#147c83" stroke-width="4"/><rect x="23" y="23" width="54" height="29" rx="11" fill="#effffc"/><g class="robo-eyes" fill="#174653"><circle cx="36" cy="36" r="5"/><circle cx="64" cy="36" r="5"/></g><path class="robo-mouth" d="M44 44Q50 50 56 44" fill="none" stroke="#174653" stroke-width="3" stroke-linecap="round"/></svg></div></div></div><div class="legend"><span>🤖 Robo</span><span>🌲 Obstacol</span><span id="key-legend" hidden>🔑 Cheie</span><span id="goal-legend">🔋 Baterie</span><span id="guess-legend" hidden>📍 Alegerea noastră</span></div><div id="decision-feedback" class="decision-feedback" role="status" aria-live="polite" hidden><b id="decision-question"></b><p id="decision-answer"></p><button id="check-decision" hidden>Verificăm răspunsul</button></div></div>
    <div class="program-panel">
-    <div id="mission-objectives" class="mission-objectives" role="group" aria-label="Pașii misiunii" hidden><span id="key-objective">1. 🔑 Ia cheia</span><span id="chest-objective">2. 🔒 Deschide cufărul</span></div>
     <div id="program-editor">
-    <h2>1. Alege săgețile</h2>
+    <h2 id="editor-title">1. Alege săgețile</h2>
     <div class="direction-pad" aria-label="Comenzile robotului"><button data-dir="U" aria-label="Sus"><strong>↑</strong><span>Sus</span></button><button data-dir="L" aria-label="Stânga"><strong>←</strong><span>Stânga</span></button><button data-dir="D" aria-label="Jos"><strong>↓</strong><span>Jos</span></button><button data-dir="R" aria-label="Dreapta"><strong>→</strong><span>Dreapta</span></button></div>
+    <div id="action-pad" class="action-pad" hidden><button id="activate" data-dir="A" hidden>⚙ Activează</button><button id="water" data-dir="W" hidden>💧 Udă</button><p id="action-hint"></p></div>
+    <details id="repeat-editor" class="repeat-editor" hidden><summary>🔁 Repetă ultimele 2 comenzi</summary><div class="repeat-popover"><p>Scrie două comenzi, de exemplu → și 💧 Udă. Apoi grupează-le:</p><div class="repeat-controls"><label for="repeat-count">De câte ori?</label><select id="repeat-count"><option value="2">2 ori</option><option value="3" selected>3 ori</option></select><button id="make-repeat">Repetă ultimele 2 comenzi</button></div><p id="repeat-hint" class="hint"></p></div></details>
+    <div id="recipe-editor" class="recipe-editor" hidden><b>📖 Rețeta noastră: Udă un rând</b><div id="recipe-definition" class="recipe-steps" role="group" aria-label="Definiția rețetei Udă un rând"></div><p id="recipe-description">Un nume pentru patru comenzi. Folosește rețeta la A, apoi din nou la B.</p><button id="call-recipe">📖 Udă un rând</button><span class="hint">Adaugă rețeta în program.</span></div>
+    <div id="decision-editor" class="decision-editor" hidden><button id="if-flower" data-dir="F"><b>🌱 DACĂ este o floare aici</b><span>ATUNCI 💧 Udă</span></button><p>Pe un loc gol nu udă. Poți repeta → și acest bloc.</p></div>
     </div>
-    <div id="prediction-instructions" class="prediction-instructions" hidden><h2>Privește cele 3 săgeți</h2><p>Atinge căsuța unde crezi că se oprește Robo. Apoi verificăm împreună!</p></div>
-    <div class="queue-heading"><h2 id="queue-title">2. Programul nostru</h2><span id="command-count">0 / 8</span></div>
+    <div id="prediction-instructions" class="prediction-instructions" hidden><h2 id="prediction-title">Privește cele 2 săgeți</h2><p>Atinge căsuța unde crezi că se oprește Robo. Apoi verificăm împreună!</p><label class="prediction-level" for="prediction-count">Exersăm cu <select id="prediction-count"><option value="2">2 săgeți</option><option value="3">3 săgeți</option></select></label></div>
+    <div class="queue-toolbar"><div class="queue-heading"><h2 id="queue-title">2. Programul nostru</h2><span id="command-count">0 / 8</span></div><div class="edit-actions" id="edit-actions"><button id="undo" class="quiet">Ultima înapoi</button><button id="clear" class="quiet">Șterge tot</button></div></div>
     <div id="queue" class="queue" aria-label="Comenzi în ordine"></div>
-    <p id="execution-note" class="execution-note">0 pași făcuți · 0 săgeți noi</p>
-    <p class="hint" id="queue-hint">Atinge o comandă nouă ca să o ștergi. „Pornește Robo” execută săgețile noi.</p>
-    <div class="edit-actions" id="edit-actions"><button id="undo" class="quiet">Ultima înapoi</button><button id="clear" class="quiet">Șterge tot</button></div>
-    <div class="run-actions"><button id="run" class="primary">Pornește Robo</button><button id="stop" class="quiet" hidden>Oprește</button><button id="restart" class="quiet">La start</button></div>
-    <div id="status" class="status" role="status" aria-live="polite">Alege săgețile. Robo le va urma în ordine.</div>
-    <div id="completion" class="completion" hidden><span id="completion-message"></span><button id="next-mission" class="primary">Următoarea misiune →</button></div>
+    <p id="execution-note" class="execution-note">0 pași făcuți · 0 comenzi noi</p>
+    <p class="hint" id="queue-hint">Atinge o comandă nouă ca să o ștergi. „Pornește Robo” execută comenzile noi.</p>
+    <div id="detective-tools" class="detective-tools" hidden>
+     <button id="detective-hint" class="quiet">🔎 Arată săgeata</button>
+     <div id="detective-repair" hidden><h2 id="detective-choice-title">2. Ce punem în loc?</h2><div id="detective-choices" class="detective-choices" role="group" aria-labelledby="detective-choice-title"></div></div>
+     <p class="hint">După o schimbare, Robo revine la start. Testăm din nou drumul.</p>
+    </div>
+
+    <div class="program-footer"><div class="run-actions"><button id="run" class="primary">Pornește Robo</button><button id="stop" class="quiet" hidden>Oprește</button><button id="restart" class="quiet">La start</button></div>
+    <div id="status" class="status" role="status" aria-live="polite">Alege comenzile. Robo le va urma în ordine.</div>
+    <p id="repeat-progress" class="repeat-progress" role="status" hidden></p>
+    <div id="completion" class="completion" hidden><span id="completion-message"></span><button id="practice-detective" hidden>🛠 Încercăm Detectivul</button><button id="next-mission" class="primary">Următoarea misiune →</button></div>
     <button id="next-round" class="next-round" hidden>Altă provocare →</button>
+    <div id="detective-completion" class="completion" hidden><span id="detective-completion-message"></span><button id="detective-continue" hidden>Continuăm cu un copac →</button><button id="next-case" class="primary">Următorul caz →</button></div></div>
    </div>
   </div>
   <details class="teacher-tools" id="teacher-tools"><summary>Instrumente pentru adult</summary>
-  <div class="class-tools"><button id="new-map" class="new-map">✨ Hartă nouă · joc liber</button><button id="bug-map">Găsește greșeala</button><button id="first-map">Harta originală · 5×5</button><button id="solution" class="quiet">Arată un drum</button><button id="print-game" class="quiet">Tipărește harta</button><button id="reset-adventure" class="quiet">Reia aventura de la început</button></div>
+  <div class="lesson-tools"><p><b>Ritmul clasei</b> · Prima întâlnire: săgeți, anticipare, Detectivul și un copac. Continuările sunt opționale.</p><label for="teacher-lesson">Lecția</label><select id="teacher-lesson"></select><label for="lesson-stage">Etapa (schimbarea reia încercarea)</label><select id="lesson-stage"></select><p id="lesson-observe"></p><label class="decision-timing"><input id="auto-decision" type="checkbox"> Întrebări automate după 2 secunde (implicit așteptăm adultul)</label></div><div class="class-tools"><button id="new-map" class="new-map">✨ Hartă nouă · joc liber</button><button id="bug-map">Detectivul Robo · 3 cazuri</button><button id="first-map">Harta originală · 5×5</button><button id="solution" class="quiet">Arată un drum</button><button id="print-game" class="quiet">Tipărește harta</button><button id="reset-adventure" class="quiet">Reia aventura de la început</button></div>
   <div id="reset-confirmation" class="reset-confirmation" hidden><p>Ștergem progresul clasei și revenim la prima misiune?</p><button id="confirm-reset">Da, începem din nou</button><button id="cancel-reset" class="quiet">Păstrăm progresul</button></div>
   <p class="hint">Misiunile se salvează în acest browser. Sunetul se pornește din bara de sus.</p>
   <details class="rules"><summary>Regulile fabricii de hărți</summary><ol><li>Robo și comoara ocupă locuri diferite.</li><li>Copacii nu apar peste Robo sau comoară.</li><li>Păstrăm cel puțin un drum liber.</li></ol><p>Programul alege alte poziții și verifică drumul. Aceleași reguli pot produce multe hărți.</p></details>
@@ -62,5 +72,6 @@
 </main>
 <footer><span>Școala altfel · Aventură de programare</span><span>Gândim · Încercăm · Reparăm</span></footer>
 <div id="print-area" aria-hidden="true"></div>
-<script src="game-engine.js"></script><script src="robo-audio.js"></script><script src="app.js"></script>
+<script src="game-engine.js"></script><script src="robo-audio.js"></script><script src="curriculum.js"></script>
+<script src="app.js"></script>
 </body></html>

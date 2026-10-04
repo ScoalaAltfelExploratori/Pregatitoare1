@@ -1,77 +1,99 @@
-# Robo Explorator · V1
+# Robo Explorator · V1.1
 
-Aventură de programare în română pentru clasa pregătitoare. Include patru misiuni progresive, joc de anticipare, poveste în opt scene și fișe imprimabile.
+Aventură de programare în română, offline, pentru clasa pregătitoare. Lecțiile au etape scurte, cu instrumente introduse pe rând. Primele trei lecții formează parcursul de bază; cheia, acțiunile, repetiția, decizia și rețeta sunt continuări alese în ritmul clasei.
 
-## Rulare
+## Pornire
 
-Deschide `index.html` în Chrome, Edge sau Firefox. Jocul funcționează fără internet, conturi sau instalare. Păstrează fișierele aplicației și directorul `assets/` împreună.
+Deschide `index.html` în Chrome, Edge sau Firefox. Nu sunt necesare internet, conturi sau instalare. Păstrează toate fișierele aplicației și directorul `assets/` împreună.
 
-Pentru tablă: conectează laptopul, deschide aplicația și apasă „Ecran complet” sau F11. Dacă tabla nu transmite atingerile către laptop, poți opera jocul cu mouse-ul după comenzile copiilor.
+La prima deschidere apare „O singură săgeată”: alege → și apasă „Pornește Robo”. Următoarea etapă adaugă încă o săgeată. Un browser cu progres salvat continuă aventura; adultul poate alege prima lecție din panoul său.
 
-## Prima aventură
+Pe laptop și tablă, harta este în stânga, iar comenzile și programul în dreapta. Programul lung se derulează separat; pornirea și oprirea rămân vizibile. Pe telefon, panourile se așază unul sub altul. Pentru proiecție: „Ecran complet” sau F11.
 
-1. Începe cu „Prima baterie”. Adaugă două săgeți spre dreapta, apoi apasă „Pornește Robo”.
-2. La reușită, următoarea misiune se deblochează. Apasă „Următoarea misiune” pentru a continua.
-3. Misiunile trec de la 3×3 la 4×4 și apoi la 5×5. Traseele minime au 2, 3, 4 și 12 comenzi. Orice traseu valid este acceptat.
-4. „Pornește Robo” execută numai săgețile încă nefăcute, din poziția curentă. Pașii făcuți primesc o bifă și nu se pot șterge. Adaugă următoarea bucată de drum și pornește din nou.
-5. Atinge o săgeată nouă pentru a o șterge; „Șterge cele noi” elimină doar comenzile rămase. „Oprește” păstrează pașii făcuți și permite continuarea fără repetarea lor. După o greșeală, comanda nereușită rămâne de reparat.
-6. „La start” readuce Robo la început, păstrează programul și permite editarea tuturor comenzilor. După aceea, „Șterge tot” golește programul. Schimbarea misiunii sau hărții pregătește o încercare nouă.
-7. Misiunile terminate pot fi rejucate. Progresul se păstrează în acest browser, dacă stocarea locală este disponibilă. La redeschidere apare următoarea misiune disponibilă. Mutarea pachetului sau schimbarea browserului poate însemna un progres separat.
+## Parcursul lecțiilor
 
-Limita programului este de 8 comenzi pe misiunile 3×3, 16 pe 4×4 și 32 pe 5×5 sau în jocul liber, inclusiv pașii deja făcuți. Nu trebuie completate toate locurile.
+| Lecția | Etapele introduse | Traseu introductiv |
+| --- | --- | --- |
+| 1. Prima baterie · Bază | O săgeată, apoi două identice; apare doar → | →, apoi → → |
+| 2. Floarea de pe deal · Bază | O schimbare de direcție, apoi trei săgeți; apare și ↑ | → ↑, apoi → ↑ ↑ |
+| Detectivul Robo | După lecția 2: reparăm o singură săgeată dintre două | Două săgeți, două variante |
+| 3. Ocolim copacul · Bază | Un obstacol pe 3×3, cu săgețile deja cunoscute | ↑ → → |
+| 4. Cheia și comoara · Continuare | Întâi cheia, apoi cufărul | → ↑, pauză, → ↓ |
+| 5. Podul și maneta · Continuare | O acțiune schimbă harta | ↑ ⚙, pauză, → → |
+| 6. Grădina lui Robo · Continuare | Udăm o floare, apoi recunoaștem o pereche repetată | → 💧 → |
+| 6. Grădina · Extensii | Repetiție, decizie separat, apoi combinare | Detalii mai jos |
+| 7. Rețeta lui Robo · Extensie | Un nume pentru pași cunoscuți, apoi reutilizare | 📖, apoi ↑ |
 
-## Cheia și comoara
+Prima întâlnire se poate încheia după cele trei lecții de bază. „Unde crezi că ajunge?” poate fi intercalat după primele secvențe: începe cu două săgeți pe 3×3 fără obstacole; trei săgeți sunt o alegere separată.
 
-Aventura are acum patru misiuni: „Prima baterie”, „Floarea de pe deal”, „Ocolim copacul” și „Cheia și comoara”. Am eliminat „Lumina din poiană” și am unit cele două misiuni finale într-un traseu mai lung, pe aceeași hartă 5×5.
+În „Instrumente pentru adult”, alege orice lecție și etapă fără să fie nevoie să termini parcursul. Fiecare etapă are un reper „Observăm”. Avansarea se decide după explicațiile copiilor, fără cronometru. Repetiția, decizia, rețeta și hărțile mai mari sunt opționale.
 
-- Cheia se află sus, în dreapta, iar cufărul jos, în dreapta. Un traseu complet are minimum 12 pași.
-- Robo ia cheia automat când trece prin căsuța ei. Cheia dispare de pe hartă, iar primul obiectiv devine „Cheie găsită”.
-- Dacă încearcă să intre în căsuța cufărului fără cheie, se oprește și explică faptul că trebuie găsită mai întâi cheia.
-- Misiunea se termină numai când Robo ajunge cu cheia la cufăr. Nu sunt necesare comenzi suplimentare pentru ridicare sau deschidere.
-- Poți construi drumul în două etape: → → ↑ ↑ → → ↑ ↑ până la cheie, apoi adaugi ↓ ↓ ↓ ↓ și apeși iar „Pornește Robo”. Cheia și poziția se păstrează, iar primele opt comenzi nu se repetă.
-- Oprirea, editarea comenzilor noi și revenirea din anticipare păstrează cheia. „La start” pune cheia înapoi pe hartă și pregătește întregul program pentru o nouă încercare.
-- „Arată un drum” calculează continuarea din poziția curentă, ținând cont dacă Robo are cheia. Fișa imprimată arată ambele obiective și ordinea lor.
+Hărțile vechi se păstrează ca provocări: doi copaci pe 4×4, comoara de 12 pași, podul de 9 pași și grădina cu trei flori. Harta veche cu doi copaci păstrează și copacul de la rândul 2, coloana 1. Schimbarea etapei pregătește o încercare nouă.
 
-Progresul din versiunea cu șase misiuni este adaptat automat: primele trei misiuni terminate se păstrează, iar noua finală trebuie rezolvată chiar dacă vechea aventură fusese terminată. Nu este nevoie de resetare manuală.
+## Pornirea continuă programul
 
-## Unde crezi că ajunge?
+- „Pornește Robo” execută numai comenzile încă nefăcute, din poziția curentă. Poți construi drumul în bucăți. Cheia, podul, florile și răspunsurile se păstrează.
+- Pașii făcuți sunt bifați și protejați. Atinge o comandă nouă pentru a o șterge; „Șterge cele noi” elimină numai restul programului.
+- „Oprește” păstrează pasul exact. După o greșeală, comanda nereușită rămâne de reparat.
+- „La start” readuce Robo și harta la început, păstrând programul pentru editare. „Șterge tot” îl poate goli după resetare.
+- În introducerile scurte cu cheia și maneta, Robo se oprește singur după colectare sau activare. Observați schimbarea, apoi apăsați iar „Pornește Robo”, chiar dacă restul comenzilor era deja pregătit.
+- „Arată un drum” înlocuiește comenzile noi cu o continuare validă din starea curentă.
 
-- Apasă „Unde crezi că ajunge?”. Apare o hartă nouă, de aceeași dimensiune ca misiunea curentă, și un program cu exact trei săgeți.
-- Copiii urmăresc mental comenzile și aleg o căsuță. Alegerea este marcată cu un ac. Nu se poate selecta un copac.
-- Apasă „Verificăm împreună”. Robo execută programul și arată unde s-a oprit. Răspunsul nu afectează progresul misiunilor.
-- „Altă provocare” pregătește o rundă nouă. „Programăm” restaurează harta, comenzile, pașii făcuți, poziția și cheia din activitatea anterioară. În anticipare, o verificare oprită se reia de la începutul celor trei săgeți.
-- Cu tastatura: Tab pentru focalizare, săgețile pentru deplasarea focalizării între căsuțele libere și Enter sau Spațiu pentru alegere. În modul „Programăm”, săgețile tastaturii adaugă comenzi.
+Limita este de 8 pași pe 3×3, 16 pe 4×4 și 32 pe 5×5 sau în jocul liber. Fiecare comandă dintr-o repetiție sau rețetă intră în limită. Blocul decizional numără un pas atât la DA, cât și la NU.
 
-## Animații și sunet
+## Acțiunile, repetiția și decizia
 
-Robo se deplasează lin, reacționează la obstacole și dansează scurt la reușită. Preferința sistemului pentru mișcare redusă dezactivează animațiile.
+„⚙ Activează” se execută pe manetă. Abia atunci podul coboară și permite traversarea. „💧 Udă” se execută pe floare. O acțiune în alt loc explică problema și oprește programul, păstrând pașii corecți.
 
-Sunetul este oprit la deschiderea paginii. „♫ Sunet oprit” activează efecte scurte, generate local prin Web Audio. Același buton oprește sunetul. Nu există înregistrări vocale în această versiune. Jocul rămâne utilizabil dacă browserul nu oferă audio.
+Grădina are cinci etape:
 
-## Instrumente pentru adult
+1. **Udăm o floare:** → 💧 →, fără poartă sau repetiție.
+2. **Observăm ce se repetă:** → 💧 → 💧, apoi → ↑ prin poartă. Identificăm perechea înainte să apară blocul.
+3. **Repetăm perechea — opțional:** aceeași hartă. Adaugă → și 💧, deschide „Repetă ultimele 2 comenzi”, alege 2 ori, apoi adaugă → ↑.
+4. **Verificăm: este floare? — opțional:** 3×3, fără repetiție. Încearcă 🌱? pe gol, apoi →, 🌱? pe floare și →. Observăm **NU**, apoi **DA**.
+5. **Repetăm și verificăm — opțional:** harta mai mare combină ideile exersate. Repetă de 3 ori perechea →, 🌱?, apoi adaugă → ↑. Rezultatele sunt **DA, NU, DA**; florile udate deschid poarta.
 
-Deschide panoul de sub joc pentru:
+🌱? înseamnă „DACĂ este o floare aici, ATUNCI Udă”. Pe gol, Robo nu udă și nu se deplasează; urmează comanda următoare. Pe o floare deja udată, DA nu dublează udarea.
 
-- „Hartă nouă · joc liber”: hartă 5×5 generată, cu cel puțin un drum în maximum 16 pași.
-- „Găsește greșeala”: exemplul original care întâlnește un copac la pasul 3.
-- „Harta originală · 5×5”: harta din primul pachet; o soluție este → → ↑ ↑ ↑ → → ↑.
-- „Arată un drum”: păstrează pașii făcuți și înlocuiește săgețile noi cu o continuare până la destinație.
-- „Tipărește harta”: fișă pentru harta curentă, inclusiv 3×3 și 4×4.
-- „Reia aventura de la început”: șterge progresul numai după confirmarea din panou.
+**Întrebarea așteaptă fără limită de timp.** Clasa răspunde, iar adultul apasă „Verificăm răspunsul”. În instrumentele adultului se poate activa răspunsul automat după două secunde. Oprirea înainte de răspuns anulează verificarea în așteptare; reluarea pune întrebarea din nou. Oprirea după răspuns păstrează rezultatul și efectul împreună.
 
-Jocul liber și rundele de anticipare nu deblochează misiuni. Nu se salvează nume sau date despre copii.
+Repetiția grupează exact două comenzi simple, de 2 sau 3 ori. Nu există repetiții imbricate. Programul evidențiază comanda curentă și fiecare pereche făcută. „Desfă în comenzi” permite repararea restului, inclusiv după oprirea în mijlocul unui bloc. Rezolvările fără blocuri sunt acceptate.
 
-## Povestea și fișele
+## Rețeta opțională
 
-„Povestea” păstrează cele opt scene și notițele pentru adult. Scenariul are aproximativ 32 de minute; poți intercala misiunile și rundele de anticipare în ritmul clasei. Primele scene folosesc acum harta simplă 3×3; scena detectivului păstrează exemplul 5×5.
+„📖 Udă un rând” este numele secvenței pregătite → 💧 → 💧. Prima etapă o folosește o singură dată pe 3×3, apoi Robo merge ↑ la carte.
 
-„Fișa de explorator” oferă o hartă de tipărit și roluri pentru lucru în perechi. Din scena dedicată fișei se preia harta activității de programare. „Altă hartă” generează o hartă de aceeași dimensiune.
+A doua etapă reia harta lungă: folosește rețeta la A, mergi ← ← ↑ ↑ ↑ până la B, folosește-o din nou, apoi → → la carte. Sunt 15 pași, care pot fi pregătiți în bucăți. Este o primă procedură cu nume; definiția este vizibilă și nu se editează. „Desfă în comenzi” modifică numai folosirea aleasă.
 
-Tipărire: A4, portret, scară 100%, fără anteturile și subsolurile browserului. Cele două PDF-uri din `materiale/` sunt materialele originale pentru 5×5; pachetul PDF pe niveluri este în backlog.
+## Anticiparea și Detectivul Robo
 
-## Verificări și dezvoltare
+„Unde crezi că ajunge?” oferă două săgeți, cu opțiune pentru trei. Copiii aleg o căsuță și apasă „Verificăm împreună”. „Altă provocare” pregătește o rundă nouă. Cu tastatura: Tab pentru focalizare, săgețile pentru alegerea căsuței, Enter sau Spațiu pentru confirmare.
 
-Aplicația nu are dependențe la rulare. Node.js și pachetele de mai jos sunt necesare doar pentru teste:
+Detectivul are trei cazuri 3×3, cu 2, 3 și 4 săgeți. Începe cu primul: o singură înlocuire dintre două variante mari. „Testăm drumul” arată efectul; „Arată săgeata” indică locul de reparat fără să dea răspunsul. Fără punctaj, cronometru sau limită de încercări. După o schimbare, Robo revine la start pentru a testa drumul reparat. Cazurile următoare sunt opționale.
+
+Ambele activități sunt disponibile de la început și nu schimbă progresul lecțiilor. „Programăm” restaurează aventura, inclusiv poziția, cheia, florile și pașii făcuți.
+
+## Povestea, fișele și instrumentele adultului
+
+Primele șapte scene propun aproximativ 30 de minute: un pas, secvență scurtă, anticipare, reparare, un copac, lucru în perechi și recapitulare. Scena a opta prezintă continuările pentru altă rundă. Adultul citește mesajele; copiii pot răspunde prin gesturi și indicarea săgeților.
+
+Scena de lucru în perechi deschide o fișă simplă cu două comenzi. „Tipărește harta” folosește etapa curentă: locurile pentru comenzi și instrucțiunile se adaptează lecției. Apar elementele relevante: cheie, acțiune, repetiție, decizie sau rețetă. Fișa detectivului include săgețile inițiale și cele două variante.
+
+Tipărire: A4, portret, scară 100%, fără anteturile și subsolurile browserului. PDF-urile din `materiale/` sunt materialele originale pentru 5×5; pachetul PDF pe niveluri rămâne în backlog.
+
+Instrumentele adultului includ selectorul de lecție și etapă, reperul de observare, ritmul întrebării, jocul liber cu hartă generată, harta originală, soluția din starea curentă și tipărirea. Resetarea aventurii cere confirmare în panou.
+
+Sunetul este oprit inițial și se activează din bara de sus. Efectele sunt generate local; nu există replici vocale. Animațiile respectă preferința sistemului pentru mișcare redusă.
+
+## Salvare și compatibilitate
+
+Progresul se păstrează când browserul permite stocarea locală. Finalizarea unei etape intermediare salvează etapa următoare; finalizarea lecției deblochează următoarea. Alegerea unei lecții avansate de către adult nu marchează lecțiile anterioare drept terminate. Programul încercării nu se salvează după închiderea paginii.
+
+Progresul vechi se păstrează: salvările v2/v3 continuă lecțiile, iar salvările cu opt misiuni terminate sunt limitate la cele șapte actuale. Prototipul v1 păstrează primele trei lecții. Etapele noi se salvează separat în `robo-explorator-lessons-v1`, fără resetarea progresului existent. Fără stocare, jocul funcționează în sesiunea curentă. Mutarea pachetului sau schimbarea browserului poate însemna un progres separat. Nu se salvează date despre copii.
+
+## Dezvoltare și verificare
+
+Aplicația nu are dependențe la rulare. Pentru teste:
 
 ```sh
 npm ci
@@ -79,26 +101,18 @@ npm run check
 npm test
 ```
 
-Suita include:
+Suita acoperă etapele și provocările, disponibilitatea comenzilor, progresul, migrarea, cheia, acțiunile, repetițiile, rețeta, anticiparea și detectivul. Verifică oprirea/reluarea în jurul executării comenzilor, răspunsurile DA/NU, așteptarea adultului, anularea întrebărilor la schimbarea activității, fișele și revenirea la program. Sunt verificate mii de hărți și runde generate.
 
-- Cele patru misiuni, deblocare, rejucare, salvare și stocare indisponibilă.
-- Cheie obligatorie înainte de cufăr, revenirea prin aceleași căsuțe după colectare și migrarea progresului vechi.
-- 3.000 de hărți generate și 1.500 de runde de anticipare.
-- Continuarea în două porniri, oprire în 15 momente din rulare, apăsări repetate și trecerea paginii în fundal.
-- Editarea protejează pașii făcuți; anticiparea restaurează poziția și cheia; soluția și instrumentul WebMCP respectă istoricul executat.
-- Răspunsuri corecte și greșite, limite de comenzi, detectiv, fișe și resetare.
-- Inițializare audio la cerere, dezactivare și lipsa suportului audio.
+Interfața se verifică în browser pe desktop și telefon. Browserul de testare acceptă numai HTTP/HTTPS, deci deschiderea directă prin `file://` nu a fost verificată automat. Atingerea, lizibilitatea de la distanță, volumul și tipărirea se verifică pe echipamentul clasei.
 
-Verificarea în browser a V1 acoperă misiuni, anticipare prin tastatură, salvare după reîncărcare, oprire, comutarea sunetului și afișarea la dimensiuni de desktop și telefon. Browserul de testare acceptă numai HTTP/HTTPS, deci deschiderea directă prin `file://` nu a putut fi verificată automat. Testarea atingerii, a volumului și a imprimantei pe echipamentul real al clasei rămâne necesară.
+Fișiere principale:
 
-## Fișiere
-
-- `index.html`, `style.css`, `app.js`: interfața și activitățile.
-- `game-engine.js`: mișcare, căutarea drumului, generare și misiuni.
+- `index.html`, `style.css`, `app.js`: interfața, povestea și activitățile.
+- `curriculum.js`: lecțiile, etapele, provocările și reperele pentru adult.
+- `game-engine.js`: mișcarea, regulile, rezolvarea și generarea hărților.
 - `robo-audio.js`: efecte audio offline.
-- `tests/`: teste pentru motor, interfață și sunet.
-- `BACKLOG.md`: taskuri și criterii de acceptare pentru versiunile următoare.
-- `assets/robot-treasure-island.png`: ilustrația originală.
-- `materiale/`: storyboard și fișe PDF originale.
+- `tests/`: teste pentru motor, curriculum, interfață și sunet.
+- `BACKLOG.md`: implementări și taskuri viitoare.
+- `assets/`, `materiale/`: ilustrația și materialele originale.
 
-Ilustrația originală a fost generată din descrierea unui robot explorator turcoaz și crem, cu hartă, pe o insulă luminoasă lângă un cufăr auriu. Robotul animat din joc este desenat local în SVG.
+Robotul animat este desenat local în SVG. Ilustrația originală a fost generată din descrierea unui robot explorator turcoaz și crem, pe o insulă luminoasă lângă un cufăr auriu.
