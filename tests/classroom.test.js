@@ -5,15 +5,20 @@ const C=require('../curriculum');
 const P=require('../adventures');
 const E=require('../game-engine');
 
-test('classroom plan totals 90 minutes including a movement break, with complex loops optional',()=>{
- const core=T.activities.filter(a=>a.minutes);
- assert.equal(core.length,12);
- assert.equal(core.reduce((sum,a)=>sum+a.minutes,0),90);
+test('classroom lessons include the gardens in order and omit removed activities',()=>{
+ assert.deepEqual(T.activities.map(a=>a.id),Array.from({length:16},(_,i)=>String(i+1)));
  assert.equal(T.find('8').variants[0].type,'break');
  assert.equal(T.find('7').variants[0].index,4);
- assert.equal(T.find('loops').minutes,undefined);
- assert.equal(T.find('recipe').minutes,undefined);
- for(const a of core)for(const v of a.variants){if(v.type==='curriculum')assert.equal(Boolean(C.get(v.index,v.stage).allowRepeat),false);}
+ const stages=T.activities.flatMap(a=>a.variants.filter(v=>v.type==='curriculum').map(v=>v.stage));
+ for(const [first,next] of [['water','pattern'],['pattern','repeat'],['repeat','one-row'],['one-row','two-rows'],['decision','combine']])assert.ok(stages.indexOf(first)<stages.indexOf(next));
+ assert.equal(T.find('13').variants[0].stage,'one-row');
+ const garden=C.get(T.find('14').variants[0].index,T.find('14').variants[0].stage);
+ assert.deepEqual(garden.rowStarts.map(row=>row.name),['A','B','C']);
+ assert.equal(garden.flowers.length,6);assert.equal(garden.size,5);
+ for(const a of T.activities){
+  assert.equal(a.minutes,undefined);
+  for(const v of a.variants){assert.ok(!['story','sheet','free','original'].includes(v.type));assert.notEqual(v.pack,'energy');}
+ }
 });
 
 test('every classroom map points at an existing solvable activity and all curriculum stages are accessible',()=>{

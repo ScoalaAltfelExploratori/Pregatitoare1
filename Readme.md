@@ -1,14 +1,14 @@
-# Robo Explorator · V1.3
+# Robo Explorator · V1.4
 
-Aventură de programare în română, offline, pentru clasa pregătitoare. Modul „La clasă” propune o sesiune interactivă de 90 de minute pe tabla digitală. Modul „Acasă” oferă șase provocări variate și diploma, exclusiv pentru continuarea cu părinții.
+Aventură de programare în română, offline, pentru clasa pregătitoare. La clasă, copiii aleg pe rând săgețile și urmăresc drumul pe tabla digitală. Modul „Acasă” oferă șase provocări variate și diploma, exclusiv pentru continuarea cu părinții.
 
 ## Pornire
 
 Deschide `index.html` în Chrome, Edge sau Firefox. Nu sunt necesare internet, conturi sau instalare. Păstrează toate fișierele aplicației și directorul `assets/` împreună.
 
-Linkul de clasă fără parametri începe mereu la prima activitate, indiferent de progresul vechi. Selectorul de sus permite deschiderea oricărei lecții și variante. Adresa se actualizează, de exemplu `?lesson=7` pentru pod sau `?lesson=9&variant=2` pentru energia pe 5×5. Reîncărcarea reface lecția și varianta de la start, chiar fără localStorage; nu reface programul încercării întrerupte.
+Linkul de clasă fără parametri începe mereu la prima activitate, indiferent de progresul vechi. Selectorul de sus permite deschiderea oricărei lecții și variante. Adresa se actualizează, de exemplu `?lesson=7` pentru pod sau `?lesson=14` pentru grădina cu rândurile A, B și C. Reîncărcarea reface lecția și varianta de la start, chiar fără localStorage; nu reface programul încercării întrerupte.
 
-Pe laptop și tablă, harta este în stânga, iar comenzile și programul în dreapta. Sus sunt permanent selectorul lecției, varianta, Înapoi/Înainte, Detectivul Robo și Plan · 90 min. Sunetul, ecranul complet și instrumentele detaliate rămân în „Pentru adult”. Pe telefon, panourile se așază unul sub altul. Pentru proiecție: „Ecran complet” din meniul adultului sau F11.
+Pe laptop și tablă, harta este în stânga, iar comenzile și programul în dreapta. Sus sunt permanent selectorul lecției, varianta, Înapoi/Înainte, Detectivul Robo și Toate lecțiile. Sunetul, ecranul complet și instrumentele detaliate rămân în „Pentru adult”. Pe telefon, panourile se așază unul sub altul. Pentru proiecție: „Ecran complet” din meniul adultului sau F11.
 
 Cele patru direcții ↑ ← ↓ → sunt vizibile și disponibile încă din prima etapă. Rămân vizibile în timpul rulării și după reușită; sunt dezactivate cât Robo execută programul. În timpul rulării se retrag doar controalele acțiunilor și blocurilor. Săgeata activă rămâne evidențiată pe durata deplasării. „Oprește” permite din nou editarea. Programul lung se derulează separat. Întrebarea DA/NU apare lângă program și păstrează harta mare; în acel moment înlocuiește mesajul obișnuit. După reușită rămân drumul făcut și continuarea aleasă explicit.
 
@@ -16,34 +16,36 @@ Deschiderea meniului „Pentru adult” oprește rularea, inclusiv o întrebare 
 
 ## Parcursul lecțiilor
 
-### Sesiunea de 90 de minute
+### Lecțiile pentru clasă
 
-Un copil lucrează la laptop, restul clasei anticipează și explică. Schimbăm copilul după o încercare sau o etapă. „Alt copil” pregătește aceeași provocare cu program gol; „La start” păstrează programul pentru retestare.
+Toate lecțiile se pot alege din bara de sus sau din „Toate lecțiile”. Nu au timpi impuși și nu trebuie terminate într-o singură întâlnire.
 
-În „Plan · 90 min” → „Cum prezint la nivelul lor?” găsești o introducere și rutina **Arătăm → Alegem → Testăm**. Toată clasa arată direcția, un copil pune una sau două săgeți, altul anticipează, apoi verificăm și reparăm împreună. Pe hărțile mari construim drumul în bucăți. Intercalăm mici pauze de mișcare; cele 12 activități sunt un meniu flexibil, nu o listă obligatorie. Folosim mai întâi „pas”, „săgeată” și „drum”, apoi numim șirul „program”.
+1. Facem cunoștință cu Robo
+2. Săgețile în ordine
+3. Unde ajunge Robo?
+4. Detectivul Robo
+5. Ocolim copacul
+6. Cheia, apoi comoara
+7. Coborâm podul
+8. Noi suntem roboții!
+9. Două drumuri spre casă
+10. Udăm o floare
+11. Pași care se repetă
+12. Mai multe flori
+13. Udă un rând
+14. Rândurile A, B și C
+15. Dacă este o floare
+16. Drumul spre casă
 
-„Pentru adult” arată acum o întrebare orală pentru lecția curentă, adaptată și variantelor de energie, comparație și decizie. Nu este necesar ca elevii să citească: adultul pune întrebarea, iar copiii pot răspunde prin gesturi. Destinațiile și cheia se dimensionează după celule; bara de sus este mai compactă, iar selectorul variantei dispare când există o singură variantă.
+Un copil alege una sau două comenzi, ceilalți spun unde cred că va ajunge Robo. Testăm și schimbăm copilul. „Alt copil” golește programul pentru aceeași hartă; „La start” îl păstrează pentru o nouă încercare. Pe hărțile mari, construim drumul în bucăți.
 
-| Minute | Activitate |
-| --- | --- |
-| 0–7 | 1. Facem cunoștință cu Robo: o săgeată, apoi două |
-| 7–14 | 2. Săgețile în ordine |
-| 14–20 | 3. Unde ajunge Robo? |
-| 20–28 | 4. Detectivul Robo |
-| 28–35 | 5. Ocolim copacul |
-| 35–43 | 6. Cheia, apoi comoara |
-| 43–51 | 7. Coborâm podul |
-| 51–56 | 8. Pauză de mișcare: noi suntem roboții |
-| 56–66 | 9. Energia: observăm bateria, apoi încercăm stația pe 5×5 |
-| 66–73 | 10. Comparăm două drumuri; alternativ, săgeata lipsă sau steaua |
-| 73–81 | 11. Îngrijim o floare; condiția DACĂ rămâne o variantă opțională |
-| 81–90 | 12. Misiunea echipei cu toate direcțiile, inclusiv 3 minute de recapitulare |
+În „Pentru adult” găsești o întrebare scurtă pentru lecția curentă. Copiii pot răspunde prin gesturi. Cele patru săgeți rămân vizibile de la început; destinațiile și cheia se dimensionează după celule.
 
-Timpii sunt orientativi, fără cronometru. Nu trebuie parcurse toate variantele. Planul oferă indicații de participare și deschide fiecare activitate direct. Extensiile din același selector includ repetiția simplă, grădinile, rețeta, povestea ilustrată, fișa și fabrica de hărți. Activitățile clasei nu acordă progres pentru aventura de acasă sau diplome. Selectarea altei lecții oprește sigur rularea curentă și pregătește o încercare nouă.
+Energia nu mai apare în lecțiile clasei; rămâne în aventura de acasă. Povestea ilustrată, fișa și fabrica de hărți au fost scoase din aplicație. „Udă un rând” și grădina A/B/C sunt acum lecții consecutive, accesibile direct. Lecțiile clasei nu acordă progres sau diplomă pentru acasă.
 
 ### Aventurile de acasă
 
-Butonul **„Acasă”** deschide un parcurs separat. Pentru părinți, folosește linkul cu `?adventure=home`; acesta arată pagina de început a aventurii, indiferent de progresul clasei. Linkul complet este disponibil în planul clasei și în „Pentru părinte”. Din folderul offline, deschide `index.html` și apasă același buton.
+Butonul **„Acasă”** deschide un parcurs separat. Pentru părinți, folosește linkul cu `?adventure=home`; acesta arată pagina de început a aventurii, indiferent de progresul clasei. Linkul complet este disponibil în „Toate lecțiile” și în „Pentru părinte”. Din folderul offline, deschide `index.html` și apasă același buton.
 
 Cele șase misiuni sunt: schimbarea direcției, săgeata lipsă, cheia, podul, reîncărcarea pe 5×5 și vizitarea unei stele înainte de căsuță. Celelalte hărți au 3×3 celule. La cheie și la activarea podului există o pauză de observație. Prenumele este cerut opțional înainte de începere și apare pe diplomă; poate fi omis sau corectat la final. Următoarea misiune se deblochează după reușită; hărțile terminate se pot rejuca. Nu există note, cronometru sau limită de încercări. Ajutorul adultului nu împiedică obținerea diplomei.
 
@@ -63,7 +65,7 @@ Aceste activități nu condiționează diploma. Lecțiile și grădinile existen
 
 ### Biblioteca etapelor individuale
 
-Biblioteca originală cu șapte categorii rămâne în instrumentele adultului. Numerotarea ei este separată de cele 12 activități din planul de 90 de minute; variantele și provocările sunt accesibile și din bara principală.
+Biblioteca originală cu șapte categorii rămâne în instrumentele adultului. Numerotarea ei este separată de lecțiile din bara de sus; variantele și provocările sunt accesibile și din bara principală.
 
 | Lecția | Etapele introduse | Traseu introductiv |
 | --- | --- | --- |
@@ -94,7 +96,7 @@ După ocolul 3×3 se pot alege două poteci 5×5: „Toate cele patru săgeți�
 - În introducerile scurte cu cheia și maneta, Robo se oprește singur după colectare sau activare. Observați schimbarea, apoi apăsați iar „Pornește Robo”, chiar dacă restul comenzilor era deja pregătit.
 - „Arată un drum” înlocuiește comenzile noi cu o continuare validă din starea curentă.
 
-La clasă, limita este de 8 pași pe 3×3, 16 pe 4×4 și 32 pe 5×5. Jocul liber și aventurile de acasă permit 32 de pași. Fiecare comandă dintr-o repetiție sau rețetă intră în limită. Blocul decizional numără un pas atât la DA, cât și la NU.
+La clasă, limita este de 8 pași pe 3×3, 16 pe 4×4 și 32 pe 5×5. Aventurile de acasă permit 32 de pași. Fiecare comandă dintr-o repetiție sau rețetă intră în limită. Blocul decizional numără un pas atât la DA, cât și la NU.
 
 ## Acțiunile, repetiția și decizia
 
@@ -128,15 +130,9 @@ Detectivul are trei cazuri 3×3, cu 2, 3 și 4 săgeți. Începe cu primul: o si
 
 Ambele activități sunt disponibile de la început și nu schimbă progresul lecțiilor. „Programăm” restaurează aventura, inclusiv poziția, cheia, florile și pașii făcuți.
 
-## Povestea, fișele și instrumentele adultului
+## Opțiunile adultului
 
-Primele șapte scene propun aproximativ 30 de minute: un pas, secvență scurtă, anticipare, reparare, un copac, lucru în perechi și recapitulare. Scena a opta prezintă continuările pentru altă rundă. Adultul citește mesajele; copiii pot răspunde prin gesturi și indicarea săgeților.
-
-Scena de lucru în perechi deschide o fișă simplă cu două comenzi. „Tipărește harta” folosește etapa curentă: locurile pentru comenzi și instrucțiunile se adaptează lecției. Apar elementele relevante: cheie, acțiune, repetiție, decizie sau rețetă. Fișa detectivului include săgețile inițiale și cele două variante.
-
-Tipărire: A4, portret, scară 100%, fără anteturile și subsolurile browserului. PDF-urile din `materiale/` sunt materialele originale pentru 5×5; pachetul PDF pe niveluri rămâne în backlog.
-
-Instrumentele adultului includ selectorul de lecție și etapă, reperul de observare, ritmul întrebării, jocul liber cu hartă generată, harta originală, soluția din starea curentă și tipărirea. Resetarea aventurii cere confirmare în panou.
+În „Pentru adult” poți porni sunetul, deschide ecranul complet, cere un drum din poziția curentă sau alege o etapă din biblioteca hărților. Aici se poate activa și verificarea automată a întrebării despre floare. Resetarea progresului clasei cere confirmare în panou.
 
 Sunetul este oprit inițial și se activează din „Pentru adult”. Efectele sunt generate local; nu există replici vocale. Animațiile respectă preferința sistemului pentru mișcare redusă.
 
@@ -162,13 +158,13 @@ npm run check
 npm test
 ```
 
-Suita acoperă etapele și provocările, disponibilitatea comenzilor, progresul, migrarea, cheia, acțiunile, repetițiile, rețeta, anticiparea și detectivul. Verifică oprirea/reluarea în jurul executării comenzilor, răspunsurile DA/NU, așteptarea adultului, anularea întrebărilor la schimbarea activității, fișele și revenirea la program. Sunt verificate mii de hărți și runde generate.
+Suita acoperă etapele și provocările, disponibilitatea comenzilor, progresul, migrarea, cheia, acțiunile, repetițiile, rețeta, anticiparea și detectivul. Verifică oprirea/reluarea în jurul executării comenzilor, răspunsurile DA/NU, așteptarea adultului, anularea întrebărilor la schimbarea activității, revenirea la program și ordinea lecțiilor. Sunt verificate mii de hărți și runde generate.
 
-Interfața se verifică în browser pe desktop și telefon. Browserul de testare acceptă numai HTTP/HTTPS, deci deschiderea directă prin `file://` nu a fost verificată automat. Atingerea, lizibilitatea de la distanță, volumul și tipărirea se verifică pe echipamentul clasei.
+Interfața se verifică în browser pe desktop și telefon. Browserul de testare acceptă numai HTTP/HTTPS, deci deschiderea directă prin `file://` nu a fost verificată automat. Atingerea, lizibilitatea de la distanță, volumul se verifică pe echipamentul clasei.
 
 Fișiere principale:
 
-- `index.html`, `style.css`, `app.js`: interfața, povestea și activitățile.
+- `index.html`, `style.css`, `app.js`: interfața și activitățile.
 - `curriculum.js`: lecțiile, etapele, provocările și reperele pentru adult.
 - `adventures.js`: cele șase misiuni pentru acasă și aventurile opționale.
 - `diploma.js`: previzualizarea și generarea PDF în browser, fără salvarea numelui.

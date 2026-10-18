@@ -10,37 +10,37 @@
  const extras=l=>l.challenges||(l.challenge?[l.challenge]:[]);
  const lessons=[
   {group:'Bază',stages:[
-   {id:'one',name:'O singură săgeată',brief:'Alege →. Pornește și observă: o săgeată mută Robo un pătrățel.',observe:'Copilul arată căsuța în care va ajunge Robo după o săgeată.',changes:{goal:[1,2]}},
-   {id:'two',name:'Două săgeți',brief:'Arată drumul cu degetul. Punem două săgeți, apoi pornim.',observe:'Copilul leagă două săgeți de două deplasări.',changes:{}}
+   {id:'one',name:'O singură săgeată',brief:'Alege →. Pornește și observă: o săgeată mută Robo un pătrățel.',observe:'Unde ajunge Robo după un pas?',changes:{goal:[1,2]}},
+   {id:'two',name:'Două săgeți',brief:'Arată drumul cu degetul. Punem două săgeți, apoi pornim.',observe:'Două săgeți înseamnă doi pași. Îi numărăm împreună.',changes:{}}
   ]},
   {group:'Bază',stages:[
-   {id:'bend',name:'Schimbăm direcția',brief:'Întâi →, apoi ↑. Unde ajunge Robo? Arătăm înainte să pornim.',observe:'Copilul urmărește în ordine două direcții pe ecran; Robo nu se rotește.',changes:{goal:[1,1]}},
-   {id:'three',name:'Trei săgeți',brief:'Arătăm drumul până la căsuță. Alegem trei săgeți, apoi verificăm.',observe:'Copilul poate arăta unde se oprește Robo după primele două săgeți.',changes:{}}
+   {id:'bend',name:'Schimbăm direcția',brief:'Întâi →, apoi ↑. Unde ajunge Robo? Arătăm înainte să pornim.',observe:'Săgețile arată direcțiile de pe ecran. Robo nu trebuie întors.',changes:{goal:[1,1]}},
+   {id:'three',name:'Trei săgeți',brief:'Arătăm drumul până la căsuță. Alegem trei săgeți, apoi verificăm.',observe:'Unde este Robo după primele două săgeți?',changes:{}}
   ]},
   {group:'Bază',stages:[
-   {id:'one-tree',name:'Un singur copac',suggested:'four-directions',brief:'Copacul blochează drumul. Îl ocolim cu săgețile pe care le știm.',observe:'Copilul explică de ce nu putem merge prin copac și arată un ocol.',changes:{size:3,start:[0,2],goal:[2,1],obstacles:['1,2']}}
+   {id:'one-tree',name:'Un singur copac',suggested:'four-directions',brief:'Copacul blochează drumul. Îl ocolim cu săgețile pe care le știm.',observe:'Copacul ne stă în cale. Arătăm un drum pe lângă el.',changes:{size:3,start:[0,2],goal:[2,1],obstacles:['1,2']}}
   ],challenges:[
-   {id:'challenge',name:'Provocare: doi copaci',observe:'Încercăm harta mai mare numai după ce copilul poate explica ocolul.'},
-   {id:'four-directions',name:'5×5: toate cele patru săgeți',suggested:'spiral',brief:'Ocolim pădurea până la căsuță. Avem nevoie de →, ↑, ← și ↓. Construim drumul în bucăți.',observe:'Copilul urmărește toate cele patru direcții; poate opri și continua din aceeași căsuță.',changes:{...corridor(['R','U','U','L','U','U','R','R','R','R','D','D']),goalIcon:'🏡',goalName:'căsuță'}},
-   {id:'spiral',name:'5×5: comoara din mijloc',brief:'Comoara este în mijloc. Urmărim poteca în jurul copacilor și folosim toate săgețile.',observe:'Copilul planifică pe rând fiecare porțiune, inclusiv întoarcerea spre stânga și coborârea.',changes:{...corridor(['R','R','R','R','U','U','U','U','L','L','L','L','D','D','R','R']),goalIcon:'💎',goalName:'comoară'}}
+   {id:'challenge',name:'Provocare: doi copaci',observe:'Sunt doi copaci de ocolit. Încercăm drumul pe bucăți.'},
+   {id:'four-directions',name:'5×5: toate cele patru săgeți',suggested:'spiral',brief:'Ocolim pădurea până la căsuță. Avem nevoie de →, ↑, ← și ↓. Construim drumul în bucăți.',observe:'Putem opri și continua din locul unde am ajuns.',changes:{...corridor(['R','U','U','L','U','U','R','R','R','R','D','D']),goalIcon:'🏡',goalName:'căsuță'}},
+   {id:'spiral',name:'5×5: comoara din mijloc',brief:'Comoara este în mijloc. Urmărim poteca în jurul copacilor și folosim toate săgețile.',observe:'Urmărim poteca până în mijloc. Ce săgeată urmează?',changes:{...corridor(['R','R','R','R','U','U','U','U','L','L','L','L','D','D','R','R']),goalIcon:'💎',goalName:'comoară'}}
   ]},
   {group:'Continuare',stages:[
-   {id:'nearby',name:'Cheia este aproape',brief:'Mergem → ↑ până la cheie. Ne oprim să observăm, apoi continuăm → ↓ la cufăr.',observe:'Copilul spune ce luăm întâi și observă că a doua pornire păstrează cheia.',changes:{size:3,start:[0,2],keyPosition:[1,1],goal:[2,2],obstacles:[],pauseAfterKey:true}}
-  ],challenge:{id:'challenge',name:'Provocare: comoara îndepărtată',observe:'Construim traseul lung în bucăți; nu cerem memorarea celor 12 pași.'}},
+   {id:'nearby',name:'Cheia este aproape',brief:'Mergem → ↑ până la cheie. Ne oprim să observăm, apoi continuăm → ↓ la cufăr.',observe:'Avem cheia. Putem continua de aici, fără să reluăm drumul.',changes:{size:3,start:[0,2],keyPosition:[1,1],goal:[2,2],obstacles:[],pauseAfterKey:true}}
+  ],challenge:{id:'challenge',name:'Provocare: comoara îndepărtată',observe:'Mergem întâi până la cheie, apoi adăugăm drumul spre comoară.'}},
   {group:'Continuare',stages:[
-   {id:'nearby',name:'O acțiune schimbă harta',brief:'Mergem ↑ pe manetă și alegem ⚙ Activează. Observăm podul, apoi trecem → →.',observe:'Copilul deosebește deplasarea de acțiune: maneta funcționează când executăm ⚙.',changes:{size:3,start:[0,2],goal:[2,1],obstacles:[],lever:[0,1],bridge:[1,1],water:['1,0','1,1','1,2'],pauseAfterAction:true}}
-  ],challenge:{id:'challenge',name:'Provocare: podul îndepărtat',observe:'Copilul planifică drumul până la manetă și apoi traversarea.'}},
+   {id:'nearby',name:'O acțiune schimbă harta',brief:'Mergem ↑ pe manetă și alegem ⚙ Activează. Observăm podul, apoi trecem → →.',observe:'Ajungem pe manetă, apoi folosim Activează. Ce se schimbă?',changes:{size:3,start:[0,2],goal:[2,1],obstacles:[],lever:[0,1],bridge:[1,1],water:['1,0','1,1','1,2'],pauseAfterAction:true}}
+  ],challenge:{id:'challenge',name:'Provocare: podul îndepărtat',observe:'Întâi maneta, apoi podul. Construim cele două drumuri pe rând.'}},
   {group:'Continuare',stages:[
-   {id:'water',name:'Udăm o floare',brief:'Mergem → pe floare, alegem 💧 Udă, apoi → spre căsuță.',observe:'Copilul observă că săgeata mută Robo, iar Udă schimbă floarea.',changes:{size:3,start:[0,2],goal:[2,2],obstacles:[],flowers:['1,2'],gate:null,allowRepeat:false,gardenStyle:null}},
-   {id:'pattern',name:'Observăm ce se repetă',brief:'Udăm două flori cu → 💧 → 💧. Ce pereche apare de două ori? Apoi → ↑ prin poartă.',observe:'Copilul identifică perechea →, Udă înainte să îi arătăm blocul de repetiție.',changes:{size:4,start:[0,2],goal:[3,1],obstacles:['0,1','1,1','2,1'],flowers:['1,2','2,2'],gate:[3,2],allowRepeat:false,gardenStyle:null}},
-   {id:'repeat',name:'Repetăm perechea',extension:true,brief:'Aceeași grădină. Grupăm → și 💧 Udă de 2 ori; adăugăm → ↑.',observe:'Copilul poate desfășura oral repetiția în →, Udă, →, Udă.',changes:{size:4,start:[0,2],goal:[3,1],obstacles:['0,1','1,1','2,1'],flowers:['1,2','2,2'],gate:[3,2],allowRepeat:true,repeatCount:2,gardenStyle:null}},
-   {id:'decision',name:'Verificăm: este floare?',extension:true,brief:'Încercăm 🌱? pe locul gol. Apoi →, 🌱? pe floare și → la căsuță. Spunem NU sau DA.',observe:'Copilul explică DA pe floare și NU pe gol. Adultul apasă Verificăm când clasa este pregătită.',changes:{size:3,start:[0,2],goal:[2,2],obstacles:[],flowers:['1,2'],gate:null,actions:['F'],allowDecision:true,allowRepeat:false,gardenStyle:null}},
-   {id:'combine',name:'Repetăm și verificăm',extension:true,scattered:true,brief:'Acum combinăm: repetăm de 3 ori → și 🌱?. Vedem DA, NU, DA; apoi → ↑ prin poartă.',observe:'Copilul anticipează ce face aceeași regulă pe floare și pe locul gol.',changes:{gardenStyle:null,repeatCount:3}}
-  ],challenge:{id:'challenge',name:'Provocare: trei flori la rând',observe:'Putem relua modelul cunoscut cu trei repetări.'}},
+   {id:'water',name:'Udăm o floare',brief:'Mergem → pe floare, alegem 💧 Udă, apoi → spre căsuță.',observe:'Săgeata îl mută pe Robo. Udă îi dă apă florii.',changes:{size:3,start:[0,2],goal:[2,2],obstacles:[],flowers:['1,2'],gate:null,allowRepeat:false,gardenStyle:null}},
+   {id:'pattern',name:'Observăm ce se repetă',brief:'Udăm două flori cu → 💧 → 💧. Ce pereche apare de două ori? Apoi → ↑ prin poartă.',observe:'Ce două comenzi am folosit de două ori?',changes:{size:4,start:[0,2],goal:[3,1],obstacles:['0,1','1,1','2,1'],flowers:['1,2','2,2'],gate:[3,2],allowRepeat:false,gardenStyle:null}},
+   {id:'repeat',name:'Repetăm perechea',extension:true,brief:'Aceeași grădină. Grupăm → și 💧 Udă de 2 ori; adăugăm → ↑.',observe:'Spunem pe rând ce va face Robo: mergem, udăm, mergem, udăm.',changes:{size:4,start:[0,2],goal:[3,1],obstacles:['0,1','1,1','2,1'],flowers:['1,2','2,2'],gate:[3,2],allowRepeat:true,repeatCount:2,gardenStyle:null}},
+   {id:'decision',name:'Verificăm: este floare?',extension:true,brief:'Încercăm 🌱? pe locul gol. Apoi →, 🌱? pe floare și → la căsuță. Spunem NU sau DA.',observe:'Spunem DA sau NU, apoi apăsăm Verificăm răspunsul.',changes:{size:3,start:[0,2],goal:[2,2],obstacles:[],flowers:['1,2'],gate:null,actions:['F'],allowDecision:true,allowRepeat:false,gardenStyle:null}},
+   {id:'combine',name:'Repetăm și verificăm',extension:true,scattered:true,brief:'Acum combinăm: repetăm de 3 ori → și 🌱?. Vedem DA, NU, DA; apoi → ↑ prin poartă.',observe:'Ce face Robo pe floare? Dar pe locul gol?',changes:{gardenStyle:null,repeatCount:3}}
+  ],challenge:{id:'challenge',name:'Provocare: trei flori la rând',observe:'Sunt trei flori. De câte ori repetăm cele două comenzi?'}},
   {group:'Extensie',stages:[
-   {id:'one-row',name:'Un nume pentru pași cunoscuți',brief:'Rețeta „Udă un rând” înseamnă → 💧 → 💧. O folosim o dată, apoi ↑ la căsuță.',observe:'Copilul arată cele patru comenzi ascunse în numele rețetei.',changes:{size:3,start:[0,2],goal:[2,1],obstacles:[],flowers:['1,2','2,2'],gate:null,rowStarts:[{position:[0,2],name:'A'}]}},
-   {id:'two-rows',name:'5×5: trei rânduri, aceeași rețetă',brief:'Udăm rândul A. Mergem ← ← ↑ ↑ la B și refolosim rețeta. Repetăm drumul la C și udăm și acolo. La final → → la căsuță.',observe:'Copilul folosește aceeași rețetă de trei ori, recunoaște rândurile A, B, C și separă udarea de drumul dintre ele.',changes:{size:5,start:[0,4],goal:[4,0],obstacles:['1,3','2,3','3,3','4,3','1,1','2,1','3,1','4,1'],flowers:['1,4','2,4','1,2','2,2','1,0','2,0'],gate:[3,0],rowStarts:[{position:[0,4],name:'A'},{position:[0,2],name:'B'},{position:[0,0],name:'C'}]}}
-  ],challenge:{id:'classic-two-rows',name:'Provocare: două rânduri îndepărtate',observe:'Putem relua traseul anterior cu două folosiri ale rețetei și patru flori.'}}
+   {id:'one-row',name:'Udă un rând',brief:'Rețeta „Udă un rând” înseamnă → 💧 → 💧. O folosim o dată, apoi ↑ la căsuță.',observe:'Butonul Udă un rând adaugă patru comenzi. Le citim de la stânga la dreapta.',changes:{size:3,start:[0,2],goal:[2,1],obstacles:[],flowers:['1,2','2,2'],gate:null,rowStarts:[{position:[0,2],name:'A'}]}},
+   {id:'two-rows',name:'Rândurile A, B și C · 5×5',brief:'Udăm rândul A. Mergem ← ← ↑ ↑ la B și refolosim rețeta. Repetăm drumul la C și udăm și acolo. La final → → la căsuță.',observe:'La fiecare literă folosim Udă un rând. Între rânduri, alegem săgețile.',changes:{size:5,start:[0,4],goal:[4,0],obstacles:['1,3','2,3','3,3','4,3','1,1','2,1','3,1','4,1'],flowers:['1,4','2,4','1,2','2,2','1,0','2,0'],gate:[3,0],rowStarts:[{position:[0,4],name:'A'},{position:[0,2],name:'B'},{position:[0,0],name:'C'}]}}
+  ],challenge:{id:'classic-two-rows',name:'Provocare: două rânduri îndepărtate',observe:'Aceeași rețetă, în două locuri diferite.'}}
  ];
  function choices(index){const l=lessons[index];if(!l)throw Error('Lecție necunoscută.');return [...l.stages,...extras(l)].map(s=>({id:s.id,name:s.name,extension:!!s.extension,challenge:!l.stages.includes(s)}));}
  function get(index,stageId){

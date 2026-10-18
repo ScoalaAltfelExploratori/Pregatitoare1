@@ -403,7 +403,7 @@
 .class-navigation{display:flex;gap:5px}.class-navigation button{min-width:44px}
 .classroom-toolbar button[aria-pressed=true]{background:#cce8e4;border-color:#147c83}
 .class-plan-page{max-width:1050px;margin:10px auto 40px}.class-plan-page>p{margin:16px 0}.class-plan-page>h2{margin:30px 0 16px}
-.class-plan-list{display:grid;gap:10px;margin:24px 0}.class-plan-list>button{display:grid;grid-template-columns:95px 44px minmax(0,1fr) 20px;align-items:center;text-align:left;gap:14px;padding:18px;background:#fff}
+.class-plan-list{display:grid;gap:10px;margin:24px 0}.class-plan-list>button{display:grid;grid-template-columns:46px minmax(0,1fr) 20px;align-items:center;text-align:left;gap:14px;padding:18px;background:#fff}
 .plan-time{font-size:15px;color:#526977}.plan-icon{font-size:30px}.class-plan-list b{display:block;font-size:20px}.class-plan-list small{display:block;font-size:15px;line-height:1.5;font-weight:400;margin-top:7px;color:#426170}
 .class-extras{display:flex;flex-wrap:wrap;gap:10px}.class-extras button{font-size:16px}.class-home-note{margin-top:30px;background:#fff7de;border-radius:20px;padding:24px}.class-home-note p{margin:14px 0}.class-home-note a{overflow-wrap:anywhere}
 .class-break-page{text-align:center;max-width:900px;margin:35px auto}.class-break-page h1{font-size:48px}.class-break-page>p{font-size:27px;line-height:1.6;margin:20px 0}.class-break-page>p.hint{font-size:18px}.break-arrows{font-size:90px;color:#17599e;letter-spacing:.1em;margin:20px 0}
@@ -417,7 +417,7 @@
  .game-screen #class-completion button{font-size:13px;min-height:40px;padding:6px 8px}
 }
 @media(max-width:1150px){.classroom-toolbar{gap:6px;padding-left:16px;padding-right:16px}.classroom-toolbar label{font-size:0;gap:0}#class-variant{width:190px}.classroom-toolbar button{padding:8px;font-size:13px}}
-@media(max-width:959px){.classroom-toolbar{flex-wrap:wrap}.classroom-toolbar .class-lesson-label{flex:1 1 52%}.classroom-toolbar .class-variant-label{flex:1 1 40%}#class-lesson,#class-variant{max-width:none;width:100%}.classroom-toolbar select{font-size:14px}.class-plan-list>button{grid-template-columns:65px minmax(0,1fr) 18px;gap:10px;padding:14px}.plan-time{font-size:13px}.plan-icon{display:none}.class-plan-list b{font-size:18px}.class-plan-list small{font-size:14px}.class-break-page h1{font-size:34px}.break-arrows{font-size:62px}.class-break-page>p{font-size:22px}}
+@media(max-width:959px){.classroom-toolbar{flex-wrap:wrap}.classroom-toolbar .class-lesson-label{flex:1 1 52%}.classroom-toolbar .class-variant-label{flex:1 1 40%}#class-lesson,#class-variant{max-width:none;width:100%}.classroom-toolbar select{font-size:14px}.class-plan-list>button{grid-template-columns:minmax(0,1fr) 18px;gap:10px;padding:14px}.plan-time{font-size:13px}.plan-icon{display:none}.class-plan-list b{font-size:18px}.class-plan-list small{font-size:14px}.class-break-page h1{font-size:34px}.break-arrows{font-size:62px}.class-break-page>p{font-size:22px}}
 @media print{.classroom-toolbar,.context-switch{display:none}}
 #home-title:focus{outline:none}
 @media(max-width:730px){
@@ -454,9 +454,6 @@
 .game-screen #class-completion button{flex:1;min-width:0;min-height:48px;font-size:16px;padding:8px 12px;border-radius:12px}
 .presenter-guide{background:#f1f8f6;border:1px solid #b2d2c6;border-radius:14px;padding:16px;margin:16px 0}
 .presenter-guide h2{font-size:19px;margin-bottom:10px}.presenter-guide p{font-size:15px;line-height:1.5;margin:8px 0}.presenter-guide .eyebrow{font-size:11px}.presenter-guide .presenter-question{font-size:22px;font-weight:700;line-height:1.35;color:#155e61}.presenter-guide .hint{font-size:13px}
-.teaching-routine{border:2px solid #b4d3d7;background:#fff;border-radius:18px;padding:18px 22px;margin:20px 0}
-.teaching-routine summary{font-weight:700;cursor:pointer;min-height:34px;font-size:21px}.teaching-routine>p{font-size:17px;line-height:1.6;margin:16px 0 0}.teaching-routine .opening-line{font-size:23px;color:#126267}
-.participation-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}.participation-steps>div{background:#eef6fc;border-radius:12px;padding:16px}.participation-steps b{font-size:20px}.participation-steps p{font-size:16px;line-height:1.5;margin:10px 0 0}
 @media screen and (min-width:960px){
  .class-session.game-screen .app-header{min-height:52px;padding:4px 22px;gap:12px}
  .class-session.game-screen .brand{font-size:20px}.class-session.game-screen .brand-icon{font-size:25px}
@@ -465,4 +462,4 @@
  .class-session.game-screen .adult-panel{top:56px;max-height:calc(100dvh - 72px)}
 }
 @media(max-width:959px){.classroom-toolbar .class-lesson-label{flex:1 1 52%;max-width:none}.classroom-toolbar .class-variant-label{flex:1 1 40%;max-width:none}}
-@media(max-width:730px){.participation-steps{grid-template-columns:1fr}.teaching-routine{padding:16px}.teaching-routine .opening-line{font-size:20px}.game-screen #class-completion button{font-size:15px}}
+@media(max-width:730px){.game-screen #class-completion button{font-size:15px}}

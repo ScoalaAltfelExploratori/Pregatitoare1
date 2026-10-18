@@ -4,7 +4,15 @@ Obiectiv: o aventură offline, în limba română, pentru clasa pregătitoare, u
 
 Legendă: `[ ]` de făcut · `[x]` implementat și verificat. Prioritatea P0 reprezintă prima versiune.
 
-Elementele V1 și verificările de mai jos păstrează istoricul implementării. Parcursul actual este V1.3 și este descris în Readme.md.
+Elementele V1 și verificările de mai jos păstrează istoricul implementării. Parcursul actual este V1.4 și este descris în Readme.md.
+
+## V1.4 · Lecțiile și grădina
+
+- [x] Scoasă energia din lecțiile clasei, păstrată pentru acasă.
+- [x] Scoase povestea, fișa și fabrica de hărți din interfață și codul aplicației.
+- [x] „Udă un rând” și grădina A/B/C au locuri consecutive în selector și în navigare. Udarea și repetiția le preced; condiția vine după ele.
+- [x] Lista lecțiilor înlocuiește planul cu minute. Textele sunt scurte, fără formulări de prezentare sau obiective pedagogice pe ecran.
+- [x] 108 teste și verificările de sintaxă trec. În browser la 1280×720: grădina A/B/C terminată în trei porniri, șase flori udate și sosire în 22 de pași; lista simplă de lecții verificată. Fără erori în consolă.
 
 ## V1.3 · Lecție interactivă de 90 de minute
 

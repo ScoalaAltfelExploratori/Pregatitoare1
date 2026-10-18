@@ -3,54 +3,50 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Robo Explorator · Școala altfel</title>
-<meta name="description" content="Misiuni progresive, săgeți și joacă împreună. O aventură offline de programare pentru clasa pregătitoare.">
+<meta name="description" content="Ajută-l pe Robo să găsească drumul. Un joc cu săgeți pentru clasa pregătitoare.">
 <meta name="theme-color" content="#087d81">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23087d81'/%3E%3Cpath d='M8 16h16M17 9l7 7-7 7' stroke='white' stroke-width='4' fill='none'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css?v=classroom-v3">
+<link rel="stylesheet" href="style.css?v=lessons-v4">
 </head>
 <body class="game-screen">
 <header class="app-header">
   <a class="brand" href="#joaca"><span class="brand-icon" aria-hidden="true">🤖</span><span>Robo <b>Explorator</b></span></a>
   <div class="context-switch"><button id="open-classroom" class="quiet small">🏫 La clasă</button><button id="open-adventures" class="quiet small">🏡 Acasă</button></div>
-  <details id="adult-menu" class="adult-menu"><summary>Pentru adult</summary><div class="adult-panel"><div class="adult-panel-heading"><b>Pregătim activitatea</b><button id="close-adult" class="primary">Înapoi la copii</button></div>  <nav aria-label="Activități"><button class="nav-button selected" data-view="game" aria-pressed="true">Joacă</button><button class="nav-button" data-view="story" aria-pressed="false">Povestea</button><button class="nav-button" data-view="sheet" aria-pressed="false">Fișa de explorator</button></nav>
+  <details id="adult-menu" class="adult-menu"><summary>Pentru adult</summary><div class="adult-panel"><div class="adult-panel-heading"><b>Opțiuni</b><button id="close-adult" class="primary">Înapoi la copii</button></div>
   <div class="header-actions"><button id="sound" class="quiet small" aria-pressed="false">♫ Sunet oprit</button><button id="fullscreen" class="quiet small">Ecran complet</button></div>
-  <section id="presenter-guide" class="presenter-guide" hidden aria-labelledby="presenter-activity"><p class="eyebrow">CE SPUN COPIILOR?</p><h2 id="presenter-activity"></h2><p id="presenter-question" class="presenter-question"></p><p id="presenter-participation"></p><p class="hint">Lăsăm clasa să arate răspunsul înainte să atingem săgețile. Citim noi; copiii pot răspunde prin gesturi.</p></section>
+  <section id="presenter-guide" class="presenter-guide" hidden aria-labelledby="presenter-activity"><p class="eyebrow">O ÎNTREBARE PENTRU CLASĂ</p><h2 id="presenter-activity"></h2><p id="presenter-question" class="presenter-question"></p><p id="presenter-participation"></p><p class="hint">Copiii pot arăta direcția cu mâna înainte să alegem săgețile.</p></section>
   <div class="play-toolbar"><details id="mission-picker" class="mission-picker"><summary id="adventure-heading">🗺 Lecții <span id="adventure-progress">0 din 7 misiuni</span></summary><div id="mission-trail" class="mission-trail" role="group" aria-label="Misiunile aventurii"></div></details>
   <div class="activity-tabs" role="group" aria-label="Alege jocul"><button id="program-mode" class="selected" aria-pressed="true">🧭 Programăm</button><button id="predict-mode" aria-pressed="false">🔎 Unde crezi că ajunge?</button><button id="detective-mode" aria-pressed="false">🛠 Detectivul Robo</button></div>
   </div>
 <div class="adult-context"><p class="eyebrow" id="activity-label">MISIUNEA 1</p><div class="map-selection"><span class="pill" id="map-label">Misiunea 1 · 3×3</span><div id="garden-options" class="garden-options" role="group" aria-label="Alege grădina" hidden><button id="garden-rows" aria-pressed="true">🌷 Flori la rând</button><button id="garden-scattered" aria-pressed="false">🌱 Flori răsfirate</button><span>Schimbarea grădinii reia încercarea.</span></div></div><p id="teacher-guidance"></p></div>  <details class="teacher-tools" id="teacher-tools" open><summary>Instrumente pentru adult</summary>
-  <div class="lesson-tools"><p><b>Ritmul clasei</b> · Planul de 90 de minute este flexibil. Mai jos este biblioteca originală cu șapte categorii și etapele lor.</p><label for="teacher-lesson">Lecția</label><select id="teacher-lesson"></select><label for="lesson-stage">Etapa (schimbarea reia încercarea)</label><select id="lesson-stage"></select><p id="lesson-observe"></p><label class="decision-timing"><input id="auto-decision" type="checkbox"> Întrebări automate după 2 secunde (implicit așteptăm adultul)</label></div><div class="class-tools"><button id="new-map" class="new-map">✨ Hartă nouă · joc liber</button><button id="bug-map">Detectivul Robo · 3 cazuri</button><button id="first-map">Harta originală · 5×5</button><button id="solution" class="quiet">Arată un drum</button><button id="print-game" class="quiet">Tipărește harta</button><button id="reset-adventure" class="quiet">Reia aventura de la început</button></div>
+  <div class="lesson-tools"><p>Alege o hartă și varianta pe care vrei să o încercați.</p><label for="teacher-lesson">Lecția</label><select id="teacher-lesson"></select><label for="lesson-stage">Etapa (schimbarea reia încercarea)</label><select id="lesson-stage"></select><p id="lesson-observe"></p><label class="decision-timing"><input id="auto-decision" type="checkbox"> Întrebări automate după 2 secunde (implicit așteptăm adultul)</label></div><div class="class-tools"><button id="bug-map">Detectivul Robo · 3 cazuri</button><button id="solution" class="quiet">Arată un drum</button><button id="reset-adventure" class="quiet">Reia aventura de la început</button></div>
   <div id="reset-confirmation" class="reset-confirmation" hidden><p>Ștergem progresul clasei și revenim la prima misiune?</p><button id="confirm-reset">Da, începem din nou</button><button id="cancel-reset" class="quiet">Păstrăm progresul</button></div>
   <p class="hint">Misiunile se salvează în acest browser. Sunetul se pornește din acest meniu.</p>
-  <details class="rules"><summary>Regulile fabricii de hărți</summary><ol><li>Robo și comoara ocupă locuri diferite.</li><li>Copacii nu apar peste Robo sau comoară.</li><li>Păstrăm cel puțin un drum liber.</li></ol><p>Programul alege alte poziții și verifică drumul. Aceleași reguli pot produce multe hărți.</p></details>
   </details><div class="adult-program"><b>Programul curent</b><span id="command-count">0 / 8</span><p id="execution-note" class="execution-note">0 pași făcuți · 0 comenzi noi</p><button id="clear" class="quiet">Șterge tot</button></div></div></details>
 </header>
 <nav id="classroom-toolbar" class="classroom-toolbar" aria-label="Conducerea lecției">
  <label class="class-lesson-label" for="class-lesson">Lecția <select id="class-lesson" aria-label="Alege orice lecție"><option value="">Alege o activitate…</option></select></label>
  <label class="class-variant-label" id="class-variant-label" for="class-variant">Varianta <select id="class-variant"></select></label>
  <div class="class-navigation"><button id="class-previous" aria-label="Lecția anterioară">←</button><button id="class-next" aria-label="Lecția următoare">→</button></div>
- <button id="class-detective">🛠 Detectivul Robo</button><button id="class-plan">Plan · 90 min</button>
+ <button id="class-detective">🛠 Detectivul Robo</button><button id="class-plan">Toate lecțiile</button>
 </nav>
 <main>
  <section id="class-plan-view" class="class-plan-page" hidden aria-labelledby="class-plan-title">
-  <p class="eyebrow">PENTRU CLASA PREGĂTITOARE · TABLĂ DIGITALĂ</p><h1 id="class-plan-title">90 de minute cu Robo</h1>
-  <p>Un copil alege la laptop, toată clasa arată drumul, apoi testăm împreună. Schimbăm copilul după o încercare sau o etapă a traseului.</p>
-  <p class="hint">Timpi orientativi, cu o pauză de mișcare. Putem sări orice activitate din selector. Variantele mai grele și extensiile sunt opționale. La clasă nu oferim diplomă.</p>
-  <details class="teaching-routine"><summary>Cum prezint la nivelul lor?</summary><p class="opening-line">„Robo nu ghicește drumul. El urmează săgețile noastre. Îl ajutăm să ajungă acasă?”</p><div class="participation-steps"><div><b>☝ 1. Arătăm</b><p>Toți copiii arată direcția cu mâna sau urmăresc drumul cu degetul.</p></div><div><b>➜ 2. Alegem</b><p>Un copil pune una sau două săgeți la laptop. Altul spune unde va ajunge Robo.</p></div><div><b>▶ 3. Testăm</b><p>Pornim, privim și explicăm. Dacă drumul nu merge, schimbăm o săgeată împreună.</p></div></div><p>Schimbăm copilul după o încercare scurtă; pe hărțile mari, construim drumul pe bucăți. Spunem „pas”, „săgeată” și „drum”; numim șirul de comenzi „program” după ce l-am folosit.</p><p>Intercalăm mici pauze de mișcare și putem încheia cu o hartă deja cunoscută. Dacă o idee cere mai mult ajutor, rămânem la ea. Cele 12 activități sunt un meniu flexibil, nu o listă de terminat.</p><p>La final întrebăm „Ce am reparat împreună?”. Repetițiile, rețeta și condiția rămân descoperiri opționale.</p></details>
-  <button id="class-resume" class="primary">Înapoi la activitatea curentă</button><div id="class-plan-list" class="class-plan-list"></div>
-  <h2>Dacă mai avem timp și curiozitate</h2><div id="class-extras" class="class-extras"></div>
-  <div class="class-home-note"><h2>Continuăm acasă, cu părinții</h2><p>Șase provocări variate și, la final, diploma. Fără cont sau instalare.</p><a id="class-home-link"></a></div>
+  <h1 id="class-plan-title">Lecțiile lui Robo</h1>
+  <p>Alegeți de unde începem. Putem reveni la orice lecție.</p>
+  <button id="class-resume" class="primary">Înapoi la joc</button><div id="class-plan-list" class="class-plan-list"></div>
+  <div class="class-home-note"><h2>Mai jucăm și acasă?</h2><p>Șase misiuni de încercat cu părinții. La final, copiii pot descărca diploma.</p><a id="class-home-link"></a></div>
  </section>
- <section id="class-break-view" class="class-break-page" hidden aria-labelledby="class-break-title"><p class="eyebrow">5 MINUTE · NE RIDICĂM</p><h1 id="class-break-title">Acum noi suntem roboții!</h1><div class="break-arrows" aria-label="Sus, stânga, jos, dreapta">↑ ← ↓ →</div><p>Unul arată o săgeată.<br>Celălalt face un pas sau mimează.<br>Apoi schimbăm rolurile!</p><p class="hint">Păstrăm loc între noi. Adultul ne arată direcțiile.</p><button id="break-next" class="primary">Înapoi la Robo · Energia →</button></section>
+ <section id="class-break-view" class="class-break-page" hidden aria-labelledby="class-break-title"><p class="eyebrow">O PAUZĂ DE MIȘCARE</p><h1 id="class-break-title">Acum noi suntem roboții!</h1><div class="break-arrows" aria-label="Sus, stânga, jos, dreapta">↑ ← ↓ →</div><p>Unul arată o săgeată.<br>Celălalt face un pas sau mimează.<br>Apoi schimbăm rolurile!</p><p class="hint">Păstrăm loc între noi. Adultul ne arată direcțiile.</p><button id="break-next" class="primary">Înapoi la Robo →</button></section>
  <section id="home-view" hidden aria-labelledby="home-title" class="adventure-home">
-  <div class="home-intro"><span class="home-mascot" aria-hidden="true">🤖</span><div><p class="eyebrow">REÎNCERCĂM ACASĂ · CU UN PĂRINTE</p><h1 id="home-title" tabindex="-1">Acasă cu Robo</h1><p>Șase provocări diferite. La final, diploma ta!</p><label class="home-name-label" for="home-name">Cum te cheamă? <span>Prenumele este opțional.</span><input id="home-name" maxlength="70" autocomplete="off" placeholder="Prenumele tău" aria-describedby="home-name-note"></label><p id="home-name-note" class="hint">Îl folosim doar pe diplomă. Nu îl trimitem și nu îl păstrăm după închiderea paginii.</p><button id="home-continue" class="primary">Începem aventura →</button><button id="resume-play" class="quiet" hidden>Înapoi la jocul curent</button></div></div>
+  <div class="home-intro"><span class="home-mascot" aria-hidden="true">🤖</span><div><p class="eyebrow">NE JUCĂM ACASĂ</p><h1 id="home-title" tabindex="-1">Acasă cu Robo</h1><p>Șase provocări diferite. La final, diploma ta!</p><label class="home-name-label" for="home-name">Cum te cheamă? <span>Prenumele este opțional.</span><input id="home-name" maxlength="70" autocomplete="off" placeholder="Prenumele tău" aria-describedby="home-name-note"></label><p id="home-name-note" class="hint">Îl folosim doar pe diplomă. Nu îl trimitem și nu îl păstrăm după închiderea paginii.</p><button id="home-continue" class="primary">Începem aventura →</button><button id="resume-play" class="quiet" hidden>Înapoi la jocul curent</button></div></div>
   <div class="home-progress"><b id="home-progress-label"></b><span id="home-stars" aria-hidden="true"></span><button id="home-diploma" hidden>🏅 Diploma mea</button></div>
   <div id="home-missions" class="adventure-cards" aria-label="Cele șase misiuni"></div>
   <details class="parent-guide"><summary>Pentru părinte · Cum ne jucăm?</summary><p>Întrebați „Unde va ajunge Robo?”. Copilul alege săgețile, voi citiți mesajele. Testați și reparați împreună, fără cronometru sau note. Puteți împărți aventura în mai multe zile.</p><p>Ajutorul și încercările repetate sunt binevenite. Diploma se obține după cele șase misiuni; aventurile opționale nu sunt necesare. Misiunile terminate se păstrează doar în acest browser. La redeschidere, misiunea curentă pornește de la start. Pentru alt copil, puteți rejuca fiecare hartă și scrie alt nume pe diplomă.</p><p id="home-storage-note"></p><label for="home-link">Link de trimis părinților</label><input id="home-link" readonly><button id="classroom-return" class="quiet">Lecțiile pentru clasă</button></details>
-  <details class="optional-adventures"><summary>Mai vrem să descoperim? <span>Opțional</span></summary><p>Alegeți o singură idee nouă. Diploma este deja a voastră după aventura de bază.</p><div id="optional-packs" class="optional-packs"></div></details>
+  <details class="optional-adventures"><summary>Mai jucăm? <span>Opțional</span></summary><p>Aici găsiți și alte hărți. Le puteți încerca oricând.</p><div id="optional-packs" class="optional-packs"></div></details>
  </section>
  <section id="diploma-view" hidden aria-labelledby="diploma-title" class="diploma-page">
-  <p class="eyebrow">AM GÂNDIT · AM ÎNCERCAT · AM REPARAT</p><h1 id="diploma-title">Felicitări, exploratorule!</h1><p>Ai parcurs cele șase misiuni cu Robo. Această diplomă este a ta.</p>
+  <p class="eyebrow">DIPLOMA TA</p><h1 id="diploma-title">Felicitări, exploratorule!</h1><p>Ai parcurs cele șase misiuni cu Robo. Această diplomă este a ta.</p>
   <div class="diploma-fields"><label>Numele pe diplomă (opțional)<input id="diploma-name" maxlength="70" autocomplete="off" placeholder="Nume sau prenume"></label><label>Data<input id="diploma-date" type="date"></label></div>
   <p class="hint">Numele este folosit doar aici, pentru PDF. Nu este trimis și nu este salvat în browser. Poți lăsa spațiul liber și scrie de mână.</p>
   <canvas id="diploma-preview" width="1536" height="1024" role="img" aria-label="Previzualizarea diplomei Robo"></canvas>
@@ -69,7 +65,7 @@
     <div class="direction-pad" aria-label="Comenzile robotului"><button data-dir="U" aria-label="Sus"><strong>↑</strong><span>Sus</span></button><button data-dir="L" aria-label="Stânga"><strong>←</strong><span>Stânga</span></button><button data-dir="D" aria-label="Jos"><strong>↓</strong><span>Jos</span></button><button data-dir="R" aria-label="Dreapta"><strong>→</strong><span>Dreapta</span></button></div>
     <div id="action-pad" class="action-pad" hidden><button id="activate" data-dir="A" hidden>⚙ Activează</button><button id="water" data-dir="W" hidden>💧 Udă</button><p id="action-hint"></p></div>
     <details id="repeat-editor" class="repeat-editor" hidden><summary>🔁 Repetă ultimele 2 comenzi</summary><div class="repeat-popover"><p>Scrie două comenzi, de exemplu → și 💧 Udă. Apoi grupează-le:</p><div class="repeat-controls"><label for="repeat-count">De câte ori?</label><select id="repeat-count"><option value="2">2 ori</option><option value="3" selected>3 ori</option></select><button id="make-repeat">Repetă ultimele 2 comenzi</button></div><p id="repeat-hint" class="hint"></p></div></details>
-    <div id="recipe-editor" class="recipe-editor" hidden><b>📖 Rețeta noastră: Udă un rând</b><div id="recipe-definition" class="recipe-steps" role="group" aria-label="Definiția rețetei Udă un rând"></div><p id="recipe-description">Un nume pentru patru comenzi. Folosește rețeta la A, apoi din nou la B.</p><button id="call-recipe">📖 Udă un rând</button><span class="hint">Adaugă rețeta în program.</span></div>
+    <div id="recipe-editor" class="recipe-editor" hidden><b>📖 Rețeta noastră: Udă un rând</b><div id="recipe-definition" class="recipe-steps" role="group" aria-label="Definiția rețetei Udă un rând"></div><p id="recipe-description">Butonul adaugă cele patru comenzi de mai sus.</p><button id="call-recipe">📖 Udă un rând</button><span class="hint">Adaugă rețeta în program.</span></div>
     <div id="decision-editor" class="decision-editor" hidden><button id="if-flower" data-dir="F"><b>🌱 DACĂ este o floare aici</b><span>ATUNCI 💧 Udă</span></button><p>Pe un loc gol nu udă. Poți repeta → și acest bloc.</p></div>
     </div>
     <div id="prediction-instructions" class="prediction-instructions" hidden><h2 id="prediction-title">Privește cele 2 săgeți</h2><p>Atinge căsuța unde crezi că se oprește Robo. Apoi verificăm împreună!</p><label class="prediction-level" for="prediction-count">Exersăm cu <select id="prediction-count"><option value="2">2 săgeți</option><option value="3">3 săgeți</option></select></label></div>
@@ -90,29 +86,16 @@
     <p id="repeat-progress" class="repeat-progress" role="status" hidden></p>
     <div id="completion" class="completion" hidden><span id="completion-message"></span><button id="practice-detective" hidden>🛠 Încercăm Detectivul</button><button id="next-mission" class="primary">Următoarea misiune →</button></div>
     <div id="pack-completion" class="completion" hidden><span id="pack-completion-message"></span><button id="pack-next" class="primary">Mai departe →</button><button id="pack-home" class="quiet">Aventurile mele</button></div>
-    <div id="class-completion" class="completion" hidden><span id="class-completion-message"></span><button id="class-retry" title="Reia aceeași provocare cu un program gol" aria-label="Alt copil: reia aceeași provocare cu un program gol">↺ Alt copil</button><button id="class-continue" class="primary">Următoarea activitate →</button></div>
+    <div id="class-completion" class="completion" hidden><span id="class-completion-message"></span><button id="class-retry" title="Reia aceeași provocare cu un program gol" aria-label="Alt copil: reia aceeași provocare cu un program gol">↺ Alt copil</button><button id="class-continue" class="primary">Următoarea lecție →</button></div>
     <button id="next-round" class="next-round" hidden>Altă provocare →</button>
     <div id="detective-completion" class="completion" hidden><span id="detective-completion-message"></span><button id="detective-continue" hidden>Continuăm cu un copac →</button><button id="next-case" class="primary">Următorul caz →</button></div></div>
    </div>
   </div>
 
  </section>
- <section id="story-view" hidden aria-label="Povestea pentru clasă">
-  <div class="story-top"><span id="scene-counter" class="pill"></span><span id="scene-time"></span></div>
-  <article class="story-slide"><div class="story-copy"><p class="eyebrow" id="scene-kicker"></p><h1 id="scene-title"></h1><p id="scene-line" class="story-line"></p><button id="scene-action" class="primary">Încearcă</button></div><div id="scene-visual" class="scene-visual"></div></article>
-  <div class="story-controls"><button id="previous">Înapoi</button><div id="story-dots" aria-label="Alege scena"></div><button id="next" class="primary">Următoarea scenă</button></div>
-  <details class="presenter-notes"><summary>Notițe pentru părinte</summary><p id="scene-notes"></p><p id="scene-question"></p></details>
- </section>
- <section id="sheet-view" hidden aria-label="Fișa de explorator">
-  <div class="section-title"><div><p class="eyebrow">LUCRĂM ÎN PERECHI</p><h1>Unul programează. Celălalt testează.</h1></div></div>
-  <p class="sheet-description">Puneți un pion pe Robo. Desenați săgețile, urmați-le în ordine, apoi schimbați rolurile.</p>
-  <div class="sheet-tools"><button id="print-sheet" class="primary">Tipărește fișa</button><button id="refresh-sheet">Altă hartă</button></div>
-  <div id="sheet-preview" class="sheet-preview"></div>
- </section>
 </main>
-<footer><span>Școala altfel · Aventură de programare</span><span>Gândim · Încercăm · Reparăm</span></footer>
-<div id="print-area" aria-hidden="true"></div>
-<script src="game-engine.js?v=classroom-v3"></script><script src="robo-audio.js?v=classroom-v3"></script><script src="curriculum.js?v=classroom-v3"></script>
-<script src="adventures.js?v=classroom-v3"></script><script src="classroom.js?v=classroom-v3"></script><script src="diploma.js?v=classroom-v3"></script>
-<script src="app.js?v=classroom-v3"></script>
+<footer>Robo Explorator · Școala altfel</footer>
+<script src="game-engine.js?v=lessons-v4"></script><script src="robo-audio.js?v=lessons-v4"></script><script src="curriculum.js?v=lessons-v4"></script>
+<script src="adventures.js?v=lessons-v4"></script><script src="classroom.js?v=lessons-v4"></script><script src="diploma.js?v=lessons-v4"></script>
+<script src="app.js?v=lessons-v4"></script>
 </body></html>

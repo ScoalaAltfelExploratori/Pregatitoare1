@@ -173,16 +173,12 @@ test('decizia goală poate fi ștearsă, iar WebMCP și limita resping combinaț
   assert.throws(() => app.tool().execute({ commands: ['F'] }), /indisponibilă/);
 });
 
-test('misiunea cu decizii cere florile înainte de căsuță și are fișă cu DA și NU', async t => {
+test('misiunea cu decizii cere florile înainte de căsuță', async t => {
   const app = decisionSetup(); t.after(app.close);
   app.add(['R', 'R', 'R', 'R']); app.click('run'); await app.advance(3000);
   assert.match(app.get('status').textContent, /poarta/);
   assert.equal(app.get('completion').hidden, true);
   assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed, 5);
-  app.w.print = () => {}; app.click('print-game');
-  assert.match(app.get('print-area').textContent, /Dacă este o floare aici → Udă/);
-  assert.match(app.get('print-area').textContent, /DA\/NU/);
-  assert.match(app.get('print-area').textContent, /poart/);
 });
 
 
@@ -311,20 +307,11 @@ test('detectiv și anticipare păstrează aventura, cheia și cursorul inclusiv 
   assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed, 4);
 });
 
-test('povestea deschide cazul simplu, iar fișa de detectiv include săgețile și variantele', async t => {
+test('leaving a detective run for the lesson list pauses it without losing the completed step', async t => {
   const app = setup(); t.after(app.close);
-  app.document.querySelector('[data-view="story"]').click();
-  app.get('story-dots').children[3].click();
-  assert.equal(app.get('scene-visual').querySelectorAll('.tile').length, 9);
-  assert.equal(app.get('scene-visual').querySelectorAll('.mini-program span').length, 2);
-  app.click('scene-action');
-  assert.equal(app.get('game-title').textContent, 'Detectivul Robo');
-  app.w.print = () => {}; app.click('print-game');
-  assert.equal(app.get('print-area').querySelectorAll('.tile').length, 9);
-  assert.equal(app.get('print-area').querySelectorAll('.detective-sheet-program span').length, 2);
-  assert.match(app.get('print-area').textContent, /Alegem dintre ↑ și →/);
-  app.click('run'); await app.advance(350); app.document.querySelector('[data-view="story"]').click();
-  await app.advance(5000); app.document.querySelector('[data-view="game"]').click();
+  app.click('bug-map');
+  app.click('run'); await app.advance(350); app.click('class-plan');
+  await app.advance(5000); app.click('class-resume');
   assert.deepEqual(robotPosition(app), [1, 2]);
   app.click('program-mode'); assert.equal(app.get('game-title').textContent, 'Prima comoară');
 });
@@ -407,7 +394,7 @@ test('anticiparea cere alegere, verifică răspunsuri și restaurează programul
   assert.equal(app.get('queue').children[0].textContent, '1→');
 });
 
-test('trecerea la anticipare sau poveste în timpul rulării nu termină misiunea veche', async t => {
+test('trecerea la anticipare sau lista lecțiilor în timpul rulării nu termină misiunea veche', async t => {
   const app = setup(); t.after(app.close);
   app.add(['R', 'R']); app.click('run'); await app.advance(350); app.click('predict-mode');
   await app.advance(5000);
@@ -415,20 +402,16 @@ test('trecerea la anticipare sau poveste în timpul rulării nu termină misiune
   assert.equal(app.get('step-count').textContent, 'La start');
   assert.equal(app.w.localStorage.getItem(progressKey), null);
   app.click('program-mode'); app.click('run'); await app.advance(200);
-  app.document.querySelector('[data-view="story"]').click(); await app.advance(5000);
-  assert.equal(app.get('story-view').hidden, false);
+  app.click('class-plan'); await app.advance(5000);
+  assert.equal(app.get('class-plan-view').hidden, false);
   assert.equal(app.w.localStorage.getItem(progressKey), null);
 });
 
-test('detectivul, limita de comenzi, resetarea și fișa respectă starea activă', async t => {
+test('detectivul, limita de comenzi și resetarea respectă starea activă', async t => {
   const app = setup(); t.after(app.close);
   app.add(Array(12).fill('R'));
   assert.equal(app.get('queue').children.length, 8);
   assert.throws(() => app.tool().execute({ commands: Array(9).fill('R') }), /cel mult 8/);
-  app.w.print = () => {};
-  app.click('print-game');
-  assert.equal(app.get('print-area').querySelectorAll('.tile').length, 9);
-  assert.equal(app.get('print-area').querySelector('.board').style.getPropertyValue('--board-size'), '3');
   app.click('bug-map'); app.click('run'); await app.advance(3000);
   assert.match(app.get('status').textContent, /Schimbăm o săgeată/);
   assert.equal(app.get('board').children.length, 9);
@@ -455,11 +438,6 @@ test('finala refuză cufărul fără cheie și nu acordă progres pentru simpla 
   assert.match(app.get('board').querySelector('.goal').getAttribute('aria-label'), /descuiat/);
   assert.equal(app.get('completion').hidden, true);
   assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed, 3);
-  app.w.print = () => {};
-  app.click('print-game');
-  assert.match(app.get('print-area').textContent, /Mai întâi luăm cheia/);
-  assert.equal(app.get('print-area').querySelectorAll('.key-item').length, 1);
-  assert.equal(app.get('print-area').querySelectorAll('.chest-icon').length, 1);
   app.click('restart');
   assert.equal(app.get('key-objective').classList.contains('complete'), false);
   assert.equal(app.get('board').querySelectorAll('.key-item').length, 1);
@@ -600,15 +578,15 @@ test('o comandă greșită rămâne neexecutată și poate fi reparată fără a
   assert.match(app.get('status').textContent, /comoara cu cheia.*12 pași/);
 });
 
-test('jocul liber păstrează pașii buni când este șters pasul blocat de copac', async t => {
-  const app = setup(); t.after(app.close);
-  app.click('first-map'); app.add(['R', 'U', 'U']); app.click('run'); await app.advance(3000);
-  assert.deepEqual(robotPosition(app), [1, 3]);
-  assert.equal(app.get('queue').querySelectorAll('.executed').length, 2);
+test('an obstacle lesson preserves completed steps when the blocked command is removed', async t => {
+  const app = setup({guided:true,classroom:true}); t.after(app.close);
+  selectClass(app,'5');app.add(['U','R','D']);app.click('run');await app.advance(3000);
+  assert.deepEqual(robotPosition(app),[1,1]);
+  assert.equal(app.get('queue').querySelectorAll('.executed').length,2);
   app.get('queue').querySelector('button').click();
-  app.add(['R']); app.click('run'); await app.advance(1000);
-  assert.deepEqual(robotPosition(app), [2, 3]);
-  assert.equal(app.get('queue').querySelectorAll('.executed').length, 3);
+  app.add(['R']);app.click('run');await app.advance(1000);
+  assert.deepEqual(robotPosition(app),[2,1]);
+  assert.equal(app.get('queue').querySelectorAll('.executed').length,3);
 });
 
 test('soluția continuă din poziția curentă cu cheia deja colectată', async t => {
@@ -674,9 +652,6 @@ test('podul blochează trecerea, iar activarea și continuarea supraviețuiesc s
   assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed, 5);
   app.click('restart');
   assert.equal(app.get('board').querySelectorAll('.bridge-open').length, 0);
-  app.w.print = () => {}; app.click('print-game');
-  assert.equal(app.get('print-area').querySelectorAll('.river').length, 5);
-  assert.match(app.get('print-area').textContent, /Activează/);
 });
 
 function gardenLoop(app, count = 3) {
@@ -707,9 +682,6 @@ test('grădina grupează două comenzi, arată repetiția și permite finalizare
   app.click('restart');
   assert.equal(app.get('board').querySelectorAll('.watered,.gate-open').length, 0);
   assert.equal(app.get('queue').querySelectorAll('.repeat-block').length, 1);
-  app.w.print = () => {}; app.click('print-game');
-  assert.match(app.get('print-area').textContent, /Repetă de/);
-  assert.equal(app.get('print-area').querySelectorAll('.flower-tile').length, 3);
 });
 
 test('oprirea la fiecare mutare și udare din repetiție păstrează exact cursorul și florile', async () => {
@@ -800,10 +772,6 @@ test('rețeta se folosește la A și la B, din butoane, fără a reseta florile'
   assert.equal(app.get('board').querySelectorAll('.watered').length, 4);
   assert.equal(app.get('board').querySelectorAll('.gate-open').length, 1);
   assert.deepEqual(JSON.parse(app.w.localStorage.getItem(progressKey)), { version: 3, completed: 7 });
-  app.w.print = () => {}; app.click('print-game');
-  assert.equal(app.get('print-area').querySelectorAll('.row-start').length, 2);
-  assert.match(app.get('print-area').textContent, /Udă un rând = → 💧 → 💧/);
-  assert.match(app.get('print-area').textContent, /Am udat 4 flori/);
   app.click('restart');
   assert.equal(app.get('board').querySelectorAll('.watered').length, 0);
   assert.equal(app.get('queue').querySelectorAll('.recipe-call').length, 2);
@@ -1013,20 +981,12 @@ test('anticiparea începe cu două săgeți și trei rămân o alegere pe harta 
   app.click('program-mode');assert.equal(app.get('lesson-stage').value,'one-row');
 });
 
-test('rețeta începe cu o folosire, iar fișele și povestea urmează etapele simple', async t => {
+test('rețeta începe cu o folosire, apoi trece la cele trei rânduri', async t => {
   const app=setup({guided:true,progress:'{"version":3,"completed":6}'});t.after(app.close);
   app.click('call-recipe');app.add(['U']);app.click('run');await app.advance(4500);
   assert.match(app.get('status').textContent,/5 pași/);app.click('next-mission');
   assert.equal(app.get('lesson-stage').value,'two-rows');assert.equal(app.get('board').children.length,25);
-  app.document.querySelector('[data-view="story"]').click();app.get('story-dots').children[4].click();
-  assert.equal(app.get('scene-visual').querySelectorAll('.tile').length,9);
-  assert.equal(app.get('scene-visual').querySelectorAll('.tree').length,1);
-  app.get('story-dots').children[5].click();app.click('scene-action');
-  assert.equal(app.get('sheet-preview').querySelectorAll('.sheet-queue>span').length,2);
-  app.document.querySelector('[data-view="game"]').click();app.stage('one-row');
-  app.w.print=()=>{};app.click('print-game');
-  assert.equal(app.get('print-area').querySelectorAll('.sheet-queue>span').length,5);
-  assert.doesNotMatch(app.get('print-area').textContent,/poartă|două locuri/);
+  assert.deepEqual([...app.get('board').querySelectorAll('.row-letter')].map(n=>n.textContent),['C','B','A']);
 });
 
 test('grădina 5×5 refolosește rețeta pe trei rânduri și continuă fără resetare', async t => {
@@ -1050,8 +1010,6 @@ test('grădina 5×5 refolosește rețeta pe trei rânduri și continuă fără r
   assert.equal(app.get('board').querySelectorAll('.gate-open').length,1);
   assert.deepEqual(robotPosition(app),[4,0]);assert.match(app.get('status').textContent,/22 pași/);
   assert.equal(app.sounds.filter(s=>s==='win').length,2);
-  app.w.print=()=>{};app.click('print-game');
-  assert.equal(app.get('print-area').querySelectorAll('.sheet-queue>span').length,22);
   app.click('restart');assert.equal(app.get('board').querySelectorAll('.watered').length,0);
   assert.deepEqual(robotPosition(app),[0,4]);
 });
@@ -1177,13 +1135,13 @@ test('comparison requires both tested routes and keeps their observed counts',as
 
 function selectClass(app,id,variant=0){app.get('class-lesson').value=id;app.get('class-lesson').dispatchEvent(new app.w.Event('change'));if(variant){app.get('class-variant').value=String(variant);app.get('class-variant').dispatchEvent(new app.w.Event('change'));}}
 
-test('classroom opens at the beginning even with completed progress; all twelve lessons and extras are unlocked',t=>{
+test('classroom opens at the beginning even with completed progress; all lessons including the restored gardens are unlocked',t=>{
  const app=setup({guided:true,classroom:true,progress:'{"version":3,"completed":7}'});t.after(app.close);
  assert.equal(app.get('class-lesson').value,'1');assert.equal(app.get('lesson-stage').value,'one');
  assert.equal(app.get('classroom-toolbar').hidden,false);
- assert.equal(app.get('class-lesson').querySelectorAll('optgroup')[0].children.length,12);
+ assert.equal(app.get('class-lesson').querySelectorAll('optgroup')[0].children.length,16);
  assert.equal(app.get('class-lesson').querySelectorAll('option:disabled').length,0);
- assert.equal(app.get('class-plan-list').children.length,12);
+ assert.equal(app.get('class-plan-list').children.length,16);
  app.click('class-plan');assert.equal(app.get('class-plan-view').hidden,false);
  app.click('class-resume');assert.equal(app.get('game-view').hidden,false);
  selectClass(app,'7');assert.equal(app.get('board').querySelectorAll('.bridge-tile').length,1);
@@ -1192,18 +1150,18 @@ test('classroom opens at the beginning even with completed progress; all twelve 
 
 test('refresh restores a chosen lesson and variant without browser storage, including a safe fallback',t=>{
  const app=setup({guided:true,classroom:true,blockedStorage:true});t.after(app.close);
- selectClass(app,'9',1);const url=app.w.location.href;
- assert.match(url,/lesson=9/);assert.match(url,/variant=2/);
+ selectClass(app,'14',1);const url=app.w.location.href;
+ assert.match(url,/lesson=14/);assert.match(url,/variant=2/);
  const reloaded=setup({guided:true,classroom:true,blockedStorage:true,url});t.after(reloaded.close);
- assert.equal(reloaded.get('class-lesson').value,'9');assert.equal(reloaded.get('class-variant').value,'1');
- assert.equal(reloaded.get('energy-count').textContent,'4 / 4');assert.equal(reloaded.get('board').children.length,25);
+ assert.equal(reloaded.get('class-lesson').value,'14');assert.equal(reloaded.get('class-variant').value,'1');
+ assert.equal(reloaded.get('recipe-editor').hidden,false);assert.equal(reloaded.get('lesson-stage').value,'classic-two-rows');assert.equal(reloaded.get('board').children.length,25);
  const invalid=setup({guided:true,classroom:true,url:'http://robo.test/?lesson=invalid&variant=999'});t.after(invalid.close);
  assert.equal(invalid.get('class-lesson').value,'1');assert.equal(invalid.get('class-variant').value,'0');
 });
 
 test('switching class lessons cancels pending movement and an unanswered flower decision',async t=>{
  const app=setup({guided:true,classroom:true});t.after(app.close);
- selectClass(app,'11',1);app.add(['R','F']);app.click('run');await app.advance(720);
+ selectClass(app,'15');app.add(['R','F']);app.click('run');await app.advance(720);
  assert.equal(app.get('check-decision').hidden,false);
  selectClass(app,'7');await app.advance(60000);
  assert.equal(app.get('check-decision').hidden,true);assert.deepEqual(robotPosition(app),[0,2]);
@@ -1214,13 +1172,9 @@ test('switching class lessons cancels pending movement and an unanswered flower 
  assert.deepEqual(robotPosition(app),[0,2]);
 });
 
-test('classroom energy and comparison run as teaching activities and never award home progress or diplomas',async t=>{
+test('classroom comparison never awards home progress or diplomas',async t=>{
  const app=setup({guided:true,classroom:true});t.after(app.close);
- selectClass(app,'9');await finishPackMap(app,P.get('energy',0));
- assert.equal(app.get('class-completion').hidden,false);assert.equal(app.get('pack-completion').hidden,true);
- assert.equal(app.w.localStorage.getItem('robo-adventure-energy-v1'),null);
- app.click('class-continue');assert.equal(app.get('class-variant').value,'1');
- await finishPackMap(app,P.get('energy',1));app.click('class-continue');assert.equal(app.get('class-lesson').value,'10');
+ selectClass(app,'9');
  app.click('route-a');app.click('run');await app.advance(6000);assert.equal(app.get('class-continue').hidden,true);
  app.click('route-b');app.click('run');await app.advance(6000);assert.equal(app.get('class-continue').hidden,false);
  assert.match(app.get('route-result').textContent,/A: 3 pași · B: 5 pași/);
@@ -1253,13 +1207,37 @@ test('old home progress retains unchanged missions but new activities must be co
  app.click('home-continue');assert.equal(app.get('game-title').textContent,P.get('home',1).title);
 });
 
-test('movement break, optional recipes and final challenge remain reachable without completing preceding lessons',t=>{
+test('the break, watering, recipe, three-row garden and final lesson follow the menu order',async t=>{
  const app=setup({guided:true,classroom:true});t.after(app.close);
  selectClass(app,'8');assert.equal(app.get('class-break-view').hidden,false);
  app.click('class-plan');app.click('class-resume');assert.equal(app.get('class-break-view').hidden,false);
- app.click('break-next');assert.equal(app.get('class-lesson').value,'9');
- selectClass(app,'recipe',1);assert.equal(app.get('recipe-editor').hidden,false);assert.equal(app.get('board').children.length,25);
- selectClass(app,'12');assert.equal(app.get('lesson-stage').value,'four-directions');assert.equal(app.get('class-next').disabled,true);
- selectClass(app,'presentation');assert.equal(app.get('story-view').hidden,false);
- selectClass(app,'sheet');assert.equal(app.get('sheet-view').hidden,false);
+ app.click('break-next');assert.equal(app.get('class-lesson').value,'9');assert.equal(app.get('energy-panel').hidden,true);
+ selectClass(app,'10');app.click('class-next');assert.equal(app.get('class-lesson').value,'11');
+ app.click('class-next');assert.equal(app.get('lesson-stage').value,'pattern');
+ app.click('class-next');assert.equal(app.get('lesson-stage').value,'one-row');
+ app.click('call-recipe');app.add(['U']);app.click('run');await app.advance(5000);
+ assert.equal(app.get('class-completion').hidden,false);app.click('class-continue');
+ assert.equal(app.get('class-lesson').value,'14');assert.equal(app.get('lesson-stage').value,'two-rows');
+ assert.equal(app.get('recipe-editor').hidden,false);assert.equal(app.get('board').children.length,25);
+ for(const [walk,watered] of [[[],2],[['L','L','U','U'],4],[['L','L','U','U'],6]]){
+  app.add(walk);app.click('call-recipe');app.click('run');await app.advance(7000);
+  assert.equal(app.get('board').querySelectorAll('.watered').length,watered);
+ }
+ app.add(['R','R']);app.click('run');await app.advance(2000);
+ assert.equal(app.get('game-view').dataset.state,'won');assert.deepEqual(robotPosition(app),[4,0]);
+ assert.equal(app.get('step-count').textContent,'22 pași făcuți');
+ assert.equal(app.get('queue').querySelectorAll('.recipe-call.complete').length,3);
+ app.click('class-continue');assert.equal(app.get('class-lesson').value,'15');
+ app.click('class-next');assert.equal(app.get('lesson-stage').value,'four-directions');assert.equal(app.get('class-next').disabled,true);
+ app.click('class-previous');assert.equal(app.get('class-lesson').value,'15');
+});
+
+test('removed activities and timed presentation copy are absent from the interface',t=>{
+ const app=setup({guided:true,classroom:true});t.after(app.close);
+ for(const id of ['story-view','sheet-view','scene-action','new-map','first-map','print-game','class-extras'])assert.equal(app.get(id),null);
+ assert.doesNotMatch(app.document.body.textContent,/90 de minute|90 min|Sesiunea de|Povestea ilustrată|Fișa de explorator|Fabrica de hărți/);
+ for(const id of ['presentation','sheet','free']){
+  const old=setup({guided:true,classroom:true,url:'http://robo.test/?lesson='+id});t.after(old.close);
+  assert.equal(old.get('class-lesson').value,'1');
+ }
 });
