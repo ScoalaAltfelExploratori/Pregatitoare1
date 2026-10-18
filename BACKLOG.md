@@ -8,6 +8,7 @@ Elementele V1 și verificările de mai jos păstrează istoricul implementării.
 
 ## V1.3 · Lecție interactivă de 90 de minute
 
+- [x] **CLASS-06 · Revizie pentru proiecție și participare.** Bară compactă, selectoare mai lizibile, varianta unică ascunsă, destinații și cheie dimensionate după celulă, final fără mesaj duplicat și butoane mari pentru alt copil/continuare. Întrebări orale în meniul adultului și rutina „Arătăm → Alegem → Testăm” în plan; hărțile se pot construi în bucăți, cu pauze scurte și fără obligația de a termina cele 12 activități. 107 teste și verificările de sintaxă trec; inspectate în browser la 1280×720 hărțile 3×3/5×5, finalul, meniul adultului și planul.
 - [x] **CLASS-01 · Navigare permanentă.** Selector cu toate cele 12 activități și extensiile, variante, Înapoi/Înainte și Detectivul direct în bara de sus. Lecția și varianta se refac din adresă după refresh, inclusiv fără stocare.
 - [x] **CLASS-02 · Ritmul clasei.** Plan de 90 de minute cu pauză de mișcare, sugestii pentru schimbarea copiilor și recapitulare. Anticiparea, detectivul, energia, comparația și provocările existente sunt integrate. Repetițiile și rețeta rămân opționale.
 - [x] **CLASS-03 · Acasă separat.** Prenume opțional la început, preluat pe diploma locală. Șase activități variate, inclusiv săgeata lipsă și energia. Progresul de clasă nu acordă diplomă; salvările vechi păstrează doar reușitele neschimbate.

@@ -18,7 +18,11 @@ Deschiderea meniului „Pentru adult” oprește rularea, inclusiv o întrebare 
 
 ### Sesiunea de 90 de minute
 
-Un copil lucrează la laptop, restul clasei anticipează și explică. Schimbăm copilul după o încercare sau o etapă. „Alt copil, aceeași provocare” pregătește o încercare goală; „La start” păstrează programul pentru retestare.
+Un copil lucrează la laptop, restul clasei anticipează și explică. Schimbăm copilul după o încercare sau o etapă. „Alt copil” pregătește aceeași provocare cu program gol; „La start” păstrează programul pentru retestare.
+
+În „Plan · 90 min” → „Cum prezint la nivelul lor?” găsești o introducere și rutina **Arătăm → Alegem → Testăm**. Toată clasa arată direcția, un copil pune una sau două săgeți, altul anticipează, apoi verificăm și reparăm împreună. Pe hărțile mari construim drumul în bucăți. Intercalăm mici pauze de mișcare; cele 12 activități sunt un meniu flexibil, nu o listă obligatorie. Folosim mai întâi „pas”, „săgeată” și „drum”, apoi numim șirul „program”.
+
+„Pentru adult” arată acum o întrebare orală pentru lecția curentă, adaptată și variantelor de energie, comparație și decizie. Nu este necesar ca elevii să citească: adultul pune întrebarea, iar copiii pot răspunde prin gesturi. Destinațiile și cheia se dimensionează după celule; bara de sus este mai compactă, iar selectorul variantei dispare când există o singură variantă.
 
 | Minute | Activitate |
 | --- | --- |

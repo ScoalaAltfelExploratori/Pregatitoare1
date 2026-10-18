@@ -22,8 +22,35 @@
   {id:'sheet',title:'Fișa de explorator',icon:'✏',notes:'Un copil programează, celălalt urmărește cu un pion. Putem tipări fișa și schimba rolurile.',variants:[{title:'Lucrăm în perechi',type:'sheet'}]},
   {id:'free',title:'Fabrica de hărți',icon:'✨',notes:'O nouă hartă cu un drum verificat. Copiii propun un traseu împreună.',variants:[{title:'Hartă nouă',type:'free'},{title:'Harta originală',type:'original'}]}
  ];
+ const questions={
+  '1':'Arătați cu mâna: încotro este comoara?',
+  '2':'Unde ajunge Robo dacă urmează săgețile în ordine?',
+  '3':'Unde se oprește Robo? Arătați înainte să pornim.',
+  '4':'Ce săgeată schimbăm ca să reparăm drumul?',
+  '5':'Pe unde putem ocoli copacii?',
+  '6':'Ce luăm înainte să deschidem comoara?',
+  '7':'Unde trebuie să fie Robo când coborâm podul?',
+  '8':'Poți urma o săgeată cu un singur pas?',
+  '9':'Câte liniuțe rămân după un pas?',
+  '10':'Ambele drumuri ajung acasă. Care are mai puține săgeți?',
+  '11':'Unde trebuie să fie Robo ca să ude floarea?',
+  '12':'Facem câțiva pași. Cum continuăm de aici?',
+  loops:'Batem din palme de trei ori. Ce mișcare am repetat?',
+  garden:'Ce comenzi se potrivesc aici? Le încercăm pe rând.',
+  recipe:'Ce face Robo când îi cerem „Udă un rând”?',
+  presentation:'Cum îl putem ajuta pe Robo?',
+  sheet:'Pionul a urmat săgețile exact în ordinea aleasă?',
+  free:'Arătăm drumul cu degetul. Care este primul pas?'
+ };
  function find(id){return activities.find(a=>a.id===String(id));}
  function resolve(id,variant=0){const activity=find(id)||activities[0];const index=Number.isInteger(variant)&&variant>=0&&variant<activity.variants.length?variant:0;return {activity,index,variant:activity.variants[index]};}
- const api={activities,find,resolve};
+ function question(id,variant=0){
+  if(id==='9'&&variant>0)return 'Ne ajung liniuțele până la următoarea stație?';
+  if(id==='10'&&variant===1)return 'Ce săgeată lipsește dintre cele două săgeți?';
+  if(id==='10'&&variant===2)return 'Unde ne oprim înainte să mergem acasă?';
+  if(id==='11'&&variant===1)return 'Aici este o floare? Spunem DA sau NU înainte să verificăm.';
+  return questions[id]||'Unde credeți că va ajunge Robo?';
+ }
+ const api={activities,find,resolve,question};
  if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.RoboClassroom=api;
 })(typeof window!=='undefined'?window:globalThis);

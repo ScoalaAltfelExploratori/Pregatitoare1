@@ -78,6 +78,7 @@
    const side=Math.floor(Math.min(frame.clientWidth,frame.clientHeight,520));
    if(side>0)stage.style.width=side+'px';
   }else stage.style.removeProperty('width');
+  const board=$('board');if(board.clientWidth)board.style.setProperty('--board-width',board.clientWidth+'px');
   placeRobot();
  }
  function mood(name){
@@ -472,6 +473,9 @@
   $('classroom-toolbar').hidden=homeMode;
   $('open-classroom').setAttribute('aria-pressed',String(!homeMode));$('open-adventures').setAttribute('aria-pressed',String(homeMode));
   const activity=T.find(classLesson);
+  document.body.classList.toggle('class-session',Boolean(activity&&!homeMode));
+  $('presenter-guide').hidden=homeMode||!activity;
+  if(activity){$('presenter-activity').textContent=activity.title;$('presenter-question').textContent='„'+T.question(activity.id,classVariant)+'”';$('presenter-participation').textContent=activity.notes;}
   $('class-lesson').value=activity?activity.id:'';
   if($('class-variant').dataset.activity!==(activity?activity.id:'')){
    $('class-variant').replaceChildren();
@@ -479,6 +483,7 @@
    $('class-variant').dataset.activity=activity?activity.id:'';
   }
   $('class-variant').value=String(classVariant);$('class-variant').disabled=!activity||activity.variants.length===1;
+  $('class-variant-label').hidden=!activity||activity.variants.length===1;
   const index=T.activities.findIndex(a=>a.id===classLesson);
   $('class-previous').disabled=index<=0||index>11;$('class-next').disabled=index<0||index>=11;
   $('class-detective').setAttribute('aria-pressed',String(classLesson==='4'));
@@ -490,6 +495,7 @@
    if(activity.variants[classVariant].type==='pack')$('mission-brief').textContent=map.brief;
    const both=!map.routes||Object.keys(routeResults).length===map.routes.length;
    $('class-completion-message').textContent=!both?'Am testat un drum. Îl încercăm și pe celălalt!':mode==='predict'?'Am urmărit săgețile. Explicăm ce am observat.':'Am reușit împreună! Schimbăm copilul sau mergem mai departe.';
+   $('class-completion-message').hidden=both;
    $('class-continue').hidden=!both;
    $('class-continue').textContent=classLesson==='9'&&classVariant===0?'Încercăm stația · 5×5 →':index===11||index>11?'Înapoi la planul clasei':'Următoarea activitate →';
   }

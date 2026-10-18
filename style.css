@@ -439,3 +439,30 @@
 .diploma-page>p{margin:14px 0}.diploma-fields{display:flex;gap:20px;flex-wrap:wrap}.diploma-fields label{font-size:16px;display:flex;flex-direction:column;gap:7px}.diploma-fields label:first-child{flex:1}.diploma-fields input{font:inherit;font-size:18px;border:2px solid #adcbd8;border-radius:12px;padding:12px;min-width:0}.diploma-fields input:focus-visible{outline:3px solid #e88a15}#diploma-preview{width:100%;height:auto;background:#fff;border-radius:16px;box-shadow:0 4px 18px #183e5420;display:block}.diploma-actions{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}#diploma-status{min-height:28px;font-size:16px}
 @media(min-width:960px) and (min-height:720px){.game-screen .energy-panel{padding:6px 14px}.game-screen #pack-completion{padding:8px;margin-top:6px}.game-screen #pack-completion>span{display:block}.game-screen #pack-completion button{padding:7px 10px}.game-screen #pack-completion #pack-home{font-size:14px}.game-screen .retry-energy{margin-top:4px;min-height:40px}}
 @media(max-width:730px){.app-header{gap:8px}.app-header #open-adventures{font-size:12px;padding:8px;max-width:92px;line-height:1.3}.game-screen .brand{font-size:17px;gap:5px}.game-screen .brand-icon{font-size:22px}.adventure-cards{grid-template-columns:1fr 1fr;gap:10px}.adventure-card{grid-template-columns:1fr;padding:14px;min-height:150px}.adventure-card .card-number{grid-row:auto}.adventure-card small{grid-column:1}.adventure-card b{font-size:16px}.home-intro{padding:22px;gap:12px;align-items:flex-start}.home-mascot{font-size:48px}.home-intro h1{font-size:29px}.home-intro p{font-size:16px}.home-intro button{font-size:15px}.home-progress{gap:8px 18px}.parent-guide,.optional-adventures{padding:18px}.diploma-fields{gap:14px}.diploma-fields label{width:100%}.diploma-fields input{width:100%}}
+
+/* Projection: compact teacher controls, clear destinations, one success message. */
+#board{--goal-size:clamp(30px,calc(var(--board-width,420px) / var(--board-size,3) * .52),90px)}
+#board .tile.goal,#board .tile.key-item{font-size:var(--goal-size)}
+#board .tile.goal:not(.win) .chest-icon{width:var(--goal-size)}
+.classroom-toolbar .class-lesson-label{flex:1 1 330px;max-width:440px}
+.classroom-toolbar .class-variant-label{flex:1 1 270px;max-width:350px}
+.classroom-toolbar #class-lesson,.classroom-toolbar #class-variant{width:100%;max-width:none}
+.classroom-toolbar select:focus-visible{outline:3px solid #e88a15;outline-offset:2px}
+.class-session #game-view[data-state="won"] #action-pad,.class-session #game-view[data-state="won"] #repeat-editor,.class-session #game-view[data-state="won"] #recipe-editor,.class-session #game-view[data-state="won"] #decision-editor{display:none}
+.game-screen #class-completion{background:transparent;border:0;padding:0;margin-top:8px;gap:8px}
+.game-screen #class-completion>span{flex-basis:100%;font-size:16px;margin:0 0 3px}
+.game-screen #class-completion button{flex:1;min-width:0;min-height:48px;font-size:16px;padding:8px 12px;border-radius:12px}
+.presenter-guide{background:#f1f8f6;border:1px solid #b2d2c6;border-radius:14px;padding:16px;margin:16px 0}
+.presenter-guide h2{font-size:19px;margin-bottom:10px}.presenter-guide p{font-size:15px;line-height:1.5;margin:8px 0}.presenter-guide .eyebrow{font-size:11px}.presenter-guide .presenter-question{font-size:22px;font-weight:700;line-height:1.35;color:#155e61}.presenter-guide .hint{font-size:13px}
+.teaching-routine{border:2px solid #b4d3d7;background:#fff;border-radius:18px;padding:18px 22px;margin:20px 0}
+.teaching-routine summary{font-weight:700;cursor:pointer;min-height:34px;font-size:21px}.teaching-routine>p{font-size:17px;line-height:1.6;margin:16px 0 0}.teaching-routine .opening-line{font-size:23px;color:#126267}
+.participation-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}.participation-steps>div{background:#eef6fc;border-radius:12px;padding:16px}.participation-steps b{font-size:20px}.participation-steps p{font-size:16px;line-height:1.5;margin:10px 0 0}
+@media screen and (min-width:960px){
+ .class-session.game-screen .app-header{min-height:52px;padding:4px 22px;gap:12px}
+ .class-session.game-screen .brand{font-size:20px}.class-session.game-screen .brand-icon{font-size:25px}
+ .class-session.game-screen .adult-menu{margin-left:4px}
+ .class-session .classroom-toolbar{padding-top:5px;padding-bottom:5px}
+ .class-session.game-screen .adult-panel{top:56px;max-height:calc(100dvh - 72px)}
+}
+@media(max-width:959px){.classroom-toolbar .class-lesson-label{flex:1 1 52%;max-width:none}.classroom-toolbar .class-variant-label{flex:1 1 40%;max-width:none}}
+@media(max-width:730px){.participation-steps{grid-template-columns:1fr}.teaching-routine{padding:16px}.teaching-routine .opening-line{font-size:20px}.game-screen #class-completion button{font-size:15px}}
