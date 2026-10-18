@@ -39,6 +39,6 @@ test('simple repetitions expand to visible movement and both comparison routes a
 });
 test('progress rejects corrupt values and does not mix packs',()=>{
  for(const raw of ['broken','null','{"version":2,"done":[]}'])assert.deepEqual(P.readProgress(raw,'home'),{version:1,done:[],current:0});
- assert.deepEqual(P.readProgress('{"version":1,"done":["first","first","observe",null],"current":99}','home'),{version:1,done:['first'],current:0});
- assert.equal(P.next('home',{done:['first','turn']}),2);
+ assert.deepEqual(P.readProgress('{"version":1,"done":["turn","turn","observe",null],"current":99}','home'),{version:1,done:['turn'],current:0});
+ assert.equal(P.next('home',{done:['turn','missing']}),2);
 });

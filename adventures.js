@@ -4,11 +4,11 @@
  const battery=(chargers)=>({capacity:4,chargers});
  const packs={
   home:{title:'Acasă cu Robo',icon:'🏡',description:'Șase misiuni scurte, împreună cu un adult.',maps:[
-   {id:'first',title:'Un pas cu Robo',goal:[1,2],goalIcon:'💎',goalName:'comoară',brief:'O săgeată spre comoară.'},
    {id:'turn',title:'Schimbăm direcția',goal:[1,1],brief:'Un pas la dreapta, un pas în sus.'},
-   {id:'tree',title:'Ocolim copacul',goal:[2,1],obstacles:['1,2'],brief:'Un copac în drum. Îl ocolim!'},
+   {id:'missing',title:'Ce săgeată lipsește?',goal:[2,1],missing:{index:1,program:['R','R','R']},brief:'→ ? →. Alege săgeata din mijloc, apoi testăm.'},
    {id:'key',title:'Cheia și comoara',keyPosition:[1,1],goalIcon:'💎',goalName:'comoară',pauseAfterKey:true,brief:'Luăm cheia, apoi deschidem comoara.'},
    {id:'bridge',title:'Coborâm podul',goal:[2,1],lever:[0,1],bridge:[1,1],water:['1,0','1,1','1,2'],actions:['A'],pauseAfterAction:true,brief:'Mergem la manetă. Activăm. Trecem podul.'},
+   {id:'charge',title:'Oprire la stația de energie',size:5,start:[0,4],goal:[4,0],energy:battery(['2,2']),brief:'Patru liniuțe până la stație. Ne încărcăm și continuăm acasă.'},
    {id:'home',title:'Ultima oprire, apoi acasă',stops:['1,0'],brief:'Vizităm steaua, apoi ajungem la căsuță.'}
   ]},
   energy:{title:'Energia lui Robo',icon:'⚡',description:'Observăm bateria, apoi alegem unde ne încărcăm.',maps:[

@@ -6,7 +6,7 @@
   return pending[src];
  }
  async function image(){
-  if(!template){await loadScript('assets/diploma-template.js?v=home-v1');template=await new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(Error('Imaginea diplomei nu este disponibilă.'));img.src=root.RoboDiplomaImage;});}return template;
+  if(!template){await loadScript('assets/diploma-template.js?v=classroom-v2');template=await new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(Error('Imaginea diplomei nu este disponibilă.'));img.src=root.RoboDiplomaImage;});}return template;
  }
  function dateLabel(value){const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(value);return m?m[3]+'.'+m[2]+'.'+m[1]:'';}
  async function paint(canvas,name='',date=''){

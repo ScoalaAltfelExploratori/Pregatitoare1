@@ -1,6 +1,7 @@
 (function(){
  'use strict';
- const E=window.RoboEngine,C=window.RoboLessons,A=window.RoboAudio,P=window.RoboAdventures,$=id=>document.getElementById(id);
+ const E=window.RoboEngine,C=window.RoboLessons,A=window.RoboAudio,P=window.RoboAdventures,T=window.RoboClassroom,$=id=>document.getElementById(id);
+ let classLesson=null,classVariant=0,homeMode=false,classReturnView='game';
  const packProgress={};let activePack=null,packIndex=0,energyCheckpoint=null,missingChosen=false,routeResults={},selectedRoute=null,storageAvailable=true;
  for(const pack of Object.keys(P.packs)){try{packProgress[pack]=P.readProgress(localStorage.getItem('robo-adventure-'+pack+'-v1'),pack);}catch{packProgress[pack]=P.readProgress(null,pack);storageAvailable=false;}}
  const progressKey='robo-explorator-progress-v1';
@@ -259,7 +260,7 @@
   $('detective-continue').hidden=!(mode==='detective'&&won&&guidedDetective);
   $('prediction-title').textContent='Privește cele '+predictionLength+' săgeți';
   $('prediction-count').disabled=busy;
-  drawLessonTools();drawAdventure();
+  drawLessonTools();drawAdventure();drawClassroom();
   // Scroll only the program pane; the map and playback controls stay in place.
   const queue=$('queue'),currentTile=queue.querySelector('.active');
   if(busy&&currentTile&&queue.clientHeight){const pane=queue.getBoundingClientRect(),tile=currentTile.getBoundingClientRect();if(tile.top<pane.top)queue.scrollTop+=tile.top-pane.top-8;else if(tile.bottom>pane.bottom)queue.scrollTop+=tile.bottom-pane.bottom+8;}
@@ -318,10 +319,11 @@
   commands=next;cancelRun();rewind();draw();A.play('select');report('Am schimbat o săgeată. Robo este la start. Testăm drumul!');
  }
  function saveProgram(){
-  if(mode==='program')savedProgram={map,commands:E.cloneProgram(commands),missionIndex,position:[...position],visited:visited.map(p=>[...p]),executed,active,won,bump,hasKey,world:E.copyWorld(world),decisions:{...decisions},activePack,packIndex,energyCheckpoint,missingChosen,routeResults:{...routeResults},selectedRoute};
+  if(mode==='program')savedProgram={map,commands:E.cloneProgram(commands),missionIndex,position:[...position],visited:visited.map(p=>[...p]),executed,active,won,bump,hasKey,world:E.copyWorld(world),decisions:{...decisions},activePack,packIndex,energyCheckpoint,missingChosen,routeResults:{...routeResults},selectedRoute,classLesson,classVariant,homeMode};
  }
  function startDetective(index=0){
   saveProgram();detectiveIndex=index;const round=E.detectiveCase(index);detectiveSelected=index===0?round.detective.repairIndex:-1;
+  if(classLesson==='4'){classVariant=index;setClassURL();}else classLesson=null;
   mode='detective';missionIndex=null;activePack=null;loadMap(round,round.detective.commands);
   report(index===0?'Săgeata 2 este aleasă. O schimbăm ca să ajungem la comoară.':'Privim săgețile. Putem testa drumul, apoi schimbăm o singură săgeată.');
  }
@@ -356,10 +358,10 @@
  function cancelRun(){runToken++;if(decisionPending){const pending=decisionPending;decisionPending=null;pending.resolve();}busy=false;A.stop();mood('');}
  function stop(){if(!busy)return;cancelRun();draw();report(mode==='predict'?'Ne-am oprit. Putem schimba alegerea. Verificarea reia programul de la start.':'Ne-am oprit. '+idleMessage());}
  function loadMap(m,program=[]){cancelRun();map=m;commands=E.cloneProgram(program);guess=null;$('repeat-count').value=String(m.repeatCount||3);$('repeat-editor').open=false;rewind();draw();if(view==='game')window.scrollTo(0,0);report(program.length?'Program pregătit. Unde credeți că va ajunge Robo?':'Alege comenzile. Robo le va urma în ordine.');}
- function loadFree(m,program=[]){mode='program';missionIndex=null;activePack=null;savedProgram=null;loadMap(m,program);}
+ function loadFree(m,program=[]){classLesson=null;homeMode=false;setAdventureURL(false);mode='program';missionIndex=null;activePack=null;savedProgram=null;loadMap(m,program);}
  function startMission(index,options={}){
   if(index<0||index>=E.missionCount||(index>completed&&!options.preview))return;
-  activePack=null;setAdventureURL(false);
+  classLesson=null;homeMode=false;activePack=null;setAdventureURL(false);
   mode='program';missionIndex=index;savedProgram=null;$('reset-confirmation').hidden=true;$('mission-picker').open=false;const chosen=options.stage||(index>=completed?checkpoints[index]:null);const lessonMap=C.get(index,chosen);if(options.scattered!==undefined){Object.assign(lessonMap,E.mission(index,{scattered:options.scattered}));lessonMap.lesson.next=null;}loadMap(lessonMap);
  }
  function freshMap(){let m=E.generate(seed());const fingerprint=x=>JSON.stringify([x.start,x.goal,x.obstacles]);if(fingerprint(m)===fingerprint(map))m=E.generate(seed());m.label='Hartă inventată · '+generated;loadFree(m);report('O hartă nouă, după aceleași reguli. Există un drum până la comoară.');}
@@ -370,6 +372,7 @@
  }
  function newPrediction(){
   saveProgram();
+  if(classLesson!=='3')classLesson=null;
   const size=3;
   const previous=JSON.stringify([map.start,map.goal,commands]);
   let round=E.predictionRound(seed(),size,predictionLength);
@@ -379,7 +382,7 @@
  function returnToProgram(){
   if(mode==='program')return;
   cancelRun();mode='program';const saved=savedProgram;savedProgram=null;
-  if(saved){({map,commands,missionIndex,position,visited,executed,active,won,bump,hasKey,world,decisions,activePack,packIndex,energyCheckpoint,missingChosen,routeResults,selectedRoute}=saved);guess=null;predictionDone=false;draw();report(idleMessage(),won?'success':'');}else startMission(Math.min(completed,E.missionCount-1));
+  if(saved){({map,commands,missionIndex,position,visited,executed,active,won,bump,hasKey,world,decisions,activePack,packIndex,energyCheckpoint,missingChosen,routeResults,selectedRoute,classLesson,classVariant,homeMode}=saved);guess=null;predictionDone=false;if(classLesson)setClassURL();else setAdventureURL(homeMode);draw();report(idleMessage(),won?'success':'');}else startMission(Math.min(completed,E.missionCount-1));
  }
  function finishPrediction(animate=false){
   busy=false;predictionDone=true;const correct=E.same(position,guess);draw(animate);mood(correct?'happy':'curious');A.play(correct?'win':'retry');
@@ -387,7 +390,8 @@
  }
  function finishMission(animate=false){
   busy=false;won=true;let stored=true;
-  if(activePack){if(map.routes)routeResults[selectedRoute]=executed;if(!map.routes||Object.keys(routeResults).length===map.routes.length){const progress=packProgress[activePack];if(!progress.done.includes(map.id))progress.done.push(map.id);progress.current=Math.min(packIndex+1,P.packs[activePack].maps.length-1);storePack(activePack);}}
+  if(map.routes)routeResults[selectedRoute]=executed;
+  if(activePack){if(!map.routes||Object.keys(routeResults).length===map.routes.length){const progress=packProgress[activePack];if(!progress.done.includes(map.id))progress.done.push(map.id);progress.current=Math.min(packIndex+1,P.packs[activePack].maps.length-1);storePack(activePack);}}
   if(mode==='detective'){draw(animate);mood('happy');A.play('win');report('Am reparat drumul! Robo a ajuns la '+map.goalName+'.','success');return;}
   if(missionIndex!==null){
    if(map.lesson&&map.lesson.next)checkpoints[missionIndex]=map.lesson.next;
@@ -440,7 +444,66 @@
   if(mode==='predict'){finishPrediction();return;}
   busy=false;draw();report(idleMessage());
  }
- function showView(next){const changed=view!==next;if(busy)stop();closeAdult(false);A.stop();view=next;document.body.classList.toggle('game-screen',next==='game');for(const name of ['game','story','sheet','home','diploma'])$(name+'-view').hidden=name!==next;document.querySelectorAll('[data-view]').forEach(b=>{b.classList.toggle('selected',b.dataset.view===next);b.setAttribute('aria-pressed',String(b.dataset.view===next));});if(next==='story')renderScene();if(next==='sheet')renderSheet();if(next==='home')drawHome();if(next==='game')fitBoard();if(changed)window.scrollTo(0,0);}
+ function showView(next){const changed=view!==next;if(busy)stop();closeAdult(false);A.stop();view=next;document.body.classList.toggle('game-screen',next==='game');for(const name of ['game','story','sheet','home','diploma','class-plan','class-break'])$(name+'-view').hidden=name!==next;document.querySelectorAll('[data-view]').forEach(b=>{b.classList.toggle('selected',b.dataset.view===next);b.setAttribute('aria-pressed',String(b.dataset.view===next));});if(next==='story')renderScene();if(next==='sheet')renderSheet();if(next==='home')drawHome();drawClassroom();if(next==='game')fitBoard();if(changed)window.scrollTo(0,0);}
+ function setClassURL(){
+  const url=adventureURL(false);if(classLesson){url.searchParams.set('lesson',classLesson);if(classVariant)url.searchParams.set('variant',String(classVariant+1));}
+  try{history.replaceState(null,'',url);}catch{}
+ }
+ function startClass(id,variant=0){
+  const resolved=T.resolve(id,variant),activity=resolved.activity,item=resolved.variant;
+  cancelRun();classLesson=null;classVariant=resolved.index;homeMode=false;activePack=null;savedProgram=null;guidedDetective=false;missingChosen=false;routeResults={};selectedRoute=null;
+  let target='game';
+  if(item.type==='curriculum')startMission(item.index,{stage:item.stage,preview:true});
+  else if(item.type==='detective')startDetective(item.index);
+  else if(item.type==='predict'){predictionLength=2;$('prediction-count').value='2';newPrediction();}
+  else if(item.type==='pack'){const m=P.get(item.pack,item.index);loadFree(m,m.missing?m.missing.program:[]);}
+  else if(item.type==='free')freshMap();
+  else if(item.type==='original')loadFree(E.firstMap());
+  else {startMission(0,{stage:'one',preview:true});if(item.type==='break')target='class-break';if(item.type==='story'){sceneIndex=0;target='story';}if(item.type==='sheet'){sheetMap=C.get(0,'two');target='sheet';}}
+  // Each classroom activity is independent of home awards and can be opened directly.
+  activePack=null;savedProgram=null;classLesson=activity.id;classVariant=resolved.index;classReturnView=target;setClassURL();showView(target);draw();
+  if(item.type==='pack')report(map.brief);
+ }
+ function nextClass(){const i=T.activities.findIndex(a=>a.id===classLesson);if(i>=0&&i<11)startClass(T.activities[i+1].id);else openClassPlan();}
+ function continueClass(){if(classLesson==='9'&&classVariant===0)startClass('9',1);else nextClass();}
+ function openClassPlan(){if(view!=='class-plan')classReturnView=view;showView('class-plan');}
+ function drawClassroom(){
+  document.body.classList.toggle('home-context',homeMode);
+  $('classroom-toolbar').hidden=homeMode;
+  $('open-classroom').setAttribute('aria-pressed',String(!homeMode));$('open-adventures').setAttribute('aria-pressed',String(homeMode));
+  const activity=T.find(classLesson);
+  $('class-lesson').value=activity?activity.id:'';
+  if($('class-variant').dataset.activity!==(activity?activity.id:'')){
+   $('class-variant').replaceChildren();
+   if(activity)activity.variants.forEach((v,i)=>{const option=document.createElement('option');option.value=String(i);option.textContent=v.title;$('class-variant').append(option);});
+   $('class-variant').dataset.activity=activity?activity.id:'';
+  }
+  $('class-variant').value=String(classVariant);$('class-variant').disabled=!activity||activity.variants.length===1;
+  const index=T.activities.findIndex(a=>a.id===classLesson);
+  $('class-previous').disabled=index<=0||index>11;$('class-next').disabled=index<0||index>=11;
+  $('class-detective').setAttribute('aria-pressed',String(classLesson==='4'));
+  $('class-plan').setAttribute('aria-pressed',String(view==='class-plan'));
+  const complete=won||mode==='predict'&&predictionDone;
+  $('class-completion').hidden=homeMode||!activity||!complete||view!=='game';
+  if(activity&&!homeMode){
+   $('completion').hidden=true;$('detective-completion').hidden=true;
+   if(activity.variants[classVariant].type==='pack')$('mission-brief').textContent=map.brief;
+   const both=!map.routes||Object.keys(routeResults).length===map.routes.length;
+   $('class-completion-message').textContent=!both?'Am testat un drum. Îl încercăm și pe celălalt!':mode==='predict'?'Am urmărit săgețile. Explicăm ce am observat.':'Am reușit împreună! Schimbăm copilul sau mergem mai departe.';
+   $('class-continue').hidden=!both;
+   $('class-continue').textContent=classLesson==='9'&&classVariant===0?'Încercăm stația · 5×5 →':index===11||index>11?'Înapoi la planul clasei':'Următoarea activitate →';
+  }
+ }
+ function prepareClassroom(){
+  const main=document.createElement('optgroup'),extras=document.createElement('optgroup');main.label='Sesiunea de 90 de minute';extras.label='Extensii opționale';let elapsed=0;
+  T.activities.forEach(activity=>{
+   const option=document.createElement('option');option.value=activity.id;option.textContent=(activity.minutes?activity.id+'. ':'')+activity.title;(activity.minutes?main:extras).append(option);
+   const button=document.createElement('button');button.addEventListener('click',()=>startClass(activity.id));
+   if(activity.minutes){const end=elapsed+activity.minutes;button.innerHTML='<span class="plan-time">'+elapsed+'–'+end+' min</span><span class="plan-icon" aria-hidden="true">'+activity.icon+'</span><span><b>'+activity.id+'. '+activity.title+'</b><small>'+activity.notes+'</small></span><span aria-hidden="true">→</span>';$('class-plan-list').append(button);elapsed=end;}
+   else {button.textContent=activity.icon+' '+activity.title;button.title=activity.notes;$('class-extras').append(button);}
+  });
+  $('class-lesson').append(main,extras);const link=adventureURL(true);$('class-home-link').href=link.href;$('class-home-link').textContent=link.href;
+ }
  function captureCheckpoint(){return {position:[...position],visited:visited.map(p=>[...p]),hasKey,world:E.copyWorld(world),decisions:{...decisions},executed,commands:E.executedPrefix(commands,executed,map.recipes)};}
  function retryEnergy(){
   if(busy||!map.energy||!energyCheckpoint)return;
@@ -448,13 +511,13 @@
  }
  function storePack(pack){try{localStorage.setItem('robo-adventure-'+pack+'-v1',JSON.stringify(packProgress[pack]));}catch{storageAvailable=false;}}
  function diplomaReady(){return P.packs.home.maps.every(m=>packProgress.home.done.includes(m.id));}
- function adventureURL(home){const url=new URL(location.href);if(home)url.searchParams.set('adventure','home');else url.searchParams.delete('adventure');url.hash='';return url;}
+ function adventureURL(home){const url=new URL(location.href);url.searchParams.delete('lesson');url.searchParams.delete('variant');if(home)url.searchParams.set('adventure','home');else url.searchParams.delete('adventure');url.hash='';return url;}
  function setAdventureURL(home){try{history.replaceState(null,'',adventureURL(home));}catch{}}
- function openHome(){setAdventureURL(true);showView('home');$('home-title').focus({preventScroll:true});}
+ function openHome(){homeMode=true;setAdventureURL(true);showView('home');$('home-title').focus({preventScroll:true});}
  function startPack(pack,index){
   if(!P.packs[pack]||!P.packs[pack].maps[index])return;
-  if(pack==='home'&&index>0&&!packProgress.home.done.includes(P.packs.home.maps[index-1].id))return;
-  activePack=pack;packIndex=index;mode='program';missionIndex=null;savedProgram=null;missingChosen=false;routeResults={};selectedRoute=null;packProgress[pack].current=index;storePack(pack);
+  if(pack==='home'&&!homeUnlocked(index))return;
+  classLesson=null;homeMode=true;activePack=pack;packIndex=index;mode='program';missionIndex=null;savedProgram=null;missingChosen=false;routeResults={};selectedRoute=null;packProgress[pack].current=index;storePack(pack);
   const m=P.get(pack,index);loadMap(m,m.missing?m.missing.program:[]);setAdventureURL(true);showView('game');report(m.brief);
  }
  function drawHome(){
@@ -462,11 +525,12 @@
   $('home-progress-label').textContent=done+' din 6 misiuni terminate';$('home-stars').textContent='★'.repeat(done)+'☆'.repeat(6-done);
   $('home-continue').textContent=ready?'Ne jucăm din nou →':done?'Continuăm aventura →':'Începem aventura →';$('home-diploma').hidden=!ready;
   $('resume-play').hidden=!activePack;$('home-missions').replaceChildren();
-  P.packs.home.maps.forEach((m,i)=>{const finished=packProgress.home.done.includes(m.id),unlocked=i===0||packProgress.home.done.includes(P.packs.home.maps[i-1].id),b=document.createElement('button');b.className='adventure-card'+(finished?' finished':'');b.disabled=!unlocked;b.innerHTML='<span class="card-number" aria-hidden="true">'+(finished?'✓':unlocked?i+1:'🔒')+'</span><b>'+m.title+'</b><small>'+(finished?'Mai jucăm o dată':unlocked?'Pornim împreună':'După misiunea '+i)+'</small>';b.addEventListener('click',()=>startPack('home',i));$('home-missions').append(b);});
+  P.packs.home.maps.forEach((m,i)=>{const finished=packProgress.home.done.includes(m.id),unlocked=homeUnlocked(i),b=document.createElement('button');b.className='adventure-card'+(finished?' finished':'');b.disabled=!unlocked;b.innerHTML='<span class="card-number" aria-hidden="true">'+(finished?'✓':unlocked?i+1:'🔒')+'</span><b>'+m.title+'</b><small>'+(!unlocked?'După misiunile anterioare':finished?'Mai jucăm o dată':'Pornim împreună')+'</small>';b.addEventListener('click',()=>startPack('home',i));$('home-missions').append(b);});
   $('home-link').value=adventureURL(true).href;$('home-storage-note').textContent=storageAvailable?'Progresul de acasă este separat de lecțiile clasei.':'Acest browser nu poate salva progresul. Păstrați pagina deschisă până descărcați diploma.';
   $('optional-packs').replaceChildren();
   for(const pack of ['energy','loops','puzzles']){const data=P.packs[pack],section=document.createElement('section'),heading=document.createElement('h2'),description=document.createElement('p'),list=document.createElement('div');heading.textContent=data.icon+' '+data.title;description.textContent=data.description;list.className='optional-missions';data.maps.forEach((m,i)=>{const b=document.createElement('button');b.textContent=(packProgress[pack].done.includes(m.id)?'✓ ':'')+(i+1)+'. '+m.title;b.addEventListener('click',()=>startPack(pack,i));list.append(b);});section.append(heading,description,list);$('optional-packs').append(section);}
  }
+ function homeUnlocked(index){return P.packs.home.maps.slice(0,index).every(m=>packProgress.home.done.includes(m.id));}
  function drawAdventure(){
   const energy=Boolean(map.energy),fixed=Boolean(map.missing||map.routes);
   $('energy-panel').hidden=!energy;$('retry-energy').hidden=!energy||busy||won||(!executed&&!bump);
@@ -489,7 +553,7 @@
   const revision=++previewRevision;$('download-diploma').disabled=true;
   try{const canvas=document.createElement('canvas');await window.RoboDiploma.paint(canvas,$('diploma-name').value,$('diploma-date').value);if(revision!==previewRevision)return;const preview=$('diploma-preview');preview.width=canvas.width;preview.height=canvas.height;preview.getContext('2d').drawImage(canvas,0,0);preview.setAttribute('aria-label',canvas.getAttribute('aria-label'));$('diploma-status').textContent='PDF A4, pe orizontală. Poate fi tipărit sau păstrat.';$('download-diploma').disabled=false;}catch{$('diploma-status').textContent='Diploma nu s-a încărcat. Apasă din nou „Diploma mea” pentru a reîncerca.';}
  }
- function openDiploma(){if(!diplomaReady())return;showView('diploma');if(!$('diploma-date').value){const date=new Date();$('diploma-date').value=[date.getFullYear(),String(date.getMonth()+1).padStart(2,'0'),String(date.getDate()).padStart(2,'0')].join('-');}updateDiplomaPreview();}
+ function openDiploma(){if(!homeMode||!diplomaReady())return;showView('diploma');if(!$('diploma-date').value){const date=new Date();$('diploma-date').value=[date.getFullYear(),String(date.getMonth()+1).padStart(2,'0'),String(date.getDate()).padStart(2,'0')].join('-');}updateDiplomaPreview();}
  function worksheet(m){
   if(m.missing||m.routes){const programs=m.routes||[{name:'Completează',commands:m.missing.program}];return '<article class="worksheet"><h2>'+m.title+'</h2><p>'+m.brief+'</p><div class="team">Echipa: ______________________________</div><div class="board" style="--board-size:'+m.size+'" role="img" aria-label="Harta provocării">'+boardHTML(m)+'</div>'+programs.map(r=>'<p>'+r.name+'</p><div class="detective-sheet-program">'+r.commands.map((d,i)=>'<span>'+(m.missing&&i===m.missing.index?'?':E.ARROW[d])+'</span>').join(' ')+'</div>').join('')+'<p>Testăm cu un pion. Încercăm de câte ori avem nevoie.</p></article>';}
   if(m.detective)return '<article class="worksheet"><h2>Detectivul Robo</h2><p>Îl ajutăm pe Robo să ajungă la '+m.goalName+'.</p><div class="team">Echipa: ______________________________</div><div class="board" style="--board-size:3" role="img" aria-label="Hartă cu 3 rânduri și 3 coloane pentru detectivi">'+boardHTML(m)+'</div><p>① Urmărim săgețile. ② Încercuim una de schimbat.</p><div class="detective-sheet-program">'+m.detective.commands.map(d=>'<span>'+E.ARROW[d]+'</span>').join(' ')+'</div><p>③ Desenăm drumul reparat. ④ Testăm cu un pion.</p><div class="sheet-queue" style="grid-template-columns:repeat('+m.detective.commands.length+',1fr)">'+m.detective.commands.map((_,i)=>'<span>'+(i+1)+'</span>').join('')+'</div><p class="roles">Alegem dintre '+m.detective.choices.map(d=>E.ARROW[d]).join(' și ')+'. Schimbăm o singură săgeată. Încercăm de câte ori avem nevoie.</p><div class="check"><span>□ Am testat.</span><span>□ Am reparat împreună.</span></div></article>';
@@ -527,14 +591,23 @@
  }
 
  document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+ $('open-classroom').addEventListener('click',()=>startClass(classLesson||'1',classVariant));
+ $('class-lesson').addEventListener('change',()=>{if($('class-lesson').value)startClass($('class-lesson').value);});
+ $('class-variant').addEventListener('change',()=>startClass(classLesson,Number($('class-variant').value)));
+ $('class-previous').addEventListener('click',()=>{const index=T.activities.findIndex(a=>a.id===classLesson);if(index>0&&index<12)startClass(T.activities[index-1].id);});
+ $('class-next').addEventListener('click',nextClass);$('class-continue').addEventListener('click',continueClass);
+ $('class-detective').addEventListener('click',()=>startClass('4'));$('class-plan').addEventListener('click',openClassPlan);
+ $('class-resume').addEventListener('click',()=>showView(classReturnView));
+ $('class-retry').addEventListener('click',()=>startClass(classLesson,classVariant));$('break-next').addEventListener('click',()=>startClass('9'));
+ $('home-name').addEventListener('input',()=>{$('diploma-name').value=$('home-name').value;});
  $('open-adventures').addEventListener('click',openHome);$('pack-home').addEventListener('click',openHome);$('diploma-back').addEventListener('click',openHome);
  $('home-continue').addEventListener('click',()=>startPack('home',P.next('home',packProgress.home)));
  $('resume-play').addEventListener('click',()=>showView('game'));
- $('classroom-return').addEventListener('click',()=>{startMission(Math.min(completed,E.missionCount-1));showView('game');});
+ $('classroom-return').addEventListener('click',()=>startClass('1'));
  $('pack-next').addEventListener('click',()=>{if(!activePack||!won)return;if(activePack==='home'&&packIndex===P.packs.home.maps.length-1&&diplomaReady()){openDiploma();return;}if(packIndex+1<P.packs[activePack].maps.length)startPack(activePack,packIndex+1);else openHome();});
  $('retry-energy').addEventListener('click',retryEnergy);$('route-a').addEventListener('click',()=>chooseRoute(0));$('route-b').addEventListener('click',()=>chooseRoute(1));
  $('home-diploma').addEventListener('click',openDiploma);
- $('diploma-name').addEventListener('input',updateDiplomaPreview);$('diploma-date').addEventListener('input',updateDiplomaPreview);
+ $('diploma-name').addEventListener('input',()=>{$('home-name').value=$('diploma-name').value;updateDiplomaPreview();});$('diploma-date').addEventListener('input',updateDiplomaPreview);
  $('download-diploma').addEventListener('click',async()=>{if(!diplomaReady())return;const button=$('download-diploma');button.disabled=true;$('diploma-status').textContent='Pregătim diploma…';try{const doc=await window.RoboDiploma.create($('diploma-name').value,$('diploma-date').value);doc.save('Diploma-Robo-Explorator.pdf');$('diploma-status').textContent='Diploma este pregătită. O găsești în descărcările browserului.';}catch{$('diploma-status').textContent='Nu am putut descărca diploma. Poți încerca din nou.';}finally{button.disabled=false;}});
  document.querySelector('.brand').addEventListener('click',e=>{e.preventDefault();if(new URL(location.href).searchParams.get('adventure')==='home')openHome();else showView('game');});
  document.querySelectorAll('[data-dir]').forEach(b=>b.addEventListener('click',()=>add(b.dataset.dir)));
@@ -594,13 +667,15 @@
  window.addEventListener('resize',fitBoard);
  if(window.ResizeObserver)new ResizeObserver(fitBoard).observe($('board-frame'));
  document.addEventListener('visibilitychange',()=>{if(document.hidden){if(busy)stop();A.stop();}});
- draw();renderSheet();report('Alege o săgeată. Robo o va urma.');
- if(new URL(location.href).searchParams.get('adventure')==='home')openHome();
+ prepareClassroom();draw();renderSheet();report('Alege o săgeată. Robo o va urma.');
+ const initialURL=new URL(location.href);
+ if(initialURL.searchParams.get('adventure')==='home')openHome();
+ else startClass(initialURL.searchParams.get('lesson')||'1',Number(initialURL.searchParams.get('variant')||1)-1);
  const context=document.modelContext;
  if(context&&typeof context.registerTool==='function'){
   const lifecycle=new AbortController();window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
   const primitive={type:'string',enum:['U','D','L','R','A','W','F']},commandSchema=primitive;
-  const tool={name:'stage_robo_program',title:'Pregătește programul robotului',description:'Primește programul complet. U/D/L/R sunt direcții; A activează maneta în misiunea 5; W udă o floare în misiunile 6 și 7. F este disponibil numai în etapele cu decizie ale grădinii: dacă Robo este pe o floare, o udă; altfel nu udă și continuă cu următoarea comandă. F se poate combina cu o săgeată într-o repetiție numai în etapa de combinare. Verificarea așteaptă implicit apăsarea adultului. În misiunea 7, {call:water-row} folosește rețeta Udă un rând (R,W,R,W). În etapele cu repetiție se pot grupa una sau două comenzi în {repeat:2 sau 3,commands:[...]}. Prefixul pașilor executați, după desfășurarea repetițiilor, trebuie păstrat identic. Păstrează poziția și starea hărții; nu pornește robotul.',inputSchema:{type:'object',properties:{commands:{type:'array',items:{anyOf:[commandSchema,{type:'object',properties:{repeat:{type:'integer',enum:[2,3]},commands:{type:'array',items:primitive,minItems:1,maxItems:2}},required:['repeat','commands'],additionalProperties:false},{type:'object',properties:{call:{type:'string',enum:['water-row']}},required:['call'],additionalProperties:false}]},maxItems:32}},required:['commands'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute(input){
+  const tool={name:'stage_robo_program',title:'Pregătește programul robotului',description:'Primește programul complet. U/D/L/R sunt direcții; A activează maneta pe hărțile cu pod; W udă o floare pe hărțile cu grădină. F este disponibil numai în etapele cu decizie ale grădinii: dacă Robo este pe o floare, o udă; altfel nu udă și continuă cu următoarea comandă. F se poate combina cu o săgeată într-o repetiție numai în etapa de combinare. Verificarea așteaptă implicit apăsarea adultului. În extensia cu rețeta, {call:water-row} folosește rețeta Udă un rând (R,W,R,W). În etapele cu repetiție se pot grupa una sau două comenzi în {repeat:2 sau 3,commands:[...]}. Prefixul pașilor executați, după desfășurarea repetițiilor, trebuie păstrat identic. Păstrează poziția și starea hărții; nu pornește robotul.',inputSchema:{type:'object',properties:{commands:{type:'array',items:{anyOf:[commandSchema,{type:'object',properties:{repeat:{type:'integer',enum:[2,3]},commands:{type:'array',items:primitive,minItems:1,maxItems:2}},required:['repeat','commands'],additionalProperties:false},{type:'object',properties:{call:{type:'string',enum:['water-row']}},required:['call'],additionalProperties:false}]},maxItems:32}},required:['commands'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute(input){
    if(busy)throw Error('Robotul este în mișcare.');
    if(mode!=='program')throw Error('Revino la Programăm pentru a schimba comenzile.');
    if(map.missing||map.routes)throw Error('Această activitate folosește săgeata lipsă sau drumurile pregătite.');

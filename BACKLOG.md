@@ -4,7 +4,15 @@ Obiectiv: o aventură offline, în limba română, pentru clasa pregătitoare, u
 
 Legendă: `[ ]` de făcut · `[x]` implementat și verificat. Prioritatea P0 reprezintă prima versiune.
 
-Elementele V1 și verificările de mai jos păstrează istoricul implementării. Parcursul actual include P1-12–P1-14 și este descris în Readme.md.
+Elementele V1 și verificările de mai jos păstrează istoricul implementării. Parcursul actual este V1.3 și este descris în Readme.md.
+
+## V1.3 · Lecție interactivă de 90 de minute
+
+- [x] **CLASS-01 · Navigare permanentă.** Selector cu toate cele 12 activități și extensiile, variante, Înapoi/Înainte și Detectivul direct în bara de sus. Lecția și varianta se refac din adresă după refresh, inclusiv fără stocare.
+- [x] **CLASS-02 · Ritmul clasei.** Plan de 90 de minute cu pauză de mișcare, sugestii pentru schimbarea copiilor și recapitulare. Anticiparea, detectivul, energia, comparația și provocările existente sunt integrate. Repetițiile și rețeta rămân opționale.
+- [x] **CLASS-03 · Acasă separat.** Prenume opțional la început, preluat pe diploma locală. Șase activități variate, inclusiv săgeata lipsă și energia. Progresul de clasă nu acordă diplomă; salvările vechi păstrează doar reușitele neschimbate.
+- [x] **CLASS-04 · Reluări sigure.** Schimbarea lecției anulează mișcarea și întrebările în așteptare. Alt copil poate primi aceeași provocare cu program gol. Clasele de energie și comparație folosesc aceleași reguli fără a completa aventura de acasă.
+- [x] **CLASS-05 · Verificare.** 107 teste trec, inclusiv reluarea prin adresă fără stocare, variantele, izolarea progresului, migrarea aventurii de acasă și prenumele pentru diplomă. În browser, la 1280×720: selectorul direct, refresh pe lecția 7, continuarea podului, Detectivul rezolvat și pauza condiției cu hartă și controale vizibile. Redimensionarea browserului automatizat nu a aplicat dimensiunile cerute; verificarea pe alte ecrane rămâne de făcut pe dispozitivele reale.
 
 ## V1 · Primele aventuri (P0)
 

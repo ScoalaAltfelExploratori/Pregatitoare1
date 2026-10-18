@@ -10,7 +10,7 @@ const root = path.join(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const progressKey = 'robo-explorator-progress-v1';
 
-function setup({ progress, blockedStorage = false, guided = false, checkpoint, url='http://robo.test/', homeProgress } = {}) {
+function setup({ progress, blockedStorage = false, guided = false, checkpoint, url='http://robo.test/', homeProgress, classroom=false } = {}) {
   const dom = new JSDOM(html, { url, runScripts: 'outside-only', pretendToBeVisual: true });
   const w = dom.window, document = w.document, timers = new Map(), sounds = [];
   let now = 0, timerId = 0, registeredTool;
@@ -26,10 +26,17 @@ function setup({ progress, blockedStorage = false, guided = false, checkpoint, u
   w.eval(fs.readFileSync(path.join(root, 'game-engine.js'), 'utf8'));
   w.eval(fs.readFileSync(path.join(root, 'curriculum.js'), 'utf8'));
   w.eval(fs.readFileSync(path.join(root, 'adventures.js'), 'utf8'));
+  w.eval(fs.readFileSync(path.join(root, 'classroom.js'), 'utf8'));
   w.eval(fs.readFileSync(path.join(root, 'app.js'), 'utf8'));
   const get = id => document.getElementById(id);
   const click = id => get(id).click();
   const stage = id => { get('lesson-stage').value = id; get('lesson-stage').dispatchEvent(new w.Event('change')); };
+  // The existing curriculum tests open the adult's individual lesson tools.
+  // Classroom navigation has its own tests below and always starts at lesson 1.
+  if (!classroom && !new URL(url).searchParams.has('adventure')) {
+    get('teacher-lesson').value=String(Math.min(E.readProgress(progress),6));
+    get('teacher-lesson').dispatchEvent(new w.Event('change'));
+  }
   if (!guided) { stage(classicStages[Math.min(E.readProgress(progress), 6)]); get('auto-decision').checked = true; }
   const add = program => { for (const dir of program) document.querySelector('[data-dir="' + dir + '"]').click(); };
   async function advance(ms) {
@@ -1103,7 +1110,7 @@ test('replaying a completed home adventure still advances through its missions',
  app.click('home-continue');await finishPackMap(app,P.get('home',0));assert.equal(app.get('pack-next').textContent,'Următoarea misiune →');app.click('pack-next');assert.equal(app.get('game-title').textContent,P.get('home',1).title);
 });
 function optional(app, pack, index){app.click('open-adventures');app.get('optional-packs').children[['energy','loops','puzzles'].indexOf(pack)].querySelectorAll('button')[index].click();}
-async function finishPackMap(app,map){app.tool().execute({commands:E.solve(map)});app.click('run');await app.advance(25000);if(map.pauseAfterKey||map.pauseAfterAction||map.pauseAfterCharge){app.click('run');await app.advance(25000);}}
+async function finishPackMap(app,map){if(map.missing)app.add(['U']);else app.tool().execute({commands:E.solve(map)});app.click('run');await app.advance(25000);if(map.pauseAfterKey||map.pauseAfterAction||map.pauseAfterCharge){app.click('run');await app.advance(25000);}}
 
 test('home link starts its own six missions even after all classroom lessons, then unlocks the diploma',async t=>{
  const app=setup({guided:true,url:'http://robo.test/?adventure=home',progress:'{"version":3,"completed":7}'});t.after(app.close);
@@ -1119,7 +1126,7 @@ test('home link starts its own six missions even after all classroom lessons, th
 });
 test('home reload continues at the first unfinished mission and blocked storage does not prevent play',async t=>{
  for(const blockedStorage of [false,true]){
-  const app=setup({guided:true,url:'http://robo.test/?adventure=home',blockedStorage,homeProgress:'{"version":1,"done":["first","turn"],"current":2}'});t.after(app.close);
+  const app=setup({guided:true,url:'http://robo.test/?adventure=home',blockedStorage,homeProgress:'{"version":1,"done":["turn","missing"],"current":2}'});t.after(app.close);
   app.click('home-continue');assert.equal(app.get('game-title').textContent,P.get('home',blockedStorage?0:2).title);
   await finishPackMap(app,P.get('home',blockedStorage?0:2));assert.equal(app.get('pack-completion').hidden,false);
   app.click('open-adventures');if(blockedStorage)assert.match(app.get('home-storage-note').textContent,/nu poate salva/);
@@ -1166,4 +1173,93 @@ test('comparison requires both tested routes and keeps their observed counts',as
  app.click('route-b');app.click('run');await app.advance(6000);assert.equal(app.get('pack-next').hidden,true);assert.equal(JSON.parse(app.w.localStorage.getItem('robo-adventure-puzzles-v1')).done.includes('compare'),false);
  app.click('route-a');app.click('run');await app.advance(6000);assert.match(app.get('route-result').textContent,/A: 3 pași · B: 5 pași/);assert.equal(app.get('pack-next').hidden,false);
  assert.equal(JSON.parse(app.w.localStorage.getItem('robo-adventure-puzzles-v1')).done.includes('compare'),true);
+});
+
+function selectClass(app,id,variant=0){app.get('class-lesson').value=id;app.get('class-lesson').dispatchEvent(new app.w.Event('change'));if(variant){app.get('class-variant').value=String(variant);app.get('class-variant').dispatchEvent(new app.w.Event('change'));}}
+
+test('classroom opens at the beginning even with completed progress; all twelve lessons and extras are unlocked',t=>{
+ const app=setup({guided:true,classroom:true,progress:'{"version":3,"completed":7}'});t.after(app.close);
+ assert.equal(app.get('class-lesson').value,'1');assert.equal(app.get('lesson-stage').value,'one');
+ assert.equal(app.get('classroom-toolbar').hidden,false);
+ assert.equal(app.get('class-lesson').querySelectorAll('optgroup')[0].children.length,12);
+ assert.equal(app.get('class-lesson').querySelectorAll('option:disabled').length,0);
+ assert.equal(app.get('class-plan-list').children.length,12);
+ app.click('class-plan');assert.equal(app.get('class-plan-view').hidden,false);
+ app.click('class-resume');assert.equal(app.get('game-view').hidden,false);
+ selectClass(app,'7');assert.equal(app.get('board').querySelectorAll('.bridge-tile').length,1);
+ assert.equal(new URL(app.w.location.href).searchParams.get('lesson'),'7');
+});
+
+test('refresh restores a chosen lesson and variant without browser storage, including a safe fallback',t=>{
+ const app=setup({guided:true,classroom:true,blockedStorage:true});t.after(app.close);
+ selectClass(app,'9',1);const url=app.w.location.href;
+ assert.match(url,/lesson=9/);assert.match(url,/variant=2/);
+ const reloaded=setup({guided:true,classroom:true,blockedStorage:true,url});t.after(reloaded.close);
+ assert.equal(reloaded.get('class-lesson').value,'9');assert.equal(reloaded.get('class-variant').value,'1');
+ assert.equal(reloaded.get('energy-count').textContent,'4 / 4');assert.equal(reloaded.get('board').children.length,25);
+ const invalid=setup({guided:true,classroom:true,url:'http://robo.test/?lesson=invalid&variant=999'});t.after(invalid.close);
+ assert.equal(invalid.get('class-lesson').value,'1');assert.equal(invalid.get('class-variant').value,'0');
+});
+
+test('switching class lessons cancels pending movement and an unanswered flower decision',async t=>{
+ const app=setup({guided:true,classroom:true});t.after(app.close);
+ selectClass(app,'11',1);app.add(['R','F']);app.click('run');await app.advance(720);
+ assert.equal(app.get('check-decision').hidden,false);
+ selectClass(app,'7');await app.advance(60000);
+ assert.equal(app.get('check-decision').hidden,true);assert.deepEqual(robotPosition(app),[0,2]);
+ assert.equal(app.get('queue').children.length,0);assert.equal(app.get('board').querySelectorAll('.watered').length,0);
+ app.add(['U','A','R','R']);app.click('run');await app.advance(100);
+ app.click('class-detective');await app.advance(10000);
+ assert.equal(app.get('class-lesson').value,'4');assert.equal(app.get('game-view').dataset.mode,'detective');
+ assert.deepEqual(robotPosition(app),[0,2]);
+});
+
+test('classroom energy and comparison run as teaching activities and never award home progress or diplomas',async t=>{
+ const app=setup({guided:true,classroom:true});t.after(app.close);
+ selectClass(app,'9');await finishPackMap(app,P.get('energy',0));
+ assert.equal(app.get('class-completion').hidden,false);assert.equal(app.get('pack-completion').hidden,true);
+ assert.equal(app.w.localStorage.getItem('robo-adventure-energy-v1'),null);
+ app.click('class-continue');assert.equal(app.get('class-variant').value,'1');
+ await finishPackMap(app,P.get('energy',1));app.click('class-continue');assert.equal(app.get('class-lesson').value,'10');
+ app.click('route-a');app.click('run');await app.advance(6000);assert.equal(app.get('class-continue').hidden,true);
+ app.click('route-b');app.click('run');await app.advance(6000);assert.equal(app.get('class-continue').hidden,false);
+ assert.match(app.get('route-result').textContent,/A: 3 pași · B: 5 pași/);
+ assert.equal(app.w.localStorage.getItem('robo-adventure-home-v1'),null);
+ assert.equal(app.w.localStorage.getItem('robo-adventure-puzzles-v1'),null);
+ app.click('home-diploma');assert.equal(app.get('diploma-view').hidden,true);
+ app.click('open-adventures');assert.match(app.get('home-progress-label').textContent,/0 din 6/);
+ assert.equal(app.get('classroom-toolbar').hidden,true);
+});
+
+test('optional first name carries to the home diploma without storage and never goes in a shared link',async t=>{
+ const homeProgress=JSON.stringify({version:1,done:P.packs.home.maps.map(m=>m.id),current:5});
+ const app=setup({guided:true,classroom:true,url:'http://robo.test/?adventure=home&lesson=7',homeProgress});t.after(app.close);
+ app.get('home-name').value='Ștefan';app.get('home-name').dispatchEvent(new app.w.Event('input'));
+ assert.equal(app.get('diploma-name').value,'Ștefan');
+ app.click('home-continue');assert.equal(app.get('game-title').textContent,P.get('home',0).title);
+ app.click('open-adventures');assert.equal(app.get('home-name').value,'Ștefan');
+ assert.equal(app.w.localStorage.getItem('diploma-name'),null);
+ assert.doesNotMatch(app.get('home-link').value,/lesson|variant|tefan/);
+ const painted=[];app.w.RoboDiploma={async paint(canvas,name){painted.push(name);}};
+ app.w.HTMLCanvasElement.prototype.getContext=()=>({drawImage(){}});
+ app.click('home-diploma');await Promise.resolve();assert.equal(app.get('diploma-view').hidden,false);assert.deepEqual(painted,['Ștefan']);
+ app.click('open-classroom');app.click('home-diploma');assert.equal(app.get('diploma-view').hidden,true);
+});
+
+test('old home progress retains unchanged missions but new activities must be completed for the diploma',t=>{
+ const app=setup({guided:true,classroom:true,url:'http://robo.test/?adventure=home',homeProgress:'{"version":1,"done":["first","turn","tree","key","bridge","home"],"current":5}'});t.after(app.close);
+ assert.match(app.get('home-progress-label').textContent,/4 din 6/);assert.equal(app.get('home-diploma').hidden,true);
+ assert.equal(app.get('home-missions').children[5].disabled,true);
+ app.click('home-continue');assert.equal(app.get('game-title').textContent,P.get('home',1).title);
+});
+
+test('movement break, optional recipes and final challenge remain reachable without completing preceding lessons',t=>{
+ const app=setup({guided:true,classroom:true});t.after(app.close);
+ selectClass(app,'8');assert.equal(app.get('class-break-view').hidden,false);
+ app.click('class-plan');app.click('class-resume');assert.equal(app.get('class-break-view').hidden,false);
+ app.click('break-next');assert.equal(app.get('class-lesson').value,'9');
+ selectClass(app,'recipe',1);assert.equal(app.get('recipe-editor').hidden,false);assert.equal(app.get('board').children.length,25);
+ selectClass(app,'12');assert.equal(app.get('lesson-stage').value,'four-directions');assert.equal(app.get('class-next').disabled,true);
+ selectClass(app,'presentation');assert.equal(app.get('story-view').hidden,false);
+ selectClass(app,'sheet');assert.equal(app.get('sheet-view').hidden,false);
 });

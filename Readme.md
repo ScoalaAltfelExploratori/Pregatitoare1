@@ -1,14 +1,14 @@
-# Robo Explorator · V1.2
+# Robo Explorator · V1.3
 
-Aventură de programare în română, offline, pentru clasa pregătitoare. Lecțiile au etape scurte, cu instrumente introduse pe rând. Primele trei lecții formează parcursul de bază; cheia, acțiunile, repetiția, decizia și rețeta sunt continuări alese în ritmul clasei.
+Aventură de programare în română, offline, pentru clasa pregătitoare. Modul „La clasă” propune o sesiune interactivă de 90 de minute pe tabla digitală. Modul „Acasă” oferă șase provocări variate și diploma, exclusiv pentru continuarea cu părinții.
 
 ## Pornire
 
 Deschide `index.html` în Chrome, Edge sau Firefox. Nu sunt necesare internet, conturi sau instalare. Păstrează toate fișierele aplicației și directorul `assets/` împreună.
 
-La prima deschidere apare „O singură săgeată”: alege → și apasă „Pornește Robo”. Următoarea etapă adaugă încă o săgeată. Un browser cu progres salvat continuă aventura; adultul poate alege prima lecție din panoul său.
+Linkul de clasă fără parametri începe mereu la prima activitate, indiferent de progresul vechi. Selectorul de sus permite deschiderea oricărei lecții și variante. Adresa se actualizează, de exemplu `?lesson=7` pentru pod sau `?lesson=9&variant=2` pentru energia pe 5×5. Reîncărcarea reface lecția și varianta de la start, chiar fără localStorage; nu reface programul încercării întrerupte.
 
-Pe laptop și tablă, harta este în stânga, iar comenzile și programul în dreapta. Ecranul copiilor păstrează obiectivul scurt, harta, săgețile mari și pornirea. Navigarea, sunetul, fișele, lecțiile, contoarele și ștergerea întregului program sunt în meniul „Pentru adult”, sus în dreapta. Pe telefon, panourile se așază unul sub altul. Pentru proiecție: „Ecran complet” din meniul adultului sau F11.
+Pe laptop și tablă, harta este în stânga, iar comenzile și programul în dreapta. Sus sunt permanent selectorul lecției, varianta, Înapoi/Înainte, Detectivul Robo și Plan · 90 min. Sunetul, ecranul complet și instrumentele detaliate rămân în „Pentru adult”. Pe telefon, panourile se așază unul sub altul. Pentru proiecție: „Ecran complet” din meniul adultului sau F11.
 
 Cele patru direcții ↑ ← ↓ → sunt vizibile și disponibile încă din prima etapă. Rămân vizibile în timpul rulării și după reușită; sunt dezactivate cât Robo execută programul. În timpul rulării se retrag doar controalele acțiunilor și blocurilor. Săgeata activă rămâne evidențiată pe durata deplasării. „Oprește” permite din nou editarea. Programul lung se derulează separat. Întrebarea DA/NU apare lângă program și păstrează harta mare; în acel moment înlocuiește mesajul obișnuit. După reușită rămân drumul făcut și continuarea aleasă explicit.
 
@@ -16,15 +16,38 @@ Deschiderea meniului „Pentru adult” oprește rularea, inclusiv o întrebare 
 
 ## Parcursul lecțiilor
 
+### Sesiunea de 90 de minute
+
+Un copil lucrează la laptop, restul clasei anticipează și explică. Schimbăm copilul după o încercare sau o etapă. „Alt copil, aceeași provocare” pregătește o încercare goală; „La start” păstrează programul pentru retestare.
+
+| Minute | Activitate |
+| --- | --- |
+| 0–7 | 1. Facem cunoștință cu Robo: o săgeată, apoi două |
+| 7–14 | 2. Săgețile în ordine |
+| 14–20 | 3. Unde ajunge Robo? |
+| 20–28 | 4. Detectivul Robo |
+| 28–35 | 5. Ocolim copacul |
+| 35–43 | 6. Cheia, apoi comoara |
+| 43–51 | 7. Coborâm podul |
+| 51–56 | 8. Pauză de mișcare: noi suntem roboții |
+| 56–66 | 9. Energia: observăm bateria, apoi încercăm stația pe 5×5 |
+| 66–73 | 10. Comparăm două drumuri; alternativ, săgeata lipsă sau steaua |
+| 73–81 | 11. Îngrijim o floare; condiția DACĂ rămâne o variantă opțională |
+| 81–90 | 12. Misiunea echipei cu toate direcțiile, inclusiv 3 minute de recapitulare |
+
+Timpii sunt orientativi, fără cronometru. Nu trebuie parcurse toate variantele. Planul oferă indicații de participare și deschide fiecare activitate direct. Extensiile din același selector includ repetiția simplă, grădinile, rețeta, povestea ilustrată, fișa și fabrica de hărți. Activitățile clasei nu acordă progres pentru aventura de acasă sau diplome. Selectarea altei lecții oprește sigur rularea curentă și pregătește o încercare nouă.
+
 ### Aventurile de acasă
 
-Butonul **„Aventuri acasă”** deschide un parcurs separat. Pentru părinți, folosește linkul cu `?adventure=home`; acesta arată pagina de început a aventurii, indiferent de progresul clasei. Linkul complet este disponibil în „Pentru părinte”. Din folderul offline, deschide `index.html` și apasă același buton.
+Butonul **„Acasă”** deschide un parcurs separat. Pentru părinți, folosește linkul cu `?adventure=home`; acesta arată pagina de început a aventurii, indiferent de progresul clasei. Linkul complet este disponibil în planul clasei și în „Pentru părinte”. Din folderul offline, deschide `index.html` și apasă același buton.
 
-Cele șase misiuni sunt: un pas, schimbarea direcției, ocolirea copacului, cheia, podul și vizitarea unei stele înainte de căsuță. Fiecare hartă are 3×3 celule. La cheie și la activarea podului există o pauză de observație. Următoarea misiune se deblochează după reușită; hărțile terminate se pot rejuca. Nu există note, cronometru sau limită de încercări. Ajutorul adultului nu împiedică obținerea diplomei.
+Cele șase misiuni sunt: schimbarea direcției, săgeata lipsă, cheia, podul, reîncărcarea pe 5×5 și vizitarea unei stele înainte de căsuță. Celelalte hărți au 3×3 celule. La cheie și la activarea podului există o pauză de observație. Prenumele este cerut opțional înainte de începere și apare pe diplomă; poate fi omis sau corectat la final. Următoarea misiune se deblochează după reușită; hărțile terminate se pot rejuca. Nu există note, cronometru sau limită de încercări. Ajutorul adultului nu împiedică obținerea diplomei.
 
 După toate cele șase misiuni apare **„Diploma mea”**. Numele este opțional, data poate fi schimbată, iar previzualizarea reproduce PDF-ul A4 pe orizontală. Imaginea oferită de utilizator este păstrată ca ilustrație, cu numele și data desenate în spațiile libere. PDF-ul este generat local, fără servicii externe, dintr-o imagine de înaltă rezoluție; textul său nu este selectabil. Numele nu este salvat în localStorage și nu este trimis către un server. Se pot crea diplome cu alte nume sau cu spațiul gol pentru scriere de mână.
 
 Progresul se păstrează separat în `robo-adventure-home-v1`; cele trei aventuri opționale au propriile chei. Se salvează misiunile terminate, nu programul încercării în curs. După închiderea paginii, o misiune neterminată reîncepe de la start. În aceeași sesiune, „Înapoi la jocul curent” păstrează încercarea. Dacă browserul refuză salvarea, jocul și diploma funcționează în sesiunea curentă. Progresul nu se transferă automat între dispozitive.
+
+Din vechiul set de acasă se păstrează reușitele pentru hărțile neschimbate. Săgeata lipsă și energia trebuie rezolvate înaintea noii diplome; o salvare veche completă nu le marchează automat ca terminate.
 
 ### Aventuri opționale, câte o idee nouă
 
@@ -34,7 +57,9 @@ Progresul se păstrează separat în `robo-adventure-home-v1`; cele trei aventur
 
 Aceste activități nu condiționează diploma. Lecțiile și grădinile existente rămân disponibile pentru clasă.
 
-### Lecțiile pentru clasă
+### Biblioteca etapelor individuale
+
+Biblioteca originală cu șapte categorii rămâne în instrumentele adultului. Numerotarea ei este separată de cele 12 activități din planul de 90 de minute; variantele și provocările sunt accesibile și din bara principală.
 
 | Lecția | Etapele introduse | Traseu introductiv |
 | --- | --- | --- |
