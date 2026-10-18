@@ -18,7 +18,7 @@
    {id:'three',name:'Trei săgeți',brief:'Arătăm drumul până la căsuță. Alegem trei săgeți, apoi verificăm.',observe:'Unde este Robo după primele două săgeți?',changes:{}}
   ]},
   {group:'Bază',stages:[
-   {id:'one-tree',name:'Un singur copac',suggested:'four-directions',brief:'Copacul blochează drumul. Îl ocolim cu săgețile pe care le știm.',observe:'Copacul ne stă în cale. Arătăm un drum pe lângă el.',changes:{size:3,start:[0,2],goal:[2,1],obstacles:['1,2']}}
+   {id:'one-tree',name:'Ocolim doi copaci',suggested:'four-directions',brief:'Copacii blochează drumul. Îi ocolim cu săgețile pe care le știm.',observe:'Un copac este chiar în mijloc. Pe unde putem trece?',changes:{size:3,start:[0,2],goal:[2,1],obstacles:['1,2','1,1']}}
   ],challenges:[
    {id:'challenge',name:'Provocare: doi copaci',observe:'Sunt doi copaci de ocolit. Încercăm drumul pe bucăți.'},
    {id:'four-directions',name:'5×5: toate cele patru săgeți',suggested:'spiral',brief:'Ocolim pădurea până la căsuță. Avem nevoie de →, ↑, ← și ↓. Construim drumul în bucăți.',observe:'Putem opri și continua din locul unde am ajuns.',changes:{...corridor(['R','U','U','L','U','U','R','R','R','R','D','D']),goalIcon:'🏡',goalName:'căsuță'}},

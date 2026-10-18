@@ -8,6 +8,8 @@ Elementele V1 și verificările de mai jos păstrează istoricul implementării.
 
 ## V1.4 · Lecțiile și grădina
 
+- [x] „Drumul spre casă” mutat imediat după lecția 5, cu ambele poteci 5×5. Copac adăugat în centrul hărții 3×3; ocolul are cinci pași. Harta 5×5 cu încărcare obligatorie în mijloc încheie parcursul clasei. Numerotare actualizată la 1–17, inclusiv variantele și navigarea.
+- [x] 112 teste și verificările de sintaxă trec. Verificate ordinea 5 → 6 → 7, ocolul de cinci pași și imposibilitatea sosirii fără încărcare. Energia se păstrează între două porniri și nu acordă progres sau diplomă pentru acasă.
 - [x] Numerotare comună pentru lecțiile 1–16, titluri și meniuri. Variantele au numere precum 14.1 și 14.2. Eliminate etichetele „Opțional” și „Extensie” din lecții și aventuri; prenumele rămâne opțional.
 - [x] Scoasă energia din lecțiile clasei, păstrată pentru acasă.
 - [x] Scoase povestea, fișa și fabrica de hărți din interfață și codul aplicației.

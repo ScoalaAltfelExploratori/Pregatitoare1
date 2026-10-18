@@ -6,7 +6,7 @@ Aventură de programare în română, offline, pentru clasa pregătitoare. La cl
 
 Deschide `index.html` în Chrome, Edge sau Firefox. Nu sunt necesare internet, conturi sau instalare. Păstrează toate fișierele aplicației și directorul `assets/` împreună.
 
-Linkul de clasă fără parametri începe mereu la prima activitate, indiferent de progresul vechi. Selectorul de sus permite deschiderea oricărei lecții și variante. Adresa se actualizează, de exemplu `?lesson=7` pentru pod sau `?lesson=14` pentru grădina cu rândurile A, B și C. Reîncărcarea reface lecția și varianta de la start, chiar fără localStorage; nu reface programul încercării întrerupte.
+Linkul de clasă fără parametri începe mereu la prima activitate, indiferent de progresul vechi. Selectorul de sus permite deschiderea oricărei lecții și variante. Adresa se actualizează, de exemplu `?lesson=8` pentru pod sau `?lesson=15` pentru grădina cu rândurile A, B și C. Reîncărcarea reface lecția și varianta de la start, chiar fără localStorage; nu reface programul încercării întrerupte.
 
 Pe laptop și tablă, harta este în stânga, iar comenzile și programul în dreapta. Sus sunt permanent selectorul lecției, varianta, Înapoi/Înainte, Detectivul Robo și Toate lecțiile. Sunetul, ecranul complet și instrumentele detaliate rămân în „Pentru adult”. Pe telefon, panourile se așază unul sub altul. Pentru proiecție: „Ecran complet” din meniul adultului sau F11.
 
@@ -18,30 +18,31 @@ Deschiderea meniului „Pentru adult” oprește rularea, inclusiv o întrebare 
 
 ### Lecțiile pentru clasă
 
-Toate lecțiile sunt numerotate de la 1 la 16, în listă, în titlu și în meniurile adultului. Variantele folosesc numere precum 14.1 și 14.2. Nu există categorii „extra” sau „opțional”. Toate lecțiile se pot alege din bara de sus sau din „Toate lecțiile”. Nu au timpi impuși și nu trebuie terminate într-o singură întâlnire.
+Toate lecțiile sunt numerotate de la 1 la 17, în listă, în titlu și în meniurile adultului. Variantele folosesc numere precum 15.1 și 15.2. Nu există categorii „extra” sau „opțional”. Toate lecțiile se pot alege din bara de sus sau din „Toate lecțiile”. Nu au timpi impuși și nu trebuie terminate într-o singură întâlnire.
 
 1. Facem cunoștință cu Robo
 2. Săgețile în ordine
 3. Unde ajunge Robo?
 4. Detectivul Robo
 5. Ocolim copacul
-6. Cheia, apoi comoara
-7. Coborâm podul
-8. Noi suntem roboții!
-9. Două drumuri spre casă
-10. Udăm o floare
-11. Pași care se repetă
-12. Mai multe flori
-13. Udă un rând
-14. Rândurile A, B și C
-15. Dacă este o floare
-16. Drumul spre casă
+6. Drumul spre casă
+7. Cheia, apoi comoara
+8. Coborâm podul
+9. Noi suntem roboții!
+10. Două drumuri spre casă
+11. Udăm o floare
+12. Pași care se repetă
+13. Mai multe flori
+14. Udă un rând
+15. Rândurile A, B și C
+16. Dacă este o floare
+17. Oprire la stația de energie
 
 Un copil alege una sau două comenzi, ceilalți spun unde cred că va ajunge Robo. Testăm și schimbăm copilul. „Alt copil” golește programul pentru aceeași hartă; „La start” îl păstrează pentru o nouă încercare. Pe hărțile mari, construim drumul în bucăți.
 
 În „Pentru adult” găsești o întrebare scurtă pentru lecția curentă. Copiii pot răspunde prin gesturi. Cele patru săgeți rămân vizibile de la început; destinațiile și cheia se dimensionează după celule.
 
-Energia nu mai apare în lecțiile clasei; rămâne în aventura de acasă. Povestea ilustrată, fișa și fabrica de hărți au fost scoase din aplicație. „Udă un rând” și grădina A/B/C sunt acum lecții consecutive, accesibile direct. Lecțiile clasei nu acordă progres sau diplomă pentru acasă.
+Ultima lecție readuce harta de energie 5×5: Robo are patru liniuțe și trebuie să treacă pe la stația din mijloc înainte să ajungă acasă. Povestea ilustrată, fișa și fabrica de hărți au fost scoase din aplicație. „Udă un rând” și grădina A/B/C sunt acum lecții consecutive, accesibile direct. Lecțiile clasei nu acordă progres sau diplomă pentru acasă.
 
 ### Aventurile de acasă
 
@@ -65,19 +66,19 @@ Aceste activități nu condiționează diploma. Lecțiile și grădinile existen
 
 ### Biblioteca etapelor individuale
 
-Biblioteca originală cu șapte categorii rămâne în instrumentele adultului. Fiecare etapă arată numărul lecției din bara de sus; variantele folosesc forma 14.1, 14.2. Grupurile de hărți nu sunt numerotate ca lecții.
+Biblioteca originală cu șapte categorii rămâne în instrumentele adultului. Fiecare etapă arată numărul lecției din bara de sus; variantele folosesc forma 15.1, 15.2. Grupurile de hărți nu sunt numerotate ca lecții.
 
 | Lecția | Etapele introduse | Traseu introductiv |
 | --- | --- | --- |
 | 1. Prima comoară · Bază | O săgeată, apoi două identice; toate direcțiile sunt vizibile | →, apoi → → |
 | 2. Drumul spre căsuță · Bază | O schimbare de direcție, apoi trei săgeți | → ↑, apoi → ↑ ↑ |
 | 4. Detectivul Robo | După lecția 2: reparăm o singură săgeată dintre două | Două săgeți, două variante |
-| 5. Ocolim copacul · Bază | Un obstacol pe 3×3, cu săgețile deja cunoscute | ↑ → → |
-| 6. Cheia și comoara · Continuare | Întâi cheia, apoi cufărul | → ↑, pauză, → ↓ |
-| 7. Podul și maneta · Continuare | O acțiune schimbă harta | ↑ ⚙, pauză, → → |
-| 10–12. Udarea și repetiția | Udăm o floare, apoi recunoaștem o pereche repetată | → 💧 → |
-| 15. Dacă este o floare | Repetiție, decizie separat, apoi combinare | Detalii mai jos |
-| 13–14. Udă un rând | Un nume pentru pași cunoscuți, apoi reutilizare | 📖, apoi ↑ |
+| 5. Ocolim copacul · Bază | Doi copaci pe 3×3, unul chiar în mijloc | ↑ ↑ → → ↓ |
+| 7. Cheia și comoara · Continuare | Întâi cheia, apoi cufărul | → ↑, pauză, → ↓ |
+| 8. Podul și maneta · Continuare | O acțiune schimbă harta | ↑ ⚙, pauză, → → |
+| 11–13. Udarea și repetiția | Udăm o floare, apoi recunoaștem o pereche repetată | → 💧 → |
+| 16. Dacă este o floare | Repetiție, decizie separat, apoi combinare | Detalii mai jos |
+| 14–15. Udă un rând | Un nume pentru pași cunoscuți, apoi reutilizare | 📖, apoi ↑ |
 
 Prima întâlnire se poate încheia după cele trei lecții de bază. „Unde crezi că ajunge?” poate fi intercalat după primele secvențe: începe cu două săgeți pe 3×3 fără obstacole; trei săgeți sunt o alegere separată.
 

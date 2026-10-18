@@ -245,7 +245,7 @@
   const nextStage=map.lesson&&(map.lesson.next||map.lesson.suggested),nextChoice=nextStage&&C.choices(missionIndex).find(s=>s.id===nextStage);
   $('completion-message').textContent=map.lesson&&map.lesson.next?'Am reușit! Arătăm drumul și explicăm comenzile.':missionIndex===2?'Am exersat și ocolul! Putem încheia aici sau continua în altă zi.':'Am reușit! Putem explica drumul și îl putem încerca din nou.';
   $('next-mission').hidden=missionIndex===E.missionCount-1&&!nextStage;
-  $('next-mission').textContent=nextChoice?'Mai departe: '+T.curriculumTitle(missionIndex,nextChoice.id):missionIndex===2?'6. Cheia, apoi comoara →':'Următoarea lecție →';
+  $('next-mission').textContent=nextChoice?'Mai departe: '+T.curriculumTitle(missionIndex,nextChoice.id):missionIndex===2?T.curriculumTitle(3,'nearby')+' →':'Următoarea lecție →';
   $('practice-detective').hidden=!(won&&mode==='program'&&missionIndex===1&&!nextStage);
   $('detective-continue').hidden=!(mode==='detective'&&won&&guidedDetective);
   $('prediction-title').textContent='Privește cele '+predictionLength+' săgeți';

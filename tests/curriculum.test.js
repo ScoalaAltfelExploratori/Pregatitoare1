@@ -4,7 +4,7 @@ const E=require('../game-engine');
 const C=require('../curriculum');
 
 test('toate etapele sunt rezolvabile, iar primele exemple au cel mult șase pași',()=>{
- const expected=[[1,2],[2,3],[3,4,12,16],[4,12],[4,9],[3,6,6,3,7,8],[5,22,15]];
+ const expected=[[1,2],[2,3],[5,4,12,16],[4,12],[4,9],[3,6,6,3,7,8],[5,22,15]];
  for(let i=0;i<C.count;i++){
   const lengths=C.choices(i).map(choice=>{
    const m=C.get(i,choice.id),path=E.solve(m);
