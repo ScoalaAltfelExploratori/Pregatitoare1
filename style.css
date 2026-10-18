@@ -313,6 +313,13 @@
 .game-screen .queue .command small{font-size:12px;left:5px;top:4px}
 .game-screen .queue .command .done-mark{font-size:16px;right:4px;bottom:3px}
 .game-screen .queue .command.executed{background:#edf2ef;color:#547262;border-color:#c6d6cc;box-shadow:none}
+.game-screen .queue .command.repair-blocked{background:#fff0c6;color:#714811;border-color:#bd7b14;outline:3px solid #efb83d;outline-offset:2px;animation:repair-glow 650ms ease-in-out 2}
+.repair-remove{position:absolute;right:4px;bottom:2px;font-size:23px;line-height:1}
+.tile[data-blocked-edge]{position:relative}
+.tile[data-blocked-edge]:after{content:'';position:absolute;inset:0;border:0 solid #bd7b14;border-radius:inherit;pointer-events:none;animation:repair-glow 650ms ease-in-out 2}
+.tile[data-blocked-edge="U"]:after{border-top-width:7px}.tile[data-blocked-edge="D"]:after{border-bottom-width:7px}
+.tile[data-blocked-edge="L"]:after{border-left-width:7px}.tile[data-blocked-edge="R"]:after{border-right-width:7px}
+@keyframes repair-glow{50%{box-shadow:0 0 0 5px #efb83d88}}
 .game-screen .queue .command.active,.game-screen .queue .command.chosen{background:#155ac4;color:#fff;border-color:#155ac4;outline:4px solid #efb83d;outline-offset:2px;opacity:1}
 .game-screen .queue:empty{display:flex;flex-direction:column;flex-wrap:nowrap;align-content:normal;align-items:center;justify-content:center;color:#5e788c;gap:8px;min-height:130px}
 .game-screen .queue:empty:before{content:'＋';font-size:40px;line-height:1;background:#eaf3ff;border:2px dashed #a9c7df;border-radius:13px;padding:10px 20px;color:#316289}

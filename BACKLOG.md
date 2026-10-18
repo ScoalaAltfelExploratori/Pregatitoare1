@@ -8,6 +8,8 @@ Elementele V1 și verificările de mai jos păstrează istoricul implementării.
 
 ## V1.4 · Lecțiile și grădina
 
+- [x] Lecția 2 „Încercăm și reparăm”: exemplul → ↓ se oprește la margine după un pas. Marginea și săgeata blocată sunt evidențiate; copilul șterge săgeata, adaugă alta și continuă fără să piardă pasul corect. „Alt copil” reface exemplul pregătit. Lecțiile sunt numerotate acum 1–18.
+- [x] 116 teste trec, inclusiv repararea, toate cele patru margini, oprirea/reluarea, schimbarea activității și deschiderea lecției fără stocare. Verificată în browser ștergerea lui ↓, continuarea cu → și sosirea în doi pași; fără erori în consolă.
 - [x] „Drumul spre casă” mutat imediat după lecția 5, cu ambele poteci 5×5. Copac adăugat în centrul hărții 3×3; ocolul are cinci pași. Harta 5×5 cu încărcare obligatorie în mijloc încheie parcursul clasei. Numerotare actualizată la 1–17, inclusiv variantele și navigarea.
 - [x] 112 teste și verificările de sintaxă trec. Verificate ordinea 5 → 6 → 7, ocolul de cinci pași și imposibilitatea sosirii fără încărcare. Energia se păstrează între două porniri și nu acordă progres sau diplomă pentru acasă.
 - [x] Numerotare comună pentru lecțiile 1–16, titluri și meniuri. Variantele au numere precum 14.1 și 14.2. Eliminate etichetele „Opțional” și „Extensie” din lecții și aventuri; prenumele rămâne opțional.
