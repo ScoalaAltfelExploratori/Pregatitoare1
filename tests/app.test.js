@@ -10,19 +10,22 @@ const root = path.join(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const progressKey = 'robo-explorator-progress-v1';
 
-function setup({ progress, blockedStorage = false, guided = false, checkpoint } = {}) {
-  const dom = new JSDOM(html, { url: 'http://robo.test/', runScripts: 'outside-only', pretendToBeVisual: true });
+function setup({ progress, blockedStorage = false, guided = false, checkpoint, url='http://robo.test/', homeProgress } = {}) {
+  const dom = new JSDOM(html, { url, runScripts: 'outside-only', pretendToBeVisual: true });
   const w = dom.window, document = w.document, timers = new Map(), sounds = [];
   let now = 0, timerId = 0, registeredTool;
   w.setTimeout = (callback, delay = 0) => { const id = ++timerId; timers.set(id, { callback, at: now + delay }); return id; };
   w.clearTimeout = id => timers.delete(id);
+  w.scrollTo = () => {};
   w.RoboAudio = { play: kind => sounds.push(kind), stop() {}, async toggle() { return true; } };
   document.modelContext = { registerTool(tool) { registeredTool = tool; } };
   if (progress !== undefined) w.localStorage.setItem(progressKey, progress);
   if (checkpoint) w.localStorage.setItem('robo-explorator-lessons-v1', checkpoint);
+  if (homeProgress) w.localStorage.setItem('robo-adventure-home-v1',homeProgress);
   if (blockedStorage) Object.defineProperty(w, 'localStorage', { get() { throw new Error('Storage denied'); } });
   w.eval(fs.readFileSync(path.join(root, 'game-engine.js'), 'utf8'));
   w.eval(fs.readFileSync(path.join(root, 'curriculum.js'), 'utf8'));
+  w.eval(fs.readFileSync(path.join(root, 'adventures.js'), 'utf8'));
   w.eval(fs.readFileSync(path.join(root, 'app.js'), 'utf8'));
   const get = id => document.getElementById(id);
   const click = id => get(id).click();
@@ -1091,4 +1094,76 @@ test('săgeata rămâne evidențiată pe durata mutării, iar oprirea păstreaz�
   app.click('run');await app.advance(1000);
   assert.match(app.get('status').textContent,/2 pași/);
   assert.equal(app.document.activeElement,app.get('restart'));
+});
+
+const P = require('../adventures');
+test('replaying a completed home adventure still advances through its missions',async t=>{
+ const homeProgress=JSON.stringify({version:1,done:P.packs.home.maps.map(m=>m.id),current:5});
+ const app=setup({guided:true,url:'http://robo.test/?adventure=home',homeProgress});t.after(app.close);
+ app.click('home-continue');await finishPackMap(app,P.get('home',0));assert.equal(app.get('pack-next').textContent,'Următoarea misiune →');app.click('pack-next');assert.equal(app.get('game-title').textContent,P.get('home',1).title);
+});
+function optional(app, pack, index){app.click('open-adventures');app.get('optional-packs').children[['energy','loops','puzzles'].indexOf(pack)].querySelectorAll('button')[index].click();}
+async function finishPackMap(app,map){app.tool().execute({commands:E.solve(map)});app.click('run');await app.advance(25000);if(map.pauseAfterKey||map.pauseAfterAction||map.pauseAfterCharge){app.click('run');await app.advance(25000);}}
+
+test('home link starts its own six missions even after all classroom lessons, then unlocks the diploma',async t=>{
+ const app=setup({guided:true,url:'http://robo.test/?adventure=home',progress:'{"version":3,"completed":7}'});t.after(app.close);
+ assert.equal(app.get('home-view').hidden,false);assert.equal(app.get('home-diploma').hidden,true);app.click('home-continue');
+ for(let i=0;i<6;i++){
+  const m=P.get('home',i);assert.equal(app.get('game-title').textContent,m.title);await finishPackMap(app,m);
+  assert.equal(app.get('pack-completion').hidden,false);assert.equal(JSON.parse(app.w.localStorage.getItem('robo-adventure-home-v1')).done.length,i+1);
+  assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed,7);
+  if(i<5)app.click('pack-next');
+ }
+ app.click('open-adventures');assert.equal(app.get('home-diploma').hidden,false);assert.match(app.get('home-progress-label').textContent,/6 din 6/);
+ assert.equal(app.w.localStorage.getItem('diploma-name'),null);
+});
+test('home reload continues at the first unfinished mission and blocked storage does not prevent play',async t=>{
+ for(const blockedStorage of [false,true]){
+  const app=setup({guided:true,url:'http://robo.test/?adventure=home',blockedStorage,homeProgress:'{"version":1,"done":["first","turn"],"current":2}'});t.after(app.close);
+  app.click('home-continue');assert.equal(app.get('game-title').textContent,P.get('home',blockedStorage?0:2).title);
+  await finishPackMap(app,P.get('home',blockedStorage?0:2));assert.equal(app.get('pack-completion').hidden,false);
+  app.click('open-adventures');if(blockedStorage)assert.match(app.get('home-storage-note').textContent,/nu poate salva/);
+ }
+});
+test('energy stop and resume preserves the committed battery, charger pauses once, then reaches home',async t=>{
+ const app=setup({guided:true});t.after(app.close);optional(app,'energy',0);
+ app.add(['R','R','U']);app.click('run');await app.advance(300);app.click('stop');assert.equal(app.get('energy-count').textContent,'3 / 4');
+ await app.advance(10000);assert.equal(app.get('energy-count').textContent,'3 / 4');app.click('run');await app.advance(10000);
+ assert.deepEqual(robotPosition(app),[2,2]);assert.equal(app.get('energy-count').textContent,'4 / 4');assert.equal(app.get('run').disabled,false);
+ app.click('run');await app.advance(2000);assert.equal(app.get('pack-completion').hidden,false);assert.equal(app.get('energy-count').textContent,'3 / 4');
+});
+test('battery exhaustion retries the last charger with an atomic cursor and removes only the later attempt',async t=>{
+ const app=setup({guided:true});t.after(app.close);optional(app,'energy',1);
+ app.add(['R','R','U','U','L','L','U','U']);app.click('run');await app.advance(10000);
+ assert.deepEqual(robotPosition(app),[0,0]);assert.equal(app.get('energy-count').textContent,'0 / 4');assert.equal(app.get('retry-energy').hidden,false);
+ app.click('retry-energy');assert.deepEqual(robotPosition(app),[2,2]);assert.equal(app.get('energy-count').textContent,'4 / 4');assert.equal(app.get('queue').children.length,4);assert.equal(app.get('queue').querySelectorAll('.executed').length,4);
+ app.add(['R','R','U','U']);app.click('run');await app.advance(10000);assert.equal(app.get('energy-count').textContent,'0 / 4');assert.equal(app.get('pack-completion').hidden,false);
+});
+test('energy snapshots survive prediction and detective, and leaving for the hub stops movement',async t=>{
+ const app=setup({guided:true});t.after(app.close);optional(app,'energy',1);
+ app.add(['R','R','U','U']);app.click('run');await app.advance(5000);
+ app.click('predict-mode');app.click('detective-mode');app.click('program-mode');assert.deepEqual(robotPosition(app),[2,2]);assert.equal(app.get('energy-count').textContent,'4 / 4');
+ app.add(['R','R']);app.click('run');await app.advance(300);app.click('open-adventures');await app.advance(10000);app.click('resume-play');assert.deepEqual(robotPosition(app),[3,2]);assert.equal(app.get('energy-count').textContent,'3 / 4');
+ app.click('retry-energy');assert.deepEqual(robotPosition(app),[2,2]);assert.equal(app.get('queue').children.length,4);
+});
+test('energy boundary stops never charge or spend twice',async()=>{
+ for(const at of [299,300,301,719,720,1019,1020,1021]){
+  const app=setup({guided:true});try{optional(app,'energy',0);app.add(['R','R','U']);app.click('run');await app.advance(at);app.click('stop');const before=app.get('energy-count').textContent;await app.advance(10000);assert.equal(app.get('energy-count').textContent,before);app.click('run');await app.advance(5000);app.click('run');await app.advance(5000);assert.deepEqual(robotPosition(app),[2,1]);assert.equal(app.get('energy-count').textContent,'3 / 4');}finally{app.close();}
+ }
+});
+test('one-arrow repetition runs in parts without replay, and ordinary arrows also solve both levels',async t=>{
+ const app=setup({guided:true});t.after(app.close);optional(app,'loops',0);app.add(['R']);app.click('make-repeat');assert.equal(app.get('queue').querySelectorAll('.repeat-expanded>span').length,3);
+ app.click('run');await app.advance(300);app.click('stop');assert.deepEqual(robotPosition(app),[1,3]);app.click('run');await app.advance(5000);assert.equal(app.get('pack-completion').hidden,false);
+ for(let i=0;i<2;i++){optional(app,'loops',i);app.add(E.solve(P.get('loops',i)));app.click('run');await app.advance(5000);assert.equal(app.get('pack-completion').hidden,false);}
+});
+test('missing arrow has a real gap, rejects incomplete play, and replacing the arrow resets only the attempt',async t=>{
+ const app=setup({guided:true});t.after(app.close);optional(app,'puzzles',1);assert.match(app.get('queue').textContent,/\?/);assert.equal(app.get('run').disabled,true);
+ app.add(['D']);app.click('run');await app.advance(5000);assert.equal(app.get('pack-completion').hidden,true);
+ app.add(['U']);assert.deepEqual(robotPosition(app),[0,2]);assert.equal(app.get('queue').children.length,3);app.click('run');await app.advance(5000);assert.equal(app.get('pack-completion').hidden,false);
+});
+test('comparison requires both tested routes and keeps their observed counts',async t=>{
+ const app=setup({guided:true});t.after(app.close);optional(app,'puzzles',2);
+ app.click('route-b');app.click('run');await app.advance(6000);assert.equal(app.get('pack-next').hidden,true);assert.equal(JSON.parse(app.w.localStorage.getItem('robo-adventure-puzzles-v1')).done.includes('compare'),false);
+ app.click('route-a');app.click('run');await app.advance(6000);assert.match(app.get('route-result').textContent,/A: 3 pași · B: 5 pași/);assert.equal(app.get('pack-next').hidden,false);
+ assert.equal(JSON.parse(app.w.localStorage.getItem('robo-adventure-puzzles-v1')).done.includes('compare'),true);
 });

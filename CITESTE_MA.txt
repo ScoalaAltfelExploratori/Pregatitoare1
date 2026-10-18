@@ -1,7 +1,25 @@
-ROBO EXPLORATOR · V1.1 · CLASA PREGĂTITOARE
+ROBO EXPLORATOR · V1.2 · CLASA PREGĂTITOARE
 
 Păstrează întregul pachet împreună și deschide index.html în browser.
 Nu sunt necesare internet, conturi sau instalare.
+
+ACASĂ CU ROBO
+Apasă „Aventuri acasă”: șase misiuni 3×3, cu progres separat de clasă.
+Un pas, schimbăm direcția, ocolim copacul, cheia, podul, steaua și căsuța.
+După cele șase misiuni, „Diploma mea” oferă previzualizare și PDF A4 orizontal.
+Numele este opțional; nu este trimis și nu este salvat. Poate fi scris de mână.
+Ajutorul și încercările repetate sunt binevenite. Nu există note sau cronometru.
+Linkul pentru părinți este în „Pentru părinte” și se termină cu ?adventure=home.
+Misiunile terminate se salvează în browser; încercarea în curs nu se păstrează
+după închiderea paginii. Alt dispozitiv are propriul progres.
+
+Mai jos sunt trei aventuri OPȚIONALE, fără legătură cu diploma:
+- Energia: patru liniuțe. Un pas reușit consumă una; stația umple bateria.
+  Ultima liniuță poate ajunge pe stație sau acasă. Oprirea nu consumă nimic.
+  „Încercăm din nou de la stație” păstrează partea făcută până la încărcare.
+- Repetiția simplă: o săgeată de trei ori, apoi o pereche de două ori.
+  Pot fi folosite și săgeți simple, fără blocuri.
+- Mici descoperiri: vizităm o stea, completăm o săgeată, comparăm două drumuri.
 
 PRIMA ÎNTÂLNIRE
 1. Prima comoară: o săgeată →; apoi două săgeți → →.

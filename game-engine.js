@@ -44,8 +44,9 @@
    return data.version===3&&data.completed<=8?Math.min(data.completed,MISSIONS.length):0;
   }catch{return 0;}
  }
- function initialWorld(){return {bridgeOpen:false,watered:[]};}
- function copyWorld(world={}){return {bridgeOpen:Boolean(world.bridgeOpen),watered:[...(world.watered||[])]};}
+ function initialWorld(map={}){return {bridgeOpen:false,watered:[],...(map.energy?{energy:map.energy.capacity}:{}),...(map.stops?{stops:[]}:{})};}
+ function copyWorld(world={}){return {bridgeOpen:Boolean(world.bridgeOpen),watered:[...(world.watered||[])],...(Number.isFinite(world.energy)?{energy:world.energy}:{}),...(world.stops?{stops:[...world.stops]}:{})};}
+ function stopsVisited(map,world){return !map.stops||map.stops.every(p=>(world.stops||[]).includes(p));}
  function gateOpen(map,world){return !map.flowers||map.flowers.every(p=>world.watered.includes(p));}
  function availableCommands(map){return [...Object.keys(DIR),...(map.actions||[])];}
  // Repeats and named calls share an atomic cursor, so stopping never replays an action.
@@ -56,7 +57,7 @@
   program.forEach((block,blockIndex)=>{
    const called=block&&typeof block==='object'&&Object.hasOwn(block,'call'),repeated=typeof block!=='string'&&!called;
    if(called&&(Object.keys(block).length!==1||typeof block.call!=='string'||!Object.hasOwn(recipes,block.call)))throw Error('Rețetă necunoscută pe această hartă.');
-   if(repeated&&(!block||Object.keys(block).some(k=>!['repeat','commands'].includes(k))||![2,3].includes(block.repeat)||!Array.isArray(block.commands)||block.commands.length!==2))throw Error('Repetiția are două comenzi și se face de 2 sau 3 ori.');
+   if(repeated&&(!block||Object.keys(block).some(k=>!['repeat','commands'].includes(k))||![2,3].includes(block.repeat)||!Array.isArray(block.commands)||![1,2].includes(block.commands.length)))throw Error('Repetiția are una sau două comenzi și se face de 2 sau 3 ori.');
    const body=called?recipes[block.call].commands:repeated?block.commands:[block],count=repeated?block.repeat:1;
    if(!Array.isArray(body)||!body.length||body.length>8)throw Error('Rețeta trebuie să conțină între 1 și 8 comenzi simple.');
    if(body.some(d=>typeof d!=='string'||!Object.hasOwn(ARROW,d)))throw Error('Comandă necunoscută.');
@@ -76,8 +77,8 @@
   }
   return result;
  }
- function step(map,position,command,hasKey=false,currentWorld=initialWorld()){
-  const world=copyWorld(currentWorld);
+ function step(map,position,command,hasKey=false,currentWorld=initialWorld(map)){
+  const world=copyWorld({...initialWorld(map),...currentWorld});
   const fail=reason=>({ok:false,reason,position:[...position],hasKey,world});
   if(!availableCommands(map).includes(command))return fail('command');
   if(command==='F'){
@@ -108,16 +109,22 @@
   const nextHasKey=hasKey||collectedKey;
   if(map.keyPosition&&same(next,map.goal)&&!nextHasKey)return fail('locked');
   if(same(next,map.goal)&&!gateOpen(map,world))return fail(map.gate?'gate':'flowers');
-  return {ok:true,position:next,hasKey:nextHasKey,world,collectedKey,won:same(next,map.goal)};
+  if(same(next,map.goal)&&!stopsVisited(map,world))return fail('stop');
+  if(map.energy&&world.energy<=0)return fail('energy');
+  const recharged=Boolean(map.energy&&map.energy.chargers.includes(key(next)));
+  if(map.energy)world.energy=recharged?map.energy.capacity:world.energy-1;
+  const visitedStop=Boolean(map.stops&&map.stops.includes(key(next))&&!world.stops.includes(key(next)));
+  if(visitedStop)world.stops.push(key(next));
+  return {ok:true,position:next,hasKey:nextHasKey,world,collectedKey,recharged,visitedStop,won:same(next,map.goal)};
  }
  function solve(map,state={}){
   const start=state.position||map.start;
   const initialKey=Boolean(state.hasKey||(map.keyPosition&&same(start,map.keyPosition)));
-  const initial=copyWorld(state.world);
-  const stateKey=(p,hasKey,world)=>key(p)+'|'+Number(hasKey)+'|'+Number(world.bridgeOpen)+'|'+[...world.watered].sort().join(';');
+  const initial=copyWorld({...initialWorld(map),...state.world});
+  const stateKey=(p,hasKey,world)=>key(p)+'|'+Number(hasKey)+'|'+Number(world.bridgeOpen)+'|'+[...world.watered].sort().join(';')+'|'+world.energy+'|'+[...(world.stops||[])].sort().join(';');
   const queue=[{p:start,path:[],hasKey:initialKey,world:initial}],seen=new Set([stateKey(start,initialKey,initial)]);
   for(let i=0;i<queue.length;i++){
-   const {p,path,hasKey,world}=queue[i];if(same(p,map.goal)&&(!map.keyPosition||hasKey)&&gateOpen(map,world))return path;
+   const {p,path,hasKey,world}=queue[i];if(same(p,map.goal)&&(!map.keyPosition||hasKey)&&gateOpen(map,world)&&stopsVisited(map,world))return path;
    for(const d of ['R','U','L','D',...(map.actions||[])]){
     const s=step(map,p,d,hasKey,world);
     if(s.ok&&!seen.has(stateKey(s.position,s.hasKey,s.world))){seen.add(stateKey(s.position,s.hasKey,s.world));queue.push({p:s.position,path:[...path,d],hasKey:s.hasKey,world:s.world});}
@@ -140,7 +147,7 @@
   return map;
  }
  function evaluate(map,commands){
-  let p=[...map.start],hasKey=Boolean(map.keyPosition&&same(map.start,map.keyPosition)),world=initialWorld();const trace=[p],plan=expand(commands,32,map.recipes);
+  let p=[...map.start],hasKey=Boolean(map.keyPosition&&same(map.start,map.keyPosition)),world=initialWorld(map);const trace=[p],plan=expand(commands,32,map.recipes);
   for(let i=0;i<plan.length;i++){
    const s=step(map,p,plan[i].command,hasKey,world);
    if(!s.ok)return {outcome:s.reason,index:i,position:p,trace,hasKey,world};

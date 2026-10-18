@@ -38,6 +38,15 @@ Elementele V1 și verificările de mai jos păstrează istoricul implementării.
 
 - [x] **P1-14 · Direcții și destinații consecvente.** Toate cele patru săgeți sunt disponibile de la început și rămân vizibile la rulare. Două poteci 5×5 cer toate direcțiile, cu final la căsuță sau comoară. Toate lecțiile, Detectivul și jocul liber au una dintre aceste două destinații; anticiparea dezvăluie comoara la verificare. După rețeta introductivă 3×3 urmează imediat grădina 5×5 cu trei rânduri, șase flori și aceeași rețetă folosită de trei ori. Râul umple celula, iar podul coborât unește malurile.
 
+## V1.2 · Acasă cu Robo
+
+- [x] **HOME-01 · Parcurs separat pentru acasă.** Șase misiuni 3×3, deblocare graduală, rejucare, progres separat de clasă și intrare directă `?adventure=home`. Ghid scurt pentru părinte și link de distribuit. Încercările în curs se păstrează între vizite la meniu, iar la redeschiderea paginii se reia misiunea neterminată de la start.
+- [x] **HOME-02 · Diplomă locală.** Deblocată după cele șase misiuni, indiferent de numărul de încercări sau de ajutor. Imaginea furnizată, nume opțional, dată editabilă, previzualizare și PDF A4 orizontal. Numele nu este trimis sau salvat. Biblioteca și ilustrația sunt incluse local.
+- [x] **HOME-03 · Energia lui Robo.** Patru hărți, baterie vizuală cu patru liniuțe, încărcare automată, una sau mai multe stații. Mutarea reușită consumă energie; obstacolele, pauza și acțiunile pe loc nu consumă. Ultima liniuță permite sosirea la stație sau destinație. Revenirea la ultima stație restaurează împreună lumea, bateria și pașii.
+- [x] **HOME-04 · Repetiții simple, opționale.** O săgeată de trei ori, apoi două săgeți de două ori. Pașii desfășurați sunt vizibili și activi pe rând. Săgețile simple rămân o rezolvare validă; grădinile existente sunt păstrate.
+- [x] **HOME-05 · Alte moduri de a gândi drumul.** Oprire obligatorie la stea, un singur loc cu săgeată lipsă și testarea a două trasee cu compararea numărului de pași. Finalul rămâne la căsuță sau comoară.
+- [x] **HOME-06 · Verificare.** Teste de regresie și pentru noile stări, progres și reluări; verificări vizuale la 1280×720, 1024×768 și 390×844; PDF-uri descărcate și randate, cu nume românesc, nume lung și fără nume. Deschiderea directă `file://` nu a putut fi testată în browserul integrat: politica lui permite numai HTTP/HTTPS. Previzualizarea HTTP locală și toate resursele fără CDN au fost verificate.
+
 ## V2 · Creăm împreună (P2)
 
 - [ ] **P2-01 · Constructor de hărți.** Unelte mari pentru Robo, obstacole și comoară; verifică existența unui drum înainte de joacă.

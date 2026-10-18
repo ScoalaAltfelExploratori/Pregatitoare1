@@ -1,4 +1,4 @@
-# Robo Explorator · V1.1
+# Robo Explorator · V1.2
 
 Aventură de programare în română, offline, pentru clasa pregătitoare. Lecțiile au etape scurte, cu instrumente introduse pe rând. Primele trei lecții formează parcursul de bază; cheia, acțiunile, repetiția, decizia și rețeta sunt continuări alese în ritmul clasei.
 
@@ -15,6 +15,26 @@ Cele patru direcții ↑ ← ↓ → sunt vizibile și disponibile încă din pr
 Deschiderea meniului „Pentru adult” oprește rularea, inclusiv o întrebare în așteptare, fără să piardă pașii făcuți. „Înapoi la copii” sau Escape închide meniul; pornirea continuă din poziția curentă. Instrucțiunile detaliate ale lecției rămân în acest meniu. Pe ecranul copiilor, „↶ Șterge ultima” șterge ultima comandă nouă; atingerea unei comenzi noi o șterge doar pe aceea.
 
 ## Parcursul lecțiilor
+
+### Aventurile de acasă
+
+Butonul **„Aventuri acasă”** deschide un parcurs separat. Pentru părinți, folosește linkul cu `?adventure=home`; acesta arată pagina de început a aventurii, indiferent de progresul clasei. Linkul complet este disponibil în „Pentru părinte”. Din folderul offline, deschide `index.html` și apasă același buton.
+
+Cele șase misiuni sunt: un pas, schimbarea direcției, ocolirea copacului, cheia, podul și vizitarea unei stele înainte de căsuță. Fiecare hartă are 3×3 celule. La cheie și la activarea podului există o pauză de observație. Următoarea misiune se deblochează după reușită; hărțile terminate se pot rejuca. Nu există note, cronometru sau limită de încercări. Ajutorul adultului nu împiedică obținerea diplomei.
+
+După toate cele șase misiuni apare **„Diploma mea”**. Numele este opțional, data poate fi schimbată, iar previzualizarea reproduce PDF-ul A4 pe orizontală. Imaginea oferită de utilizator este păstrată ca ilustrație, cu numele și data desenate în spațiile libere. PDF-ul este generat local, fără servicii externe, dintr-o imagine de înaltă rezoluție; textul său nu este selectabil. Numele nu este salvat în localStorage și nu este trimis către un server. Se pot crea diplome cu alte nume sau cu spațiul gol pentru scriere de mână.
+
+Progresul se păstrează separat în `robo-adventure-home-v1`; cele trei aventuri opționale au propriile chei. Se salvează misiunile terminate, nu programul încercării în curs. După închiderea paginii, o misiune neterminată reîncepe de la start. În aceeași sesiune, „Înapoi la jocul curent” păstrează încercarea. Dacă browserul refuză salvarea, jocul și diploma funcționează în sesiunea curentă. Progresul nu se transferă automat între dispozitive.
+
+### Aventuri opționale, câte o idee nouă
+
+- **Energia lui Robo:** patru misiuni, de la observarea bateriei la alegerea stațiilor și un traseu 5×5 cu mai multe opriri. Bateria are patru liniuțe; fiecare deplasare reușită consumă una. Stația o umple automat. Oprirea, timpul de așteptare, obstacolele și acțiunile pe loc nu consumă energie. Ultima liniuță poate duce chiar pe stație sau la destinație. La epuizare, „Încercăm din nou de la stație” readuce împreună poziția, bateria, inventarul, lumea și pașii la ultima încărcare; comenzile de după ea se șterg. Înainte de prima stație, revenirea este la start. „La start” reia întreaga hartă și păstrează programul.
+- **Pași care se repetă:** întâi → de trei ori pe 4×4, apoi perechea → ↑ de două ori pe o scară 3×3. Pașii desfășurați și pasul activ se văd în program. Soluțiile cu săgeți simple sunt la fel de valide. Nu se cer udare, porți, rețete sau condiții.
+- **Mici descoperiri:** vizităm steaua înainte de căsuță; completăm un singur loc `?` între două săgeți; testăm două trasee pregătite și comparăm cei 3, respectiv 5 pași. Comparația se termină după testarea ambelor drumuri.
+
+Aceste activități nu condiționează diploma. Lecțiile și grădinile existente rămân disponibile pentru clasă.
+
+### Lecțiile pentru clasă
 
 | Lecția | Etapele introduse | Traseu introductiv |
 | --- | --- | --- |
@@ -45,7 +65,7 @@ După ocolul 3×3 se pot alege două poteci 5×5: „Toate cele patru săgeți�
 - În introducerile scurte cu cheia și maneta, Robo se oprește singur după colectare sau activare. Observați schimbarea, apoi apăsați iar „Pornește Robo”, chiar dacă restul comenzilor era deja pregătit.
 - „Arată un drum” înlocuiește comenzile noi cu o continuare validă din starea curentă.
 
-Limita este de 8 pași pe 3×3, 16 pe 4×4 și 32 pe 5×5 sau în jocul liber. Fiecare comandă dintr-o repetiție sau rețetă intră în limită. Blocul decizional numără un pas atât la DA, cât și la NU.
+La clasă, limita este de 8 pași pe 3×3, 16 pe 4×4 și 32 pe 5×5. Jocul liber și aventurile de acasă permit 32 de pași. Fiecare comandă dintr-o repetiție sau rețetă intră în limită. Blocul decizional numără un pas atât la DA, cât și la NU.
 
 ## Acțiunile, repetiția și decizia
 
@@ -63,7 +83,7 @@ Grădina are cinci etape:
 
 **Întrebarea așteaptă fără limită de timp.** Clasa răspunde, iar adultul apasă „Verificăm răspunsul”. În instrumentele adultului se poate activa răspunsul automat după două secunde. Oprirea înainte de răspuns anulează verificarea în așteptare; reluarea pune întrebarea din nou. Oprirea după răspuns păstrează rezultatul și efectul împreună.
 
-Repetiția grupează exact două comenzi simple, de 2 sau 3 ori. Nu există repetiții imbricate. Programul evidențiază comanda curentă și fiecare pereche făcută. „Desfă în comenzi” permite repararea restului, inclusiv după oprirea în mijlocul unui bloc. Rezolvările fără blocuri sunt acceptate.
+Repetiția grupează una sau două comenzi simple, de 2 sau 3 ori. În grădină grupăm două comenzi; aventura introductivă începe cu una. Nu există repetiții imbricate. Programul evidențiază comanda curentă și fiecare repetare făcută. „Desfă în comenzi” permite repararea restului, inclusiv după oprirea în mijlocul unui bloc. Rezolvările fără blocuri sunt acceptate.
 
 ## Rețeta opțională
 
@@ -105,7 +125,7 @@ La publicarea unor modificări JavaScript sau CSS, actualizează împreună para
 
 ## Dezvoltare și verificare
 
-Aplicația nu are dependențe la rulare. Pentru teste:
+Aplicația nu are nevoie de servicii externe la rulare. Biblioteca jsPDF pentru diplomă este inclusă local, cu licența sa. Pentru teste:
 
 ```sh
 npm ci
@@ -121,6 +141,8 @@ Fișiere principale:
 
 - `index.html`, `style.css`, `app.js`: interfața, povestea și activitățile.
 - `curriculum.js`: lecțiile, etapele, provocările și reperele pentru adult.
+- `adventures.js`: cele șase misiuni pentru acasă și aventurile opționale.
+- `diploma.js`: previzualizarea și generarea PDF în browser, fără salvarea numelui.
 - `game-engine.js`: mișcarea, regulile, rezolvarea și generarea hărților.
 - `robo-audio.js`: efecte audio offline.
 - `tests/`: teste pentru motor, curriculum, interfață și sunet.
