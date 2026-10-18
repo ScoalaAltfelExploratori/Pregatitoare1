@@ -37,7 +37,7 @@
    {id:'decision',name:'Verificăm: este floare?',extension:true,brief:'Încercăm 🌱? pe locul gol. Apoi →, 🌱? pe floare și → la căsuță. Spunem NU sau DA.',observe:'Spunem DA sau NU, apoi apăsăm Verificăm răspunsul.',changes:{size:3,start:[0,2],goal:[2,2],obstacles:[],flowers:['1,2'],gate:null,actions:['F'],allowDecision:true,allowRepeat:false,gardenStyle:null}},
    {id:'combine',name:'Repetăm și verificăm',extension:true,scattered:true,brief:'Acum combinăm: repetăm de 3 ori → și 🌱?. Vedem DA, NU, DA; apoi → ↑ prin poartă.',observe:'Ce face Robo pe floare? Dar pe locul gol?',changes:{gardenStyle:null,repeatCount:3}}
   ],challenge:{id:'challenge',name:'Provocare: trei flori la rând',observe:'Sunt trei flori. De câte ori repetăm cele două comenzi?'}},
-  {group:'Extensie',stages:[
+  {group:'Lecții',stages:[
    {id:'one-row',name:'Udă un rând',brief:'Rețeta „Udă un rând” înseamnă → 💧 → 💧. O folosim o dată, apoi ↑ la căsuță.',observe:'Butonul Udă un rând adaugă patru comenzi. Le citim de la stânga la dreapta.',changes:{size:3,start:[0,2],goal:[2,1],obstacles:[],flowers:['1,2','2,2'],gate:null,rowStarts:[{position:[0,2],name:'A'}]}},
    {id:'two-rows',name:'Rândurile A, B și C · 5×5',brief:'Udăm rândul A. Mergem ← ← ↑ ↑ la B și refolosim rețeta. Repetăm drumul la C și udăm și acolo. La final → → la căsuță.',observe:'La fiecare literă folosim Udă un rând. Între rânduri, alegem săgețile.',changes:{size:5,start:[0,4],goal:[4,0],obstacles:['1,3','2,3','3,3','4,3','1,1','2,1','3,1','4,1'],flowers:['1,4','2,4','1,2','2,2','1,0','2,0'],gate:[3,0],rowStarts:[{position:[0,4],name:'A'},{position:[0,2],name:'B'},{position:[0,0],name:'C'}]}}
   ],challenge:{id:'classic-two-rows',name:'Provocare: două rânduri îndepărtate',observe:'Aceeași rețetă, în două locuri diferite.'}}
@@ -50,7 +50,7 @@
   const map=E.mission(index,{scattered:!!stage.scattered});
   Object.assign(map,JSON.parse(JSON.stringify(stage.changes||{})));
   if(stage.brief)map.brief=stage.brief;
-  map.lesson={index,stage:stage.id,name:stage.name,group:stage.extension?'Extensie':lesson.group,number:at+1,count:lesson.stages.length,next:at>=0&&at<lesson.stages.length-1?lesson.stages[at+1].id:null,observe:stage.observe,challenge:at<0,suggested:stage.suggested||null};
+  map.lesson={index,stage:stage.id,name:stage.name,group:lesson.group,number:at+1,count:lesson.stages.length,next:at>=0&&at<lesson.stages.length-1?lesson.stages[at+1].id:null,observe:stage.observe,challenge:at<0,suggested:stage.suggested||null};
   map.label=map.lesson.group+' · '+(at<0?'Provocare':(at+1)+' / '+lesson.stages.length)+' · '+map.size+'×'+map.size;
   return map;
  }

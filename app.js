@@ -125,12 +125,12 @@
    const m=C.get(i),button=document.createElement('button');
    button.className='mission-stop'+(i<completed?' complete':'')+(mode==='program'&&i===missionIndex?' current':'');
    button.disabled=i>completed;
-   button.setAttribute('aria-label','Misiunea '+(i+1)+': '+m.title+(i<completed?', terminată':i>completed?', blocată':''));
+   button.setAttribute('aria-label',T.curriculumTitle(i,m.lesson.stage)+(i<completed?', terminată':i>completed?', blocată':''));
    button.setAttribute('aria-current',String(mode==='program'&&i===missionIndex));
-   button.innerHTML='<span class="mission-icon" aria-hidden="true">'+(i>completed?'🔒':m.goalIcon)+'</span><span class="mission-name">'+(i+1)+'. '+m.title+'</span><span class="mission-size">'+(i<completed?'✓ Gata · ':'')+m.lesson.group+'</span>';
+   button.innerHTML='<span class="mission-icon" aria-hidden="true">'+(i>completed?'🔒':m.goalIcon)+'</span><span class="mission-name">'+T.curriculumTitle(i,m.lesson.stage)+'</span><span class="mission-size">'+(i<completed?'✓ Gata':'')+'</span>';
    button.addEventListener('click',()=>startMission(i));$('mission-trail').append(button);
   }
-  $('adventure-progress').textContent=Math.min(completed,3)+' din 3 lecții de bază';
+  $('adventure-progress').textContent=completed+' din '+E.missionCount+' grupuri terminate';
  }
  function commandTile(d,i,predicting=false){
   if(map.missing||map.routes){
@@ -193,8 +193,9 @@
   $('mission-picker').hidden=detecting;
   $('adventure-heading').hidden=detecting;$('mission-trail').hidden=detecting;
   $('map-label').textContent=map.label;$('step-count').textContent=busy&&active>=0?'Pasul '+(active+1):executed?executed+(executed===1?' pas făcut':' pași făcuți'):'La start';
-  $('game-title').textContent=predicting?'Unde se oprește Robo?':map.title||'Condu-l pe Robo la comoară.';
-  $('activity-label').textContent=detecting?'REPARĂM ÎMPREUNĂ':predicting?'GHICIM ȘI VERIFICĂM':map.lesson?map.lesson.group.toUpperCase()+' · '+map.lesson.name:'JOACĂ LIBERĂ';
+  const lessonNumber=predicting?'3':detecting?'4':map.lesson?T.curriculumTitle(missionIndex,map.gardenStyle?(map.allowDecision?'combine':'challenge'):map.lesson.stage).split('.')[0]:null;
+  $('game-title').textContent=(lessonNumber?lessonNumber+'. ':'')+(predicting?'Unde se oprește Robo?':map.title||'Condu-l pe Robo la comoară.');
+  $('activity-label').textContent=detecting?'REPARĂM ÎMPREUNĂ':predicting?'GHICIM ȘI VERIFICĂM':map.lesson?T.curriculumTitle(missionIndex,map.lesson.stage):'JOACĂ LIBERĂ';
   $('teacher-guidance').textContent=map.brief||'Alegem săgețile, încercăm și reparăm împreună.';
   $('mission-brief').textContent=predicting?'Arată unde se oprește Robo.':detecting?'Schimbăm o săgeată și găsim drumul.':map.keyPosition?(hasKey?'Avem cheia! Mergem la comoară.':'Luăm cheia, apoi deschidem comoara.'):map.lever?'Coborâm podul și ajungem la căsuță.':map.flowers?'Udăm florile, apoi mergem la căsuță.':'Îl ajutăm pe Robo să ajungă la '+(map.goalName||'comoară')+'.';
   $('obstacle-legend').hidden=!map.obstacles.length;
@@ -244,7 +245,7 @@
   const nextStage=map.lesson&&(map.lesson.next||map.lesson.suggested),nextChoice=nextStage&&C.choices(missionIndex).find(s=>s.id===nextStage);
   $('completion-message').textContent=map.lesson&&map.lesson.next?'Am reușit! Arătăm drumul și explicăm comenzile.':missionIndex===2?'Am exersat și ocolul! Putem încheia aici sau continua în altă zi.':'Am reușit! Putem explica drumul și îl putem încerca din nou.';
   $('next-mission').hidden=missionIndex===E.missionCount-1&&!nextStage;
-  $('next-mission').textContent=nextChoice?(nextChoice.extension||nextChoice.challenge?'Opțional: ':'Mai departe: ')+nextChoice.name:missionIndex===2?'Opțional: cheia și comoara →':'Următoarea lecție →';
+  $('next-mission').textContent=nextChoice?'Mai departe: '+T.curriculumTitle(missionIndex,nextChoice.id):missionIndex===2?'6. Cheia, apoi comoara →':'Următoarea lecție →';
   $('practice-detective').hidden=!(won&&mode==='program'&&missionIndex===1&&!nextStage);
   $('detective-continue').hidden=!(mode==='detective'&&won&&guidedDetective);
   $('prediction-title').textContent='Privește cele '+predictionLength+' săgeți';
@@ -264,7 +265,7 @@
   if(!map.lesson||mode!=='program'){$('lesson-observe').textContent=mode==='detective'?'Ce săgeată schimbăm și unde va ajunge Robo?':'Arătăm căsuța înainte să pornim.';return;}
   $('teacher-lesson').value=String(missionIndex);
   if($('lesson-stage').dataset.lesson!==String(missionIndex)){
-   $('lesson-stage').replaceChildren();C.choices(missionIndex).forEach(stage=>{const option=document.createElement('option');option.value=stage.id;option.textContent=(stage.extension?'Extensie: ':'')+stage.name;$('lesson-stage').append(option);});$('lesson-stage').dataset.lesson=String(missionIndex);
+   $('lesson-stage').replaceChildren();C.choices(missionIndex).forEach(stage=>{const option=document.createElement('option');option.value=stage.id;option.textContent=T.curriculumTitle(missionIndex,stage.id);$('lesson-stage').append(option);});$('lesson-stage').dataset.lesson=String(missionIndex);
   }
   $('lesson-stage').value=map.lesson.stage;$('lesson-observe').textContent=map.lesson.observe;
  }
@@ -460,11 +461,12 @@
   const activity=T.find(classLesson);
   document.body.classList.toggle('class-session',Boolean(activity&&!homeMode));
   $('presenter-guide').hidden=homeMode||!activity;
-  if(activity){$('presenter-activity').textContent=activity.title;$('presenter-question').textContent='„'+T.question(activity.id,classVariant)+'”';$('presenter-participation').textContent=activity.notes;}
+  if(activity){$('presenter-activity').textContent=T.title(activity);$('presenter-question').textContent='„'+T.question(activity.id,classVariant)+'”';$('presenter-participation').textContent=activity.notes;}
+  if(activity&&activity.variants[classVariant].type==='break')$('class-break-title').textContent=T.title(activity);
   $('class-lesson').value=activity?activity.id:'';
   if($('class-variant').dataset.activity!==(activity?activity.id:'')){
    $('class-variant').replaceChildren();
-   if(activity)activity.variants.forEach((v,i)=>{const option=document.createElement('option');option.value=String(i);option.textContent=v.title;$('class-variant').append(option);});
+   if(activity)activity.variants.forEach((v,i)=>{const option=document.createElement('option');option.value=String(i);option.textContent=T.variantTitle(activity,i);$('class-variant').append(option);});
    $('class-variant').dataset.activity=activity?activity.id:'';
   }
   $('class-variant').value=String(classVariant);$('class-variant').disabled=!activity||activity.variants.length===1;
@@ -477,7 +479,7 @@
   $('class-completion').hidden=homeMode||!activity||!complete||view!=='game';
   if(activity&&!homeMode){
    $('completion').hidden=true;$('detective-completion').hidden=true;
-   if(activity.variants[classVariant].type==='curriculum')$('game-title').textContent=activity.title;
+   $('game-title').textContent=activity.variants[classVariant].type==='pack'?activity.id+'. '+map.title:T.title(activity);$('activity-label').textContent=T.title(activity);$('map-label').textContent=T.variantTitle(activity,classVariant);
    if(activity.variants[classVariant].type==='pack')$('mission-brief').textContent=map.brief;
    const both=!map.routes||Object.keys(routeResults).length===map.routes.length;
    $('class-completion-message').textContent=!both?'Am testat un drum. Îl încercăm și pe celălalt!':mode==='predict'?'Am urmărit săgețile. Explicăm ce am observat.':'Am reușit împreună! Schimbăm copilul sau mergem mai departe.';
@@ -489,9 +491,9 @@
  function prepareClassroom(){
   const group=document.createElement('optgroup');group.label='Lecțiile lui Robo';
   T.activities.forEach(activity=>{
-   const option=document.createElement('option');option.value=activity.id;option.textContent=activity.id+'. '+activity.title;group.append(option);
+   const option=document.createElement('option');option.value=activity.id;option.textContent=T.title(activity);group.append(option);
    const button=document.createElement('button');button.addEventListener('click',()=>startClass(activity.id));
-   button.innerHTML='<span class="plan-icon" aria-hidden="true">'+activity.icon+'</span><span><b>'+activity.id+'. '+activity.title+'</b><small>'+activity.notes+'</small></span><span aria-hidden="true">→</span>';
+   button.innerHTML='<span class="plan-icon" aria-hidden="true">'+activity.icon+'</span><span><b>'+T.title(activity)+'</b><small>'+activity.notes+'</small></span><span aria-hidden="true">→</span>';
    $('class-plan-list').append(button);
   });
   $('class-lesson').append(group);const link=adventureURL(true);$('class-home-link').href=link.href;$('class-home-link').textContent=link.href;
@@ -590,7 +592,7 @@
  $('detective-continue').addEventListener('click',()=>{if(mode==='detective'&&won&&guidedDetective){guidedDetective=false;startMission(2,{preview:true});}});
  $('check-decision').addEventListener('click',()=>{if(!busy||!decisionPending||decisionPending.token!==runToken)return;const pending=decisionPending;decisionPending=null;$('check-decision').hidden=true;pending.resolve();});
  $('prediction-count').addEventListener('change',()=>{if(busy)return;predictionLength=Number($('prediction-count').value)===3?3:2;if(mode==='predict')newPrediction();});
- for(let i=0;i<C.count;i++){const m=C.get(i),o=document.createElement('option');o.value=String(i);o.textContent=m.lesson.group+' · '+(i+1)+'. '+m.title;$('teacher-lesson').append(o);}
+ for(let i=0;i<C.count;i++){const m=C.get(i),o=document.createElement('option');o.value=String(i);o.textContent=m.title;$('teacher-lesson').append(o);}
  $('teacher-lesson').addEventListener('change',()=>{if(!busy)startMission(Number($('teacher-lesson').value),{preview:true});});
  $('lesson-stage').addEventListener('change',()=>{if(!busy&&mode==='program'&&map.lesson)startMission(missionIndex,{stage:$('lesson-stage').value,preview:true});});
  $('reset-adventure').addEventListener('click',()=>{$('reset-confirmation').hidden=false;});

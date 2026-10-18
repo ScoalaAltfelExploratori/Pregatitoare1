@@ -17,7 +17,7 @@
    {id:'choose',title:'La ce stație mergem?',size:5,start:[0,4],goal:[4,0],energy:battery(['0,2','2,2','4,2']),brief:'Alege stațiile. Ne ajung liniuțele până la următoarea?'},
    {id:'journey',title:'Călătoria cu mai multe opriri',size:5,start:[0,4],goal:[4,0],obstacles:['0,3','1,3','2,3','3,3','1,1','2,1','3,1','4,1'],energy:battery(['4,4','4,2','0,2','0,0']),brief:'Urmăm drumul. Ne încărcăm înainte să continuăm.'}
   ]},
-  loops:{title:'Pași care se repetă',icon:'🔁',description:'Opțional. Întâi o săgeată, apoi o pereche.',maps:[
+  loops:{title:'Pași care se repetă',icon:'🔁',description:'Întâi o săgeată, apoi o pereche.',maps:[
    {id:'arrow',title:'De trei ori la dreapta',size:4,start:[0,3],goal:[3,3],allowRepeat:true,repeatBodyLength:1,repeatCount:3,brief:'Punem →. O repetăm de 3 ori: → → →.'},
    {id:'stairs',title:'Urcăm treptele',start:[0,2],goal:[2,0],obstacles:['0,0','0,1','2,2'],allowRepeat:true,repeatBodyLength:2,repeatCount:2,brief:'Punem → ↑. Repetăm perechea de 2 ori.'}
   ]},

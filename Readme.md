@@ -18,7 +18,7 @@ Deschiderea meniului „Pentru adult” oprește rularea, inclusiv o întrebare 
 
 ### Lecțiile pentru clasă
 
-Toate lecțiile se pot alege din bara de sus sau din „Toate lecțiile”. Nu au timpi impuși și nu trebuie terminate într-o singură întâlnire.
+Toate lecțiile sunt numerotate de la 1 la 16, în listă, în titlu și în meniurile adultului. Variantele folosesc numere precum 14.1 și 14.2. Nu există categorii „extra” sau „opțional”. Toate lecțiile se pot alege din bara de sus sau din „Toate lecțiile”. Nu au timpi impuși și nu trebuie terminate într-o singură întâlnire.
 
 1. Facem cunoștință cu Robo
 2. Săgețile în ordine
@@ -51,11 +51,11 @@ Cele șase misiuni sunt: schimbarea direcției, săgeata lipsă, cheia, podul, r
 
 După toate cele șase misiuni apare **„Diploma mea”**. Numele este opțional, data poate fi schimbată, iar previzualizarea reproduce PDF-ul A4 pe orizontală. Imaginea oferită de utilizator este păstrată ca ilustrație, cu numele și data desenate în spațiile libere. PDF-ul este generat local, fără servicii externe, dintr-o imagine de înaltă rezoluție; textul său nu este selectabil. Numele nu este salvat în localStorage și nu este trimis către un server. Se pot crea diplome cu alte nume sau cu spațiul gol pentru scriere de mână.
 
-Progresul se păstrează separat în `robo-adventure-home-v1`; cele trei aventuri opționale au propriile chei. Se salvează misiunile terminate, nu programul încercării în curs. După închiderea paginii, o misiune neterminată reîncepe de la start. În aceeași sesiune, „Înapoi la jocul curent” păstrează încercarea. Dacă browserul refuză salvarea, jocul și diploma funcționează în sesiunea curentă. Progresul nu se transferă automat între dispozitive.
+Progresul se păstrează separat în `robo-adventure-home-v1`; celelalte trei aventuri au propriile chei. Se salvează misiunile terminate, nu programul încercării în curs. După închiderea paginii, o misiune neterminată reîncepe de la start. În aceeași sesiune, „Înapoi la jocul curent” păstrează încercarea. Dacă browserul refuză salvarea, jocul și diploma funcționează în sesiunea curentă. Progresul nu se transferă automat între dispozitive.
 
 Din vechiul set de acasă se păstrează reușitele pentru hărțile neschimbate. Săgeata lipsă și energia trebuie rezolvate înaintea noii diplome; o salvare veche completă nu le marchează automat ca terminate.
 
-### Aventuri opționale, câte o idee nouă
+### Mai jucăm?
 
 - **Energia lui Robo:** patru misiuni, de la observarea bateriei la alegerea stațiilor și un traseu 5×5 cu mai multe opriri. Bateria are patru liniuțe; fiecare deplasare reușită consumă una. Stația o umple automat. Oprirea, timpul de așteptare, obstacolele și acțiunile pe loc nu consumă energie. Ultima liniuță poate duce chiar pe stație sau la destinație. La epuizare, „Încercăm din nou de la stație” readuce împreună poziția, bateria, inventarul, lumea și pașii la ultima încărcare; comenzile de după ea se șterg. Înainte de prima stație, revenirea este la start. „La start” reia întreaga hartă și păstrează programul.
 - **Pași care se repetă:** întâi → de trei ori pe 4×4, apoi perechea → ↑ de două ori pe o scară 3×3. Pașii desfășurați și pasul activ se văd în program. Soluțiile cu săgeți simple sunt la fel de valide. Nu se cer udare, porți, rețete sau condiții.
@@ -65,27 +65,27 @@ Aceste activități nu condiționează diploma. Lecțiile și grădinile existen
 
 ### Biblioteca etapelor individuale
 
-Biblioteca originală cu șapte categorii rămâne în instrumentele adultului. Numerotarea ei este separată de lecțiile din bara de sus; variantele și provocările sunt accesibile și din bara principală.
+Biblioteca originală cu șapte categorii rămâne în instrumentele adultului. Fiecare etapă arată numărul lecției din bara de sus; variantele folosesc forma 14.1, 14.2. Grupurile de hărți nu sunt numerotate ca lecții.
 
 | Lecția | Etapele introduse | Traseu introductiv |
 | --- | --- | --- |
 | 1. Prima comoară · Bază | O săgeată, apoi două identice; toate direcțiile sunt vizibile | →, apoi → → |
 | 2. Drumul spre căsuță · Bază | O schimbare de direcție, apoi trei săgeți | → ↑, apoi → ↑ ↑ |
-| Detectivul Robo | După lecția 2: reparăm o singură săgeată dintre două | Două săgeți, două variante |
-| 3. Ocolim copacul · Bază | Un obstacol pe 3×3, cu săgețile deja cunoscute | ↑ → → |
-| 4. Cheia și comoara · Continuare | Întâi cheia, apoi cufărul | → ↑, pauză, → ↓ |
-| 5. Podul și maneta · Continuare | O acțiune schimbă harta | ↑ ⚙, pauză, → → |
-| 6. Grădina lui Robo · Continuare | Udăm o floare, apoi recunoaștem o pereche repetată | → 💧 → |
-| 6. Grădina · Extensii | Repetiție, decizie separat, apoi combinare | Detalii mai jos |
-| 7. Rețeta lui Robo · Extensie | Un nume pentru pași cunoscuți, apoi reutilizare | 📖, apoi ↑ |
+| 4. Detectivul Robo | După lecția 2: reparăm o singură săgeată dintre două | Două săgeți, două variante |
+| 5. Ocolim copacul · Bază | Un obstacol pe 3×3, cu săgețile deja cunoscute | ↑ → → |
+| 6. Cheia și comoara · Continuare | Întâi cheia, apoi cufărul | → ↑, pauză, → ↓ |
+| 7. Podul și maneta · Continuare | O acțiune schimbă harta | ↑ ⚙, pauză, → → |
+| 10–12. Udarea și repetiția | Udăm o floare, apoi recunoaștem o pereche repetată | → 💧 → |
+| 15. Dacă este o floare | Repetiție, decizie separat, apoi combinare | Detalii mai jos |
+| 13–14. Udă un rând | Un nume pentru pași cunoscuți, apoi reutilizare | 📖, apoi ↑ |
 
 Prima întâlnire se poate încheia după cele trei lecții de bază. „Unde crezi că ajunge?” poate fi intercalat după primele secvențe: începe cu două săgeți pe 3×3 fără obstacole; trei săgeți sunt o alegere separată.
 
-În „Instrumente pentru adult”, alege orice lecție și etapă fără să fie nevoie să termini parcursul. Fiecare etapă are un reper „Observăm”. Avansarea se decide după explicațiile copiilor, fără cronometru. Repetiția, decizia, rețeta și hărțile mai mari sunt opționale.
+În „Instrumente pentru adult”, alege orice lecție și etapă fără să fie nevoie să termini parcursul. Fiecare etapă are un reper „Observăm”. Avansarea se decide după explicațiile copiilor, fără cronometru. Repetiția, decizia, rețeta și hărțile mai mari au numere în lista comună de lecții.
 
 Hărțile vechi se păstrează ca provocări: doi copaci pe 4×4, comoara de 12 pași, podul de 9 pași și grădina cu trei flori. Harta veche cu doi copaci păstrează și copacul de la rândul 2, coloana 1. Schimbarea etapei pregătește o încercare nouă.
 
-După ocolul 3×3 se pot alege două poteci 5×5: „Toate cele patru săgeți” (12 pași, până la căsuță) și „Comoara din mijloc” (16 pași). Obstacolele cer folosirea tuturor celor patru direcții. Sunt provocări opționale, care se pot construi în bucăți. Toate hărțile au ca destinație o comoară sau o căsuță; obiectele și acțiunile sunt pași pe parcurs.
+După ocolul 3×3 se pot alege două poteci 5×5: „Toate cele patru săgeți” (12 pași, până la căsuță) și „Comoara din mijloc” (16 pași). Obstacolele cer folosirea tuturor celor patru direcții. Drumurile se pot construi în bucăți. Toate hărțile au ca destinație o comoară sau o căsuță; obiectele și acțiunile sunt pași pe parcurs.
 
 ## Pornirea continuă programul
 
@@ -106,9 +106,9 @@ Grădina are cinci etape:
 
 1. **Udăm o floare:** → 💧 →, fără poartă sau repetiție.
 2. **Observăm ce se repetă:** → 💧 → 💧, apoi → ↑ prin poartă. Identificăm perechea înainte să apară blocul.
-3. **Repetăm perechea — opțional:** aceeași hartă. Adaugă → și 💧, deschide „Repetă ultimele 2 comenzi”, alege 2 ori, apoi adaugă → ↑.
-4. **Verificăm: este floare? — opțional:** 3×3, fără repetiție. Încearcă 🌱? pe gol, apoi →, 🌱? pe floare și →. Observăm **NU**, apoi **DA**.
-5. **Repetăm și verificăm — opțional:** harta mai mare combină ideile exersate. Repetă de 3 ori perechea →, 🌱?, apoi adaugă → ↑. Rezultatele sunt **DA, NU, DA**; florile udate deschid poarta.
+3. **Repetăm perechea:** aceeași hartă. Adaugă → și 💧, deschide „Repetă ultimele 2 comenzi”, alege 2 ori, apoi adaugă → ↑.
+4. **Verificăm: este floare?:** 3×3, fără repetiție. Încearcă 🌱? pe gol, apoi →, 🌱? pe floare și →. Observăm **NU**, apoi **DA**.
+5. **Repetăm și verificăm:** harta mai mare combină ideile exersate. Repetă de 3 ori perechea →, 🌱?, apoi adaugă → ↑. Rezultatele sunt **DA, NU, DA**; florile udate deschid poarta.
 
 🌱? înseamnă „DACĂ este o floare aici, ATUNCI Udă”. Pe gol, Robo nu udă și nu se deplasează; urmează comanda următoare. Pe o floare deja udată, DA nu dublează udarea.
 
@@ -116,7 +116,7 @@ Grădina are cinci etape:
 
 Repetiția grupează una sau două comenzi simple, de 2 sau 3 ori. În grădină grupăm două comenzi; aventura introductivă începe cu una. Nu există repetiții imbricate. Programul evidențiază comanda curentă și fiecare repetare făcută. „Desfă în comenzi” permite repararea restului, inclusiv după oprirea în mijlocul unui bloc. Rezolvările fără blocuri sunt acceptate.
 
-## Rețeta opțională
+## Udă un rând
 
 „📖 Udă un rând” este numele secvenței pregătite → 💧 → 💧. Prima etapă o folosește o singură dată pe 3×3, apoi Robo merge ↑ la căsuță.
 
@@ -126,7 +126,7 @@ Imediat după introducerea 3×3 urmează o grădină 5×5 cu trei rânduri, A, B
 
 „Unde crezi că ajunge?” oferă două săgeți, cu opțiune pentru trei. Harta arată robotul, fără o comoară care să sugereze răspunsul. Copiii aleg o căsuță și apasă „Verificăm împreună”. Comoara se dezvăluie la destinație după verificare. „Altă provocare” pregătește o rundă nouă. Cu tastatura: Tab pentru focalizare, săgețile pentru alegerea căsuței, Enter sau Spațiu pentru confirmare.
 
-Detectivul are trei cazuri 3×3, cu 2, 3 și 4 săgeți. Începe cu primul: o singură înlocuire dintre două variante mari. „Testăm drumul” arată efectul; „Arată săgeata” indică locul de reparat fără să dea răspunsul. Fără punctaj, cronometru sau limită de încercări. După o schimbare, Robo revine la start pentru a testa drumul reparat. Cazurile următoare sunt opționale.
+Detectivul are trei cazuri 3×3, cu 2, 3 și 4 săgeți. Începe cu primul: o singură înlocuire dintre două variante mari. „Testăm drumul” arată efectul; „Arată săgeata” indică locul de reparat fără să dea răspunsul. Fără punctaj, cronometru sau limită de încercări. După o schimbare, Robo revine la start pentru a testa drumul reparat. Cele trei cazuri se aleg din lista variantelor.
 
 Ambele activități sunt disponibile de la început și nu schimbă progresul lecțiilor. „Programăm” restaurează aventura, inclusiv poziția, cheia, florile și pașii făcuți.
 
@@ -166,7 +166,7 @@ Fișiere principale:
 
 - `index.html`, `style.css`, `app.js`: interfața și activitățile.
 - `curriculum.js`: lecțiile, etapele, provocările și reperele pentru adult.
-- `adventures.js`: cele șase misiuni pentru acasă și aventurile opționale.
+- `adventures.js`: cele șase misiuni pentru acasă și celelalte aventuri.
 - `diploma.js`: previzualizarea și generarea PDF în browser, fără salvarea numelui.
 - `game-engine.js`: mișcarea, regulile, rezolvarea și generarea hărților.
 - `robo-audio.js`: efecte audio offline.

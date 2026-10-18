@@ -39,12 +39,21 @@
   '16':'Am ajuns până aici. Cum continuăm?'
  };
  function find(id){return activities.find(a=>a.id===String(id));}
+ function title(activity){return activity.id+'. '+activity.title;}
+ function variantTitle(activity,index){return activity.id+'.'+(index+1)+'. '+activity.variants[index].title;}
+ function curriculumTitle(index,stage){
+  for(const activity of activities){
+   const variant=activity.variants.findIndex(v=>v.type==='curriculum'&&v.index===index&&v.stage===stage);
+   if(variant>=0)return activity.variants.length>1?variantTitle(activity,variant):title(activity);
+  }
+  return '';
+ }
  function resolve(id,variant=0){const activity=find(id)||activities[0];const index=Number.isInteger(variant)&&variant>=0&&variant<activity.variants.length?variant:0;return {activity,index,variant:activity.variants[index]};}
  function question(id,variant=0){
   if(String(id)==='9'&&variant===1)return 'Ce săgeată lipsește?';
   if(String(id)==='9'&&variant===2)return 'Unde ne oprim înainte să mergem acasă?';
   return questions[id]||'Unde credeți că va ajunge Robo?';
  }
- const api={activities,find,resolve,question};
+ const api={activities,find,resolve,question,title,variantTitle,curriculumTitle};
  if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.RoboClassroom=api;
 })(typeof window!=='undefined'?window:globalThis);

@@ -63,7 +63,7 @@ const stageDecision = app => app.tool().execute({ commands: decisionProgram });
 
 test('decizia din buton așteaptă răspunsul clasei și arată DA, NU, DA pe traseu', async t => {
   const app = decisionSetup(); t.after(app.close);
-  assert.equal(app.get('game-title').textContent, 'Grădina lui Robo');
+  assert.equal(app.get('game-title').textContent, '15. Grădina lui Robo');
   assert.equal(app.get('decision-editor').hidden, false);
   assert.equal(app.get('repeat-editor').hidden, false);
   assert.equal(app.get('recipe-editor').hidden, true);
@@ -209,8 +209,8 @@ test('variantele grădinii reiau explicit încercarea și au același progres', 
 test('salvarea veche cu opt misiuni păstrează cele șapte misiuni terminate', t => {
   for (const completed of [7, 8]) {
     const app = setup({ progress: JSON.stringify({ version: 3, completed }) }); t.after(app.close);
-    assert.equal(app.get('game-title').textContent, 'Rețeta lui Robo');
-    assert.match(app.get('adventure-progress').textContent, /^3 din 3/);
+    assert.equal(app.get('game-title').textContent, '14. Rețeta lui Robo');
+    assert.match(app.get('adventure-progress').textContent, /^7 din 7/);
     assert.equal(app.get('mission-trail').querySelectorAll('button:enabled').length, 7);
   }
 });
@@ -313,7 +313,7 @@ test('leaving a detective run for the lesson list pauses it without losing the c
   app.click('run'); await app.advance(350); app.click('class-plan');
   await app.advance(5000); app.click('class-resume');
   assert.deepEqual(robotPosition(app), [1, 2]);
-  app.click('program-mode'); assert.equal(app.get('game-title').textContent, 'Prima comoară');
+  app.click('program-mode'); assert.equal(app.get('game-title').textContent, '1. Prima comoară');
 });
 
 test('aventura completă deblochează șapte misiuni, salvează și permite rejucarea', async t => {
@@ -339,14 +339,14 @@ test('aventura completă deblochează șapte misiuni, salvează și permite reju
 
 test('reîncărcarea reia următoarea misiune; stocarea refuzată permite totuși progresul', async t => {
   const resumed = setup({ progress: '{"version":1,"completed":3}' }); t.after(resumed.close);
-  assert.equal(resumed.get('game-title').textContent, 'Cheia și comoara');
+  assert.equal(resumed.get('game-title').textContent, '6. Cheia și comoara');
   assert.equal(resumed.get('board').children.length, 25);
   assert.match(resumed.get('board').getAttribute('aria-label'), /5 rânduri și 5 coloane/);
   const privateMode = setup({ blockedStorage: true }); t.after(privateMode.close);
   privateMode.add(['R', 'R']); privateMode.click('run'); await privateMode.advance(2000);
   assert.match(privateMode.get('status').textContent, /doar până închidem pagina/);
   privateMode.click('next-mission');
-  assert.equal(privateMode.get('game-title').textContent, 'Drumul spre căsuță');
+  assert.equal(privateMode.get('game-title').textContent, '2. Drumul spre căsuță');
 });
 
 test('oprirea și schimbarea misiunii anulează rularea în curs', async t => {
@@ -359,7 +359,7 @@ test('oprirea și schimbarea misiunii anulează rularea în curs', async t => {
   assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed, 1);
   app.click('run'); await app.advance(350);
   app.get('mission-trail').children[0].click(); await app.advance(10000);
-  assert.equal(app.get('game-title').textContent, 'Prima comoară');
+  assert.equal(app.get('game-title').textContent, '1. Prima comoară');
   assert.equal(app.get('step-count').textContent, 'La start');
   assert.equal(app.get('queue').children.length, 0);
   assert.equal(app.get('completion').hidden, true);
@@ -389,7 +389,7 @@ test('anticiparea cere alegere, verifică răspunsuri și restaurează programul
   app.get('board').querySelector('.robot').click(); app.click('run'); await app.advance(3000);
   assert.match(app.get('status').textContent, /Bună încercare!/);
   app.click('program-mode');
-  assert.equal(app.get('game-title').textContent, 'Prima comoară');
+  assert.equal(app.get('game-title').textContent, '1. Prima comoară');
   assert.equal(app.get('queue').children.length, 1);
   assert.equal(app.get('queue').children[0].textContent, '1→');
 });
@@ -398,7 +398,7 @@ test('trecerea la anticipare sau lista lecțiilor în timpul rulării nu termin�
   const app = setup(); t.after(app.close);
   app.add(['R', 'R']); app.click('run'); await app.advance(350); app.click('predict-mode');
   await app.advance(5000);
-  assert.equal(app.get('game-title').textContent, 'Unde se oprește Robo?');
+  assert.equal(app.get('game-title').textContent, '3. Unde se oprește Robo?');
   assert.equal(app.get('step-count').textContent, 'La start');
   assert.equal(app.w.localStorage.getItem(progressKey), null);
   app.click('program-mode'); app.click('run'); await app.advance(200);
@@ -419,7 +419,7 @@ test('detectivul, limita de comenzi și resetarea respectă starea activă', asy
   app.click('reset-adventure'); assert.equal(app.get('reset-confirmation').hidden, false);
   app.click('cancel-reset'); assert.equal(app.get('reset-confirmation').hidden, true);
   assert.match(app.get('map-label').textContent, /Cazul 1 din 3/);
-  app.click('confirm-reset'); assert.equal(app.get('game-title').textContent, 'Prima comoară');
+  app.click('confirm-reset'); assert.equal(app.get('game-title').textContent, '1. Prima comoară');
 });
 
 test('finala refuză cufărul fără cheie și nu acordă progres pentru simpla colectare', async t => {
@@ -446,8 +446,8 @@ test('finala refuză cufărul fără cheie și nu acordă progres pentru simpla 
 
 test('migrarea unei aventuri vechi terminate cere rezolvarea noii finale și salvează versiunea nouă', async t => {
   const app = setup({ progress: '{"version":1,"completed":6}' }); t.after(app.close);
-  assert.equal(app.get('game-title').textContent, 'Cheia și comoara');
-  assert.match(app.get('adventure-progress').textContent, /^3 din 3/);
+  assert.equal(app.get('game-title').textContent, '6. Cheia și comoara');
+  assert.match(app.get('adventure-progress').textContent, /^3 din 7/);
   app.click('solution'); app.click('run'); await app.advance(10000);
   assert.match(app.get('status').textContent, /Am deschis comoara cu cheia/);
   assert.equal(app.get('key-objective').classList.contains('complete'), true);
@@ -455,7 +455,7 @@ test('migrarea unei aventuri vechi terminate cere rezolvarea noii finale și sal
   assert.equal(app.get('completion').hidden, false);
   assert.deepEqual(JSON.parse(app.w.localStorage.getItem(progressKey)), { version: 3, completed: 4 });
   const resumed = setup({ progress: app.w.localStorage.getItem(progressKey) }); t.after(resumed.close);
-  assert.match(resumed.get('adventure-progress').textContent, /^3 din 3/);
+  assert.match(resumed.get('adventure-progress').textContent, /^4 din 7/);
 });
 
 test('comenzile noi și revenirea din anticipare păstrează cheia și poziția curentă', async t => {
@@ -482,7 +482,7 @@ test('schimbarea misiunii după colectarea cheii anulează finalizarea întârzi
   app.add(E.solve(E.mission(3))); app.click('run'); await app.advance(6000);
   assert.equal(app.get('key-objective').classList.contains('complete'), true);
   app.get('mission-trail').children[0].click(); await app.advance(10000);
-  assert.equal(app.get('game-title').textContent, 'Prima comoară');
+  assert.equal(app.get('game-title').textContent, '1. Prima comoară');
   assert.equal(app.get('mission-objectives').hidden, true);
   assert.equal(app.get('completion').hidden, true);
   assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed, 3);
@@ -631,7 +631,7 @@ test('ascunderea paginii în timpul animației păstrează pasul deja făcut pen
 
 test('podul blochează trecerea, iar activarea și continuarea supraviețuiesc schimbării activității', async t => {
   const app = setup({ progress: '{"version":2,"completed":4}' }); t.after(app.close);
-  assert.equal(app.get('game-title').textContent, 'Podul și maneta');
+  assert.equal(app.get('game-title').textContent, '7. Podul și maneta');
   assert.equal(app.get('activate').hidden, false);
   assert.equal(app.get('water').hidden, true);
   assert.equal(app.get('repeat-editor').hidden, true);
@@ -754,7 +754,7 @@ const recipeProgram = () => [{ call: 'water-row' }, 'L', 'L', 'U', 'U', 'U', { c
 
 test('rețeta se folosește la A și la B, din butoane, fără a reseta florile', async t => {
   const app = setup({ progress: '{"version":3,"completed":6}' }); t.after(app.close);
-  assert.equal(app.get('game-title').textContent, 'Rețeta lui Robo');
+  assert.equal(app.get('game-title').textContent, '14. Rețeta lui Robo');
   assert.equal(app.get('recipe-editor').hidden, false);
   assert.equal(app.get('repeat-editor').hidden, true);
   assert.equal(app.get('recipe-definition').children.length, 4);
@@ -876,7 +876,7 @@ test('parcursul de bază introduce 1, 2, apoi 3 comenzi, Detectivul și un singu
   app.add(['U','R','R']); app.click('run'); await app.advance(3000);
   assert.equal(JSON.parse(app.w.localStorage.getItem(progressKey)).completed, 3);
   assert.match(app.get('completion-message').textContent, /încheia aici/);
-  assert.match(app.get('next-mission').textContent, /Opțional/);
+  assert.match(app.get('next-mission').textContent, /Mai departe:/);
   app.click('next-mission');
   assert.equal(app.get('lesson-stage').value,'four-directions');
   app.add(E.solve(C.get(2,'four-directions')));app.click('run');await app.advance(12000);
@@ -911,7 +911,7 @@ test('grădina introduce udarea, modelul manual și apoi repetiția pe aceeași 
   assert.throws(()=>app.tool().execute({commands:[{repeat:2,commands:['R','W']}]}),/indisponibilă/);
   const board=app.get('board').getAttribute('aria-label');
   app.add(['R','W','R','W','R','U']);app.click('run');await app.advance(5000);
-  assert.match(app.get('next-mission').textContent,/Opțional/);app.click('next-mission');
+  assert.match(app.get('next-mission').textContent,/Mai departe:/);app.click('next-mission');
   assert.equal(app.get('lesson-stage').value,'repeat');assert.equal(app.get('board').getAttribute('aria-label'),board);
   assert.equal(app.get('repeat-editor').hidden,false);assert.equal(app.get('repeat-count').value,'2');
   gardenLoop(app,2);app.add(['R','U']);app.click('run');await app.advance(5000);app.click('next-mission');
@@ -1240,4 +1240,22 @@ test('removed activities and timed presentation copy are absent from the interfa
   const old=setup({guided:true,classroom:true,url:'http://robo.test/?lesson='+id});t.after(old.close);
   assert.equal(old.get('class-lesson').value,'1');
  }
+});
+
+test('lesson and variant numbers agree across classroom and adult menus without optional labels',t=>{
+ const app=setup({guided:true,classroom:true});t.after(app.close);
+ selectClass(app,'14');
+ assert.equal(app.get('game-title').textContent,'14. Rândurile A, B și C');
+ assert.equal(app.get('presenter-activity').textContent,'14. Rândurile A, B și C');
+ assert.match(app.get('class-variant').selectedOptions[0].textContent,/^14\.1\./);
+ assert.match(app.get('lesson-stage').selectedOptions[0].textContent,/^14\.1\./);
+ app.click('class-previous');assert.equal(app.get('game-title').textContent,'13. Udă un rând');
+ for(const lesson of app.w.RoboClassroom.activities){
+  selectClass(app,lesson.id);
+  assert.match(app.get('game-title').textContent,new RegExp('^'+lesson.id+'\\. '));
+  for(const id of ['class-lesson','class-variant','teacher-lesson','lesson-stage','activity-label','map-label','next-mission'])assert.doesNotMatch(app.get(id).textContent,/extra|opțional|extensie/i);
+ }
+ app.click('open-adventures');
+ assert.doesNotMatch(app.document.querySelector('.optional-adventures').textContent,/extra|opțional|extensie/i);
+ assert.match(app.get('home-name').labels[0].textContent,/opțional/);
 });

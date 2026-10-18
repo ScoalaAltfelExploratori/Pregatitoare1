@@ -8,6 +8,7 @@ Elementele V1 și verificările de mai jos păstrează istoricul implementării.
 
 ## V1.4 · Lecțiile și grădina
 
+- [x] Numerotare comună pentru lecțiile 1–16, titluri și meniuri. Variantele au numere precum 14.1 și 14.2. Eliminate etichetele „Opțional” și „Extensie” din lecții și aventuri; prenumele rămâne opțional.
 - [x] Scoasă energia din lecțiile clasei, păstrată pentru acasă.
 - [x] Scoase povestea, fișa și fabrica de hărți din interfață și codul aplicației.
 - [x] „Udă un rând” și grădina A/B/C au locuri consecutive în selector și în navigare. Udarea și repetiția le preced; condiția vine după ele.
