@@ -48,27 +48,6 @@ test('florile răsfirate sunt o variantă izolată a aceleiași grădini', () =>
   assert.equal(E.readProgress('{"version":3,"completed":9}'), 0);
 });
 
-test('detectivul are trei cazuri scurte, fiecare reparabil cu o singură săgeată', () => {
-  assert.equal(E.detectiveCount, 3);
-  for (let i = 0; i < E.detectiveCount; i++) {
-    const m = E.detectiveCase(i), d = m.detective;
-    assert.equal(m.size, 3);
-    assert.equal(d.commands.length, i + 2);
-    assert.equal(d.choices.length, 2);
-    assert.notEqual(E.evaluate(m, d.commands).outcome, 'won');
-    const fixes = d.choices.filter(choice => {
-      const repaired = [...d.commands]; repaired[d.repairIndex] = choice;
-      const result = E.evaluate(m, repaired);
-      return result.outcome === 'won' && result.index === repaired.length - 1;
-    });
-    assert.equal(fixes.length, 1);
-    m.start[0] = 99; d.commands[0] = 'D'; d.choices.pop();
-    assert.deepEqual(E.detectiveCase(i).start, [0, 2]);
-    assert.equal(E.detectiveCase(i).detective.choices.length, 2);
-  }
-  assert.throws(() => E.detectiveCase(3), /Caz necunoscut/);
-});
-
 test('șapte misiuni: trasee, cheie, acțiuni, repetiție, rețetă și decizie', () => {
   const lengths = [];
   assert.equal(E.missionCount, 7);
@@ -80,7 +59,7 @@ test('șapte misiuni: trasee, cheie, acțiuni, repetiție, rețetă și decizie'
     assert.ok(!map.obstacles.includes(E.key(map.start)));
     assert.ok(!map.obstacles.includes(E.key(map.goal)));
   }
-  assert.deepEqual(lengths, [2, 3, 4, 12, 9, 8, 15]);
+  assert.deepEqual(lengths, [2, 4, 4, 12, 9, 8, 15]);
   assert.deepEqual(E.mission(2).obstacles, ['1,3', '0,1']);
   const changed = E.mission(0);
   changed.start[0] = 99;

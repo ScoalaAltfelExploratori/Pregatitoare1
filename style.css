@@ -120,22 +120,6 @@
 @media(min-width:731px){.map-panel{position:sticky;top:16px}}
 @media(max-width:730px){.action-pad{flex-wrap:wrap}.action-pad button{min-width:140px}.action-pad p{flex:1 1 140px}.bridge-icon,.lever-icon{width:44px}.mission-objectives{font-size:14px}.mission-objectives span{padding:9px}.repeat-editor{padding:12px}.repeat-command{min-width:70px}}
 .queue .command small{position:absolute;font-size:10px;left:3px;top:2px}
-.queue.detective-queue{gap:12px;padding:16px;min-height:110px}
-.queue .command.detective-command{width:68px;height:72px;min-height:72px;font-size:42px;border:2px solid #adcbd8}
-.queue .detective-command small{font-size:14px;left:5px;top:3px}
-.queue .detective-command.chosen{outline:4px solid #d58a12;outline-offset:2px;background:#fff0be;color:var(--ink)}
-.queue .detective-command.active{background:#1160cf;color:white;outline:4px solid #ffd550}
-.queue .detective-command.changed:after{content:'✎';position:absolute;right:3px;bottom:2px;font-size:18px}
-.queue .detective-command:disabled{opacity:1}
-.detective-tools{margin:12px 0 20px}
-.detective-tools>button{margin-bottom:12px;border:2px solid #e4c06f;background:#fff5d9;color:#704f15}
-.detective-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.detective-choices button{min-height:90px;background:#fff;border-color:#adcbd8}
-.detective-choices strong{display:block;font:700 44px Arial,sans-serif;line-height:1.1;color:#1266b0}
-.detective-choices span{font-size:17px}
-.detective-choices button[aria-pressed="true"]{background:#e7f1fb;border-color:#1266b0}
-.detective-sheet-program span{display:inline-block;min-width:48px;padding:8px;text-align:center;border:1px solid #64777c;font:700 30px Arial,sans-serif}
-@media(max-width:400px){.queue.detective-queue{gap:8px;padding:12px}.queue .command.detective-command{width:54px;height:66px;min-height:66px;font-size:36px}}
 .prediction-instructions{padding:18px 20px;background:#fff4cc;border:2px solid #ead27b;border-radius:18px;margin-bottom:20px}
 .prediction-instructions p{margin:0;font-size:18px}
 .completion{background:#e0f4e7;border:2px solid #acd6b7;border-radius:16px;padding:14px;margin-top:14px;display:flex;flex-direction:column;gap:12px}
@@ -241,11 +225,8 @@
  .completion>span{font-size:13px}.completion button{font-size:13px;min-height:36px;padding:5px 10px;flex-shrink:0}
  .next-round{margin-top:6px;padding:7px 12px;min-height:40px;font-size:14px}
  .prediction-instructions{padding:12px;margin:0}.prediction-instructions h2{font-size:18px}.prediction-instructions p{font-size:15px}
- #game-view[data-mode="detective"] .queue,#game-view[data-mode="predict"] .queue{flex:0 0 auto;min-height:110px}
- #game-view[data-mode="detective"] .program-footer,#game-view[data-mode="predict"] .program-footer{margin-top:auto}
- .queue .command.detective-command{width:68px;flex-basis:68px;height:72px;min-height:72px;font-size:42px}
- .detective-tools{margin:0}.detective-tools>button{margin:0 0 8px;min-height:40px;font-size:15px;padding:7px 12px}
- .detective-tools h2{font-size:17px}.detective-choices button{min-height:72px}.detective-choices strong{font-size:36px}.detective-choices span{font-size:15px}
+ #game-view[data-mode="predict"] .queue{flex:0 0 auto;min-height:110px}
+ #game-view[data-mode="predict"] .program-footer{margin-top:auto}
  .teacher-tools{flex:0 0 auto;margin:0;padding:0;border:0}
  .teacher-tools>summary{font-size:12px;padding:2px 0;min-height:22px}
  .teacher-tools[open]{position:absolute;bottom:0;left:0;right:0;background:white;border:2px solid var(--line);border-radius:14px;padding:12px 16px;z-index:15;max-height:65vh;overflow:auto;box-shadow:0 -8px 24px #14364c30}
@@ -366,7 +347,7 @@
  .game-screen .program-panel{gap:10px}
  .game-screen #program-editor{gap:8px}
  .game-screen .queue{flex:1 1 140px;min-height:110px}
- .game-screen #game-view[data-mode="detective"] .queue,.game-screen #game-view[data-mode="predict"] .queue{flex:0 0 auto;min-height:112px}
+ .game-screen #game-view[data-mode="predict"] .queue{flex:0 0 auto;min-height:112px}
 }
 @media(max-width:959px){
  .game-screen .app-header{display:flex;flex-wrap:nowrap;padding:10px 16px}

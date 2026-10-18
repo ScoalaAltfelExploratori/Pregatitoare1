@@ -14,8 +14,7 @@
  let mode='program',guess=null,predictionDone=false,savedProgram=null,boardSignature='',motionTimer,hasKey=false,executed=0;
  let world=E.initialWorld();
  let decisions={};
- let decisionPending=null,predictionLength=2,guidedDetective=false;
- let detectiveIndex=0,detectiveSelected=-1;
+ let decisionPending=null;
  function goalHTML(m,opened=false){
   if(m.goalIcon==='🏡')return '🏡';
   return '<svg class="chest-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="'+(opened?'M8 25L13 6H51L56 25Z':'M8 29V22Q8 11 19 11H45Q56 11 56 22V29Z')+'" fill="#e6ad40" stroke="#805326" stroke-width="3"/><rect x="8" y="29" width="48" height="25" rx="4" fill="#b96b35" stroke="#805326" stroke-width="3"/><path d="M18 30V52M46 30V52" stroke="#ffda70" stroke-width="6"/><rect x="26" y="26" width="12" height="14" rx="3" fill="#ffda70"/><circle cx="32" cy="32" r="2.5" fill="#805326"/>'+(opened?'<path d="M24 23L32 15L40 23L32 30Z" fill="#55d5ed" stroke="#147c83" stroke-width="2"/>':'')+'</svg>';
@@ -156,13 +155,6 @@
    if(!done){b.type='button';b.disabled=busy;b.addEventListener('click',()=>removePending(i));}
    return b;
   }
-  if(mode==='detective'){
-   const b=document.createElement('button');b.type='button';
-   b.className='command detective-command'+(detectiveSelected===i?' chosen':'')+(commands[i]!==map.detective.commands[i]?' changed':'')+(i<executed?' executed':'')+(busy&&i===active?' active':'');
-   b.innerHTML='<small>'+(i+1)+'</small>'+E.ARROW[d];b.disabled=busy||won;
-   b.setAttribute('aria-label','Schimbă săgeata '+(i+1)+': '+E.NAME[d]);b.setAttribute('aria-pressed',String(detectiveSelected===i));
-   b.addEventListener('click',()=>selectDetectiveArrow(i));return b;
-  }
   const done=i<executed,b=document.createElement(predicting||done?'span':'button');
   const blocked=blockedRepairDirection()&&i===executed;
   b.className='command'+(done?' executed':'')+(busy&&i===active?' active':'')+(blocked?' repair-blocked':'');b.innerHTML='<small>'+(i+1)+'</small>'+E.ARROW[d]+(done?'<span class="done-mark" aria-hidden="true">✓</span>':blocked?'<span class="repair-remove" aria-hidden="true">×</span>':'');
@@ -197,37 +189,32 @@
   try{E.expand(candidate,limit(),map.recipes);return candidate;}catch{return null;}
  }
  function draw(animate=false){
-  const predicting=mode==='predict',detecting=mode==='detective';
+  const predicting=mode==='predict';
   $('game-view').dataset.mode=mode;
   $('game-view').dataset.state=won?'won':busy?'running':commands.length?'ready':'empty';
   drawBoard(animate);drawTrail();
-  $('mission-picker').hidden=detecting;
-  $('adventure-heading').hidden=detecting;$('mission-trail').hidden=detecting;
   $('map-label').textContent=map.label;$('step-count').textContent=busy&&active>=0?'Pasul '+(active+1):executed?executed+(executed===1?' pas făcut':' pași făcuți'):'La start';
-  const lessonNumber=predicting?T.findByType('predict').id:detecting?T.findByType('detective').id:map.lesson?T.curriculumTitle(missionIndex,map.gardenStyle?(map.allowDecision?'combine':'challenge'):map.lesson.stage).split('.')[0]:null;
+  const lessonNumber=predicting?T.findByType('predict').id:map.lesson?T.curriculumTitle(missionIndex,map.gardenStyle?(map.allowDecision?'combine':'challenge'):map.lesson.stage).split('.')[0]:null;
   $('game-title').textContent=(lessonNumber?lessonNumber+'. ':'')+(predicting?'Unde se oprește Robo?':map.title||'Condu-l pe Robo la comoară.');
-  $('activity-label').textContent=detecting?'REPARĂM ÎMPREUNĂ':predicting?'GHICIM ȘI VERIFICĂM':map.lesson?T.curriculumTitle(missionIndex,map.lesson.stage):'JOACĂ LIBERĂ';
+  $('activity-label').textContent=predicting?'GHICIM ȘI VERIFICĂM':map.lesson?T.curriculumTitle(missionIndex,map.lesson.stage):'JOACĂ LIBERĂ';
   $('teacher-guidance').textContent=map.brief||'Alegem săgețile, încercăm și reparăm împreună.';
-  $('mission-brief').textContent=predicting?'Arată unde se oprește Robo.':detecting?'Schimbăm o săgeată și găsim drumul.':map.repairIntro?repairPrompt():map.keyPosition?(hasKey?'Avem cheia! Mergem la comoară.':'Luăm cheia, apoi deschidem comoara.'):map.lever?'Coborâm podul și ajungem la căsuță.':map.flowers?'Udăm florile, apoi mergem la căsuță.':'Îl ajutăm pe Robo să ajungă la '+(map.goalName||'comoară')+'.';
+  $('mission-brief').textContent=predicting?'Arată unde se oprește Robo.':map.repairIntro?repairPrompt():map.keyPosition?(hasKey?'Avem cheia! Mergem la comoară.':'Luăm cheia, apoi deschidem comoara.'):map.lever?'Coborâm podul și ajungem la căsuță.':map.flowers?'Udăm florile, apoi mergem la căsuță.':'Îl ajutăm pe Robo să ajungă la '+(map.goalName||'comoară')+'.';
   $('obstacle-legend').hidden=!map.obstacles.length;
   $('guess-legend').hidden=!predicting;$('goal-legend').hidden=predicting&&!predictionDone;
   $('program-editor').hidden=mode!=='program';$('prediction-instructions').hidden=!predicting;$('edit-actions').hidden=mode!=='program';
-  $('queue-title').textContent=detecting?(won?'Drumul reparat':'1. Ce săgeată schimbăm?'):predicting?'Programul lui Robo':won?'Drumul reușit':busy?'Urmărim programul':'2. Programul nostru';
-  $('queue-hint').textContent=detecting?(won?'O săgeată schimbată. Am găsit drumul!':detectiveSelected<0?'Atinge o săgeată ca să o schimbi.':'Săgeata '+(detectiveSelected+1)+' este aleasă. Ce punem în loc?'):predicting?'Urmărește săgețile în ordine. Poți schimba alegerea înainte de verificare.':executed?'✓ Pași făcuți. Ștergem doar comenzile noi; pentru a modifica pașii făcuți, apăsăm „La start”.':'Atinge o comandă nouă ca să o ștergi. „Pornește Robo” execută comenzile noi.';
+  $('queue-title').textContent=predicting?'Programul lui Robo':won?'Drumul reușit':busy?'Urmărim programul':'2. Programul nostru';
+  $('queue-hint').textContent=predicting?'Urmărește săgețile în ordine. Poți schimba alegerea înainte de verificare.':executed?'✓ Pași făcuți. Ștergem doar comenzile noi; pentru a modifica pașii făcuți, apăsăm „La start”.':'Atinge o comandă nouă ca să o ștergi. „Pornește Robo” execută comenzile noi.';
   $('execution-note').hidden=mode!=='program';
   const steps=plan(),pending=steps.length-executed;
   $('edit-actions').hidden=mode!=='program'||!pending||busy;
   $('execution-note').textContent=won?'Misiune terminată. „La start” pregătește o nouă încercare.':executed+(executed===1?' pas făcut · ':' pași făcuți · ')+pending+' '+(pending===1?'comandă nouă':'comenzi noi');
   $('program-mode').classList.toggle('selected',mode==='program');$('program-mode').setAttribute('aria-pressed',String(mode==='program'));
   $('predict-mode').classList.toggle('selected',predicting);$('predict-mode').setAttribute('aria-pressed',String(predicting));
-  $('detective-mode').classList.toggle('selected',detecting);$('detective-mode').setAttribute('aria-pressed',String(detecting));
-  $('queue').classList.toggle('detective-queue',detecting);
   drawQueue(predicting,steps);
-  drawDetective();
   drawDecision(steps);
   $('garden-options').hidden=!map.gardenStyle||mode!=='program';
   for(const [id,style] of [['garden-rows','rows'],['garden-scattered','scattered']]){$(id).disabled=busy;$(id).setAttribute('aria-pressed',String(map.gardenStyle===style));}
-  $('command-count').textContent=detecting||predicting?steps.length+' săgeți':steps.length+' / '+limit()+' pași';
+  $('command-count').textContent=predicting?steps.length+' săgeți':steps.length+' / '+limit()+' pași';
   document.querySelectorAll('[data-dir]').forEach(b=>{b.disabled=busy||won||steps.length>=limit();if(E.DIR[b.dataset.dir])b.hidden=!E.availableCommands(map).includes(b.dataset.dir);});
   $('editor-title').textContent=map.actions?'1. Alege comenzile':'1. Alege săgețile';
   $('action-pad').hidden=!(map.actions||[]).some(d=>d==='A'||d==='W');
@@ -249,7 +236,7 @@
   $('repeat-progress').textContent=call?'📖 '+map.recipes[call].name+' · Pasul '+(current.bodyIndex+1)+' din '+current.bodyLength+' · '+E.NAME[current.command]:loop?'🔁 Repetiția '+(current.iteration+1)+' din '+current.count+' · '+(busy?'Acum: ':'Următoarea comandă: ')+E.NAME[current.command]:'';
   for(const id of ['undo','clear','restart','solution'])$(id).disabled=busy||((id==='undo'||id==='clear')&&!pending)||(id==='solution'&&(mode!=='program'||won));
   $('clear').textContent=executed?'Șterge cele noi':'Șterge tot';
-  $('run').textContent=detecting?'Testăm drumul':predicting?'Verificăm împreună':'Pornește Robo';
+  $('run').textContent=predicting?'Verificăm împreună':'Pornește Robo';
   $('run').disabled=busy||(predicting?(!guess||predictionDone):(!pending||won));$('stop').hidden=!busy;
   $('restart').hidden=predicting||(!executed&&!bump&&!won);$('next-round').hidden=!predicting||busy;
   $('completion').hidden=!(won&&!predicting&&missionIndex!==null);
@@ -257,10 +244,7 @@
   $('completion-message').textContent=map.lesson&&map.lesson.next?'Am reușit! Arătăm drumul și explicăm comenzile.':missionIndex===2?'Am exersat și ocolul! Putem încheia aici sau continua în altă zi.':'Am reușit! Putem explica drumul și îl putem încerca din nou.';
   $('next-mission').hidden=missionIndex===E.missionCount-1&&!nextStage;
   $('next-mission').textContent=nextChoice?'Mai departe: '+T.curriculumTitle(missionIndex,nextChoice.id):missionIndex===2?T.curriculumTitle(3,'nearby')+' →':'Următoarea lecție →';
-  $('practice-detective').hidden=!(won&&mode==='program'&&missionIndex===1&&!nextStage);
-  $('detective-continue').hidden=!(mode==='detective'&&won&&guidedDetective);
-  $('prediction-title').textContent='Privește cele '+predictionLength+' săgeți';
-  $('prediction-count').disabled=busy;
+  $('prediction-title').textContent='Privește cele 3 săgeți';
   drawLessonTools();drawAdventure();drawClassroom();
   // Scroll only the program pane; the map and playback controls stay in place.
   const queue=$('queue'),currentTile=queue.querySelector('.active');
@@ -273,7 +257,7 @@
   $('auto-decision').disabled=busy;
   $('teacher-lesson').disabled=busy;
   $('lesson-stage').disabled=busy||mode!=='program'||!map.lesson;
-  if(!map.lesson||mode!=='program'){$('lesson-observe').textContent=mode==='detective'?'Ce săgeată schimbăm și unde va ajunge Robo?':'Arătăm căsuța înainte să pornim.';return;}
+  if(!map.lesson||mode!=='program'){$('lesson-observe').textContent='Arătăm căsuța înainte să pornim.';return;}
   $('teacher-lesson').value=String(missionIndex);
   if($('lesson-stage').dataset.lesson!==String(missionIndex)){
    $('lesson-stage').replaceChildren();C.choices(missionIndex).forEach(stage=>{const option=document.createElement('option');option.value=stage.id;option.textContent=T.curriculumTitle(missionIndex,stage.id);$('lesson-stage').append(option);});$('lesson-stage').dataset.lesson=String(missionIndex);
@@ -293,40 +277,8 @@
   $('decision-question').textContent='Pasul '+(active+1)+' · 🌱 Este o floare aici?';
   $('decision-answer').textContent=answer?decisionAnswer(answer):busy?(decisionPending?'Spunem DA sau NU. Adultul apasă „Verificăm”.':'Ne gândim împreună: DA sau NU?'):'Am oprit înainte de răspuns. Continuăm cu „Pornește Robo”.';
  }
- function drawDetective(){
-  const detecting=mode==='detective';
-  $('detective-tools').hidden=!detecting||won;$('detective-completion').hidden=!detecting||!won;
-  if(!detecting)return;
-  $('detective-hint').disabled=busy;$('detective-repair').hidden=detectiveSelected<0;
-  // Keep the choice buttons mounted while running, so keyboard focus is not discarded by each frame.
-  if($('detective-choices').dataset.case!==String(detectiveIndex)){
-   $('detective-choices').dataset.case=String(detectiveIndex);$('detective-choices').replaceChildren();
-   map.detective.choices.forEach(d=>{const b=document.createElement('button');b.type='button';b.dataset.repair=d;b.innerHTML='<strong aria-hidden="true">'+E.ARROW[d]+'</strong><span>'+E.NAME[d][0].toUpperCase()+E.NAME[d].slice(1)+'</span>';b.addEventListener('click',()=>repairDetective(d));$('detective-choices').append(b);});
-  }
-  $('detective-choices').querySelectorAll('button').forEach(b=>{b.disabled=busy||won||detectiveSelected<0;b.setAttribute('aria-pressed',String(detectiveSelected>=0&&commands[detectiveSelected]!==map.detective.commands[detectiveSelected]&&commands[detectiveSelected]===b.dataset.repair));});
-  $('detective-completion-message').textContent=detectiveIndex===E.detectiveCount-1?'Am rezolvat cele trei cazuri împreună!':'Am reparat drumul împreună!';
-  $('next-case').textContent=detectiveIndex===E.detectiveCount-1?'Reluăm cele 3 cazuri ↻':'Următorul caz →';
- }
- function selectDetectiveArrow(index){
-  if(mode!=='detective'||busy||won||index<0||index>=commands.length)return;
-  detectiveSelected=index;draw();report('Schimbăm săgeata '+(index+1)+'. Alege una dintre cele două variante.');
-  $('detective-choices').querySelector('button').focus();
- }
- function repairDetective(direction){
-  if(mode!=='detective'||busy||won||detectiveSelected<0||!map.detective.choices.includes(direction))return;
-  // Every attempt differs from the original by at most one arrow.
-  const next=[...map.detective.commands];next[detectiveSelected]=direction;
-  if(next.every((d,i)=>d===commands[i])){report('Această săgeată este deja aici. Putem testa sau alege cealaltă variantă.');return;}
-  commands=next;cancelRun();rewind();draw();A.play('select');report('Am schimbat o săgeată. Robo este la start. Testăm drumul!');
- }
  function saveProgram(){
   if(mode==='program')savedProgram={map,commands:E.cloneProgram(commands),missionIndex,position:[...position],visited:visited.map(p=>[...p]),executed,active,won,bump,hasKey,world:E.copyWorld(world),decisions:{...decisions},activePack,packIndex,energyCheckpoint,missingChosen,routeResults:{...routeResults},selectedRoute,classLesson,classVariant,homeMode};
- }
- function startDetective(index=0){
-  saveProgram();detectiveIndex=index;const round=E.detectiveCase(index);detectiveSelected=index===0?round.detective.repairIndex:-1;
-  if(classLesson===T.findByType('detective').id){classVariant=index;setClassURL();}else classLesson=null;
-  mode='detective';missionIndex=null;activePack=null;loadMap(round,round.detective.commands);
-  report(index===0?'Săgeata 2 este aleasă. O schimbăm ca să ajungem la comoară.':'Privim săgețile. Putem testa drumul, apoi schimbăm o singură săgeată.');
  }
  function rewind(){position=[...map.start];visited=[];active=-1;executed=0;won=false;bump=null;hasKey=Boolean(map.keyPosition&&E.same(map.start,map.keyPosition));world=E.initialWorld(map);decisions={};predictionDone=false;energyCheckpoint=map.energy?captureCheckpoint():null;mood('');}
  function pendingEdited(){active=executed-1;bump=null;mood('');}
@@ -338,7 +290,6 @@
   pendingEdited();draw();report(map.repairIntro?'Am șters săgeata. Alege una nouă; Robo continuă de aici.':'Am șters o comandă nouă. Robo rămâne pe loc'+(hasKey?', cu cheia.':'.'));
  }
  function idleMessage(){
-  if(mode==='detective')return won?'Am reparat drumul împreună!':executed<commands.length?'Testăm drumul de unde s-a oprit Robo.':'Robo s-a oprit aici. Schimbăm o săgeată și încercăm din nou.';
   if(won)return 'Misiune terminată! „La start” pregătește o nouă încercare.';
   if(map.energy&&world.energy===0)return 'Bateria este goală. Încercăm din nou de la ultima stație, cu bateria plină.';
   if(map.energy)return 'Mai avem '+world.energy+' liniuțe. O săgeată folosește una; la stație bateria se umple.';
@@ -375,9 +326,9 @@
   if(classLesson!==T.findByType('predict').id)classLesson=null;
   const size=3;
   const previous=JSON.stringify([map.start,map.goal,commands]);
-  let round=E.predictionRound(seed(),size,predictionLength);
-  for(let tries=0;tries<5&&JSON.stringify([round.map.start,round.map.goal,round.commands])===previous;tries++)round=E.predictionRound(seed(),size,predictionLength);
-  mode='predict';activePack=null;loadMap(round.map,round.commands);report('Privește cele '+predictionLength+' săgeți și alege o căsuță de pe hartă.');
+  let round=E.predictionRound(seed(),size);
+  for(let tries=0;tries<5&&JSON.stringify([round.map.start,round.map.goal,round.commands])===previous;tries++)round=E.predictionRound(seed(),size);
+  mode='predict';activePack=null;loadMap(round.map,round.commands);report('Privește cele 3 săgeți și alege o căsuță de pe hartă.');
  }
  function returnToProgram(){
   if(mode==='program')return;
@@ -392,7 +343,6 @@
   busy=false;won=true;let stored=true;
   if(map.routes)routeResults[selectedRoute]=executed;
   if(activePack){if(!map.routes||Object.keys(routeResults).length===map.routes.length){const progress=packProgress[activePack];if(!progress.done.includes(map.id))progress.done.push(map.id);progress.current=Math.min(packIndex+1,P.packs[activePack].maps.length-1);storePack(activePack);}}
-  if(mode==='detective'){draw(animate);mood('happy');A.play('win');report('Am reparat drumul! Robo a ajuns la '+map.goalName+'.','success');return;}
   if(missionIndex!==null){
    if(map.lesson&&map.lesson.next)checkpoints[missionIndex]=map.lesson.next;
    else if(missionIndex===completed){completed++;delete checkpoints[missionIndex];}
@@ -424,7 +374,7 @@
     const problems={locked:'cufărul este încuiat! Luăm mai întâi cheia.',tree:'un copac ne blochează! Ce comandă schimbăm?',edge:'am ieși de pe hartă! Ce comandă schimbăm?',bridge:'podul este ridicat. Mergem la manetă și folosim „Activează”.',water:'aici este râul! Traversăm doar pe pod.',gate:'poarta este închisă. Udăm mai întâi toate florile.',lever:'„Activează” funcționează pe căsuța cu maneta.',activated:'maneta este deja activată. Putem șterge această comandă.',flower:'„Udă” funcționează pe căsuța cu o floare.',watered:'floarea este deja udată. Mergem la următoarea!',command:'această comandă nu este disponibilă pe hartă.'};
     problems.energy='bateria este goală. Încercăm din nou de la ultima stație, cu bateria plină.';problems.stop='mai întâi vizităm steaua, apoi ajungem acasă.';
     const problem=(result.reason==='flowers'?'mai avem flori de îngrijit înainte să ajungem la căsuță.':problems[result.reason]||problems.command)+(steps[i].call?' Folosește „Desfă în comenzi” ca să repari această folosire a rețetei.':steps[i].count>1?' Folosește „Desfă în comenzi” ca să repari repetiția.':'');
-    draw();mood('curious');A.play('retry');report(mode==='detective'?(result.reason==='tree'?'Un copac este în drum.':'Robo ar ieși de pe hartă.')+' Schimbăm o săgeată și încercăm din nou.':'Pasul '+(i+1)+': '+problem,mode==='detective'?'':'error');return;
+    draw();mood('curious');A.play('retry');report('Pasul '+(i+1)+': '+problem,'error');return;
    }
    // Commit movement, inventory and cursor together before any wait. A stop must never replay this step.
    if(!E.same(position,result.position))visited.push([...position]);position=result.position;hasKey=result.hasKey;world=result.world;executed=i+1;
@@ -454,12 +404,11 @@
  }
  function startClass(id,variant=0){
   const resolved=T.resolve(id,variant),activity=resolved.activity,item=resolved.variant;
-  cancelRun();classLesson=null;classVariant=resolved.index;homeMode=false;activePack=null;savedProgram=null;guidedDetective=false;missingChosen=false;routeResults={};selectedRoute=null;
+  cancelRun();classLesson=null;classVariant=resolved.index;homeMode=false;activePack=null;savedProgram=null;missingChosen=false;routeResults={};selectedRoute=null;
   let target='game';
   if(item.type==='curriculum')startMission(item.index,{stage:item.stage,preview:true});
   else if(item.type==='repair')loadFree(item.map,item.program);
-  else if(item.type==='detective')startDetective(item.index);
-  else if(item.type==='predict'){predictionLength=2;$('prediction-count').value='2';newPrediction();}
+  else if(item.type==='predict')newPrediction();
   else if(item.type==='pack'){const m=P.get(item.pack,item.index);loadFree(m,m.missing?m.missing.program:[]);}
   else if(item.type==='break'){startMission(0,{stage:'one',preview:true});target='class-break';}
   // Each classroom activity is independent of home awards and can be opened directly.
@@ -489,14 +438,13 @@
   $('class-variant-label').hidden=!activity||activity.variants.length===1;
   const index=T.activities.findIndex(a=>a.id===classLesson);
   $('class-previous').disabled=index<=0;$('class-next').disabled=index<0||index>=T.activities.length-1;
-  $('class-detective').setAttribute('aria-pressed',String(classLesson===T.findByType('detective').id));
   $('class-plan').setAttribute('aria-pressed',String(view==='class-plan'));
   const complete=won||mode==='predict'&&predictionDone;
   const retryDescription=map.repairIntro?'Reia încercarea cu săgețile → ↓':'Reia aceeași provocare cu un program gol';
   $('class-retry').title=retryDescription;$('class-retry').setAttribute('aria-label','Alt copil: '+retryDescription.toLowerCase());
   $('class-completion').hidden=homeMode||!activity||!complete||view!=='game';
   if(activity&&!homeMode){
-   $('completion').hidden=true;$('detective-completion').hidden=true;
+   $('completion').hidden=true;
    $('game-title').textContent=activity.variants[classVariant].type==='pack'?activity.id+'. '+map.title:T.title(activity);$('activity-label').textContent=T.title(activity);$('map-label').textContent=T.variantTitle(activity,classVariant);
    if(activity.variants[classVariant].type==='pack')$('mission-brief').textContent=map.brief;
    const both=!map.routes||Object.keys(routeResults).length===map.routes.length;
@@ -548,7 +496,7 @@
   $('energy-panel').hidden=!energy;$('retry-energy').hidden=!energy||busy||won||(!executed&&!bump);
   if(energy){$('key-legend').hidden=false;$('key-legend').textContent='⚡ Stație de încărcare';$('energy-count').textContent=world.energy+' / '+map.energy.capacity;$('energy-drawing').innerHTML=Array.from({length:map.energy.capacity},(_,i)=>'<span class="'+(i<world.energy?'charged':'')+'"></span>').join('');$('energy-drawing').setAttribute('aria-label','Baterie: '+world.energy+' din '+map.energy.capacity+' liniuțe');$('energy-panel').classList.toggle('empty',world.energy===0);$('retry-energy').textContent=energyCheckpoint&&energyCheckpoint.executed?'↶ Încercăm din nou de la stație':'↶ Încercăm din nou de la start';}
   if(map.stops){$('mission-objectives').hidden=false;$('key-objective').textContent=(world.stops||[]).length?'✓ Stea vizitată':'1. ⭐ Vizităm steaua';$('chest-objective').textContent=won?'✓ Am ajuns acasă':'2. 🏡 Mergem acasă';$('key-objective').classList.toggle('complete',Boolean((world.stops||[]).length));$('chest-objective').classList.toggle('complete',won);}
-  if(activePack){$('mission-brief').textContent=map.brief;$('activity-label').textContent=P.packs[activePack].title+' · '+(packIndex+1)+' din '+P.packs[activePack].maps.length;$('completion').hidden=true;$('practice-detective').hidden=true;}
+  if(activePack){$('mission-brief').textContent=map.brief;$('activity-label').textContent=P.packs[activePack].title+' · '+(packIndex+1)+' din '+P.packs[activePack].maps.length;$('completion').hidden=true;}
   $('pack-completion').hidden=!activePack||!won;
   if(activePack&&won){const both=!map.routes||Object.keys(routeResults).length===map.routes.length,last=packIndex===P.packs[activePack].maps.length-1;$('pack-completion-message').textContent=!both?'Am testat un drum. Îl încercăm și pe celălalt!':activePack==='home'&&last&&diplomaReady()?'Am terminat cele șase misiuni. Diploma ne așteaptă!':'Am reușit! Putem explica drumul și încerca din nou.';$('pack-next').hidden=!both;$('pack-next').textContent=activePack==='home'&&last&&diplomaReady()?'🏅 Diploma mea':last?'Înapoi la aventuri':'Următoarea misiune →';}
   if(map.allowRepeat){const single=map.repeatBodyLength===1,text=single?'Repetă ultima săgeată':'Repetă ultimele 2 comenzi';$('repeat-editor').querySelector('summary').textContent='🔁 '+text;$('make-repeat').textContent=text;$('repeat-editor').querySelector('.repeat-popover>p').textContent=single?'Pune o săgeată, de exemplu →. O grupăm de 3 ori: → → →.':map.repeatBodyLength?'Pune perechea → ↑. O grupăm de 2 ori: → ↑ → ↑.':'Scrie două comenzi, de exemplu → și 💧 Udă. Apoi grupează-le:';$('repeat-hint').textContent=repeatCandidate()?'Vom urma '+(single?'săgeata':'comenzile')+' de '+$('repeat-count').value+' ori.':'Adaugă '+(single?'o săgeată nouă':'două comenzi noi')+' la sfârșit. Poți folosi și săgeți simple.';}
@@ -571,7 +519,7 @@
  $('class-variant').addEventListener('change',()=>startClass(classLesson,Number($('class-variant').value)));
  $('class-previous').addEventListener('click',()=>{const index=T.activities.findIndex(a=>a.id===classLesson);if(index>0)startClass(T.activities[index-1].id);});
  $('class-next').addEventListener('click',nextClass);$('class-continue').addEventListener('click',continueClass);
- $('class-detective').addEventListener('click',()=>startClass(T.findByType('detective').id));$('class-plan').addEventListener('click',openClassPlan);
+ $('class-plan').addEventListener('click',openClassPlan);
  $('class-resume').addEventListener('click',()=>showView(classReturnView));
  $('class-retry').addEventListener('click',()=>startClass(classLesson,classVariant));$('break-next').addEventListener('click',nextClass);
  $('home-name').addEventListener('input',()=>{$('diploma-name').value=$('home-name').value;});
@@ -597,25 +545,19 @@
  $('run').addEventListener('click',run);$('stop').addEventListener('click',stop);
  $('program-mode').addEventListener('click',()=>{returnToProgram();closeAdult();});
  $('predict-mode').addEventListener('click',()=>{if(mode!=='predict')newPrediction();closeAdult();});
- $('detective-mode').addEventListener('click',()=>{if(mode!=='detective')startDetective();closeAdult();});
  $('close-adult').addEventListener('click',()=>closeAdult());
  $('adult-menu').addEventListener('toggle',()=>{if($('adult-menu').open&&busy)stop();});
  document.addEventListener('click',e=>{if($('adult-menu').open&&!$('adult-menu').contains(e.target))closeAdult(false);});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('adult-menu').open){e.preventDefault();closeAdult();}});
- $('detective-hint').addEventListener('click',()=>{if(mode==='detective')selectDetectiveArrow(map.detective.repairIndex);});
- $('next-case').addEventListener('click',()=>{if(mode==='detective'&&won)startDetective((detectiveIndex+1)%E.detectiveCount);});
  $('next-round').addEventListener('click',newPrediction);
  $('next-mission').addEventListener('click',()=>{if(!won||mode!=='program')return;const next=map.lesson&&(map.lesson.next||map.lesson.suggested);if(next)startMission(missionIndex,{stage:next,preview:true});else startMission(missionIndex+1,{preview:true});});
- $('practice-detective').addEventListener('click',()=>{guidedDetective=true;startDetective();});
- $('detective-continue').addEventListener('click',()=>{if(mode==='detective'&&won&&guidedDetective){guidedDetective=false;startMission(2,{preview:true});}});
  $('check-decision').addEventListener('click',()=>{if(!busy||!decisionPending||decisionPending.token!==runToken)return;const pending=decisionPending;decisionPending=null;$('check-decision').hidden=true;pending.resolve();});
- $('prediction-count').addEventListener('change',()=>{if(busy)return;predictionLength=Number($('prediction-count').value)===3?3:2;if(mode==='predict')newPrediction();});
  for(let i=0;i<C.count;i++){const m=C.get(i),o=document.createElement('option');o.value=String(i);o.textContent=m.title;$('teacher-lesson').append(o);}
  $('teacher-lesson').addEventListener('change',()=>{if(!busy)startMission(Number($('teacher-lesson').value),{preview:true});});
  $('lesson-stage').addEventListener('change',()=>{if(!busy&&mode==='program'&&map.lesson)startMission(missionIndex,{stage:$('lesson-stage').value,preview:true});});
  $('reset-adventure').addEventListener('click',()=>{$('reset-confirmation').hidden=false;});
  $('cancel-reset').addEventListener('click',()=>{$('reset-confirmation').hidden=true;});
- $('confirm-reset').addEventListener('click',()=>{completed=0;checkpoints={};guidedDetective=false;try{localStorage.removeItem(progressKey);localStorage.removeItem(checkpointKey);}catch{}startMission(0);});
+ $('confirm-reset').addEventListener('click',()=>{completed=0;checkpoints={};try{localStorage.removeItem(progressKey);localStorage.removeItem(checkpointKey);}catch{}startMission(0);});
  $('sound').addEventListener('click',async()=>{
   const button=$('sound');button.disabled=true;
   try{const enabled=await A.toggle();button.textContent=enabled?'♫ Sunet pornit':'♫ Sunet oprit';button.setAttribute('aria-pressed',String(enabled));}
@@ -625,7 +567,6 @@
  $('clear').addEventListener('click',()=>{if(busy||mode!=='program'||map.missing||map.routes)return;commands=E.executedPrefix(commands,executed,map.recipes);pendingEdited();draw();report(executed?'Am șters comenzile noi. Robo și harta păstrează tot ce am făcut'+(hasKey?', inclusiv cheia.':'.'):'Un program nou. Ce comandă alegem prima?');});
  $('undo').addEventListener('click',()=>removePending(plan().length-1));
  $('restart').addEventListener('click',()=>{if(busy||mode==='predict')return;cancelRun();rewind();draw();report('Robo este la start'+(map.keyPosition?', iar cheia este înapoi pe hartă.':map.lever?', iar podul este din nou ridicat.':map.flowers?', iar florile așteaptă apă'+(map.gate?' și poarta este închisă.':'.'):'.')+' Programul a rămas pregătit.');});
- $('bug-map').addEventListener('click',()=>startDetective());
  $('solution').addEventListener('click',()=>{
   if(busy||mode!=='program'||won)return;
   const remaining=E.solve(map,{position,hasKey,world});

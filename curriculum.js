@@ -14,8 +14,7 @@
    {id:'two',name:'Două săgeți',brief:'Arată drumul cu degetul. Punem două săgeți, apoi pornim.',observe:'Două săgeți înseamnă doi pași. Îi numărăm împreună.',changes:{}}
   ]},
   {group:'Bază',stages:[
-   {id:'bend',name:'Schimbăm direcția',brief:'Întâi →, apoi ↑. Unde ajunge Robo? Arătăm înainte să pornim.',observe:'Săgețile arată direcțiile de pe ecran. Robo nu trebuie întors.',changes:{goal:[1,1]}},
-   {id:'three',name:'Trei săgeți',brief:'Arătăm drumul până la căsuță. Alegem trei săgeți, apoi verificăm.',observe:'Unde este Robo după primele două săgeți?',changes:{}}
+   {id:'bend',name:'Căsuța din colț',brief:'Căsuța este în colțul din dreapta sus. Alegem patru săgeți și testăm drumul.',observe:'Arătăm cele patru pătrățele pe care va trece Robo. Putem găsi și alt drum?',changes:{goal:[2,0]}}
   ]},
   {group:'Bază',stages:[
    {id:'one-tree',name:'Ocolim doi copaci',suggested:'four-directions',brief:'Copacii blochează drumul. Îi ocolim cu săgețile pe care le știm.',observe:'Un copac este chiar în mijloc. Pe unde putem trece?',changes:{size:3,start:[0,2],goal:[2,1],obstacles:['1,2','1,1']}}

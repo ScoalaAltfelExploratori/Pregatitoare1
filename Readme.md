@@ -14,25 +14,25 @@ Nu sunt necesare conturi. Nu există note, cronometru sau limită de încercări
 
 ## Lecțiile
 
-Cele 18 lecții sunt disponibile direct în selectorul de sus. Unele au mai multe variante de hartă. Putem alege cât lucrăm în funcție de ritmul copiilor:
+Cele 17 lecții sunt disponibile direct în selectorul de sus. Unele au mai multe variante de hartă. Putem alege cât lucrăm în funcție de ritmul copiilor:
 
 - **1–2:** primii pași, apoi „Încercăm și reparăm”: Robo se oprește la margine, ștergem săgeata blocată și continuăm cu alta.
-- **3–6:** ordinea săgeților, anticiparea, Detectivul Robo și ocolirea copacilor.
-- **7–9:** trasee 5×5 cu toate direcțiile, cheia pentru comoară și activarea podului.
-- **10–11:** o pauză în care copiii devin roboți, apoi compararea a două drumuri.
-- **12–14:** udarea florilor și descoperirea pașilor care se repetă.
-- **15–16:** „Udă un rând”, o secvență cu nume, refolosită în grădina cu rândurile A, B și C.
-- **17:** „Dacă este o floare” — Robo verifică locul înainte să ude.
-- **18:** o hartă 5×5 pe care bateria nu ajunge până acasă; trebuie să trecem întâi pe la stația de încărcare.
+- **3:** anticiparea destinației, urmărind trei săgeți în direcții diferite.
+- **4–5:** un drum de patru pași până la căsuța din dreapta sus, apoi ocolirea copacilor.
+- **6–8:** trasee 5×5 cu toate direcțiile, cheia pentru comoară și activarea podului.
+- **9–10:** o pauză în care copiii devin roboți, apoi compararea a două drumuri.
+- **11–13:** udarea florilor și descoperirea pașilor care se repetă.
+- **14–15:** „Udă un rând”, o secvență cu nume, refolosită în grădina cu rândurile A, B și C.
+- **16:** „Dacă este o floare” — Robo verifică locul înainte să ude.
+- **17:** o hartă 5×5 pe care bateria nu ajunge până acasă; trebuie să trecem întâi pe la stația de încărcare.
 
 Câteva controale utile în timpul activității:
 
 - **Pornește Robo** continuă din poziția curentă, cu comenzile noi. Putem construi drumul în bucăți, chiar cu mai mulți copii.
 - **La start** reia harta și păstrează programul. **Alt copil** pregătește aceeași hartă cu programul gol; în lecția de reparare, readuce exemplul → ↓.
-- **Detectivul Robo** se deschide direct din bara de sus.
 - **Pentru adult** conține sunetul, ecranul complet, ajutorul pentru traseu și întrebări pentru discuția cu clasa.
 
-Linkul obișnuit începe cu lecția 1. Pentru o anumită lecție se poate folosi, de exemplu, `?lesson=9`; `&variant=2` alege a doua variantă. La reîncărcarea paginii se păstrează alegerea lecției din adresă, iar încercarea pornește de la început.
+Linkul obișnuit începe cu lecția 1. Pentru o anumită lecție se poate folosi, de exemplu, `?lesson=8`; `&variant=2` alege a doua variantă. La reîncărcarea paginii se păstrează alegerea lecției din adresă, iar încercarea pornește de la început.
 
 ## Cum este construit
 

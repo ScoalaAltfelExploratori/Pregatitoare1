@@ -8,7 +8,7 @@
  function firstMap(){return {size:5,start:[0,4],goal:[4,0],obstacles:['1,0','1,1','1,2','3,2','3,3','4,3'],label:'Harta de început',goalIcon:'💎',goalName:'comoară'};}
  const MISSIONS=[
   {id:'battery',title:'Prima comoară',brief:'Două săgeți spre dreapta. Robo ajunge la comoară!',size:3,start:[0,2],goal:[2,2],obstacles:[],goalIcon:'💎',goalName:'comoară'},
-  {id:'flower',title:'Drumul spre căsuță',brief:'Schimbăm direcția! Ajută-l pe Robo să ajungă la căsuță.',size:3,start:[0,2],goal:[1,0],obstacles:[],goalIcon:'🏡',goalName:'căsuță'},
+  {id:'flower',title:'Drumul spre căsuță',brief:'Schimbăm direcția! Ajută-l pe Robo să ajungă la căsuță.',size:3,start:[0,2],goal:[2,0],obstacles:[],goalIcon:'🏡',goalName:'căsuță'},
   {id:'bridge',title:'Ocolim copacul',brief:'Doi copaci sunt în drum. Pe unde îi putem ocoli?',size:4,start:[0,3],goal:[2,1],obstacles:['1,3','0,1'],goalIcon:'💎',goalName:'comoară'},
   {id:'key-treasure',title:'Cheia și comoara',brief:'Mai întâi luăm cheia. Apoi mergem la cufăr și deschidem comoara!',size:5,start:[0,4],keyPosition:[4,0],goal:[4,4],obstacles:['1,3','1,2','3,1','3,3'],goalIcon:'💎',goalName:'cufăr'},
   {id:'lever-bridge',title:'Podul și maneta',brief:'Mergi la manetă și adaugă „Activează”. Podul coboară! Traversează râul până la căsuță.',size:5,start:[0,4],goal:[4,2],obstacles:['3,2','4,4'],lever:[0,2],bridge:[2,3],water:['2,0','2,1','2,2','2,3','2,4'],goalIcon:'🏡',goalName:'căsuță',actions:['A']},
@@ -21,17 +21,6 @@
   const map={...JSON.parse(JSON.stringify(source)),label:'Misiunea '+(index+1)+' · '+source.size+'×'+source.size};
   if(index===5&&scattered){map.flowers=['1,3','3,3'];map.actions=['W','F'];map.allowDecision=true;map.gardenStyle='scattered';map.brief='Aceeași grădină, cu un loc gol. Repetăm „→, Dacă este floare → Udă”.';}
   return map;
- }
- const DETECTIVE_CASES=[
-  {goal:[2,2],obstacles:[],goalIcon:'💎',goalName:'comoară',commands:['R','U'],repairIndex:1,choices:['U','R']},
-  {goal:[2,1],obstacles:['0,0'],goalIcon:'🏡',goalName:'căsuță',commands:['U','U','R'],repairIndex:1,choices:['R','U']},
-  {goal:[2,0],obstacles:['1,1'],goalIcon:'💎',goalName:'comoară',commands:['R','R','D','U'],repairIndex:2,choices:['U','R']}
- ];
- function detectiveCase(index){
-  const source=DETECTIVE_CASES[index];
-  if(!source)throw new RangeError('Caz necunoscut.');
-  const {commands,repairIndex,choices,...tiles}=JSON.parse(JSON.stringify(source));
-  return {...tiles,size:3,start:[0,2],title:'Detectivul Robo',brief:'Îl ajutăm pe Robo să ajungă la '+source.goalName+'. Schimbăm o singură săgeată.',label:'Cazul '+(index+1)+' din '+DETECTIVE_CASES.length+' · 3×3',detective:{commands,repairIndex,choices}};
  }
  function readProgress(raw){
   try{
@@ -159,10 +148,22 @@
  function predictionRound(seed,size=3,length=3){
   const map=generate(seed,{size,minDistance:3});
   map.label='Oare unde se oprește?';
-  const commands=solve(map).slice(0,length===2?2:3);
+  const count=length===2?2:3,paths=[];
+  function visit(position,commands,seen){
+   if(commands.length===count){paths.push(commands);return;}
+   for(const [direction,delta] of Object.entries(DIR)){
+    const next=[position[0]+delta[0],position[1]+delta[1]],cell=key(next);
+    if(next[0]<0||next[1]<0||next[0]>=map.size||next[1]>=map.size||map.obstacles.includes(cell)||seen.has(cell))continue;
+    visit(next,[...commands,direction],new Set([...seen,cell]));
+   }
+  }
+  visit(map.start,[],new Set([key(map.start)]));
+  // Prefer a different direction at every step; the classroom's empty 3×3 always permits it.
+  const varied=paths.filter(path=>new Set(path).size===count),choices=varied.length?varied:paths;
+  const commands=choices[Math.floor(seeded(seed^0x51a7)()*choices.length)];
   map.goal=commands.reduce((p,d)=>[p[0]+DIR[d][0],p[1]+DIR[d][1]],[...map.start]);
   return {map,commands};
  }
- const API={DIR,ARROW,NAME,key,same,firstMap,step,solve,generate,evaluate,mission,missionCount:MISSIONS.length,detectiveCase,detectiveCount:DETECTIVE_CASES.length,readProgress,predictionRound,initialWorld,copyWorld,gateOpen,availableCommands,expand,cloneProgram,executedPrefix};
+ const API={DIR,ARROW,NAME,key,same,firstMap,step,solve,generate,evaluate,mission,missionCount:MISSIONS.length,readProgress,predictionRound,initialWorld,copyWorld,gateOpen,availableCommands,expand,cloneProgram,executedPrefix};
  if(typeof module!=='undefined'&&module.exports)module.exports=API;else root.RoboEngine=API;
 })(typeof window!=='undefined'?window:globalThis);

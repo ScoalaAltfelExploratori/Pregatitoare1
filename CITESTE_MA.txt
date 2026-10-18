@@ -1,98 +1,60 @@
-ROBO EXPLORATOR · V1.3 · CLASA PREGĂTITOARE
+ROBO EXPLORATOR · CLASA PREGĂTITOARE
 
 Păstrează întregul pachet împreună și deschide index.html în browser.
 Nu sunt necesare internet, conturi sau instalare.
 
-ACASĂ CU ROBO
-Apasă „Acasă”: șase provocări, cu progres separat de clasă.
-Direcția, săgeata lipsă, cheia, podul, energia pe 5×5, steaua și căsuța.
-După cele șase misiuni, „Diploma mea” oferă previzualizare și PDF A4 orizontal.
-Prenumele se cere opțional la început și apare pe diplomă; se poate corecta.
-Nu este trimis sau salvat. Poate fi lăsat liber pentru scriere de mână.
-Ajutorul și încercările repetate sunt binevenite. Nu există note sau cronometru.
-Linkul pentru părinți este în „Pentru părinte” și se termină cu ?adventure=home.
-Misiunile terminate se salvează în browser; încercarea în curs nu se păstrează
-după închiderea paginii. Alt dispozitiv are propriul progres.
+LA CLASĂ
+Un copil lucrează la laptop; ceilalți arată direcțiile și explică drumul.
+Sus sunt selectorul celor 17 lecții, variantele, Înapoi/Înainte și Toate lecțiile.
+Toate lecțiile sunt disponibile imediat, fără deblocare.
 
-Mai jos sunt trei aventuri OPȚIONALE, fără legătură cu diploma:
-- Energia: patru liniuțe. Un pas reușit consumă una; stația umple bateria.
-  Ultima liniuță poate ajunge pe stație sau acasă. Oprirea nu consumă nimic.
-  „Încercăm din nou de la stație” păstrează partea făcută până la încărcare.
-- Repetiția simplă: o săgeată de trei ori, apoi o pereche de două ori.
-  Pot fi folosite și săgeți simple, fără blocuri.
-- Mici descoperiri: vizităm o stea, completăm o săgeată, comparăm două drumuri.
+1. Facem cunoștință cu Robo: un pas, apoi doi.
+2. Încercăm și reparăm: Robo se oprește la margine. Ștergem săgeata blocată
+   și adăugăm alta, apoi continuăm din locul în care a ajuns.
+3. Unde ajunge Robo? Urmărim trei săgeți în direcții diferite și alegem locul.
+4. Săgețile în ordine: patru pași până la căsuța din colțul din dreapta sus.
+5–8. Ocolim copacii, urmăm poteci 5×5, găsim cheia și coborâm podul.
+9–10. Noi suntem roboții, apoi comparăm două drumuri.
+11–13. Udăm o floare, descoperim repetiția și udăm mai multe flori.
+14–15. Udă un rând, apoi refolosim rețeta pe rândurile A, B și C.
+16. Dacă este o floare: observăm locul și răspundem DA sau NU.
+17. Oprim la stația de energie înainte să continuăm spre căsuță.
 
-LA CLASĂ · 90 DE MINUTE
-Un copil lucrează la laptop; toți ceilalți anticipează și explică la tablă.
-Schimbăm copilul după o încercare sau o etapă a traseului.
-Sus sunt selectorul lecției, variantele, Înapoi/Înainte, Detectivul și Planul.
-Toate lecțiile și extensiile sunt disponibile imediat, fără deblocare.
-Plan · 90 min arată timpi orientativi și sugestii pentru participare:
-1–4. Cunoaștem Robo, ordonăm săgeți, anticipăm și reparăm ca detectivi.
-5–7. Ocolim copacul, găsim cheia și coborâm podul.
-8. Pauză de mișcare de 5 minute: noi suntem roboții!
-9–12. Energia, două drumuri, o floare, misiunea echipei și recapitulare.
-Repetiția, rețeta, grădinile mari, povestea și fișele sunt extensii.
-Nu trebuie parcurse toate variantele. Diploma este exclusiv pentru acasă.
-„Alt copil, aceeași provocare” șterge programul și pregătește o nouă încercare.
-Schimbarea lecției oprește rularea și reia noua hartă de la start.
-Adresa reține lecția: de exemplu ?lesson=7 deschide direct podul.
+Alegem câte variante lucrăm în funcție de ritmul copiilor.
+Schimbarea lecției oprește rularea și pregătește noua hartă de la start.
+Adresa reține lecția: ?lesson=8 deschide podul, iar &variant=2 a doua variantă.
 După refresh se reface lecția/varianta, fără programul încercării întrerupte.
-Linkul de clasă fără parametri începe mereu la prima activitate.
+Linkul de clasă fără parametri începe mereu la prima lecție.
+
+COMENZI
 Toate cele patru săgeți sunt vizibile de la început. Acțiunile apar pe rând.
-După ocolul 3×3 sunt două poteci opționale 5×5 care cer toate direcțiile.
-Fiecare hartă se termină la o comoară sau la o căsuță.
-
-CONTINUĂRI, ÎN RITMUL CLASEI
-Cheia: → ↑ până la cheie, pauză de observație, apoi → ↓ la cufăr.
-Maneta: ↑ ⚙ Activează, observăm podul, apoi → →.
-Grădina: o floare cu → 💧 →; apoi două flori cu comenzi simple.
-După recunoașterea perechii introducem „Repetă de 2 ori”.
-Decizia se exersează separat: 🌱?, →, 🌱?, →. Observăm NU și DA.
-Întrebarea așteaptă până când adultul apasă „Verificăm răspunsul”.
-Combinarea repetiției cu decizia și rețeta sunt extensii ulterioare.
-Rețeta „Udă un rând”: o folosire pe 3×3, apoi imediat o grădină 5×5.
-Udăm șase flori în trei rânduri, A, B, C, cu aceeași rețetă de trei ori.
-Între rânduri mergem ← ← ↑ ↑; la final → → prin poartă la căsuță.
-Râul umple celulele, iar podul coborât unește cele două maluri.
-
-„Pornește Robo” continuă din poziția curentă cu comenzile rămase.
-Cheia, podul, florile și pașii făcuți se păstrează între porniri.
-La cheia și maneta introductive, pauza de observație este automată.
-Pașii bifați nu se șterg; „Șterge cele noi” păstrează ce am făcut.
-„La start” resetează explicit încercarea, dar păstrează programul.
+„Pornește Robo” execută doar comenzile noi, din poziția curentă.
+Cheia, podul, florile, bateria și pașii făcuți se păstrează între porniri.
 „Oprește” permite continuarea fără repetarea acțiunilor.
+Atinge o săgeată nouă pentru a o șterge. Pașii deja bifați sunt protejați.
+„La start” reia harta, păstrând programul.
+„Alt copil” golește programul; în lecția 2 readuce exemplul → ↓.
 
-INSTRUMENTELE ADULTULUI
-Lecțiile, variantele și Detectivul se aleg direct din bara de sus.
-„Pentru adult” păstrează sunetul, biblioteca originală cu șapte categorii,
-ecranul complet, fișele și explicațiile detaliate.
-Meniul oprește rularea fără să piardă pașii. Închide-l cu Escape sau
-„Înapoi la copii”, apoi continuă cu „Pornește Robo”.
-Alege orice lecție și etapă; „Observăm” arată reperul de urmărit.
-Hărțile vechi, mai lungi, rămân în selector ca provocări.
-Schimbarea etapei reia încercarea.
-Poți activa răspunsul automat la întrebare după două secunde.
+PENTRU ADULT
+Meniul oferă sunet, ecran complet, hărți, întrebări și „Arată un drum”.
+Deschiderea meniului oprește rularea. Închide-l și continuă cu „Pornește Robo”.
 „Arată un drum” calculează continuarea din poziția curentă.
-„Tipărește harta” adaptează fișa etapei.
+În lecția cu decizia, răspunsul așteaptă „Verificăm răspunsul”.
+Se poate activa și verificarea automată după două secunde.
 Resetarea întregii aventuri cere confirmarea din panou.
 
-„Unde crezi că ajunge?” începe cu două săgeți; poți alege trei.
-Detectivul are cazuri cu 2, 3 și 4 săgeți: schimbăm una dintre două variante.
-Începeți cu primul caz, fără punctaj sau limită de încercări.
-„Programăm” readuce aventura de unde a rămas.
-
-Povestea urmează parcursul de bază; fișa pentru perechi are două comenzi.
-Sunetul este opțional și pornește din „Pentru adult”.
-Progresul lecțiilor și etapelor se salvează când browserul permite.
-Salvările vechi se păstrează. Programul încercării nu se salvează la închidere.
+ACASĂ CU ROBO
+Apasă „Acasă”: șase provocări, cu progres separat de clasă.
+După terminarea lor, „Diploma mea” oferă previzualizare și PDF A4 orizontal.
+Prenumele este opțional; rămâne doar în memorie cât pagina este deschisă.
+Nu este trimis unui serviciu și poate fi lăsat liber pentru scriere de mână.
+Linkul pentru părinți se termină cu ?adventure=home.
+Diploma se acordă doar pentru aventura de acasă, fără note sau cronometru.
+Progresul se salvează în browser. Alt dispozitiv are propriul progres.
 
 Pe laptop: harta în stânga, comenzile mari în dreapta.
-În timpul rulării vedem toate direcțiile, dezactivate, și săgeata activă
-din program. „Oprește” permite din nou adăugarea comenzilor. „↶ Șterge ultima” șterge ultima comandă nouă.
 Pe telefon: panourile se așază unul sub altul.
 Pentru tablă: „Ecran complet” sau F11.
-Verifică atingerea, lizibilitatea, volumul și tipărirea înainte de clasă.
+Verifică atingerea, lizibilitatea și volumul înainte de clasă.
 
-Ghid complet: Readme.md. Taskuri viitoare: BACKLOG.md.
-PDF-urile din materiale/ rămân fișele originale pentru 5×5.
+Ghid complet: Readme.md. Istoricul lucrărilor și idei: BACKLOG.md.
