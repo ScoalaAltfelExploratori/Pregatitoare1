@@ -321,13 +321,13 @@
   if(mode!=='predict'||busy||predictionDone||map.obstacles.includes(E.key(p)))return;
   guess=[...p];draw();A.play('select');report('Am ales rândul '+(p[1]+1)+', coloana '+(p[0]+1)+'. Apăsăm „Verificăm împreună”.');
  }
- function newPrediction(){
+ function newPrediction(initialRound){
   saveProgram();
   if(classLesson!==T.findByType('predict').id)classLesson=null;
   const size=3;
   const previous=JSON.stringify([map.start,map.goal,commands]);
-  let round=E.predictionRound(seed(),size);
-  for(let tries=0;tries<5&&JSON.stringify([round.map.start,round.map.goal,round.commands])===previous;tries++)round=E.predictionRound(seed(),size);
+  let round=initialRound||E.predictionRound(seed(),size);
+  for(let tries=0;!initialRound&&tries<5&&JSON.stringify([round.map.start,round.map.goal,round.commands])===previous;tries++)round=E.predictionRound(seed(),size);
   mode='predict';activePack=null;loadMap(round.map,round.commands);report('Privește cele 3 săgeți și alege o căsuță de pe hartă.');
  }
  function returnToProgram(){
@@ -397,7 +397,7 @@
   if(mode==='predict'){finishPrediction();return;}
   busy=false;draw();report(idleMessage());
  }
- function showView(next){const changed=view!==next;if(busy)stop();closeAdult(false);A.stop();view=next;document.body.classList.toggle('game-screen',next==='game');for(const name of ['game','home','diploma','class-plan','class-break'])$(name+'-view').hidden=name!==next;if(next==='home')drawHome();drawClassroom();if(next==='game')fitBoard();if(changed)window.scrollTo(0,0);}
+ function showView(next){const changed=view!==next;if(busy)stop();closeAdult(false);A.stop();view=next;document.body.classList.toggle('game-screen',next==='game');for(const name of ['game','home','diploma','class-plan'])$(name+'-view').hidden=name!==next;if(next==='home')drawHome();drawClassroom();if(next==='game')fitBoard();if(changed)window.scrollTo(0,0);}
  function setClassURL(){
   const url=adventureURL(false);if(classLesson){url.searchParams.set('lesson',classLesson);if(classVariant)url.searchParams.set('variant',String(classVariant+1));}
   try{history.replaceState(null,'',url);}catch{}
@@ -405,14 +405,12 @@
  function startClass(id,variant=0){
   const resolved=T.resolve(id,variant),activity=resolved.activity,item=resolved.variant;
   cancelRun();classLesson=null;classVariant=resolved.index;homeMode=false;activePack=null;savedProgram=null;missingChosen=false;routeResults={};selectedRoute=null;
-  let target='game';
   if(item.type==='curriculum')startMission(item.index,{stage:item.stage,preview:true});
   else if(item.type==='repair')loadFree(item.map,item.program);
-  else if(item.type==='predict')newPrediction();
+  else if(item.type==='predict')newPrediction({map:{...item.map},commands:[...item.program]});
   else if(item.type==='pack'){const m=P.get(item.pack,item.index);loadFree(m,m.missing?m.missing.program:[]);}
-  else if(item.type==='break'){startMission(0,{stage:'one',preview:true});target='class-break';}
   // Each classroom activity is independent of home awards and can be opened directly.
-  activePack=null;savedProgram=null;classLesson=activity.id;classVariant=resolved.index;classReturnView=target;setClassURL();showView(target);draw();
+  activePack=null;savedProgram=null;classLesson=activity.id;classVariant=resolved.index;classReturnView='game';setClassURL();showView('game');draw();
   if(item.type==='pack')report(map.brief);
   if(item.type==='repair')report('Apasă „Pornește Robo” și privim cele două săgeți.');
  }
@@ -427,7 +425,6 @@
   document.body.classList.toggle('class-session',Boolean(activity&&!homeMode));
   $('presenter-guide').hidden=homeMode||!activity;
   if(activity){$('presenter-activity').textContent=T.title(activity);$('presenter-question').textContent='„'+T.question(activity.id,classVariant)+'”';$('presenter-participation').textContent=activity.notes;}
-  if(activity&&activity.variants[classVariant].type==='break')$('class-break-title').textContent=T.title(activity);
   $('class-lesson').value=activity?activity.id:'';
   if($('class-variant').dataset.activity!==(activity?activity.id:'')){
    $('class-variant').replaceChildren();
@@ -521,7 +518,7 @@
  $('class-next').addEventListener('click',nextClass);$('class-continue').addEventListener('click',continueClass);
  $('class-plan').addEventListener('click',openClassPlan);
  $('class-resume').addEventListener('click',()=>showView(classReturnView));
- $('class-retry').addEventListener('click',()=>startClass(classLesson,classVariant));$('break-next').addEventListener('click',nextClass);
+ $('class-retry').addEventListener('click',()=>startClass(classLesson,classVariant));
  $('home-name').addEventListener('input',()=>{$('diploma-name').value=$('home-name').value;});
  $('open-adventures').addEventListener('click',openHome);$('pack-home').addEventListener('click',openHome);$('diploma-back').addEventListener('click',openHome);
  $('home-continue').addEventListener('click',()=>startPack('home',P.next('home',packProgress.home)));
@@ -549,7 +546,7 @@
  $('adult-menu').addEventListener('toggle',()=>{if($('adult-menu').open&&busy)stop();});
  document.addEventListener('click',e=>{if($('adult-menu').open&&!$('adult-menu').contains(e.target))closeAdult(false);});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('adult-menu').open){e.preventDefault();closeAdult();}});
- $('next-round').addEventListener('click',newPrediction);
+ $('next-round').addEventListener('click',()=>newPrediction());
  $('next-mission').addEventListener('click',()=>{if(!won||mode!=='program')return;const next=map.lesson&&(map.lesson.next||map.lesson.suggested);if(next)startMission(missionIndex,{stage:next,preview:true});else startMission(missionIndex+1,{preview:true});});
  $('check-decision').addEventListener('click',()=>{if(!busy||!decisionPending||decisionPending.token!==runToken)return;const pending=decisionPending;decisionPending=null;$('check-decision').hidden=true;pending.resolve();});
  for(let i=0;i<C.count;i++){const m=C.get(i),o=document.createElement('option');o.value=String(i);o.textContent=m.title;$('teacher-lesson').append(o);}

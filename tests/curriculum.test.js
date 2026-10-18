@@ -34,11 +34,12 @@ test('etapele sunt independente, iar checkpointurile acceptă numai etape cunosc
  assert.equal(E.step(C.get(0),[0,2],'U').ok,true);
 });
 
-test('anticiparea simplă oferă trei direcții diferite și legale, fără obstacole',()=>{
+test('anticiparea simplă oferă doi pași în aceeași direcție, apoi o schimbare',()=>{
  for(let seed=0;seed<500;seed++){
   const round=E.predictionRound(seed,3),result=E.evaluate(round.map,round.commands);
   assert.equal(round.commands.length,3);assert.equal(round.map.obstacles.length,0);
-  assert.equal(new Set(round.commands).size,3);
+  assert.equal(round.commands[0],round.commands[1]);
+  assert.notEqual(round.commands[1],round.commands[2]);
   assert.deepEqual(round,E.predictionRound(seed,3));
   assert.equal(result.trace.length,4);
   assert.equal(result.outcome,'won');

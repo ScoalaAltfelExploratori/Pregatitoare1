@@ -18,9 +18,9 @@ test('energy costs only valid movement, not blocked moves or stationary actions'
 });
 test('last segment reaches charger or goal, but zero energy cannot move',()=>{
  const m=P.get('energy',1),world={...E.initialWorld(m),energy:1};
- const charge=E.step(m,[1,2],'R',false,world);assert.equal(charge.recharged,true);assert.equal(charge.world.energy,4);
- const win=E.step(m,[3,0],'R',false,world);assert.equal(win.won,true);assert.equal(win.world.energy,0);
- const zero=E.step(m,[1,2],'R',false,{...world,energy:0});assert.equal(zero.ok,false);assert.equal(zero.reason,'energy');assert.deepEqual(zero.position,[1,2]);
+ const charge=E.step(m,[1,2],'U',false,world);assert.equal(charge.recharged,true);assert.equal(charge.world.energy,4);
+ const win=E.step(m,[2,0],'R',false,world);assert.equal(win.won,true);assert.equal(win.world.energy,0);
+ const zero=E.step(m,[1,2],'U',false,{...world,energy:0});assert.equal(zero.ok,false);assert.equal(zero.reason,'energy');assert.deepEqual(zero.position,[1,2]);
 });
 test('harder energy maps require recharging and solver includes remaining energy in its state',()=>{
  for(let i=1;i<4;i++){const m=P.get('energy',i);assert.ok(E.solve(m));assert.equal(E.solve({...m,energy:{capacity:4,chargers:[]}}),null);}

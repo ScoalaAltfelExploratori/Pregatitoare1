@@ -394,7 +394,7 @@
 .class-plan-list{display:grid;gap:10px;margin:24px 0}.class-plan-list>button{display:grid;grid-template-columns:46px minmax(0,1fr) 20px;align-items:center;text-align:left;gap:14px;padding:18px;background:#fff}
 .plan-time{font-size:15px;color:#526977}.plan-icon{font-size:30px}.class-plan-list b{display:block;font-size:20px}.class-plan-list small{display:block;font-size:15px;line-height:1.5;font-weight:400;margin-top:7px;color:#426170}
 .class-extras{display:flex;flex-wrap:wrap;gap:10px}.class-extras button{font-size:16px}.class-home-note{margin-top:30px;background:#fff7de;border-radius:20px;padding:24px}.class-home-note p{margin:14px 0}.class-home-note a{overflow-wrap:anywhere}
-.class-break-page{text-align:center;max-width:900px;margin:35px auto}.class-break-page h1{font-size:48px}.class-break-page>p{font-size:27px;line-height:1.6;margin:20px 0}.class-break-page>p.hint{font-size:18px}.break-arrows{font-size:90px;color:#17599e;letter-spacing:.1em;margin:20px 0}
+
 .home-intro>div{min-width:0;flex:1}.home-name-label{display:block;font-size:19px;font-weight:700}.home-name-label span{font-size:15px;font-weight:400}.home-name-label input{display:block;width:100%;max-width:350px;font:inherit;margin-top:8px;padding:12px;border:2px solid #b2cbd0;border-radius:12px;background:#fff}.home-intro #home-name-note{font-size:14px;max-width:470px;margin:8px 0 18px}
 .home-context .adult-panel>nav,.home-context .adult-panel>.play-toolbar,.home-context .adult-context,.home-context #teacher-tools{display:none}
 @media screen and (min-width:960px) and (min-height:720px){
@@ -405,7 +405,7 @@
  .game-screen #class-completion button{font-size:13px;min-height:40px;padding:6px 8px}
 }
 @media(max-width:1150px){.classroom-toolbar{gap:6px;padding-left:16px;padding-right:16px}.classroom-toolbar label{font-size:0;gap:0}#class-variant{width:190px}.classroom-toolbar button{padding:8px;font-size:13px}}
-@media(max-width:959px){.classroom-toolbar{flex-wrap:wrap}.classroom-toolbar .class-lesson-label{flex:1 1 52%}.classroom-toolbar .class-variant-label{flex:1 1 40%}#class-lesson,#class-variant{max-width:none;width:100%}.classroom-toolbar select{font-size:14px}.class-plan-list>button{grid-template-columns:minmax(0,1fr) 18px;gap:10px;padding:14px}.plan-time{font-size:13px}.plan-icon{display:none}.class-plan-list b{font-size:18px}.class-plan-list small{font-size:14px}.class-break-page h1{font-size:34px}.break-arrows{font-size:62px}.class-break-page>p{font-size:22px}}
+@media(max-width:959px){.classroom-toolbar{flex-wrap:wrap}.classroom-toolbar .class-lesson-label{flex:1 1 52%}.classroom-toolbar .class-variant-label{flex:1 1 40%}#class-lesson,#class-variant{max-width:none;width:100%}.classroom-toolbar select{font-size:14px}.class-plan-list>button{grid-template-columns:minmax(0,1fr) 18px;gap:10px;padding:14px}.plan-time{font-size:13px}.plan-icon{display:none}.class-plan-list b{font-size:18px}.class-plan-list small{font-size:14px}}
 @media print{.classroom-toolbar,.context-switch{display:none}}
 #home-title:focus{outline:none}
 @media(max-width:730px){

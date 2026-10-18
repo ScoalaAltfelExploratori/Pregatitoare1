@@ -8,6 +8,8 @@ Elementele V1 și verificările de mai jos păstrează istoricul implementării.
 
 ## V1.4 · Lecțiile și grădina
 
+- [x] Lecția 3 începe cu ↑ ↑ →; rundele următoare au doi pași în aceeași direcție, apoi o schimbare. Eliminată „Noi suntem roboții”, cu renumerotarea lecțiilor la 1–16. Ultima hartă este 4×4, cu căsuța în dreapta sus, doi copaci și o singură stație.
+- [x] 113 teste trec. Enumerarea tuturor drumurilor fără revenire într-o celulă găsește o singură soluție cu bateria disponibilă: → ↑ ↑, încărcare, ↑ → →. Verificate în browser epuizarea pe un drum fără stație, reluarea și sosirea în șase pași din două porniri. Progresul și diploma de acasă rămân separate.
 - [x] Eliminată lecția Detectivul Robo, inclusiv scurtăturile și codul aferent. Anticiparea este acum lecția 3, cu trei săgeți în direcții diferite; lecția 4 are căsuța în dreapta sus pe 3×3, la patru pași de start. Lecțiile următoare sunt renumerotate, de la copaci (5) la energie (17).
 - [x] 112 teste și verificările de sintaxă trec. Verificate 500 de runde de anticipare cu trei direcții distincte, ordinea lecțiilor, salvările și separarea progresului de acasă. În browser: anticipare corectă, trecere la lecția 4 și sosire la căsuță în patru pași; fără erori în consolă.
 - [x] Lecția 2 „Încercăm și reparăm”: exemplul → ↓ se oprește la margine după un pas. Marginea și săgeata blocată sunt evidențiate; copilul șterge săgeata, adaugă alta și continuă fără să piardă pasul corect. „Alt copil” reface exemplul pregătit. Lecțiile sunt numerotate acum 1–18.

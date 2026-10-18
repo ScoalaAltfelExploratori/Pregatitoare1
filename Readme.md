@@ -14,17 +14,17 @@ Nu sunt necesare conturi. Nu există note, cronometru sau limită de încercări
 
 ## Lecțiile
 
-Cele 17 lecții sunt disponibile direct în selectorul de sus. Unele au mai multe variante de hartă. Putem alege cât lucrăm în funcție de ritmul copiilor:
+Cele 16 lecții sunt disponibile direct în selectorul de sus. Unele au mai multe variante de hartă. Putem alege cât lucrăm în funcție de ritmul copiilor:
 
 - **1–2:** primii pași, apoi „Încercăm și reparăm”: Robo se oprește la margine, ștergem săgeata blocată și continuăm cu alta.
-- **3:** anticiparea destinației, urmărind trei săgeți în direcții diferite.
+- **3:** anticiparea destinației, începând cu ↑ ↑ →. Alte runde păstrează modelul: doi pași în aceeași direcție, apoi o schimbare.
 - **4–5:** un drum de patru pași până la căsuța din dreapta sus, apoi ocolirea copacilor.
 - **6–8:** trasee 5×5 cu toate direcțiile, cheia pentru comoară și activarea podului.
-- **9–10:** o pauză în care copiii devin roboți, apoi compararea a două drumuri.
-- **11–13:** udarea florilor și descoperirea pașilor care se repetă.
-- **14–15:** „Udă un rând”, o secvență cu nume, refolosită în grădina cu rândurile A, B și C.
-- **16:** „Dacă este o floare” — Robo verifică locul înainte să ude.
-- **17:** o hartă 5×5 pe care bateria nu ajunge până acasă; trebuie să trecem întâi pe la stația de încărcare.
+- **9:** compararea a două drumuri.
+- **10–12:** udarea florilor și descoperirea pașilor care se repetă.
+- **13–14:** „Udă un rând”, o secvență cu nume, refolosită în grădina cu rândurile A, B și C.
+- **15:** „Dacă este o floare” — Robo verifică locul înainte să ude.
+- **16:** o hartă 4×4 cu căsuța în dreapta sus. Sunt mai multe drumuri, dar bateria ajunge doar pe traseul care trece la timp prin singura stație de încărcare.
 
 Câteva controale utile în timpul activității:
 

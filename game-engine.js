@@ -158,8 +158,8 @@
    }
   }
   visit(map.start,[],new Set([key(map.start)]));
-  // Prefer a different direction at every step; the classroom's empty 3×3 always permits it.
-  const varied=paths.filter(path=>new Set(path).size===count),choices=varied.length?varied:paths;
+  // Two steps in one direction, then a turn; every empty 3×3 starting cell allows this.
+  const varied=paths.filter(path=>count===3?path[0]===path[1]&&path[1]!==path[2]:path[0]!==path[1]),choices=varied.length?varied:paths;
   const commands=choices[Math.floor(seeded(seed^0x51a7)()*choices.length)];
   map.goal=commands.reduce((p,d)=>[p[0]+DIR[d][0],p[1]+DIR[d][1]],[...map.start]);
   return {map,commands};

@@ -5,20 +5,22 @@ Nu sunt necesare internet, conturi sau instalare.
 
 LA CLASĂ
 Un copil lucrează la laptop; ceilalți arată direcțiile și explică drumul.
-Sus sunt selectorul celor 17 lecții, variantele, Înapoi/Înainte și Toate lecțiile.
+Sus sunt selectorul celor 16 lecții, variantele, Înapoi/Înainte și Toate lecțiile.
 Toate lecțiile sunt disponibile imediat, fără deblocare.
 
 1. Facem cunoștință cu Robo: un pas, apoi doi.
 2. Încercăm și reparăm: Robo se oprește la margine. Ștergem săgeata blocată
    și adăugăm alta, apoi continuăm din locul în care a ajuns.
-3. Unde ajunge Robo? Urmărim trei săgeți în direcții diferite și alegem locul.
+3. Unde ajunge Robo? Începem cu ↑ ↑ → și alegem locul unde se oprește.
+   Alte runde au tot doi pași în aceeași direcție, apoi o schimbare.
 4. Săgețile în ordine: patru pași până la căsuța din colțul din dreapta sus.
 5–8. Ocolim copacii, urmăm poteci 5×5, găsim cheia și coborâm podul.
-9–10. Noi suntem roboții, apoi comparăm două drumuri.
-11–13. Udăm o floare, descoperim repetiția și udăm mai multe flori.
-14–15. Udă un rând, apoi refolosim rețeta pe rândurile A, B și C.
-16. Dacă este o floare: observăm locul și răspundem DA sau NU.
-17. Oprim la stația de energie înainte să continuăm spre căsuță.
+9. Comparăm două drumuri.
+10–12. Udăm o floare, descoperim repetiția și udăm mai multe flori.
+13–14. Udă un rând, apoi refolosim rețeta pe rândurile A, B și C.
+15. Dacă este o floare: observăm locul și răspundem DA sau NU.
+16. Pe o hartă 4×4 alegem drumul spre căsuța din dreapta sus. Bateria
+    ajunge doar dacă trecem la timp pe la singura stație de încărcare.
 
 Alegem câte variante lucrăm în funcție de ritmul copiilor.
 Schimbarea lecției oprește rularea și pregătește noua hartă de la start.

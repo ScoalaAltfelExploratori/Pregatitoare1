@@ -13,7 +13,7 @@
   ]},
   energy:{title:'Energia lui Robo',icon:'⚡',description:'Observăm bateria, apoi alegem unde ne încărcăm.',maps:[
    {id:'observe',title:'Bateria lui Robo',goal:[2,1],energy:battery(['2,2']),pauseAfterCharge:true,brief:'Un pas folosește o liniuță. La stație umplem bateria.'},
-   {id:'recharge',title:'O oprire pentru energie',size:5,start:[0,4],goal:[4,0],energy:battery(['2,2']),brief:'Stația ne dă energie pentru drumul până acasă.'},
+   {id:'recharge',title:'O oprire pentru energie',size:4,start:[0,3],goal:[3,0],obstacles:['0,2','2,1'],energy:battery(['1,1']),brief:'Sunt mai multe drumuri spre casă. Pe care ne ajunge bateria?'},
    {id:'choose',title:'La ce stație mergem?',size:5,start:[0,4],goal:[4,0],energy:battery(['0,2','2,2','4,2']),brief:'Alege stațiile. Ne ajung liniuțele până la următoarea?'},
    {id:'journey',title:'Călătoria cu mai multe opriri',size:5,start:[0,4],goal:[4,0],obstacles:['0,3','1,3','2,3','3,3','1,1','2,1','3,1','4,1'],energy:battery(['4,4','4,2','0,2','0,0']),brief:'Urmăm drumul. Ne încărcăm înainte să continuăm.'}
   ]},
