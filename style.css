@@ -155,7 +155,7 @@
  .game-screen .brand{font-size:22px}.game-screen .brand-icon{font-size:27px}
  .game-screen .app-header nav{order:0;width:auto}.game-screen nav button{padding:7px 12px;min-height:40px}
  .game-screen>main{flex:1;min-height:0;max-width:1600px;width:100%;padding:10px 18px 8px;display:flex;flex-direction:column}
- .game-screen>.site-footer{display:flex;flex:0 0 auto;margin:0 auto}
+ .game-screen>.site-footer{display:none}
  #game-view{flex:1;min-height:0;display:flex;flex-direction:column;gap:8px;position:relative}
  .play-toolbar{flex:0 0 auto;margin:0;gap:10px}
  .activity-tabs{gap:6px}.activity-tabs button{font-size:14px;min-height:42px;padding:7px 12px}
@@ -380,8 +380,10 @@
 
 /* Home adventures have a calm landing page; only the current activity enters the play area. */
 .site-footer{width:100%;max-width:1600px;align-items:center;flex-wrap:wrap;gap:4px 20px;padding:4px 22px}
-.site-footer a{display:inline-flex;align-items:center;min-height:36px;color:var(--teal);font-size:14px;font-weight:700;text-underline-offset:3px}
-.site-footer a:hover{color:var(--ink)}
+.worksheet-links{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.worksheet-links a{display:inline-flex;align-items:center;min-height:44px;color:var(--teal);font-size:14px;font-weight:700;text-underline-offset:3px;white-space:nowrap}
+.worksheet-links .worksheet-solution{font-weight:400}
+.worksheet-links a:hover{color:var(--ink)}
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 .adult-menu:not([open]) .adult-panel{display:none}
 .context-switch{display:flex;gap:6px;margin-left:auto}
@@ -412,12 +414,17 @@
 @media(max-width:959px){.classroom-toolbar{flex-wrap:wrap}.classroom-toolbar .class-lesson-label{flex:1 1 52%}.classroom-toolbar .class-variant-label{flex:1 1 40%}#class-lesson,#class-variant{max-width:none;width:100%}.classroom-toolbar select{font-size:14px}.class-plan-list>button{grid-template-columns:minmax(0,1fr) 18px;gap:10px;padding:14px}.plan-time{font-size:13px}.plan-icon{display:none}.class-plan-list b{font-size:18px}.class-plan-list small{font-size:14px}}
 @media print{.classroom-toolbar,.context-switch{display:none}}
 #home-title:focus{outline:none}
+@media(min-width:731px) and (max-width:959px){
+ .app-header,.game-screen .app-header{flex-wrap:wrap}
+ .app-header>.worksheet-links{order:4;flex-basis:100%;justify-content:flex-end}
+}
 @media(max-width:730px){
  .app-header,.game-screen .app-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 12px}
  .app-header .brand,.game-screen .app-header .brand{grid-column:1;grid-row:1;font-size:17px}
  .app-header .adult-menu{grid-column:2;grid-row:1;margin:0}
  .app-header>#open-adventures{grid-column:1/-1;grid-row:2;justify-self:end;max-width:none!important;white-space:normal;min-height:32px;padding:4px 8px!important}
  .app-header>.context-switch{grid-column:1/-1;grid-row:2;justify-self:end;margin:0}.app-header .context-switch button{max-width:none!important;font-size:13px!important;min-height:36px}
+ .app-header>.worksheet-links{grid-column:1/-1;grid-row:3;justify-self:end}
 }
 .adventure-home,.diploma-page{max-width:1040px;margin:auto}
 .home-intro{display:flex;align-items:center;gap:32px;background:#fff7de;border:2px solid #eed893;border-radius:28px;padding:32px;margin:8px 0 24px}
