@@ -14,7 +14,7 @@ Nu sunt necesare conturi. Nu există note, cronometru sau limită de încercări
 
 ## Fișă de lucru pentru acasă
 
-- [Fișa de tipărit, PDF](materiale/Robo_Acasa_Harta_7x7.pdf): o hartă 7×7 pe o pagină A4, cu trei drumuri spre căsuță. Doar unul trece pe la stația de încărcare necesară. Copilul completează cele 14 căsuțe cu săgeți, încărcarea bateriei și activarea podului.
+- [Fișa de tipărit, PDF](materiale/Robo_Acasa_Harta_7x7.pdf): o hartă 7×7 pe o pagină A4, cu trei drumuri spre căsuță. Drumul mai lung trece pe la stația de încărcare din E3. Robo are energie pentru 8 pași, apoi trebuie să încarce pentru a ajunge acasă. Copilul completează cele 18 căsuțe cu săgeți, încărcarea bateriei și activarea podului.
 - [Soluția pentru părinte, PDF](materiale/Robo_Acasa_Harta_7x7_sol.pdf): traseul marcat, programul complet și explicația consumului de energie.
 
 ## Lecțiile
