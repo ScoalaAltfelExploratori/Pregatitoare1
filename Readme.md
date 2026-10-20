@@ -12,6 +12,11 @@ Un joc de programare în limba română, pentru clasa pregătitoare. Copiii aleg
 
 Nu sunt necesare conturi. Nu există note, cronometru sau limită de încercări.
 
+## Fișă de lucru pentru acasă
+
+- [Fișa de tipărit, PDF](materiale/Robo_Acasa_Harta_7x7.pdf): o hartă 7×7 pe o pagină A4, cu trei drumuri spre căsuță. Doar unul trece pe la stația de încărcare necesară. Copilul completează cele 14 căsuțe cu săgeți, încărcarea bateriei și activarea podului.
+- [Soluția pentru părinte, PDF](materiale/Robo_Acasa_Harta_7x7_sol.pdf): traseul marcat, programul complet și explicația consumului de energie.
+
 ## Lecțiile
 
 Cele 16 lecții sunt disponibile direct în selectorul de sus. Unele au mai multe variante de hartă. Putem alege cât lucrăm în funcție de ritmul copiilor:
