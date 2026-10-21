@@ -19,7 +19,7 @@ Nu sunt necesare conturi. Nu există note, cronometru sau limită de încercări
 
 ## Lecțiile
 
-Cele 16 lecții sunt disponibile direct în selectorul de sus. Unele au mai multe variante de hartă. Putem alege cât lucrăm în funcție de ritmul copiilor:
+Cele 22 de lecții sunt disponibile direct în selectorul de sus. Unele au mai multe variante de hartă. Putem alege cât lucrăm în funcție de ritmul copiilor:
 
 - **1–2:** primii pași, apoi „Încercăm și reparăm”: Robo se oprește la margine, ștergem săgeata blocată și continuăm cu alta.
 - **3:** anticiparea destinației, începând cu ↑ ↑ →. Alte runde păstrează modelul: doi pași în aceeași direcție, apoi o schimbare.
@@ -30,6 +30,8 @@ Cele 16 lecții sunt disponibile direct în selectorul de sus. Unele au mai mult
 - **13–14:** „Udă un rând”, o secvență cu nume, refolosită în grădina cu rândurile A, B și C.
 - **15:** „Dacă este o floare” — Robo verifică locul înainte să ude.
 - **16:** o hartă 4×4 cu căsuța în dreapta sus. Sunt mai multe drumuri, dar bateria ajunge doar pe traseul care trece la timp prin singura stație de încărcare.
+- **17–19:** trei hărți 5×5: un ocol după cheie, o manetă pe malul râului și trei flori care deschid poarta.
+- **20–22:** trei hărți 7×7: alegerea stațiilor de încărcare, vizitarea a trei stele și o călătorie care combină podul cu bateria. Putem construi programele în bucăți, schimbând copilul la fiecare oprire.
 
 Câteva controale utile în timpul activității:
 
@@ -42,7 +44,7 @@ Linkul obișnuit începe cu lecția 1. Pentru o anumită lecție se poate folosi
 ## Cum este construit
 
 - **HTML, CSS și JavaScript simplu**, fără framework, server de aplicație sau pas de build. Fișierele sunt servite ca atare de GitHub Pages.
-- **Hărți definite în cod:** grile de 3×3, 4×4 și 5×5, cu poziții `[x, y]` numărate de la zero, obstacole și obiecte precum cheia, maneta, florile sau stațiile de încărcare.
+- **Hărți definite în cod:** grile de 3×3, 4×4, 5×5 și 7×7, cu poziții `[x, y]` numărate de la zero, obstacole și obiecte precum cheia, maneta, florile sau stațiile de încărcare.
 - **Motor separat de interfață:** `game-engine.js` validează comenzile și calculează starea următoare. Funcția `solve()` caută în lățime (BFS) un drum valid, ținând cont și de cheie, pod, flori și energie.
 - **Program reprezentat ca date:** săgețile sunt comenzi precum `'R'` și `'U'`; repetițiile au forma `{ repeat: 2, commands: ['R', 'W'] }`, iar rețeta se apelează cu `{ call: 'water-row' }`. Motorul le desfășoară în pași simpli.
 - **Execuție pas cu pas:** `app.js` păstrează poziția, obiectele și numărul comenzilor executate. Oprirea sau schimbarea lecției anulează rularea în așteptare, ca să nu execute din nou un pas deja făcut.

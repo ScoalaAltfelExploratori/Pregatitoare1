@@ -1046,6 +1046,45 @@ test('comparison requires both tested routes and keeps their observed counts',as
 
 function selectClass(app,id,variant=0){app.get('class-lesson').value=id;app.get('class-lesson').dispatchEvent(new app.w.Event('change'));if(variant){app.get('class-variant').value=String(variant);app.get('class-variant').dispatchEvent(new app.w.Event('change'));}}
 
+test('all six added maps open, run to completion and continue in order without home awards',async t=>{
+ const app=setup({guided:true,classroom:true,url:'http://robo.test/?lesson=17'});t.after(app.close);
+ for(const activity of app.w.RoboClassroom.activities.slice(16)){
+  const m=activity.variants[0].map;
+  assert.equal(app.get('class-lesson').value,activity.id);
+  assert.equal(new URL(app.w.location.href).searchParams.get('lesson'),activity.id);
+  assert.equal(app.get('board').children.length,m.size*m.size);
+  assert.equal(app.get('mission-brief').textContent,m.brief);
+  assert.equal(app.get('energy-panel').hidden,!m.energy);
+  assert.equal(app.get('activate').hidden,!(m.actions||[]).includes('A'));
+  assert.equal(app.get('water').hidden,!(m.actions||[]).includes('W'));
+  for(const d of ['U','D','L','R'])assert.equal(app.document.querySelector('[data-dir="'+d+'"]').hidden,false);
+  app.add(E.solve(m));app.click('run');await app.advance(25000);
+  assert.equal(app.get('game-view').dataset.state,'won',activity.title);
+  assert.deepEqual(robotPosition(app),Array.from(m.goal));
+  assert.equal(app.get('class-completion').hidden,false);
+  assert.equal(app.get('class-next').disabled,activity.id==='22');
+  assert.equal(app.w.localStorage.getItem('robo-adventure-home-v1'),null);
+  app.click('class-continue');
+ }
+ assert.equal(app.get('class-plan-view').hidden,false);
+});
+
+test('visiting one of three stars does not mark the objective complete or invite Robo home',async t=>{
+ const app=setup({guided:true,classroom:true,url:'http://robo.test/?lesson=21'});t.after(app.close);
+ const m=app.w.RoboClassroom.find('21').variants[0].map,solution=E.solve(m),trace=E.evaluate(m,solution).trace;
+ const first=trace.findIndex(p=>m.stops.includes(E.key(p)));
+ app.add(solution.slice(0,first));app.click('run');await app.advance(15000);
+ assert.equal(app.get('key-objective').textContent,'⭐ 1 din 3 stele vizitate');
+ assert.equal(app.get('key-objective').classList.contains('complete'),false);
+ assert.match(app.get('status').textContent,/Mai avem stele/);
+ app.click('class-retry');
+ assert.equal(app.get('key-objective').textContent,'⭐ 0 din 3 stele vizitate');
+ assert.deepEqual(robotPosition(app),[0,6]);
+ app.add(['R','R','R','R','R','R']);app.click('run');await app.advance(6000);
+ assert.match(app.get('status').textContent,/mai întâi vizităm toate stelele/);
+ assert.notEqual(app.get('game-view').dataset.state,'won');
+});
+
 test('lesson 2 teaches deleting the blocked arrow and continuing after the good step',async t=>{
  const app=setup({guided:true,classroom:true});t.after(app.close);
  app.add(['R']);app.click('run');await app.advance(1000);app.click('class-continue');
@@ -1102,9 +1141,9 @@ test('classroom opens at the beginning even with completed progress; all lessons
  const app=setup({guided:true,classroom:true,progress:'{"version":3,"completed":7}'});t.after(app.close);
  assert.equal(app.get('class-lesson').value,'1');assert.equal(app.get('lesson-stage').value,'one');
  assert.equal(app.get('classroom-toolbar').hidden,false);
- assert.equal(app.get('class-lesson').querySelectorAll('optgroup')[0].children.length,16);
+ assert.equal(app.get('class-lesson').querySelectorAll('optgroup')[0].children.length,22);
  assert.equal(app.get('class-lesson').querySelectorAll('option:disabled').length,0);
- assert.equal(app.get('class-plan-list').children.length,16);
+ assert.equal(app.get('class-plan-list').children.length,22);
  app.click('class-plan');assert.equal(app.get('class-plan-view').hidden,false);
  app.click('class-resume');assert.equal(app.get('game-view').hidden,false);
  selectClass(app,'8');assert.equal(app.get('board').querySelectorAll('.bridge-tile').length,1);
@@ -1145,7 +1184,7 @@ test('lesson 3 opens and retries with up, up, right, then offers similar predict
  assert.equal(arrows()[0],arrows()[1]);assert.notEqual(arrows()[1],arrows()[2]);
 });
 
-test('the final class lesson recharges and continues in two runs without awarding a home diploma',async t=>{
+test('the 4×4 energy lesson recharges and continues in two runs without awarding a home diploma',async t=>{
  const app=setup({guided:true,classroom:true,url:'http://robo.test/?lesson=16'});t.after(app.close);
  assert.equal(app.get('class-lesson').value,'16');assert.equal(app.get('board').children.length,16);
  assert.equal(app.get('energy-panel').hidden,false);assert.equal(app.get('energy-count').textContent,'4 / 4');
@@ -1155,11 +1194,11 @@ test('the final class lesson recharges and continues in two runs without awardin
  app.add(['U','R','R']);app.click('run');await app.advance(3000);
  assert.deepEqual(robotPosition(app),[3,0]);assert.equal(app.get('energy-count').textContent,'1 / 4');
  assert.equal(app.get('game-view').dataset.state,'won');assert.equal(app.get('step-count').textContent,'6 pași făcuți');
- assert.equal(app.get('class-completion').hidden,false);assert.equal(app.get('class-next').disabled,true);
+ assert.equal(app.get('class-completion').hidden,false);assert.equal(app.get('class-next').disabled,false);
  assert.equal(app.w.localStorage.getItem('robo-adventure-home-v1'),null);
  assert.equal(app.w.localStorage.getItem('robo-adventure-energy-v1'),null);
  app.click('home-diploma');assert.equal(app.get('diploma-view').hidden,true);
- app.click('class-continue');assert.equal(app.get('class-plan-view').hidden,false);
+ app.click('class-continue');assert.equal(app.get('class-lesson').value,'17');assert.equal(app.get('board').children.length,25);
 });
 
 test('switching class lessons cancels pending movement and an unanswered flower decision',async t=>{
@@ -1231,7 +1270,7 @@ test('comparison, watering, recipe, three-row garden and final lesson follow the
  assert.equal(app.get('step-count').textContent,'22 pași făcuți');
  assert.equal(app.get('queue').querySelectorAll('.recipe-call.complete').length,3);
  app.click('class-continue');assert.equal(app.get('class-lesson').value,'15');
- app.click('class-next');assert.equal(app.get('class-lesson').value,'16');assert.equal(app.get('energy-panel').hidden,false);assert.equal(app.get('class-next').disabled,true);
+ app.click('class-next');assert.equal(app.get('class-lesson').value,'16');assert.equal(app.get('energy-panel').hidden,false);assert.equal(app.get('class-next').disabled,false);
  app.click('class-previous');assert.equal(app.get('class-lesson').value,'15');
 });
 

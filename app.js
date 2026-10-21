@@ -293,7 +293,7 @@
   if(won)return 'Misiune terminată! „La start” pregătește o nouă încercare.';
   if(map.energy&&world.energy===0)return 'Bateria este goală. Încercăm din nou de la ultima stație, cu bateria plină.';
   if(map.energy)return 'Mai avem '+world.energy+' liniuțe. O săgeată folosește una; la stație bateria se umple.';
-  if(map.stops)return E.same(position,map.goal)?'Am ajuns!':E.solve(map,{position,world})?'Vizităm steaua, apoi continuăm spre căsuță.':'Încercăm drumul din nou.';
+  if(map.stops)return map.stops.every(p=>(world.stops||[]).includes(p))?'Am vizitat '+(map.stops.length>1?'toate stelele':'steaua')+'! Continuăm spre căsuță.':map.stops.length>1?'Mai avem stele de vizitat înainte să mergem acasă.':'Vizităm steaua, apoi continuăm spre căsuță.';
   if(plan().length>executed)return 'Apasă „Pornește Robo”: continuăm de aici cu comenzile noi'+(hasKey?', cu cheia la noi.':'.');
   if(map.lever)return world.bridgeOpen?'Podul a coborât! Adaugă drumul peste râu până la căsuță.':'Mergi pe manetă, apoi adaugă „Activează” în program.';
   if(map.allowDecision)return E.gateOpen(map,world)?'Am îngrijit florile! '+(map.gate?'Poarta s-a deschis. ':'')+'Mergem la căsuță.':map.allowRepeat?'Poți repeta → și „Dacă este o floare aici → Udă”. Pe locul gol, Robo nu udă.':'Încercăm 🌱? pe gol și pe floare. Spunem NU sau DA înainte să verificăm.';
@@ -372,7 +372,7 @@
      draw();mood('curious');A.play('retry');report('Robo rămâne pe hartă. Atinge săgeata '+E.ARROW[command]+' din program ca să o ștergi.','error');return;
     }
     const problems={locked:'cufărul este încuiat! Luăm mai întâi cheia.',tree:'un copac ne blochează! Ce comandă schimbăm?',edge:'am ieși de pe hartă! Ce comandă schimbăm?',bridge:'podul este ridicat. Mergem la manetă și folosim „Activează”.',water:'aici este râul! Traversăm doar pe pod.',gate:'poarta este închisă. Udăm mai întâi toate florile.',lever:'„Activează” funcționează pe căsuța cu maneta.',activated:'maneta este deja activată. Putem șterge această comandă.',flower:'„Udă” funcționează pe căsuța cu o floare.',watered:'floarea este deja udată. Mergem la următoarea!',command:'această comandă nu este disponibilă pe hartă.'};
-    problems.energy='bateria este goală. Încercăm din nou de la ultima stație, cu bateria plină.';problems.stop='mai întâi vizităm steaua, apoi ajungem acasă.';
+    problems.energy='bateria este goală. Încercăm din nou de la ultima stație, cu bateria plină.';problems.stop=map.stops&&map.stops.length>1?'mai întâi vizităm toate stelele, apoi ajungem acasă.':'mai întâi vizităm steaua, apoi ajungem acasă.';
     const problem=(result.reason==='flowers'?'mai avem flori de îngrijit înainte să ajungem la căsuță.':problems[result.reason]||problems.command)+(steps[i].call?' Folosește „Desfă în comenzi” ca să repari această folosire a rețetei.':steps[i].count>1?' Folosește „Desfă în comenzi” ca să repari repetiția.':'');
     draw();mood('curious');A.play('retry');report('Pasul '+(i+1)+': '+problem,'error');return;
    }
@@ -385,7 +385,7 @@
    draw(Boolean(E.DIR[command]));A.play(result.collectedKey||result.activated||result.wateredFlower?'select':'step');
    if(result.collectedKey)report('Am luat cheia! Acum putem merge la cufăr.','success');
    if(result.recharged){mood('happy');report('Bateria este plină! Avem din nou '+world.energy+' liniuțe.','success');}
-   if(result.visitedStop)report('Am vizitat steaua! Acum mergem la căsuță.','success');
+   if(result.visitedStop)report(map.stops.every(p=>world.stops.includes(p))?'Am vizitat '+(map.stops.length>1?'toate stelele':'steaua')+'! Acum mergem la căsuță.':'Am vizitat o stea! Mai avem '+(map.stops.length-world.stops.length)+' de găsit.','success');
    if(result.activated){mood('happy');report('Maneta a coborât podul! Acum putem traversa râul.','success');}
    if(result.wateredFlower&&!result.decision){mood('happy');report(E.gateOpen(map,world)?(map.gate?'Toate florile au înflorit! Poarta s-a deschis.':'Florile au înflorit! Mergem la destinație.'):'Floarea a înflorit! Am udat '+world.watered.length+' din '+map.flowers.length+' flori.','success');}
    if(result.decision){if(result.wateredFlower)mood('happy');report(decisionAnswer(result.decision),result.decision.matched?'success':'');}
@@ -409,9 +409,10 @@
   else if(item.type==='repair')loadFree(item.map,item.program);
   else if(item.type==='predict')newPrediction({map:{...item.map},commands:[...item.program]});
   else if(item.type==='pack'){const m=P.get(item.pack,item.index);loadFree(m,m.missing?m.missing.program:[]);}
+  else if(item.type==='map')loadFree(JSON.parse(JSON.stringify(item.map)));
   // Each classroom activity is independent of home awards and can be opened directly.
   activePack=null;savedProgram=null;classLesson=activity.id;classVariant=resolved.index;classReturnView='game';setClassURL();showView('game');draw();
-  if(item.type==='pack')report(map.brief);
+  if(item.type==='pack'||item.type==='map')report(map.brief);
   if(item.type==='repair')report('Apasă „Pornește Robo” și privim cele două săgeți.');
  }
  function nextClass(){const i=T.activities.findIndex(a=>a.id===classLesson);if(i>=0&&i<T.activities.length-1)startClass(T.activities[i+1].id);else openClassPlan();}
@@ -443,7 +444,7 @@
   if(activity&&!homeMode){
    $('completion').hidden=true;
    $('game-title').textContent=activity.variants[classVariant].type==='pack'?activity.id+'. '+map.title:T.title(activity);$('activity-label').textContent=T.title(activity);$('map-label').textContent=T.variantTitle(activity,classVariant);
-   if(activity.variants[classVariant].type==='pack')$('mission-brief').textContent=map.brief;
+   if(['pack','map'].includes(activity.variants[classVariant].type))$('mission-brief').textContent=map.brief;
    const both=!map.routes||Object.keys(routeResults).length===map.routes.length;
    $('class-completion-message').textContent=!both?'Am testat un drum. Îl încercăm și pe celălalt!':mode==='predict'?'Am urmărit săgețile. Explicăm ce am observat.':'Am reușit împreună! Schimbăm copilul sau mergem mai departe.';
    $('class-completion-message').hidden=both;
@@ -491,8 +492,8 @@
  function drawAdventure(){
   const energy=Boolean(map.energy),fixed=Boolean(map.missing||map.routes);
   $('energy-panel').hidden=!energy;$('retry-energy').hidden=!energy||busy||won||(!executed&&!bump);
-  if(energy){$('key-legend').hidden=false;$('key-legend').textContent='⚡ Stație de încărcare';$('energy-count').textContent=world.energy+' / '+map.energy.capacity;$('energy-drawing').innerHTML=Array.from({length:map.energy.capacity},(_,i)=>'<span class="'+(i<world.energy?'charged':'')+'"></span>').join('');$('energy-drawing').setAttribute('aria-label','Baterie: '+world.energy+' din '+map.energy.capacity+' liniuțe');$('energy-panel').classList.toggle('empty',world.energy===0);$('retry-energy').textContent=energyCheckpoint&&energyCheckpoint.executed?'↶ Încercăm din nou de la stație':'↶ Încercăm din nou de la start';}
-  if(map.stops){$('mission-objectives').hidden=false;$('key-objective').textContent=(world.stops||[]).length?'✓ Stea vizitată':'1. ⭐ Vizităm steaua';$('chest-objective').textContent=won?'✓ Am ajuns acasă':'2. 🏡 Mergem acasă';$('key-objective').classList.toggle('complete',Boolean((world.stops||[]).length));$('chest-objective').classList.toggle('complete',won);}
+  if(energy){$('key-legend').hidden=false;$('key-legend').textContent=map.lever?'⚙ Manetă · ≈ Râu · ⚡ Stație':'⚡ Stație de încărcare';$('energy-count').textContent=world.energy+' / '+map.energy.capacity;$('energy-drawing').innerHTML=Array.from({length:map.energy.capacity},(_,i)=>'<span class="'+(i<world.energy?'charged':'')+'"></span>').join('');$('energy-drawing').setAttribute('aria-label','Baterie: '+world.energy+' din '+map.energy.capacity+' liniuțe');$('energy-panel').classList.toggle('empty',world.energy===0);$('retry-energy').textContent=energyCheckpoint&&energyCheckpoint.executed?'↶ Încercăm din nou de la stație':'↶ Încercăm din nou de la start';}
+  if(map.stops){const visited=(world.stops||[]).length,ready=map.stops.every(p=>(world.stops||[]).includes(p));$('mission-objectives').hidden=false;$('key-objective').textContent=map.stops.length>1?'⭐ '+visited+' din '+map.stops.length+' stele vizitate':ready?'✓ Stea vizitată':'1. ⭐ Vizităm steaua';$('chest-objective').textContent=won?'✓ Am ajuns acasă':'2. 🏡 Mergem acasă';$('key-objective').classList.toggle('complete',ready);$('chest-objective').classList.toggle('complete',won);}
   if(activePack){$('mission-brief').textContent=map.brief;$('activity-label').textContent=P.packs[activePack].title+' · '+(packIndex+1)+' din '+P.packs[activePack].maps.length;$('completion').hidden=true;}
   $('pack-completion').hidden=!activePack||!won;
   if(activePack&&won){const both=!map.routes||Object.keys(routeResults).length===map.routes.length,last=packIndex===P.packs[activePack].maps.length-1;$('pack-completion-message').textContent=!both?'Am testat un drum. Îl încercăm și pe celălalt!':activePack==='home'&&last&&diplomaReady()?'Am terminat cele șase misiuni. Diploma ne așteaptă!':'Am reușit! Putem explica drumul și încerca din nou.';$('pack-next').hidden=!both;$('pack-next').textContent=activePack==='home'&&last&&diplomaReady()?'🏅 Diploma mea':last?'Înapoi la aventuri':'Următoarea misiune →';}

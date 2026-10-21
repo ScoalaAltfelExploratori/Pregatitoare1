@@ -6,7 +6,7 @@ const P=require('../adventures');
 const E=require('../game-engine');
 
 test('classroom lessons include the gardens in order and omit removed activities',()=>{
- assert.deepEqual(T.activities.map(a=>a.id),Array.from({length:16},(_,i)=>String(i+1)));
+ assert.deepEqual(T.activities.map(a=>a.id),Array.from({length:22},(_,i)=>String(i+1)));
  assert.equal(T.find('9').variants[0].pack,'puzzles');
  assert.equal(T.findByType('break'),undefined);
  assert.equal(T.find('8').variants[0].index,4);
@@ -30,7 +30,7 @@ test('every classroom map points at an existing solvable activity and all curric
    assert.ok(C.choices(v.index).some(s=>s.id===v.stage),a.id+': '+v.stage);
    stages.add(v.index+':'+v.stage);m=C.get(v.index,v.stage);
   }else if(v.type==='pack')m=P.get(v.pack,v.index);
-  else if(v.type==='repair'||v.type==='predict')m=v.map;
+  else if(v.type==='repair'||v.type==='predict'||v.type==='map')m=v.map;
   if(m){const solution=E.solve(m);assert.ok(solution,a.title);assert.equal(E.evaluate(m,solution).outcome,'won');}
  }
  for(let i=0;i<C.count;i++)for(const stage of C.choices(i))assert.ok(stages.has(i+':'+stage.id),stage.id);
@@ -50,8 +50,8 @@ test('the repair lesson stops after one good step and has a one-arrow continuati
  assert.equal(T.findByType('predict').id,'3');assert.equal(T.findByType('detective'),undefined);
 });
 
-test('the final 4×4 lesson has several physical routes but only one viable energy route',()=>{
- const activity=T.activities.at(-1),v=activity.variants[0],map=P.get(v.pack,v.index);
+test('the 4×4 energy lesson has several physical routes but only one viable energy route',()=>{
+ const activity=T.find('16'),v=activity.variants[0],map=P.get(v.pack,v.index);
  assert.equal(activity.id,'16');assert.equal(map.size,4);
  assert.deepEqual(map.start,[0,3]);assert.deepEqual(map.goal,[3,0]);
  assert.deepEqual(map.energy,{capacity:4,chargers:['1,1']});
@@ -85,4 +85,41 @@ test('prediction comes before the top-right house, followed by the trees',()=>{
  assert.equal(E.solve(map).length,4);
  assert.equal(T.find('5').variants[0].stage,'one-tree');
  assert.equal(T.activities.some(a=>a.variants.some(v=>v.type==='detective')),false);
+});
+
+test('six larger maps fit the program limit and keep objects on reachable, distinct cells',()=>{
+ const added=T.activities.slice(16);
+ assert.deepEqual(added.map(a=>a.variants[0].map.size),[5,5,5,7,7,7]);
+ for(const a of added){
+  const m=a.variants[0].map,solution=E.solve(m),result=E.evaluate(m,solution);
+  assert.ok(solution.length>=12&&solution.length<=32,a.title);
+  assert.equal(result.outcome,'won',a.title);
+  const points=[m.start,m.goal,m.keyPosition,m.lever,m.gate,m.bridge].filter(Boolean).map(E.key)
+   .concat(m.flowers||[],m.stops||[],m.energy?.chargers||[]);
+  assert.equal(new Set(points).size,points.length,a.title+': objects must not overlap');
+  for(const p of [...points,...m.obstacles,...(m.water||[])])assert.ok(p.split(',').every(n=>Number(n)>=0&&Number(n)<m.size),a.title+': '+p);
+  for(const p of points){
+   assert.ok(!m.obstacles.includes(p),a.title+': object hidden by a tree');
+   if(!m.bridge||p!==E.key(m.bridge))assert.ok(!(m.water||[]).includes(p),a.title+': object hidden by water');
+  }
+  if(m.stops)assert.deepEqual(new Set(result.world.stops),new Set(m.stops));
+ }
+});
+
+test('larger maps require their advertised actions and cannot skip the key, flowers, stars or charging stops',()=>{
+ const map=id=>T.find(id).variants[0].map;
+ const key=map('17'),shortcut=E.solve({...key,keyPosition:undefined});
+ assert.equal(E.evaluate(key,shortcut).outcome,'locked');
+ for(const id of ['18','19','22'])assert.equal(E.solve({...map(id),actions:[]}),null,id+': the action is necessary');
+ const stars=map('21');
+ assert.equal(E.evaluate(stars,E.solve({...stars,stops:undefined})).outcome,'stop');
+ for(const id of ['20','22']){
+  const m=map(id);
+  assert.equal(E.solve({...m,energy:{...m.energy,chargers:[]}}),null);
+  for(const station of m.energy.chargers.slice(0,2)){
+   assert.equal(E.solve({...m,energy:{...m.energy,chargers:m.energy.chargers.filter(c=>c!==station)}}),null,id+': required station '+station);
+  }
+ }
+ const final=map('22'),trace=E.evaluate(final,E.solve(final)).trace.map(E.key);
+ assert.ok(trace.filter(p=>p===final.energy.chargers[0]).length>=2,'return to the first station after activating the lever');
 });
