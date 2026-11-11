@@ -1,0 +1,87 @@
+{
+  "project": "solutii/lectia_08/04_Rezerva_Trei_ipostaze.sjr",
+  "checks": [
+    {
+      "file": "p5_main1_start",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": false,
+      "stats": {
+        "iepuras1": {
+          "states": 21,
+          "min": 0.3,
+          "max": 0.7,
+          "last": {
+            "t": 11092,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.68, 0.68)",
+            "scale": 0.68,
+            "opacity": 1
+          },
+          "scaleResets": 2
+        }
+      }
+    },
+    {
+      "file": "p5_main1_freeze",
+      "pass": false,
+      "fixed_positions": true,
+      "ended": true,
+      "stats": {
+        "iepuras1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        }
+      },
+      "target_enlarged": false
+    },
+    {
+      "file": "p5_main2_start",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": false,
+      "stats": {
+        "iepuras1": {
+          "states": 21,
+          "min": 0.3,
+          "max": 0.7,
+          "last": {
+            "t": 11083,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.68, 0.68)",
+            "scale": 0.68,
+            "opacity": 1
+          },
+          "scaleResets": 2
+        }
+      }
+    },
+    {
+      "file": "p5_main2_freeze",
+      "pass": false,
+      "fixed_positions": true,
+      "ended": true,
+      "stats": {
+        "iepuras1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        }
+      },
+      "target_enlarged": false
+    }
+  ]
+}

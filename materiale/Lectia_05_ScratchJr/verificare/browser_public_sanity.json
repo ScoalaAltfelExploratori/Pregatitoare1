@@ -1,0 +1,20 @@
+{
+  "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+  "scope": "M3 import and completion only; detailed audio checks used local observation mirror",
+  "result": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ],
+    "title": "L05 Ritmuri M3 Salutul secret"
+  }
+}

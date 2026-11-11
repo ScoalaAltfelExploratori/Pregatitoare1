@@ -1,0 +1,93 @@
+{
+  "project": "solutii/lectia_09/04_Rezerva_Surpriza_optional.sjr",
+  "checks": [
+    {
+      "file": "p5_reopen_initialize",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 0,
+        "minge1": 0,
+        "iepuras1": 1
+      },
+      "observed": {}
+    },
+    {
+      "file": "p5_reopen_r1_fluture1_optional",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 0,
+        "minge1": 0,
+        "iepuras1": 1
+      },
+      "observed": {
+        "iepuras1": {
+          "minOpacity": 1,
+          "maxScale": 0.7,
+          "finalScale": 0.5
+        }
+      }
+    },
+    {
+      "file": "p5_reopen_r1_fluture1_first",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1,
+        "minge1": 0,
+        "iepuras1": 1
+      },
+      "observed": {}
+    },
+    {
+      "file": "p5_reopen_r1_fluture1_second",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1,
+        "minge1": 1,
+        "iepuras1": 1
+      },
+      "observed": {}
+    },
+    {
+      "file": "p5_reopen_r1_fluture1_final",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page2",
+      "opacity": {
+        "iepuras2": 1,
+        "minge2": 1
+      },
+      "observed": {
+        "iepuras2": {
+          "minOpacity": 1,
+          "maxScale": 0.7,
+          "finalScale": 0.5
+        }
+      }
+    },
+    {
+      "file": "p5_reopen_r1_fluture1_return",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 0,
+        "minge1": 0,
+        "iepuras1": 1
+      },
+      "observed": {}
+    }
+  ]
+}

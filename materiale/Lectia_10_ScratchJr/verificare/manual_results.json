@@ -1,0 +1,168 @@
+{
+  "name": "Completion message added after Repeat in the editor",
+  "prebuilt": "M2 Rabbit routine and Ball programs",
+  "added_via_ui": "Send Blue, connected after the whole Repeat",
+  "checks": [
+    {
+      "file": "manual_prepare",
+      "kind": "initial",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "manual_r1_first",
+      "kind": "first",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "manual_r1_second",
+      "kind": "second",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "manual_r1_performance",
+      "kind": "performance",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "rabbit": {
+          "peaks": 2,
+          "min": 0.5,
+          "max": 0.7,
+          "final": 0.5,
+          "lastChange": 3301.6999999284744
+        },
+        "minge2": {
+          "hiddenAt": 804.2999999523163,
+          "shownAt": 3880.7999999523163
+        }
+      },
+      "test_taps": [
+        {
+          "id": "minge2",
+          "at_ms": 435,
+          "opacity": 0.200002
+        },
+        {
+          "id": "minge2",
+          "at_ms": 2009,
+          "opacity": 0
+        }
+      ]
+    },
+    {
+      "file": "manual_r1_return",
+      "kind": "return",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "manual_r2_first",
+      "kind": "first",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "manual_r2_second",
+      "kind": "second",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "manual_r2_performance",
+      "kind": "performance",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "rabbit": {
+          "peaks": 2,
+          "min": 0.5,
+          "max": 0.7,
+          "final": 0.5,
+          "lastChange": 3341.399999976158
+        },
+        "minge2": {
+          "hiddenAt": 870.8000000715256,
+          "shownAt": 3893.7000000476837
+        }
+      },
+      "test_taps": [
+        {
+          "id": "minge2",
+          "at_ms": 430,
+          "opacity": 0.333335
+        },
+        {
+          "id": "minge2",
+          "at_ms": 1985,
+          "opacity": 0
+        }
+      ]
+    },
+    {
+      "file": "manual_r2_return",
+      "kind": "return",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,2810 @@
+{
+  "base": "http://127.0.0.1:8774/Pregatitoare1/",
+  "pages_and_documents_crawled": 67,
+  "urls_checked": 310,
+  "pass": true,
+  "checks": [
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/",
+      "path": "index.html",
+      "status": 200,
+      "bytes": 2567,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/adventures.js?v=lessons-v9",
+      "path": "adventures.js",
+      "status": 200,
+      "bytes": 4329,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/app.js?v=lessons-v10",
+      "path": "app.js",
+      "status": 200,
+      "bytes": 72305,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/classroom.js?v=lessons-v10",
+      "path": "classroom.js",
+      "status": 200,
+      "bytes": 10368,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/curriculum.js?v=lessons-v9",
+      "path": "curriculum.js",
+      "status": 200,
+      "bytes": 7901,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/diploma.js?v=lessons-v9",
+      "path": "diploma.js",
+      "status": 200,
+      "bytes": 2385,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/game-engine.js?v=lessons-v9",
+      "path": "game-engine.js",
+      "status": 200,
+      "bytes": 13414,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/index.html",
+      "path": "index.html",
+      "status": 200,
+      "bytes": 2567,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/legacy-links.js?v=course-menu-1",
+      "path": "legacy-links.js",
+      "status": 200,
+      "bytes": 660,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Arhiva_profesor/Lectia_03_Viteza_2026-11-09.zip",
+      "path": "materiale/Arhiva_profesor/Lectia_03_Viteza_2026-11-09.zip",
+      "status": 200,
+      "bytes": 889385,
+      "matches_local_file": true,
+      "content_type": "application/x-zip-compressed",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Arhiva_profesor/README.md",
+      "path": "materiale/Arhiva_profesor/README.md",
+      "status": 200,
+      "bytes": 341,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr.zip",
+      "path": "materiale/Lectia_01_ScratchJr.zip",
+      "status": 200,
+      "bytes": 1094959,
+      "matches_local_file": true,
+      "content_type": "application/x-zip-compressed",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/Cartonase_Lectia_01.pdf",
+      "path": "materiale/Lectia_01_ScratchJr/Cartonase_Lectia_01.pdf",
+      "status": 200,
+      "bytes": 83334,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/Ghid_profesor.md",
+      "path": "materiale/Lectia_01_ScratchJr/Ghid_profesor.md",
+      "status": 200,
+      "bytes": 11442,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/Ghid_profesor_Lectia_01.pdf",
+      "path": "materiale/Lectia_01_ScratchJr/Ghid_profesor_Lectia_01.pdf",
+      "status": 200,
+      "bytes": 87470,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/Import_si_testare_Lenovo.md",
+      "path": "materiale/Lectia_01_ScratchJr/Import_si_testare_Lenovo.md",
+      "status": 200,
+      "bytes": 2702,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/Observatii_dupa_lectie.md",
+      "path": "materiale/Lectia_01_ScratchJr/Observatii_dupa_lectie.md",
+      "status": 200,
+      "bytes": 1771,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/README.md",
+      "path": "materiale/Lectia_01_ScratchJr/README.md",
+      "status": 200,
+      "bytes": 7287,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/index.html",
+      "path": "materiale/Lectia_01_ScratchJr/index.html",
+      "status": 200,
+      "bytes": 4527,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/profesor_pc/README.md",
+      "path": "materiale/Lectia_01_ScratchJr/profesor_pc/README.md",
+      "status": 200,
+      "bytes": 1688,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/proiecte/01_Start.sjr",
+      "path": "materiale/Lectia_01_ScratchJr/proiecte/01_Start.sjr",
+      "status": 200,
+      "bytes": 3128,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/proiecte/02_Intalnirea.sjr",
+      "path": "materiale/Lectia_01_ScratchJr/proiecte/02_Intalnirea.sjr",
+      "status": 200,
+      "bytes": 3171,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/proiecte/03_Puzzle_Revenirea.sjr",
+      "path": "materiale/Lectia_01_ScratchJr/proiecte/03_Puzzle_Revenirea.sjr",
+      "status": 200,
+      "bytes": 3181,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/proiecte/04_Solutia_profesorului.sjr",
+      "path": "materiale/Lectia_01_ScratchJr/proiecte/04_Solutia_profesorului.sjr",
+      "status": 200,
+      "bytes": 3184,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/solutii/lectia_01/01_Misiunea_1_Intalnirea.sjr",
+      "path": "materiale/Lectia_01_ScratchJr/solutii/lectia_01/01_Misiunea_1_Intalnirea.sjr",
+      "status": 200,
+      "bytes": 3172,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/solutii/lectia_01/02_Misiunea_2_Revenirea.sjr",
+      "path": "materiale/Lectia_01_ScratchJr/solutii/lectia_01/02_Misiunea_2_Revenirea.sjr",
+      "status": 200,
+      "bytes": 3179,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/solutii/lectia_01/03_Misiunea_3_Final_exemplu.sjr",
+      "path": "materiale/Lectia_01_ScratchJr/solutii/lectia_01/03_Misiunea_3_Final_exemplu.sjr",
+      "status": 200,
+      "bytes": 3189,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/solutii/lectia_01/README.md",
+      "path": "materiale/Lectia_01_ScratchJr/solutii/lectia_01/README.md",
+      "status": 200,
+      "bytes": 2681,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/01_start_android.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/01_start_android.png",
+      "status": 200,
+      "bytes": 49602,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/02_intalnirea_android.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/02_intalnirea_android.png",
+      "status": 200,
+      "bytes": 54730,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/README.md",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/README.md",
+      "status": 200,
+      "bytes": 7080,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_01_start.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_01_start.png",
+      "status": 200,
+      "bytes": 76588,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_02_intalnirea.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_02_intalnirea.png",
+      "status": 200,
+      "bytes": 79766,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_03_puzzle_revenirea.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_03_puzzle_revenirea.png",
+      "status": 200,
+      "bytes": 79851,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_04_solutia_profesorului.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_04_solutia_profesorului.png",
+      "status": 200,
+      "bytes": 81084,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_05_solutie_m1.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_05_solutie_m1.png",
+      "status": 200,
+      "bytes": 79836,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_06_solutie_m2.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_06_solutie_m2.png",
+      "status": 200,
+      "bytes": 90626,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_07_solutie_m3.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_07_solutie_m3.png",
+      "status": 200,
+      "bytes": 82290,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_blocuri_construite.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_blocuri_construite.png",
+      "status": 200,
+      "bytes": 76737,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_observatii.json",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_observatii.json",
+      "status": 200,
+      "bytes": 24087,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_puzzle_dificil.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_puzzle_dificil.png",
+      "status": 200,
+      "bytes": 82291,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_puzzle_observatii.json",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_puzzle_observatii.json",
+      "status": 200,
+      "bytes": 126169,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/browser_reparatie_manuala.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/browser_reparatie_manuala.png",
+      "status": 200,
+      "bytes": 77312,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/desktop_02_intalnirea.png",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/desktop_02_intalnirea.png",
+      "status": 200,
+      "bytes": 91520,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/verificare/rezultate.json",
+      "path": "materiale/Lectia_01_ScratchJr/verificare/rezultate.json",
+      "status": 200,
+      "bytes": 5646,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr.zip",
+      "path": "materiale/Lectia_02_ScratchJr.zip",
+      "status": 200,
+      "bytes": 963521,
+      "matches_local_file": true,
+      "content_type": "application/x-zip-compressed",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/Cartonase_Lectia_02.pdf",
+      "path": "materiale/Lectia_02_ScratchJr/Cartonase_Lectia_02.pdf",
+      "status": 200,
+      "bytes": 82943,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/Ghid_profesor.md",
+      "path": "materiale/Lectia_02_ScratchJr/Ghid_profesor.md",
+      "status": 200,
+      "bytes": 11061,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/Ghid_profesor_Lectia_02.pdf",
+      "path": "materiale/Lectia_02_ScratchJr/Ghid_profesor_Lectia_02.pdf",
+      "status": 200,
+      "bytes": 87478,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/Observatii_dupa_lectie.md",
+      "path": "materiale/Lectia_02_ScratchJr/Observatii_dupa_lectie.md",
+      "status": 200,
+      "bytes": 1739,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/README.md",
+      "path": "materiale/Lectia_02_ScratchJr/README.md",
+      "status": 200,
+      "bytes": 5040,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/index.html",
+      "path": "materiale/Lectia_02_ScratchJr/index.html",
+      "status": 200,
+      "bytes": 4525,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/proiecte/00_Demo_Repeat.sjr",
+      "path": "materiale/Lectia_02_ScratchJr/proiecte/00_Demo_Repeat.sjr",
+      "status": 200,
+      "bytes": 3408,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/proiecte/01_Start.sjr",
+      "path": "materiale/Lectia_02_ScratchJr/proiecte/01_Start.sjr",
+      "status": 200,
+      "bytes": 3369,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/solutii/lectia_02/01_Trei_patrulari.sjr",
+      "path": "materiale/Lectia_02_ScratchJr/solutii/lectia_02/01_Trei_patrulari.sjr",
+      "status": 200,
+      "bytes": 3426,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/solutii/lectia_02/02_Sase_patratele.sjr",
+      "path": "materiale/Lectia_02_ScratchJr/solutii/lectia_02/02_Sase_patratele.sjr",
+      "status": 200,
+      "bytes": 3419,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/solutii/lectia_02/03_Expeditia_dus_intors.sjr",
+      "path": "materiale/Lectia_02_ScratchJr/solutii/lectia_02/03_Expeditia_dus_intors.sjr",
+      "status": 200,
+      "bytes": 3440,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/solutii/lectia_02/README.md",
+      "path": "materiale/Lectia_02_ScratchJr/solutii/lectia_02/README.md",
+      "status": 200,
+      "bytes": 2533,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/README.md",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/README.md",
+      "status": 200,
+      "bytes": 4457,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/browser_00_demo.png",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/browser_00_demo.png",
+      "status": 200,
+      "bytes": 80899,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/browser_01_start.png",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/browser_01_start.png",
+      "status": 200,
+      "bytes": 76741,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/browser_02_m1.png",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/browser_02_m1.png",
+      "status": 200,
+      "bytes": 83512,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/browser_03_m2.png",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/browser_03_m2.png",
+      "status": 200,
+      "bytes": 82247,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/browser_04_m3.png",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/browser_04_m3.png",
+      "status": 200,
+      "bytes": 85394,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/browser_editare.json",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/browser_editare.json",
+      "status": 200,
+      "bytes": 11868,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/browser_expeditia_grila.png",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/browser_expeditia_grila.png",
+      "status": 200,
+      "bytes": 95493,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/browser_grila_start.png",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/browser_grila_start.png",
+      "status": 200,
+      "bytes": 86012,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/browser_observatii.json",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/browser_observatii.json",
+      "status": 200,
+      "bytes": 134880,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/browser_repeat_construit.png",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/browser_repeat_construit.png",
+      "status": 200,
+      "bytes": 83795,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/verificare/rezultate.json",
+      "path": "materiale/Lectia_02_ScratchJr/verificare/rezultate.json",
+      "status": 200,
+      "bytes": 2679,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr.zip",
+      "path": "materiale/Lectia_03_ScratchJr.zip",
+      "status": 200,
+      "bytes": 1863408,
+      "matches_local_file": true,
+      "content_type": "application/x-zip-compressed",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/Cartonase_Lectia_03.pdf",
+      "path": "materiale/Lectia_03_ScratchJr/Cartonase_Lectia_03.pdf",
+      "status": 200,
+      "bytes": 89756,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/Ghid_profesor.md",
+      "path": "materiale/Lectia_03_ScratchJr/Ghid_profesor.md",
+      "status": 200,
+      "bytes": 11426,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/Ghid_profesor_Lectia_03.pdf",
+      "path": "materiale/Lectia_03_ScratchJr/Ghid_profesor_Lectia_03.pdf",
+      "status": 200,
+      "bytes": 87049,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/Observatii_dupa_lectie.md",
+      "path": "materiale/Lectia_03_ScratchJr/Observatii_dupa_lectie.md",
+      "status": 200,
+      "bytes": 1673,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/README.md",
+      "path": "materiale/Lectia_03_ScratchJr/README.md",
+      "status": 200,
+      "bytes": 5013,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/index.html",
+      "path": "materiale/Lectia_03_ScratchJr/index.html",
+      "status": 200,
+      "bytes": 5402,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/proiecte/00_Demo_Atingere.sjr",
+      "path": "materiale/Lectia_03_ScratchJr/proiecte/00_Demo_Atingere.sjr",
+      "status": 200,
+      "bytes": 3502,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/proiecte/01_Start_Magie.sjr",
+      "path": "materiale/Lectia_03_ScratchJr/proiecte/01_Start_Magie.sjr",
+      "status": 200,
+      "bytes": 3473,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/solutii/lectia_03/01_Urias_si_pitic.sjr",
+      "path": "materiale/Lectia_03_ScratchJr/solutii/lectia_03/01_Urias_si_pitic.sjr",
+      "status": 200,
+      "bytes": 3505,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/solutii/lectia_03/02_Dispar_si_revin.sjr",
+      "path": "materiale/Lectia_03_ScratchJr/solutii/lectia_03/02_Dispar_si_revin.sjr",
+      "status": 200,
+      "bytes": 3524,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/solutii/lectia_03/03_Trucul_complet.sjr",
+      "path": "materiale/Lectia_03_ScratchJr/solutii/lectia_03/03_Trucul_complet.sjr",
+      "status": 200,
+      "bytes": 3543,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/solutii/lectia_03/04_Rezerva_Al_treilea_secret.sjr",
+      "path": "materiale/Lectia_03_ScratchJr/solutii/lectia_03/04_Rezerva_Al_treilea_secret.sjr",
+      "status": 200,
+      "bytes": 3642,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/solutii/lectia_03/05_Rezerva_Cinci_blocuri.sjr",
+      "path": "materiale/Lectia_03_ScratchJr/solutii/lectia_03/05_Rezerva_Cinci_blocuri.sjr",
+      "status": 200,
+      "bytes": 3637,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/solutii/lectia_03/README.md",
+      "path": "materiale/Lectia_03_ScratchJr/solutii/lectia_03/README.md",
+      "status": 200,
+      "bytes": 2533,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/01_Urias_si_pitic.png",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/01_Urias_si_pitic.png",
+      "status": 200,
+      "bytes": 81317,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/02_Dispar_si_revin.png",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/02_Dispar_si_revin.png",
+      "status": 200,
+      "bytes": 83576,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/03_Trucul_complet.png",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/03_Trucul_complet.png",
+      "status": 200,
+      "bytes": 87151,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/03_Trucul_complet_manual.png",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/03_Trucul_complet_manual.png",
+      "status": 200,
+      "bytes": 84331,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/04_Rezerva_Al_treilea_secret.png",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/04_Rezerva_Al_treilea_secret.png",
+      "status": 200,
+      "bytes": 89343,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/05_Rezerva_Cinci_blocuri.png",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/05_Rezerva_Cinci_blocuri.png",
+      "status": 200,
+      "bytes": 88826,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/README.md",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/README.md",
+      "status": 200,
+      "bytes": 6428,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/browser_magie_constructie_manuala.json",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/browser_magie_constructie_manuala.json",
+      "status": 200,
+      "bytes": 77198,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/browser_magie_observatii.json",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/browser_magie_observatii.json",
+      "status": 200,
+      "bytes": 730864,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/browser_magie_persistenta.json",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/browser_magie_persistenta.json",
+      "status": 200,
+      "bytes": 485,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/browser_magie_redeschidere.json",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/browser_magie_redeschidere.json",
+      "status": 200,
+      "bytes": 184430,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/index_materiale.png",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/index_materiale.png",
+      "status": 200,
+      "bytes": 82028,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/verificare/rezultate.json",
+      "path": "materiale/Lectia_03_ScratchJr/verificare/rezultate.json",
+      "status": 200,
+      "bytes": 3122,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr.zip",
+      "path": "materiale/Lectia_04_ScratchJr.zip",
+      "status": 200,
+      "bytes": 1106780,
+      "matches_local_file": true,
+      "content_type": "application/x-zip-compressed",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/Cartonase_Lectia_04.pdf",
+      "path": "materiale/Lectia_04_ScratchJr/Cartonase_Lectia_04.pdf",
+      "status": 200,
+      "bytes": 91552,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/Ghid_profesor.md",
+      "path": "materiale/Lectia_04_ScratchJr/Ghid_profesor.md",
+      "status": 200,
+      "bytes": 11270,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/Ghid_profesor_Lectia_04.pdf",
+      "path": "materiale/Lectia_04_ScratchJr/Ghid_profesor_Lectia_04.pdf",
+      "status": 200,
+      "bytes": 87058,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/Observatii_dupa_lectie.md",
+      "path": "materiale/Lectia_04_ScratchJr/Observatii_dupa_lectie.md",
+      "status": 200,
+      "bytes": 959,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/README.md",
+      "path": "materiale/Lectia_04_ScratchJr/README.md",
+      "status": 200,
+      "bytes": 5173,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/index.html",
+      "path": "materiale/Lectia_04_ScratchJr/index.html",
+      "status": 200,
+      "bytes": 5243,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/proiecte/00_Demo_Mesaj.sjr",
+      "path": "materiale/Lectia_04_ScratchJr/proiecte/00_Demo_Mesaj.sjr",
+      "status": 200,
+      "bytes": 3548,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/proiecte/01_Start_Telecomanda.sjr",
+      "path": "materiale/Lectia_04_ScratchJr/proiecte/01_Start_Telecomanda.sjr",
+      "status": 200,
+      "bytes": 3498,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/solutii/lectia_04/01_Magia_la_distanta.sjr",
+      "path": "materiale/Lectia_04_ScratchJr/solutii/lectia_04/01_Magia_la_distanta.sjr",
+      "status": 200,
+      "bytes": 3565,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/solutii/lectia_04/02_Doua_butoane.sjr",
+      "path": "materiale/Lectia_04_ScratchJr/solutii/lectia_04/02_Doua_butoane.sjr",
+      "status": 200,
+      "bytes": 3662,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/solutii/lectia_04/03_Spectacolul_in_lant.sjr",
+      "path": "materiale/Lectia_04_ScratchJr/solutii/lectia_04/03_Spectacolul_in_lant.sjr",
+      "status": 200,
+      "bytes": 3652,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/solutii/lectia_04/04_Rezerva_Un_semnal.sjr",
+      "path": "materiale/Lectia_04_ScratchJr/solutii/lectia_04/04_Rezerva_Un_semnal.sjr",
+      "status": 200,
+      "bytes": 3645,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/solutii/lectia_04/05_Rezerva_Va_ascunselea.sjr",
+      "path": "materiale/Lectia_04_ScratchJr/solutii/lectia_04/05_Rezerva_Va_ascunselea.sjr",
+      "status": 200,
+      "bytes": 3636,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/solutii/lectia_04/README.md",
+      "path": "materiale/Lectia_04_ScratchJr/solutii/lectia_04/README.md",
+      "status": 200,
+      "bytes": 3333,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/00_Demo_Mesaj.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/00_Demo_Mesaj.png",
+      "status": 200,
+      "bytes": 80522,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/01_Magia_la_distanta.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/01_Magia_la_distanta.png",
+      "status": 200,
+      "bytes": 80499,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/01_Start_Telecomanda.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/01_Start_Telecomanda.png",
+      "status": 200,
+      "bytes": 78413,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/02_Doua_butoane.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/02_Doua_butoane.png",
+      "status": 200,
+      "bytes": 82682,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/02_Doua_butoane_programe.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/02_Doua_butoane_programe.png",
+      "status": 200,
+      "bytes": 90106,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/03_Spectacolul_in_lant.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/03_Spectacolul_in_lant.png",
+      "status": 200,
+      "bytes": 86685,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/04_Rezerva_Un_semnal.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/04_Rezerva_Un_semnal.png",
+      "status": 200,
+      "bytes": 82759,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/05_Rezerva_Va_ascunselea.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/05_Rezerva_Va_ascunselea.png",
+      "status": 200,
+      "bytes": 82684,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/README.md",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/README.md",
+      "status": 200,
+      "bytes": 7325,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/browser_index.json",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/browser_index.json",
+      "status": 200,
+      "bytes": 600,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/browser_mesaje_constructie_manuala.json",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/browser_mesaje_constructie_manuala.json",
+      "status": 200,
+      "bytes": 29886,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/browser_mesaje_initial.json",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/browser_mesaje_initial.json",
+      "status": 200,
+      "bytes": 70696,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/browser_mesaje_observatii.json",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/browser_mesaje_observatii.json",
+      "status": 200,
+      "bytes": 723714,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/browser_mesaje_persistenta.json",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/browser_mesaje_persistenta.json",
+      "status": 200,
+      "bytes": 543,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/browser_mesaje_redeschidere.json",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/browser_mesaje_redeschidere.json",
+      "status": 200,
+      "bytes": 275484,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/index_materiale.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/index_materiale.png",
+      "status": 200,
+      "bytes": 81774,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/index_programe.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/index_programe.png",
+      "status": 200,
+      "bytes": 83311,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/manual_destinatar_albastru.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/manual_destinatar_albastru.png",
+      "status": 200,
+      "bytes": 79265,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/manual_expeditor_albastru.png",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/manual_expeditor_albastru.png",
+      "status": 200,
+      "bytes": 78619,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/verificare/rezultate.json",
+      "path": "materiale/Lectia_04_ScratchJr/verificare/rezultate.json",
+      "status": 200,
+      "bytes": 3990,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr.zip",
+      "path": "materiale/Lectia_05_ScratchJr.zip",
+      "status": 200,
+      "bytes": 1591808,
+      "matches_local_file": true,
+      "content_type": "application/x-zip-compressed",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/Cartonase_Lectia_05.pdf",
+      "path": "materiale/Lectia_05_ScratchJr/Cartonase_Lectia_05.pdf",
+      "status": 200,
+      "bytes": 90063,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/Ghid_profesor.md",
+      "path": "materiale/Lectia_05_ScratchJr/Ghid_profesor.md",
+      "status": 200,
+      "bytes": 10693,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/Ghid_profesor_Lectia_05.pdf",
+      "path": "materiale/Lectia_05_ScratchJr/Ghid_profesor_Lectia_05.pdf",
+      "status": 200,
+      "bytes": 86661,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/Observatii_dupa_lectie.md",
+      "path": "materiale/Lectia_05_ScratchJr/Observatii_dupa_lectie.md",
+      "status": 200,
+      "bytes": 632,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/README.md",
+      "path": "materiale/Lectia_05_ScratchJr/README.md",
+      "status": 200,
+      "bytes": 4878,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/index.html",
+      "path": "materiale/Lectia_05_ScratchJr/index.html",
+      "status": 200,
+      "bytes": 5473,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/proiecte/00_Demo_Pop.sjr",
+      "path": "materiale/Lectia_05_ScratchJr/proiecte/00_Demo_Pop.sjr",
+      "status": 200,
+      "bytes": 3061,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/proiecte/01_Start_Ritmuri.sjr",
+      "path": "materiale/Lectia_05_ScratchJr/proiecte/01_Start_Ritmuri.sjr",
+      "status": 200,
+      "bytes": 3035,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/solutii/lectia_05/01_Codul_secret.sjr",
+      "path": "materiale/Lectia_05_ScratchJr/solutii/lectia_05/01_Codul_secret.sjr",
+      "status": 200,
+      "bytes": 3090,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/solutii/lectia_05/02_Patru_sunete_doua_ritmuri.sjr",
+      "path": "materiale/Lectia_05_ScratchJr/solutii/lectia_05/02_Patru_sunete_doua_ritmuri.sjr",
+      "status": 200,
+      "bytes": 3115,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/solutii/lectia_05/03_Salutul_secret.sjr",
+      "path": "materiale/Lectia_05_ScratchJr/solutii/lectia_05/03_Salutul_secret.sjr",
+      "status": 200,
+      "bytes": 3124,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/solutii/lectia_05/04_Rezerva_Ecoul.sjr",
+      "path": "materiale/Lectia_05_ScratchJr/solutii/lectia_05/04_Rezerva_Ecoul.sjr",
+      "status": 200,
+      "bytes": 3112,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/solutii/lectia_05/05_Rezerva_Sapte_sunete.sjr",
+      "path": "materiale/Lectia_05_ScratchJr/solutii/lectia_05/05_Rezerva_Sapte_sunete.sjr",
+      "status": 200,
+      "bytes": 3103,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/solutii/lectia_05/README.md",
+      "path": "materiale/Lectia_05_ScratchJr/solutii/lectia_05/README.md",
+      "status": 200,
+      "bytes": 2618,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/03_Salutul_secret_public.png",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/03_Salutul_secret_public.png",
+      "status": 200,
+      "bytes": 88638,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/README.md",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/README.md",
+      "status": 200,
+      "bytes": 7779,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/analiza_audio.json",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/analiza_audio.json",
+      "status": 200,
+      "bytes": 14128,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/audio/exemplu_cod_secret.wav",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/audio/exemplu_cod_secret.wav",
+      "status": 200,
+      "bytes": 292364,
+      "matches_local_file": true,
+      "content_type": "audio/wav",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/audio/exemplu_salut_secret.wav",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/audio/exemplu_salut_secret.wav",
+      "status": 200,
+      "bytes": 687884,
+      "matches_local_file": true,
+      "content_type": "audio/wav",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/browser_index.json",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/browser_index.json",
+      "status": 200,
+      "bytes": 1128,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/browser_public_sanity.json",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/browser_public_sanity.json",
+      "status": 200,
+      "bytes": 576,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/browser_ritmuri_constructie_manuala.json",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/browser_ritmuri_constructie_manuala.json",
+      "status": 200,
+      "bytes": 4147,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/browser_ritmuri_observatii.json",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/browser_ritmuri_observatii.json",
+      "status": 200,
+      "bytes": 67562,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/browser_ritmuri_persistenta.json",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/browser_ritmuri_persistenta.json",
+      "status": 200,
+      "bytes": 490,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/browser_ritmuri_redeschidere.json",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/browser_ritmuri_redeschidere.json",
+      "status": 200,
+      "bytes": 26072,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/constructie_manuala.png",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/constructie_manuala.png",
+      "status": 200,
+      "bytes": 81937,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/index_materiale.png",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/index_materiale.png",
+      "status": 200,
+      "bytes": 73323,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/instrumente/analyze_audio.py",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/instrumente/analyze_audio.py",
+      "status": 200,
+      "bytes": 2667,
+      "matches_local_file": true,
+      "content_type": "text/x-python",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/instrumente/browser_server.py",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/instrumente/browser_server.py",
+      "status": 200,
+      "bytes": 2099,
+      "matches_local_file": true,
+      "content_type": "text/x-python",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "status": 200,
+      "bytes": 4123,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "status": 200,
+      "bytes": 36543,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/verificare/rezultate.json",
+      "path": "materiale/Lectia_05_ScratchJr/verificare/rezultate.json",
+      "status": 200,
+      "bytes": 11713,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr.zip",
+      "path": "materiale/Lectia_06_ScratchJr.zip",
+      "status": 200,
+      "bytes": 1029649,
+      "matches_local_file": true,
+      "content_type": "application/x-zip-compressed",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/Cartonase_Lectia_06.pdf",
+      "path": "materiale/Lectia_06_ScratchJr/Cartonase_Lectia_06.pdf",
+      "status": 200,
+      "bytes": 90204,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/Ghid_profesor.md",
+      "path": "materiale/Lectia_06_ScratchJr/Ghid_profesor.md",
+      "status": 200,
+      "bytes": 9798,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/Ghid_profesor_Lectia_06.pdf",
+      "path": "materiale/Lectia_06_ScratchJr/Ghid_profesor_Lectia_06.pdf",
+      "status": 200,
+      "bytes": 86171,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/Observatii_dupa_lectie.md",
+      "path": "materiale/Lectia_06_ScratchJr/Observatii_dupa_lectie.md",
+      "status": 200,
+      "bytes": 767,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/README.md",
+      "path": "materiale/Lectia_06_ScratchJr/README.md",
+      "status": 200,
+      "bytes": 3009,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/index.html",
+      "path": "materiale/Lectia_06_ScratchJr/index.html",
+      "status": 200,
+      "bytes": 5196,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/proiecte/00_Demo_Contact.sjr",
+      "path": "materiale/Lectia_06_ScratchJr/proiecte/00_Demo_Contact.sjr",
+      "status": 200,
+      "bytes": 3675,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/proiecte/01_Start_Parc.sjr",
+      "path": "materiale/Lectia_06_ScratchJr/proiecte/01_Start_Parc.sjr",
+      "status": 200,
+      "bytes": 3640,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/solutii/lectia_06/01_Trezeste_paznicul.sjr",
+      "path": "materiale/Lectia_06_ScratchJr/solutii/lectia_06/01_Trezeste_paznicul.sjr",
+      "status": 200,
+      "bytes": 3700,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/solutii/lectia_06/02_Doua_vizite.sjr",
+      "path": "materiale/Lectia_06_ScratchJr/solutii/lectia_06/02_Doua_vizite.sjr",
+      "status": 200,
+      "bytes": 3759,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/solutii/lectia_06/03_Reactia_in_lant.sjr",
+      "path": "materiale/Lectia_06_ScratchJr/solutii/lectia_06/03_Reactia_in_lant.sjr",
+      "status": 200,
+      "bytes": 3763,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/solutii/lectia_06/04_Rezerva_Comoara.sjr",
+      "path": "materiale/Lectia_06_ScratchJr/solutii/lectia_06/04_Rezerva_Comoara.sjr",
+      "status": 200,
+      "bytes": 3695,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/solutii/lectia_06/05_Rezerva_Alarma.sjr",
+      "path": "materiale/Lectia_06_ScratchJr/solutii/lectia_06/05_Rezerva_Alarma.sjr",
+      "status": 200,
+      "bytes": 3790,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/solutii/lectia_06/README.md",
+      "path": "materiale/Lectia_06_ScratchJr/solutii/lectia_06/README.md",
+      "status": 200,
+      "bytes": 1883,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/verificare/03_Puzzle_dificil.png",
+      "path": "materiale/Lectia_06_ScratchJr/verificare/03_Puzzle_dificil.png",
+      "status": 200,
+      "bytes": 88968,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/verificare/README.md",
+      "path": "materiale/Lectia_06_ScratchJr/verificare/README.md",
+      "status": 200,
+      "bytes": 4607,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/verificare/analiza_audio.json",
+      "path": "materiale/Lectia_06_ScratchJr/verificare/analiza_audio.json",
+      "status": 200,
+      "bytes": 2855,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/verificare/browser_results.json",
+      "path": "materiale/Lectia_06_ScratchJr/verificare/browser_results.json",
+      "status": 200,
+      "bytes": 16047,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/verificare/gallery_persistence.json",
+      "path": "materiale/Lectia_06_ScratchJr/verificare/gallery_persistence.json",
+      "status": 200,
+      "bytes": 617,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/verificare/instrumente/browser_server.py",
+      "path": "materiale/Lectia_06_ScratchJr/verificare/instrumente/browser_server.py",
+      "status": 200,
+      "bytes": 2108,
+      "matches_local_file": true,
+      "content_type": "text/x-python",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "path": "materiale/Lectia_06_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "status": 200,
+      "bytes": 4860,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "path": "materiale/Lectia_06_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "status": 200,
+      "bytes": 32949,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/verificare/manual_results.json",
+      "path": "materiale/Lectia_06_ScratchJr/verificare/manual_results.json",
+      "status": 200,
+      "bytes": 810,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/verificare/rezultate.json",
+      "path": "materiale/Lectia_06_ScratchJr/verificare/rezultate.json",
+      "status": 200,
+      "bytes": 2441,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr.zip",
+      "path": "materiale/Lectia_07_ScratchJr.zip",
+      "status": 200,
+      "bytes": 915006,
+      "matches_local_file": true,
+      "content_type": "application/x-zip-compressed",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/Cartonase_Lectia_07.pdf",
+      "path": "materiale/Lectia_07_ScratchJr/Cartonase_Lectia_07.pdf",
+      "status": 200,
+      "bytes": 85832,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/Ghid_profesor.md",
+      "path": "materiale/Lectia_07_ScratchJr/Ghid_profesor.md",
+      "status": 200,
+      "bytes": 9825,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/Ghid_profesor_Lectia_07.pdf",
+      "path": "materiale/Lectia_07_ScratchJr/Ghid_profesor_Lectia_07.pdf",
+      "status": 200,
+      "bytes": 86272,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/Observatii_dupa_lectie.md",
+      "path": "materiale/Lectia_07_ScratchJr/Observatii_dupa_lectie.md",
+      "status": 200,
+      "bytes": 767,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/README.md",
+      "path": "materiale/Lectia_07_ScratchJr/README.md",
+      "status": 200,
+      "bytes": 3078,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/index.html",
+      "path": "materiale/Lectia_07_ScratchJr/index.html",
+      "status": 200,
+      "bytes": 5392,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/proiecte/00_Demo_Pagina.sjr",
+      "path": "materiale/Lectia_07_ScratchJr/proiecte/00_Demo_Pagina.sjr",
+      "status": 200,
+      "bytes": 3341,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/proiecte/01_Start_Poveste.sjr",
+      "path": "materiale/Lectia_07_ScratchJr/proiecte/01_Start_Poveste.sjr",
+      "status": 200,
+      "bytes": 3313,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/solutii/lectia_07/01_Portalul.sjr",
+      "path": "materiale/Lectia_07_ScratchJr/solutii/lectia_07/01_Portalul.sjr",
+      "status": 200,
+      "bytes": 3350,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/solutii/lectia_07/02_Dus_intors.sjr",
+      "path": "materiale/Lectia_07_ScratchJr/solutii/lectia_07/02_Dus_intors.sjr",
+      "status": 200,
+      "bytes": 3413,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/solutii/lectia_07/03_Doua_finaluri.sjr",
+      "path": "materiale/Lectia_07_ScratchJr/solutii/lectia_07/03_Doua_finaluri.sjr",
+      "status": 200,
+      "bytes": 3515,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/solutii/lectia_07/04_Rezerva_Finalul_singur.sjr",
+      "path": "materiale/Lectia_07_ScratchJr/solutii/lectia_07/04_Rezerva_Finalul_singur.sjr",
+      "status": 200,
+      "bytes": 3530,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/solutii/lectia_07/05_Rezerva_Trei_opriri.sjr",
+      "path": "materiale/Lectia_07_ScratchJr/solutii/lectia_07/05_Rezerva_Trei_opriri.sjr",
+      "status": 200,
+      "bytes": 3511,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/solutii/lectia_07/README.md",
+      "path": "materiale/Lectia_07_ScratchJr/solutii/lectia_07/README.md",
+      "status": 200,
+      "bytes": 2427,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/verificare/03_Puzzle_dificil.png",
+      "path": "materiale/Lectia_07_ScratchJr/verificare/03_Puzzle_dificil.png",
+      "status": 200,
+      "bytes": 87454,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/verificare/README.md",
+      "path": "materiale/Lectia_07_ScratchJr/verificare/README.md",
+      "status": 200,
+      "bytes": 4662,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/verificare/browser_results.json",
+      "path": "materiale/Lectia_07_ScratchJr/verificare/browser_results.json",
+      "status": 200,
+      "bytes": 11269,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/verificare/gallery_persistence.json",
+      "path": "materiale/Lectia_07_ScratchJr/verificare/gallery_persistence.json",
+      "status": 200,
+      "bytes": 631,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/verificare/instrumente/browser_server.py",
+      "path": "materiale/Lectia_07_ScratchJr/verificare/instrumente/browser_server.py",
+      "status": 200,
+      "bytes": 2108,
+      "matches_local_file": true,
+      "content_type": "text/x-python",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "path": "materiale/Lectia_07_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "status": 200,
+      "bytes": 4860,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "path": "materiale/Lectia_07_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "status": 200,
+      "bytes": 32949,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/verificare/manual_results.json",
+      "path": "materiale/Lectia_07_ScratchJr/verificare/manual_results.json",
+      "status": 200,
+      "bytes": 551,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/verificare/rezultate.json",
+      "path": "materiale/Lectia_07_ScratchJr/verificare/rezultate.json",
+      "status": 200,
+      "bytes": 2465,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr.zip",
+      "path": "materiale/Lectia_08_ScratchJr.zip",
+      "status": 200,
+      "bytes": 1268280,
+      "matches_local_file": true,
+      "content_type": "application/x-zip-compressed",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/Cartonase_Lectia_08.pdf",
+      "path": "materiale/Lectia_08_ScratchJr/Cartonase_Lectia_08.pdf",
+      "status": 200,
+      "bytes": 92195,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/Ghid_profesor.md",
+      "path": "materiale/Lectia_08_ScratchJr/Ghid_profesor.md",
+      "status": 200,
+      "bytes": 10612,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/Ghid_profesor_Lectia_08.pdf",
+      "path": "materiale/Lectia_08_ScratchJr/Ghid_profesor_Lectia_08.pdf",
+      "status": 200,
+      "bytes": 86806,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/Observatii_dupa_lectie.md",
+      "path": "materiale/Lectia_08_ScratchJr/Observatii_dupa_lectie.md",
+      "status": 200,
+      "bytes": 760,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/README.md",
+      "path": "materiale/Lectia_08_ScratchJr/README.md",
+      "status": 200,
+      "bytes": 4009,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/index.html",
+      "path": "materiale/Lectia_08_ScratchJr/index.html",
+      "status": 200,
+      "bytes": 5541,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/proiecte/00_Demo_Statuie.sjr",
+      "path": "materiale/Lectia_08_ScratchJr/proiecte/00_Demo_Statuie.sjr",
+      "status": 200,
+      "bytes": 3352,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/proiecte/01_Start_Statui.sjr",
+      "path": "materiale/Lectia_08_ScratchJr/proiecte/01_Start_Statui.sjr",
+      "status": 200,
+      "bytes": 3310,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/solutii/lectia_08/01_Artistul_neobosit.sjr",
+      "path": "materiale/Lectia_08_ScratchJr/solutii/lectia_08/01_Artistul_neobosit.sjr",
+      "status": 200,
+      "bytes": 3386,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/solutii/lectia_08/02_Fiecare_cu_pauza_lui.sjr",
+      "path": "materiale/Lectia_08_ScratchJr/solutii/lectia_08/02_Fiecare_cu_pauza_lui.sjr",
+      "status": 200,
+      "bytes": 3422,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/solutii/lectia_08/03_Regizorul_statuilor.sjr",
+      "path": "materiale/Lectia_08_ScratchJr/solutii/lectia_08/03_Regizorul_statuilor.sjr",
+      "status": 200,
+      "bytes": 3556,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/solutii/lectia_08/04_Rezerva_Trei_ipostaze.sjr",
+      "path": "materiale/Lectia_08_ScratchJr/solutii/lectia_08/04_Rezerva_Trei_ipostaze.sjr",
+      "status": 200,
+      "bytes": 3413,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/solutii/lectia_08/05_Rezerva_Cortina_automata.sjr",
+      "path": "materiale/Lectia_08_ScratchJr/solutii/lectia_08/05_Rezerva_Cortina_automata.sjr",
+      "status": 200,
+      "bytes": 3568,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/solutii/lectia_08/README.md",
+      "path": "materiale/Lectia_08_ScratchJr/solutii/lectia_08/README.md",
+      "status": 200,
+      "bytes": 2912,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/03_Puzzle_dificil.png",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/03_Puzzle_dificil.png",
+      "status": 200,
+      "bytes": 98598,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/README.md",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/README.md",
+      "status": 200,
+      "bytes": 5963,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/additional_results.json",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/additional_results.json",
+      "status": 200,
+      "bytes": 3194,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/browser_index.json",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/browser_index.json",
+      "status": 200,
+      "bytes": 278,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/browser_results.json",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/browser_results.json",
+      "status": 200,
+      "bytes": 20310,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/constructie_manuala.png",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/constructie_manuala.png",
+      "status": 200,
+      "bytes": 93230,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/gallery_persistence.json",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/gallery_persistence.json",
+      "status": 200,
+      "bytes": 374,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/instrumente/browser_server.py",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/instrumente/browser_server.py",
+      "status": 200,
+      "bytes": 2099,
+      "matches_local_file": true,
+      "content_type": "text/x-python",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "status": 200,
+      "bytes": 4857,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "status": 200,
+      "bytes": 33201,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/manual_results.json",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/manual_results.json",
+      "status": 200,
+      "bytes": 2097,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/pagina_lectiei.png",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/pagina_lectiei.png",
+      "status": 200,
+      "bytes": 290749,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/verificare/rezultate.json",
+      "path": "materiale/Lectia_08_ScratchJr/verificare/rezultate.json",
+      "status": 200,
+      "bytes": 2790,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr.zip",
+      "path": "materiale/Lectia_09_ScratchJr.zip",
+      "status": 200,
+      "bytes": 1292011,
+      "matches_local_file": true,
+      "content_type": "application/x-zip-compressed",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/Cartonase_Lectia_09.pdf",
+      "path": "materiale/Lectia_09_ScratchJr/Cartonase_Lectia_09.pdf",
+      "status": 200,
+      "bytes": 90406,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/Ghid_profesor.md",
+      "path": "materiale/Lectia_09_ScratchJr/Ghid_profesor.md",
+      "status": 200,
+      "bytes": 9734,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/Ghid_profesor_Lectia_09.pdf",
+      "path": "materiale/Lectia_09_ScratchJr/Ghid_profesor_Lectia_09.pdf",
+      "status": 200,
+      "bytes": 85890,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/Observatii_dupa_lectie.md",
+      "path": "materiale/Lectia_09_ScratchJr/Observatii_dupa_lectie.md",
+      "status": 200,
+      "bytes": 860,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/README.md",
+      "path": "materiale/Lectia_09_ScratchJr/README.md",
+      "status": 200,
+      "bytes": 4075,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/index.html",
+      "path": "materiale/Lectia_09_ScratchJr/index.html",
+      "status": 200,
+      "bytes": 5698,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/proiecte/00_Demo_Descoperire.sjr",
+      "path": "materiale/Lectia_09_ScratchJr/proiecte/00_Demo_Descoperire.sjr",
+      "status": 200,
+      "bytes": 3246,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/proiecte/01_Start_Insula.sjr",
+      "path": "materiale/Lectia_09_ScratchJr/proiecte/01_Start_Insula.sjr",
+      "status": 200,
+      "bytes": 3179,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/solutii/lectia_09/01_Insula_reactioneaza.sjr",
+      "path": "materiale/Lectia_09_ScratchJr/solutii/lectia_09/01_Insula_reactioneaza.sjr",
+      "status": 200,
+      "bytes": 3248,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/solutii/lectia_09/02_Iesirea_ascunsa.sjr",
+      "path": "materiale/Lectia_09_ScratchJr/solutii/lectia_09/02_Iesirea_ascunsa.sjr",
+      "status": 200,
+      "bytes": 3471,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/solutii/lectia_09/03_Lantul_descoperirilor.sjr",
+      "path": "materiale/Lectia_09_ScratchJr/solutii/lectia_09/03_Lantul_descoperirilor.sjr",
+      "status": 200,
+      "bytes": 3487,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/solutii/lectia_09/04_Rezerva_Surpriza_optional.sjr",
+      "path": "materiale/Lectia_09_ScratchJr/solutii/lectia_09/04_Rezerva_Surpriza_optional.sjr",
+      "status": 200,
+      "bytes": 3515,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/solutii/lectia_09/05_Rezerva_Doua_drumuri.sjr",
+      "path": "materiale/Lectia_09_ScratchJr/solutii/lectia_09/05_Rezerva_Doua_drumuri.sjr",
+      "status": 200,
+      "bytes": 3465,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/solutii/lectia_09/README.md",
+      "path": "materiale/Lectia_09_ScratchJr/solutii/lectia_09/README.md",
+      "status": 200,
+      "bytes": 4392,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/00_Start_ascuns.png",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/00_Start_ascuns.png",
+      "status": 200,
+      "bytes": 82707,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/03_Puzzle_dificil.png",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/03_Puzzle_dificil.png",
+      "status": 200,
+      "bytes": 85402,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/README.md",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/README.md",
+      "status": 200,
+      "bytes": 5735,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/browser_index.json",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/browser_index.json",
+      "status": 200,
+      "bytes": 278,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/browser_results.json",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/browser_results.json",
+      "status": 200,
+      "bytes": 19838,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/constructie_manuala.png",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/constructie_manuala.png",
+      "status": 200,
+      "bytes": 81312,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/gallery_persistence.json",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/gallery_persistence.json",
+      "status": 200,
+      "bytes": 577,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/instrumente/browser_server.py",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/instrumente/browser_server.py",
+      "status": 200,
+      "bytes": 2099,
+      "matches_local_file": true,
+      "content_type": "text/x-python",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "status": 200,
+      "bytes": 4857,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "status": 200,
+      "bytes": 33207,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/manual_results.json",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/manual_results.json",
+      "status": 200,
+      "bytes": 1006,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/pagina_lectiei.png",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/pagina_lectiei.png",
+      "status": 200,
+      "bytes": 292769,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/verificare/rezultate.json",
+      "path": "materiale/Lectia_09_ScratchJr/verificare/rezultate.json",
+      "status": 200,
+      "bytes": 2467,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr.zip",
+      "path": "materiale/Lectia_10_ScratchJr.zip",
+      "status": 200,
+      "bytes": 1333598,
+      "matches_local_file": true,
+      "content_type": "application/x-zip-compressed",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/Cartonase_Lectia_10.pdf",
+      "path": "materiale/Lectia_10_ScratchJr/Cartonase_Lectia_10.pdf",
+      "status": 200,
+      "bytes": 91084,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/Ghid_profesor.md",
+      "path": "materiale/Lectia_10_ScratchJr/Ghid_profesor.md",
+      "status": 200,
+      "bytes": 9833,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/Ghid_profesor_Lectia_10.pdf",
+      "path": "materiale/Lectia_10_ScratchJr/Ghid_profesor_Lectia_10.pdf",
+      "status": 200,
+      "bytes": 86066,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/Observatii_dupa_lectie.md",
+      "path": "materiale/Lectia_10_ScratchJr/Observatii_dupa_lectie.md",
+      "status": 200,
+      "bytes": 935,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/README.md",
+      "path": "materiale/Lectia_10_ScratchJr/README.md",
+      "status": 200,
+      "bytes": 4364,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/index.html",
+      "path": "materiale/Lectia_10_ScratchJr/index.html",
+      "status": 200,
+      "bytes": 5605,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/proiecte/00_Demo_Marea_finala.sjr",
+      "path": "materiale/Lectia_10_ScratchJr/proiecte/00_Demo_Marea_finala.sjr",
+      "status": 200,
+      "bytes": 2804,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/proiecte/01_Start_Insula_L09.sjr",
+      "path": "materiale/Lectia_10_ScratchJr/proiecte/01_Start_Insula_L09.sjr",
+      "status": 200,
+      "bytes": 2762,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/solutii/lectia_10/01_Sarbatoarea_mea.sjr",
+      "path": "materiale/Lectia_10_ScratchJr/solutii/lectia_10/01_Sarbatoarea_mea.sjr",
+      "status": 200,
+      "bytes": 2817,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/solutii/lectia_10/02_Butonul_asteapta.sjr",
+      "path": "materiale/Lectia_10_ScratchJr/solutii/lectia_10/02_Butonul_asteapta.sjr",
+      "status": 200,
+      "bytes": 2821,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/solutii/lectia_10/03_Marea_finala.sjr",
+      "path": "materiale/Lectia_10_ScratchJr/solutii/lectia_10/03_Marea_finala.sjr",
+      "status": 200,
+      "bytes": 2883,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/solutii/lectia_10/04_Rezerva_Inca_o_data.sjr",
+      "path": "materiale/Lectia_10_ScratchJr/solutii/lectia_10/04_Rezerva_Inca_o_data.sjr",
+      "status": 200,
+      "bytes": 2930,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/solutii/lectia_10/05_Rezerva_Intoarcere_automata.sjr",
+      "path": "materiale/Lectia_10_ScratchJr/solutii/lectia_10/05_Rezerva_Intoarcere_automata.sjr",
+      "status": 200,
+      "bytes": 2899,
+      "matches_local_file": true,
+      "content_type": "application/octet-stream",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/solutii/lectia_10/README.md",
+      "path": "materiale/Lectia_10_ScratchJr/solutii/lectia_10/README.md",
+      "status": 200,
+      "bytes": 5557,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/03_Puzzle_dificil.png",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/03_Puzzle_dificil.png",
+      "status": 200,
+      "bytes": 92710,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/04_Encore.png",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/04_Encore.png",
+      "status": 200,
+      "bytes": 98009,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/README.md",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/README.md",
+      "status": 200,
+      "bytes": 6679,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/additional_observations.json",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/additional_observations.json",
+      "status": 200,
+      "bytes": 2102,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/browser_index.json",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/browser_index.json",
+      "status": 200,
+      "bytes": 135,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/browser_results.json",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/browser_results.json",
+      "status": 200,
+      "bytes": 27546,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/constructie_manuala.png",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/constructie_manuala.png",
+      "status": 200,
+      "bytes": 87211,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/gallery_persistence.json",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/gallery_persistence.json",
+      "status": 200,
+      "bytes": 577,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/instrumente/browser_server.py",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/instrumente/browser_server.py",
+      "status": 200,
+      "bytes": 2101,
+      "matches_local_file": true,
+      "content_type": "text/x-python",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/instrumente/qa-monitor.js",
+      "status": 200,
+      "bytes": 4858,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/instrumente/upstream_manifest.json",
+      "status": 200,
+      "bytes": 34006,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/manual_results.json",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/manual_results.json",
+      "status": 200,
+      "bytes": 3449,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/pagina_lectiei.png",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/pagina_lectiei.png",
+      "status": 200,
+      "bytes": 292658,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/verificare/rezultate.json",
+      "path": "materiale/Lectia_10_ScratchJr/verificare/rezultate.json",
+      "status": 200,
+      "bytes": 2715,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Plan_10_lectii_ScratchJr.md",
+      "path": "materiale/Plan_10_lectii_ScratchJr.md",
+      "status": 200,
+      "bytes": 38929,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Robo_Acasa_Harta_7x7.pdf?v=2",
+      "path": "materiale/Robo_Acasa_Harta_7x7.pdf",
+      "status": 200,
+      "bytes": 60610,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Robo_Acasa_Harta_7x7_sol.pdf?v=2",
+      "path": "materiale/Robo_Acasa_Harta_7x7_sol.pdf",
+      "status": 200,
+      "bytes": 60949,
+      "matches_local_file": true,
+      "content_type": "application/pdf",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/robo-audio.js?v=lessons-v9",
+      "path": "robo-audio.js",
+      "status": 200,
+      "bytes": 1805,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/robo/index.html",
+      "path": "robo/index.html",
+      "status": 200,
+      "bytes": 16518,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/robo/index.html?adventure=home",
+      "path": "robo/index.html",
+      "status": 200,
+      "bytes": 16518,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/index.html",
+      "path": "scratchjr/index.html",
+      "status": 200,
+      "bytes": 9761,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/site-navigation.css?v=course-menu-1",
+      "path": "site-navigation.css",
+      "status": 200,
+      "bytes": 2582,
+      "matches_local_file": true,
+      "content_type": "text/css",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/site.css?v=course-menu-1",
+      "path": "site.css",
+      "status": 200,
+      "bytes": 4156,
+      "matches_local_file": true,
+      "content_type": "text/css",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/style.css?v=home-worksheet-v2",
+      "path": "style.css",
+      "status": 200,
+      "bytes": 58648,
+      "matches_local_file": true,
+      "content_type": "text/css",
+      "pass": true
+    }
+  ],
+  "external_urls": [
+    "https://github.com/richiesamlie/ScratchJr-Desktop-Reborn",
+    "https://jfo8000.github.io/ScratchJr-Desktop/",
+    "https://mitscratch.freshdesk.com/en/support/solutions/articles/4000211814-how-can-i-save-or-export-my-project-on-scratchjr-",
+    "https://play.google.com/store/apps/details?id=org.scratchjr.android",
+    "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+    "https://scratched.gse.harvard.edu/sites/default/files/scratchjr-reference-page.pdf",
+    "https://sites.bc.edu/scratchjr/learn/",
+    "https://www.scratchjr.org/curricula/playground/playground-5.pdf",
+    "https://www.scratchjr.org/explore/blocks",
+    "https://www.scratchjr.org/pdfs/blocks.pdf"
+  ]
+}

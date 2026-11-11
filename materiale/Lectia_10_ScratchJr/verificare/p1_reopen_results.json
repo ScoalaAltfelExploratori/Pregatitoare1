@@ -1,0 +1,78 @@
+{
+  "project": "proiecte/01_Start_Insula_L09.sjr",
+  "checks": [
+    {
+      "file": "p1_reopen_initialize",
+      "kind": "initial",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "p1_reopen_r1_first",
+      "kind": "first",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "p1_reopen_r1_second",
+      "kind": "second",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "p1_reopen_r1_performance",
+      "kind": "performance",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "rabbit": {
+          "peaks": 0,
+          "min": 0.5,
+          "max": 0.5,
+          "final": 0.5,
+          "lastChange": 390.5
+        },
+        "minge2": {}
+      },
+      "test_taps": []
+    },
+    {
+      "file": "p1_reopen_r1_return",
+      "kind": "return",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    }
+  ]
+}

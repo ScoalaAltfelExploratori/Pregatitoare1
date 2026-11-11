@@ -1,0 +1,69 @@
+{
+  "project": "proiecte/01_Start_Statui.sjr",
+  "checks": [
+    {
+      "file": "p1_reopen1_flag",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": true,
+      "stats": {
+        "iepuras1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        },
+        "caine1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        }
+      }
+    },
+    {
+      "file": "p1_reopen1_tap",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": true,
+      "stats": {
+        "iepuras1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        },
+        "caine1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        }
+      }
+    }
+  ]
+}

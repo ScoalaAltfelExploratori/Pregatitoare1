@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-09",
+  "browser": "ScratchJr Desktop Reborn community browser port",
+  "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+  "files": [
+    {
+      "path": "proiecte/00_Demo_Repeat.sjr",
+      "sha256": "8f91585c76e029cac631f90d0aca6908e487eee6799573c3db7dec9bad89f230",
+      "browser": "pass",
+      "expected": {
+        "end_x": 96,
+        "max_x": 96,
+        "hops": 2
+      },
+      "observed_hops": 2,
+      "official_android": "not_tested",
+      "lenovo_k10": "not_tested"
+    },
+    {
+      "path": "proiecte/01_Start.sjr",
+      "sha256": "4034a89e496b858529798bb1fdec41b3036349a5a9c2d4eef2ffeadae3a06ee9",
+      "browser": "pass",
+      "expected": {
+        "end_x": 96,
+        "max_x": 96,
+        "hops": 0
+      },
+      "observed_hops": 0,
+      "official_android": "not_tested",
+      "lenovo_k10": "not_tested"
+    },
+    {
+      "path": "solutii/lectia_02/01_Trei_patrulari.sjr",
+      "sha256": "ac0a2e475ceb75c99caaa1f1e1c6136407f79353a8b0f3106699f398bce4081e",
+      "browser": "pass",
+      "expected": {
+        "end_x": 96,
+        "max_x": 144,
+        "hops": 3
+      },
+      "observed_hops": 3,
+      "official_android": "not_tested",
+      "lenovo_k10": "not_tested"
+    },
+    {
+      "path": "solutii/lectia_02/02_Sase_patratele.sjr",
+      "sha256": "1ce2ae24881fffb35d7e5c6e1b6434abab62c78b369a4065a6893e46ad35376f",
+      "browser": "pass",
+      "expected": {
+        "end_x": 240,
+        "max_x": 240,
+        "hops": 3
+      },
+      "observed_hops": 3,
+      "official_android": "not_tested",
+      "lenovo_k10": "not_tested"
+    },
+    {
+      "path": "solutii/lectia_02/03_Expeditia_dus_intors.sjr",
+      "sha256": "11267e674fe5043be0d01b8a14633745e88b2dac4d47cc9db1e39322e0475381",
+      "browser": "pass",
+      "expected": {
+        "end_x": 96,
+        "max_x": 288,
+        "hops": 4
+      },
+      "observed_hops": 4,
+      "official_android": "not_tested",
+      "lenovo_k10": "not_tested"
+    }
+  ],
+  "patrol_returns": 3,
+  "manual_repeat_construction": "pass",
+  "browser_reload_gallery": "pass",
+  "pdf_visual_review": {
+    "status": "pass",
+    "teacher_pages": 4,
+    "mission_pages": 3,
+    "method": "Rendered every page with Poppler and visually inspected all seven PNGs"
+  },
+  "official_android": "not_tested",
+  "physical_lenovo": "not_tested",
+  "local_links": {
+    "status": "pass",
+    "count": 43
+  },
+  "materials_page": "pass: rendered in browser and teacher solution disclosure opened",
+  "archive_structure": "pass: five SJR archives with built-in library references only"
+}

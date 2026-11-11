@@ -1,0 +1,4838 @@
+{
+  "date": "2026-11-09",
+  "environment": "ScratchJr Desktop Reborn community browser port",
+  "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+  "method": "UI import and green-flag execution; read-only DOM sampling of visible sprite transforms. Each project reset, reopened and rerun. Hop counts sampled with vertical-motion hysteresis.",
+  "reload_gallery": "pass",
+  "projects": [
+    {
+      "path": "proiecte/00_Demo_Repeat.sjr",
+      "name": "L02 Demo Doua sarituri",
+      "expected": {
+        "end_x": 96,
+        "max_x": 96,
+        "hops": 2
+      },
+      "status": "pass",
+      "checks": [
+        "import",
+        "run",
+        "hop_count",
+        "target_reached",
+        "stationary_ball",
+        "reset",
+        "reopen",
+        "rerun"
+      ],
+      "actual": {
+        "hops": 2,
+        "maxRabbitX": -12,
+        "end": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 88
+          },
+          {
+            "id": "minge1",
+            "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 177,
+            "y": 224
+          }
+        ]
+      },
+      "rerun": {
+        "hops": 2,
+        "maxRabbitX": -12,
+        "end": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 88
+          },
+          {
+            "id": "minge1",
+            "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 177,
+            "y": 224
+          }
+        ]
+      },
+      "frames": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "proiecte/01_Start.sjr",
+      "name": "L02 Start Provocarile iepurasului",
+      "expected": {
+        "end_x": 96,
+        "max_x": 96,
+        "hops": 0
+      },
+      "status": "pass",
+      "checks": [
+        "import",
+        "run",
+        "hop_count",
+        "target_reached",
+        "stationary_ball",
+        "reset",
+        "reopen",
+        "rerun"
+      ],
+      "actual": {
+        "hops": 0,
+        "maxRabbitX": -12,
+        "end": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 88
+          },
+          {
+            "id": "minge1",
+            "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 177,
+            "y": 224
+          }
+        ]
+      },
+      "rerun": {
+        "hops": 0,
+        "maxRabbitX": -12,
+        "end": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 88
+          },
+          {
+            "id": "minge1",
+            "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 177,
+            "y": 224
+          }
+        ]
+      },
+      "frames": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_02/01_Trei_patrulari.sjr",
+      "name": "L02 M1 Trei patrulari",
+      "expected": {
+        "end_x": 96,
+        "max_x": 144,
+        "hops": 3
+      },
+      "status": "pass",
+      "checks": [
+        "import",
+        "run",
+        "hop_count",
+        "target_reached",
+        "stationary_ball",
+        "reset",
+        "reopen",
+        "rerun"
+      ],
+      "actual": {
+        "hops": 3,
+        "maxRabbitX": 36,
+        "end": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+            "x": -12,
+            "y": 88
+          },
+          {
+            "id": "minge1",
+            "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 177,
+            "y": 224
+          }
+        ]
+      },
+      "rerun": {
+        "hops": 3,
+        "maxRabbitX": 36,
+        "end": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+            "x": -12,
+            "y": 88
+          },
+          {
+            "id": "minge1",
+            "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 177,
+            "y": 224
+          }
+        ]
+      },
+      "frames": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(16px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 16,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 24,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 32,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 28,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 20,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(16px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 16,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(8px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 8,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(0px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 0,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-4px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -4,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-8px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -8,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(0px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 0,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(8px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 8,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(16px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 16,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 20,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 28,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 32,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 32,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 24,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(16px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 16,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(4px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 4,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-4px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -4,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-8px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -8,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-4px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -4,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(4px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 4,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 20,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 28,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 32,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 28,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 20,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(8px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 8,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(0px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 0,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-8px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -8,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_02/02_Sase_patratele.sjr",
+      "name": "L02 M2 Sase patratele",
+      "expected": {
+        "end_x": 240,
+        "max_x": 240,
+        "hops": 3
+      },
+      "status": "pass",
+      "checks": [
+        "import",
+        "run",
+        "hop_count",
+        "target_reached",
+        "stationary_ball",
+        "reset",
+        "reopen",
+        "rerun"
+      ],
+      "actual": {
+        "hops": 3,
+        "maxRabbitX": 132,
+        "end": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(132px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 132,
+            "y": 88
+          },
+          {
+            "id": "minge1",
+            "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 177,
+            "y": 224
+          }
+        ]
+      },
+      "rerun": {
+        "hops": 3,
+        "maxRabbitX": 132,
+        "end": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(132px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 132,
+            "y": 88
+          },
+          {
+            "id": "minge1",
+            "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 177,
+            "y": 224
+          }
+        ]
+      },
+      "frames": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(16px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 16,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 24,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 32,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 44,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 52,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(68px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 68,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(76px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 76,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(80px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 80,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(92px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 92,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(100px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 100,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(104px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 104,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(112px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 112,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(120px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 120,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(128px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 128,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(177px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 177,
+              "y": 224
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_02/03_Expeditia_dus_intors.sjr",
+      "name": "L02 M3 Expeditia dus intors",
+      "expected": {
+        "end_x": 96,
+        "max_x": 288,
+        "hops": 4
+      },
+      "status": "pass",
+      "checks": [
+        "import",
+        "run",
+        "hop_count",
+        "target_reached",
+        "stationary_ball",
+        "reset",
+        "reopen",
+        "rerun"
+      ],
+      "actual": {
+        "hops": 4,
+        "maxRabbitX": 180,
+        "end": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+            "x": -12,
+            "y": 88
+          },
+          {
+            "id": "minge1",
+            "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 225,
+            "y": 224
+          }
+        ]
+      },
+      "rerun": {
+        "hops": 4,
+        "maxRabbitX": 180,
+        "end": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+            "x": -12,
+            "y": 88
+          },
+          {
+            "id": "minge1",
+            "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 225,
+            "y": 224
+          }
+        ]
+      },
+      "frames": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(12px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 20,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 32,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 44,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 52,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(68px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 68,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(76px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 76,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 84,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(88px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 88,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(96px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 96,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(104px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 104,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(112px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 112,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(120px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 120,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(128px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 128,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 132,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(140px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 140,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(148px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 148,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(156px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 156,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(164px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 164,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 40px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 40
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 42.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 42.4
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 48
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 56.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 56.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 68.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 68.8
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(180px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 180,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(172px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 172,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(164px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 164,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(156px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 156,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(148px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 148,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(140px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 140,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(132px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 132,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(128px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 128,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(120px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 120,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(112px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 112,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(104px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 104,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(96px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 96,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(92px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 92,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 84,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(80px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 80,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(56px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 56,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(48px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 48,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(40px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 40,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 36,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 28,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 20,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(4px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 4,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-4px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -4,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 88px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 88
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(225px, 224px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 225,
+              "y": 224
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

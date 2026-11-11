@@ -1,0 +1,794 @@
+{
+  "lesson": 6,
+  "title": "Parcul cu surprize",
+  "age": "6-7 ani",
+  "duration": 50,
+  "assets": [
+    "Rabbit.svg",
+    "Dog.svg",
+    "Butterfly.svg",
+    "Ball.svg",
+    "Park.svg",
+    "pop.mp3"
+  ],
+  "projects": [
+    {
+      "path": "proiecte/00_Demo_Contact.sjr",
+      "name": "L06 Parc Demo Contact",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                72,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                240,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "selector": "#go",
+          "sounds": 0,
+          "final": {
+            "iepuras1": {
+              "x": 192,
+              "y": 240,
+              "opacity": 1,
+              "scale": 0.5
+            },
+            "caine1": {
+              "x": 240,
+              "y": 120,
+              "opacity": 1,
+              "scale": 0.5
+            }
+          },
+          "observe_ms": 6500
+        }
+      ]
+    },
+    {
+      "path": "proiecte/01_Start_Parc.sjr",
+      "name": "L06 Parc Start Doua personaje",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                72,
+                240
+              ],
+              "scripts": []
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                240,
+                240
+              ],
+              "scripts": []
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "selector": "#go",
+          "sounds": 0,
+          "final": {
+            "iepuras1": {
+              "x": 72,
+              "y": 240,
+              "opacity": 1,
+              "scale": 0.5
+            },
+            "caine1": {
+              "x": 240,
+              "y": 240,
+              "opacity": 1,
+              "scale": 0.5
+            }
+          },
+          "observe_ms": 1500
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_06/01_Trezeste_paznicul.sjr",
+      "name": "L06 Parc M1 Trezeste paznicul",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                72,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                240,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "up",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "selector": "#go",
+          "sounds": 1,
+          "final": {
+            "iepuras1": {
+              "x": 192,
+              "y": 240,
+              "opacity": 1,
+              "scale": 0.5
+            },
+            "caine1": {
+              "x": 240,
+              "y": 120,
+              "opacity": 1,
+              "scale": 0.5
+            }
+          },
+          "observe_ms": 6500
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_06/02_Doua_vizite.sjr",
+      "name": "L06 Parc M2 Doua vizite",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                72,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 14
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                240,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "up",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                408,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "selector": "#go",
+          "sounds": 1,
+          "final": {
+            "iepuras1": {
+              "x": 408,
+              "y": 240,
+              "opacity": 1,
+              "scale": 0.5
+            },
+            "caine1": {
+              "x": 240,
+              "y": 120,
+              "opacity": 1,
+              "scale": 0.5
+            },
+            "fluture1": {
+              "x": 408,
+              "y": 120,
+              "opacity": 1,
+              "scale": 0.5
+            }
+          },
+          "observe_ms": 9000,
+          "order": [
+            "caine1",
+            "fluture1"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_06/03_Reactia_in_lant.sjr",
+      "name": "L06 Parc M3 Reactia in lant",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                72,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                240,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                408,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "up",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "selector": "#go",
+          "sounds": 1,
+          "final": {
+            "iepuras1": {
+              "x": 192,
+              "y": 240,
+              "opacity": 1,
+              "scale": 0.5
+            },
+            "caine1": {
+              "x": 360,
+              "y": 288,
+              "opacity": 1,
+              "scale": 0.5
+            },
+            "fluture1": {
+              "x": 408,
+              "y": 120,
+              "opacity": 1,
+              "scale": 0.5
+            }
+          },
+          "observe_ms": 8500,
+          "order": [
+            "caine1",
+            "fluture1"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_06/04_Rezerva_Comoara.sjr",
+      "name": "L06 Parc R1 Comoara",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                72,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 10
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                312,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "selector": "#go",
+          "sounds": 1,
+          "final": {
+            "iepuras1": {
+              "x": 312,
+              "y": 240,
+              "opacity": 1,
+              "scale": 0.5
+            },
+            "minge1": {
+              "x": 312,
+              "y": 240,
+              "opacity": 0,
+              "scale": 0.5
+            }
+          },
+          "observe_ms": 8500
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_06/05_Rezerva_Alarma.sjr",
+      "name": "L06 Parc R2 Alarma la distanta",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                72,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                240,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 5
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                408,
+                96
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "selector": "#go",
+          "sounds": 0,
+          "final": {
+            "iepuras1": {
+              "x": 192,
+              "y": 240,
+              "opacity": 1,
+              "scale": 0.5
+            },
+            "caine1": {
+              "x": 240,
+              "y": 120,
+              "opacity": 1,
+              "scale": 0.5
+            },
+            "fluture1": {
+              "x": 408,
+              "y": 96,
+              "opacity": 1,
+              "scale": 0.5
+            }
+          },
+          "observe_ms": 8500,
+          "remote_grow": "fluture1"
+        }
+      ]
+    }
+  ],
+  "missions": [
+    {
+      "label": "Misiunea 1",
+      "title": "Trezește paznicul",
+      "subtitle": "Un steag. O întâlnire. O reacție.",
+      "diagram": "guard",
+      "steps": [
+        "Iepurele ajunge la câine. Nu atingem câinele cu degetul.",
+        "La contact, câinele spune Pop și urcă, eliberând drumul.",
+        "Se aude un singur Pop. Reset și încă o probă."
+      ],
+      "success": "Câinele așteaptă contactul, apoi se separă de iepure."
+    },
+    {
+      "label": "Misiunea 2",
+      "title": "Două vizite",
+      "subtitle": "Cine este întâlnit primul?",
+      "diagram": "visits",
+      "steps": [
+        "Iepurele merge mai întâi la câine, apoi la fluture.",
+        "Câinele spune Pop și urcă. Fluturele urcă fără sunet.",
+        "Un singur steag, două reacții în ordinea întâlnirilor."
+      ],
+      "success": "Nimeni nu reacționează înainte să fie atins pe scenă."
+    },
+    {
+      "label": "Misiunea 3 - dificilă",
+      "title": "Reacția în lanț",
+      "subtitle": "Iepure → câine → fluture",
+      "diagram": "chain",
+      "steps": [
+        "Iepurele ajunge la câine, pe traseul scurt.",
+        "Câinele merge la fluture, apoi coboară ca să se separe.",
+        "Fluturele spune Pop și urcă. Un steag, fără mesaje sau alte atingeri."
+      ],
+      "success": "Reacția trece prin trei personaje și se oprește. Reset și repetă."
+    },
+    {
+      "label": "Rezervă 1 - 6-8 minute",
+      "title": "Comoara",
+      "subtitle": "Mingea devine o comoară de adunat.",
+      "diagram": "treasure",
+      "steps": [
+        "Un steag duce iepurele până la minge.",
+        "La contact: un Pop, apoi mingea dispare.",
+        "Reset aduce comoara înapoi. Încearcă din nou."
+      ],
+      "success": "Mingea reacționează la contact, fără să o atingi cu degetul."
+    },
+    {
+      "label": "Rezervă 2 - 8-10 minute",
+      "title": "Alarma la distanță",
+      "subtitle": "Contact aproape. Semnal departe.",
+      "diagram": "alarm",
+      "steps": [
+        "Iepurele atinge câinele. Câinele urcă și trimite un mesaj.",
+        "Fluturele aflat sus crește, așteaptă, apoi revine la mărimea inițială.",
+        "Nimeni nu atinge fluturele. Reset și încă o probă."
+      ],
+      "success": "Contactul pornește câinele. Mesajul pornește fluturele."
+    }
+  ]
+}

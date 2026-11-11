@@ -1,0 +1,31 @@
+{
+  "stageHistory": [
+    {
+      "t": 0.20000004768371582,
+      "page": "page1",
+      "go": "go on",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "transform": "translate3d(-36px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        },
+        {
+          "id": "minge1",
+          "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    }
+  ],
+  "duration_ms": 1482,
+  "sampleRate": 48000,
+  "frames": 0,
+  "peak": 0,
+  "contexts": [],
+  "events": [],
+  "selector": "#minge1",
+  "file": "p5_tap_receiver"
+}

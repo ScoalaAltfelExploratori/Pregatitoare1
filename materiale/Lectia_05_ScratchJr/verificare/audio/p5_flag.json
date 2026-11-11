@@ -1,0 +1,49 @@
+{
+  "file": "p5_flag",
+  "selector": "#go",
+  "expected": {
+    "sounds": 0,
+    "gaps": []
+  },
+  "pass": true,
+  "gaps": [],
+  "classes": {},
+  "before": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "after": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "audio": {
+    "duration_ms": 1778.2999999523163,
+    "sampleRate": 48000,
+    "frames": 0,
+    "peak": 0,
+    "contexts": [],
+    "events": []
+  }
+}

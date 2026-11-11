@@ -1,0 +1,89 @@
+{
+  "lesson": 8,
+  "date": "2026-11-10",
+  "status": "PASS",
+  "projects": 7,
+  "main_checks": 28,
+  "reopen_checks": 14,
+  "manual_block_checks": 4,
+  "additional_control_checks": 4,
+  "total_checks": 50,
+  "browser": "ScratchJr Desktop Reborn, unchanged published browser application with a local observation panel",
+  "native_android_tested": false,
+  "physical_lenovo_tested": false,
+  "gallery_survived_reload": true,
+  "default_assets": [
+    "Rabbit.svg",
+    "Dog.svg",
+    "Butterfly.svg",
+    "Ball.svg",
+    "Park.svg"
+  ],
+  "official_android_catalog_version": "1.5.11",
+  "pdf_pages": {
+    "Ghid_profesor_Lectia_08.pdf": 4,
+    "Cartonase_Lectia_08.pdf": 5
+  },
+  "all_pdf_pages_visually_reviewed": true,
+  "automatic_timer_observations": [
+    {
+      "trace": "p6_main1_auto",
+      "stopped_at_ms_from_capture_start": 5458.899999976158,
+      "stable_tail_ms": 3589.5
+    },
+    {
+      "trace": "p6_main2_auto",
+      "stopped_at_ms_from_capture_start": 5584.5,
+      "stable_tail_ms": 3611.100000023842
+    },
+    {
+      "trace": "p6_reopen1_auto",
+      "stopped_at_ms_from_capture_start": 5528.199999928474,
+      "stable_tail_ms": 3494.100000023842
+    }
+  ],
+  "files": [
+    {
+      "path": "proiecte/00_Demo_Statuie.sjr",
+      "sha256": "103d4698d40fe0a1930dabd801bbd8678abcb76d0f63184d0f9a09b05ea7716c",
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "proiecte/01_Start_Statui.sjr",
+      "sha256": "64e093a34da0efe64dda6e5211db0ca249488ffa997ac882aa7cfbd324d51e94",
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_08/01_Artistul_neobosit.sjr",
+      "sha256": "69c13ef1512c81b8665c567a6a0e1c8f57a5ea8d8a7cf686b34aa21922e8f75c",
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_08/02_Fiecare_cu_pauza_lui.sjr",
+      "sha256": "3235e8a1348d76f5c543ed3af3a2d1f34d053d9a028f0aea236c8268cba2fcb2",
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_08/03_Regizorul_statuilor.sjr",
+      "sha256": "3f1b1fdf6a928abfabb5229e550e6236a77e15047632ee7413d20e7da19bb21b",
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_08/04_Rezerva_Trei_ipostaze.sjr",
+      "sha256": "1f661df97dfe7a8abbf6c20e3e72f19fe907e1bb08a6a842859ec9a786079b18",
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_08/05_Rezerva_Cortina_automata.sjr",
+      "sha256": "bb7220bcf627e28cf679d9dba7f11cfd20ee54c06ea4c8a7f380c7644ebfc9c2",
+      "matches_source": true,
+      "custom_assets": false
+    }
+  ]
+}

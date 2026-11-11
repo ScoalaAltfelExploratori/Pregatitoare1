@@ -1,0 +1,71 @@
+{
+  "file": "p0_demo_2",
+  "selector": "#iepuras1",
+  "expected": {
+    "name": "Un singur Pop",
+    "tap": "iepuras1",
+    "sounds": 1,
+    "gaps": [],
+    "owners": [
+      "Rabbit"
+    ],
+    "observe_ms": 2600,
+    "repeat_without_reset": true
+  },
+  "pass": true,
+  "gaps": [],
+  "classes": {},
+  "before": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "after": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "audio": {
+    "duration_ms": 2074.399999976158,
+    "sampleRate": 48000,
+    "frames": 100352,
+    "peak": 1.0028177499771118,
+    "contexts": [
+      {
+        "state": "running",
+        "sampleRate": 48000
+      }
+    ],
+    "events": [
+      {
+        "at_ms": 281.5,
+        "contextTime": 9.52,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      }
+    ]
+  }
+}

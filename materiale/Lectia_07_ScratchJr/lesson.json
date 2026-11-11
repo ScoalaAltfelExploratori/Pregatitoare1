@@ -1,0 +1,1061 @@
+{
+  "lesson": 7,
+  "title": "Povestea cu două finaluri",
+  "age": "6-7 ani",
+  "duration": 50,
+  "assets": [
+    "Rabbit.svg",
+    "Dog.svg",
+    "Ball.svg",
+    "Park.svg",
+    "BeachDay.svg",
+    "BeachNight.svg",
+    "pop.mp3"
+  ],
+  "projects": [
+    {
+      "path": "proiecte/00_Demo_Pagina.sjr",
+      "name": "L07 Povesti Demo Portal",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                160,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "caine2",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                170,
+                240
+              ],
+              "scripts": []
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "steps": [
+            {
+              "selector": "#iepuras1",
+              "page": "page2",
+              "ms": 1300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "proiecte/01_Start_Poveste.sjr",
+      "name": "L07 Povesti Start Doua pagini",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                160,
+                240
+              ],
+              "scripts": []
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "caine2",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                170,
+                240
+              ],
+              "scripts": []
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "steps": [
+            {
+              "selector": "#iepuras1",
+              "page": "page1",
+              "ms": 700
+            },
+            {
+              "selector": "[id=\"pagethumb 2\"]",
+              "page": "page2",
+              "ms": 300
+            },
+            {
+              "selector": "#caine2",
+              "page": "page2",
+              "ms": 700
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_07/01_Portalul.sjr",
+      "name": "L07 Povesti M1 Portalul",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                160,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "caine2",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                170,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "steps": [
+            {
+              "selector": "#iepuras1",
+              "page": "page2",
+              "ms": 2200,
+              "hops": {
+                "iepuras1": 1
+              }
+            },
+            {
+              "selector": "#caine2",
+              "page": "page2",
+              "ms": 1700,
+              "hops": {
+                "caine2": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_07/02_Dus_intors.sjr",
+      "name": "L07 Povesti M2 Dus intors",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                160,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "caine2",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                170,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                380,
+                280
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "steps": [
+            {
+              "selector": "#iepuras1",
+              "page": "page2",
+              "ms": 2200
+            },
+            {
+              "selector": "#caine2",
+              "page": "page2",
+              "ms": 1700,
+              "hops": {
+                "caine2": 1
+              }
+            },
+            {
+              "selector": "#minge2",
+              "page": "page1",
+              "ms": 1200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_07/03_Doua_finaluri.sjr",
+      "name": "L07 Povesti M3 Doua finaluri",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                340,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "caine2",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                170,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                380,
+                280
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras3",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                170,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge3",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                380,
+                280
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "steps": [
+            {
+              "selector": "#iepuras1",
+              "page": "page2",
+              "ms": 1300
+            },
+            {
+              "selector": "#caine2",
+              "page": "page2",
+              "ms": 1700,
+              "hops": {
+                "caine2": 1
+              }
+            },
+            {
+              "selector": "#minge2",
+              "page": "page1",
+              "ms": 1200
+            },
+            {
+              "selector": "#caine1",
+              "page": "page3",
+              "ms": 1300
+            },
+            {
+              "selector": "#iepuras3",
+              "page": "page3",
+              "ms": 2600,
+              "grow": "iepuras3"
+            },
+            {
+              "selector": "#minge3",
+              "page": "page1",
+              "ms": 1200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_07/04_Rezerva_Finalul_singur.sjr",
+      "name": "L07 Povesti R1 Finalul porneste singur",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                340,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "caine2",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                170,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                380,
+                280
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras3",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                170,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge3",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                380,
+                280
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "steps": [
+            {
+              "selector": "#iepuras1",
+              "page": "page2",
+              "ms": 2200,
+              "hops": {
+                "caine2": 1
+              }
+            },
+            {
+              "selector": "#minge2",
+              "page": "page1",
+              "ms": 1200
+            },
+            {
+              "selector": "#caine1",
+              "page": "page3",
+              "ms": 3000,
+              "grow": "iepuras3"
+            },
+            {
+              "selector": "#minge3",
+              "page": "page1",
+              "ms": 1200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_07/05_Rezerva_Trei_opriri.sjr",
+      "name": "L07 Povesti R2 Trei opriri",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                160,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "caine2",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                170,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "hop",
+                          "value": 2
+                        }
+                      ]
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras3",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                170,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge3",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                380,
+                280
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "checks": [
+        {
+          "steps": [
+            {
+              "selector": "#iepuras1",
+              "page": "page3",
+              "ms": 5500,
+              "pages": [
+                "page1",
+                "page2",
+                "page3"
+              ],
+              "hops": {
+                "iepuras1": 1,
+                "caine2": 2
+              },
+              "grow": "iepuras3"
+            },
+            {
+              "selector": "#minge3",
+              "page": "page1",
+              "ms": 1300
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "missions": [
+    {
+      "label": "Misiunea 1",
+      "title": "Portalul",
+      "subtitle": "O acțiune, apoi altă scenă.",
+      "diagram": "portal",
+      "steps": [
+        "Atinge iepurele: sare o dată, apoi ajunge la plaja de zi.",
+        "Câinele așteaptă. Când îl atingi, sare o dată.",
+        "Schimbă pagina prin program, fără miniaturile din dreapta."
+      ],
+      "success": "Vedem săritura iepurelui înainte să se schimbe scena."
+    },
+    {
+      "label": "Misiunea 2",
+      "title": "Dus-întors",
+      "subtitle": "Un drum de plecare și unul de întoarcere.",
+      "diagram": "return",
+      "steps": [
+        "Păstrează portalul și săritura câinelui.",
+        "Adaugă pe plajă o minge care, la atingere, te întoarce în parc.",
+        "Fă toată călătoria de două ori, numai prin personajele de pe scenă."
+      ],
+      "success": "Înapoi în parc, povestea așteaptă o nouă atingere."
+    },
+    {
+      "label": "Misiunea 3 - dificilă",
+      "title": "Două finaluri",
+      "subtitle": "Alege. Explorează. Întoarce-te.",
+      "diagram": "branch",
+      "steps": [
+        "În parc: iepurele deschide ziua, câinele deschide noaptea.",
+        "Ziua: atinge câinele ca să sară. Noaptea: iepurele crește și revine la atingere.",
+        "Fiecare final are o minge de întoarcere. Vizitează-le pe amândouă."
+      ],
+      "success": "Două alegeri, două acțiuni diferite și două drumuri înapoi."
+    },
+    {
+      "label": "Rezervă 1 - 6-8 minute",
+      "title": "Finalul pornește singur",
+      "subtitle": "Alegerea ta pornește și acțiunea.",
+      "diagram": "auto",
+      "steps": [
+        "Păstrează ambele finaluri și mingile de întoarcere.",
+        "Când intri la zi, câinele sare singur. La noapte, iepurele crește și revine singur.",
+        "Atinge numai alegerea din parc, apoi mingea pentru întoarcere."
+      ],
+      "success": "Finalul face acțiunea fără alt tap și rămâne deschis."
+    },
+    {
+      "label": "Rezervă 2 - 8-10 minute",
+      "title": "Trei opriri",
+      "subtitle": "O atingere, trei scene, un final.",
+      "diagram": "three",
+      "steps": [
+        "În parc, iepurele sare o dată. Pe plaja de zi, câinele sare de două ori.",
+        "Pe plaja de noapte, iepurele crește și revine. Totul pornește dintr-un singur tap.",
+        "Se oprește la noapte. Mingea revine în parc; o nouă atingere pornește din nou."
+      ],
+      "success": "1 săritură → 2 sărituri → transformare. Fără reluare automată."
+    }
+  ]
+}

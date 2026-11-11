@@ -1,0 +1,33 @@
+{
+  "projects": [
+    {
+      "name": "L09 Insula Demo Descoperire",
+      "count": 1
+    },
+    {
+      "name": "L09 Insula Start Biblioteca",
+      "count": 1
+    },
+    {
+      "name": "L09 Insula M1 Doua surprize",
+      "count": 1
+    },
+    {
+      "name": "L09 Insula M2 Iesirea ascunsa",
+      "count": 1
+    },
+    {
+      "name": "L09 Insula M3 Lantul descoperirilor",
+      "count": 1
+    },
+    {
+      "name": "L09 Insula R1 Surpriza optionala",
+      "count": 1
+    },
+    {
+      "name": "L09 Insula R2 Doua drumuri",
+      "count": 1
+    }
+  ],
+  "pass": true
+}

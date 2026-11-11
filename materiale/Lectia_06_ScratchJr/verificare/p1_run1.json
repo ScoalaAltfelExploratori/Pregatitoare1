@@ -1,0 +1,36 @@
+{
+  "stageHistory": [
+    {
+      "t": 0.10000002384185791,
+      "page": "page1",
+      "go": "go on",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "transform": "translate3d(-36px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        },
+        {
+          "id": "caine1",
+          "transform": "translate3d(92px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    }
+  ],
+  "duration_ms": 2093.6999999284744,
+  "sampleRate": 48000,
+  "frames": 100352,
+  "peak": 0,
+  "contexts": [
+    {
+      "state": "running",
+      "sampleRate": 48000
+    }
+  ],
+  "events": [],
+  "selector": "#go",
+  "file": "p1_run1"
+}

@@ -1,0 +1,143 @@
+{
+  "file": "p5_echo_1",
+  "selector": "#iepuras1",
+  "expected": {
+    "name": "Modelul apoi ecoul",
+    "tap": "iepuras1",
+    "sounds": 6,
+    "gaps": [
+      "short",
+      "long",
+      "long",
+      "short",
+      "long"
+    ],
+    "owners": [
+      "Rabbit",
+      "Rabbit",
+      "Rabbit",
+      "Dog",
+      "Dog",
+      "Dog"
+    ],
+    "observe_ms": 10600,
+    "repeat_without_reset": true
+  },
+  "pass": true,
+  "gaps": [
+    0.5493333333333332,
+    1.4799999999999969,
+    1.469333333333335,
+    0.5306666666666651,
+    1.469333333333335
+  ],
+  "classes": {
+    "short": [
+      0.5493333333333332,
+      0.5306666666666651
+    ],
+    "long": [
+      1.4799999999999969,
+      1.469333333333335,
+      1.469333333333335
+    ]
+  },
+  "before": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "after": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "audio": {
+    "duration_ms": 8275.300000071526,
+    "sampleRate": 48000,
+    "frames": 382976,
+    "peak": 1.0028177499771118,
+    "contexts": [
+      {
+        "state": "running",
+        "sampleRate": 48000
+      }
+    ],
+    "events": [
+      {
+        "at_ms": 291,
+        "contextTime": 16.501333333333335,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 846.3000000715256,
+        "contextTime": 17.050666666666668,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 2320.8000000715256,
+        "contextTime": 18.530666666666665,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 3790.8000000715256,
+        "contextTime": 20,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 4322.399999976158,
+        "contextTime": 20.530666666666665,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 5795.700000047684,
+        "contextTime": 22,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      }
+    ]
+  }
+}

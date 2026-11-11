@@ -1,0 +1,173 @@
+{
+  "stageHistory": [
+    {
+      "t": 0,
+      "page": "page2",
+      "go": "go on",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "t": 322.6999999284744,
+      "page": "page2",
+      "go": "go off",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 114.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "t": 384.39999997615814,
+      "page": "page2",
+      "go": "go off",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 102.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "t": 443.59999990463257,
+      "page": "page2",
+      "go": "go off",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 94px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "t": 502.1999999284744,
+      "page": "page2",
+      "go": "go off",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 88.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "t": 582.8999999761581,
+      "page": "page2",
+      "go": "go off",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 86px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "t": 702.0999999046326,
+      "page": "page2",
+      "go": "go off",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 88.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "t": 762.6999999284744,
+      "page": "page2",
+      "go": "go off",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 94px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "t": 823.7999999523163,
+      "page": "page2",
+      "go": "go off",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 102.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "t": 903.5,
+      "page": "page2",
+      "go": "go off",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 114.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "t": 962.5999999046326,
+      "page": "page2",
+      "go": "go off",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "t": 1062.8999999761581,
+      "page": "page2",
+      "go": "go on",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    }
+  ],
+  "duration_ms": 2299,
+  "sampleRate": 48000,
+  "frames": 110592,
+  "peak": 0,
+  "contexts": [
+    {
+      "state": "running",
+      "sampleRate": 48000
+    }
+  ],
+  "events": [],
+  "selector": "#caine2",
+  "file": "p2_run2_step1"
+}

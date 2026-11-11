@@ -1,0 +1,117 @@
+{
+  "file": "p3_1_2",
+  "selector": "#caine1",
+  "expected": {
+    "name": "Doua perechi",
+    "tap": "caine1",
+    "sounds": 4,
+    "gaps": [
+      "short",
+      "long",
+      "short"
+    ],
+    "owners": [
+      "Dog",
+      "Dog",
+      "Dog",
+      "Dog"
+    ],
+    "observe_ms": 7400,
+    "repeat_without_reset": true
+  },
+  "pass": true,
+  "gaps": [
+    0.5493333333333368,
+    1.501333333333335,
+    0.5386666666666642
+  ],
+  "classes": {
+    "short": [
+      0.5493333333333368,
+      0.5386666666666642
+    ],
+    "long": [
+      1.501333333333335
+    ]
+  },
+  "before": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "after": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "audio": {
+    "duration_ms": 5263.900000095367,
+    "sampleRate": 48000,
+    "frames": 252928,
+    "peak": 1.0028177499771118,
+    "contexts": [
+      {
+        "state": "running",
+        "sampleRate": 48000
+      }
+    ],
+    "events": [
+      {
+        "at_ms": 316.2000000476837,
+        "contextTime": 42.45066666666666,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 859.7000000476837,
+        "contextTime": 43,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 2365.9000000953674,
+        "contextTime": 44.501333333333335,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 2908.7000000476837,
+        "contextTime": 45.04,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      }
+    ]
+  }
+}

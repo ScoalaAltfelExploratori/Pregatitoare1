@@ -1,0 +1,30 @@
+{
+  "stageHistory": [
+    {
+      "t": 0,
+      "page": "page2",
+      "go": "go on",
+      "sprites": [
+        {
+          "id": "caine2",
+          "transform": "translate3d(22px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+          "opacity": 1,
+          "visibility": "visible"
+        }
+      ]
+    }
+  ],
+  "duration_ms": 1289.8000000715256,
+  "sampleRate": 48000,
+  "frames": 61440,
+  "peak": 0,
+  "contexts": [
+    {
+      "state": "running",
+      "sampleRate": 48000
+    }
+  ],
+  "events": [],
+  "selector": "#caine2",
+  "file": "p1_reopen1_step2"
+}

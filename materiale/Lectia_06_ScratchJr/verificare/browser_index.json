@@ -1,0 +1,32 @@
+{
+  "horizontalOverflow": false,
+  "imageLoaded": true,
+  "links": [
+    {
+      "href": "Ghid_profesor_Lectia_06.pdf",
+      "label": "Ghid PDF"
+    },
+    {
+      "href": "Cartonase_Lectia_06.pdf",
+      "label": "Cartonașe PDF"
+    },
+    {
+      "href": "solutii/lectia_06/README.md",
+      "label": "Soluții"
+    },
+    {
+      "href": "verificare/README.md",
+      "label": "Testare"
+    },
+    {
+      "href": "README.md",
+      "label": "Instrucțiuni"
+    },
+    {
+      "href": "../Plan_10_lectii_ScratchJr.md",
+      "label": "Planul celor zece lecții"
+    }
+  ],
+  "missionCards": 5,
+  "width": 1280
+}

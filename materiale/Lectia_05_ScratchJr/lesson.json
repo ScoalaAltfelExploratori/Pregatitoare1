@@ -1,0 +1,704 @@
+{
+  "lesson": 5,
+  "title": "Fabrica de ritmuri",
+  "age": "6-7 ani",
+  "duration": 50,
+  "new_mechanics": [
+    "playsnd"
+  ],
+  "assets": [
+    "Rabbit.svg",
+    "Dog.svg",
+    "Park.svg",
+    "pop.mp3"
+  ],
+  "message_colors": [
+    "Orange"
+  ],
+  "wait_values": {
+    "short": 3,
+    "medium": 6,
+    "long": 12
+  },
+  "missions": [
+    {
+      "label": "Misiunea 1",
+      "title": "Codul secret",
+      "subtitle": "Ascultă. Bate din palme. Construiește.",
+      "diagram": "secret",
+      "steps": [
+        "La un tap pe iepure se aud două Pop apropiate, o pauză mai lungă, apoi încă un Pop.",
+        "Sunt exact trei sunete. După al treilea, programul se oprește singur.",
+        "Ascultă din nou fără resetare. Ritmul trebuie să rămână același."
+      ],
+      "success": "Două apropiate, pauză lungă, unul. Exact trei Pop."
+    },
+    {
+      "label": "Misiunea 2",
+      "title": "Patru sunete, două ritmuri",
+      "subtitle": "Același număr de Pop. Altă grupare.",
+      "diagram": "four",
+      "steps": [
+        "Iepurele: patru Pop cu pauze egale între ele.",
+        "Câinele: două perechi de Pop; pauza dintre perechi este mai lungă.",
+        "Folosește Repeat la fiecare. Atinge pe rând; celălalt personaj nu cântă."
+      ],
+      "success": "Fiecare are patru sunete. Ritmurile se deosebesc prin pauze."
+    },
+    {
+      "label": "Misiunea 3 - dificilă",
+      "title": "Salutul secret",
+      "subtitle": "O atingere. Trei perechi. Un singur răspuns.",
+      "diagram": "handshake",
+      "steps": [
+        "Iepurele cântă trei perechi de Pop, cu pauze lungi între perechi. Folosește Repeat.",
+        "După ultima pereche și o pauză lungă, câinele răspunde cu un singur Pop, pornit prin mesaj.",
+        "Exact șapte sunete. Nicio altă atingere. Se oprește și se poate repeta."
+      ],
+      "success": "6 Pop de la iepure + 1 Pop de la câine. Mesajul vine după Repeat."
+    },
+    {
+      "label": "Rezervă 1 - 6-8 minute",
+      "title": "Ecoul",
+      "subtitle": "Iepurele spune codul. Câinele îl repetă.",
+      "diagram": "echo",
+      "steps": [
+        "Iepurele cântă codul: două Pop apropiate, o pauză lungă, unul.",
+        "După o pauză lungă, câinele repetă exact același cod. Folosește un mesaj.",
+        "Un singur tap pornește totul. Șase sunete, pe rând, apoi liniște."
+      ],
+      "success": "Același ritm de trei sunete se aude de două ori, fără suprapunere."
+    },
+    {
+      "label": "Rezervă 2 - 8-10 minute",
+      "title": "Șapte sunete, două blocuri",
+      "subtitle": "Numără sunetele. Numără blocurile verzi.",
+      "diagram": "seven",
+      "steps": [
+        "La un singur tap se aud exact șapte Pop, apoi programul se oprește.",
+        "Folosește exact două blocuri Pop și un singur Repeat, într-un program al iepurelui.",
+        "Pauzele sunt permise. Fără alte personaje sau mesaje. Arată ce se repetă și ce rămâne afară."
+      ],
+      "success": "Șapte sunete auzite. Numai două blocuri Pop în program."
+    }
+  ],
+  "projects": [
+    {
+      "path": "proiecte/00_Demo_Pop.sjr",
+      "name": "L05 Ritmuri Demo Pop",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "scripts": [
+            {
+              "trigger": {
+                "block": "onclick",
+                "value": "null"
+              },
+              "actions": [
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "scripts": []
+        }
+      ],
+      "trials": [
+        {
+          "name": "Un singur Pop",
+          "tap": "iepuras1",
+          "sounds": 1,
+          "gaps": [],
+          "owners": [
+            "Rabbit"
+          ],
+          "observe_ms": 2600,
+          "repeat_without_reset": true
+        }
+      ]
+    },
+    {
+      "path": "proiecte/01_Start_Ritmuri.sjr",
+      "name": "L05 Ritmuri Start Doua personaje",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "scripts": []
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "scripts": []
+        }
+      ],
+      "trials": []
+    },
+    {
+      "path": "solutii/lectia_05/01_Codul_secret.sjr",
+      "name": "L05 Ritmuri M1 Codul secret",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "scripts": [
+            {
+              "trigger": {
+                "block": "onclick",
+                "value": "null"
+              },
+              "actions": [
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                },
+                {
+                  "block": "wait",
+                  "value": 3
+                },
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                },
+                {
+                  "block": "wait",
+                  "value": 12
+                },
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "scripts": []
+        }
+      ],
+      "trials": [
+        {
+          "name": "Doua apropiate apoi unul",
+          "tap": "iepuras1",
+          "sounds": 3,
+          "gaps": [
+            "short",
+            "long"
+          ],
+          "owners": [
+            "Rabbit",
+            "Rabbit",
+            "Rabbit"
+          ],
+          "observe_ms": 5800,
+          "repeat_without_reset": true
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_05/02_Patru_sunete_doua_ritmuri.sjr",
+      "name": "L05 Ritmuri M2 Patru sunete doua ritmuri",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "scripts": [
+            {
+              "trigger": {
+                "block": "onclick",
+                "value": "null"
+              },
+              "actions": [
+                {
+                  "repeat": 4,
+                  "body": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 6
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "scripts": [
+            {
+              "trigger": {
+                "block": "onclick",
+                "value": "null"
+              },
+              "actions": [
+                {
+                  "repeat": 2,
+                  "body": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 3
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 12
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "trials": [
+        {
+          "name": "Patru egale",
+          "tap": "iepuras1",
+          "sounds": 4,
+          "gaps": [
+            "medium",
+            "medium",
+            "medium"
+          ],
+          "owners": [
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit"
+          ],
+          "observe_ms": 7400,
+          "repeat_without_reset": true
+        },
+        {
+          "name": "Doua perechi",
+          "tap": "caine1",
+          "sounds": 4,
+          "gaps": [
+            "short",
+            "long",
+            "short"
+          ],
+          "owners": [
+            "Dog",
+            "Dog",
+            "Dog",
+            "Dog"
+          ],
+          "observe_ms": 7400,
+          "repeat_without_reset": true
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_05/03_Salutul_secret.sjr",
+      "name": "L05 Ritmuri M3 Salutul secret",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "scripts": [
+            {
+              "trigger": {
+                "block": "onclick",
+                "value": "null"
+              },
+              "actions": [
+                {
+                  "repeat": 3,
+                  "body": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 3
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 12
+                    }
+                  ]
+                },
+                {
+                  "block": "message",
+                  "value": "Orange"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "scripts": [
+            {
+              "trigger": {
+                "block": "onmessage",
+                "value": "Orange"
+              },
+              "actions": [
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "trials": [
+        {
+          "name": "Trei perechi si raspunsul",
+          "tap": "iepuras1",
+          "sounds": 7,
+          "gaps": [
+            "short",
+            "long",
+            "short",
+            "long",
+            "short",
+            "long"
+          ],
+          "owners": [
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Dog"
+          ],
+          "observe_ms": 12200,
+          "repeat_without_reset": true
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_05/04_Rezerva_Ecoul.sjr",
+      "name": "L05 Ritmuri R1 Ecoul",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "scripts": [
+            {
+              "trigger": {
+                "block": "onclick",
+                "value": "null"
+              },
+              "actions": [
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                },
+                {
+                  "block": "wait",
+                  "value": 3
+                },
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                },
+                {
+                  "block": "wait",
+                  "value": 12
+                },
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                },
+                {
+                  "block": "wait",
+                  "value": 12
+                },
+                {
+                  "block": "message",
+                  "value": "Orange"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "scripts": [
+            {
+              "trigger": {
+                "block": "onmessage",
+                "value": "Orange"
+              },
+              "actions": [
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                },
+                {
+                  "block": "wait",
+                  "value": 3
+                },
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                },
+                {
+                  "block": "wait",
+                  "value": 12
+                },
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "trials": [
+        {
+          "name": "Modelul apoi ecoul",
+          "tap": "iepuras1",
+          "sounds": 6,
+          "gaps": [
+            "short",
+            "long",
+            "long",
+            "short",
+            "long"
+          ],
+          "owners": [
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Dog",
+            "Dog",
+            "Dog"
+          ],
+          "observe_ms": 10600,
+          "repeat_without_reset": true
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_05/05_Rezerva_Sapte_sunete.sjr",
+      "name": "L05 Ritmuri R2 Sapte sunete doua blocuri",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "scripts": [
+            {
+              "trigger": {
+                "block": "onclick",
+                "value": "null"
+              },
+              "actions": [
+                {
+                  "repeat": 6,
+                  "body": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "block": "playsnd",
+                  "value": "pop.mp3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "scripts": []
+        }
+      ],
+      "trials": [
+        {
+          "name": "Sase in bucla plus finalul",
+          "tap": "iepuras1",
+          "sounds": 7,
+          "gaps": [
+            "short",
+            "short",
+            "short",
+            "short",
+            "short",
+            "short"
+          ],
+          "owners": [
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit"
+          ],
+          "observe_ms": 12200,
+          "repeat_without_reset": true
+        }
+      ]
+    }
+  ]
+}

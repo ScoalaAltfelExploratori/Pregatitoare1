@@ -1,0 +1,33 @@
+{
+  "projects": [
+    {
+      "name": "L10 Finala Demo Spectacol pe rand",
+      "count": 1
+    },
+    {
+      "name": "L10 Finala Start Insula L09",
+      "count": 1
+    },
+    {
+      "name": "L10 Finala M1 Sarbatoarea mea",
+      "count": 1
+    },
+    {
+      "name": "L10 Finala M2 Butonul asteapta",
+      "count": 1
+    },
+    {
+      "name": "L10 Finala M3 Marea finala",
+      "count": 1
+    },
+    {
+      "name": "L10 Finala R1 Inca o data",
+      "count": 1
+    },
+    {
+      "name": "L10 Finala R2 Intoarcere automata",
+      "count": 1
+    }
+  ],
+  "pass": true
+}

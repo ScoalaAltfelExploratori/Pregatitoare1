@@ -1,0 +1,355 @@
+{
+  "date": "2026-11-10",
+  "lesson": 5,
+  "status": "PASS",
+  "browser": "ScratchJr Desktop Reborn published web app, local observation mirror; M3 additional public-site completion check",
+  "counts": {
+    "projects": 7,
+    "main_sounding_runs": 14,
+    "inert_stage_taps": 7,
+    "green_flag_checks": 7,
+    "reopen_stage_taps": 8,
+    "manual_trials": 2,
+    "structured_checks": 38,
+    "actual_pcm_recordings": 23,
+    "pops_detected_in_pcm": 100
+  },
+  "all_browser_checks_pass": true,
+  "native_android_tested": false,
+  "physical_lenovo_tested": false,
+  "physical_speaker_tested": false,
+  "all_gallery_names_unique_after_reload": true,
+  "default_assets": [
+    "Rabbit.svg",
+    "Dog.svg",
+    "Park.svg",
+    "pop.mp3"
+  ],
+  "official_android_catalog_version": "1.5.11",
+  "hard_message_outside_repeat": true,
+  "backup2_exact_pop_blocks": 2,
+  "backup2_repeat_blocks": 1,
+  "pdf_pages": {
+    "Ghid_profesor_Lectia_05.pdf": 4,
+    "Cartonase_Lectia_05.pdf": 5
+  },
+  "pdf_all_pages_visually_reviewed": true,
+  "html": {
+    "audio": [
+      {
+        "currentTime": 0,
+        "duration": 3.045,
+        "ended": false,
+        "error": null,
+        "label": "Ascultă codul secret",
+        "paused": true
+      },
+      {
+        "currentTime": 7.165,
+        "duration": 7.165,
+        "ended": true,
+        "error": null,
+        "label": "Ascultă salutul secret",
+        "paused": true
+      }
+    ],
+    "expanded": true,
+    "horizontalOverflow": false,
+    "image": {
+      "complete": true,
+      "width": 1280
+    },
+    "links": [
+      "Ghid_profesor_Lectia_05.pdf",
+      "Cartonase_Lectia_05.pdf",
+      "README.md",
+      "solutii/lectia_05/README.md",
+      "Observatii_dupa_lectie.md",
+      "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+      "proiecte/00_Demo_Pop.sjr",
+      "proiecte/01_Start_Ritmuri.sjr",
+      "verificare/README.md",
+      "../Plan_10_lectii_ScratchJr.md"
+    ],
+    "missionCards": 5,
+    "title": "Lecția 5 · Fabrica de ritmuri",
+    "hard_audio_started": true,
+    "secret_audio_completed_before_reload": true,
+    "final_image": "verificare/03_Salutul_secret_public.png",
+    "final_image_visually_verified": true
+  },
+  "files": [
+    {
+      "path": "proiecte/00_Demo_Pop.sjr",
+      "sha256": "c5d0101a8ea0543e32273d70dc3413df0dcadf49ec6f26cce84b5e35bcf1138b",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "proiecte/01_Start_Ritmuri.sjr",
+      "sha256": "7fadd7f3b30550146c4280571856d919da3347301801dee19812990f4ecd9c09",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_05/01_Codul_secret.sjr",
+      "sha256": "4c82044749488cd65eae564c5424f2f720366ffb951f6905208531062e27d3dd",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_05/02_Patru_sunete_doua_ritmuri.sjr",
+      "sha256": "28b0afeb0bba17efa54a5d62c85c9a6b3fe7a0e958c4010b44926dababffbda6",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_05/03_Salutul_secret.sjr",
+      "sha256": "050f653eb5d8b782d0f9d91cab9b72e9ed25d602bf6cc7a0298dc4007bc39b46",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_05/04_Rezerva_Ecoul.sjr",
+      "sha256": "3a79f0bacf774ff54c7ad8edc0117dfa3564afb402cbca79959367807472e706",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_05/05_Rezerva_Sapte_sunete.sjr",
+      "sha256": "526c641a2c6e9e77884f95db6371d9aee162ec1579bf908a602711b3af49a400",
+      "native_matches_source": true,
+      "custom_assets": false
+    }
+  ],
+  "audio_files": [
+    {
+      "path": "verificare/audio/p0_demo_1.wav",
+      "sha256": "087c26e7684dcbe4b7739a8f158237bef9d8ae8642f1757acbd379a0b5d94a23",
+      "sounds": 1,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p0_demo_2.wav",
+      "sha256": "ebb004dabbc681f6d0c548631be625ec4185b3a5d1442c592f62301fd3dcf5eb",
+      "sounds": 1,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p0_flag.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p0_inert_caine1.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p0_reopen_0.wav",
+      "sha256": "087c26e7684dcbe4b7739a8f158237bef9d8ae8642f1757acbd379a0b5d94a23",
+      "sounds": 1,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p1_flag.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p1_inert_caine1.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p1_inert_iepuras1.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p1_reopen_0.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p2_flag.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p2_inert_caine1.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p2_reopen_0.wav",
+      "sha256": "286150ec53667d62f9ca32fdfc7599267ba5e2fade686f8cb34ef13b4cdf7a40",
+      "sounds": 3,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p2_secret_1.wav",
+      "sha256": "dbd6aa70f34eb5d45e265b09a9e068b4a4b50941ca6bb46f3bbd2959d2740ff1",
+      "sounds": 3,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p2_secret_2.wav",
+      "sha256": "da53a09d0a96661132ee4a4641a30e703d8dd563aabfd6e989896085395aad7c",
+      "sounds": 3,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p3_0_1.wav",
+      "sha256": "e59e953e5883e0be88f9e3d36e882bb42c07908a4fbe612498c2fd4b4a7f5c3f",
+      "sounds": 4,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p3_0_2.wav",
+      "sha256": "38bd6b37c121cee07873255b45bab13318df928e0871ba93609b216cdb0e9ea7",
+      "sounds": 4,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p3_1_1.wav",
+      "sha256": "3578d820d2ebac79637cba6beb360d0b1a8a50a4e4b8df3c1ec77299d0c213f1",
+      "sounds": 4,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p3_1_2.wav",
+      "sha256": "4035838726d8ffb895f5e4480de67522cb4a82df59f4fce1322a58983798d60b",
+      "sounds": 4,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p3_flag.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p3_reopen_0.wav",
+      "sha256": "2291c2098e1b4358b30120e54d126b955b078e5598ea9f1c9dda36fb24a0dcfe",
+      "sounds": 4,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p3_reopen_1.wav",
+      "sha256": "2ec0a72c44ef3fdabe59a2292098e7de9fb523344677804bfadc7e4b4896fb4c",
+      "sounds": 4,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p4_flag.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p4_inert_caine1.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p4_reopen_0.wav",
+      "sha256": "238ddcbe89038bcc902897a82a053f3f4b5a06f62fe9a02b5f8272a1e2a7c6d2",
+      "sounds": 7,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p4_sapte_1.wav",
+      "sha256": "b000fadd375505d03c5468cfa06c1832c297eea5612bd876200f1342d4d0cda3",
+      "sounds": 7,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p4_sapte_2.wav",
+      "sha256": "650429a7f9778fd643073cca5acf5835c72518a30c273031464e561d37300580",
+      "sounds": 7,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p5_echo_1.wav",
+      "sha256": "a9375bd0338d6fa9cbcb1ab73fe9ba1055fa6f3c355a86b84c1b1e176508d2e4",
+      "sounds": 6,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p5_echo_2.wav",
+      "sha256": "7c1a6ffee8d961d00d0853575e6f0dd4d6c2bcf41449e6169779b45220666487",
+      "sounds": 6,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p5_flag.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p5_inert_caine1.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p5_reopen_0.wav",
+      "sha256": "0286db2553e371862bc67912ef61c640dfd5babd07a5c033c237c4e411c20ec2",
+      "sounds": 6,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p6_flag.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p6_inert_caine1.wav",
+      "sha256": "531cd597b25052b4845ef2f3887dec2183240802a93b6e044960de8ba017caa0",
+      "sounds": 0,
+      "actual_pcm_analyzed": false
+    },
+    {
+      "path": "verificare/audio/p6_reopen_0.wav",
+      "sha256": "f63d14f5be8bdf6cdfdb08f11c342fa76a76a5ce670dc8ba9f29e21cabec4e36",
+      "sounds": 7,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p6_seven_1.wav",
+      "sha256": "e77491d7c768c979b9f8aa06746d0dba76f9c5f2ba0e6ec7c76eab60c0aaa919",
+      "sounds": 7,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p6_seven_2.wav",
+      "sha256": "b15ec3533fe66bb1492253b9361e6f3d05a43d157b4ebbd39c05e44374e9a76d",
+      "sounds": 7,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p_manual_1.wav",
+      "sha256": "1f8852112f28a420a12b717bc0667d4ff5ba063e12fc2db68b415571dc6e39b4",
+      "sounds": 2,
+      "actual_pcm_analyzed": true
+    },
+    {
+      "path": "verificare/audio/p_manual_2.wav",
+      "sha256": "bd0e66b501e978b430e7239b3d4997740351c6a5a0b29a8f96b90e6d69b08f76",
+      "sounds": 2,
+      "actual_pcm_analyzed": true
+    }
+  ]
+}

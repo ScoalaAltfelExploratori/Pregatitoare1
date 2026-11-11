@@ -1,0 +1,80 @@
+{
+  "lesson": 9,
+  "date": "2026-11-10",
+  "status": "PASS",
+  "projects": 7,
+  "main_checks": 65,
+  "reopen_checks": 35,
+  "manual_block_checks": 4,
+  "total_checks": 104,
+  "individual_work": true,
+  "native_android_tested": false,
+  "physical_lenovo_tested": false,
+  "browser": "ScratchJr Desktop Reborn, local mirror of published application with a separate observation panel",
+  "gallery_survived_reload": true,
+  "default_assets": [
+    "Butterfly.svg",
+    "Dog.svg",
+    "Ball.svg",
+    "Rabbit.svg",
+    "BeachDay.svg",
+    "BeachNight.svg"
+  ],
+  "official_android_catalog_version": "1.5.11",
+  "pdf_pages": {
+    "Ghid_profesor_Lectia_09.pdf": 4,
+    "Cartonase_Lectia_09.pdf": 5
+  },
+  "all_pdf_pages_visually_reviewed": true,
+  "files": [
+    {
+      "path": "proiecte/00_Demo_Descoperire.sjr",
+      "sha256": "24332019b0c545016435ecaddfb245dd6f1cbc88f8a65da44cfa4ef69a029eb2",
+      "pages": 1,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "proiecte/01_Start_Insula.sjr",
+      "sha256": "cd2bd3974430e763a95a6db97ac4e7195b2f6dab7c5315715470b8a5328ce0bf",
+      "pages": 1,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_09/01_Insula_reactioneaza.sjr",
+      "sha256": "7ad3999466966449f4a386012c0f30b8660133063bf367c69f4425070ccf8a8b",
+      "pages": 1,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_09/02_Iesirea_ascunsa.sjr",
+      "sha256": "1cb3a14f6ccf021840cc7884d67f32d21519352a935a352843e80a357912ed28",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_09/03_Lantul_descoperirilor.sjr",
+      "sha256": "0165b4957bb02bbac59e7f6790ea301c3ab0a0ae88cb1f527837783b2474b10f",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_09/04_Rezerva_Surpriza_optional.sjr",
+      "sha256": "5b3248ba8d9c780101fe2cebcc818e36dbd78d37daec132365314680971f2601",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_09/05_Rezerva_Doua_drumuri.sjr",
+      "sha256": "4b4eeb0233e0930c9cc37b5eda6a2a5a2edbcc5e9b6e943b06693a937b74b105",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false
+    }
+  ]
+}

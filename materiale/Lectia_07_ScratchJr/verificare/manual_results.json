@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "pages": [
+    "page1",
+    "page 1"
+  ],
+  "scope": "Added page 3 using Add Page; dragged Tap and Go to Page 3 onto Rabbit in blank starter. The newly added page uses the community port default character; it is not a lesson asset.",
+  "initial_drag_was_unconnected": true,
+  "fix": "Moved the red block until it snapped to the tap trigger, then reran successfully.",
+  "visible_page_number": 3,
+  "note": "Newly created third page has DOM id \"page 1\"; page number verified from selected Page 3 thumbnail, not guessed from id."
+}

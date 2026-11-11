@@ -1,0 +1,23 @@
+{
+  "duration_ms": 3880.7000000476837,
+  "sampleRate": 48000,
+  "frames": 172032,
+  "peak": 1.0028177499771118,
+  "contexts": [
+    {
+      "state": "running",
+      "sampleRate": 48000
+    }
+  ],
+  "events": [
+    {
+      "at_ms": 290.2000000476837,
+      "contextTime": 12.461333333333334,
+      "state": "running",
+      "duration": 0.10447916666666666,
+      "frames": 5015,
+      "sampleRate": 48000,
+      "peak": 1.0028177499771118
+    }
+  ]
+}

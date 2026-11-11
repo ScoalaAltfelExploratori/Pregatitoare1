@@ -1,0 +1,1135 @@
+{
+  "lesson": 9,
+  "title": "Insula misterioasă",
+  "age": "6-7 ani",
+  "duration": 50,
+  "individual_work": true,
+  "new_idea": "Descoperiri în ordine prin vizibilitate și pregătirea automată a unei noi runde",
+  "assets": [
+    "Butterfly.svg",
+    "Dog.svg",
+    "Ball.svg",
+    "Rabbit.svg",
+    "BeachDay.svg",
+    "BeachNight.svg"
+  ],
+  "projects": [
+    {
+      "path": "proiecte/00_Demo_Descoperire.sjr",
+      "name": "L09 Insula Demo Descoperire",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "demo"
+    },
+    {
+      "path": "proiecte/01_Start_Insula.sjr",
+      "name": "L09 Insula Start Biblioteca",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": []
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": []
+            }
+          ]
+        }
+      ],
+      "test_mode": "blank"
+    },
+    {
+      "path": "solutii/lectia_09/01_Insula_reactioneaza.sjr",
+      "name": "L09 Insula M1 Doua surprize",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "reactions"
+    },
+    {
+      "path": "solutii/lectia_09/02_Iesirea_ascunsa.sjr",
+      "name": "L09 Insula M2 Iesirea ascunsa",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras2",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                150,
+                250
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "exit"
+    },
+    {
+      "path": "solutii/lectia_09/03_Lantul_descoperirilor.sjr",
+      "name": "L09 Insula M3 Lantul descoperirilor",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras2",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                150,
+                250
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "chain"
+    },
+    {
+      "path": "solutii/lectia_09/04_Rezerva_Surpriza_optional.sjr",
+      "name": "L09 Insula R1 Surpriza optionala",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                90,
+                270
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras2",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                150,
+                250
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "surprise"
+    },
+    {
+      "path": "solutii/lectia_09/05_Rezerva_Doua_drumuri.sjr",
+      "name": "L09 Insula R2 Doua drumuri",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras2",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                150,
+                250
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "dual"
+    }
+  ],
+  "missions": [
+    {
+      "label": "Misiunea 1",
+      "title": "Insula reacționează",
+      "subtitle": "Două atingeri. Două surprize diferite.",
+      "diagram": "reactions",
+      "steps": [
+        "Fluturele devine mare o clipă, apoi revine la mărimea inițială.",
+        "Câinele dispare o clipă și reapare singur. Celălalt personaj nu se schimbă.",
+        "Probează fiecare surpriză de două ori. Nu folosi Reset."
+      ],
+      "success": "Ambele reacții se termină și sunt gata pentru încă o încercare."
+    },
+    {
+      "label": "Misiunea 2",
+      "title": "Ieșirea ascunsă",
+      "subtitle": "Descoperă un lucru nou pe care îl poți atinge.",
+      "diagram": "exit",
+      "steps": [
+        "La steag, mingea este ascunsă. Un tap pe fluture o face vizibilă.",
+        "Mingea te duce pe pagina de final. Acolo o altă minge te aduce înapoi.",
+        "La întoarcere, ieșirea trebuie să fie iar ascunsă. Descoper-o din nou."
+      ],
+      "success": "Descoperire, final, întoarcere. Jocul este pregătit pentru încă o rundă."
+    },
+    {
+      "label": "Misiunea 3 - dificilă",
+      "title": "Lanțul descoperirilor",
+      "subtitle": "Fiecare descoperire deschide pasul următor.",
+      "diagram": "chain",
+      "steps": [
+        "După steag vezi numai fluturele. Câinele și mingea sunt ascunși.",
+        "Fluture → apare câinele. Câine → apare mingea. Minge → pagina de final.",
+        "Revino cu mingea de pe final și joacă din nou, fără Reset sau un nou steag."
+      ],
+      "success": "Doi pași de descoperire, în ordine. Două runde complete."
+    },
+    {
+      "label": "Rezervă 1 - 6-8 minute",
+      "title": "Surpriza opțională",
+      "subtitle": "Adaugă ceva distractiv care păstrează misterul.",
+      "diagram": "surprise",
+      "steps": [
+        "Pornește de la lanțul dificil. Adaugă un iepure vizibil, separat de celelalte personaje.",
+        "La atingere, iepurele face un truc și revine la normal. Nu dezvăluie câinele sau mingea.",
+        "Încearcă trucul înaintea descoperirilor și după întoarcere. Lanțul trebuie să funcționeze."
+      ],
+      "success": "Trucul poate fi repetat. Descoperirile rămân în ordinea corectă."
+    },
+    {
+      "label": "Rezervă 2 - 8-10 minute",
+      "title": "Două drumuri",
+      "subtitle": "Două alegeri pot duce la aceeași ieșire.",
+      "diagram": "dual",
+      "steps": [
+        "Revino la varianta M2: fluture și câine vizibili, minge ascunsă.",
+        "Fă atât fluturele, cât și câinele să dezvăluie mingea. Este suficient oricare dintre ei.",
+        "Testează drumul prin fluture. Revino și testează separat drumul prin câine."
+      ],
+      "success": "Fiecare alegere funcționează singură, pornind cu ieșirea ascunsă."
+    }
+  ]
+}

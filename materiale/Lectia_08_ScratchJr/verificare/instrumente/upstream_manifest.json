@@ -1,0 +1,912 @@
+{
+  "date": "2026-11-10",
+  "base_url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/",
+  "method": "Published application files served unchanged; editor HTML loads separate DOM/audio observer. No engine code changes.",
+  "observer_sha256": "bb621f3e18fa8960c0cd4034856be838e86bc0ba0391a15dd8152a12c1df50c2",
+  "files": [
+    {
+      "path": "app/assets/balloon.svg",
+      "sha256": "fdd8b3bdb0d5b11726519b754048b7f7f1afd47e6eb3e8099ffbd4b7087b216b"
+    },
+    {
+      "path": "app/assets/blockicons/addsound.svg",
+      "sha256": "2190af027462e91dfb13e2cc8cf8bfabd90929b211603288524a29c277f2e5c4"
+    },
+    {
+      "path": "app/assets/blockicons/Appear.svg",
+      "sha256": "29b56ba4650ba26893c8c6b623fdd7c15be83565ebf70e907d066df64b6ea4a5"
+    },
+    {
+      "path": "app/assets/blockicons/Back.svg",
+      "sha256": "f87605daa0af4e5ad24f4ae0c0331ee19d019b1e18d9dfe129a76e726d82c530"
+    },
+    {
+      "path": "app/assets/blockicons/bell_icon.svg",
+      "sha256": "23d2d4af2f2acf87854ee8375f60e8bc6005f3d2a49edeec9163dcceffc6ed7a"
+    },
+    {
+      "path": "app/assets/blockicons/bird_icon.svg",
+      "sha256": "e59121553ed2e17a9ced5600644dd2c675d741be25cb455d9bdd234bb6b10603"
+    },
+    {
+      "path": "app/assets/blockicons/boing_icon.svg",
+      "sha256": "892be6cf0934e882a604092138f53175a1743182bbeb70f09c2ced29d8df3b75"
+    },
+    {
+      "path": "app/assets/blockicons/Bump.svg",
+      "sha256": "5daab9a79271440fd3f022116dc897124b73ce73b7f05a7eaf552c6f1c415a84"
+    },
+    {
+      "path": "app/assets/blockicons/carhorn_icon.svg",
+      "sha256": "62aa949e16a8f2ca6ff9c6f0c91b9ccf2cfd2d4cbf9f13d65c10e0aac6deb7ba"
+    },
+    {
+      "path": "app/assets/blockicons/cat_icon.svg",
+      "sha256": "129548612c494988a36c726eaf6c30667198cfff43a1009e3652259a8da11455"
+    },
+    {
+      "path": "app/assets/blockicons/cheer_icon.svg",
+      "sha256": "06c70287bd88b7630ef4f16e4273a77d8135e879c1bd23966ecc8c34a67c6dbe"
+    },
+    {
+      "path": "app/assets/blockicons/Color.svg",
+      "sha256": "d13b2c61afe956755f20723d35e4a383f0433e2635961eed71d54ca68ffe3794"
+    },
+    {
+      "path": "app/assets/blockicons/cow_icon.svg",
+      "sha256": "7adb7b0628836ef319c178c219e8a00a4044200f31268807a09acea19d8bab2e"
+    },
+    {
+      "path": "app/assets/blockicons/Disappear.svg",
+      "sha256": "8d60cb004bdde1f677e99a2ae7e9e718fe5cf48ed240e9d47cb3ccc9785a9429"
+    },
+    {
+      "path": "app/assets/blockicons/dog_icon.svg",
+      "sha256": "2d75f7a83dae71abeb3b9091f72e1ab2236de1426d165332197d7ed09a16441e"
+    },
+    {
+      "path": "app/assets/blockicons/Down.svg",
+      "sha256": "4da2bfdf88613d9a2d200f072a98ef97fe2dd60db206d77134108393f82448e8"
+    },
+    {
+      "path": "app/assets/blockicons/drum_icon.svg",
+      "sha256": "3c3d496afd16b0dce797e31a47d0ab633b57ac0caa17a0b2c403819355155cae"
+    },
+    {
+      "path": "app/assets/blockicons/duck_icon.svg",
+      "sha256": "5c211169fdb30226586fa59136201c36d2eee21287afb1c5f0802524332eed5a"
+    },
+    {
+      "path": "app/assets/blockicons/Fade.svg",
+      "sha256": "fcc1d90d3cb7f05e0ad04586c06cffcc935eaa4cd0e71c74eac131f0e1431de2"
+    },
+    {
+      "path": "app/assets/blockicons/FlipX.svg",
+      "sha256": "e6f33067ac77b2742e604c7b6656ed90718893251348acf85362b40c387ac8e9"
+    },
+    {
+      "path": "app/assets/blockicons/Forever.svg",
+      "sha256": "5df3535aa29b2b35180e1c504b9b8bc2c581c27b46bec732442f3c3343ff953a"
+    },
+    {
+      "path": "app/assets/blockicons/Foward.svg",
+      "sha256": "c0f103a526fe91ff444681a2e4a51ad2b25e58cb38a54d7ae051168c31081289"
+    },
+    {
+      "path": "app/assets/blockicons/frog_icon.svg",
+      "sha256": "6a0d5e70a90f0e307b949c009fe22bef1ecc8a5f165f9e818730d45d26f4271c"
+    },
+    {
+      "path": "app/assets/blockicons/greenFlag.svg",
+      "sha256": "b3f6b068399f00522be9bc3aa4db185bd650f1a0af7376c561d21280e5c70786"
+    },
+    {
+      "path": "app/assets/blockicons/Grow.svg",
+      "sha256": "3de309860a14a5a3d187295238d6d3a47722b3f7338b520e521932b62a860c5c"
+    },
+    {
+      "path": "app/assets/blockicons/Home.svg",
+      "sha256": "b8143964f6bfc1a41df641b04e0c9e525c524782259978cc378bb506a4c6c504"
+    },
+    {
+      "path": "app/assets/blockicons/Hop.svg",
+      "sha256": "39f82fca3ce3dd212209d9ac1753ef3c0452db9aac2a33bce105fa16e5b96359"
+    },
+    {
+      "path": "app/assets/blockicons/Left.svg",
+      "sha256": "14b5206474a6d3fbafc755efe022606802ef81e1c324322ed7105a65e3515ba1"
+    },
+    {
+      "path": "app/assets/blockicons/LetterGet_Blue.svg",
+      "sha256": "d6414ff476e97f1b9fe1088c77a8caada1808ab486829385f5d3065bc87b1155"
+    },
+    {
+      "path": "app/assets/blockicons/LetterGet_Orange.svg",
+      "sha256": "4701ab360645a35071c3e691443de2258a2e8032cea478ef8ebb72ff9a40cc79"
+    },
+    {
+      "path": "app/assets/blockicons/LetterSend_Blue.svg",
+      "sha256": "b55d71f5822564432d4987505e063b0d3441f3bbd25c2a1013f68ca40589a969"
+    },
+    {
+      "path": "app/assets/blockicons/LetterSend_Orange.svg",
+      "sha256": "646f5ab63bc338b7347bf111e36835095dd4a91bd39494b533afefd6d4b9efdd"
+    },
+    {
+      "path": "app/assets/blockicons/magic_icon.svg",
+      "sha256": "415731e3258c00423756e2ba695a6219ab9429bd92d0c527627d2a6d03f55b6d"
+    },
+    {
+      "path": "app/assets/blockicons/Microphone.svg",
+      "sha256": "cceba1dcb7e3f3d6b3af86af1d6d531711cba65953fe13126f6ac1d8a2ed50ae"
+    },
+    {
+      "path": "app/assets/blockicons/OnTouch.svg",
+      "sha256": "fd9a763bc2f79bb20e903c4368a2b03f49715f169f4ad0b7da1fcb5b9cdd7f83"
+    },
+    {
+      "path": "app/assets/blockicons/piano_icon.svg",
+      "sha256": "a7f679822fa41d84defbe2d7d6e15724fe53531bd9bdf787bb240d502d5908c8"
+    },
+    {
+      "path": "app/assets/blockicons/RandomPage.svg",
+      "sha256": "27e56dde3a0083505112fb74efa406e1f0f6484125f2dc3b18b43af97d309c67"
+    },
+    {
+      "path": "app/assets/blockicons/RandomPos.svg",
+      "sha256": "d93baf5ee9b7ce234a72efa6dcfaade6053f8ce5e6f9fb00e51e5925cbe9dbd6"
+    },
+    {
+      "path": "app/assets/blockicons/Repeat.svg",
+      "sha256": "d1d07365344f021080a6b344c6be43ffd5d65c243f98cd581c5409e8d814af26"
+    },
+    {
+      "path": "app/assets/blockicons/Reset.svg",
+      "sha256": "68e2add6cefe506c06ab6ccce237b6424c2a2989aa3fab5de907d536c16d4462"
+    },
+    {
+      "path": "app/assets/blockicons/Right.svg",
+      "sha256": "dbda9dea08e8f6786a4737cd1724fb2aca8b5a5ccb924c8b97af0edf23595d58"
+    },
+    {
+      "path": "app/assets/blockicons/Say.svg",
+      "sha256": "ae7c487bfa5c1f851cdc1a25554affa5ef3eadac6f7748e5dbef784241c3b6e0"
+    },
+    {
+      "path": "app/assets/blockicons/Shrink.svg",
+      "sha256": "8aabba1fd2bece4f384a51fb6d527f76b7596588b0471096baa618daa88d58a2"
+    },
+    {
+      "path": "app/assets/blockicons/Speaker.svg",
+      "sha256": "b17f21b001a83540386513976c4e09992328f0ad1cd154d34d89515fd86b46d5"
+    },
+    {
+      "path": "app/assets/blockicons/speed1.svg",
+      "sha256": "d13d2ba2fb0bef6c60e24b6ce9a4403a291680694a775e846c40dde658d48b31"
+    },
+    {
+      "path": "app/assets/blockicons/splash_icon.svg",
+      "sha256": "48cd71be3ab10ccf30924069f01a70cd2629c50136e12d2ce7865c7d18fb74f9"
+    },
+    {
+      "path": "app/assets/blockicons/Stop.svg",
+      "sha256": "6c0542eba3b495e99dd8e19814e6eb546f26144132feeae888fc1fc96d27cb60"
+    },
+    {
+      "path": "app/assets/blockicons/TouchColor_Red.svg",
+      "sha256": "67a9231ab1cbca299e5a23b77c6e21aafafec9fe7f2c7187aa8361f588e20837"
+    },
+    {
+      "path": "app/assets/blockicons/trumpet_icon.svg",
+      "sha256": "920e8ac7f1ac8f7311229f9e34569f5f325b5fe18466c008a4c45d8e4efe8056"
+    },
+    {
+      "path": "app/assets/blockicons/Up.svg",
+      "sha256": "f48d146f186c3a8304d76a69994664d3242ff6a82047372b47bb29346d557c29"
+    },
+    {
+      "path": "app/assets/blockicons/Wait.svg",
+      "sha256": "f8c29eec20b202beae0ca5a7f34b0611e84dd1e3d8ef504f05bd49cd72657c29"
+    },
+    {
+      "path": "app/assets/blockicons/WaitRandom.svg",
+      "sha256": "e90acc9f7328c57a6b88c6e1eabf8a2b8ff4e4013b62ee1be961fe463a2a0fae"
+    },
+    {
+      "path": "app/assets/blockicons/xylophone_icon.svg",
+      "sha256": "6d521bce5ee494fe89664081da2a6fd20204baa5af5db23bc1ffdba4c48cea1d"
+    },
+    {
+      "path": "app/assets/blocks/blueCmd.svg",
+      "sha256": "d6ae2da2cf5a3acca9e176e883f390891cae53ac6afebe57e5c737cc432a640d"
+    },
+    {
+      "path": "app/assets/blocks/caretcmd.svg",
+      "sha256": "99efed0e5543301340bfa51a44559d02e68a4ef40d0528dca3a4ada4be29eb11"
+    },
+    {
+      "path": "app/assets/blocks/caretend.svg",
+      "sha256": "066cf1ed481c9864bc642b2d86e5f6f311b2ac06dc8e59b03f157a2535eb740c"
+    },
+    {
+      "path": "app/assets/blocks/caretrepeat.png",
+      "sha256": "cf75643addcfae89c3b53ffbbef61e1b678dc5bac3a3d8aecc0544dc53092e00"
+    },
+    {
+      "path": "app/assets/blocks/caretstart.svg",
+      "sha256": "a4dedaf0ebe6c51644f9d881bc95a4a1ec48299ac722cb9b06d6df5fd521eb33"
+    },
+    {
+      "path": "app/assets/blocks/eh/blueCmdH.png",
+      "sha256": "6f4ee54a6edbff2205c88ef866b373ed7f7d524964d63a21ac74de81485604fd"
+    },
+    {
+      "path": "app/assets/blocks/eh/flowH.png",
+      "sha256": "3054fc954ae1b1d1e4b0c0b9f920bc2ea25947759e9ff4bc0a04417d01caec93"
+    },
+    {
+      "path": "app/assets/blocks/eh/looksH.png",
+      "sha256": "eacb47e85705861db79f8ecc1a1a775f89a2f5bf41d18cff67a542c486a403d0"
+    },
+    {
+      "path": "app/assets/blocks/eh/repeatH.png",
+      "sha256": "58cd4800ed70672cb17635a1bedf303809746711a457da897e47075aa30827c5"
+    },
+    {
+      "path": "app/assets/blocks/eh/soundsH.png",
+      "sha256": "63c444f40eae93711888b7b43ddfe4c30efc01b5f7843e268e29a8af00ccf6fc"
+    },
+    {
+      "path": "app/assets/blocks/eh/startH.png",
+      "sha256": "8266c07eec6439d42e3cb8dc328321c4e30b720c65b6f2bb19586bad86c0cebe"
+    },
+    {
+      "path": "app/assets/blocks/eh/stopH.png",
+      "sha256": "d3cd8f42a62b6af4bb8ccc6317cd9752e7f9704a838029ab9482e206de1d777a"
+    },
+    {
+      "path": "app/assets/blocks/eh/stoplongH.png",
+      "sha256": "1ac3acff3cd01bfb7c44f362a03049b290a61ddb36b7e2f79ec186193b74719c"
+    },
+    {
+      "path": "app/assets/blocks/eh/yellowCmdH.png",
+      "sha256": "55c518fd11dc81a5377a23c8ca9634718a1746719aff6d25f0c5061573e9702b"
+    },
+    {
+      "path": "app/assets/blocks/endlong.svg",
+      "sha256": "366a26311ac92d8f254cd240b7bc5e912fdff8ee0bd89d77922ff443d8939057"
+    },
+    {
+      "path": "app/assets/blocks/endshort.svg",
+      "sha256": "701051a7890899cf6902cf1c7d6d4ac32b9f7baa09821bfdf0d9bd3806749cce"
+    },
+    {
+      "path": "app/assets/blocks/flow.svg",
+      "sha256": "b953f980c48945bc73ff0db07d3472b4ef7d5b5db30d4107c116495bd093f636"
+    },
+    {
+      "path": "app/assets/blocks/looks.svg",
+      "sha256": "1c865875d1c6e3cdfa06fe5512af286ef49597862d49a320d22e9378c455f3a0"
+    },
+    {
+      "path": "app/assets/blocks/repeat.png",
+      "sha256": "355d16e0993c1835d678d3add987b3064b1c39faa7f3a0f528c30f60a9a17cb7"
+    },
+    {
+      "path": "app/assets/blocks/shadowCmd.svg",
+      "sha256": "f81b37a93e4158d61b58a69f68e3ea76637941c50e4e779bcc1a0a827e890943"
+    },
+    {
+      "path": "app/assets/blocks/shadowEndLong.svg",
+      "sha256": "8f8f57d851d2e72d47b27ee43d105d886ddc6bdf58e037fca25b82d08265b9dd"
+    },
+    {
+      "path": "app/assets/blocks/shadowEndShort.svg",
+      "sha256": "0552cbe7c63f3a06231991891d3744abaf56c3ae30c8519a40dd5a2b2297d092"
+    },
+    {
+      "path": "app/assets/blocks/shadowRepeat.png",
+      "sha256": "8b62c52ff1db12818d925fb30d13c913f636c09740ccf3853e17500f581e444d"
+    },
+    {
+      "path": "app/assets/blocks/shadowStart.svg",
+      "sha256": "f759191e1a54f9c2be2591d006312872918264efa3a183db17c313e768beef35"
+    },
+    {
+      "path": "app/assets/blocks/sounds.svg",
+      "sha256": "d9e3aee2272fb0877e9df08df8435baefe84b0bf065ce7d37aa8c9c493da4704"
+    },
+    {
+      "path": "app/assets/blocks/start.svg",
+      "sha256": "61245a424ed870d7281cbf59d3ead98fb438a463c07e491e400b79fc418fa591"
+    },
+    {
+      "path": "app/assets/blocks/yellowCmd.svg",
+      "sha256": "51e3e7efa02ab8581f802b140b43bda5d7c5dc41a0165487f15fa0b94c7c409c"
+    },
+    {
+      "path": "app/assets/categories/FlowOff.svg",
+      "sha256": "6e87be5a35d7d5510d88bd6aef358c89f9234f523875f4239ce7fb076cf47bd4"
+    },
+    {
+      "path": "app/assets/categories/FlowOn.svg",
+      "sha256": "e6d7c56e77692f81a5132cab040748b5249e9afebc5eb9331053af391702f45f"
+    },
+    {
+      "path": "app/assets/categories/LooksOff.svg",
+      "sha256": "7eef2af82636a3b24c2add6739e7695170436dd4ead5773f73b362d223646328"
+    },
+    {
+      "path": "app/assets/categories/LooksOn.svg",
+      "sha256": "05a675f24e0c1e5d00dbfe54b271b357dcca89e22712fe959d9e074d9aafda32"
+    },
+    {
+      "path": "app/assets/categories/MotionOff.svg",
+      "sha256": "6184f0bb5d43aaad20bb705192962c2a6f35ebc4abdeacd84993bcc9d105c000"
+    },
+    {
+      "path": "app/assets/categories/MotionOn.svg",
+      "sha256": "ed9126f69cc446f1410562aad1a1e3412ff088d8d1ba9d4e935502f224d7b5d0"
+    },
+    {
+      "path": "app/assets/categories/SoundOff.svg",
+      "sha256": "fc8198c5bfdc45d897c83cbb99e5d1642654ae3e7281b49da6134e5972b37847"
+    },
+    {
+      "path": "app/assets/categories/SoundOn.svg",
+      "sha256": "1a5b6e7bcca415b87e53600f38303971a74b11918b303f47d12b28037511d2e8"
+    },
+    {
+      "path": "app/assets/categories/StartOff.svg",
+      "sha256": "a40a218da078de4f7b2edf13717b0fcac6b9a64164c8df01c5274e42e20893a4"
+    },
+    {
+      "path": "app/assets/categories/StartOn.svg",
+      "sha256": "ac7242a74ab66fb7b3fce5759e19687114a008a0c69ff59ce37d610b95872e76"
+    },
+    {
+      "path": "app/assets/categories/StopOff.svg",
+      "sha256": "dbd3622b1f5d5d8f1259dd979884735eaa79d89f0396bf36d5d847206fb57052"
+    },
+    {
+      "path": "app/assets/categories/StopOn.svg",
+      "sha256": "0ee1519ce020a7195cef163aae0d60f9cc1465f3ce633dab059ea1553131ee8c"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-400.woff2",
+      "sha256": "f7bbc8461b2f4cc870743729ee5d44ce0466ca67618f89a8942b655f8a644e68"
+    },
+    {
+      "path": "app/assets/fonts/Roboto-700.woff2",
+      "sha256": "413a32337b13f4db78efa8d6842a3769d28166c156d9d053bf70b472e4a1e41f"
+    },
+    {
+      "path": "app/assets/fonts/verdana.ttf",
+      "sha256": "bbd6f974d877a53b320410529ff1e9295148b3bac5a14029910adac1607a77eb"
+    },
+    {
+      "path": "app/assets/fonts/verdanab.ttf",
+      "sha256": "174568c4633a8a688d579d283f7508c16e437434fd5ac97d4ce30dfc42d0860b"
+    },
+    {
+      "path": "app/assets/lib/mic.svg",
+      "sha256": "b01f7fef7023d87cff00172956d8ffcdd9331c83eb51bc141858c0d2eb0e6257"
+    },
+    {
+      "path": "app/assets/lib/playoff.svg",
+      "sha256": "0df78cb0fa436c26729062bb03baadf2684d7b4c5c6234d22e379827153c7824"
+    },
+    {
+      "path": "app/assets/lib/recordoff.svg",
+      "sha256": "1ba2814a2a9075406736b38815cc839d7bbb6886f1ea5416e4be5b924b0eb7de"
+    },
+    {
+      "path": "app/assets/lib/stopoff.svg",
+      "sha256": "be6df73e586cf9f6b4a9956f5de0e8c4fc20fdbe7831118456767698c2293eb8"
+    },
+    {
+      "path": "app/assets/loading.png",
+      "sha256": "3e6c24fe41b4cdc2becb89561cad9fc19426da9b6456b441e93b459cec85f536"
+    },
+    {
+      "path": "app/assets/lobby/bookOff.svg",
+      "sha256": "bf0a0f56a0c5bc8b6b4fcb7a74074e4ac0abeb863175f68df4055a2adeb83a75"
+    },
+    {
+      "path": "app/assets/lobby/gearOff.svg",
+      "sha256": "1f40f2f42225caf25aceae1e1d5c5259b6c0dfa926b6ea972335597dd6b63261"
+    },
+    {
+      "path": "app/assets/lobby/help.svg",
+      "sha256": "131eb1bf6376d71ece1fd36444ff595cd22ed8c9b27c079c542ea463b1443877"
+    },
+    {
+      "path": "app/assets/lobby/house.svg",
+      "sha256": "ba6ea482c67bbc43ef0a06d64b8711ef655d853903fb477363b728043a0e0b0b"
+    },
+    {
+      "path": "app/assets/lobby/pmask.png",
+      "sha256": "ff41442eb75645bb8b8e929dc4004a769bebade8c09a22929f7a2514d26d6fe9"
+    },
+    {
+      "path": "app/assets/lobby/scratchJrlogo.svg",
+      "sha256": "d53e2a641b748f376b1d4eab72f460988c83a0ebb4d1a027a31b4278e6be0e5a"
+    },
+    {
+      "path": "app/assets/misc/Number-01.png",
+      "sha256": "33c06ae5991d3ba4643f1f6cc4839c2a0c462c16c475b199bda9f4e834b37b3e"
+    },
+    {
+      "path": "app/assets/misc/pushbutton-01.svg",
+      "sha256": "ac1409ca0bbce2975bd7a5d9810ba81f9fa5a653312ff8b193af2d76156ea5ea"
+    },
+    {
+      "path": "app/assets/misc/pushbutton.svg",
+      "sha256": "e76b62cfe5cbb6808f6150c1a36831cd2a2f7f37f016a97d5d6f72c0eaca4063"
+    },
+    {
+      "path": "app/assets/misc/Text-01.png",
+      "sha256": "e2036f655224da0f1cf3d0cbd9777a5eb1418ce44ce3aa6a64243cc623c9eda8"
+    },
+    {
+      "path": "app/assets/paint/cancel.svg",
+      "sha256": "272ce334a463a558263b84682a24bdb8ec9d027956cf08a1a9df9eda80248381"
+    },
+    {
+      "path": "app/assets/paint/ok.svg",
+      "sha256": "6970f0ed21847332fb5bf8cbe6a3c917c06ad4582680e872e1dac89bedc5a895"
+    },
+    {
+      "path": "app/assets/paint/paintbrush.svg",
+      "sha256": "46741a7b12935877d3def7fce1c48c9f34ec89e865d81e06418909302d265fd4"
+    },
+    {
+      "path": "app/assets/paint/splash.svg",
+      "sha256": "2c19d2bfb8a02c2dc058adfbbdf50590852e82cff570844ecb1149cec4c15a0d"
+    },
+    {
+      "path": "app/assets/paint/splashshade.svg",
+      "sha256": "d36012a316a7c7cde51d4ac38e18f6dc1080f40d48404707df2e14fc55513f07"
+    },
+    {
+      "path": "app/assets/pinfologo.png",
+      "sha256": "c5b6aca28edb503e69d0de566c21d846a9fc301fff3d39f51db136634d213d80"
+    },
+    {
+      "path": "app/assets/ui/addText.svg",
+      "sha256": "26e542412714e21e14b8be670603f88eb16788101507ec09aeb56e7241698caf"
+    },
+    {
+      "path": "app/assets/ui/airdrop-shadow.svg",
+      "sha256": "a36fa40a5a8c8987f6cefc949ddc71bc90081f9db63460e3db078b37219769c0"
+    },
+    {
+      "path": "app/assets/ui/arrowdown.svg",
+      "sha256": "610161832b08d1803e7d23ac68f6c157de40b0c07e8f0e1ed65087e602349793"
+    },
+    {
+      "path": "app/assets/ui/arrowleft.svg",
+      "sha256": "ad65955480e391fcb874acbac780e8646c7fc17dcbaf5856b07a743fcdfa22c5"
+    },
+    {
+      "path": "app/assets/ui/arrowright.svg",
+      "sha256": "fba5c7f558f04bd5c144755b4993f27defa5a14a7cb270c04290b8f1303ffa28"
+    },
+    {
+      "path": "app/assets/ui/arrowup.svg",
+      "sha256": "26e693d4a1efdf6e8550f111d6c64ac75afadfbb8dc718a5e4538f11fc4fac87"
+    },
+    {
+      "path": "app/assets/ui/canvasmask.png",
+      "sha256": "0ed942b1fec6cfe5c864fa524f10a428d1fef9b3d756e47264c59bd0a7e707b7"
+    },
+    {
+      "path": "app/assets/ui/closeit.svg",
+      "sha256": "2202a51bf60b0aab014af19058865ca8bce362f2d9c7bc9ebd8c52c9cf20bd42"
+    },
+    {
+      "path": "app/assets/ui/copyit.svg",
+      "sha256": "8a3a73f5d37a6d0080d63444b9a1607f6c6f6433a3d6c74f90bef9078ead09ee"
+    },
+    {
+      "path": "app/assets/ui/deleteup.svg",
+      "sha256": "0d2198bd2cb12d0b4b575da2da4e2a8751fe89eb14e2e225e2bf9a90c52ba3f2"
+    },
+    {
+      "path": "app/assets/ui/email-shadow.svg",
+      "sha256": "708c4cb7c6d5c1f2345910ddc231b4930222f6d8411beb677bad0e8a9fad5f15"
+    },
+    {
+      "path": "app/assets/ui/exportit.svg",
+      "sha256": "319f9b83f85f8db4ee1681b87475bf3637a67f1394f9d92255f247b035d1b231"
+    },
+    {
+      "path": "app/assets/ui/fullOff2.svg",
+      "sha256": "1c4450536d8b6dbbe1f53dc84609b5aa31044f8b0576feffa18937cbb31cde4a"
+    },
+    {
+      "path": "app/assets/ui/go.svg",
+      "sha256": "288fd8d004f4b9ec85fef97ba260670c789b30f59922b3795d34a44b6368dad9"
+    },
+    {
+      "path": "app/assets/ui/goPressed.svg",
+      "sha256": "d289bfb4f0e23166bd6f66cd9230d65922f9e79a73e5b4bcd29f135436f53411"
+    },
+    {
+      "path": "app/assets/ui/gridOff.svg",
+      "sha256": "435045bfe4050a79e8ece8fcdafbe4baa6c57a40c69b8b176bc06f95be8f4bc1"
+    },
+    {
+      "path": "app/assets/ui/gridOn.svg",
+      "sha256": "2622fb6e4af01ade11cb91f4c956b37d76b0ac2ce3aa884321a97d6dbb8b5455"
+    },
+    {
+      "path": "app/assets/ui/importaudio.svg",
+      "sha256": "d3777eba961d43097d9a24fe699126f1762236e4aff386d9dd05584d227a2a9f"
+    },
+    {
+      "path": "app/assets/ui/importmedia.svg",
+      "sha256": "68ce13f0c13a5476db138b87d5d63343c33c2fdcd0bf629344651893cbfa7823"
+    },
+    {
+      "path": "app/assets/ui/keydown.svg",
+      "sha256": "7964952689172856eab33c56a01887a95fa594e309eb75481219e1dd3bb35deb"
+    },
+    {
+      "path": "app/assets/ui/keyup.svg",
+      "sha256": "50c0608d01bc722ef03539c1a53810dbf69fb61284a23816b0ba46d0ba5ff9cf"
+    },
+    {
+      "path": "app/assets/ui/loader.png",
+      "sha256": "1af341a43fc53d6646d29febefc0f56edfef3bf87b3618976be885006e68c3ab"
+    },
+    {
+      "path": "app/assets/ui/newpage.png",
+      "sha256": "9dd37db7557e9597236d75ca2d7b1ee3373881a4672bd627cdb7bf8b7ac25fe7"
+    },
+    {
+      "path": "app/assets/ui/recordslot.svg",
+      "sha256": "07533c3a00130df37e97dd0b345dd1fced2e6e6f360e16e2d8da9e4abf3dbf95"
+    },
+    {
+      "path": "app/assets/ui/resetAll.svg",
+      "sha256": "0fb29c4f13dabb323b8f0c466aaa19a058e939f73a7ade41870c7a5d68ed16c5"
+    },
+    {
+      "path": "app/assets/ui/resetAllPressed.svg",
+      "sha256": "ace641813103eeff078e0a9acc47e1d10e08b11733f61d8c54518997b4e29709"
+    },
+    {
+      "path": "app/assets/ui/scene1.svg",
+      "sha256": "fd8c1cea2ce6ddb9b6be6994b711cd5a0cc0b5b6ffeebc41b2d49a32b981b99c"
+    },
+    {
+      "path": "app/assets/ui/stop1.svg",
+      "sha256": "f87e695d8f88bb2252a9152f4e6f1d37f9863cf069f040638f43ce038e61fdee"
+    },
+    {
+      "path": "app/assets/ui/stopPressed1.svg",
+      "sha256": "8179dc9cdc484123307362aa48beae08feb61bb81073f37d9ed26d10f643316e"
+    },
+    {
+      "path": "app/assets/undo/redoOff.svg",
+      "sha256": "751786175a43e434e87c77cc554fce0ef97b172ca2a384749bcac80877606833"
+    },
+    {
+      "path": "app/assets/undo/undo.svg",
+      "sha256": "acee36e4246ec8be5aca3014c26b09cbcc9ef67c2e1577de7b163b53d6b502a9"
+    },
+    {
+      "path": "app/assets/undo/undoOff.svg",
+      "sha256": "593b9b5d10bcb717ef1e150e0704f3c2f6cd212b54420fded9c316309d0c2d43"
+    },
+    {
+      "path": "app/css/base.css",
+      "sha256": "cf06575ecbada657c890b78dcd3ce68b28fa65a47d7eacb4b7c5a2b0c0bb458b"
+    },
+    {
+      "path": "app/css/design-tokens.css",
+      "sha256": "267dd252decfc1755c8d073190018e8bc835849ba38a314213cf8f6b5d6ecee9"
+    },
+    {
+      "path": "app/css/editor.css",
+      "sha256": "e42072454b5bdb88b9576cbafacc77ac05fb9cba0a1afca6e65ce1110b5f4df4"
+    },
+    {
+      "path": "app/css/editorleftpanel.css",
+      "sha256": "47c3bcc395048b49f7c32e592c119e35840e4fdf9e525568588c4a8edde62365"
+    },
+    {
+      "path": "app/css/editormodal.css",
+      "sha256": "96bf8459ec80e3b9cc29a10f4e457238b7d653be69d19ae3ea7d76ef65738bec"
+    },
+    {
+      "path": "app/css/editorstage.css",
+      "sha256": "280c21ecb63abc11eecaee5ddc56fcfb97da642225cdaa6a144971b774fe18a6"
+    },
+    {
+      "path": "app/css/font.css",
+      "sha256": "6c333f6a4886eff88c4f9082f64193a7c35e1b962c343e273798cf374faa7fd6"
+    },
+    {
+      "path": "app/css/gs.css",
+      "sha256": "7e84cd464a57cbfa804b11b6f3821ef9a5594ad7c2b67f8cd59b4b5c0b14e3d5"
+    },
+    {
+      "path": "app/css/librarymodal.css",
+      "sha256": "e54cb1497b60092061edf0994a329d7747d16234351c1ad3b92cb7b00fd89e54"
+    },
+    {
+      "path": "app/css/lobby.css",
+      "sha256": "89be4bdfedd49e7415c98df5d91281eadbdc3310d4fb461bd0646100e7779f1e"
+    },
+    {
+      "path": "app/css/paintlook.css",
+      "sha256": "90a4f362aa20e142047003b00487fdc98057f556c30692bdcf700dafa0524d12"
+    },
+    {
+      "path": "app/css/start.css",
+      "sha256": "128220037a196de5b25eff392a745d7f054bc34566d6601913535fba5630a318"
+    },
+    {
+      "path": "app/css/thumbs.css",
+      "sha256": "2fe71c7e4e29ce7d4b38757ca6b48d7b86aab40766b518380e14bdae4807431c"
+    },
+    {
+      "path": "app/dist/Alert-CWKTHWGR.js",
+      "sha256": "812f426cdbc9853e000ae1bb4d9d1bebad5aa03c646fc33ac06b983446b12a61"
+    },
+    {
+      "path": "app/dist/app.bundle.js",
+      "sha256": "d33d28fe5847748ede3d256a8941984631258c6780b4808e57667b78a4eaaec6"
+    },
+    {
+      "path": "app/dist/chunk-BTABAFWH.js",
+      "sha256": "7686d6c77de6d111913f5954c1bbd2ea1f34d93bfea74139a800e244666f740c"
+    },
+    {
+      "path": "app/dist/chunk-F3GIPOAE.js",
+      "sha256": "3f268d20b3209a74282203efe813e898d8ba7d96366cf388aa127ebcf6029c68"
+    },
+    {
+      "path": "app/dist/chunk-HXK2P3KE.js",
+      "sha256": "211abd66611a13fb0af929d67bc46283285f9741cbf5a3b9d64c2b4ec4732c3c"
+    },
+    {
+      "path": "app/dist/chunk-TQGOULUZ.js",
+      "sha256": "30012b3069dfd295d224caba60f758df4e4e0a5f3b39e11b5abdabfbf2879937"
+    },
+    {
+      "path": "app/dist/chunk-VUYG5FHZ.js",
+      "sha256": "5a54f79e4133b13384517dfb4b559156791fb1df0ef2469f3ecee9a52e6eadc8"
+    },
+    {
+      "path": "app/dist/chunk-YT5HZE3D.js",
+      "sha256": "8f2b042bc94fa531741f1f4aa5fe827b3d9ebae92f2fb7d953d6cfa96ea47a82"
+    },
+    {
+      "path": "app/dist/editor-YEMETZJY.js",
+      "sha256": "ba30a6ea8d6efbdd43b090403d2f9f0e874dc40d639f32a6e2ea03f9fe95eac3"
+    },
+    {
+      "path": "app/dist/entry-QAHSRTFB.js",
+      "sha256": "f5826c1f6fc15c2dff824ded8276970b5857b23ab904772f534a20f25e30b3f8"
+    },
+    {
+      "path": "app/dist/gettingstarted-3OUYJZA7.js",
+      "sha256": "fef2269a19aaa8fa6d804ae20c7b7f1e30613eb271902491343d5e854bae77a0"
+    },
+    {
+      "path": "app/dist/home-YYTUNW4S.js",
+      "sha256": "7ccb690580c2df6c8f7bbaf76218ff01e8a2351afeb4c95758f3e18685335554"
+    },
+    {
+      "path": "app/dist/inapp-LC2KJGLO.js",
+      "sha256": "5d515ee6162b42b57dc747197cebd8001fe77208848c225370498c8607e5736a"
+    },
+    {
+      "path": "app/dist/IO-MTI47TWH.js",
+      "sha256": "fcf9412b518cabd9da5db228da099f539fcc1343e09a036d86994aac6c427f0f"
+    },
+    {
+      "path": "app/dist/PlatformBridge-HW75HQJO.js",
+      "sha256": "f3ff0f3108da875474ebe79cd9ba29cc33239b3afabedb6897075fd1b0f756d4"
+    },
+    {
+      "path": "app/dist/Project-NMOKR6ZR.js",
+      "sha256": "d6bee86cf4931528c7a91128a10871fc267525c0bce409099e25af56f358ef2a"
+    },
+    {
+      "path": "app/dist/UI-WTOBF2DT.js",
+      "sha256": "d08306d9fb1a5046316216b2e9ef90833dc39fec8eeb89afbd2f4d8363771975"
+    },
+    {
+      "path": "app/editor.html",
+      "sha256": "fdc8362d84977168e848c08e6c4a4ac4acecd2e0bbb7752c077a511d2e6a665f"
+    },
+    {
+      "path": "app/gettingstarted.html",
+      "sha256": "c83f0901253a448ac1793b71eaba8090458cbb22c97ea491834b7b5f8053c9b6"
+    },
+    {
+      "path": "app/home.html",
+      "sha256": "204c04293d5edb33938a06069b171bc50313f110440a332addbc294c3fd820ab"
+    },
+    {
+      "path": "app/index.html",
+      "sha256": "c5d0efcb220ae935341058dfe7e78335edda622c62f356bc7e00737db068f6f5"
+    },
+    {
+      "path": "app/localizations/en.json",
+      "sha256": "24356ac5295f5e660d717ec3f879b260415e3fe4850cdd5deb3cb9030616b25d"
+    },
+    {
+      "path": "app/manifest.webmanifest",
+      "sha256": "b01d7f85169a8eee4a1a8395ae96fba081da7f1c12d0c86f5f4a1183290627a6"
+    },
+    {
+      "path": "app/media.json",
+      "sha256": "0241506646a3fcec3a724621504165dd5434cbebc322735f0cccbe981638fad8"
+    },
+    {
+      "path": "app/settings.json",
+      "sha256": "1b0bb2f0631eccd9721396205f9f507d9a84e0fb95c60614d9a764ad30ccef04"
+    },
+    {
+      "path": "app/sounds/bell.wav",
+      "sha256": "574d2cba06a981e588cae0d3089be5a95b9453eecfd5dac77e071df808742789"
+    },
+    {
+      "path": "app/sounds/bird.wav",
+      "sha256": "8cd63a487d37fa756960e1cb1aab841409da09b1ea9ea7a5ec6fce8c8b893541"
+    },
+    {
+      "path": "app/sounds/boing.wav",
+      "sha256": "6c30220a098b0681e61fb72751bf09da6d0d4a387da4be25eccb73f31e89adff"
+    },
+    {
+      "path": "app/sounds/carhorn.wav",
+      "sha256": "26d2607bd068579de566697b4c7e3f8882b9b197b43fa52a91328e0f60a41e91"
+    },
+    {
+      "path": "app/sounds/cat.wav",
+      "sha256": "737c6814767c8aeb27aaf10b3716395edb68937cd10dc56ccf028d94e5f4d0c4"
+    },
+    {
+      "path": "app/sounds/cheer.wav",
+      "sha256": "5cfc01bdca7b7f3864fa44c48015ce148fbc8818b96c9be3211dd8230304dd46"
+    },
+    {
+      "path": "app/sounds/copy.wav",
+      "sha256": "9e44730581c5f195b74af3fdf59086bb11ae90aaddcad16352b4b10b36ae518e"
+    },
+    {
+      "path": "app/sounds/cow.wav",
+      "sha256": "93a3af4312c9486c890cb4437cac18507b75c3199e25fc20f3ebd2a0aca2287b"
+    },
+    {
+      "path": "app/sounds/cut.wav",
+      "sha256": "6276ccb8a959e9b75971550ec36a734a7cc430790e4444dcf74727b65bada332"
+    },
+    {
+      "path": "app/sounds/dog.wav",
+      "sha256": "b9e1f950de1d88b8ae055f10cbba905c610088f01131fc97e96f0c7f5b45bc4d"
+    },
+    {
+      "path": "app/sounds/drum.wav",
+      "sha256": "895a0cd2398ed90fb76a8cd0ce3f579f33c09b5c4657164d92ee982c0e22e2d6"
+    },
+    {
+      "path": "app/sounds/duck.wav",
+      "sha256": "d2ebd0d284c2cc3f058669dd8fc52da2ae8faba8c9ec4123c1f1ca714dfae9d2"
+    },
+    {
+      "path": "app/sounds/entertap.wav",
+      "sha256": "bd4b83bd9ca4ec2085f76284d7a74d2bb50523beaf1767a24c8d7d84a0da3a13"
+    },
+    {
+      "path": "app/sounds/exittap.wav",
+      "sha256": "5ffd144a8c92a43b22905181383c3cfde211de02661b481196befc3e6dfe6acd"
+    },
+    {
+      "path": "app/sounds/frog.wav",
+      "sha256": "5f3aab0bcdfd4a272bf8793954bee0bc65752de5095e173c58dc338f7d9c8985"
+    },
+    {
+      "path": "app/sounds/grab.wav",
+      "sha256": "d338a4452dd61bf90d6375691b6e0558dbe6a2c4e71b3c59509033864a862d05"
+    },
+    {
+      "path": "app/sounds/keydown.wav",
+      "sha256": "be1ee8efc065ed4abb0b8b5a12eb8ed52df5029284ee5bb37cbe5aa00d8965d9"
+    },
+    {
+      "path": "app/sounds/magic.wav",
+      "sha256": "5d76b7a3de38e4d41fddd89c82b773c9e5998cb56832c05e3f899182dabf92fa"
+    },
+    {
+      "path": "app/sounds/piano.wav",
+      "sha256": "6ce458c01af4cf944aa721b30ee978c51c5f06d979f13f90bfa930de25ecf320"
+    },
+    {
+      "path": "app/sounds/pop.mp3",
+      "sha256": "671e726405d13474ffc52a0477b02dbb31181353f888415868b41794f7256e0b"
+    },
+    {
+      "path": "app/sounds/snap.wav",
+      "sha256": "b8e5e6c5cf4dd788ed41aebf94a93599bcee8f4da2e63e87f204b9b4ee487867"
+    },
+    {
+      "path": "app/sounds/splash.wav",
+      "sha256": "c85ea2b0b10857e47cc04faf513b46178d7c9b7b8c4ce2acaa63edd98b88147e"
+    },
+    {
+      "path": "app/sounds/tap.wav",
+      "sha256": "aae2990f6c334cd597d0620c4039a5b7bd2ffc9bbb6208f0594efe5ff77bb8ed"
+    },
+    {
+      "path": "app/sounds/trumpet.wav",
+      "sha256": "3d55af2675b23e10090c75edaa2e8be0985f6929e47a538d0a31767108404182"
+    },
+    {
+      "path": "app/sounds/xylophone.wav",
+      "sha256": "5e72b6c157dfeb65b90efc92309f12aeb3c9bd3766e5b1407a3e2d9977260dba"
+    },
+    {
+      "path": "app/svglibrary/Ball.svg",
+      "sha256": "10fb32c6a476451258c4ef0444c0a027fd6200873cba9b86030b121405630e6e"
+    },
+    {
+      "path": "app/svglibrary/BeachDay.svg",
+      "sha256": "2114a013a8df35a29965dfb10d976af4599c6b831251b9a04794ada265d142db"
+    },
+    {
+      "path": "app/svglibrary/BeachNight.svg",
+      "sha256": "5e635632a938aac48787fe597e5e951de65352f6da7ddb3662eb6b30606ffb37"
+    },
+    {
+      "path": "app/svglibrary/Blue.svg",
+      "sha256": "775d482b21e9c1e84978e324b3cacde32dad51ea62f46feaba9df25150731d80"
+    },
+    {
+      "path": "app/svglibrary/Butterfly.svg",
+      "sha256": "72c3a57f51e52b1210e9648cb1379efe7ce2ed70d7ae043643c19441f4019641"
+    },
+    {
+      "path": "app/svglibrary/Dog.svg",
+      "sha256": "af2acee2e2859860ed307bcf1943410e029b3ac01e9d0a2aad9cfcb8af14e045"
+    },
+    {
+      "path": "app/svglibrary/Park.svg",
+      "sha256": "e3569f725dd53e779ab267f1376b31588951dc23ed8c2684aad6af9ec0548837"
+    },
+    {
+      "path": "app/svglibrary/Rabbit.svg",
+      "sha256": "36f39ea265ce91063a88326963e435dfc397128e8de587527f99296013d52e52"
+    },
+    {
+      "path": "app/sw.js",
+      "sha256": "4e897178c699256e0044e57f7a3cdd3551317186406c21c7cc8f053720e8c997"
+    },
+    {
+      "path": "browserClient.js",
+      "sha256": "9817747df39e7b6161afaa7d99dcaed5e8b0d81c8f3635a9d46534f5b05f5dc7"
+    },
+    {
+      "path": "hostClient.js",
+      "sha256": "98827daf247b76e4d429d72bc2a2d6c58d688dfc965969673057aa9354bf5b0d"
+    },
+    {
+      "path": "sql-wasm.js",
+      "sha256": "91be538e243e2290236f5a1afca87ef10851a4e71fa1a5612a852ee447c68479"
+    },
+    {
+      "path": "sql-wasm.wasm",
+      "sha256": "f3aaaa47b7957d084f0a70037fb780b5465d7bfb6e58a5bd485d6f23a9576b74"
+    },
+    {
+      "path": "webav.js",
+      "sha256": "78d0ff4623f245cee0f854e6ebcf6d5a81a39a968568980f5b70ce9295c5b270"
+    }
+  ]
+}

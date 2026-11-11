@@ -1,0 +1,785 @@
+[
+  {
+    "project": "proiecte/00_Demo_Statuie.sjr",
+    "checks": [
+      {
+        "file": "p0_main1_start",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "iepuras1": {
+            "states": 11,
+            "min": 0.5,
+            "max": 0.7,
+            "last": {
+              "t": 7318.400000095367,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 3
+          }
+        }
+      },
+      {
+        "file": "p0_main1_freeze",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      },
+      {
+        "file": "p0_main2_start",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "iepuras1": {
+            "states": 11,
+            "min": 0.5,
+            "max": 0.7,
+            "last": {
+              "t": 7331.399999976158,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 4
+          }
+        }
+      },
+      {
+        "file": "p0_main2_freeze",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "project": "proiecte/01_Start_Statui.sjr",
+    "checks": [
+      {
+        "file": "p1_main1_flag",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.5,
+            "max": 0.5,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          },
+          "caine1": {
+            "states": 1,
+            "min": 0.5,
+            "max": 0.5,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      },
+      {
+        "file": "p1_main1_tap",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.5,
+            "max": 0.5,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          },
+          "caine1": {
+            "states": 1,
+            "min": 0.5,
+            "max": 0.5,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      },
+      {
+        "file": "p1_main2_flag",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.5,
+            "max": 0.5,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          },
+          "caine1": {
+            "states": 1,
+            "min": 0.5,
+            "max": 0.5,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      },
+      {
+        "file": "p1_main2_tap",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.5,
+            "max": 0.5,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          },
+          "caine1": {
+            "states": 1,
+            "min": 0.5,
+            "max": 0.5,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_08/01_Artistul_neobosit.sjr",
+    "checks": [
+      {
+        "file": "p2_main1_start",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "iepuras1": {
+            "states": 11,
+            "min": 0.5,
+            "max": 0.7,
+            "last": {
+              "t": 7287.800000071526,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 3
+          }
+        }
+      },
+      {
+        "file": "p2_main1_freeze",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      },
+      {
+        "file": "p2_main2_start",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "iepuras1": {
+            "states": 11,
+            "min": 0.5,
+            "max": 0.7,
+            "last": {
+              "t": 7322.600000023842,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 4
+          }
+        }
+      },
+      {
+        "file": "p2_main2_freeze",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_08/02_Fiecare_cu_pauza_lui.sjr",
+    "checks": [
+      {
+        "file": "p3_main1_start",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "iepuras1": {
+            "states": 11,
+            "min": 0.5,
+            "max": 0.7,
+            "last": {
+              "t": 7219.100000023842,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 3
+          },
+          "caine1": {
+            "states": 11,
+            "min": 0.3,
+            "max": 0.5,
+            "last": {
+              "t": 7219.100000023842,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 3
+          }
+        }
+      },
+      {
+        "file": "p3_main1_freeze",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "caine1": {
+            "states": 11,
+            "min": 0.3,
+            "max": 0.5,
+            "last": {
+              "t": 3951,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 2
+          },
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 3951,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      },
+      {
+        "file": "p3_main1_freeze_dog",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          },
+          "caine1": {
+            "states": 1,
+            "min": 0.3,
+            "max": 0.3,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.3, 0.3)",
+              "scale": 0.3,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      },
+      {
+        "file": "p3_main2_start",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "iepuras1": {
+            "states": 11,
+            "min": 0.5,
+            "max": 0.7,
+            "last": {
+              "t": 7460.5,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 4
+          },
+          "caine1": {
+            "states": 11,
+            "min": 0.3,
+            "max": 0.5,
+            "last": {
+              "t": 7460.5,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 4
+          }
+        }
+      },
+      {
+        "file": "p3_main2_freeze",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "caine1": {
+            "states": 11,
+            "min": 0.3,
+            "max": 0.5,
+            "last": {
+              "t": 4133.899999976158,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 2
+          },
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 4133.899999976158,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      },
+      {
+        "file": "p3_main2_freeze_dog",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          },
+          "caine1": {
+            "states": 1,
+            "min": 0.3,
+            "max": 0.3,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.3, 0.3)",
+              "scale": 0.3,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_08/03_Regizorul_statuilor.sjr",
+    "checks": [
+      {
+        "file": "p4_main1_start",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "iepuras1": {
+            "states": 11,
+            "min": 0.5,
+            "max": 0.7,
+            "last": {
+              "t": 7303.700000047684,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 3
+          },
+          "caine1": {
+            "states": 11,
+            "min": 0.3,
+            "max": 0.5,
+            "last": {
+              "t": 7303.700000047684,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 3
+          }
+        }
+      },
+      {
+        "file": "p4_main1_freeze",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          },
+          "caine1": {
+            "states": 1,
+            "min": 0.3,
+            "max": 0.3,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.3, 0.3)",
+              "scale": 0.3,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      },
+      {
+        "file": "p4_main2_start",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "iepuras1": {
+            "states": 11,
+            "min": 0.5,
+            "max": 0.7,
+            "last": {
+              "t": 7611.399999976158,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "scale": 0.5,
+              "opacity": 1
+            },
+            "scaleResets": 3
+          },
+          "caine1": {
+            "states": 11,
+            "min": 0.3,
+            "max": 0.5,
+            "last": {
+              "t": 7611.399999976158,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.46, 0.46)",
+              "scale": 0.46,
+              "opacity": 1
+            },
+            "scaleResets": 3
+          }
+        }
+      },
+      {
+        "file": "p4_main2_freeze",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          },
+          "caine1": {
+            "states": 1,
+            "min": 0.3,
+            "max": 0.3,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.3, 0.3)",
+              "scale": 0.3,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_08/04_Rezerva_Trei_ipostaze.sjr",
+    "checks": [
+      {
+        "file": "p5_main1_start",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "iepuras1": {
+            "states": 21,
+            "min": 0.3,
+            "max": 0.7,
+            "last": {
+              "t": 12666.800000071526,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.3, 0.3)",
+              "scale": 0.3,
+              "opacity": 1
+            },
+            "scaleResets": 3
+          }
+        }
+      },
+      {
+        "file": "p5_main1_freeze",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        },
+        "target_enlarged": true
+      },
+      {
+        "file": "p5_main2_start",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": false,
+        "stats": {
+          "iepuras1": {
+            "states": 21,
+            "min": 0.3,
+            "max": 0.7,
+            "last": {
+              "t": 12696.799999952316,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.3, 0.3)",
+              "scale": 0.3,
+              "opacity": 1
+            },
+            "scaleResets": 4
+          }
+        }
+      },
+      {
+        "file": "p5_main2_freeze",
+        "pass": true,
+        "fixed_positions": true,
+        "ended": true,
+        "stats": {
+          "iepuras1": {
+            "states": 1,
+            "min": 0.7,
+            "max": 0.7,
+            "last": {
+              "t": 700,
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+              "scale": 0.7,
+              "opacity": 1
+            },
+            "scaleResets": 0
+          }
+        },
+        "target_enlarged": true
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_08/05_Rezerva_Cortina_automata.sjr",
+    "checks": [
+      {
+        "file": "p6_main1_auto",
+        "pass": true,
+        "rabbit": {
+          "states": 11,
+          "min": 0.5,
+          "max": 0.7,
+          "last": {
+            "t": 5458.899999976158,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 2
+        },
+        "dog": {
+          "states": 11,
+          "min": 0.3,
+          "max": 0.5,
+          "last": {
+            "t": 5458.899999976158,
+            "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 2
+        },
+        "stable_tail_ms": 2548.399999976158
+      },
+      {
+        "file": "p6_main2_auto",
+        "pass": true,
+        "rabbit": {
+          "states": 11,
+          "min": 0.5,
+          "max": 0.7,
+          "last": {
+            "t": 5584.5,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 2
+        },
+        "dog": {
+          "states": 11,
+          "min": 0.3,
+          "max": 0.5,
+          "last": {
+            "t": 5584.5,
+            "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 2
+        },
+        "stable_tail_ms": 2695.600000023842
+      }
+    ]
+  }
+]

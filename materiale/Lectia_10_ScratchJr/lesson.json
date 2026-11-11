@@ -1,0 +1,1913 @@
+{
+  "lesson": 10,
+  "title": "Marea finală - Jocul meu complet",
+  "age": "6-7 ani",
+  "duration": 50,
+  "individual_work": true,
+  "new_idea": "Mesajul de încheiere controlează ordinea și disponibilitatea întoarcerii",
+  "assets": [
+    "Butterfly.svg",
+    "Dog.svg",
+    "Ball.svg",
+    "Rabbit.svg",
+    "BeachDay.svg",
+    "BeachNight.svg"
+  ],
+  "projects": [
+    {
+      "path": "proiecte/00_Demo_Marea_finala.sjr",
+      "name": "L10 Finala Demo Spectacol pe rand",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                90,
+                90
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras2",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                245
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "grow",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        },
+                        {
+                          "block": "shrink",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine2",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                325,
+                245
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                90
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "chain",
+      "simple_entry": true
+    },
+    {
+      "path": "proiecte/01_Start_Insula_L09.sjr",
+      "name": "L10 Finala Start Insula L09",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras2",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                245
+              ],
+              "scripts": []
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                90
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "starter",
+      "simple_entry": false
+    },
+    {
+      "path": "solutii/lectia_10/01_Sarbatoarea_mea.sjr",
+      "name": "L10 Finala M1 Sarbatoarea mea",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras2",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                245
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "grow",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        },
+                        {
+                          "block": "shrink",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                90
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "celebration",
+      "simple_entry": false
+    },
+    {
+      "path": "solutii/lectia_10/02_Butonul_asteapta.sjr",
+      "name": "L10 Finala M2 Butonul asteapta",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras2",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                245
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "grow",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        },
+                        {
+                          "block": "shrink",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                90
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "gate",
+      "simple_entry": false
+    },
+    {
+      "path": "solutii/lectia_10/03_Marea_finala.sjr",
+      "name": "L10 Finala M3 Marea finala",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras2",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                245
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "grow",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        },
+                        {
+                          "block": "shrink",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine2",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                325,
+                245
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                90
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "chain",
+      "simple_entry": false
+    },
+    {
+      "path": "solutii/lectia_10/04_Rezerva_Inca_o_data.sjr",
+      "name": "L10 Finala R1 Inca o data",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras2",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                245
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "grow",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        },
+                        {
+                          "block": "shrink",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine2",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                325,
+                245
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                90
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fluture2",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                90,
+                90
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "encore",
+      "simple_entry": false
+    },
+    {
+      "path": "solutii/lectia_10/05_Rezerva_Intoarcere_automata.sjr",
+      "name": "L10 Finala R2 Intoarcere automata",
+      "pages": [
+        {
+          "background": "BeachDay.svg",
+          "sprites": [
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                95,
+                130
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                255,
+                235
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                150
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "BeachNight.svg",
+          "sprites": [
+            {
+              "id": "iepuras2",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                245
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "grow",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        },
+                        {
+                          "block": "shrink",
+                          "value": 4
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine2",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                325,
+                245
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge2",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                390,
+                90
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 30
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "auto",
+      "simple_entry": false
+    }
+  ],
+  "missions": [
+    {
+      "label": "Misiunea 1",
+      "title": "Sărbătoarea mea",
+      "subtitle": "Finalul începe singur când ajungi la el.",
+      "diagram": "celebration",
+      "steps": [
+        "Continuă insula salvată. Pe pagina de final, iepurele face două măriri cu revenire.",
+        "Ambele măriri sunt la fel. La sfârșit iepurele rămâne la mărimea inițială.",
+        "Revino prin minge, parcurge insula și privește din nou sărbătoarea."
+      ],
+      "success": "Două transformări la fiecare sosire. Finalul poate fi reluat."
+    },
+    {
+      "label": "Misiunea 2",
+      "title": "Butonul așteaptă",
+      "subtitle": "Întoarcerea se deschide când artistul termină.",
+      "diagram": "gate",
+      "steps": [
+        "La intrarea pe final, mingea se ascunde. Iepurele începe sărbătoarea.",
+        "Mingea apare numai după ultima revenire a iepurelui la normal.",
+        "Folosește mesajul de la finalul programului, apoi întoarce-te și repetă."
+      ],
+      "success": "Butonul apare după spectacol, fără o așteptare ghicită."
+    },
+    {
+      "label": "Misiunea 3 - dificilă",
+      "title": "Marea finală",
+      "subtitle": "Iepurele. Câinele. Abia apoi întoarcerea.",
+      "diagram": "chain",
+      "steps": [
+        "Iepurele face cele două măriri. Câinele își așteaptă rândul.",
+        "Când iepurele termină, câinele se micșorează, așteaptă și revine la normal.",
+        "Abia acum apare mingea. Revino la insulă și joacă tot proiectul încă o dată."
+      ],
+      "success": "Doi artiști în ordine, apoi butonul. Două jocuri complete fără Reset."
+    },
+    {
+      "label": "Rezervă 1 - 8-10 minute",
+      "title": "Încă o dată!",
+      "subtitle": "Repetă spectacolul fără să părăsești finalul.",
+      "diagram": "encore",
+      "steps": [
+        "Adaugă pe final un fluture pentru încă un spectacol. Apare când artiștii termină.",
+        "Un tap pe el ascunde ambele butoane și reia iepure → câine. Rămâi pe aceeași pagină.",
+        "La sfârșit reapar butoanele. Poți cere încă un spectacol sau reveni prin minge."
+      ],
+      "success": "Encore funcționează repetat, cu butoanele închise pe durata show-ului."
+    },
+    {
+      "label": "Rezervă 2 - 6-8 minute",
+      "title": "Întoarcere automată",
+      "subtitle": "Spectacolul se termină, apoi insula te cheamă.",
+      "diagram": "auto",
+      "steps": [
+        "Pornește de la M3. După câine, mai rămâi aproximativ trei secunde pe final.",
+        "Revino automat pe insulă, fără să atingi mingea.",
+        "Insula așteaptă următoarea atingere a fluturelui. Parcurge jocul încă o dată."
+      ],
+      "success": "Artiști în ordine, pauză de final, întoarcere automată, o nouă rundă."
+    }
+  ]
+}

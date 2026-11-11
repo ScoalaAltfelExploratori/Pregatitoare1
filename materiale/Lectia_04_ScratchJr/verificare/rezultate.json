@@ -1,0 +1,127 @@
+{
+  "date": "2026-11-10",
+  "lesson": 4,
+  "status": "PASS",
+  "browser": "ScratchJr Desktop Reborn community port",
+  "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+  "native_android_tested": false,
+  "physical_lenovo_tested": false,
+  "counts": {
+    "projects": 7,
+    "animation_runs": 12,
+    "hide_show_commands": 7,
+    "inert_taps": 10,
+    "green_flag_checks": 7,
+    "total_main_stage_taps": 29,
+    "reopen_stage_taps": 9,
+    "manual_connection_trials": 2
+  },
+  "all_observed_checks_pass": true,
+  "all_reopened_checks_pass": true,
+  "all_gallery_names_unique_after_reload": true,
+  "hard_chain_timing": [
+    {
+      "dogStartMs": 2584,
+      "butterflyStartMs": 4458,
+      "rabbitNormalBeforeDog": true,
+      "dogVisibleBeforeButterfly": true,
+      "noOverlap": true
+    },
+    {
+      "dogStartMs": 2044,
+      "butterflyStartMs": 3914,
+      "rabbitNormalBeforeDog": true,
+      "dogVisibleBeforeButterfly": true,
+      "noOverlap": true
+    }
+  ],
+  "shared_message_timing": [
+    {
+      "overlap": true
+    },
+    {
+      "overlap": true
+    }
+  ],
+  "manual_construction": "Tap -> Send Blue on Rabbit; Receive Blue -> Grow 2 on Dog; reset between two trials",
+  "assets": [
+    "Rabbit.svg",
+    "Dog.svg",
+    "Butterfly.svg",
+    "Park.svg"
+  ],
+  "asset_catalog": "Official Android 1.5.11 assets/HTML5/media.json",
+  "pdf_pages": {
+    "Ghid_profesor_Lectia_04.pdf": 4,
+    "Cartonase_Lectia_04.pdf": 5
+  },
+  "pdf_all_pages_visually_reviewed": true,
+  "html": {
+    "expanded": true,
+    "horizontalOverflow": false,
+    "image": {
+      "complete": true,
+      "width": 1280
+    },
+    "links": [
+      "Ghid_profesor_Lectia_04.pdf",
+      "Cartonase_Lectia_04.pdf",
+      "README.md",
+      "solutii/lectia_04/README.md",
+      "Observatii_dupa_lectie.md",
+      "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+      "proiecte/00_Demo_Mesaj.sjr",
+      "proiecte/01_Start_Telecomanda.sjr",
+      "verificare/README.md",
+      "../Plan_10_lectii_ScratchJr.md"
+    ],
+    "missionCards": 5,
+    "title": "Lecția 4 · Telecomanda fermecată",
+    "teacherImageVisuallyVerified": true
+  },
+  "files": [
+    {
+      "path": "proiecte/00_Demo_Mesaj.sjr",
+      "sha256": "f6ad434e8e22c23b76fa4a0578253b5adb5808969f3024d8e51417f85d4affef",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "proiecte/01_Start_Telecomanda.sjr",
+      "sha256": "438700be22b302280e842f6f898543df61923e8df347070866324b8a44aa8e28",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_04/01_Magia_la_distanta.sjr",
+      "sha256": "08e600b2b20f1c5b00e3a8c437cd9e6732e499f2fca4d6c08d1c4e949113b81d",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_04/02_Doua_butoane.sjr",
+      "sha256": "6e3376d36610c1bfc5a550881b11109f55c5e468152a2f02e19ba41262d20381",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_04/03_Spectacolul_in_lant.sjr",
+      "sha256": "b07ac61ce92d02737e21b0cf99aea045fdfc2cd0b0e8e9eff17f1353c8c4585f",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_04/04_Rezerva_Un_semnal.sjr",
+      "sha256": "16553d586287714e0da57fb08eea9868fffb4d793ecf401a3c4a9d7d5ad448a9",
+      "native_matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_04/05_Rezerva_Va_ascunselea.sjr",
+      "sha256": "08d22aa98d9d1943ff1a06069c98fa6a27c2c336738057e203c3f0e0a64a3c09",
+      "native_matches_source": true,
+      "custom_assets": false
+    }
+  ],
+  "initial_observation_issue": "Initial demo sampling window included click latency. Corrected sampling and reran; no SJR program change required."
+}

@@ -1,0 +1,38 @@
+{
+  "project": "proiecte/00_Demo_Descoperire.sjr",
+  "checks": [
+    {
+      "file": "p0_reopen_initialize",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 0
+      },
+      "observed": {}
+    },
+    {
+      "file": "p0_reopen_r1_hidden",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 0
+      },
+      "observed": {}
+    },
+    {
+      "file": "p0_reopen_r1_reveal",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1
+      },
+      "observed": {}
+    }
+  ]
+}

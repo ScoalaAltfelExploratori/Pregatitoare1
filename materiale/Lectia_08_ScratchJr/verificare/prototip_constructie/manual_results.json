@@ -1,0 +1,86 @@
+{
+  "pass": false,
+  "scope": "Added Forever and Stop by palette drag to an imported partial routine; other blocks prebuilt.",
+  "checks": [
+    {
+      "file": "manual1_start",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": false,
+      "stats": {
+        "iepuras1": {
+          "states": 11,
+          "min": 0.5,
+          "max": 0.7,
+          "last": {
+            "t": 7314.799999952316,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 4
+        }
+      }
+    },
+    {
+      "file": "manual1_stop",
+      "pass": false,
+      "fixed_positions": true,
+      "ended": true,
+      "stats": {
+        "iepuras1": {
+          "states": 11,
+          "min": 0.5,
+          "max": 0.7,
+          "last": {
+            "t": 2654.5,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+            "scale": 0.7,
+            "opacity": 1
+          },
+          "scaleResets": 1
+        }
+      }
+    },
+    {
+      "file": "manual2_start",
+      "pass": false,
+      "fixed_positions": true,
+      "ended": false,
+      "stats": {
+        "iepuras1": {
+          "states": 7,
+          "min": 0.5,
+          "max": 0.62,
+          "last": {
+            "t": 371.5,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 1
+        }
+      }
+    },
+    {
+      "file": "manual2_stop",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": true,
+      "stats": {
+        "iepuras1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        }
+      }
+    }
+  ]
+}

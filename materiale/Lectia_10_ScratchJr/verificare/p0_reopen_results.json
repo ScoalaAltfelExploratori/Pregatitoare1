@@ -1,0 +1,67 @@
+{
+  "project": "proiecte/00_Demo_Marea_finala.sjr",
+  "checks": [
+    {
+      "file": "p0_reopen_initialize",
+      "kind": "initial",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "p0_reopen_r1_performance",
+      "kind": "performance",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "rabbit": {
+          "peaks": 2,
+          "min": 0.5,
+          "max": 0.7,
+          "final": 0.5,
+          "lastChange": 3260.899999976158
+        },
+        "dog": {
+          "min": 0.3,
+          "max": 0.5,
+          "final": 0.5,
+          "firstChange": 3882.5,
+          "lastChange": 5484.300000071526
+        },
+        "minge2": {
+          "hiddenAt": 801.3000000715256,
+          "shownAt": 5517.5
+        }
+      },
+      "test_taps": [
+        {
+          "id": "minge2",
+          "at_ms": 454,
+          "opacity": 0.200002
+        },
+        {
+          "id": "minge2",
+          "at_ms": 2010,
+          "opacity": 0
+        }
+      ]
+    },
+    {
+      "file": "p0_reopen_r1_return",
+      "kind": "return",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1
+        }
+      },
+      "test_taps": []
+    }
+  ]
+}

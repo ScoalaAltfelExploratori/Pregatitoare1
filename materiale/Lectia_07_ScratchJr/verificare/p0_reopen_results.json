@@ -1,0 +1,18 @@
+{
+  "path": "proiecte/00_Demo_Pagina.sjr",
+  "runs": [
+    {
+      "file": "p0_reopen1_step0",
+      "pass": true,
+      "page": "page2",
+      "pages": [
+        "page1",
+        "page2"
+      ],
+      "hops": {},
+      "peak": null,
+      "go": "go on",
+      "frames": 4
+    }
+  ]
+}

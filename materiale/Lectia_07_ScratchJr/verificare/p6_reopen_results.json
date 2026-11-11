@@ -1,0 +1,35 @@
+{
+  "path": "solutii/lectia_07/05_Rezerva_Trei_opriri.sjr",
+  "runs": [
+    {
+      "file": "p6_reopen1_step0",
+      "pass": true,
+      "page": "page3",
+      "pages": [
+        "page1",
+        "page2",
+        "page3"
+      ],
+      "hops": {
+        "iepuras1": 1,
+        "caine2": 2
+      },
+      "peak": 0.7,
+      "go": "go on",
+      "frames": 52
+    },
+    {
+      "file": "p6_reopen1_step1",
+      "pass": true,
+      "page": "page1",
+      "pages": [
+        "page3",
+        "page1"
+      ],
+      "hops": {},
+      "peak": null,
+      "go": "go on",
+      "frames": 4
+    }
+  ]
+}

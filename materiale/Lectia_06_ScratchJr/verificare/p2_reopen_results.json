@@ -1,0 +1,33 @@
+{
+  "pass": true,
+  "sounds": 1,
+  "final": {
+    "t": 2136.100000023842,
+    "page": "page1",
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "transform": "translate3d(84px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+        "opacity": 1,
+        "visibility": "visible",
+        "x": 192,
+        "y": 240,
+        "scale": 0.5
+      },
+      {
+        "id": "caine1",
+        "transform": "translate3d(92px, 14px, 0px) rotate(0deg) scale(0.5, 0.5)",
+        "opacity": 1,
+        "visibility": "visible",
+        "x": 240,
+        "y": 120,
+        "scale": 0.5
+      }
+    ]
+  },
+  "firstChange": {
+    "iepuras1": 315.7999999523163,
+    "caine1": 1155.8999999761581
+  }
+}

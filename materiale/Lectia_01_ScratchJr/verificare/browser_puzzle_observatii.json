@@ -1,0 +1,4490 @@
+{
+  "date": "2026-11-09",
+  "environment": "ScratchJr Desktop Reborn community browser",
+  "method": "Imported using file chooser; run/reset/home/reopen controls; read-only rendered CSS observations",
+  "results": [
+    {
+      "file": "proiecte/03_Puzzle_Revenirea.sjr",
+      "name": "L01 Puzzle Doua blocuri pana acasa",
+      "returns": false,
+      "screenshot": "browser_03_puzzle_revenirea.png",
+      "initial": {
+        "running": "go on",
+        "sprites": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 136
+          },
+          {
+            "id": "biluta1",
+            "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 297,
+            "y": 176
+          }
+        ]
+      },
+      "first": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 20,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(265px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 265,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 24,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(261px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 261,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 32,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(253px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 253,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 249,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(48px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 48,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(237px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 237,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 52,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(233px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 233,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        }
+      ],
+      "reset": {
+        "running": "go on",
+        "sprites": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 136
+          },
+          {
+            "id": "biluta1",
+            "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 297,
+            "y": 176
+          }
+        ]
+      },
+      "second": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 20,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(265px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 265,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 28,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(257px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 257,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 249,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(48px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 48,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(237px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 237,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(56px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 56,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(229px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 229,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        }
+      ],
+      "result1": {
+        "end": {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        "hops": [
+          1,
+          1
+        ]
+      },
+      "result2": {
+        "end": {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        "hops": [
+          1,
+          1
+        ]
+      },
+      "status": "pass",
+      "reloadGallery": "pass"
+    },
+    {
+      "file": "proiecte/04_Solutia_profesorului.sjr",
+      "name": "L01 Solutie Revenim acasa",
+      "returns": true,
+      "screenshot": "browser_04_solutia_profesorului.png",
+      "initial": {
+        "running": "go on",
+        "sprites": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 136
+          },
+          {
+            "id": "biluta1",
+            "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 297,
+            "y": 176
+          }
+        ]
+      },
+      "first": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 20,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(265px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 265,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 28,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(257px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 257,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 32,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(253px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 253,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(40px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 40,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(245px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 245,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 52,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(233px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 233,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(56px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 56,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(229px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 229,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(48px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 48,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(237px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 237,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 36,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 249,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 28,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(257px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 257,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 24,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(261px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 261,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(16px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 16,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(269px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 269,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(273px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 273,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(4px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 4,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(281px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 281,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(0px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 0,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(285px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 285,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-8px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -8,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(293px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 293,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        }
+      ],
+      "reset": {
+        "running": "go on",
+        "sprites": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 136
+          },
+          {
+            "id": "biluta1",
+            "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 297,
+            "y": 176
+          }
+        ]
+      },
+      "second": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 20,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(265px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 265,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 24,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(261px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 261,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 32,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(253px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 253,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 249,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 52,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(233px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 233,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 52,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(233px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 233,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(48px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 48,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(237px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 237,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(40px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 40,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(245px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 245,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 36,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 249,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 28,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(257px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 257,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 24,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(261px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 261,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(16px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 16,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(269px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 269,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(273px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 273,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(4px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 4,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(281px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 281,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(0px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 0,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(285px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 285,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-8px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -8,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(293px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 293,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        }
+      ],
+      "result1": {
+        "end": {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        "hops": [
+          1,
+          1
+        ]
+      },
+      "result2": {
+        "end": {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        "hops": [
+          1,
+          1
+        ]
+      },
+      "status": "pass",
+      "reloadGallery": "pass"
+    },
+    {
+      "file": "solutii/lectia_01/02_Misiunea_2_Revenirea.sjr",
+      "name": "L01 M2 Revenirea",
+      "returns": true,
+      "screenshot": "browser_06_solutie_m2.png",
+      "initial": {
+        "running": "go on",
+        "sprites": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 136
+          },
+          {
+            "id": "biluta1",
+            "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 297,
+            "y": 176
+          }
+        ]
+      },
+      "first": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 20,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(265px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 265,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 24,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(261px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 261,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 28,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(257px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 257,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 249,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(48px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 48,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(237px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 237,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(56px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 56,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(229px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 229,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 52,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(233px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 233,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(40px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 40,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(245px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 245,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 32,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(253px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 253,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 24,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(261px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 261,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 20,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(265px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 265,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(8px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 8,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(277px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 277,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(0px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 0,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(285px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 285,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-8px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -8,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(293px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 293,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        }
+      ],
+      "reset": {
+        "running": "go on",
+        "sprites": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 136
+          },
+          {
+            "id": "biluta1",
+            "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 297,
+            "y": 176
+          }
+        ]
+      },
+      "second": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 20,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(265px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 265,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 28,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(257px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 257,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 249,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 52,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(233px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 233,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(56px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 56,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(229px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 229,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(48px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 48,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(237px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 237,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(40px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 40,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(245px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 245,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 32,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(253px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 253,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 24,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(261px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 261,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(16px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 16,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(269px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 269,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(8px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 8,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(277px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 277,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(4px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 4,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(281px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 281,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-4px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -4,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(289px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 289,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        }
+      ],
+      "result1": {
+        "end": {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        "hops": [
+          1,
+          1
+        ]
+      },
+      "result2": {
+        "end": {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        "hops": [
+          1,
+          1
+        ]
+      },
+      "status": "pass",
+      "reloadGallery": "pass"
+    },
+    {
+      "file": "C:/Users/cipri/.codex/worktrees/4516/Robo_Explorator_Offline/tmp/lectia01/QA_Revenirea_dificila.sjr",
+      "name": "L01 QA Revenirea dificila 1 plus 2",
+      "returns": true,
+      "screenshot": "browser_puzzle_dificil.png",
+      "qaOnly": true,
+      "initial": {
+        "running": "go on",
+        "sprites": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 136
+          },
+          {
+            "id": "biluta1",
+            "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 297,
+            "y": 176
+          }
+        ]
+      },
+      "first": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 20,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(265px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 265,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 28,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(257px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 257,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 36,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 249,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 52,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(233px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 233,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 52,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(233px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 233,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 36,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 249,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 28,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(257px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 257,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 24,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(261px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 261,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(16px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 16,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(269px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 269,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(8px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 8,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(277px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 277,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(0px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 0,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(285px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 285,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-8px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -8,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(293px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 293,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        }
+      ],
+      "reset": {
+        "running": "go on",
+        "sprites": [
+          {
+            "id": "iepuras1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": -12,
+            "y": 136
+          },
+          {
+            "id": "biluta1",
+            "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "x": 297,
+            "y": 176
+          }
+        ]
+      },
+      "second": [
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(16px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 16,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(269px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 269,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(24px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 24,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(261px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 261,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 32,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(253px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 253,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(40px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 40,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(245px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 245,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 52,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(233px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 233,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(56px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 56,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(229px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 229,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 88px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 88
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 128px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 128
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 90.4px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 90.4
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 130.4px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 130.4
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 96px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 96
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 136
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 104.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 104.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 144.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 144.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 116.8px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 116.8
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 156.8px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 156.8
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(60px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 60,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(225px, 176px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 225,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(52px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 52,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(233px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 233,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(44px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 44,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(241px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 241,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(36px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 36,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 249,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(28px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 28,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(257px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 257,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(20px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 20,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(265px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 265,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(273px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 273,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(8px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 8,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(277px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 277,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(0px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": 0,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(285px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 285,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-8px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -8,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(293px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 293,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        }
+      ],
+      "result1": {
+        "end": {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        "hops": [
+          1,
+          1
+        ]
+      },
+      "result2": {
+        "end": {
+          "running": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.5, 0.5)",
+              "x": -12,
+              "y": 136
+            },
+            {
+              "id": "biluta1",
+              "transform": "translate3d(297px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "x": 297,
+              "y": 176
+            }
+          ]
+        },
+        "hops": [
+          1,
+          1
+        ]
+      },
+      "status": "pass",
+      "reloadGallery": "pass"
+    }
+  ]
+}

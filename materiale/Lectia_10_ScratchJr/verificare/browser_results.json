@@ -1,0 +1,1226 @@
+[
+  {
+    "project": "proiecte/00_Demo_Marea_finala.sjr",
+    "checks": [
+      {
+        "file": "p0_main_initialize",
+        "kind": "initial",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p0_main_r1_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3292.5
+          },
+          "dog": {
+            "min": 0.3,
+            "max": 0.5,
+            "final": 0.5,
+            "firstChange": 3915.5,
+            "lastChange": 5490.600000023842
+          },
+          "minge2": {
+            "hiddenAt": 828.5,
+            "shownAt": 5537.600000023842
+          }
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 432,
+            "opacity": 0.333335
+          },
+          {
+            "id": "minge2",
+            "at_ms": 2004,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p0_main_r1_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p0_main_r2_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3318.600000023842
+          },
+          "dog": {
+            "min": 0.3,
+            "max": 0.5,
+            "final": 0.5,
+            "firstChange": 3944.5,
+            "lastChange": 5584
+          },
+          "minge2": {
+            "hiddenAt": 847.2000000476837,
+            "shownAt": 5602.800000071526
+          }
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 434,
+            "opacity": 0.333335
+          },
+          {
+            "id": "minge2",
+            "at_ms": 1994,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p0_main_r2_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1
+          }
+        },
+        "test_taps": []
+      }
+    ]
+  },
+  {
+    "project": "proiecte/01_Start_Insula_L09.sjr",
+    "checks": [
+      {
+        "file": "p1_main_initialize",
+        "kind": "initial",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p1_main_r1_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p1_main_r1_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p1_main_r1_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 0,
+            "min": 0.5,
+            "max": 0.5,
+            "final": 0.5,
+            "lastChange": 362.7000000476837
+          },
+          "minge2": {}
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p1_main_r1_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p1_main_r2_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p1_main_r2_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p1_main_r2_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 0,
+            "min": 0.5,
+            "max": 0.5,
+            "final": 0.5,
+            "lastChange": 350.89999997615814
+          },
+          "minge2": {}
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p1_main_r2_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_10/01_Sarbatoarea_mea.sjr",
+    "checks": [
+      {
+        "file": "p2_main_initialize",
+        "kind": "initial",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p2_main_r1_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p2_main_r1_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p2_main_r1_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3292.2999999523163
+          },
+          "minge2": {}
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p2_main_r1_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p2_main_r2_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p2_main_r2_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p2_main_r2_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3286.899999976158
+          },
+          "minge2": {}
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p2_main_r2_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_10/02_Butonul_asteapta.sjr",
+    "checks": [
+      {
+        "file": "p3_main_initialize",
+        "kind": "initial",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p3_main_r1_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p3_main_r1_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p3_main_r1_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3298.9000000953674
+          },
+          "minge2": {
+            "hiddenAt": 827.1000000238419,
+            "shownAt": 3855.600000023842
+          }
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 439,
+            "opacity": 0.333335
+          },
+          {
+            "id": "minge2",
+            "at_ms": 1994,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p3_main_r1_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p3_main_r2_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p3_main_r2_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p3_main_r2_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3308.2000000476837
+          },
+          "minge2": {
+            "hiddenAt": 824.7000000476837,
+            "shownAt": 3864
+          }
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 448,
+            "opacity": 0.200002
+          },
+          {
+            "id": "minge2",
+            "at_ms": 2001,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p3_main_r2_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_10/03_Marea_finala.sjr",
+    "checks": [
+      {
+        "file": "p4_main_initialize",
+        "kind": "initial",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p4_main_r1_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p4_main_r1_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p4_main_r1_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3259.5
+          },
+          "dog": {
+            "min": 0.3,
+            "max": 0.5,
+            "final": 0.5,
+            "firstChange": 3880.600000023842,
+            "lastChange": 5480.399999976158
+          },
+          "minge2": {
+            "hiddenAt": 805.3999999761581,
+            "shownAt": 5526
+          }
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 440,
+            "opacity": 0.200002
+          },
+          {
+            "id": "minge2",
+            "at_ms": 2004,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p4_main_r1_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p4_main_r2_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p4_main_r2_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p4_main_r2_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3299.3000000715256
+          },
+          "dog": {
+            "min": 0.3,
+            "max": 0.5,
+            "final": 0.5,
+            "firstChange": 3902.2000000476837,
+            "lastChange": 5522.5
+          },
+          "minge2": {
+            "hiddenAt": 846.7000000476837,
+            "shownAt": 5538.100000023842
+          }
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 474,
+            "opacity": 0.200002
+          },
+          {
+            "id": "minge2",
+            "at_ms": 2036,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p4_main_r2_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_10/04_Rezerva_Inca_o_data.sjr",
+    "checks": [
+      {
+        "file": "p5_main_initialize",
+        "kind": "initial",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p5_main_r1_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p5_main_r1_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p5_main_r1_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3265.100000023842
+          },
+          "dog": {
+            "min": 0.3,
+            "max": 0.5,
+            "final": 0.5,
+            "firstChange": 3886.7000000476837,
+            "lastChange": 5498.600000023842
+          },
+          "minge2": {
+            "hiddenAt": 828.5,
+            "shownAt": 5541.300000071526
+          },
+          "fluture2": {
+            "hiddenAt": 828.5,
+            "shownAt": 5541.300000071526
+          }
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 473,
+            "opacity": 0.200002
+          },
+          {
+            "id": "fluture2",
+            "at_ms": 861,
+            "opacity": 0
+          },
+          {
+            "id": "minge2",
+            "at_ms": 2320,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p5_main_r1_encore",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3226.2999999523163
+          },
+          "dog": {
+            "min": 0.3,
+            "max": 0.5,
+            "final": 0.5,
+            "firstChange": 3820.2999999523163,
+            "lastChange": 5468
+          },
+          "minge2": {
+            "hiddenAt": 761.3999999761581,
+            "shownAt": 5483.899999976158
+          },
+          "fluture2": {
+            "hiddenAt": 761.3999999761581,
+            "shownAt": 5483.899999976158
+          }
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 468,
+            "opacity": 0.0666687
+          },
+          {
+            "id": "fluture2",
+            "at_ms": 868,
+            "opacity": 0
+          },
+          {
+            "id": "minge2",
+            "at_ms": 2351,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p5_main_r1_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p5_main_r2_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p5_main_r2_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p5_main_r2_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3297.899999976158
+          },
+          "dog": {
+            "min": 0.3,
+            "max": 0.5,
+            "final": 0.5,
+            "firstChange": 3915.2999999523163,
+            "lastChange": 5493.399999976158
+          },
+          "minge2": {
+            "hiddenAt": 850.6000000238419,
+            "shownAt": 5528
+          },
+          "fluture2": {
+            "hiddenAt": 850.6000000238419,
+            "shownAt": 5528
+          }
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 461,
+            "opacity": 0.333335
+          },
+          {
+            "id": "fluture2",
+            "at_ms": 837,
+            "opacity": 0
+          },
+          {
+            "id": "minge2",
+            "at_ms": 2305,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p5_main_r2_encore1",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3206.399999976158
+          },
+          "dog": {
+            "min": 0.3,
+            "max": 0.5,
+            "final": 0.5,
+            "firstChange": 3782.100000023842,
+            "lastChange": 5399
+          },
+          "minge2": {
+            "hiddenAt": 754.3999999761581,
+            "shownAt": 5419.399999976158
+          },
+          "fluture2": {
+            "hiddenAt": 754.3999999761581,
+            "shownAt": 5419.399999976158
+          }
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 460,
+            "opacity": 0.0666687
+          },
+          {
+            "id": "fluture2",
+            "at_ms": 849,
+            "opacity": 0
+          },
+          {
+            "id": "minge2",
+            "at_ms": 2324,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p5_main_r2_encore2",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3244.600000023842
+          },
+          "dog": {
+            "min": 0.3,
+            "max": 0.5,
+            "final": 0.5,
+            "firstChange": 3840.1999999284744,
+            "lastChange": 5440.100000023842
+          },
+          "minge2": {
+            "hiddenAt": 745.3999999761581,
+            "shownAt": 5490.199999928474
+          },
+          "fluture2": {
+            "hiddenAt": 745.3999999761581,
+            "shownAt": 5490.199999928474
+          }
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 465,
+            "opacity": 0.0666687
+          },
+          {
+            "id": "fluture2",
+            "at_ms": 833,
+            "opacity": 0
+          },
+          {
+            "id": "minge2",
+            "at_ms": 2296,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p5_main_r2_return",
+        "kind": "return",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_10/05_Rezerva_Intoarcere_automata.sjr",
+    "checks": [
+      {
+        "file": "p6_main_initialize",
+        "kind": "initial",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 0,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p6_main_r1_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p6_main_r1_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p6_main_r1_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3312.100000023842
+          },
+          "dog": {
+            "min": 0.3,
+            "max": 0.5,
+            "final": 0.5,
+            "firstChange": 3901.5,
+            "lastChange": 5513
+          },
+          "minge2": {
+            "hiddenAt": 827.2000000476837
+          },
+          "autoReturnDelay": 3088.3000000715256
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 451,
+            "opacity": 0.200002
+          },
+          {
+            "id": "minge2",
+            "at_ms": 2020,
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "file": "p6_main_r2_first",
+        "kind": "first",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 0
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p6_main_r2_second",
+        "kind": "second",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "expected": {
+            "fluture1": 1,
+            "caine1": 1,
+            "minge1": 1
+          }
+        },
+        "test_taps": []
+      },
+      {
+        "file": "p6_main_r2_performance",
+        "kind": "performance",
+        "pass": true,
+        "fixed_positions": true,
+        "details": {
+          "rabbit": {
+            "peaks": 2,
+            "min": 0.5,
+            "max": 0.7,
+            "final": 0.5,
+            "lastChange": 3319.100000023842
+          },
+          "dog": {
+            "min": 0.3,
+            "max": 0.5,
+            "final": 0.5,
+            "firstChange": 3912.2000000476837,
+            "lastChange": 5514.700000047684
+          },
+          "minge2": {
+            "hiddenAt": 828.6000000238419
+          },
+          "autoReturnDelay": 3093.5
+        },
+        "test_taps": [
+          {
+            "id": "minge2",
+            "at_ms": 436,
+            "opacity": 0.333335
+          },
+          {
+            "id": "minge2",
+            "at_ms": 2007,
+            "opacity": 0
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,11 +1,17 @@
-ROBO EXPLORATOR · CLASA PREGĂTITOARE
+ȘCOALA ALTFEL · SCRATCHJR ȘI ROBO
 
 Păstrează întregul pachet împreună și deschide index.html în browser.
-Nu sunt necesare internet, conturi sau instalare.
+Meniul are două secțiuni:
+- ScratchJr: zece lecții, ghiduri PDF, cartonașe și pachete pentru profesor.
+- Robo: exercițiile originale pentru clasă și aventura de acasă.
 
-LA CLASĂ
+ScratchJr trebuie instalat pe tabletele copiilor. Proiectele se construiesc
+în aplicație, cu resursele incluse; nu se importă fișiere de pe site.
+Pentru Robo nu sunt necesare internet, conturi sau instalare.
+
+ROBO LA CLASĂ
 Un copil lucrează la laptop; ceilalți arată direcțiile și explică drumul.
-Sus sunt selectorul celor 16 lecții, variantele, Înapoi/Înainte și Toate lecțiile.
+Sus sunt selectorul celor 22 de lecții, variantele, Înapoi/Înainte și Toate lecțiile.
 Toate lecțiile sunt disponibile imediat, fără deblocare.
 
 1. Facem cunoștință cu Robo: un pas, apoi doi.
@@ -22,11 +28,14 @@ Toate lecțiile sunt disponibile imediat, fără deblocare.
 16. Pe o hartă 4×4 alegem drumul spre căsuța din dreapta sus. Bateria
     ajunge doar dacă trecem la timp pe la singura stație de încărcare.
 
+17–22. Hărți mai mari: cheie, manetă, grădini, stații de încărcare, stele și pod.
+
 Alegem câte variante lucrăm în funcție de ritmul copiilor.
 Schimbarea lecției oprește rularea și pregătește noua hartă de la start.
 Adresa reține lecția: ?lesson=8 deschide podul, iar &variant=2 a doua variantă.
 După refresh se reface lecția/varianta, fără programul încercării întrerupte.
-Linkul de clasă fără parametri începe mereu la prima lecție.
+Linkul secțiunii Robo fără parametri începe mereu la prima lecție.
+Adresele vechi cu ?lesson= sau ?adventure= sunt redirecționate automat.
 
 COMENZI
 Toate cele patru săgeți sunt vizibile de la început. Acțiunile apar pe rând.

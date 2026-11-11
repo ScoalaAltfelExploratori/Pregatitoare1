@@ -1,0 +1,99 @@
+{
+  "project": "solutii/lectia_09/05_Rezerva_Doua_drumuri.sjr",
+  "checks": [
+    {
+      "file": "p6_reopen_initialize",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1,
+        "minge1": 0
+      },
+      "observed": {}
+    },
+    {
+      "file": "p6_reopen_r1_fluture1_first",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1,
+        "minge1": 1
+      },
+      "observed": {}
+    },
+    {
+      "file": "p6_reopen_r1_fluture1_final",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page2",
+      "opacity": {
+        "iepuras2": 1,
+        "minge2": 1
+      },
+      "observed": {
+        "iepuras2": {
+          "minOpacity": 1,
+          "maxScale": 0.7,
+          "finalScale": 0.5
+        }
+      }
+    },
+    {
+      "file": "p6_reopen_r1_fluture1_return",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1,
+        "minge1": 0
+      },
+      "observed": {}
+    },
+    {
+      "file": "p6_reopen_r1_caine1_first",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1,
+        "minge1": 1
+      },
+      "observed": {}
+    },
+    {
+      "file": "p6_reopen_r1_caine1_final",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page2",
+      "opacity": {
+        "iepuras2": 1,
+        "minge2": 1
+      },
+      "observed": {
+        "iepuras2": {
+          "minOpacity": 1,
+          "maxScale": 0.7,
+          "finalScale": 0.5
+        }
+      }
+    },
+    {
+      "file": "p6_reopen_r1_caine1_return",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1,
+        "minge1": 0
+      },
+      "observed": {}
+    }
+  ]
+}

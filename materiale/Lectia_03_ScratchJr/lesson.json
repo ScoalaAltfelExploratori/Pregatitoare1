@@ -1,0 +1,642 @@
+{
+  "lesson": 3,
+  "title": "Atelierul de magie",
+  "age": "6-7 ani",
+  "duration": 50,
+  "new_mechanics": [
+    "onclick",
+    "grow",
+    "shrink",
+    "hide",
+    "show",
+    "wait",
+    "same"
+  ],
+  "assets": [
+    "Rabbit.svg",
+    "Dog.svg",
+    "Butterfly.svg",
+    "Park.svg"
+  ],
+  "missions": [
+    {
+      "label": "Misiunea 1",
+      "title": "Uriaș și pitic",
+      "subtitle": "Două personaje, două transformări. Ele rămân pe loc.",
+      "diagram": "sizes",
+      "steps": [
+        "La o atingere, iepurele devine mai mare. La o atingere, câinele devine mai mic.",
+        "Programul pornește când atingi personajul pe scenă. Celălalt nu se schimbă.",
+        "Înainte de o probă nouă, apasă butonul de resetare a personajelor."
+      ],
+      "success": "Ating iepurele: crește. Ating câinele: se micșorează. Steagul nu pornește trucurile."
+    },
+    {
+      "label": "Misiunea 2",
+      "title": "Dispar și revin",
+      "subtitle": "Un singur tap. Magia continuă chiar dacă nu mai vezi iepurele.",
+      "diagram": "vanish",
+      "steps": [
+        "Atinge iepurele o singură dată: trebuie să dispară.",
+        "Lasă-l ascuns aproximativ o secundă, apoi fă-l să reapară singur.",
+        "Câinele rămâne neschimbat. Nu atinge ecranul și nu reseta în timpul trucului."
+      ],
+      "success": "Iepurele dispare, rămâne ascuns o clipă și revine singur, în același loc."
+    },
+    {
+      "label": "Misiunea 3 - dificilă",
+      "title": "Trucul complet",
+      "subtitle": "Crește. Dispare. Revine la mărimea normală. Încă o dată!",
+      "diagram": "complete",
+      "steps": [
+        "La o atingere, iepurele crește și rămâne mare o clipă.",
+        "Apoi dispare, așteaptă ascuns și reapare direct la mărimea normală.",
+        "După ce termină, atinge-l din nou. Trucul trebuie să funcționeze fără resetare."
+      ],
+      "success": "Mare → ascuns → vizibil și normal. Două rulări complete, fără mutare sau resetare."
+    },
+    {
+      "label": "Rezervă 1 - 6-8 minute",
+      "title": "Al treilea secret",
+      "subtitle": "Adaugă un fluture din bibliotecă. Fiecare personaj are propriul truc.",
+      "diagram": "third",
+      "steps": [
+        "Construiește o surpriză pentru fluture, pornită prin atingerea lui.",
+        "Puzzle-ul exemplului: fluturele dispare și reapare de două ori, apoi rămâne vizibil.",
+        "Când atingi fluturele, iepurele și câinele trebuie să rămână neschimbați."
+      ],
+      "success": "O atingere, două apariții. Numai personajul atins reacționează."
+    },
+    {
+      "label": "Rezervă 2 - 8-10 minute",
+      "title": "Magie în cinci blocuri",
+      "subtitle": "Inventează un truc. Colegul prezice ce se va întâmpla.",
+      "diagram": "five",
+      "steps": [
+        "Folosește cel mult 5 blocuri după pornirea la atingere. Așteptările se numără și ele.",
+        "Arată cel puțin două schimbări vizibile. La final, personajul este vizibil și normal.",
+        "Fără Repeat sau mișcare. Explică predicția și repetă trucul fără resetare."
+      ],
+      "success": "Cel mult 5 acțiuni. Două schimbări vizibile. Un truc care se poate repeta."
+    }
+  ],
+  "projects": [
+    {
+      "path": "proiecte/00_Demo_Atingere.sjr",
+      "name": "L03 Magie Demo Atinge iepurasul",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "program": [
+            {
+              "block": "grow",
+              "value": 2
+            }
+          ],
+          "expected": {
+            "final_scale": 0.6,
+            "min_scale": 0.5,
+            "max_scale": 0.6,
+            "hidden_intervals": 0,
+            "repeat_without_reset": false,
+            "final_visible": true
+          }
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "program": [],
+          "expected": {
+            "final_scale": 0.5,
+            "min_scale": 0.5,
+            "max_scale": 0.5,
+            "hidden_intervals": 0,
+            "repeat_without_reset": true,
+            "final_visible": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "proiecte/01_Start_Magie.sjr",
+      "name": "L03 Magie Start Atelierul de magie",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "program": [],
+          "expected": {
+            "final_scale": 0.5,
+            "min_scale": 0.5,
+            "max_scale": 0.5,
+            "hidden_intervals": 0,
+            "repeat_without_reset": true,
+            "final_visible": true
+          }
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "program": [],
+          "expected": {
+            "final_scale": 0.5,
+            "min_scale": 0.5,
+            "max_scale": 0.5,
+            "hidden_intervals": 0,
+            "repeat_without_reset": true,
+            "final_visible": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_03/01_Urias_si_pitic.sjr",
+      "name": "L03 Magie M1 Urias si pitic",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "program": [
+            {
+              "block": "grow",
+              "value": 4
+            }
+          ],
+          "expected": {
+            "final_scale": 0.7,
+            "min_scale": 0.5,
+            "max_scale": 0.7,
+            "hidden_intervals": 0,
+            "repeat_without_reset": false,
+            "final_visible": true
+          }
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "program": [
+            {
+              "block": "shrink",
+              "value": 4
+            }
+          ],
+          "expected": {
+            "final_scale": 0.3,
+            "min_scale": 0.3,
+            "max_scale": 0.5,
+            "hidden_intervals": 0,
+            "repeat_without_reset": false,
+            "final_visible": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_03/02_Dispar_si_revin.sjr",
+      "name": "L03 Magie M2 Dispar si revin",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "program": [
+            {
+              "block": "hide",
+              "value": "null"
+            },
+            {
+              "block": "wait",
+              "value": 10
+            },
+            {
+              "block": "show",
+              "value": "null"
+            }
+          ],
+          "expected": {
+            "final_scale": 0.5,
+            "min_scale": 0.5,
+            "max_scale": 0.5,
+            "hidden_intervals": 1,
+            "repeat_without_reset": true,
+            "final_visible": true
+          }
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "program": [
+            {
+              "block": "shrink",
+              "value": 4
+            }
+          ],
+          "expected": {
+            "final_scale": 0.3,
+            "min_scale": 0.3,
+            "max_scale": 0.5,
+            "hidden_intervals": 0,
+            "repeat_without_reset": false,
+            "final_visible": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_03/03_Trucul_complet.sjr",
+      "name": "L03 Magie M3 Trucul complet",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "program": [
+            {
+              "block": "grow",
+              "value": 4
+            },
+            {
+              "block": "wait",
+              "value": 10
+            },
+            {
+              "block": "hide",
+              "value": "null"
+            },
+            {
+              "block": "wait",
+              "value": 10
+            },
+            {
+              "block": "same",
+              "value": "null"
+            },
+            {
+              "block": "show",
+              "value": "null"
+            }
+          ],
+          "expected": {
+            "final_scale": 0.5,
+            "min_scale": 0.5,
+            "max_scale": 0.7,
+            "hidden_intervals": 1,
+            "repeat_without_reset": true,
+            "final_visible": true
+          }
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "program": [
+            {
+              "block": "shrink",
+              "value": 4
+            }
+          ],
+          "expected": {
+            "final_scale": 0.3,
+            "min_scale": 0.3,
+            "max_scale": 0.5,
+            "hidden_intervals": 0,
+            "repeat_without_reset": false,
+            "final_visible": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_03/04_Rezerva_Al_treilea_secret.sjr",
+      "name": "L03 Magie R1 Al treilea secret",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "program": [
+            {
+              "block": "grow",
+              "value": 4
+            },
+            {
+              "block": "wait",
+              "value": 10
+            },
+            {
+              "block": "hide",
+              "value": "null"
+            },
+            {
+              "block": "wait",
+              "value": 10
+            },
+            {
+              "block": "same",
+              "value": "null"
+            },
+            {
+              "block": "show",
+              "value": "null"
+            }
+          ],
+          "expected": {
+            "final_scale": 0.5,
+            "min_scale": 0.5,
+            "max_scale": 0.7,
+            "hidden_intervals": 1,
+            "repeat_without_reset": true,
+            "final_visible": true
+          }
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "program": [
+            {
+              "block": "shrink",
+              "value": 4
+            }
+          ],
+          "expected": {
+            "final_scale": 0.3,
+            "min_scale": 0.3,
+            "max_scale": 0.5,
+            "hidden_intervals": 0,
+            "repeat_without_reset": false,
+            "final_visible": true
+          }
+        },
+        {
+          "id": "fluture1",
+          "name": "Butterfly",
+          "asset": "Butterfly.svg",
+          "size": [
+            128,
+            97
+          ],
+          "position": [
+            240,
+            96
+          ],
+          "program": [
+            {
+              "repeat": 2,
+              "body": [
+                {
+                  "block": "hide",
+                  "value": "null"
+                },
+                {
+                  "block": "wait",
+                  "value": 5
+                },
+                {
+                  "block": "show",
+                  "value": "null"
+                },
+                {
+                  "block": "wait",
+                  "value": 5
+                }
+              ]
+            }
+          ],
+          "expected": {
+            "final_scale": 0.5,
+            "min_scale": 0.5,
+            "max_scale": 0.5,
+            "hidden_intervals": 2,
+            "repeat_without_reset": true,
+            "final_visible": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "solutii/lectia_03/05_Rezerva_Cinci_blocuri.sjr",
+      "name": "L03 Magie R2 Cinci blocuri",
+      "sprites": [
+        {
+          "id": "iepuras1",
+          "name": "Rabbit",
+          "asset": "Rabbit.svg",
+          "size": [
+            217,
+            208
+          ],
+          "position": [
+            120,
+            240
+          ],
+          "program": [
+            {
+              "block": "grow",
+              "value": 4
+            },
+            {
+              "block": "wait",
+              "value": 10
+            },
+            {
+              "block": "shrink",
+              "value": 8
+            },
+            {
+              "block": "wait",
+              "value": 10
+            },
+            {
+              "block": "same",
+              "value": "null"
+            }
+          ],
+          "expected": {
+            "final_scale": 0.5,
+            "min_scale": 0.3,
+            "max_scale": 0.7,
+            "hidden_intervals": 0,
+            "repeat_without_reset": true,
+            "final_visible": true
+          }
+        },
+        {
+          "id": "caine1",
+          "name": "Dog",
+          "asset": "Dog.svg",
+          "size": [
+            296,
+            213
+          ],
+          "position": [
+            360,
+            240
+          ],
+          "program": [
+            {
+              "block": "shrink",
+              "value": 4
+            }
+          ],
+          "expected": {
+            "final_scale": 0.3,
+            "min_scale": 0.3,
+            "max_scale": 0.5,
+            "hidden_intervals": 0,
+            "repeat_without_reset": false,
+            "final_visible": true
+          }
+        },
+        {
+          "id": "fluture1",
+          "name": "Butterfly",
+          "asset": "Butterfly.svg",
+          "size": [
+            128,
+            97
+          ],
+          "position": [
+            240,
+            96
+          ],
+          "program": [
+            {
+              "repeat": 2,
+              "body": [
+                {
+                  "block": "hide",
+                  "value": "null"
+                },
+                {
+                  "block": "wait",
+                  "value": 5
+                },
+                {
+                  "block": "show",
+                  "value": "null"
+                },
+                {
+                  "block": "wait",
+                  "value": 5
+                }
+              ]
+            }
+          ],
+          "expected": {
+            "final_scale": 0.5,
+            "min_scale": 0.5,
+            "max_scale": 0.5,
+            "hidden_intervals": 2,
+            "repeat_without_reset": true,
+            "final_visible": true
+          }
+        }
+      ]
+    }
+  ]
+}

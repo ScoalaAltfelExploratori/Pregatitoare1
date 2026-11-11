@@ -1,0 +1,601 @@
+[
+  {
+    "path": "proiecte/00_Demo_Contact.sjr",
+    "runs": [
+      {
+        "file": "p0_run1",
+        "pass": true,
+        "sounds": 0,
+        "final": {
+          "t": 1848.1000000238419,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 192,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(92px, 14px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 240,
+              "y": 120,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 288.39999997615814,
+          "caine1": 847.5
+        }
+      },
+      {
+        "file": "p0_run2",
+        "pass": true,
+        "sounds": 0,
+        "final": {
+          "t": 1863,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 192,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(92px, 14px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 240,
+              "y": 120,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 302.60000002384186,
+          "caine1": 884.6000000238419
+        }
+      }
+    ],
+    "negative": {
+      "file": "p0_tap_receiver",
+      "pass": true
+    }
+  },
+  {
+    "path": "proiecte/01_Start_Parc.sjr",
+    "runs": [
+      {
+        "file": "p1_run1",
+        "pass": true,
+        "sounds": 0,
+        "final": {
+          "t": 0.10000002384185791,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-36px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 72,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(92px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 240,
+              "y": 240,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": null,
+          "caine1": null
+        }
+      },
+      {
+        "file": "p1_run2",
+        "pass": true,
+        "sounds": 0,
+        "final": {
+          "t": 0.10000002384185791,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(-36px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 72,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(92px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 240,
+              "y": 240,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": null,
+          "caine1": null
+        }
+      }
+    ],
+    "negative": {
+      "file": "p1_tap_receiver",
+      "pass": true
+    }
+  },
+  {
+    "path": "solutii/lectia_06/01_Trezeste_paznicul.sjr",
+    "runs": [
+      {
+        "file": "p2_run1",
+        "pass": true,
+        "sounds": 1,
+        "final": {
+          "t": 2146.7999999523163,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 192,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(92px, 14px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 240,
+              "y": 120,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 326.39999997615814,
+          "caine1": 1146.5
+        }
+      },
+      {
+        "file": "p2_run2",
+        "pass": true,
+        "sounds": 1,
+        "final": {
+          "t": 2121.6999999284744,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 192,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(92px, 14px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 240,
+              "y": 120,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 300.6999999284744,
+          "caine1": 1140.3999999761581
+        }
+      }
+    ],
+    "negative": {
+      "file": "p2_tap_receiver",
+      "pass": true
+    }
+  },
+  {
+    "path": "solutii/lectia_06/02_Doua_vizite.sjr",
+    "runs": [
+      {
+        "file": "p3_run1",
+        "pass": true,
+        "sounds": 1,
+        "final": {
+          "t": 3520.8000000715256,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(300px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 408,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(92px, 14px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 240,
+              "y": 120,
+              "scale": 0.5
+            },
+            {
+              "id": "fluture1",
+              "transform": "translate3d(344px, 72px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 408,
+              "y": 120,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 301.10000002384186,
+          "caine1": 1120.8000000715256,
+          "fluture1": 2540.8000000715256
+        }
+      },
+      {
+        "file": "p3_run2",
+        "pass": true,
+        "sounds": 1,
+        "final": {
+          "t": 3518.6999999284744,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(300px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 408,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(92px, 14px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 240,
+              "y": 120,
+              "scale": 0.5
+            },
+            {
+              "id": "fluture1",
+              "transform": "translate3d(344px, 72px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 408,
+              "y": 120,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 278.6999999284744,
+          "caine1": 1128.6999999284744,
+          "fluture1": 2518.6999999284744
+        }
+      }
+    ],
+    "negative": {
+      "file": "p3_tap_receiver",
+      "pass": true
+    }
+  },
+  {
+    "path": "solutii/lectia_06/03_Reactia_in_lant.sjr",
+    "runs": [
+      {
+        "file": "p4_run1",
+        "pass": true,
+        "sounds": 1,
+        "final": {
+          "t": 2968.399999976158,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 192,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(212px, 182px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 360,
+              "y": 288,
+              "scale": 0.5
+            },
+            {
+              "id": "fluture1",
+              "transform": "translate3d(344px, 72px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 408,
+              "y": 120,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 384.2999999523163,
+          "caine1": 979.1999999284744,
+          "fluture1": 1986.3999999761581
+        }
+      },
+      {
+        "file": "p4_run2",
+        "pass": true,
+        "sounds": 1,
+        "final": {
+          "t": 2922.2999999523163,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 192,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(212px, 182px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 360,
+              "y": 288,
+              "scale": 0.5
+            },
+            {
+              "id": "fluture1",
+              "transform": "translate3d(344px, 72px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 408,
+              "y": 120,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 315.2000000476837,
+          "caine1": 909.8999999761581,
+          "fluture1": 1922.5
+        }
+      }
+    ],
+    "negative": {
+      "file": "p4_tap_receiver",
+      "pass": true
+    }
+  },
+  {
+    "path": "solutii/lectia_06/04_Rezerva_Comoara.sjr",
+    "runs": [
+      {
+        "file": "p5_run1",
+        "pass": true,
+        "sounds": 1,
+        "final": {
+          "t": 2433.600000023842,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(204px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 312,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 0,
+              "visibility": "visible",
+              "x": 312,
+              "y": 240,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 295.3000000715256,
+          "minge1": 1958.6000000238419
+        }
+      },
+      {
+        "file": "p5_run2",
+        "pass": true,
+        "sounds": 1,
+        "final": {
+          "t": 2436.8000000715256,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(204px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 312,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "minge1",
+              "transform": "translate3d(249px, 176px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 0,
+              "visibility": "visible",
+              "x": 312,
+              "y": 240,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 297.10000002384186,
+          "minge1": 1954.9000000953674
+        }
+      }
+    ],
+    "negative": {
+      "file": "p5_tap_receiver",
+      "pass": true
+    }
+  },
+  {
+    "path": "solutii/lectia_06/05_Rezerva_Alarma.sjr",
+    "runs": [
+      {
+        "file": "p6_run1",
+        "pass": true,
+        "sounds": 0,
+        "final": {
+          "t": 3455.0999999046326,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 192,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(92px, 14px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 240,
+              "y": 120,
+              "scale": 0.5
+            },
+            {
+              "id": "fluture1",
+              "transform": "translate3d(344px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 408,
+              "y": 96,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 331,
+          "caine1": 913,
+          "fluture1": 1879.3999999761581
+        }
+      },
+      {
+        "file": "p6_run2",
+        "pass": true,
+        "sounds": 0,
+        "final": {
+          "t": 3409.5,
+          "page": "page1",
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "transform": "translate3d(84px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 192,
+              "y": 240,
+              "scale": 0.5
+            },
+            {
+              "id": "caine1",
+              "transform": "translate3d(92px, 14px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 240,
+              "y": 120,
+              "scale": 0.5
+            },
+            {
+              "id": "fluture1",
+              "transform": "translate3d(344px, 48px, 0px) rotate(0deg) scale(0.5, 0.5)",
+              "opacity": 1,
+              "visibility": "visible",
+              "x": 408,
+              "y": 96,
+              "scale": 0.5
+            }
+          ]
+        },
+        "firstChange": {
+          "iepuras1": 289.7000000476837,
+          "caine1": 847.6000000238419,
+          "fluture1": 1809.4000000953674
+        }
+      }
+    ],
+    "negative": {
+      "file": "p6_tap_receiver",
+      "pass": true
+    }
+  }
+]

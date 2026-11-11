@@ -1,0 +1,184 @@
+{
+  "date": "2026-11-09",
+  "assets": [
+    {
+      "md5": "Rabbit.svg",
+      "width": 217,
+      "height": 208,
+      "ext": "svg",
+      "name": "Rabbit",
+      "order": "characters,03 animals",
+      "tags": [
+        "characters",
+        "03 animals"
+      ]
+    },
+    {
+      "md5": "Ball.svg",
+      "width": 126,
+      "height": 129,
+      "ext": "svg",
+      "name": "Ball",
+      "order": "characters,09 objects",
+      "tags": [
+        "characters",
+        "09 objects"
+      ]
+    },
+    {
+      "md5": "Park.svg",
+      "width": 480,
+      "height": 360,
+      "ext": "svg",
+      "name": "Park"
+    }
+  ],
+  "browser": {
+    "app": "ScratchJr Desktop Reborn (community browser port)",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+    "projects_passed": 7,
+    "evidence": [
+      "browser_observatii.json",
+      "browser_puzzle_observatii.json"
+    ],
+    "revision": "M2 return mini-puzzle; three changed files retested, four unchanged verified hashes retained",
+    "hard_challenge": "pass: separate QA project, return with 1 + 2 steps for each sprite"
+  },
+  "android": {
+    "app": "ScratchJr 1.5.11 (official Google Play)",
+    "environment": "Android 11 API 30 / 1280x800 / 3072 MB",
+    "coverage": "Two earlier custom-art projects only; final rabbit set not retested"
+  },
+  "desktop": {
+    "app": "ScratchJr Desktop 1.3.2 (community)",
+    "coverage": "Earlier Star/Ball version: restore, starter and meeting; user confirmed manual block dragging"
+  },
+  "physical_lenovo_k10": "not_tested",
+  "files": [
+    {
+      "path": "proiecte/01_Start.sjr",
+      "sha256": "a6df6a37c679157803ddec11e75f6f31cfd0534389fb0d4c809a84b3d12e0d05",
+      "browser": {
+        "import": "pass",
+        "run": "pass",
+        "reset": "pass",
+        "reopen": "pass",
+        "reload_gallery": "pass"
+      },
+      "android_final": "not_tested",
+      "lenovo_k10": "not_tested",
+      "evidence": "browser_observatii.json",
+      "revision_check": "unchanged SHA-256; prior UI results retained"
+    },
+    {
+      "path": "proiecte/02_Intalnirea.sjr",
+      "sha256": "033636f25ce64ae8580055adfe8c1dea5e1bb660a793219c9f78bc511c739d08",
+      "browser": {
+        "import": "pass",
+        "run": "pass",
+        "reset": "pass",
+        "reopen": "pass",
+        "reload_gallery": "pass"
+      },
+      "android_final": "not_tested",
+      "lenovo_k10": "not_tested",
+      "evidence": "browser_observatii.json",
+      "revision_check": "unchanged SHA-256; prior UI results retained"
+    },
+    {
+      "path": "proiecte/03_Puzzle_Revenirea.sjr",
+      "sha256": "403baf4eb97d9c279d04cc347985e604dc48d710d65096ca74338878b27729f4",
+      "browser": {
+        "import": "pass",
+        "run": "pass",
+        "reset": "pass",
+        "reopen": "pass",
+        "reload_gallery": "pass"
+      },
+      "evidence": "browser_puzzle_observatii.json",
+      "android_final": "not_tested",
+      "lenovo_k10": "not_tested"
+    },
+    {
+      "path": "proiecte/04_Solutia_profesorului.sjr",
+      "sha256": "c385b2492838e6f5ec874ea4dd66e1251a7e8665696344b6b871ab28f0c42a55",
+      "browser": {
+        "import": "pass",
+        "run": "pass",
+        "reset": "pass",
+        "reopen": "pass",
+        "reload_gallery": "pass"
+      },
+      "evidence": "browser_puzzle_observatii.json",
+      "android_final": "not_tested",
+      "lenovo_k10": "not_tested"
+    },
+    {
+      "path": "solutii/lectia_01/01_Misiunea_1_Intalnirea.sjr",
+      "sha256": "d5e8978ed61a8b1695de38f88bc7446c0b4b6429be9cb3543a9790219592e895",
+      "browser": {
+        "import": "pass",
+        "run": "pass",
+        "reset": "pass",
+        "reopen": "pass",
+        "reload_gallery": "pass"
+      },
+      "android_final": "not_tested",
+      "lenovo_k10": "not_tested",
+      "evidence": "browser_observatii.json",
+      "revision_check": "unchanged SHA-256; prior UI results retained"
+    },
+    {
+      "path": "solutii/lectia_01/02_Misiunea_2_Revenirea.sjr",
+      "sha256": "021ec14164a16e91dde53a1ffe1bea0b4601658b4c844242dddbc6af51ba2cc4",
+      "browser": {
+        "import": "pass",
+        "run": "pass",
+        "reset": "pass",
+        "reopen": "pass",
+        "reload_gallery": "pass"
+      },
+      "evidence": "browser_puzzle_observatii.json",
+      "android_final": "not_tested",
+      "lenovo_k10": "not_tested"
+    },
+    {
+      "path": "solutii/lectia_01/03_Misiunea_3_Final_exemplu.sjr",
+      "sha256": "4547fae127a03ffc22697e77a394815db20a80043dd3009e196bea47078bdc28",
+      "browser": {
+        "import": "pass",
+        "run": "pass",
+        "reset": "pass",
+        "reopen": "pass",
+        "reload_gallery": "pass"
+      },
+      "android_final": "not_tested",
+      "lenovo_k10": "not_tested",
+      "evidence": "browser_observatii.json",
+      "revision_check": "unchanged SHA-256; prior UI results retained"
+    }
+  ],
+  "hard_challenge": {
+    "status": "pass",
+    "test_project": "L01 QA Revenirea dificila 1 plus 2",
+    "sha256": "5bec296bd0a68a086497ceb0e183e76beb7b1d3d1876ce1bd33584ba9f46634a",
+    "scripts": {
+      "Rabbit": [
+        "onflag",
+        "forward 3",
+        "hop 2",
+        "back 1",
+        "back 2"
+      ],
+      "Ball": [
+        "onflag",
+        "back 3",
+        "hop 2",
+        "forward 1",
+        "forward 2"
+      ]
+    },
+    "evidence": "browser_puzzle_observatii.json",
+    "distribution": "QA-only project; classroom instructions and solution are in the guide"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "project": "solutii/lectia_10/05_Rezerva_Intoarcere_automata.sjr",
+  "checks": [
+    {
+      "file": "p6_reopen_initialize",
+      "kind": "initial",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "p6_reopen_r1_first",
+      "kind": "first",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "p6_reopen_r1_second",
+      "kind": "second",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "p6_reopen_r1_performance",
+      "kind": "performance",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "rabbit": {
+          "peaks": 2,
+          "min": 0.5,
+          "max": 0.7,
+          "final": 0.5,
+          "lastChange": 3351.6999999284744
+        },
+        "dog": {
+          "min": 0.3,
+          "max": 0.5,
+          "final": 0.5,
+          "firstChange": 3951.1999999284744,
+          "lastChange": 5554.199999928474
+        },
+        "minge2": {
+          "hiddenAt": 817.5999999046326
+        },
+        "autoReturnDelay": 3155.5
+      },
+      "test_taps": [
+        {
+          "id": "minge2",
+          "at_ms": 435,
+          "opacity": 0.200002
+        },
+        {
+          "id": "minge2",
+          "at_ms": 1990,
+          "opacity": 0
+        }
+      ]
+    }
+  ]
+}

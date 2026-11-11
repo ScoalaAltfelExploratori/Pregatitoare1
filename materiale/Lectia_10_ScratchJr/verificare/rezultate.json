@@ -1,0 +1,87 @@
+{
+  "lesson": 10,
+  "date": "2026-11-11",
+  "status": "PASS",
+  "projects": 7,
+  "main_checks": 60,
+  "reopen_checks": 33,
+  "manual_block_checks": 9,
+  "total_checks": 102,
+  "individual_work": true,
+  "native_android_tested": false,
+  "physical_lenovo_tested": false,
+  "browser": "ScratchJr Desktop Reborn, local mirror of published application with a separate observation panel",
+  "gallery_survived_reload": true,
+  "default_assets": [
+    "Butterfly.svg",
+    "Dog.svg",
+    "Ball.svg",
+    "Rabbit.svg",
+    "BeachDay.svg",
+    "BeachNight.svg"
+  ],
+  "official_android_catalog_version": "1.5.11",
+  "pdf_pages": {
+    "Ghid_profesor_Lectia_10.pdf": 4,
+    "Cartonase_Lectia_10.pdf": 5
+  },
+  "all_pdf_pages_visually_reviewed": true,
+  "files": [
+    {
+      "path": "proiecte/00_Demo_Marea_finala.sjr",
+      "sha256": "dda15476a13621fde94c36b8e741d2efe14bfee589bc54ee7d78740971156a02",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false,
+      "L9_island_preserved": false
+    },
+    {
+      "path": "proiecte/01_Start_Insula_L09.sjr",
+      "sha256": "0b1118d8a0b4fb7057c4bb744427ccdf245b7e591f681afe6ac884190876760e",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false,
+      "L9_island_preserved": true
+    },
+    {
+      "path": "solutii/lectia_10/01_Sarbatoarea_mea.sjr",
+      "sha256": "753891443f96ad6d7591c4d409b5c4d599005acbbc7fe59d56bc16718d85369f",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false,
+      "L9_island_preserved": true
+    },
+    {
+      "path": "solutii/lectia_10/02_Butonul_asteapta.sjr",
+      "sha256": "81dc3d741a1e2c19d7414c8afa77292967095a60770c0eeb6139e9d2147a9c4d",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false,
+      "L9_island_preserved": true
+    },
+    {
+      "path": "solutii/lectia_10/03_Marea_finala.sjr",
+      "sha256": "33baf2e91fcb7fcec32b31c9653acccab56e938eb35f702753b738d27dca9911",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false,
+      "L9_island_preserved": true
+    },
+    {
+      "path": "solutii/lectia_10/04_Rezerva_Inca_o_data.sjr",
+      "sha256": "269c5a2ab4c26b1158c5614c59d5ec9241f1de434c528edcc8b672b98db5e270",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false,
+      "L9_island_preserved": true
+    },
+    {
+      "path": "solutii/lectia_10/05_Rezerva_Intoarcere_automata.sjr",
+      "sha256": "f3cee03166749aad0ef0c3b4ad7f03aca68d9dc59810946b83fddd657d2b8127",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false,
+      "L9_island_preserved": true
+    }
+  ]
+}

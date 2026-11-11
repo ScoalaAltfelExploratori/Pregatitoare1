@@ -1,0 +1,21 @@
+{
+  "lesson": 2,
+  "title": "Provocările iepurașului",
+  "age": "6-7 ani",
+  "duration": 50,
+  "assets": ["Rabbit.svg", "Ball.svg", "Park.svg"],
+  "start": {"x": 96, "y": 192},
+  "ball_y": 288,
+  "projects": [
+    {"path": "proiecte/00_Demo_Repeat.sjr", "name": "L02 Demo Doua sarituri", "ball_x": 240, "program": [{"repeat": 2, "body": [{"block": "hop", "value": 2}]}], "expected": {"end_x": 96, "max_x": 96, "hops": 2}},
+    {"path": "proiecte/01_Start.sjr", "name": "L02 Start Provocarile iepurasului", "ball_x": 240, "program": [], "expected": {"end_x": 96, "max_x": 96, "hops": 0}},
+    {"path": "solutii/lectia_02/01_Trei_patrulari.sjr", "name": "L02 M1 Trei patrulari", "ball_x": 240, "program": [{"repeat": 3, "body": [{"block": "forward", "value": 2}, {"block": "hop", "value": 2}, {"block": "back", "value": 2}]}], "expected": {"end_x": 96, "max_x": 144, "hops": 3}},
+    {"path": "solutii/lectia_02/02_Sase_patratele.sjr", "name": "L02 M2 Sase patratele", "ball_x": 240, "program": [{"repeat": 3, "body": [{"block": "forward", "value": 2}, {"block": "hop", "value": 2}]}], "expected": {"end_x": 240, "max_x": 240, "hops": 3}},
+    {"path": "solutii/lectia_02/03_Expeditia_dus_intors.sjr", "name": "L02 M3 Expeditia dus intors", "ball_x": 288, "program": [{"repeat": 4, "body": [{"block": "forward", "value": 2}, {"block": "hop", "value": 2}]}, {"repeat": 4, "body": [{"block": "back", "value": 2}]}], "expected": {"end_x": 96, "max_x": 288, "hops": 4}}
+  ],
+  "missions": [
+    {"number": 1, "title": "Trei patrulări", "intro": "Iepurașul păzește parcul. Fă-l să repete aceeași patrulare.", "steps": ["Mergi la dreapta, sari și întoarce-te la start.", "Repetă întregul grup de 3 ori, cu un singur Repeat.", "Pornește o singură dată cu steagul verde."], "success": "3 sărituri. 3 reveniri. La final ești la start.", "distance": 2},
+    {"number": 2, "title": "Șase pătrățele până la țintă", "intro": "Mingea arată coloana la care trebuie să ajungi.", "steps": ["Ținta este la 6 pătrățele spre dreapta.", "Fă 3 deplasări egale. Sari după fiecare.", "Folosește Repeat. Alege tu distanța unei deplasări."], "success": "3 sărituri. Oprire pe coloana mingii. Mingea stă pe loc.", "distance": 6},
+    {"number": 3, "title": "Expediția dus-întors", "intro": "PROVOCARE DIFICILĂ - Ajungi la țintă și te întorci singur.", "steps": ["Ținta este la 8 pătrățele spre dreapta.", "Ajungi în 4 deplasări egale. Sari după fiecare.", "Adaugă un al doilea Repeat ca să revii la start."], "success": "Un singur steag. 4 sărituri la dus. Înapoi fără resetare.", "distance": 8}
+  ]
+}

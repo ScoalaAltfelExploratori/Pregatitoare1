@@ -1,0 +1,44 @@
+{
+  "audio": [
+    {
+      "currentTime": 0,
+      "duration": 3.045,
+      "ended": false,
+      "error": null,
+      "label": "Ascultă codul secret",
+      "paused": true
+    },
+    {
+      "currentTime": 7.165,
+      "duration": 7.165,
+      "ended": true,
+      "error": null,
+      "label": "Ascultă salutul secret",
+      "paused": true
+    }
+  ],
+  "expanded": true,
+  "horizontalOverflow": false,
+  "image": {
+    "complete": true,
+    "width": 1280
+  },
+  "links": [
+    "Ghid_profesor_Lectia_05.pdf",
+    "Cartonase_Lectia_05.pdf",
+    "README.md",
+    "solutii/lectia_05/README.md",
+    "Observatii_dupa_lectie.md",
+    "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+    "proiecte/00_Demo_Pop.sjr",
+    "proiecte/01_Start_Ritmuri.sjr",
+    "verificare/README.md",
+    "../Plan_10_lectii_ScratchJr.md"
+  ],
+  "missionCards": 5,
+  "title": "Lecția 5 · Fabrica de ritmuri",
+  "hard_audio_started": true,
+  "secret_audio_completed_before_reload": true,
+  "final_image": "verificare/03_Salutul_secret_public.png",
+  "final_image_visually_verified": true
+}

@@ -1,0 +1,121 @@
+{
+  "roboFirstMission": "won",
+  "oldLesson": {
+    "url": "http://127.0.0.1:8774/Pregatitoare1/robo/index.html?lesson=8&variant=2",
+    "title": "8. Coborâm podul",
+    "variant": "1"
+  },
+  "oldHome": {
+    "url": "http://127.0.0.1:8774/Pregatitoare1/robo/index.html?adventure=home",
+    "title": "Acasă cu Robo",
+    "missions": 6
+  },
+  "lessons": [
+    {
+      "n": 1,
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/index.html",
+      "title": "Ne întâlnim la joacă",
+      "imagesLoaded": true,
+      "overflow": false
+    },
+    {
+      "n": 2,
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/index.html",
+      "title": "Provocările iepurașului",
+      "imagesLoaded": true,
+      "overflow": false
+    },
+    {
+      "n": 3,
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/index.html",
+      "title": "Atelierul de magie",
+      "imagesLoaded": true,
+      "overflow": false
+    },
+    {
+      "n": 4,
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/index.html",
+      "title": "Telecomanda fermecată",
+      "imagesLoaded": true,
+      "overflow": false
+    },
+    {
+      "n": 5,
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/index.html",
+      "title": "Fabrica de ritmuri",
+      "imagesLoaded": true,
+      "overflow": false
+    },
+    {
+      "n": 6,
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/index.html",
+      "title": "Parcul cu surprize",
+      "imagesLoaded": true,
+      "overflow": false
+    },
+    {
+      "n": 7,
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/index.html",
+      "title": "Povestea cu două finaluri",
+      "imagesLoaded": true,
+      "overflow": false
+    },
+    {
+      "n": 8,
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/index.html",
+      "title": "Statuile fermecate",
+      "imagesLoaded": true,
+      "overflow": false
+    },
+    {
+      "n": 9,
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/index.html",
+      "title": "Insula misterioasă",
+      "imagesLoaded": true,
+      "overflow": false
+    },
+    {
+      "n": 10,
+      "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/index.html",
+      "title": "Marea finală",
+      "imagesLoaded": true,
+      "overflow": false
+    }
+  ],
+  "forward": [
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_10_ScratchJr/index.html"
+  ],
+  "backward": [
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_09_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_08_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_07_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_06_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_05_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_04_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_03_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_02_ScratchJr/index.html",
+    "http://127.0.0.1:8774/Pregatitoare1/materiale/Lectia_01_ScratchJr/index.html"
+  ],
+  "roboLastLesson": {
+    "title": "22. Podul și bateria",
+    "url": "http://127.0.0.1:8774/Pregatitoare1/robo/index.html?lesson=22",
+    "board": "Hartă cu 7 rânduri și 7 coloane. Robo: rândul 7, coloana 1. Destinație: rândul 1, coloana 7.",
+    "horizontalOverflow": false
+  },
+  "roboLayout": {
+    "height": 720,
+    "horizontalOverflow": false,
+    "runBottom": 632.3958740234375,
+    "statusBottom": 713.9792098999023,
+    "width": 1280
+  },
+  "compactMenuDestination": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/index.html"
+}

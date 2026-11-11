@@ -1,0 +1,948 @@
+[
+  {
+    "path": "proiecte/00_Demo_Pop.sjr",
+    "runs": [
+      {
+        "file": "p0_reopen_0",
+        "selector": "#iepuras1",
+        "expected": {
+          "name": "Un singur Pop",
+          "tap": "iepuras1",
+          "sounds": 1,
+          "gaps": [],
+          "owners": [
+            "Rabbit"
+          ],
+          "observe_ms": 2600,
+          "repeat_without_reset": true
+        },
+        "pass": true,
+        "gaps": [],
+        "classes": {},
+        "before": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "after": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "audio": {
+          "duration_ms": 2083.9000000953674,
+          "sampleRate": 48000,
+          "frames": 84992,
+          "peak": 1.0028177499771118,
+          "contexts": [
+            {
+              "state": "running",
+              "sampleRate": 48000
+            }
+          ],
+          "events": [
+            {
+              "at_ms": 295.7000000476837,
+              "contextTime": 0.6,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "path": "proiecte/01_Start_Ritmuri.sjr",
+    "runs": [
+      {
+        "file": "p1_reopen_0",
+        "selector": "#iepuras1",
+        "expected": {
+          "name": "Starter fara sunete",
+          "tap": "iepuras1",
+          "sounds": 0,
+          "gaps": []
+        },
+        "pass": true,
+        "gaps": [],
+        "classes": {},
+        "before": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "after": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "audio": {
+          "duration_ms": 1776.0999999046326,
+          "sampleRate": 48000,
+          "frames": 0,
+          "peak": 0,
+          "contexts": [],
+          "events": []
+        }
+      }
+    ]
+  },
+  {
+    "path": "solutii/lectia_05/01_Codul_secret.sjr",
+    "runs": [
+      {
+        "file": "p2_reopen_0",
+        "selector": "#iepuras1",
+        "expected": {
+          "name": "Doua apropiate apoi unul",
+          "tap": "iepuras1",
+          "sounds": 3,
+          "gaps": [
+            "short",
+            "long"
+          ],
+          "owners": [
+            "Rabbit",
+            "Rabbit",
+            "Rabbit"
+          ],
+          "observe_ms": 5800,
+          "repeat_without_reset": true
+        },
+        "pass": true,
+        "gaps": [
+          0.5413333333333333,
+          1.4693333333333332
+        ],
+        "classes": {
+          "short": [
+            0.5413333333333333
+          ],
+          "long": [
+            1.4693333333333332
+          ]
+        },
+        "before": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "after": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "audio": {
+          "duration_ms": 4667.300000071526,
+          "sampleRate": 48000,
+          "frames": 208896,
+          "peak": 1.0028177499771118,
+          "contexts": [
+            {
+              "state": "running",
+              "sampleRate": 48000
+            }
+          ],
+          "events": [
+            {
+              "at_ms": 289.2000000476837,
+              "contextTime": 0.64,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 828.4000000953674,
+              "contextTime": 1.1813333333333333,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 2298.3000000715256,
+              "contextTime": 2.6506666666666665,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "path": "solutii/lectia_05/02_Patru_sunete_doua_ritmuri.sjr",
+    "runs": [
+      {
+        "file": "p3_reopen_0",
+        "selector": "#iepuras1",
+        "expected": {
+          "name": "Patru egale",
+          "tap": "iepuras1",
+          "sounds": 4,
+          "gaps": [
+            "medium",
+            "medium",
+            "medium"
+          ],
+          "owners": [
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit"
+          ],
+          "observe_ms": 7400,
+          "repeat_without_reset": true
+        },
+        "pass": true,
+        "gaps": [
+          0.8986666666666666,
+          0.8906666666666669,
+          0.8986666666666663
+        ],
+        "classes": {
+          "medium": [
+            0.8986666666666666,
+            0.8906666666666669,
+            0.8986666666666663
+          ]
+        },
+        "before": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "after": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "audio": {
+          "duration_ms": 5294.299999952316,
+          "sampleRate": 48000,
+          "frames": 237568,
+          "peak": 1.0028177499771118,
+          "contexts": [
+            {
+              "state": "running",
+              "sampleRate": 48000
+            }
+          ],
+          "events": [
+            {
+              "at_ms": 320.1999999284744,
+              "contextTime": 0.592,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 1218.0999999046326,
+              "contextTime": 1.4906666666666666,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 2116.2999999523163,
+              "contextTime": 2.3813333333333335,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 3008.0999999046326,
+              "contextTime": 3.28,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            }
+          ]
+        }
+      },
+      {
+        "file": "p3_reopen_1",
+        "selector": "#caine1",
+        "expected": {
+          "name": "Doua perechi",
+          "tap": "caine1",
+          "sounds": 4,
+          "gaps": [
+            "short",
+            "long",
+            "short"
+          ],
+          "owners": [
+            "Dog",
+            "Dog",
+            "Dog",
+            "Dog"
+          ],
+          "observe_ms": 7400,
+          "repeat_without_reset": true
+        },
+        "pass": true,
+        "gaps": [
+          0.5493333333333332,
+          1.5093333333333332,
+          0.5413333333333341
+        ],
+        "classes": {
+          "short": [
+            0.5493333333333332,
+            0.5413333333333341
+          ],
+          "long": [
+            1.5093333333333332
+          ]
+        },
+        "before": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "after": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "audio": {
+          "duration_ms": 5291.5,
+          "sampleRate": 48000,
+          "frames": 252928,
+          "peak": 1.0028177499771118,
+          "contexts": [
+            {
+              "state": "running",
+              "sampleRate": 48000
+            }
+          ],
+          "events": [
+            {
+              "at_ms": 342.2000000476837,
+              "contextTime": 7.152,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 892.1000000238419,
+              "contextTime": 7.701333333333333,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 2402.899999976158,
+              "contextTime": 9.210666666666667,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 2941.899999976158,
+              "contextTime": 9.752,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "path": "solutii/lectia_05/03_Salutul_secret.sjr",
+    "runs": [
+      {
+        "file": "p4_reopen_0",
+        "selector": "#iepuras1",
+        "expected": {
+          "name": "Trei perechi si raspunsul",
+          "tap": "iepuras1",
+          "sounds": 7,
+          "gaps": [
+            "short",
+            "long",
+            "short",
+            "long",
+            "short",
+            "long"
+          ],
+          "owners": [
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Dog"
+          ],
+          "observe_ms": 12200,
+          "repeat_without_reset": true
+        },
+        "pass": true,
+        "gaps": [
+          0.5519999999999999,
+          1.4880000000000002,
+          0.56,
+          1.4906666666666668,
+          0.5599999999999996,
+          1.5013333333333332
+        ],
+        "classes": {
+          "short": [
+            0.5519999999999999,
+            0.56,
+            0.5599999999999996
+          ],
+          "long": [
+            1.4880000000000002,
+            1.4906666666666668,
+            1.5013333333333332
+          ]
+        },
+        "before": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "after": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "audio": {
+          "duration_ms": 8784.600000023842,
+          "sampleRate": 48000,
+          "frames": 406528,
+          "peak": 1.0028177499771118,
+          "contexts": [
+            {
+              "state": "running",
+              "sampleRate": 48000
+            }
+          ],
+          "events": [
+            {
+              "at_ms": 316.2999999523163,
+              "contextTime": 0.64,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 863.2000000476837,
+              "contextTime": 1.192,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 2354,
+              "contextTime": 2.68,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 2912.2000000476837,
+              "contextTime": 3.24,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 4404.700000047684,
+              "contextTime": 4.730666666666667,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 4956.700000047684,
+              "contextTime": 5.290666666666667,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 6456.899999976158,
+              "contextTime": 6.792,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "path": "solutii/lectia_05/04_Rezerva_Ecoul.sjr",
+    "runs": [
+      {
+        "file": "p5_reopen_0",
+        "selector": "#iepuras1",
+        "expected": {
+          "name": "Modelul apoi ecoul",
+          "tap": "iepuras1",
+          "sounds": 6,
+          "gaps": [
+            "short",
+            "long",
+            "long",
+            "short",
+            "long"
+          ],
+          "owners": [
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Dog",
+            "Dog",
+            "Dog"
+          ],
+          "observe_ms": 10600,
+          "repeat_without_reset": true
+        },
+        "pass": true,
+        "gaps": [
+          0.5493333333333333,
+          1.4693333333333332,
+          1.4693333333333336,
+          0.5413333333333332,
+          1.4693333333333332
+        ],
+        "classes": {
+          "short": [
+            0.5493333333333333,
+            0.5413333333333332
+          ],
+          "long": [
+            1.4693333333333332,
+            1.4693333333333336,
+            1.4693333333333332
+          ]
+        },
+        "before": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "after": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "audio": {
+          "duration_ms": 8305.900000095367,
+          "sampleRate": 48000,
+          "frames": 384000,
+          "peak": 1.0028177499771118,
+          "contexts": [
+            {
+              "state": "running",
+              "sampleRate": 48000
+            }
+          ],
+          "events": [
+            {
+              "at_ms": 309,
+              "contextTime": 0.672,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 851.5,
+              "contextTime": 1.2213333333333334,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 2328.7000000476837,
+              "contextTime": 2.6906666666666665,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 3797.600000023842,
+              "contextTime": 4.16,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 4333.300000071526,
+              "contextTime": 4.701333333333333,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 5805.800000071526,
+              "contextTime": 6.1706666666666665,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "path": "solutii/lectia_05/05_Rezerva_Sapte_sunete.sjr",
+    "runs": [
+      {
+        "file": "p6_reopen_0",
+        "selector": "#iepuras1",
+        "expected": {
+          "name": "Sase in bucla plus finalul",
+          "tap": "iepuras1",
+          "sounds": 7,
+          "gaps": [
+            "short",
+            "short",
+            "short",
+            "short",
+            "short",
+            "short"
+          ],
+          "owners": [
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit",
+            "Rabbit"
+          ],
+          "observe_ms": 12200,
+          "repeat_without_reset": true
+        },
+        "pass": true,
+        "gaps": [
+          0.5706666666666665,
+          0.5893333333333335,
+          0.5706666666666667,
+          0.5813333333333333,
+          0.5680000000000001,
+          0.5813333333333337
+        ],
+        "classes": {
+          "short": [
+            0.5706666666666665,
+            0.5893333333333335,
+            0.5706666666666667,
+            0.5813333333333333,
+            0.5680000000000001,
+            0.5813333333333337
+          ]
+        },
+        "before": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "after": {
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": "1",
+              "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            },
+            {
+              "id": "caine1",
+              "opacity": "1",
+              "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+            }
+          ]
+        },
+        "audio": {
+          "duration_ms": 6380.300000071526,
+          "sampleRate": 48000,
+          "frames": 290816,
+          "peak": 1.0028177499771118,
+          "contexts": [
+            {
+              "state": "running",
+              "sampleRate": 48000
+            }
+          ],
+          "events": [
+            {
+              "at_ms": 322.39999997615814,
+              "contextTime": 0.64,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 895.8000000715256,
+              "contextTime": 1.2106666666666666,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 1483.5,
+              "contextTime": 1.8,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 2047.6000000238419,
+              "contextTime": 2.3706666666666667,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 2627.600000023842,
+              "contextTime": 2.952,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 3197.8000000715256,
+              "contextTime": 3.52,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            },
+            {
+              "at_ms": 3777.7000000476837,
+              "contextTime": 4.101333333333334,
+              "state": "running",
+              "duration": 0.10447916666666666,
+              "frames": 5015,
+              "sampleRate": 48000,
+              "peak": 1.0028177499771118
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

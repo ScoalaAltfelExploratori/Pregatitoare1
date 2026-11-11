@@ -1,0 +1,134 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "file": "inactive_flag",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": true,
+      "stats": {
+        "iepuras1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        },
+        "caine1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        }
+      }
+    },
+    {
+      "file": "inactive_actor_tap",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": true,
+      "stats": {
+        "iepuras1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        },
+        "caine1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        }
+      }
+    },
+    {
+      "file": "freeze_before_start",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": true,
+      "stats": {
+        "iepuras1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        },
+        "caine1": {
+          "states": 1,
+          "min": 0.5,
+          "max": 0.5,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)",
+            "scale": 0.5,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        }
+      }
+    },
+    {
+      "file": "hard_chosen_pose",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": true,
+      "stats": {
+        "iepuras1": {
+          "states": 1,
+          "min": 0.7,
+          "max": 0.7,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+            "scale": 0.7,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        },
+        "caine1": {
+          "states": 1,
+          "min": 0.3,
+          "max": 0.3,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(187px, 134px, 0px) rotate(0deg) scale(0.3, 0.3)",
+            "scale": 0.3,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        }
+      },
+      "target_large": true
+    }
+  ]
+}

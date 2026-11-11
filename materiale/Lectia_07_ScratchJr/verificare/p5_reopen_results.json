@@ -1,0 +1,59 @@
+{
+  "path": "solutii/lectia_07/04_Rezerva_Finalul_singur.sjr",
+  "runs": [
+    {
+      "file": "p5_reopen1_step0",
+      "pass": true,
+      "page": "page2",
+      "pages": [
+        "page1",
+        "page2"
+      ],
+      "hops": {
+        "caine2": 1
+      },
+      "peak": null,
+      "go": "go on",
+      "frames": 14
+    },
+    {
+      "file": "p5_reopen1_step1",
+      "pass": true,
+      "page": "page1",
+      "pages": [
+        "page2",
+        "page1"
+      ],
+      "hops": {},
+      "peak": null,
+      "go": "go on",
+      "frames": 4
+    },
+    {
+      "file": "p5_reopen1_step2",
+      "pass": true,
+      "page": "page3",
+      "pages": [
+        "page1",
+        "page3"
+      ],
+      "hops": {},
+      "peak": 0.7,
+      "go": "go on",
+      "frames": 22
+    },
+    {
+      "file": "p5_reopen1_step3",
+      "pass": true,
+      "page": "page1",
+      "pages": [
+        "page3",
+        "page1"
+      ],
+      "hops": {},
+      "peak": null,
+      "go": "go on",
+      "frames": 4
+    }
+  ]
+}

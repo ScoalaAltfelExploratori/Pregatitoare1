@@ -7,7 +7,7 @@ const E = require('../game-engine.js');
 const C = require('../curriculum.js');
 const classicStages = ['two', 'bend', 'challenge', 'challenge', 'challenge', 'challenge', 'classic-two-rows'];
 const root = path.join(__dirname, '..');
-const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const html = fs.readFileSync(path.join(root, 'robo', 'index.html'), 'utf8');
 const progressKey = 'robo-explorator-progress-v1';
 
 function setup({ progress, blockedStorage = false, guided = false, checkpoint, url='http://robo.test/', homeProgress, classroom=false } = {}) {

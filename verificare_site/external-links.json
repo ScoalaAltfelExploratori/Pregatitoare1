@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://github.com/richiesamlie/ScratchJr-Desktop-Reborn",
+    "status": 200,
+    "final_url": "https://github.com/richiesamlie/ScratchJr-Desktop-Reborn",
+    "pass": true
+  },
+  {
+    "url": "https://jfo8000.github.io/ScratchJr-Desktop/",
+    "status": 200,
+    "final_url": "https://jfo8000.github.io/ScratchJr-Desktop/",
+    "pass": true
+  },
+  {
+    "url": "https://mitscratch.freshdesk.com/en/support/solutions/articles/4000211814-how-can-i-save-or-export-my-project-on-scratchjr-",
+    "status": 200,
+    "final_url": "https://mitscratch.freshdesk.com/en/support/solutions/articles/4000211814-how-can-i-save-or-export-my-project-on-scratchjr-",
+    "pass": true
+  },
+  {
+    "url": "https://play.google.com/store/apps/details?id=org.scratchjr.android",
+    "status": 200,
+    "final_url": "https://play.google.com/store/apps/details?id=org.scratchjr.android",
+    "pass": true
+  },
+  {
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+    "status": 200,
+    "final_url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+    "pass": true
+  },
+  {
+    "url": "https://scratched.gse.harvard.edu/sites/default/files/scratchjr-reference-page.pdf",
+    "status": 200,
+    "final_url": "https://scratched.gse.harvard.edu/sites/default/files/scratchjr-reference-page.pdf",
+    "pass": true
+  },
+  {
+    "url": "https://sites.bc.edu/scratchjr/learn/",
+    "status": 200,
+    "final_url": "https://sites.bc.edu/scratchjr/learn/",
+    "pass": true
+  },
+  {
+    "url": "https://www.scratchjr.org/curricula/playground/playground-5.pdf",
+    "status": 200,
+    "final_url": "https://www.scratchjr.org/curricula/playground/playground-5.pdf",
+    "pass": true
+  },
+  {
+    "url": "https://www.scratchjr.org/explore/blocks",
+    "status": 200,
+    "final_url": "https://www.scratchjr.org/explore/blocks",
+    "pass": true
+  },
+  {
+    "url": "https://www.scratchjr.org/pdfs/blocks.pdf",
+    "status": 200,
+    "final_url": "https://www.scratchjr.org/pdfs/blocks.pdf",
+    "pass": true
+  }
+]

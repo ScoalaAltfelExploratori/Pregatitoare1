@@ -1,0 +1,154 @@
+{
+  "file": "p6_seven_1",
+  "selector": "#iepuras1",
+  "expected": {
+    "name": "Sase in bucla plus finalul",
+    "tap": "iepuras1",
+    "sounds": 7,
+    "gaps": [
+      "short",
+      "short",
+      "short",
+      "short",
+      "short",
+      "short"
+    ],
+    "owners": [
+      "Rabbit",
+      "Rabbit",
+      "Rabbit",
+      "Rabbit",
+      "Rabbit",
+      "Rabbit",
+      "Rabbit"
+    ],
+    "observe_ms": 12200,
+    "repeat_without_reset": true
+  },
+  "pass": true,
+  "gaps": [
+    0.5813333333333333,
+    0.5786666666666669,
+    0.570666666666666,
+    0.5813333333333333,
+    0.5679999999999996,
+    0.5813333333333333
+  ],
+  "classes": {
+    "short": [
+      0.5813333333333333,
+      0.5786666666666669,
+      0.570666666666666,
+      0.5813333333333333,
+      0.5679999999999996,
+      0.5813333333333333
+    ]
+  },
+  "before": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "after": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "audio": {
+    "duration_ms": 6384.099999904633,
+    "sampleRate": 48000,
+    "frames": 290816,
+    "peak": 1.0028177499771118,
+    "contexts": [
+      {
+        "state": "running",
+        "sampleRate": 48000
+      }
+    ],
+    "events": [
+      {
+        "at_ms": 329.39999997615814,
+        "contextTime": 6.32,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 905.2999999523163,
+        "contextTime": 6.9013333333333335,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 1485.2999999523163,
+        "contextTime": 7.48,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 2059.5999999046326,
+        "contextTime": 8.050666666666666,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 2632.1999999284744,
+        "contextTime": 8.632,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 3211.1999999284744,
+        "contextTime": 9.2,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 3784.0999999046326,
+        "contextTime": 9.781333333333333,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      }
+    ]
+  }
+}

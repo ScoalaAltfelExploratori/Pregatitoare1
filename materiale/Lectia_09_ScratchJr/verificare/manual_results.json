@@ -1,0 +1,50 @@
+{
+  "pass": true,
+  "scope": "Dragged Start on Message (Orange) and Show into a partial demo. Butterfly sender and green-flag Hide were prebuilt.",
+  "checks": [
+    {
+      "file": "manual1_hide",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 0
+      },
+      "observed": {}
+    },
+    {
+      "file": "manual1_reveal",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1
+      },
+      "observed": {}
+    },
+    {
+      "file": "manual2_hide",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 0
+      },
+      "observed": {}
+    },
+    {
+      "file": "manual2_reveal",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1
+      },
+      "observed": {}
+    }
+  ]
+}

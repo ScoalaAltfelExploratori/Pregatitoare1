@@ -1,0 +1,22 @@
+/* Shared navigation only; lesson and Robo styles remain independent. */
+.site-navigation{flex:none;background:#fffdf8;border-bottom:1px solid #d5e4df;padding:8px 20px;color:#173e3a;font:600 15px/1.4 Arial,sans-serif}
+.site-navigation nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px 12px;max-width:1100px;margin:0 auto;padding:0}
+.site-navigation a{display:inline-flex;align-items:center;min-height:44px;padding:8px 13px;border-radius:10px;color:#245b50;background:transparent;text-decoration:none;white-space:normal}
+.site-navigation a:hover{background:#eef5ef}
+.site-navigation a[aria-current="page"],.site-navigation a[aria-current="location"]{background:#e1f1e6;color:#11563c}
+.site-navigation .site-home{margin-right:auto;font-weight:800;color:#173e3a}
+.site-navigation a:focus-visible,.lesson-pager a:focus-visible{outline:3px solid #ce7900;outline-offset:3px}
+.lesson-pager{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin:36px 0 0;padding:22px 0 0;border-top:1px solid #d5e4df;font:600 15px/1.4 Arial,sans-serif}
+.lesson-pager a{display:inline-flex;align-items:center;min-height:44px;padding:10px 14px;border-radius:10px;background:#e6f3e9;color:#175f47;text-decoration:none}
+.lesson-pager a:hover{background:#d7eadc}
+.robo-site-menu{position:relative;flex:none;font:600 14px/1.4 Arial,sans-serif}
+.robo-site-menu>summary{display:flex;align-items:center;min-height:44px;padding:8px 10px;border:1px solid #c7dfe4;border-radius:10px;cursor:pointer;list-style:none;background:#fff;color:#245b50}
+.robo-site-menu>summary::-webkit-details-marker{display:none}
+.robo-site-menu>summary:focus-visible{outline:3px solid #ce7900;outline-offset:3px}
+.robo-site-menu>.site-navigation{position:absolute;top:calc(100% + 6px);left:0;width:250px;max-width:calc(100vw - 32px);z-index:60;border:1px solid #c7dfe4;border-radius:12px;box-shadow:0 8px 24px #173e3a20;padding:8px}
+.robo-site-menu:not([open])>.site-navigation{display:none}
+.robo-site-menu .site-navigation nav{display:flex;flex-direction:column;align-items:stretch;width:100%;gap:3px}
+.robo-site-menu .site-navigation .site-home{margin-right:0}
+@media(max-width:730px){.app-header>.robo-site-menu{grid-column:1/-1;grid-row:4;justify-self:start}}
+@media(max-width:560px){.site-navigation{padding:6px 12px;font-size:13px}.site-navigation nav{gap:2px 4px}.site-navigation .site-home{flex-basis:100%;min-height:36px;padding:4px 10px}.site-navigation a{padding:8px 10px}.lesson-pager{justify-content:flex-start}}
+@media print{.site-navigation,.lesson-pager,.robo-site-menu{display:none!important}}

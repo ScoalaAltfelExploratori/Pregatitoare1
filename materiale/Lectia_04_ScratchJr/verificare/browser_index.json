@@ -1,0 +1,23 @@
+{
+  "expanded": true,
+  "horizontalOverflow": false,
+  "image": {
+    "complete": true,
+    "width": 1280
+  },
+  "links": [
+    "Ghid_profesor_Lectia_04.pdf",
+    "Cartonase_Lectia_04.pdf",
+    "README.md",
+    "solutii/lectia_04/README.md",
+    "Observatii_dupa_lectie.md",
+    "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+    "proiecte/00_Demo_Mesaj.sjr",
+    "proiecte/01_Start_Telecomanda.sjr",
+    "verificare/README.md",
+    "../Plan_10_lectii_ScratchJr.md"
+  ],
+  "missionCards": 5,
+  "title": "Lecția 4 · Telecomanda fermecată",
+  "teacherImageVisuallyVerified": true
+}

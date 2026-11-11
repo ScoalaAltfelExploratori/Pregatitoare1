@@ -1,0 +1,115 @@
+{
+  "file": "p3_0_2",
+  "selector": "#iepuras1",
+  "expected": {
+    "name": "Patru egale",
+    "tap": "iepuras1",
+    "sounds": 4,
+    "gaps": [
+      "medium",
+      "medium",
+      "medium"
+    ],
+    "owners": [
+      "Rabbit",
+      "Rabbit",
+      "Rabbit",
+      "Rabbit"
+    ],
+    "observe_ms": 7400,
+    "repeat_without_reset": true
+  },
+  "pass": true,
+  "gaps": [
+    0.890666666666668,
+    0.8986666666666636,
+    0.890666666666668
+  ],
+  "classes": {
+    "medium": [
+      0.890666666666668,
+      0.8986666666666636,
+      0.890666666666668
+    ]
+  },
+  "before": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "after": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "audio": {
+    "duration_ms": 5291.199999928474,
+    "sampleRate": 48000,
+    "frames": 253952,
+    "peak": 1.0028177499771118,
+    "contexts": [
+      {
+        "state": "running",
+        "sampleRate": 48000
+      }
+    ],
+    "events": [
+      {
+        "at_ms": 326.09999990463257,
+        "contextTime": 35.93066666666667,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 1219.5,
+        "contextTime": 36.821333333333335,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 2122.1999999284744,
+        "contextTime": 37.72,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 3010.0999999046326,
+        "contextTime": 38.61066666666667,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      }
+    ]
+  }
+}

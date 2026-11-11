@@ -1,0 +1,81 @@
+{
+  "lesson": 6,
+  "date": "2026-11-10",
+  "status": "PASS",
+  "projects": 7,
+  "main_checks": 14,
+  "reopen_checks": 7,
+  "inert_taps": 7,
+  "manual_construction_checks": 1,
+  "total_checks": 29,
+  "audio_recordings_analyzed": 12,
+  "native_android_tested": false,
+  "physical_lenovo_tested": false,
+  "browser": "ScratchJr Desktop Reborn, local observation mirror of the published browser version",
+  "gallery_survived_reload": true,
+  "default_assets": [
+    "Rabbit.svg",
+    "Dog.svg",
+    "Butterfly.svg",
+    "Ball.svg",
+    "Park.svg",
+    "pop.mp3"
+  ],
+  "official_android_catalog_version": "1.5.11",
+  "pdf_pages": {
+    "Ghid_profesor_Lectia_06.pdf": 4,
+    "Cartonase_Lectia_06.pdf": 5
+  },
+  "all_pdf_pages_visually_reviewed": true,
+  "files": [
+    {
+      "path": "proiecte/00_Demo_Contact.sjr",
+      "sha256": "033b8fe265ee558a7ee9baf76ce8ffd9dd3d2c06d7b29409047f4f28b3a2878e",
+      "pages": 1,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "proiecte/01_Start_Parc.sjr",
+      "sha256": "59aa183d3ceb2a2db84f9147823efa9aa19a4a3beebb68e3c4074f599df7eba5",
+      "pages": 1,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_06/01_Trezeste_paznicul.sjr",
+      "sha256": "f706343de3b4d825ffa43f1de8da41f7714a64420d4efdd63042b66d6bd37329",
+      "pages": 1,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_06/02_Doua_vizite.sjr",
+      "sha256": "4f0d09048dccff184ce4304f640fbb0ac106ab4b0d0b6e3dd566c347bd4ab0fe",
+      "pages": 1,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_06/03_Reactia_in_lant.sjr",
+      "sha256": "76f58db3fa1d6576443e1927c6b0b61b654801baa4f9dd92e2d9d25d16d7c6ae",
+      "pages": 1,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_06/04_Rezerva_Comoara.sjr",
+      "sha256": "74dbb47bad004f16cd9fada0c8d26493f8be17f588c36cc3db28538ed7beb56c",
+      "pages": 1,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_06/05_Rezerva_Alarma.sjr",
+      "sha256": "7e2d54a6dd03b7a60492e0916ae99e8c4b67332b2f5b9e04727eb3668c920dde",
+      "pages": 1,
+      "matches_source": true,
+      "custom_assets": false
+    }
+  ]
+}

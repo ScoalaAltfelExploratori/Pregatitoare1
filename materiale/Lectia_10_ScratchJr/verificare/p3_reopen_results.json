@@ -1,0 +1,92 @@
+{
+  "project": "solutii/lectia_10/02_Butonul_asteapta.sjr",
+  "checks": [
+    {
+      "file": "p3_reopen_initialize",
+      "kind": "initial",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "p3_reopen_r1_first",
+      "kind": "first",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "p3_reopen_r1_second",
+      "kind": "second",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        }
+      },
+      "test_taps": []
+    },
+    {
+      "file": "p3_reopen_r1_performance",
+      "kind": "performance",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "rabbit": {
+          "peaks": 2,
+          "min": 0.5,
+          "max": 0.7,
+          "final": 0.5,
+          "lastChange": 3324.7999999523163
+        },
+        "minge2": {
+          "hiddenAt": 831.8999999761581,
+          "shownAt": 3929.7999999523163
+        }
+      },
+      "test_taps": [
+        {
+          "id": "minge2",
+          "at_ms": 449,
+          "opacity": 0.200002
+        },
+        {
+          "id": "minge2",
+          "at_ms": 2008,
+          "opacity": 0
+        }
+      ]
+    },
+    {
+      "file": "p3_reopen_r1_return",
+      "kind": "return",
+      "pass": true,
+      "fixed_positions": true,
+      "details": {
+        "expected": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        }
+      },
+      "test_taps": []
+    }
+  ]
+}

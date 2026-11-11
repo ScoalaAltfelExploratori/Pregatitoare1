@@ -1,0 +1,82 @@
+{
+  "lesson": 7,
+  "date": "2026-11-10",
+  "status": "PASS",
+  "projects": 7,
+  "main_checks": 42,
+  "reopen_checks": 21,
+  "inert_taps": 0,
+  "manual_construction_checks": 1,
+  "total_checks": 64,
+  "audio_recordings_analyzed": 0,
+  "native_android_tested": false,
+  "physical_lenovo_tested": false,
+  "browser": "ScratchJr Desktop Reborn, local observation mirror of the published browser version",
+  "gallery_survived_reload": true,
+  "default_assets": [
+    "Rabbit.svg",
+    "Dog.svg",
+    "Ball.svg",
+    "Park.svg",
+    "BeachDay.svg",
+    "BeachNight.svg",
+    "pop.mp3"
+  ],
+  "official_android_catalog_version": "1.5.11",
+  "pdf_pages": {
+    "Ghid_profesor_Lectia_07.pdf": 4,
+    "Cartonase_Lectia_07.pdf": 5
+  },
+  "all_pdf_pages_visually_reviewed": true,
+  "files": [
+    {
+      "path": "proiecte/00_Demo_Pagina.sjr",
+      "sha256": "29d5d130bfc88aaee426a18594ed229e0a92d6fec712127ceecbfcd465003c47",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "proiecte/01_Start_Poveste.sjr",
+      "sha256": "c779da6c6132f38bf1d6bfc670c7fdeb261229e3c5fe5acd439fa440961a0316",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_07/01_Portalul.sjr",
+      "sha256": "288119b5bf63a777d5209e9b6fa52c18943f627d3bb18575aaba55ddd9db7499",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_07/02_Dus_intors.sjr",
+      "sha256": "453501eeafa648a2f2e831ba187883371c27998d906664eb9420e4df38719603",
+      "pages": 2,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_07/03_Doua_finaluri.sjr",
+      "sha256": "ea70567cb2c9a14cdc0e8e6db3465666d522e450947416f92a96c85025566661",
+      "pages": 3,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_07/04_Rezerva_Finalul_singur.sjr",
+      "sha256": "5e64394382841980aa839fea9a862042ce3f36944609e4995ee5ff49afef0d5b",
+      "pages": 3,
+      "matches_source": true,
+      "custom_assets": false
+    },
+    {
+      "path": "solutii/lectia_07/05_Rezerva_Trei_opriri.sjr",
+      "sha256": "69130580ac66494dba7c1a363ba9c125ba6e34e46a15f771f4a268529670b5d5",
+      "pages": 3,
+      "matches_source": true,
+      "custom_assets": false
+    }
+  ]
+}

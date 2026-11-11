@@ -1,0 +1,156 @@
+{
+  "file": "p4_sapte_2",
+  "selector": "#iepuras1",
+  "expected": {
+    "name": "Trei perechi si raspunsul",
+    "tap": "iepuras1",
+    "sounds": 7,
+    "gaps": [
+      "short",
+      "long",
+      "short",
+      "long",
+      "short",
+      "long"
+    ],
+    "owners": [
+      "Rabbit",
+      "Rabbit",
+      "Rabbit",
+      "Rabbit",
+      "Rabbit",
+      "Rabbit",
+      "Dog"
+    ],
+    "observe_ms": 12200,
+    "repeat_without_reset": true
+  },
+  "pass": true,
+  "gaps": [
+    0.5600000000000023,
+    1.4879999999999995,
+    0.5599999999999952,
+    1.4906666666666695,
+    0.5600000000000023,
+    1.4906666666666624
+  ],
+  "classes": {
+    "short": [
+      0.5600000000000023,
+      0.5599999999999952,
+      0.5600000000000023
+    ],
+    "long": [
+      1.4879999999999995,
+      1.4906666666666695,
+      1.4906666666666624
+    ]
+  },
+  "before": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "after": {
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "opacity": "1",
+        "transform": "translate3d(12px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      },
+      {
+        "id": "caine1",
+        "opacity": "1",
+        "transform": "translate3d(212px, 134px, 0px) rotate(0deg) scale(0.5, 0.5)"
+      }
+    ]
+  },
+  "audio": {
+    "duration_ms": 8784.200000047684,
+    "sampleRate": 48000,
+    "frames": 421888,
+    "peak": 1.0028177499771118,
+    "contexts": [
+      {
+        "state": "running",
+        "sampleRate": 48000
+      }
+    ],
+    "events": [
+      {
+        "at_ms": 345.10000002384186,
+        "contextTime": 42.872,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 897.3000000715256,
+        "contextTime": 43.432,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 2392.100000023842,
+        "contextTime": 44.92,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 2947.3000000715256,
+        "contextTime": 45.48,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 4440,
+        "contextTime": 46.970666666666666,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 4997.200000047684,
+        "contextTime": 47.53066666666667,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      },
+      {
+        "at_ms": 6487.700000047684,
+        "contextTime": 49.02133333333333,
+        "state": "running",
+        "duration": 0.10447916666666666,
+        "frames": 5015,
+        "sampleRate": 48000,
+        "peak": 1.0028177499771118
+      }
+    ]
+  }
+}

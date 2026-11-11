@@ -1,0 +1,907 @@
+[
+  {
+    "project": "proiecte/00_Demo_Descoperire.sjr",
+    "checks": [
+      {
+        "file": "p0_main_initialize",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p0_main_r1_hidden",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p0_main_r1_reveal",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p0_main_r2_reset",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p0_main_r2_hidden",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p0_main_r2_reveal",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {}
+      }
+    ]
+  },
+  {
+    "project": "proiecte/01_Start_Insula.sjr",
+    "checks": [
+      {
+        "file": "p1_main1_go",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p1_main1_fluture1",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p1_main1_caine1",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p1_main2_go",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p1_main2_fluture1",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p1_main2_caine1",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {}
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_09/01_Insula_reactioneaza.sjr",
+    "checks": [
+      {
+        "file": "p2_main_initialize",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p2_main_r1_grow",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {
+          "fluture1": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p2_main_r1_disappear",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {
+          "caine1": {
+            "minOpacity": 0,
+            "maxScale": 0.5,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p2_main_r2_grow",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {
+          "fluture1": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p2_main_r2_disappear",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1
+        },
+        "observed": {
+          "caine1": {
+            "minOpacity": 0,
+            "maxScale": 0.5,
+            "finalScale": 0.5
+          }
+        }
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_09/02_Iesirea_ascunsa.sjr",
+    "checks": [
+      {
+        "file": "p3_main_initialize",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p3_main_r1_fluture1_dog",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {
+          "caine1": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p3_main_r1_fluture1_first",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p3_main_r1_fluture1_final",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page2",
+        "opacity": {
+          "iepuras2": 1,
+          "minge2": 1
+        },
+        "observed": {
+          "iepuras2": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p3_main_r1_fluture1_return",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p3_main_r2_fluture1_dog",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {
+          "caine1": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p3_main_r2_fluture1_first",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p3_main_r2_fluture1_final",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page2",
+        "opacity": {
+          "iepuras2": 1,
+          "minge2": 1
+        },
+        "observed": {
+          "iepuras2": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p3_main_r2_fluture1_return",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_09/03_Lantul_descoperirilor.sjr",
+    "checks": [
+      {
+        "file": "p4_main_initialize",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r1_fluture1_hidden_dog",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r1_fluture1_hidden_ball",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r1_fluture1_first",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r1_fluture1_still_hidden",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r1_fluture1_second",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r1_fluture1_final",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page2",
+        "opacity": {
+          "iepuras2": 1,
+          "minge2": 1
+        },
+        "observed": {
+          "iepuras2": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p4_main_r1_fluture1_return",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r2_fluture1_hidden_dog",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r2_fluture1_hidden_ball",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r2_fluture1_first",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r2_fluture1_still_hidden",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r2_fluture1_second",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p4_main_r2_fluture1_final",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page2",
+        "opacity": {
+          "iepuras2": 1,
+          "minge2": 1
+        },
+        "observed": {
+          "iepuras2": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p4_main_r2_fluture1_return",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0
+        },
+        "observed": {}
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_09/04_Rezerva_Surpriza_optional.sjr",
+    "checks": [
+      {
+        "file": "p5_main_initialize",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0,
+          "iepuras1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p5_main_r1_fluture1_optional",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0,
+          "iepuras1": 1
+        },
+        "observed": {
+          "iepuras1": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p5_main_r1_fluture1_first",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0,
+          "iepuras1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p5_main_r1_fluture1_second",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1,
+          "iepuras1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p5_main_r1_fluture1_final",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page2",
+        "opacity": {
+          "iepuras2": 1,
+          "minge2": 1
+        },
+        "observed": {
+          "iepuras2": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p5_main_r1_fluture1_return",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0,
+          "iepuras1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p5_main_r2_fluture1_optional",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0,
+          "iepuras1": 1
+        },
+        "observed": {
+          "iepuras1": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p5_main_r2_fluture1_first",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0,
+          "iepuras1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p5_main_r2_fluture1_second",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1,
+          "iepuras1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p5_main_r2_fluture1_final",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page2",
+        "opacity": {
+          "iepuras2": 1,
+          "minge2": 1
+        },
+        "observed": {
+          "iepuras2": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p5_main_r2_fluture1_return",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 0,
+          "minge1": 0,
+          "iepuras1": 1
+        },
+        "observed": {}
+      }
+    ]
+  },
+  {
+    "project": "solutii/lectia_09/05_Rezerva_Doua_drumuri.sjr",
+    "checks": [
+      {
+        "file": "p6_main_initialize",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p6_main_r1_fluture1_first",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p6_main_r1_fluture1_final",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page2",
+        "opacity": {
+          "iepuras2": 1,
+          "minge2": 1
+        },
+        "observed": {
+          "iepuras2": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p6_main_r1_fluture1_return",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p6_main_r1_caine1_first",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p6_main_r1_caine1_final",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page2",
+        "opacity": {
+          "iepuras2": 1,
+          "minge2": 1
+        },
+        "observed": {
+          "iepuras2": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p6_main_r1_caine1_return",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p6_main_r2_fluture1_first",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p6_main_r2_fluture1_final",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page2",
+        "opacity": {
+          "iepuras2": 1,
+          "minge2": 1
+        },
+        "observed": {
+          "iepuras2": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p6_main_r2_fluture1_return",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      },
+      {
+        "file": "p6_main_r2_caine1_first",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 1
+        },
+        "observed": {}
+      },
+      {
+        "file": "p6_main_r2_caine1_final",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page2",
+        "opacity": {
+          "iepuras2": 1,
+          "minge2": 1
+        },
+        "observed": {
+          "iepuras2": {
+            "minOpacity": 1,
+            "maxScale": 0.7,
+            "finalScale": 0.5
+          }
+        }
+      },
+      {
+        "file": "p6_main_r2_caine1_return",
+        "pass": true,
+        "fixed_positions": true,
+        "page": "page1",
+        "opacity": {
+          "fluture1": 1,
+          "caine1": 1,
+          "minge1": 0
+        },
+        "observed": {}
+      }
+    ]
+  }
+]

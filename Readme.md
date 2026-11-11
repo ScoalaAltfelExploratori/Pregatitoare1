@@ -1,10 +1,24 @@
-# Robo Explorator
+# Școala altfel · ScratchJr și Robo
 
-Un joc de programare în limba română, pentru clasa pregătitoare. Copiii aleg săgeți și acțiuni ca să conducă un roboțel spre o căsuță sau o comoară. Ideea este să încerce, să observe ce se întâmplă și să repare împreună drumul.
+Cursul ScratchJr și jocurile Robo Explorator, în limba română, pentru clasa pregătitoare.
 
-[Jocul pentru clasă](https://scoalaaltfelexploratori.github.io/Pregatitoare1/) · [Continuarea de acasă](https://scoalaaltfelexploratori.github.io/Pregatitoare1/?adventure=home)
+În Robo, copiii aleg săgeți și acțiuni ca să conducă un roboțel spre o căsuță sau o comoară. Ideea este să încerce, să observe ce se întâmplă și să repare împreună drumul.
 
-## Cum îl folosim
+[Meniul principal](https://scoalaaltfelexploratori.github.io/Pregatitoare1/) · [Cele 10 lecții ScratchJr](https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/) · [Exercițiile originale Robo](https://scoalaaltfelexploratori.github.io/Pregatitoare1/robo/) · [Acasă cu Robo](https://scoalaaltfelexploratori.github.io/Pregatitoare1/robo/?adventure=home)
+
+## Meniul siteului
+
+- `index.html` este intrarea comună, cu două secțiuni separate.
+- [ScratchJr](scratchjr/index.html) listează toate cele zece lecții. Fiecare are legături la ghid, cartonașe și pachetul ZIP. Paginile lecțiilor au Înapoi/Înainte și întoarcere la meniu.
+- [Robo](robo/index.html) păstrează jocul original, cele 22 de activități pentru clasă și aventura de acasă. Fișele pentru acasă sunt în continuare în antetul jocului.
+- Linkurile vechi cu `?lesson=8&variant=2`, `?adventure=home` sau `#joaca` continuă să deschidă Robo. Pagina fără parametri arată meniul. Progresul Robo folosește aceleași chei în același browser.
+
+Nu este un al doilea site sau un alt repository. Toate legăturile sunt relative și funcționează inclusiv sub folderul `/Pregatitoare1/` al GitHub Pages. Pentru utilizarea offline păstrează întregul proiect și deschide `index.html`. ScratchJr se folosește în aplicația instalată; siteul oferă cerințele și materialele profesorului.
+
+[Raportul verificării meniului și legăturilor](verificare_site/README.md).
+
+
+## Cum folosim Robo
 
 - **La clasă:** proiectăm jocul pe tabla digitală, iar copiii vin pe rând la laptop. Un copil propune câțiva pași, ceilalți spun unde cred că va ajunge Robo, apoi testăm.
 - **Acasă:** șase misiuni de făcut împreună cu un părinte. După terminarea lor se poate descărca o diplomă PDF, cu prenumele copilului sau cu spațiul lăsat liber.
@@ -17,7 +31,7 @@ Nu sunt necesare conturi. Nu există note, cronometru sau limită de încercări
 - [Fișa de tipărit, PDF](materiale/Robo_Acasa_Harta_7x7.pdf): o hartă 7×7 pe o pagină A4, cu trei drumuri spre căsuță. Drumul mai lung trece pe la stația de încărcare din E3. Robo are energie pentru 8 pași, apoi trebuie să încarce pentru a ajunge acasă. Copilul completează cele 18 căsuțe cu săgeți, încărcarea bateriei și activarea podului.
 - [Soluția pentru părinte, PDF](materiale/Robo_Acasa_Harta_7x7_sol.pdf): traseul marcat, programul complet și explicația consumului de energie.
 
-## Lecțiile
+## Lecțiile Robo
 
 Cele 22 de lecții sunt disponibile direct în selectorul de sus. Unele au mai multe variante de hartă. Putem alege cât lucrăm în funcție de ritmul copiilor:
 
@@ -39,7 +53,7 @@ Câteva controale utile în timpul activității:
 - **La start** reia harta și păstrează programul. **Alt copil** pregătește aceeași hartă cu programul gol; în lecția de reparare, readuce exemplul → ↓.
 - **Pentru adult** conține sunetul, ecranul complet, ajutorul pentru traseu și întrebări pentru discuția cu clasa.
 
-Linkul obișnuit începe cu lecția 1. Pentru o anumită lecție se poate folosi, de exemplu, `?lesson=8`; `&variant=2` alege a doua variantă. La reîncărcarea paginii se păstrează alegerea lecției din adresă, iar încercarea pornește de la început.
+Linkul secțiunii Robo începe cu lecția 1. Pentru o anumită lecție se poate folosi, de exemplu, `?lesson=8`; `&variant=2` alege a doua variantă. La reîncărcarea paginii se păstrează alegerea lecției din adresă, iar încercarea pornește de la început.
 
 ## Cum este construit
 
@@ -57,7 +71,7 @@ Linkul obișnuit începe cu lecția 1. Pentru o anumită lecție se poate folosi
 flowchart TD
     Lessons["classroom.js · ordinea lecțiilor<br/>curriculum.js · etape și hărți<br/>adventures.js · aventurile de acasă"] --> App["app.js<br/>navigare și execuție"]
     App <--> Engine["game-engine.js<br/>reguli, stare și rezolvarea traseelor"]
-    App --> UI["index.html + style.css<br/>hartă, comenzi și animații"]
+    App --> UI["robo/index.html + style.css<br/>hartă, comenzi și animații"]
     App <--> Storage["localStorage<br/>progres"]
     App --> Audio["robo-audio.js<br/>Web Audio"]
     App --> Diploma["diploma.js<br/>Canvas + jsPDF"]
@@ -95,5 +109,47 @@ npm test
 ## Publicare
 
 - GitHub Pages publică din ramura `main`. Un push doar pe o ramură de lucru nu actualizează jocul online.
-- La schimbarea fișierelor JavaScript sau CSS, actualizează parametrul `v` al resurselor din `index.html`, pentru ca browserul să preia versiunea nouă.
+- La schimbarea fișierelor JavaScript sau CSS, actualizează parametrul `v` în paginile care le încarcă (`index.html`, `robo/index.html`, `scratchjr/index.html` sau paginile lecțiilor), pentru ca browserul să preia versiunea nouă.
 - După push, verifică rularea **pages build and deployment** și deschide site-ul public pentru o probă.
+
+## Cursul ScratchJr: lecția 1
+
+[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește numai resurse incluse în aplicație, fără fișiere de distribuit pe tabletele copiilor. Lecția 1 folosește iepurele, mingea și parcul. Misiunea 2 este mini-puzzle-ul „Două blocuri până acasă”, cu o variantă dificilă.
+
+[README-ul lecției 1](materiale/Lectia_01_ScratchJr/README.md) conține instalarea pe Lenovo, construirea scenei și testarea opțională în browser. [Raportul de verificare](materiale/Lectia_01_ScratchJr/verificare/README.md) separă cele șapte proiecte finale testate în browser de probele Android și Desktop anterioare.
+
+## Cursul ScratchJr: lecția 2
+
+[Provocările iepurașului](materiale/Lectia_02_ScratchJr/README.md) introduce Repeat prin trei misiuni de construire, inclusiv expediția dificilă dus-întors. Pachetul conține ghidul de 50 de minute, cartonașe, soluții și [testele în browser](materiale/Lectia_02_ScratchJr/verificare/README.md). Copiii folosesc numai resursele incluse în aplicație, fără importuri.
+
+## Cursul ScratchJr: lecția 3
+
+[Atelierul de magie](materiale/Lectia_03_ScratchJr/README.md) introduce transformări vizuale pornite la atingere: mărire, micșorare, dispariție și reapariție. Trucul dificil trebuie să funcționeze de două ori fără resetare. Două puzzle-uri de rezervă sunt pregătite peste planul de 50 de minute. Pachetul conține ghid, cinci cartonașe, soluții și [testele în browser](materiale/Lectia_03_ScratchJr/verificare/README.md). Copiii folosesc Rabbit, Dog, Park și, la rezervă, Butterfly din aplicație, fără fișiere de distribuit.
+
+## Cursul ScratchJr: lecția 4
+
+[Telecomanda fermecată](materiale/Lectia_04_ScratchJr/README.md) introduce mesajele colorate: un personaj comandă altul, două butoane aleg trucuri diferite, iar provocarea dificilă leagă trei artiști într-un singur spectacol. Două rezerve explorează un mesaj pentru doi destinatari și chemarea unui personaj ascuns. Pachetul are ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul testelor în browser](materiale/Lectia_04_ScratchJr/verificare/README.md). Folosim numai resursele incluse în aplicație; nu distribuim fișiere pe tabletele copiilor.
+
+## Cursul ScratchJr: lecția 5
+
+[Fabrica de ritmuri](materiale/Lectia_05_ScratchJr/README.md) folosește Pop, pauze, Repeat și mesaje: un cod secret, patru sunete grupate diferit și provocarea dificilă cu trei perechi plus un răspuns. Două rezerve: ecoul și șapte sunete cu numai două blocuri Pop. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul verificării audio în browser](materiale/Lectia_05_ScratchJr/verificare/README.md). Numai resurse incluse; fără fișiere de distribuit pe tablete.
+
+## Cursul ScratchJr: lecția 6
+
+[Parcul cu surprize](materiale/Lectia_06_ScratchJr/README.md) introduce reacțiile la contact: paznicul, două vizite și reacția dificilă în lanț. Două rezerve: comoara care dispare și alarma la distanță. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul testelor](materiale/Lectia_06_ScratchJr/verificare/README.md).
+
+## Cursul ScratchJr: lecția 7
+
+[Povestea cu două finaluri](materiale/Lectia_07_ScratchJr/README.md) introduce paginile: portal, întoarcere și puzzle cu două finaluri. Două rezerve adaugă pornirea automată la sosire și o secvență de trei scene. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul testelor](materiale/Lectia_07_ScratchJr/verificare/README.md). Ambele lecții folosesc numai biblioteca aplicației, fără distribuirea fișierelor pe tabletele copiilor.
+
+## Cursul ScratchJr: lecția 8
+
+[Statuile fermecate](materiale/Lectia_08_ScratchJr/README.md) introduce Forever și Stop: artiști care se transformă continuu, oprire individuală și puzzle dificil cu două comenzi pentru ambii artiști. Două rezerve: trei ipostaze și cortina automată. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul celor 50 de verificări în browser](materiale/Lectia_08_ScratchJr/verificare/README.md). Numai resurse incluse în aplicație, fără fișiere de distribuit copiilor.
+
+## Cursul ScratchJr: lecția 9
+
+[Insula misterioasă](materiale/Lectia_09_ScratchJr/README.md) combină mesaje, vizibilitate și pagini: surprize, ieșire ascunsă și lanțul dificil de descoperiri, repetabil prin întoarcerea din final. Fiecare copil construiește și testează individual. Două rezerve: surpriza opțională și două drumuri spre aceeași ieșire. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [104 verificări în browser](materiale/Lectia_09_ScratchJr/verificare/README.md). Numai resurse incluse, fără fișiere de distribuit pe tablete.
+
+## Cursul ScratchJr: lecția 10
+
+[Marea finală - Jocul meu complet](materiale/Lectia_10_ScratchJr/README.md) continuă individual insula lecției 9: două transformări, buton care așteaptă, apoi iepure → câine → întoarcere. Puzzle dificil și două rezerve: Encore și întoarcere automată. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [102 verificări de comportament în browser](materiale/Lectia_10_ScratchJr/verificare/README.md). Numai resurse incluse în aplicație, fără fișiere de distribuit copiilor. Cele zece pachete de lecții sunt pregătite; meniul siteului le reunește în secțiunea ScratchJr.

@@ -1,0 +1,313 @@
+{
+  "title": "Ne întâlnim la joacă",
+  "subtitle": "Primul nostru proiect în ScratchJr",
+  "age": "6–7 ani",
+  "duration": 50,
+  "directions": {
+    "R": {
+      "label": "Dreapta",
+      "native": "forward",
+      "dx": 1,
+      "dy": 0
+    },
+    "L": {
+      "label": "Stânga",
+      "native": "back",
+      "dx": -1,
+      "dy": 0
+    },
+    "U": {
+      "label": "Sus",
+      "native": "up",
+      "dx": 0,
+      "dy": -1
+    },
+    "D": {
+      "label": "Jos",
+      "native": "down",
+      "dx": 0,
+      "dy": 1
+    },
+    "H": {
+      "label": "Sari",
+      "native": "hop",
+      "dx": 0,
+      "dy": 0
+    }
+  },
+  "exercises": [
+    {
+      "id": "meet",
+      "title": "Fă-i să se întâlnească",
+      "intro": "Două personaje vin din părți diferite. Se apropie și sar de bucurie.",
+      "steps": [
+        "Construiește câte un program pentru fiecare personaj.",
+        "Pornește totul cu steagul verde de sus.",
+        "Potrivește mișcările ca să se oprească aproape, fără să se acopere."
+      ],
+      "check": "Fiecare personaj are programul lui. Întâlnirea funcționează."
+    },
+    {
+      "id": "return_puzzle",
+      "title": "Două blocuri până acasă",
+      "intro": "Se întâlnesc, sar și revin fiecare la locul de pornire. Totul la un singur steag!",
+      "steps": [
+        "Păstrează întâlnirea și săritura. Adaugă o singură săgeată albastră la fiecare personaj.",
+        "Alege direcția și numărul. Fără mutare cu degetul sau resetare în timpul rulării.",
+        "Mai greu: întoarce fiecare personaj cu două săgeți, cu numere diferite."
+      ],
+      "check": "Amândoi ajung exact la start. Pot explica direcția și distanța revenirii."
+    },
+    {
+      "id": "create",
+      "title": "Inventează finalul întâlnirii",
+      "intro": "Ce fac prietenii după ce se întâlnesc?",
+      "steps": [
+        "Alege un final: încă o săritură, un mic dans sau o mișcare inventată de tine.",
+        "Adaugă cel puțin o acțiune la unul dintre personaje.",
+        "Arată unui coleg ce ai creat și explică un bloc."
+      ],
+      "check": "Proiectul are o idee a mea, nu doar un program copiat."
+    }
+  ],
+  "projects": [
+    {
+      "file": "01_Start.sjr",
+      "name": "L01 Start Iepuras si minge",
+      "scripts": [
+        [],
+        []
+      ]
+    },
+    {
+      "file": "02_Intalnirea.sjr",
+      "name": "L01 Iepurasul se joaca",
+      "scripts": [
+        [
+          {
+            "dir": "R",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          }
+        ],
+        [
+          {
+            "dir": "L",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          }
+        ]
+      ]
+    },
+    {
+      "file": "03_Puzzle_Revenirea.sjr",
+      "name": "L01 Puzzle Doua blocuri pana acasa",
+      "scripts": [
+        [
+          {
+            "dir": "R",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          }
+        ],
+        [
+          {
+            "dir": "L",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          }
+        ]
+      ]
+    },
+    {
+      "file": "04_Solutia_profesorului.sjr",
+      "name": "L01 Solutie Revenim acasa",
+      "scripts": [
+        [
+          {
+            "dir": "R",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          },
+          {
+            "dir": "L",
+            "value": 3
+          }
+        ],
+        [
+          {
+            "dir": "L",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          },
+          {
+            "dir": "R",
+            "value": 3
+          }
+        ]
+      ]
+    }
+  ],
+  "schedule": [
+    [
+      "0–5",
+      "Vedem proiectul",
+      "Profesorul rulează întâlnirea în ScratchJr. Copiii explică ce fac cele două personaje."
+    ],
+    [
+      "5–12",
+      "Construim scena",
+      "Proiect nou; alegem personajele și fundalul din biblioteca ScratchJr."
+    ],
+    [
+      "12–22",
+      "Programăm întâlnirea",
+      "Construim câte un program pentru fiecare personaj și potrivim distanțele."
+    ],
+    [
+      "22–25",
+      "Pauză",
+      "Tabletele jos. Doi copii mimează întâlnirea."
+    ],
+    [
+      "25–35",
+      "Două blocuri până acasă",
+      "Continuăm întâlnirea: o săgeată nouă per personaj pentru revenire. Arătăm tuturor și varianta dificilă."
+    ],
+    [
+      "35–45",
+      "Inventăm un final",
+      "Copiii aleg ce fac personajele după întâlnire și construiesc o variație."
+    ],
+    [
+      "45–50",
+      "Arătăm și salvăm",
+      "Prezentare în perechi, două exemple pentru clasă, salvare și redeschidere."
+    ]
+  ],
+  "solutions": [
+    {
+      "mission": 1,
+      "file": "01_Misiunea_1_Intalnirea.sjr",
+      "name": "L01 M1 Iepuras si minge",
+      "scripts": [
+        [
+          {
+            "dir": "R",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          }
+        ],
+        [
+          {
+            "dir": "L",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          }
+        ]
+      ]
+    },
+    {
+      "mission": 2,
+      "file": "02_Misiunea_2_Revenirea.sjr",
+      "name": "L01 M2 Revenirea",
+      "scripts": [
+        [
+          {
+            "dir": "R",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          },
+          {
+            "dir": "L",
+            "value": 3
+          }
+        ],
+        [
+          {
+            "dir": "L",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          },
+          {
+            "dir": "R",
+            "value": 3
+          }
+        ]
+      ]
+    },
+    {
+      "mission": 3,
+      "file": "03_Misiunea_3_Final_exemplu.sjr",
+      "name": "L01 M3 Sarim si revenim",
+      "scripts": [
+        [
+          {
+            "dir": "R",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          },
+          {
+            "dir": "H",
+            "value": 2
+          },
+          {
+            "dir": "L",
+            "value": 3
+          }
+        ],
+        [
+          {
+            "dir": "L",
+            "value": 3
+          },
+          {
+            "dir": "H",
+            "value": 2
+          },
+          {
+            "dir": "H",
+            "value": 2
+          },
+          {
+            "dir": "R",
+            "value": 3
+          }
+        ]
+      ]
+    }
+  ]
+}

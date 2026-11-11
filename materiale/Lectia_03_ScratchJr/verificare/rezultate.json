@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-10",
+  "browser": "ScratchJr Desktop Reborn, community browser port",
+  "browser_url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+  "projects": 7,
+  "green_flag_checks": 7,
+  "character_trials": 29,
+  "reopen_trials": 7,
+  "manual_hard_puzzle_trials": 2,
+  "all_passed": true,
+  "temporal_checks": [
+    {
+      "path": "solutii/lectia_03/03_Trucul_complet.sjr",
+      "trial": "first",
+      "visible_large_ms": 936,
+      "fully_hidden_ms": 1096,
+      "reappears_at_normal_size": true
+    },
+    {
+      "path": "solutii/lectia_03/03_Trucul_complet.sjr",
+      "trial": "repeat_without_reset",
+      "visible_large_ms": 937,
+      "fully_hidden_ms": 1171,
+      "reappears_at_normal_size": true
+    },
+    {
+      "path": "solutii/lectia_03/04_Rezerva_Al_treilea_secret.sjr",
+      "trial": "first",
+      "visible_large_ms": 933,
+      "fully_hidden_ms": 1090,
+      "reappears_at_normal_size": true
+    },
+    {
+      "path": "solutii/lectia_03/04_Rezerva_Al_treilea_secret.sjr",
+      "trial": "repeat_without_reset",
+      "visible_large_ms": 935,
+      "fully_hidden_ms": 1088,
+      "reappears_at_normal_size": true
+    },
+    {
+      "path": "solutii/lectia_03/05_Rezerva_Cinci_blocuri.sjr",
+      "trial": "first",
+      "large_small_normal": true
+    },
+    {
+      "path": "solutii/lectia_03/05_Rezerva_Cinci_blocuri.sjr",
+      "trial": "repeat_without_reset",
+      "large_small_normal": true
+    }
+  ],
+  "evidence": [
+    "browser_magie_observatii.json",
+    "browser_magie_redeschidere.json",
+    "browser_magie_constructie_manuala.json",
+    "browser_magie_persistenta.json"
+  ],
+  "pdf_pages": {
+    "guide": 4,
+    "cards": 5
+  },
+  "pdf_pages_visually_reviewed": true,
+  "html_index": {
+    "browser_reviewed": true,
+    "horizontal_overflow": false,
+    "solution_reveal_image_loaded": true
+  },
+  "native_android_magic_tested": false,
+  "physical_lenovo_tested": false,
+  "files": [
+    {
+      "path": "proiecte/00_Demo_Atingere.sjr",
+      "sha256": "33cad1799b9a5f97116eded93c17aa0420b63038ca53b0be313cb1e4b78a74db"
+    },
+    {
+      "path": "proiecte/01_Start_Magie.sjr",
+      "sha256": "418cb309df4ef1e25af3ff9c0a9e5ab5e529fa1a58b4e79da3167d06333efb53"
+    },
+    {
+      "path": "solutii/lectia_03/01_Urias_si_pitic.sjr",
+      "sha256": "2ac4f38e92b2bad5571cd553f3ff808408b1bb8d267bb8706c2c815474122493"
+    },
+    {
+      "path": "solutii/lectia_03/02_Dispar_si_revin.sjr",
+      "sha256": "e5d864f3bf037a9e7923e5d242b51076e2302d86d528b3ae20270255eaad937c"
+    },
+    {
+      "path": "solutii/lectia_03/03_Trucul_complet.sjr",
+      "sha256": "96d70d273370e78371477438856e83b12d5e37b41cc851ede0b6bf62829e80c1"
+    },
+    {
+      "path": "solutii/lectia_03/04_Rezerva_Al_treilea_secret.sjr",
+      "sha256": "ac589f460c0ec7f3787f67a432eea1990a948acd65a78530137994e9d1271a5a"
+    },
+    {
+      "path": "solutii/lectia_03/05_Rezerva_Cinci_blocuri.sjr",
+      "sha256": "59df318e14ca1674518a3551e54e2ffeb6ed6ef8d261d8ba39d60dc2bb1d8a07"
+    }
+  ]
+}

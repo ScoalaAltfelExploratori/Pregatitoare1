@@ -1,0 +1,46 @@
+{
+  "project": "solutii/lectia_08/04_Rezerva_Trei_ipostaze.sjr",
+  "checks": [
+    {
+      "file": "p5_reopen1_start",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": false,
+      "stats": {
+        "iepuras1": {
+          "states": 21,
+          "min": 0.3,
+          "max": 0.7,
+          "last": {
+            "t": 12595.200000047684,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.3, 0.3)",
+            "scale": 0.3,
+            "opacity": 1
+          },
+          "scaleResets": 3
+        }
+      }
+    },
+    {
+      "file": "p5_reopen1_freeze",
+      "pass": true,
+      "fixed_positions": true,
+      "ended": true,
+      "stats": {
+        "iepuras1": {
+          "states": 1,
+          "min": 0.7,
+          "max": 0.7,
+          "last": {
+            "t": 700,
+            "transform": "translate3d(32px, 136px, 0px) rotate(0deg) scale(0.7, 0.7)",
+            "scale": 0.7,
+            "opacity": 1
+          },
+          "scaleResets": 0
+        }
+      },
+      "target_enlarged": true
+    }
+  ]
+}

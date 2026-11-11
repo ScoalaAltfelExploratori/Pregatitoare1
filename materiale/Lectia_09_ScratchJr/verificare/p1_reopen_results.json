@@ -1,0 +1,38 @@
+{
+  "project": "proiecte/01_Start_Insula.sjr",
+  "checks": [
+    {
+      "file": "p1_reopen_initialize",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1
+      },
+      "observed": {}
+    },
+    {
+      "file": "p1_reopen_r1_fluture1",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1
+      },
+      "observed": {}
+    },
+    {
+      "file": "p1_reopen_r1_caine1",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1
+      },
+      "observed": {}
+    }
+  ]
+}

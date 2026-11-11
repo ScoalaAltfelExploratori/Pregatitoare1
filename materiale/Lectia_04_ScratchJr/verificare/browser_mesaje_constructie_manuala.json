@@ -1,0 +1,1143 @@
+{
+  "method": "Dragged Start on Tap and Send Message on Rabbit; Start on Message and Grow 2 on Dog; selected Blue in both colour menus; reset between trials.",
+  "runs": [
+    {
+      "name": "Semnal simplu",
+      "pass": true,
+      "metrics": [
+        {
+          "id": "iepuras1",
+          "low": 0.5,
+          "high": 0.5,
+          "end": 0.5,
+          "hidden_intervals": 0,
+          "final_opacity": 1,
+          "noMovement": true,
+          "pass": true
+        },
+        {
+          "id": "caine1",
+          "low": 0.5,
+          "high": 0.6,
+          "end": 0.6,
+          "hidden_intervals": 0,
+          "final_opacity": 1,
+          "noMovement": true,
+          "pass": true
+        }
+      ],
+      "timing": {},
+      "samples": [
+        {
+          "t": 0,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 784,
+          "go": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.52,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 871,
+          "go": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.56,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 949,
+          "go": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1027,
+          "go": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1105,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1183,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1260,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1338,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1416,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1491,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1568,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1645,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1723,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1802,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1882,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1960,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2039,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2117,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2195,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2274,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2351,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2429,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2507,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2585,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2662,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2740,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Semnal simplu",
+      "pass": true,
+      "metrics": [
+        {
+          "id": "iepuras1",
+          "low": 0.5,
+          "high": 0.5,
+          "end": 0.5,
+          "hidden_intervals": 0,
+          "final_opacity": 1,
+          "noMovement": true,
+          "pass": true
+        },
+        {
+          "id": "caine1",
+          "low": 0.5,
+          "high": 0.6,
+          "end": 0.6,
+          "hidden_intervals": 0,
+          "final_opacity": 1,
+          "noMovement": true,
+          "pass": true
+        }
+      ],
+      "timing": {},
+      "samples": [
+        {
+          "t": 0,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 984,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1061,
+          "go": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.56,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1140,
+          "go": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1217,
+          "go": "go off",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1294,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1371,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1450,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1529,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1608,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1685,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1762,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1840,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1918,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 1997,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2074,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2153,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2232,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2311,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2391,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2470,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2546,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2623,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2700,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2777,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2857,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "t": 2936,
+          "go": "go on",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "opacity": 1,
+              "position": "translate3d(12px, 136px, 0px)",
+              "scale": 0.5,
+              "visibility": "visible"
+            },
+            {
+              "id": "caine1",
+              "opacity": 1,
+              "position": "translate3d(212px, 134px, 0px)",
+              "scale": 0.6,
+              "visibility": "visible"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

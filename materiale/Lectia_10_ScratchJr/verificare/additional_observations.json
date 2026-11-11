@@ -1,0 +1,118 @@
+{
+  "starter_and_M1_ball_always_visible": [
+    "p1_main_r1_performance",
+    "p1_main_r2_performance",
+    "p1_reopen_r1_performance",
+    "p2_main_r1_performance",
+    "p2_main_r2_performance",
+    "p2_reopen_r1_performance"
+  ],
+  "fade_taps_observed": [
+    {
+      "id": "minge2",
+      "at_ms": 432,
+      "opacity": 0.333335
+    },
+    {
+      "id": "minge2",
+      "at_ms": 434,
+      "opacity": 0.333335
+    },
+    {
+      "id": "minge2",
+      "at_ms": 439,
+      "opacity": 0.333335
+    },
+    {
+      "id": "minge2",
+      "at_ms": 448,
+      "opacity": 0.200002
+    },
+    {
+      "id": "minge2",
+      "at_ms": 440,
+      "opacity": 0.200002
+    },
+    {
+      "id": "minge2",
+      "at_ms": 474,
+      "opacity": 0.200002
+    },
+    {
+      "id": "minge2",
+      "at_ms": 473,
+      "opacity": 0.200002
+    },
+    {
+      "id": "minge2",
+      "at_ms": 468,
+      "opacity": 0.0666687
+    },
+    {
+      "id": "minge2",
+      "at_ms": 461,
+      "opacity": 0.333335
+    },
+    {
+      "id": "minge2",
+      "at_ms": 460,
+      "opacity": 0.0666687
+    },
+    {
+      "id": "minge2",
+      "at_ms": 465,
+      "opacity": 0.0666687
+    },
+    {
+      "id": "minge2",
+      "at_ms": 451,
+      "opacity": 0.200002
+    },
+    {
+      "id": "minge2",
+      "at_ms": 436,
+      "opacity": 0.333335
+    },
+    {
+      "id": "minge2",
+      "at_ms": 454,
+      "opacity": 0.200002
+    },
+    {
+      "id": "minge2",
+      "at_ms": 449,
+      "opacity": 0.200002
+    },
+    {
+      "id": "minge2",
+      "at_ms": 454,
+      "opacity": 0.200002
+    },
+    {
+      "id": "minge2",
+      "at_ms": 447,
+      "opacity": 0.333335
+    },
+    {
+      "id": "minge2",
+      "at_ms": 468,
+      "opacity": 0.0666687
+    },
+    {
+      "id": "minge2",
+      "at_ms": 435,
+      "opacity": 0.200002
+    },
+    {
+      "id": "minge2",
+      "at_ms": 435,
+      "opacity": 0.200002
+    },
+    {
+      "id": "minge2",
+      "at_ms": 430,
+      "opacity": 0.333335
+    }
+  ],
+  "pass": true
+}

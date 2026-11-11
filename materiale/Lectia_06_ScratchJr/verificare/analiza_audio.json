@@ -1,0 +1,98 @@
+[
+  {
+    "file": "p2_reopen.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 6.136333333333334,
+    "sha256": "9396a055fca319d05754b951e587a55aee55cf8ba905d6e55933a5679a497cb4"
+  },
+  {
+    "file": "p2_run1.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 6.157666666666667,
+    "sha256": "39244eb81da46c25b1a74d46733344a3e4af884642b4c305b902c448e413e422"
+  },
+  {
+    "file": "p2_run2.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 6.157666666666667,
+    "sha256": "8b436cfd4476c9b9180e391240e2677071aedf7a6a9ee0a2d034cf30cbf73a96"
+  },
+  {
+    "file": "p3_reopen.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 8.665,
+    "sha256": "801e432e9a37e5a00fa441bcc859a7bac1f37b88d2fcc9b39c7e709df82c1fda"
+  },
+  {
+    "file": "p3_run1.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 8.674999999999999,
+    "sha256": "684446502d6d65bcc3591f499b900eaf4447b41595e94594d152e46009a211a3"
+  },
+  {
+    "file": "p3_run2.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 8.7,
+    "sha256": "48b297301c5675a56cf6812ef8c00e04e0547bede0de90c0c37f3694b3266b74"
+  },
+  {
+    "file": "p4_reopen.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 7.372999999999999,
+    "sha256": "814ce287b04b9bc0ad9bdf5feefffc9bdf57fde539d4d2ce6c72837456a6a648"
+  },
+  {
+    "file": "p4_run1.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 7.291666666666666,
+    "sha256": "40df4862224e6246e9e9bb4535292415006f0502fd31e150e8d25c432e518381"
+  },
+  {
+    "file": "p4_run2.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 7.392999999999999,
+    "sha256": "e73e37f4767d0773de778e84922ade4f8cfe6cd3d3eec8b76927382be3e8ac6b"
+  },
+  {
+    "file": "p5_reopen.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 7.352999999999999,
+    "sha256": "65a4b49319b1b10dc0bd6e8d5ea8046fa2958e551368debf12e3f916a8fba995"
+  },
+  {
+    "file": "p5_run1.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 7.342999999999999,
+    "sha256": "f196d0666219c99b817b5455277822fefd23d01f474949cd208b5cae900474a1"
+  },
+  {
+    "file": "p5_run2.wav",
+    "pass": true,
+    "actual_pcm": true,
+    "pop_bursts": 1,
+    "trailing_silence_seconds": 7.332999999999999,
+    "sha256": "a77d7d0f69d61f17072590a311c4275c184ed8bc8ba2255a9aac268422bb8310"
+  }
+]

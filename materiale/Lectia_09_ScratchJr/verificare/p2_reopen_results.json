@@ -1,0 +1,50 @@
+{
+  "project": "solutii/lectia_09/01_Insula_reactioneaza.sjr",
+  "checks": [
+    {
+      "file": "p2_reopen_initialize",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1
+      },
+      "observed": {}
+    },
+    {
+      "file": "p2_reopen_r1_grow",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1
+      },
+      "observed": {
+        "fluture1": {
+          "minOpacity": 1,
+          "maxScale": 0.7,
+          "finalScale": 0.5
+        }
+      }
+    },
+    {
+      "file": "p2_reopen_r1_disappear",
+      "pass": true,
+      "fixed_positions": true,
+      "page": "page1",
+      "opacity": {
+        "fluture1": 1,
+        "caine1": 1
+      },
+      "observed": {
+        "caine1": {
+          "minOpacity": 0,
+          "maxScale": 0.5,
+          "finalScale": 0.5
+        }
+      }
+    }
+  ]
+}

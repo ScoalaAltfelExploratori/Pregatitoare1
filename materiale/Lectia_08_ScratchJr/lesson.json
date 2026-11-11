@@ -1,0 +1,856 @@
+{
+  "lesson": 8,
+  "title": "Statuile fermecate",
+  "age": "6-7 ani",
+  "duration": 50,
+  "new_mechanics": [
+    "forever",
+    "stopmine"
+  ],
+  "assets": [
+    "Rabbit.svg",
+    "Dog.svg",
+    "Butterfly.svg",
+    "Ball.svg",
+    "Park.svg"
+  ],
+  "projects": [
+    {
+      "path": "proiecte/00_Demo_Statuie.sjr",
+      "name": "L08 Statui Demo Porneste Ingheata",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "demo"
+    },
+    {
+      "path": "proiecte/01_Start_Statui.sjr",
+      "name": "L08 Statui Start Doi artisti",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                240
+              ],
+              "scripts": []
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                335,
+                240
+              ],
+              "scripts": []
+            }
+          ]
+        }
+      ],
+      "test_mode": "blank"
+    },
+    {
+      "path": "solutii/lectia_08/01_Artistul_neobosit.sjr",
+      "name": "L08 Statui M1 Artistul neobosit",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                335,
+                240
+              ],
+              "scripts": []
+            }
+          ]
+        }
+      ],
+      "test_mode": "forever"
+    },
+    {
+      "path": "solutii/lectia_08/02_Fiecare_cu_pauza_lui.sjr",
+      "name": "L08 Statui M2 Fiecare cu pauza lui",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                335,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "independent"
+    },
+    {
+      "path": "solutii/lectia_08/03_Regizorul_statuilor.sjr",
+      "name": "L08 Statui M3 Regizorul statuilor",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                335,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                100,
+                85
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                385,
+                85
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "remote"
+    },
+    {
+      "path": "solutii/lectia_08/04_Rezerva_Trei_ipostaze.sjr",
+      "name": "L08 Statui R1 Trei ipostaze",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 8
+                    },
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                335,
+                240
+              ],
+              "scripts": []
+            }
+          ]
+        }
+      ],
+      "test_mode": "poses"
+    },
+    {
+      "path": "solutii/lectia_08/05_Rezerva_Cortina_automata.sjr",
+      "name": "L08 Statui R2 Cortina automata",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "sprites": [
+            {
+              "id": "iepuras1",
+              "name": "Rabbit",
+              "asset": "Rabbit.svg",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                140,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "caine1",
+              "name": "Dog",
+              "asset": "Dog.svg",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                335,
+                240
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "shrink",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "grow",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fluture1",
+              "name": "Butterfly",
+              "asset": "Butterfly.svg",
+              "size": [
+                128,
+                97
+              ],
+              "position": [
+                100,
+                85
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge1",
+              "name": "Ball",
+              "asset": "Ball.svg",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                385,
+                85
+              ],
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 50
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "test_mode": "auto"
+    }
+  ],
+  "missions": [
+    {
+      "label": "Misiunea 1",
+      "title": "Artistul neobosit",
+      "subtitle": "O rutină care continuă singură.",
+      "diagram": "endless",
+      "steps": [
+        "La steag, iepurele devine mare, așteaptă, revine la normal și așteaptă din nou.",
+        "Rutina continuă fără alte atingeri. Privește cel puțin trei runde.",
+        "Mărimea mare rămâne aceeași. Încheie proba din butonul general de oprire."
+      ],
+      "success": "Trei runde și încă una. Dimensiunea nu se acumulează."
+    },
+    {
+      "label": "Misiunea 2",
+      "title": "Fiecare cu pauza lui",
+      "subtitle": "Un artist îngheață. Celălalt continuă.",
+      "diagram": "individual",
+      "steps": [
+        "Steagul pornește iepurele mare-normal și câinele mic-normal.",
+        "Atinge iepurele: îngheață, dar câinele continuă. Apoi oprește și câinele prin atingere.",
+        "Un nou steag îi repornește pe amândoi, fără Reset."
+      ],
+      "success": "Poți opri fiecare artist separat, în timp ce celălalt continuă."
+    },
+    {
+      "label": "Misiunea 3 - dificilă",
+      "title": "Regizorul statuilor",
+      "subtitle": "Pornește. Îngheață. Pornește din nou.",
+      "diagram": "remote",
+      "steps": [
+        "Fluturele pornește amândoi artiștii. Mingea îi îngheață pe amândoi.",
+        "Folosește două culori de mesaj. Fiecare artist trebuie să primească ambele comenzi.",
+        "Fluture → minge → fluture → minge. Fără Reset sau oprirea din bara aplicației."
+      ],
+      "success": "Amândoi pornesc și îngheață de două ori, numai prin butoanele tale."
+    },
+    {
+      "label": "Rezervă 1 - 6-8 minute",
+      "title": "Trei ipostaze",
+      "subtitle": "Alege o stare și prinde momentul.",
+      "diagram": "poses",
+      "steps": [
+        "Iepurele trece mereu prin trei stări: normal, mare, mic, cu pauze vizibile.",
+        "Atinge iepurele când este mare. Trebuie să rămână înghețat în acea stare.",
+        "Un nou steag începe rutina de la normal. Partenerul poate alege altă stare."
+      ],
+      "success": "Vedem trei ipostaze. Poți îngheța una și apoi reporni."
+    },
+    {
+      "label": "Rezervă 2 - 8-10 minute",
+      "title": "Cortina automată",
+      "subtitle": "Un tap pornește și artiștii, și cronometrul.",
+      "diagram": "timer",
+      "steps": [
+        "Un tap pe fluture pornește ambii artiști și mingea-cronometru.",
+        "După o pauză, mingea trimite singură mesajul de înghețare. Nu o atingem.",
+        "Artiștii rămân opriți. Un nou tap pe fluture repetă spectacolul."
+      ],
+      "success": "O singură atingere: pornire, spectacol, înghețare automată."
+    }
+  ]
+}

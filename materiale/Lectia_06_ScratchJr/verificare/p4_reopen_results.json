@@ -1,0 +1,43 @@
+{
+  "pass": true,
+  "sounds": 1,
+  "final": {
+    "t": 2906,
+    "page": "page1",
+    "go": "go on",
+    "sprites": [
+      {
+        "id": "iepuras1",
+        "transform": "translate3d(84px, 136px, 0px) rotate(0deg) scale(0.5, 0.5)",
+        "opacity": 1,
+        "visibility": "visible",
+        "x": 192,
+        "y": 240,
+        "scale": 0.5
+      },
+      {
+        "id": "caine1",
+        "transform": "translate3d(212px, 182px, 0px) rotate(0deg) scale(0.5, 0.5)",
+        "opacity": 1,
+        "visibility": "visible",
+        "x": 360,
+        "y": 288,
+        "scale": 0.5
+      },
+      {
+        "id": "fluture1",
+        "transform": "translate3d(344px, 72px, 0px) rotate(0deg) scale(0.5, 0.5)",
+        "opacity": 1,
+        "visibility": "visible",
+        "x": 408,
+        "y": 120,
+        "scale": 0.5
+      }
+    ]
+  },
+  "firstChange": {
+    "iepuras1": 305.7000000476837,
+    "caine1": 885.7000000476837,
+    "fluture1": 1906.1000000238419
+  }
+}
