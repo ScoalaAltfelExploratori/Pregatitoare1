@@ -2,6 +2,8 @@
 
 11 noiembrie 2026. Meniu comun, curs ScratchJr cu zece lecții și secțiune separată pentru exercițiile originale Robo.
 
+**Publicat și verificat pe siteul existent.** După implementarea `e02ef66`, toate cele 312 URL-uri ale siteului urmărite în audit au răspuns HTTP 200, iar conținutul primit a corespuns fișierelor publicate. Cele două adrese suplimentare față de proba locală sunt intrările scurte `/scratchjr/` și `/robo/`. În browser am confirmat meniul public, zece lecții, deschiderea lecției 10 și redirecționarea vechiului link pentru acasă.
+
 ## Verificări efectuate
 
 - 122 de teste automate au trecut: motorul și interfața Robo, navigarea nouă, compatibilitatea adreselor vechi și existența fișierelor. Verificarea numelor ține cont de litere mari/mici, pentru publicarea pe GitHub Pages.
@@ -18,6 +20,9 @@
 - [Navigarea în browser](browser.json)
 - [Meniul principal](meniu.png)
 - [Catalogul ScratchJr](curs_scratchjr.png)
+- [Verificarea HTTP a siteului public](live-links.json)
+- [Navigarea pe siteul public](live-browser.json)
+- [Meniul publicat](live-meniu.png)
 
 ## Repetarea verificării
 
