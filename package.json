@@ -2,10 +2,10 @@
   "name": "robo-explorator-offline",
   "version": "1.0.0",
   "private": true,
-  "description": "Aventură offline de programare pentru clasa pregătitoare",
+  "description": "AventurÄƒ offline de programare pentru clasa pregÄƒtitoare",
   "scripts": {
     "test": "node --test",
-    "check": "node --check app.js && node --check game-engine.js && node --check robo-audio.js && node --check curriculum.js && node --check adventures.js && node --check classroom.js && node --check diploma.js && node --check legacy-links.js && node --check scratchjr/lectia-0/lesson.js && node --check scratchjr/lectia-0/app.js && node --check scratchjr/lectia-0/engine.js"
+    "check": "node --check app.js && node --check game-engine.js && node --check robo-audio.js && node --check curriculum.js && node --check adventures.js && node --check classroom.js && node --check diploma.js && node --check legacy-links.js"
   },
   "devDependencies": {
     "jsdom": "^26.1.0",

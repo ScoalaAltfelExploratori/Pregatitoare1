@@ -8,7 +8,7 @@ Cursul ScratchJr și jocurile Robo Explorator, în limba română, pentru clasa 
 
 ## Meniul siteului
 
-- [Lecția 0 · Laboratorul de cod](scratchjr/lectia-0/index.html) este atelierul editabil pentru laptop și proiector: tragem blocuri, modificăm valori, prezicem și rulăm codul. Zece idei de programare, matematică 0–10, sunete, pagini, provocare dificilă și două rezerve. Copiii propun instrucțiuni și vin uneori la laptop. [Ghidul profesorului pentru cele 50 de minute](scratchjr/lectia-0/README.md).
+- [Lecția 0 · Pregătim spectacolul din parc](scratchjr/lectia-0/index.html): proiect nativ `.sjr` cu patru scene editabile, puzzle-uri 0–10, sunete și două rezerve. Lecția se prezintă în ScratchJr de pe laptop. [Instrucțiuni](materiale/Lectia_00_ScratchJr/README.md).
 
 - `index.html` este intrarea comună, cu două secțiuni separate.
 - [ScratchJr](scratchjr/index.html) listează toate cele zece lecții. Fiecare are legături la ghid, cartonașe și pachetul ZIP. Paginile lecțiilor au Înapoi/Înainte și întoarcere la meniu.

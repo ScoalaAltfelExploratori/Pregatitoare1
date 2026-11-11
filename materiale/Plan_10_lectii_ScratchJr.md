@@ -6,7 +6,7 @@ Materialele și explicațiile pentru copii vor fi în română, cu pictograme ș
 
 ## Regula cursului: totul se construiește în aplicație
 
-Înaintea celor zece întâlniri practice avem [Lecția 0 — Laboratorul de cod](../scratchjr/lectia-0/index.html): aproximativ 50 de minute la proiector, conduse de profesor. Construim programe cu blocuri care se trag, modificăm valori, prezicem și rulăm. Copiii propun codul și vin pe rând la laptop. Matematica 0–10 sprijină programarea; păstrăm sunetele, scenele multiple, finala dificilă și două rezerve. Este un editor web simplificat inspirat de ScratchJr, fără export SJR. [Ghid și desfășurător](../scratchjr/lectia-0/README.md). Numerotarea lecțiilor 1–10 rămâne aceeași.
+Înaintea celor zece întâlniri practice avem [Lecția 0 — Pregătim spectacolul din parc](../scratchjr/lectia-0/index.html): 50 de minute la proiector, conduse de profesor în ScratchJr. Proiectul nativ are patru pagini: mișcare, magie, ritm și finală dificilă; două rezerve prezintă contactul și statuile. Copiii propun codul, prezic rezultatul și vin pe rând la laptop. Matematica 0–10 sprijină programarea. [Proiecte și instrucțiuni](Lectia_00_ScratchJr/README.md). Numerotarea lecțiilor 1–10 rămâne aceeași.
 
 Toate cele zece lecții folosesc numai personajele, fundalurile, sunetul Pop și blocurile incluse în ScratchJr. Nu cerem importuri SJR, imagini externe, conturi ale copiilor, descărcări de materiale sau copierea fișierelor pe fiecare tabletă. Instalăm aplicația o singură dată; lecțiile se pot desfășura fără internet după verificarea inițială pe K10.
 
