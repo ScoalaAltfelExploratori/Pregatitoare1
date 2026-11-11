@@ -23,6 +23,7 @@ Au fost verificate prin interacțiuni reale:
 - finala cu șapte animale intermediare, cinci la sfârșit și Pop după plecare;
 - rezultatele 0 și 10 din rezerve;
 - Stop în timpul unei repetiții și Reia scena, care păstrează codul și restaurează poziția inițială.
+- O repetiție continuă care conține numai Așteaptă nu este numărată și animată ca dans. Acest caz a fost corectat și adăugat la verificările motorului.
 
 [Rezultatele din browser](coding-browser.json) includ verificările și inspecția celor 15 ecrane la **1024 × 768**. Nu au fost găsite controale tăiate sau selectoare de predicție ascunse. Au fost inspectate și ecranele la **1280 × 720**. [Captură 16:9](coding-16-9.png) · [Captură 4:3](coding-4-3.png).
 
@@ -41,3 +42,9 @@ Testarea interactivă locală a folosit HTTP. Browserul integrat blochează `fil
 Verificarea pe proiectorul fizic rămâne de făcut. Dacă ecranul complet nu este disponibil în browser, interfața indică F11.
 
 Fișierele `browser.json`, `projector-*.png` și `live-projector.png` din acest folder sunt dovezi ale versiunii anterioare, cu demonstrații fixe. Dovezile versiunii editabile au prefixul `coding-`.
+
+## Publicare
+
+Versiunea editabilă `922f1aa` a trecut **326 verificări ale adreselor publice**, cu conținut comparat cu sursa: [raport HTTP](../live-links.json). Pe siteul public au fost repetate tragerea unui bloc, editarea la Dreapta 2 și atingerea țintei 5. Au mai fost verificate Mărește 2 → Micșorează 2 (revenire la dimensiunea inițială) și ritmul cu sunetul oprit, care continuă să afișeze cele trei impulsuri.
+
+Corecția pentru bucla care doar așteaptă este o verificare suplimentară după această publicare; nu schimbă soluțiile sau grafica celorlalte activități.

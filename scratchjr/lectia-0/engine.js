@@ -50,7 +50,7 @@
       const s=compiled[actor.id][scriptIndex];if(!s.ops.length)return;
       if(tasks.some(t=>!t.dead&&t.actor===actor.id&&t.scriptIndex===scriptIndex))return;
       tasks.push({id:++seq,actor:actor.id,scriptIndex,ops:s.ops,pc:0,ready,dead:false});
-      if(s.ops.some(op=>op.type==='forever'))actor.dancing=true;
+      if(s.ops.some(op=>op.type==='forever')&&s.ops.some(op=>op.type==='jump'))actor.dancing=true;
     };
     const trigger=(type,color,id,ready)=>{for(const actor of Object.values(state.actors)){
       if(actor.page!==state.page||(id&&actor.id!==id))continue;

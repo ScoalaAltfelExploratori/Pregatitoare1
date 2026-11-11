@@ -8,7 +8,7 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/",
       "path": "index.html",
       "status": 200,
-      "bytes": 2792,
+      "bytes": 2821,
       "matches_local_file": true,
       "content_type": "text/html; charset=utf-8",
       "pass": true
@@ -71,7 +71,7 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/index.html",
       "path": "index.html",
       "status": 200,
-      "bytes": 2792,
+      "bytes": 2821,
       "matches_local_file": true,
       "content_type": "text/html; charset=utf-8",
       "pass": true
@@ -2708,7 +2708,7 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/materiale/Plan_10_lectii_ScratchJr.md",
       "path": "materiale/Plan_10_lectii_ScratchJr.md",
       "status": 200,
-      "bytes": 39155,
+      "bytes": 39230,
       "matches_local_file": true,
       "content_type": "text/markdown; charset=utf-8",
       "pass": true
@@ -2771,7 +2771,7 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/",
       "path": "scratchjr/index.html",
       "status": 200,
-      "bytes": 10430,
+      "bytes": 10451,
       "matches_local_file": true,
       "content_type": "text/html; charset=utf-8",
       "pass": true
@@ -2780,7 +2780,7 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/index.html",
       "path": "scratchjr/index.html",
       "status": 200,
-      "bytes": 10430,
+      "bytes": 10451,
       "matches_local_file": true,
       "content_type": "text/html; charset=utf-8",
       "pass": true
@@ -2789,7 +2789,7 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/",
       "path": "scratchjr/lectia-0/index.html",
       "status": 200,
-      "bytes": 2121,
+      "bytes": 3893,
       "matches_local_file": true,
       "content_type": "text/html; charset=utf-8",
       "pass": true
@@ -2798,16 +2798,16 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/README.md",
       "path": "scratchjr/lectia-0/README.md",
       "status": 200,
-      "bytes": 6582,
+      "bytes": 9214,
       "matches_local_file": true,
       "content_type": "text/markdown; charset=utf-8",
       "pass": true
     },
     {
-      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/app.js",
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/app.js?v=coding-2",
       "path": "scratchjr/lectia-0/app.js",
       "status": 200,
-      "bytes": 16265,
+      "bytes": 22103,
       "matches_local_file": true,
       "content_type": "application/javascript; charset=utf-8",
       "pass": true
@@ -2840,28 +2840,37 @@
       "pass": true
     },
     {
-      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/index.html",
-      "path": "scratchjr/lectia-0/index.html",
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/engine.js?v=coding-2",
+      "path": "scratchjr/lectia-0/engine.js",
       "status": 200,
-      "bytes": 2121,
-      "matches_local_file": true,
-      "content_type": "text/html; charset=utf-8",
-      "pass": true
-    },
-    {
-      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/lesson.js",
-      "path": "scratchjr/lectia-0/lesson.js",
-      "status": 200,
-      "bytes": 8526,
+      "bytes": 8813,
       "matches_local_file": true,
       "content_type": "application/javascript; charset=utf-8",
       "pass": true
     },
     {
-      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/style.css",
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/index.html",
+      "path": "scratchjr/lectia-0/index.html",
+      "status": 200,
+      "bytes": 3893,
+      "matches_local_file": true,
+      "content_type": "text/html; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/lesson.js?v=coding-2",
+      "path": "scratchjr/lectia-0/lesson.js",
+      "status": 200,
+      "bytes": 11621,
+      "matches_local_file": true,
+      "content_type": "application/javascript; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/style.css?v=coding-2",
       "path": "scratchjr/lectia-0/style.css",
       "status": 200,
-      "bytes": 8574,
+      "bytes": 10194,
       "matches_local_file": true,
       "content_type": "text/css; charset=utf-8",
       "pass": true
@@ -2897,43 +2906,34 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/lectia-0/README.md",
       "path": "verificare_site/lectia-0/README.md",
       "status": 200,
-      "bytes": 2545,
+      "bytes": 3435,
       "matches_local_file": true,
       "content_type": "text/markdown; charset=utf-8",
       "pass": true
     },
     {
-      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/lectia-0/browser.json",
-      "path": "verificare_site/lectia-0/browser.json",
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/lectia-0/coding-16-9.png",
+      "path": "verificare_site/lectia-0/coding-16-9.png",
       "status": 200,
-      "bytes": 5478,
-      "matches_local_file": true,
-      "content_type": "application/json; charset=utf-8",
-      "pass": true
-    },
-    {
-      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/lectia-0/projector-16-9.png",
-      "path": "verificare_site/lectia-0/projector-16-9.png",
-      "status": 200,
-      "bytes": 70593,
+      "bytes": 91227,
       "matches_local_file": true,
       "content_type": "image/png",
       "pass": true
     },
     {
-      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/lectia-0/projector-4-3.png",
-      "path": "verificare_site/lectia-0/projector-4-3.png",
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/lectia-0/coding-4-3.png",
+      "path": "verificare_site/lectia-0/coding-4-3.png",
       "status": 200,
-      "bytes": 74535,
+      "bytes": 79641,
       "matches_local_file": true,
       "content_type": "image/png",
       "pass": true
     },
     {
-      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/local-links.json",
-      "path": "verificare_site/local-links.json",
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/lectia-0/coding-browser.json",
+      "path": "verificare_site/lectia-0/coding-browser.json",
       "status": 200,
-      "bytes": 109098,
+      "bytes": 7299,
       "matches_local_file": true,
       "content_type": "application/json; charset=utf-8",
       "pass": true

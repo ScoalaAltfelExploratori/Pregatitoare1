@@ -49,6 +49,8 @@ test('sound counts, pause order, and final sequence are verified from execution'
 });
 test('stop cancels the selected character routines and hidden characters cannot be clicked',()=>{
   const s=find('statui'),r=E.simulate(s,s.solution);assert.equal(E.measure(s,r.state),2);assert.equal(r.bounded,true);
+  const waiting=E.clone(s.solution);waiting.dancer5[0].body=[block('wait',1),block('forever')];
+  assert.equal(E.measure(s,E.simulate(s,waiting).state),1,'a repeating wait must not animate or count as dancing');
   const chain=find('lant');assert.match(E.simulate(chain,chain.solution,undefined,{type:'tap',actor:'dog'}).error,/vizibil/);
 });
 test('range and finite preview limits protect the maths and presentation',()=>{

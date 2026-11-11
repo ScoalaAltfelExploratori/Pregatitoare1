@@ -272,7 +272,8 @@
     "Hidden dog and ball could not be clicked until revealed",
     "Three actual taps opened night page",
     "Stop during a running repeat cancelled pending motion",
-    "Reset kept repeat value 5 and restored position 0"
+    "Reset kept repeat value 5 and restored position 0",
+    "A wait-only forever loop did not animate dancer 5; only dancer 6 remained dancing, result 1."
   ],
   "audio": "Pop playback requested by browser; rhythm visuals verified. Classroom audibility requires the laptop speakers.",
   "consoleErrors": []
