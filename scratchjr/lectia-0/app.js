@@ -31,7 +31,7 @@
     document.querySelectorAll('.stage-actor').forEach(el=>{el.disabled=busy||(armed&&!project.programs[el.dataset.actor].some(s=>s.trigger==='tap'));});
   }
   function invalidate(){stop();passed=false;$('prediction').value='';state=E.initial(scene());drawStage();renderEditor();controls();}
-  function mutate(fn,message='Cod schimbat. Prezicem din nou, apoi rulăm.'){
+  function mutate(fn,message='Cod schimbat. Alege o nouă predicție.'){
     if(busy)return;
     const before=E.clone(project.programs);if(fn()===false)return;
     project.undo.push(before);if(project.undo.length>30)project.undo.shift();invalidate();say(message);
@@ -41,7 +41,7 @@
     if(count(body())>=8){say('Folosim cel mult 8 blocuri în acest program. Poți folosi o repetiție.');return;}
     if(type==='repeat'&&parent){say('Pune repetiția în programul principal.');return;}
     const def=E.BLOCKS[type],block={id:`b${++serial}`,type,...(def.value!==undefined?{value:def.value}:{}),...(type==='repeat'?{children:[]}: {})};
-    mutate(()=>{list.splice(Math.min(at,list.length),0,block);selected=block.id;insertion=type==='repeat'?{parent:block.id,index:0}:{parent,index:Math.min(at,list.length-1)+1};},type==='repeat'?'Acum trage o acțiune în interiorul repetiției.':'Bloc adăugat. Poți schimba numărul sau ordinea.');
+    mutate(()=>{list.splice(Math.min(at,list.length),0,block);selected=block.id;insertion=type==='repeat'?{parent:block.id,index:0}:{parent,index:Math.min(at,list.length-1)+1};},type==='repeat'?'Trage o acțiune în interiorul repetiției.':'Ce va face acum programul?');
   }
   function move(id,parent,at){
     const found=locate(id),target=sequence(parent);if(!found||!target)return;
@@ -51,7 +51,7 @@
     mutate(()=>{found.list.splice(found.index,1);target.splice(Math.min(at,target.length),0,found.block);selected=id;insertion={parent,index:at+1};},'Ordinea s-a schimbat. Ce va face acum programul?');
   }
   function remove(){const found=selected&&locate(selected);if(found)mutate(()=>{found.list.splice(found.index,1);selected=null;insertion={parent:'',index:body().length};},'Bloc șters. Poți reveni cu „Înapoi”.');}
-  function slot(parent,at,empty){const el=document.createElement('button');el.className='drop-slot';el.dataset.parent=parent;el.dataset.at=at;el.setAttribute('aria-label',`Inserează ${parent?'în repetiție':'în program'} la locul ${at+1}`);el.textContent=empty?(parent?'Trage aici acțiunea':'Trage primul bloc aici'):'+';if(insertion.parent===parent&&insertion.index===at)el.classList.add('insert-here');el.onclick=()=>{insertion={parent,index:at};renderEditor();say('Loc ales. Apasă un bloc din paletă sau trage-l aici.');};return el;}
+  function slot(parent,at,empty){const el=document.createElement('button');el.className='drop-slot';el.dataset.parent=parent;el.dataset.at=at;el.setAttribute('aria-label',`Inserează ${parent?'în repetiție':'în program'} la locul ${at+1}`);el.textContent=empty?(parent?'Trage aici acțiunea':'Trage primul bloc aici'):'+';if(insertion.parent===parent&&insertion.index===at)el.classList.add('insert-here');el.onclick=()=>{insertion={parent,index:at};renderEditor();say('Alege un bloc din paletă.');};return el;}
   function renderSequence(list,parent=''){
     const el=document.createElement('div');el.className='sequence';el.dataset.parent=parent;
     list.forEach((b,i)=>{el.append(slot(parent,i,false));const def=E.BLOCKS[b.type],block=document.createElement('div');block.className=`code-block ${def.color}${b.children?' repeat-block':''}${selected===b.id?' selected':''}`;block.dataset.block=b.id;
@@ -67,7 +67,7 @@
     $('script').replaceChildren();project.programs[project.actor].forEach((s,i)=>$('script').add(new Option(`${i+1} · ${names[s.trigger]}`,i)));$('script').value=project.script;
     const current=project.programs[project.actor][project.script];$('trigger').value=current.trigger;$('channel').value=current.color;$('channel').hidden=current.trigger!=='message';
     $('workspace').replaceChildren(renderSequence(body()));
-    const found=selected&&locate(selected);$('selection-label').textContent=found?`${E.BLOCKS[found.block.type].label} selectat · poți muta sau șterge`:'Trage blocuri. Schimbă valorile. Prezice rezultatul.';
+    const found=selected&&locate(selected);$('selection-label').textContent=found?`${E.BLOCKS[found.block.type].label} selectat · poți muta sau șterge`:'Trage blocuri și schimbă valorile.';
     controls();
   }
   function setupStage(){
@@ -107,25 +107,25 @@
     const token=epoch,answer=$('prediction').value;armed=true;busy=true;controls();
     const result=E.simulate(scene(),project.programs,state,event);let tick=state.tick;
     if(result.error&&!result.frames.length){busy=false;armed=false;say(result.error);controls();return;}
-    say('Urmărim blocurile și ce fac personajele…');
+    say('Urmărim programul…');
     for(const frame of result.frames){if(!await wait(Math.max(80,(frame.tick-tick)*100),token))return;tick=frame.tick;state=E.clone(frame.state);drawStage(frame.active);for(let n=0;n<frame.pops;n++)pop();}
     if(!await wait(350,token))return;
     state=result.state;busy=false;passed=!!result.achieved;drawStage();controls();
     if(result.error){say(result.error);return;}
     const actual=E.measure(scene(),state),right=String(actual)===answer;
-    if(scene().id==='lant'&&!passed){say('Jocul este pornit. Apasă un personaj vizibil sau oprește și schimbă codul.');return;}
+    if(scene().id==='lant'&&!passed){say('Apasă personajele care apar.');return;}
     const prediction=right?'Predicția se potrivește.':`Am prezis ${resultLabel(answer)}; codul a produs ${resultLabel(actual)}.`;
     say(`${passed?'Ținta reușită!':'Mai ajustăm codul.'} Rezultat: ${resultLabel(actual)}. ${prediction}`);
   }
   function render(){
     stop();const s=scene();if(!models.has(s.id))models.set(s.id,{programs:E.clone(s.starter),actor:s.focus,script:0,undo:[]});project=models.get(s.id);state=E.initial(s);passed=false;selected=null;insertion={parent:'',index:s.actors?body().length:0};
-    $('presentation').classList.toggle('no-code',!s.actors);$('topic').textContent=s.topic;$('title').textContent=s.title;$('goal').textContent=s.goal||s.question;$('question').textContent=s.question;$('equation').textContent=s.math||'';$('intro-message').textContent=s.actors?'':s.mode==='intro'?'Tu construiești, copiii prezic. Un voluntar vine la laptop.':'Profesorul alege când continuăm.';
+    $('presentation').classList.toggle('no-code',!s.actors);$('topic').textContent=s.topic;$('title').textContent=s.title;$('goal').textContent=s.goal||s.question;$('question').textContent=s.question;$('equation').textContent=s.math||'';$('intro-message').textContent=s.actors?'':s.mode==='intro'?'Dăm instrucțiuni personajelor.':'';
     $('prediction').replaceChildren(new Option('Ce credeți?',''));for(const [value,label]of s.choices||Array.from({length:11},(_,i)=>[i,String(i)]))$('prediction').add(new Option(label,value));
     $('progress').textContent=s.number?`Oprirea ${s.number} / 10`:s.id.startsWith('rezerva')?'Rezervă':s.mode==='intro'?'Începem':s.mode==='break'?'Ne dezmorțim':'Bravo, creatori!';
     $('teacher-notes').textContent=s.note;$('scene-list').querySelectorAll('button').forEach((b,i)=>{if(i===index)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');});
     $('palette').replaceChildren();for(const type of s.palette||[]){const d=E.BLOCKS[type],el=document.createElement('button');el.className=`palette-block ${d.color}`;el.dataset.type=type;el.innerHTML=`<span class="icon">${d.icon}</span>${d.label}`;el.setAttribute('aria-label',`Adaugă ${d.label}`);el.onclick=()=>{if(Date.now()-lastDrag>300)add(type);};$('palette').append(el);}
     setupStage();if(s.actors)renderEditor();else $('workspace').innerHTML='<span class="workflow-step">1. Construim</span><span class="workflow-step">2. Prezicem</span><span class="workflow-step">3. Rulăm</span>';
-    say(s.actors?'Construiește codul, alege o predicție și apasă Rulează.':'Profesorul conduce; copiii vin pe rând să creeze.');controls();
+    say(s.actors?'Construiește → alege rezultatul → rulează.':'Apasă Mai departe.');controls();
     try{const url=new URL(location.href);url.searchParams.set('scena',s.id);history.replaceState(null,'',url);}catch(_){}
   }
   function go(n){if(n<0||n>=scenes.length)return;index=n;render();}
@@ -164,13 +164,13 @@
   $('clear').onclick=()=>{if(body().length)mutate(()=>{body().length=0;selected=null;insertion={parent:'',index:0};});};
   $('undo').onclick=()=>{if(busy||!project.undo.length)return;project.programs=project.undo.pop();project.script=Math.min(project.script,project.programs[project.actor].length-1);selected=null;insertion={parent:'',index:body().length};invalidate();say('Am revenit la codul anterior.');};
   $('move-left').onclick=()=>{const f=locate(selected);move(selected,f.parent,f.index-1);};$('move-right').onclick=()=>{const f=locate(selected);move(selected,f.parent,f.index+2);};$('delete').onclick=remove;
-  $('prediction').onchange=controls;$('run').onclick=()=>execute();$('stop').onclick=()=>{stop();drawStage();controls();say('Oprit. Codul se păstrează; poți modifica și rula din nou.');};
-  $('reset').onclick=()=>{stop();passed=false;state=E.initial(scene());drawStage();controls();say('Scena este la început. Codul tău s-a păstrat.');};
+  $('prediction').onchange=controls;$('run').onclick=()=>execute();$('stop').onclick=()=>{stop();drawStage();controls();say('Oprit. Poți modifica programul.');};
+  $('reset').onclick=()=>{stop();passed=false;state=E.initial(scene());drawStage();controls();say('Scena a revenit la început. Codul se păstrează.');};
   $('hint').onclick=()=>say(scene().hint);$('sound').onclick=()=>{muted=!muted;$('sound').setAttribute('aria-pressed',String(!muted));$('sound').setAttribute('aria-label',muted?'Sunet oprit':'Sunet activ');$('sound').textContent=muted?'♫̸':'♫';};
   $('previous').onclick=()=>go(index-1);$('next').onclick=()=>{if(!$('next').disabled)go(index+1);};
   $('contents').onclick=()=>$('menu').showModal();$('close-menu').onclick=closeMenu;
   scenes.forEach((s,i)=>{const el=document.createElement('button');el.textContent=`${s.number?String(s.number).padStart(2,'0')+' · ':''}${s.title}`;el.onclick=()=>{go(i);closeMenu();};$('scene-list').append(el);});
-  $('example').onclick=()=>{stop();mutate(()=>{project.programs=E.clone(scene().solution);project.actor=scene().focus;project.script=0;selected=null;insertion={parent:'',index:body().length};},'Exemplul este editabil. Schimbă un bloc și compară rezultatul.');closeMenu();};
+  $('example').onclick=()=>{stop();mutate(()=>{project.programs=E.clone(scene().solution);project.actor=scene().focus;project.script=0;selected=null;insertion={parent:'',index:body().length};},'Schimbă un bloc și încearcă din nou.');closeMenu();};
   $('restart').onclick=()=>{stop();mutate(()=>{project.programs=E.clone(scene().starter);project.actor=scene().focus;project.script=0;selected=null;insertion={parent:'',index:body().length};});closeMenu();};$('skip').onclick=()=>{go(Math.min(index+1,scenes.length-1));closeMenu();};
   async function fullscreen(){try{if(document.fullscreenElement)await document.exitFullscreen();else if(document.documentElement.requestFullscreen)await document.documentElement.requestFullscreen();else say('Folosește F11 pentru ecran complet.');}catch(_){say('Folosește F11 pentru ecran complet.');}}
   $('fullscreen').onclick=fullscreen;
