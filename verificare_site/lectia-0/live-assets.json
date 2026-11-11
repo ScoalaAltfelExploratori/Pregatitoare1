@@ -1,0 +1,56 @@
+{
+  "checked": "2026-11-11",
+  "pass": true,
+  "checks": [
+    {
+      "file": "scratchjr/lectia-0/assets/Ball.svg",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "file": "scratchjr/lectia-0/assets/BeachDay.svg",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "file": "scratchjr/lectia-0/assets/BeachNight.svg",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "file": "scratchjr/lectia-0/assets/Butterfly.svg",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "file": "scratchjr/lectia-0/assets/Dog.svg",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "file": "scratchjr/lectia-0/assets/LICENSE-ScratchJr.txt",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "file": "scratchjr/lectia-0/assets/Park.svg",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "file": "scratchjr/lectia-0/assets/pop.mp3",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "file": "scratchjr/lectia-0/assets/Rabbit.svg",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "file": "scratchjr/lectia-0/assets/TRADEMARKS.txt",
+      "status": 200,
+      "pass": true
+    }
+  ]
+}

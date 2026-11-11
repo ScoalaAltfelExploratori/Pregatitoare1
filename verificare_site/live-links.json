@@ -1,14 +1,14 @@
 {
   "base": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/",
-  "pages_and_documents_crawled": 67,
-  "urls_checked": 312,
+  "pages_and_documents_crawled": 70,
+  "urls_checked": 326,
   "pass": true,
   "checks": [
     {
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/",
       "path": "index.html",
       "status": 200,
-      "bytes": 2554,
+      "bytes": 2792,
       "matches_local_file": true,
       "content_type": "text/html; charset=utf-8",
       "pass": true
@@ -71,7 +71,7 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/index.html",
       "path": "index.html",
       "status": 200,
-      "bytes": 2554,
+      "bytes": 2792,
       "matches_local_file": true,
       "content_type": "text/html; charset=utf-8",
       "pass": true
@@ -2708,7 +2708,7 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/materiale/Plan_10_lectii_ScratchJr.md",
       "path": "materiale/Plan_10_lectii_ScratchJr.md",
       "status": 200,
-      "bytes": 38622,
+      "bytes": 39155,
       "matches_local_file": true,
       "content_type": "text/markdown; charset=utf-8",
       "pass": true
@@ -2771,7 +2771,7 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/",
       "path": "scratchjr/index.html",
       "status": 200,
-      "bytes": 9751,
+      "bytes": 10430,
       "matches_local_file": true,
       "content_type": "text/html; charset=utf-8",
       "pass": true
@@ -2780,9 +2780,90 @@
       "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/index.html",
       "path": "scratchjr/index.html",
       "status": 200,
-      "bytes": 9751,
+      "bytes": 10430,
       "matches_local_file": true,
       "content_type": "text/html; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/",
+      "path": "scratchjr/lectia-0/index.html",
+      "status": 200,
+      "bytes": 2121,
+      "matches_local_file": true,
+      "content_type": "text/html; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/README.md",
+      "path": "scratchjr/lectia-0/README.md",
+      "status": 200,
+      "bytes": 6582,
+      "matches_local_file": true,
+      "content_type": "text/markdown; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/app.js",
+      "path": "scratchjr/lectia-0/app.js",
+      "status": 200,
+      "bytes": 16265,
+      "matches_local_file": true,
+      "content_type": "application/javascript; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/assets/LICENSE-ScratchJr.txt",
+      "path": "scratchjr/lectia-0/assets/LICENSE-ScratchJr.txt",
+      "status": 200,
+      "bytes": 1508,
+      "matches_local_file": true,
+      "content_type": "text/plain; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/assets/Rabbit.svg",
+      "path": "scratchjr/lectia-0/assets/Rabbit.svg",
+      "status": 200,
+      "bytes": 9553,
+      "matches_local_file": true,
+      "content_type": "image/svg+xml",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/assets/TRADEMARKS.txt",
+      "path": "scratchjr/lectia-0/assets/TRADEMARKS.txt",
+      "status": 200,
+      "bytes": 1026,
+      "matches_local_file": true,
+      "content_type": "text/plain; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/index.html",
+      "path": "scratchjr/lectia-0/index.html",
+      "status": 200,
+      "bytes": 2121,
+      "matches_local_file": true,
+      "content_type": "text/html; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/lesson.js",
+      "path": "scratchjr/lectia-0/lesson.js",
+      "status": 200,
+      "bytes": 8526,
+      "matches_local_file": true,
+      "content_type": "application/javascript; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/style.css",
+      "path": "scratchjr/lectia-0/style.css",
+      "status": 200,
+      "bytes": 8574,
+      "matches_local_file": true,
+      "content_type": "text/css; charset=utf-8",
       "pass": true
     },
     {
@@ -2795,10 +2876,10 @@
       "pass": true
     },
     {
-      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/site.css?v=course-menu-1",
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/site.css?v=lesson-zero-1",
       "path": "site.css",
       "status": 200,
-      "bytes": 4156,
+      "bytes": 4633,
       "matches_local_file": true,
       "content_type": "text/css; charset=utf-8",
       "pass": true
@@ -2811,9 +2892,55 @@
       "matches_local_file": true,
       "content_type": "text/css; charset=utf-8",
       "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/lectia-0/README.md",
+      "path": "verificare_site/lectia-0/README.md",
+      "status": 200,
+      "bytes": 2545,
+      "matches_local_file": true,
+      "content_type": "text/markdown; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/lectia-0/browser.json",
+      "path": "verificare_site/lectia-0/browser.json",
+      "status": 200,
+      "bytes": 5478,
+      "matches_local_file": true,
+      "content_type": "application/json; charset=utf-8",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/lectia-0/projector-16-9.png",
+      "path": "verificare_site/lectia-0/projector-16-9.png",
+      "status": 200,
+      "bytes": 70593,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/lectia-0/projector-4-3.png",
+      "path": "verificare_site/lectia-0/projector-4-3.png",
+      "status": 200,
+      "bytes": 74535,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "https://scoalaaltfelexploratori.github.io/Pregatitoare1/verificare_site/local-links.json",
+      "path": "verificare_site/local-links.json",
+      "status": 200,
+      "bytes": 109098,
+      "matches_local_file": true,
+      "content_type": "application/json; charset=utf-8",
+      "pass": true
     }
   ],
   "external_urls": [
+    "https://github.com/jfo8000/ScratchJr-Desktop/tree/master/src/app",
     "https://github.com/richiesamlie/ScratchJr-Desktop-Reborn",
     "https://jfo8000.github.io/ScratchJr-Desktop/",
     "https://mitscratch.freshdesk.com/en/support/solutions/articles/4000211814-how-can-i-save-or-export-my-project-on-scratchjr-",

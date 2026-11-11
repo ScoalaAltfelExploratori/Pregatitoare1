@@ -17,3 +17,9 @@ Verificare locală în browser, 11 noiembrie 2026. Acest raport privește prezen
 - Legăturile locale ale întregului site au fost verificate prin HTTP; raportul este în [local-links.json](../local-links.json).
 
 Datele verificării vizuale: [browser.json](browser.json). Imagini: [16:9](projector-16-9.png), [4:3](projector-4-3.png).
+
+## Verificarea publicării
+
+Versiunea `03ffc57` a fost publicată cu succes pe GitHub Pages. Au trecut **326 verificări de adrese ale siteului**, cu conținut comparat cu fișierele publicate: [raport HTTP](../live-links.json). Au fost verificate separat toate cele zece fișiere din folderul de resurse al prezentării, inclusiv imaginile încărcate din program și sunetul: [resurse publice](live-assets.json).
+
+În browser, legătura de pe pagina principală a deschis Lecția 0. Au fost repetate răspunsul greșit, blocarea continuării, răspunsul corect și animația până la 5: [captură de pe siteul public](live-projector.png). Prezentarea a fost lăsată la introducere.
