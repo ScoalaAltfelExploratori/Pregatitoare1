@@ -8,6 +8,8 @@ Cursul ScratchJr și jocurile Robo Explorator, în limba română, pentru clasa 
 
 ## Meniul siteului
 
+- [Lecția 0 · Laboratorul surprizelor](scratchjr/lectia-0/index.html) este prezentarea interactivă pentru laptop și proiector: zece idei, adunări și scăderi 0–10, provocare dificilă, două rezerve. Copiii răspund cu voce tare și vin uneori la laptop. [Ghidul profesorului pentru cele 50 de minute](scratchjr/lectia-0/README.md).
+
 - `index.html` este intrarea comună, cu două secțiuni separate.
 - [ScratchJr](scratchjr/index.html) listează toate cele zece lecții. Fiecare are legături la ghid, cartonașe și pachetul ZIP. Paginile lecțiilor au Înapoi/Înainte și întoarcere la meniu.
 - [Robo](robo/index.html) păstrează jocul original, cele 22 de activități pentru clasă și aventura de acasă. Fișele pentru acasă sunt în continuare în antetul jocului.

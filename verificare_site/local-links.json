@@ -1,14 +1,14 @@
 {
   "base": "http://127.0.0.1:8774/Pregatitoare1/",
-  "pages_and_documents_crawled": 67,
-  "urls_checked": 310,
+  "pages_and_documents_crawled": 70,
+  "urls_checked": 323,
   "pass": true,
   "checks": [
     {
       "url": "http://127.0.0.1:8774/Pregatitoare1/",
       "path": "index.html",
       "status": 200,
-      "bytes": 2567,
+      "bytes": 2805,
       "matches_local_file": true,
       "content_type": "text/html",
       "pass": true
@@ -71,7 +71,7 @@
       "url": "http://127.0.0.1:8774/Pregatitoare1/index.html",
       "path": "index.html",
       "status": 200,
-      "bytes": 2567,
+      "bytes": 2805,
       "matches_local_file": true,
       "content_type": "text/html",
       "pass": true
@@ -2708,7 +2708,7 @@
       "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Plan_10_lectii_ScratchJr.md",
       "path": "materiale/Plan_10_lectii_ScratchJr.md",
       "status": 200,
-      "bytes": 38929,
+      "bytes": 39464,
       "matches_local_file": true,
       "content_type": "text/markdown",
       "pass": true
@@ -2762,9 +2762,81 @@
       "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/index.html",
       "path": "scratchjr/index.html",
       "status": 200,
-      "bytes": 9761,
+      "bytes": 10441,
       "matches_local_file": true,
       "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/README.md",
+      "path": "scratchjr/lectia-0/README.md",
+      "status": 200,
+      "bytes": 6582,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/app.js",
+      "path": "scratchjr/lectia-0/app.js",
+      "status": 200,
+      "bytes": 16265,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/assets/LICENSE-ScratchJr.txt",
+      "path": "scratchjr/lectia-0/assets/LICENSE-ScratchJr.txt",
+      "status": 200,
+      "bytes": 1508,
+      "matches_local_file": true,
+      "content_type": "text/plain",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/assets/Rabbit.svg",
+      "path": "scratchjr/lectia-0/assets/Rabbit.svg",
+      "status": 200,
+      "bytes": 9644,
+      "matches_local_file": true,
+      "content_type": "image/svg+xml",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/assets/TRADEMARKS.txt",
+      "path": "scratchjr/lectia-0/assets/TRADEMARKS.txt",
+      "status": 200,
+      "bytes": 1026,
+      "matches_local_file": true,
+      "content_type": "text/plain",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/index.html",
+      "path": "scratchjr/lectia-0/index.html",
+      "status": 200,
+      "bytes": 2121,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/lesson.js",
+      "path": "scratchjr/lectia-0/lesson.js",
+      "status": 200,
+      "bytes": 8526,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/style.css",
+      "path": "scratchjr/lectia-0/style.css",
+      "status": 200,
+      "bytes": 8574,
+      "matches_local_file": true,
+      "content_type": "text/css",
       "pass": true
     },
     {
@@ -2777,10 +2849,10 @@
       "pass": true
     },
     {
-      "url": "http://127.0.0.1:8774/Pregatitoare1/site.css?v=course-menu-1",
+      "url": "http://127.0.0.1:8774/Pregatitoare1/site.css?v=lesson-zero-1",
       "path": "site.css",
       "status": 200,
-      "bytes": 4156,
+      "bytes": 4633,
       "matches_local_file": true,
       "content_type": "text/css",
       "pass": true
@@ -2793,14 +2865,61 @@
       "matches_local_file": true,
       "content_type": "text/css",
       "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/lectia-0/README.md",
+      "path": "verificare_site/lectia-0/README.md",
+      "status": 200,
+      "bytes": 2545,
+      "matches_local_file": true,
+      "content_type": "text/markdown",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/lectia-0/browser.json",
+      "path": "verificare_site/lectia-0/browser.json",
+      "status": 200,
+      "bytes": 5478,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/lectia-0/projector-16-9.png",
+      "path": "verificare_site/lectia-0/projector-16-9.png",
+      "status": 200,
+      "bytes": 70593,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/lectia-0/projector-4-3.png",
+      "path": "verificare_site/lectia-0/projector-4-3.png",
+      "status": 200,
+      "bytes": 74535,
+      "matches_local_file": true,
+      "content_type": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/local-links.json",
+      "path": "verificare_site/local-links.json",
+      "status": 200,
+      "bytes": 110808,
+      "matches_local_file": true,
+      "content_type": "application/json",
+      "pass": true
     }
   ],
   "external_urls": [
+    "https://github.com/jfo8000/ScratchJr-Desktop/tree/master/src/app",
     "https://github.com/richiesamlie/ScratchJr-Desktop-Reborn",
     "https://jfo8000.github.io/ScratchJr-Desktop/",
     "https://mitscratch.freshdesk.com/en/support/solutions/articles/4000211814-how-can-i-save-or-export-my-project-on-scratchjr-",
     "https://play.google.com/store/apps/details?id=org.scratchjr.android",
     "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/",
+    "https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/",
     "https://scratched.gse.harvard.edu/sites/default/files/scratchjr-reference-page.pdf",
     "https://sites.bc.edu/scratchjr/learn/",
     "https://www.scratchjr.org/curricula/playground/playground-5.pdf",

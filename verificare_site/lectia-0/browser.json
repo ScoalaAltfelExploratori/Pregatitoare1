@@ -1,0 +1,212 @@
+{
+  "checked": "2026-11-11",
+  "results": [
+    {
+      "label": "steps",
+      "brokenImages": [],
+      "feedback": "Am verificat! Putem încerca din nou sau mergem mai departe.",
+      "next": true,
+      "overflow": [],
+      "title": "Pași care se adună"
+    },
+    {
+      "label": "repeat",
+      "brokenImages": [],
+      "feedback": "Am verificat! Putem încerca din nou sau mergem mai departe.",
+      "next": true,
+      "overflow": [],
+      "title": "Încă o dată!"
+    },
+    {
+      "label": "hide",
+      "brokenImages": [],
+      "feedback": "Am verificat! Putem încerca din nou sau mergem mai departe.",
+      "next": true,
+      "overflow": [],
+      "title": "Magia dispariției"
+    },
+    {
+      "label": "message",
+      "brokenImages": [],
+      "feedback": "Am verificat! Putem încerca din nou sau mergem mai departe.",
+      "next": true,
+      "overflow": [
+        "envelope blue",
+        "envelope orange grow"
+      ],
+      "title": "Plicul potrivit"
+    },
+    {
+      "label": "message-fixed",
+      "brokenImages": [],
+      "feedback": "Am verificat! Putem încerca din nou sau mergem mai departe.",
+      "next": true,
+      "overflow": [],
+      "title": "Plicul potrivit"
+    },
+    {
+      "label": "rhythm",
+      "brokenImages": [],
+      "feedback": "Trei sunete. Pauza ne ajută să auzim ritmul.",
+      "next": true,
+      "overflow": [],
+      "title": "Ascultă ritmul"
+    },
+    {
+      "label": "movement-break",
+      "brokenImages": [],
+      "feedback": "Profesorul alege când mergem mai departe.",
+      "next": true,
+      "overflow": [],
+      "title": "Acum, noi suntem personajele!"
+    },
+    {
+      "label": "collect",
+      "brokenImages": [],
+      "feedback": "Am verificat! Putem încerca din nou sau mergem mai departe.",
+      "next": true,
+      "overflow": [],
+      "title": "Comoara la atingere"
+    },
+    {
+      "label": "page",
+      "brokenImages": [],
+      "feedback": "Am verificat! Putem încerca din nou sau mergem mai departe.",
+      "next": true,
+      "overflow": [],
+      "title": "Ușa către poveste"
+    },
+    {
+      "label": "freeze",
+      "brokenImages": [],
+      "feedback": "Am verificat! Putem încerca din nou sau mergem mai departe.",
+      "next": true,
+      "overflow": [],
+      "title": "Statuile fermecate"
+    },
+    {
+      "label": "chain",
+      "brokenImages": [],
+      "feedback": "Fluture → cățel → minge → o pagină nouă.",
+      "next": true,
+      "overflow": [],
+      "title": "Lanțul descoperirilor"
+    },
+    {
+      "label": "final",
+      "brokenImages": [],
+      "feedback": "Am verificat! Putem încerca din nou sau mergem mai departe.",
+      "next": true,
+      "overflow": [],
+      "title": "Marea finală"
+    },
+    {
+      "label": "closing",
+      "brokenImages": [],
+      "feedback": "Profesorul alege când mergem mai departe.",
+      "next": true,
+      "overflow": [],
+      "title": "De acum, suntem creatori!"
+    },
+    {
+      "label": "bonus-zero",
+      "brokenImages": [],
+      "feedback": "Am verificat! Putem încerca din nou sau mergem mai departe.",
+      "next": true,
+      "overflow": [],
+      "title": "Dispărut tot!"
+    },
+    {
+      "label": "bonus-ten",
+      "brokenImages": [],
+      "feedback": "Am verificat! Putem încerca din nou sau mergem mai departe.",
+      "next": false,
+      "overflow": [],
+      "title": "Până la zece"
+    }
+  ],
+  "projectorLayout": [
+    {
+      "title": "Laboratorul surprizelor",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Pași care se adună",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Încă o dată!",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Magia dispariției",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Plicul potrivit",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Ascultă ritmul",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Acum, noi suntem personajele!",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Comoara la atingere",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Ușa către poveste",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Statuile fermecate",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Lanțul descoperirilor",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Marea finală",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "De acum, suntem creatori!",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Dispărut tot!",
+      "frameBottom": 672,
+      "clippedControls": []
+    },
+    {
+      "title": "Până la zece",
+      "frameBottom": 672,
+      "clippedControls": []
+    }
+  ],
+  "layoutNote": "Title glyphs extend slightly outside their line boxes with overflow visible; visual inspection confirms no clipping. All controls inside the frame. Initial message label overflow was fixed and rechecked.",
+  "wrongAnswerGates": true,
+  "hiddenTargetsGated": true,
+  "finalReturnGated": true,
+  "zeroAndTenVerified": true,
+  "keyboardGated": true,
+  "fullscreen": "Integrated browser refused fullscreen; F11 fallback message shown."
+}
