@@ -1,69 +1,85 @@
-# Lecția 0 — Laboratorul surprizelor
+# Lecția 0 — Laboratorul de cod
 
-[Deschide prezentarea](index.html) · [Cele zece lecții practice](../index.html) · [Versiunea online](https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/)
+[Deschide atelierul](index.html) · [Versiunea online](https://scoalaaltfelexploratori.github.io/Pregatitoare1/scratchjr/lectia-0/) · [Cele zece lecții practice](../index.html)
 
-O întâlnire de aproximativ **50 de minute**, pentru copii de **6–7 ani**. Profesorul conduce de la laptop și proiectează. Copiii răspund cu voce tare; din când în când, un voluntar vine să aleagă un răspuns sau să descopere un personaj. Tabletele nu sunt necesare la această întâlnire.
+**Obiectivul este programarea.** Construim instrucțiuni, anticipăm efectul lor, rulăm și schimbăm codul. Matematica 0–10 ne ajută să explicăm ce face programul.
 
-Este o introducere în ideile celor zece lecții, nu parcurgerea integrală a zece lecții într-o oră. Copiii anticipează, explică și verifică. Întâlnirile 1–10 rămân dedicate construirii în aplicația ScratchJr.
+Întâlnire de aproximativ **50 de minute**, pentru copii de **6–7 ani**. Profesorul lucrează pe laptop și proiectează. Copiii propun blocurile, răspund oral și vin uneori la laptop pentru a trage un bloc, modifica o valoare sau apăsa un personaj. Tabletele nu sunt necesare la Lecția 0.
 
-## Pregătire și pornire
+## Pornire
 
-1. Deschide prezentarea din meniul ScratchJr, prin **Lecția 0 · Laboratorul surprizelor**.
-2. Conectează proiectorul. Apasă **⛶** pentru ecran complet; dacă browserul nu permite, folosește **F11**.
-3. Verifică lizibilitatea din ultima bancă. Scena are proporție fixă 16:9; pe un proiector 4:3 rămân benzi libere sus și jos, fără să taie butoanele.
-4. La „Ascultă ritmul”, testează butonul **Ascultă / privește**. Poți ține sunetul laptopului oprit: cercurile arată fiecare sunet.
-5. Deschide **Cuprins**, apoi prima oprire, pentru a reveni la început.
+Deschide **Lecția 0 · Laboratorul de cod** din meniul siteului. Apasă **⛶** sau **F11** pentru ecran complet. Verifică lizibilitatea din ultima bancă și volumul sunetului Pop. Pagina păstrează aceeași proporție 16:9; pe proiector 4:3 apar benzi libere sus și jos.
 
-**Offline:** păstrează întregul folder al siteului și deschide `scratchjr/lectia-0/index.html`. Toate imaginile, sunetul și programele sunt locale; nu există biblioteci sau fonturi încărcate de pe alte siteuri. Nu salva doar pagina din browser. Nu ai de instalat nimic pe tabletele copiilor pentru Lecția 0.
+Toate resursele sunt în site. Nu există conturi, fișiere de instalat pe tablete sau importuri necesare. Pentru utilizare locală, păstrează întregul folder al proiectului și deschide `scratchjr/lectia-0/index.html` într-un browser modern. Verificarea în browserul integrat folosește serverul local; acesta nu permite testarea directă a adreselor `file://`. Înainte de folosirea fără internet, verifică deschiderea locală pe laptopul de la clasă.
 
-## Cum conduci o provocare
+## Cum construim un program
 
-Spune cerința, lasă timp pentru răspunsuri, cere „Cum ai aflat?”, apoi alege un răspuns sau invită un copil la laptop. **Răspunsul corect activează „Arată”. După demonstrație se activează „Mai departe”.** Nicio scenă nu avansează automat. Un răspuns greșit permite încă o încercare, fără scor, limită sau penalizare.
+1. **Alegem personajul** din lista de sub scenă sau apăsăm personajul înainte de rulare. Fiecare are codul său.
+2. **Alegem programul și pornirea.** Banda galbenă arată Steag verde, La apăsare, La mesaj sau La atingere. Un personaj poate avea până la trei programe; `＋` adaugă unul.
+3. **Tragem blocuri din paletă în zona albă.** Putem trage și între blocuri pentru a le reordona. Numărul, culoarea mesajului și pagina se schimbă direct pe bloc.
+4. **Repetiția are un interior real.** Tragem Repetă, apoi punem acțiunile în zona deschisă din interior. Modificăm separat numărul de repetări și valoarea acțiunii.
+5. **Prezicem rezultatul programului nostru**, alegând un număr sau un răspuns din lista din dreapta.
+6. **Rulează codul** pornește programele de la steagul verde. Blocurile executate sunt evidențiate. Pentru programele La apăsare, apoi apăsăm personajele vizibile.
+7. **Comparăm și modificăm.** Rezultatul vine din blocurile editate. De exemplu, de la 3, Dreapta 2 ajunge la 5; schimbat la Dreapta 4, ajunge la 7.
 
-- **Indiciu:** un ajutor scurt, fără a schimba scena.
-- **Reia / R:** readuce provocarea la început, cu o nouă alegere de răspuns.
-- **Încă o dată:** repetă demonstrația după rezolvare.
-- **← / →:** navigare; săgeata dreapta respectă verificarea răspunsului.
-- **Cuprins:** sari direct la orice oprire. În „Notițele profesorului” găsești răspunsul, întrebarea de discuție și **Continuă fără răspuns**, dacă ai nevoie să ajustezi ritmul.
-- **F:** intră/iese din ecran complet. **Esc:** închide cuprinsul sau ecranul complet.
+Modificarea codului șterge predicția și readuce scena la început, pentru o nouă anticipare. Un răspuns matematic greșit este explicat după rulare; nu ascunde un program care a atins ținta. **Mai departe** se activează când programul îndeplinește cerința. Nu există avansare automată, scor sau penalizare.
 
-Adresa reține scena curentă prin `?scena=...`; poți pune un semn de carte la o oprire. Reîncărcarea paginii reia acea provocare de la început. Nu se păstrează nume sau rezultate ale copiilor.
+### Dacă tragerea este dificilă
 
-## Desfășurarea celor 50 de minute
+Poți **apăsa un bloc din paletă** ca să-l adaugi. Pentru a alege alt loc, apasă semnul `+` dintre blocuri, apoi blocul din paletă. După adăugarea unei repetiții, următoarea apăsare adaugă în interiorul ei. Apasă `+` din afara repetiției pentru a continua programul principal.
 
-| Minute | Oprire | Predicția / răspunsul | Ce observăm |
-| --- | --- | --- | --- |
-| 0–4 | Bun venit | Cine le spune personajelor ce să facă? | Noi alegem acțiunile |
-| 4–8 | 1 · Pași care se adună | 3 + 2 = **5** | Pornire, direcție, ordine |
-| 8–11 | 2 · Încă o dată! | 2 + 2 + 2 = **6** | Trei grupe identice |
-| 11–15 | 3 · Magia dispariției | 7 − 3 = **4** | Ascunderea păstrează personajul |
-| 15–19 | 4 · Plicul potrivit | **Cățelul** | Reacționează destinatarul culorii potrivite |
-| 19–23 | 5 · Ascultă ritmul | 2 + 1 = **3** | Pauza nu este un sunet |
-| 23–26 | Pauză de mișcare | Două bătăi, un salt, statuie | Urmărim o succesiune |
-| 26–30 | 6 · Comoara la atingere | 10 − 4 = **6** | Contactul pornește o reacție |
-| 30–34 | 7 · Ușa către poveste | 3 + 4 = **7** | Trecem la o pagină nouă |
-| 34–38 | 8 · Statuile fermecate | 6 − 4 = **2** | Oprim unele personaje, altele continuă |
-| 38–42 | 9 · Lanțul descoperirilor | **Fluturele**, apoi cățelul, apoi mingea | Descoperirile se deschid pe rând |
-| 42–48 | 10 · Marea finală — dificil | 4 + 3 − 2 = **5** | Verificăm două etape; întoarcere numai la final |
-| 48–50 | Încheiere | Ce ai vrea să construiești? | Alegem, legăm acțiuni, testăm |
+Apasă un bloc deja adăugat ca să-l selectezi; săgețile mici de sub program îl mută. **Șterge** elimină blocul selectat. Poți trage un bloc direct pe Șterge. **Înapoi** anulează ultima modificare, inclusiv ștergeri și încărcarea unui exemplu.
 
-**Momente potrivite pentru voluntari:** opririle 1, 4, 7 și 9; încă un copil poate relua finala. La oprirea 9, după răspuns și „Arată”, copilul apasă personajele din scenă în ordinea în care apar. Butonul pentru continuare se activează după întreaga descoperire.
+## Controalele profesorului
 
-**Dacă timpul se scurtează:** păstrează pauza, finala și încheierea. Folosește cuprinsul pentru a trece peste o demonstrație; nu transforma răspunsurile într-o cursă. Opririle 6–9 pot deveni câte o demonstrație scurtă a profesorului.
+- **Stop / Esc:** oprește execuția, sunetele și dansul; păstrează codul.
+- **Reia scena / R:** pune personajele la început, păstrând codul. Următoarea rulare începe tot de la pozițiile inițiale.
+- **Golește:** elimină blocurile programului selectat. Celelalte programe rămân. Înapoi recuperează codul.
+- **♫:** activează/dezactivează sunetul. La ritm, cercurile arată fiecare Pop chiar și fără sunet.
+- **Cuprins:** salt la oricare dintre cele 15 momente. Codul fiecărei activități se păstrează cât timp pagina rămâne deschisă.
+- **Cuprins → Pentru profesor:** explicația, **Încarcă exemplul editabil**, revenirea la începutul activității și trecerea peste o activitate. Exemplul completează programele, fără să ruleze automat. Cere copiilor să schimbe ceva în el și să prezică din nou.
+- **F:** ecran complet. Spațiu poate porni codul când focalizarea nu este pe un buton sau o listă. Controalele sunt accesibile și prin Tab/Enter.
 
-## Două rezerve, peste cele 50 de minute
+Reîncărcarea sau închiderea paginii resetează programele. Nu este un sistem de salvare a proiectelor; nu păstrează date despre copii. Adresa `?scena=...` reține doar activitatea de pornire.
 
-- **A · Dispărut tot! (5 min):** 5 − 5 = **0**. „Nu mai vedem nicio minge” este un rezultat valid. Reia le arată din nou.
-- **B · Până la zece (5–8 min):** 6 + □ = 10, lipsește **4**. Întâi numărăm locurile libere, apoi verificăm suma.
+## Desfășurător — 50 de minute
+
+Ritmul este orientativ. **Construim pe îndelete primele cinci idei**; opririle 6–10 pot fi demonstrații scurte cu un exemplu încărcat și modificat împreună. Nu încercăm să predăm zece lecții complete într-o oră.
+
+| Minute | Activitate și cod de referință | Matematică / verificare |
+| --- | --- | --- |
+| 0–4 | Introducere: bloc → instrucțiune → efect | Copiii explică ce cred că se va întâmpla |
+| 4–8 | 1. Iepuraș: Steag → Dreapta 2. Schimbăm la 4, apoi revenim. | De la 3 ajungem la 5; după schimbare, la 7 |
+| 8–12 | 2. Iepuraș: Steag → Repetă 3 [Dreapta 2] | 2 + 2 + 2 = 6 |
+| 12–16 | 3. Trei mingi: fiecare Steag → Ascunde | 7 − 3 = 4; Arată după Ascunde schimbă rezultatul |
+| 16–20 | 4. Fluture: Steag → Trimite portocaliu | Se mărește cățelul; albastru îl mărește pe iepuraș |
+| 20–24 | 5. Iepuraș: Steag → Pop → Pop → Așteaptă 10 → Pop | 2 + 1 = 3; mutarea pauzei schimbă ritmul |
+| 24–27 | Pauză: palme, salt, statuie; schimbăm ordinea | Urmăm programul profesorului |
+| 27–30 | 6. Iepuraș: Dreapta 4. Mingile au La atingere → Ascunde. | 10 − 4 = 6 |
+| 30–33 | 7. Iepuraș: Dreapta 4 → Pagina Plajă | 3 + 4 = 7; inversarea blocurilor schimbă rezultatul |
+| 33–36 | 8. Telecomandă: Așteaptă 5 → Trimite portocaliu | Din 6 dansatori se opresc 4, rămân 2 |
+| 36–41 | 9. Fluture: La apăsare → portocaliu. Cățel: La apăsare → albastru. Minge: La apăsare → Pagina Noapte. | Urmărim lanțul și prezicem pagina finală |
+| 41–48 | 10. Regizor: portocaliu → Așteaptă 10 → albastru → Așteaptă 5 → Pop | 4 + 3 − 2 = 5; trebuie să vedem mai întâi 7, apoi 5, apoi Pop |
+| 48–50 | Încheiere: ce bloc schimbăm pentru altă surpriză? | Legăm rezultatul de cod |
+
+**Rezerve, peste cele 50 de minute:** A — de la 5 la 0 cu Stânga 5 (sau Repetă 5 [Stânga 1]); B — de la 6 la 10 cu Dreapta 4, găsind numărul lipsă în 6 + □ = 10.
+
+**Voluntari:** pot construi prima mișcare, pune blocul în repetiție, reordona Ascunde/Arată, alege culoarea unui mesaj sau juca lanțul de descoperiri. Restul clasei propune și prezice. Evităm să cerem copierea intenționată a unui program greșit; comparațiile pornesc din modificarea unui program construit de noi.
+
+## Ce este pregătit și ce este editabil
+
+În activitățile 1–3, 5 și rezerve, codul de lucru începe gol. În celelalte, câțiva receptori sunt pregătiți: personajele care primesc mesaje, comorile care se ascund, dansatorii sau personajele care apar. Sunt toate vizibile în selector și **toate programele lor pot fi editate**. De exemplu, schimbarea culorii primite de cățel schimbă destinatarul efectiv al mesajului.
+
+Atelierul include mișcare, salt, mărire/micșorare, arată/ascunde, Pop, așteptare, repetiție, mesaje, oprire și pagini. Limitele deliberate pentru proiector: axa 0–10, cel mult 8 blocuri într-un program, o adâncime de repetiție, trei programe pe personaj și cel mult 10 Pop într-o rulare. Programele prea lungi sunt oprite cu explicație. La dans, execuția este previzualizată timp de 6 secunde; dansatorii rămași activi sunt animați până la Stop.
 
 ## Legătura cu ScratchJr
 
-Aceasta este o **prezentare interactivă pentru profesor**, cu animații pregătite, nu editorul ScratchJr și nu un proiect SJR de importat. Folosește personaje și decoruri din biblioteca standard: Rabbit, Dog, Butterfly, Ball, Park, BeachDay și BeachNight, plus Pop. Numerele, cercurile mov, ușile, ecuațiile și etichetele sunt ajutoare ale prezentării.
+Este un **editor web educațional simplificat, inspirat de ScratchJr**, cu un motor care execută blocurile. Nu este aplicația oficială, nu include toate funcțiile ei și nu exportă proiecte SJR. Personajele, interacțiunile și ideile pregătesc lecțiile practice în aplicație. Banda de pornire se editează prin liste, iar blocurile de acțiune se trag în program. Axa 0–10 este o regulă a atelierului; nu reproduce trecerea peste marginea scenei din ScratchJr.
 
-Benzile colorate explică ideea programului; nu sunt blocuri pe care le tragem. De exemplu, la dispariție fiecare minge are propria acțiune Ascunde — nu există un bloc „Ascunde 3”. La lecțiile practice, blocurile exacte și construcția se găsesc în materialele lecțiilor 1–10. Copiii folosesc numai biblioteca inclusă în aplicația instalată, fără distribuirea resurselor acestei pagini.
+Folosim numai grafica și sunetul standard: Rabbit, Dog, Butterfly, Ball, Park, BeachDay, BeachNight și Pop. Numerele și interfața sunt ajutoare de predare. La lecțiile 1–10, copiii creează în aplicația ScratchJr instalată, fără fișiere de copiat.
 
-## Verificare și surse
+## Verificări și surse
 
-[Raportul testelor acestei prezentări](../../verificare_site/lectia-0/README.md). Testarea în browser a prezentării nu înlocuiește verificarea inițială a aplicației ScratchJr pe un Lenovo înainte de lecțiile practice.
+[Raportul testelor editorului](../../verificare_site/lectia-0/README.md). Verificarea în browser nu înlocuiește proba de sunet și lizibilitate pe proiectorul fizic.
 
-Resursele grafice standard și sunetul provin din distribuția ScratchJr, regăsite în [ScratchJr Desktop — biblioteca sursă](https://github.com/jfo8000/ScratchJr-Desktop/tree/master/src/app). Sunt păstrate [licența BSD](assets/LICENSE-ScratchJr.txt) și [notificarea mărcilor](assets/TRADEMARKS.txt). Scratch și ScratchJr sunt mărci ale MIT; această prezentare educațională independentă nu este sponsorizată, aprobată sau autorizată de MIT. Nu folosește sigla sau pisica Scratch ca identitate a prezentării.
+Resurse standard din [biblioteca ScratchJr Desktop](https://github.com/jfo8000/ScratchJr-Desktop/tree/master/src/app), cu [licența BSD](assets/LICENSE-ScratchJr.txt) și [notificarea mărcilor](assets/TRADEMARKS.txt). Scratch și ScratchJr sunt mărci ale MIT; acest atelier independent nu este sponsorizat, aprobat sau autorizat de MIT.

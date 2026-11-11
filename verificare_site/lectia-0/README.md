@@ -1,25 +1,43 @@
-# Verificarea Lecției 0
+# Verificarea editorului Lecția 0
 
-Prezentare: [Laboratorul surprizelor](../../scratchjr/lectia-0/index.html).
+[Deschide Laboratorul de cod](../../scratchjr/lectia-0/index.html) · [Ghidul profesorului](../../scratchjr/lectia-0/README.md)
 
-Verificare locală în browser, 11 noiembrie 2026. Acest raport privește prezentarea web Lecția 0, nu o nouă testare a aplicației Android ScratchJr.
+Versiunea editabilă, 11 noiembrie 2026. Testarea privește editorul web educațional, nu aplicația oficială ScratchJr.
 
-- Parcurse toate cele **15 scene**: introducere, zece opriri, pauză, încheiere și două rezerve.
-- Verificate rezultatele: 5 pași, 6 pași prin repetiție, 4 mingi vizibile, destinatarul portocaliu, 3 impulsuri vizuale, 6 comori rămase, pagina de plajă, 2 dansatori activi, lanțul complet de descoperiri, 5 animale la final, zero mingi, completarea până la 10.
-- Răspunsul greșit nu permite continuarea. Răspunsul corect cere încă demonstrația. Nu există avansare automată.
-- Personajele ascunse nu pot fi apăsate. Finala oferă întoarcerea numai după terminarea spectacolului. Reia readuce întrebarea și blochează din nou continuarea.
-- Verificate cuprinsul și navigarea între toate scenele. Verificate dimensiunile de proiector **1280 × 720** și **1024 × 768**; scena păstrează aceeași proporție, iar controalele rămân în cadru. Pe 4:3 există benzi libere, intenționat.
-- Corectate în timpul verificării: lățimea etichetelor plicurilor, contrastul răspunsului corect după selectare și spațiul dintre obiectele de numărat și legenda scenei.
-- În browserul integrat, ecranul complet nu este disponibil; butonul oferă indicația F11. Verificarea pe proiectorul fizic rămâne de făcut înainte de clasă.
-- Ritmul a fost verificat vizual; fișierul Pop este local. Testele automate verifică și continuarea când browserul refuză sunetul. Volumul și audibilitatea în clasă se verifică pe laptop.
-- Pagina nu are dependențe externe. Pornirea directă prin `file://` nu a putut fi testată în browserul integrat, care blochează acest protocol; verificarea interactivă a folosit serverul local. Înainte de utilizare fără internet, deschide fișierul din folder în browserul laptopului.
-- **129 teste automate trecute**, inclusiv șapte pentru Lecția 0: calcule 0–10, toate demonstrațiile, răspunsuri și avansare, anularea animațiilor la schimbare/resetare, lanțul de descoperiri, tastatură și adresă de scenă invalidă. Verificarea sintaxei JavaScript a trecut.
-- Legăturile locale ale întregului site au fost verificate prin HTTP; raportul este în [local-links.json](../local-links.json).
+## Execuție și editare
 
-Datele verificării vizuale: [browser.json](browser.json). Imagini: [16:9](projector-16-9.png), [4:3](projector-4-3.png).
+În browser au fost rulate toate cele **12 activități de codare**: zece opriri și două rezerve. Toate exemplele editabile au atins țintele. Introducerea, pauza și încheierea completează cele 15 momente.
 
-## Verificarea publicării
+Au fost verificate prin interacțiuni reale:
 
-Versiunea `03ffc57` a fost publicată cu succes pe GitHub Pages. Au trecut **326 verificări de adrese ale siteului**, cu conținut comparat cu fișierele publicate: [raport HTTP](../live-links.json). Au fost verificate separat toate cele zece fișiere din folderul de resurse al prezentării, inclusiv imaginile încărcate din program și sunetul: [resurse publice](live-assets.json).
+- tragerea unui bloc din paletă în program și într-o zonă goală de după blocuri;
+- tragerea unei acțiuni în interiorul unei repetiții;
+- modificarea Dreapta 2 în Dreapta 4: rezultatul a trecut de la 5 la 7;
+- reordonarea prin tragere: Ascunde → Arată lasă 7 mingi; Arată → Ascunde lasă 6;
+- tragerea unui bloc la Șterge și recuperarea lui prin Înapoi;
+- păstrarea valorii editate la plecarea dintr-o activitate și revenire;
+- schimbarea mesajului portocaliu în albastru: s-a mărit iepurașul în locul cățelului;
+- trei sunete și impulsurile vizuale, contactul care ascunde comori, schimbarea paginii;
+- patru dansatori opriți și doi rămași activi; Stop a oprit și animațiile rămase;
+- personajele ascunse indisponibile pentru apăsare, apoi lanțul complet fluture–cățel–minge–noapte;
+- finala cu șapte animale intermediare, cinci la sfârșit și Pop după plecare;
+- rezultatele 0 și 10 din rezerve;
+- Stop în timpul unei repetiții și Reia scena, care păstrează codul și restaurează poziția inițială.
 
-În browser, legătura de pe pagina principală a deschis Lecția 0. Au fost repetate răspunsul greșit, blocarea continuării, răspunsul corect și animația până la 5: [captură de pe siteul public](live-projector.png). Prezentarea a fost lăsată la introducere.
+[Rezultatele din browser](coding-browser.json) includ verificările și inspecția celor 15 ecrane la **1024 × 768**. Nu au fost găsite controale tăiate sau selectoare de predicție ascunse. Au fost inspectate și ecranele la **1280 × 720**. [Captură 16:9](coding-16-9.png) · [Captură 4:3](coding-4-3.png).
+
+## Verificări automate
+
+**135 teste trecute**, dintre care 13 pentru editor: soluțiile tuturor activităților, schimbări reale de valori și ordine, corpul repetiției, rutarea mesajelor și editarea receptorilor, contact, pauze și ordinea finalei, oprire, blocarea personajelor ascunse, limite de execuție, undo, ștergere/reordonare, predicții invalidate la editare, anularea animațiilor, păstrarea codului și refuzul redării audio. Verificarea sintaxei JavaScript a trecut.
+
+Testele rulează cu `npm test`; verificarea sintaxei cu `npm run check`. Motorul execută programele date de editor; activitățile nu pornesc animații fixe bazate pe răspuns.
+
+## Limite ale verificării
+
+Sunetul Pop a fost solicitat de browser, iar ritmul a fost verificat vizual. Volumul și audibilitatea se verifică pe laptopul de la clasă. Testele verifică și continuarea corectă când redarea audio este refuzată.
+
+Testarea interactivă locală a folosit HTTP. Browserul integrat blochează `file://`; deschiderea directă a folderului se verifică în browserul laptopului înainte de utilizare offline. Nu există resurse externe necesare rulării.
+
+Verificarea pe proiectorul fizic rămâne de făcut. Dacă ecranul complet nu este disponibil în browser, interfața indică F11.
+
+Fișierele `browser.json`, `projector-*.png` și `live-projector.png` din acest folder sunt dovezi ale versiunii anterioare, cu demonstrații fixe. Dovezile versiunii editabile au prefixul `coding-`.

@@ -1,255 +1,189 @@
-(function () {
+(function(){
   'use strict';
-  const scenes = window.LESSON_ZERO;
-  const $ = id => document.getElementById(id);
-  const assets = name => `assets/${name}.svg`;
-  const picture = (name, cls = 'sprite', alt = '') => `<img class="${cls}" src="${assets(name)}" alt="${alt}" draggable="false">`;
-  let index = Math.max(0, scenes.findIndex(s => s.id === new URLSearchParams(location.search).get('scena')));
-  let solved = false, played = false, busy = false, epoch = 0, chainStep = 0;
-  const timers = new Map(), sounds = new Set();
-  function cancel() {
-    epoch++;
-    for (const [id, resolve] of timers) { clearTimeout(id); resolve(false); }
-    timers.clear();
-    for (const audio of sounds) { audio.pause(); audio.currentTime = 0; }
-    sounds.clear();
-    busy = false;
+  const E=window.CodingEngine,scenes=window.LESSON_ZERO,$=id=>document.getElementById(id);
+  const names={flag:'Steag verde',tap:'La apăsare',message:'La mesaj',bump:'La atingere'};
+  const models=new Map(),pending=new Map(),sounds=new Set();
+  let index=Math.max(0,scenes.findIndex(s=>s.id===new URLSearchParams(location.search).get('scena'))),project,state,selected=null,insertion={parent:'',index:0},serial=10000,busy=false,armed=false,passed=false,epoch=0,muted=false,drag=null,lastDrag=0;
+  const scene=()=>scenes[index],body=()=>project.programs[project.actor][project.script].body;
+  const hasCode=()=>Object.values(project.programs).some(ss=>ss.some(s=>s.body.length));
+  function say(text){$('feedback').textContent=text;}
+  function stop(){epoch++;for(const [id,resolve] of pending){clearTimeout(id);resolve(false);}pending.clear();for(const a of sounds){a.pause();a.currentTime=0;}sounds.clear();busy=false;armed=false;if(state)Object.values(state.actors).forEach(a=>{a.dancing=false;a.jump=0;});clearDrag();}
+  function wait(ms,token){return new Promise(resolve=>{if(token!==epoch)return resolve(false);const id=setTimeout(()=>{pending.delete(id);resolve(token===epoch);},ms);pending.set(id,resolve);});}
+  function locate(id,list=body(),parent=''){for(let i=0;i<list.length;i++){if(list[i].id===id)return{block:list[i],list,index:i,parent};if(list[i].children){const found=locate(id,list[i].children,list[i].id);if(found)return found;}}return null;}
+  function sequence(parent){return parent?locate(parent)?.block.children:body();}
+  function count(list){return list.reduce((n,b)=>n+1+(b.children?count(b.children):0),0);}
+  function controls(){
+    const editable=!!scene().actors;
+    $('previous').disabled=index===0;
+    $('next').disabled=index===scenes.length-1||(editable&&!passed);
+    $('next').textContent=scene().mode==='closing'?'Rezerve →':index===scenes.length-1?'Am terminat!':'Mai departe →';
+    $('run').disabled=!editable||busy||$('prediction').value===''||!hasCode();
+    $('stop').disabled=!editable||(!busy&&!armed&&!Object.values(state.actors).some(a=>a.dancing));
+    $('hint').disabled=!scene().hint;
+    $('reset').disabled=!editable;
+    for(const id of ['actor','script','trigger','channel','prediction','clear'])$(id).disabled=busy||!editable;
+    $('add-script').disabled=!editable||busy||(project.programs[project.actor]?.length||0)>=3;
+    $('undo').disabled=!editable||busy||!project.undo.length;
+    $('example').disabled=!editable;$('restart').disabled=!editable;
+    document.querySelectorAll('.palette-block,.block-handle,.block-value,.drop-slot').forEach(el=>el.disabled=busy);
+    const found=editable&&selected?locate(selected):null;
+    $('delete').disabled=busy||!found;$('move-left').disabled=busy||!found||found.index===0;$('move-right').disabled=busy||!found||found.index===found.list.length-1;
+    document.querySelectorAll('.stage-actor').forEach(el=>{el.disabled=busy||(armed&&!project.programs[el.dataset.actor].some(s=>s.trigger==='tap'));});
   }
-  function wait(ms, token) {
-    return new Promise(resolve => {
-      if (token !== epoch) return resolve(false);
-      const id = setTimeout(() => { timers.delete(id); resolve(token === epoch); }, ms);
-      timers.set(id, resolve);
-    });
+  function invalidate(){stop();passed=false;$('prediction').value='';state=E.initial(scene());drawStage();renderEditor();controls();}
+  function mutate(fn,message='Cod schimbat. Prezicem din nou, apoi rulăm.'){
+    if(busy)return;
+    const before=E.clone(project.programs);if(fn()===false)return;
+    project.undo.push(before);if(project.undo.length>30)project.undo.shift();invalidate();say(message);
   }
-  function feedback(text) { $('feedback').textContent = text; }
-  function controls() {
-    const s = scenes[index];
-    $('previous').disabled = index === 0;
-    $('next').disabled = index === scenes.length - 1 || !!s.choices && !played;
-    $('next').textContent = s.mode === 'closing' ? 'Rezerve →' : index === scenes.length - 1 ? 'Am terminat!' : 'Mai departe →';
-    $('demo').disabled = !s.choices || !solved || busy;
-    $('demo').textContent = played ? '▶ Încă o dată' : '▶ Arată';
-    $('hint').disabled = !s.hint || busy;
-    const listen = $('listen');
-    if (listen) listen.disabled = busy;
+  function add(type,parent=insertion.parent,at=insertion.index){
+    const list=sequence(parent);if(!list)return;
+    if(count(body())>=8){say('Folosim cel mult 8 blocuri în acest program. Poți folosi o repetiție.');return;}
+    if(type==='repeat'&&parent){say('Pune repetiția în programul principal.');return;}
+    const def=E.BLOCKS[type],block={id:`b${++serial}`,type,...(def.value!==undefined?{value:def.value}:{}),...(type==='repeat'?{children:[]}: {})};
+    mutate(()=>{list.splice(Math.min(at,list.length),0,block);selected=block.id;insertion=type==='repeat'?{parent:block.id,index:0}:{parent,index:Math.min(at,list.length-1)+1};},type==='repeat'?'Acum trage o acțiune în interiorul repetiției.':'Bloc adăugat. Poți schimba numărul sau ordinea.');
   }
-  function grid(count, marked = 0, missing = false) {
-    return `<div class="object-grid">${Array.from({length: count}, (_,i) => `<div class="object${i < marked ? ' marked' : ''}${missing && i >= 6 ? ' empty' : ''}" data-object="${i}">${missing && i >= 6 ? '' : picture('Ball','','Minge')}</div>`).join('')}</div>`;
+  function move(id,parent,at){
+    const found=locate(id),target=sequence(parent);if(!found||!target)return;
+    if(parent===id||(found.block.children&&parent)){say('Repetiția rămâne în programul principal.');return;}
+    if(found.list===target&&found.index<at)at--;
+    if(found.list===target&&found.index===at)return;
+    mutate(()=>{found.list.splice(found.index,1);target.splice(Math.min(at,target.length),0,found.block);selected=id;insertion={parent,index:at+1};},'Ordinea s-a schimbat. Ce va face acum programul?');
   }
-  function renderStage(s) {
-    $('stage').className = '';
-    switch(s.mode) {
-      case 'intro':
-        $('stage').innerHTML = `<div class="stage-content">${picture('Rabbit','sprite hero-sprite')}<div class="welcome-sign">10 opriri. O mulțime de surprize.<small>Tu alegi. Personajele prind viață.</small></div>${picture('Dog','sprite hero-sprite')}</div>`; break;
-      case 'steps': case 'repeat':
-        $('stage').innerHTML = `<div class="number-track">${Array.from({length:11},(_,i)=>`<span data-number="${i}">${i}</span>`).join('')}</div><div class="runner">${picture('Rabbit')}</div>${s.mode === 'repeat' ? '<div class="groups"><span class="group">2 pași</span><span class="group">2 pași</span><span class="group">2 pași</span></div>' : ''}`;
-        moveRunner(s.mode === 'steps' ? 3 : 0); break;
-      case 'hide': case 'collect':
-        $('stage').innerHTML = grid(s.count, s.remove) + (s.mode === 'collect' ? picture('Rabbit','collector') : '') + '<div class="stage-label">Privește personajele marcate cu cerc mov.</div>'; break;
-      case 'missing': $('stage').innerHTML = grid(10,0,true); break;
-      case 'message':
-        $('stage').innerHTML = `<div class="stage-content"><div class="message-character">Fluturele${picture('Butterfly')}<span class="envelope orange">✉ →</span></div><div class="message-character">Iepurașul${picture('Rabbit')}<span class="envelope blue">✉ ALBASTRU</span></div><div class="message-character">Cățelul${picture('Dog')}<span class="envelope orange">✉ PORTOCALIU</span></div></div>`; break;
-      case 'rhythm':
-        $('stage').innerHTML = '<div class="stage-content rhythm-stage"><div class="beats"><span class="beat">♪</span><span class="beat">♪</span><span class="rest">pauză</span><span class="beat">♪</span></div><button id="listen">♫ Ascultă / privește</button></div>';
-        $('listen').addEventListener('click', () => rhythm(false)); break;
-      case 'break':
-        $('stage').innerHTML = '<div class="stage-content idea-cards"><div class="idea-card"><div class="break-icon">👏</div>Două bătăi</div><div class="idea-card"><div class="break-icon">↑</div>Un salt mic</div><div class="idea-card"><div class="break-icon">✋</div>Statuie!</div></div>'; break;
-      case 'page':
-        $('stage').innerHTML = '<div class="stage-content doors"><div class="door">6</div><div class="door">7</div><div class="door">8</div></div>'; break;
-      case 'freeze':
-        $('stage').innerHTML = `<div class="stage-content dancers">${Array.from({length:6},(_,i)=>`<div class="dancer dancing${i<4?' marked':''}">${picture(i%2 ? 'Dog':'Rabbit')}</div>`).join('')}</div>`; break;
-      case 'chain':
-        chainStep = 0;
-        $('stage').innerHTML = `<div class="stage-content">${['Butterfly','Dog','Ball'].map((a,i)=>`<button class="chain-button${i?' hidden-target':''}" id="chain-${i}" disabled aria-label="${['Fluturele','Cățelul','Mingea'][i]}">${picture(a)}</button>`).join('')}</div><div class="stage-label">Unele surprize încă se ascund.</div>`;
-        [0,1,2].forEach(i=>$(`chain-${i}`).addEventListener('click',()=>chain(i))); break;
-      case 'final':
-        $('stage').innerHTML = `<div class="stage-content final-animals">${Array.from({length:7},(_,i)=>picture(i<4?'Rabbit':'Dog',`sprite${i>=4?' waiting':''}`)).join('')}</div><div class="stage-label">Pe scenă sunt patru iepurași. Trei căței așteaptă să intre.</div>`; break;
-      case 'closing':
-        $('stage').innerHTML = `<div class="stage-content idea-cards"><div class="idea-card">${picture('Rabbit')}Alegem personaje</div><div class="idea-card">${picture('Butterfly')}Le dăm idei</div><div class="idea-card">${picture('Dog')}Încercăm împreună</div></div>`; break;
-    }
+  function remove(){const found=selected&&locate(selected);if(found)mutate(()=>{found.list.splice(found.index,1);selected=null;insertion={parent:'',index:body().length};},'Bloc șters. Poți reveni cu „Înapoi”.');}
+  function slot(parent,at,empty){const el=document.createElement('button');el.className='drop-slot';el.dataset.parent=parent;el.dataset.at=at;el.setAttribute('aria-label',`Inserează ${parent?'în repetiție':'în program'} la locul ${at+1}`);el.textContent=empty?(parent?'Trage aici acțiunea':'Trage primul bloc aici'):'+';if(insertion.parent===parent&&insertion.index===at)el.classList.add('insert-here');el.onclick=()=>{insertion={parent,index:at};renderEditor();say('Loc ales. Apasă un bloc din paletă sau trage-l aici.');};return el;}
+  function renderSequence(list,parent=''){
+    const el=document.createElement('div');el.className='sequence';el.dataset.parent=parent;
+    list.forEach((b,i)=>{el.append(slot(parent,i,false));const def=E.BLOCKS[b.type],block=document.createElement('div');block.className=`code-block ${def.color}${b.children?' repeat-block':''}${selected===b.id?' selected':''}`;block.dataset.block=b.id;
+      const head=document.createElement('div');head.className=b.children?'repeat-head':'block-head';
+      const handle=document.createElement('button');handle.className='block-handle';handle.dataset.block=b.id;handle.textContent=`${def.icon} ${def.label}`;handle.setAttribute('aria-label',`Selectează sau trage ${def.label}`);handle.onclick=()=>{if(Date.now()-lastDrag<300)return;selected=b.id;renderEditor();};head.append(handle);
+      if(def.value!==undefined){const value=document.createElement('select');value.className='block-value';value.setAttribute('aria-label',`Valoare ${def.label}`);const options=def.options?Object.entries(def.options):Array.from({length:def.max-def.min+1},(_,i)=>[def.min+i,String(def.min+i)]);for(const [val,label]of options)value.add(new Option(label,val));value.value=String(b.value);value.onchange=()=>mutate(()=>{b.value=def.options?value.value:Number(value.value);selected=b.id;});head.append(value);}
+      block.append(head);if(b.children)block.append(renderSequence(b.children,b.id));el.append(block);
+    });el.append(slot(parent,list.length,!list.length));return el;
   }
-  function moveRunner(n) {
-    const cell = $('stage').querySelector(`[data-number="${n}"]`);
-    $('stage').querySelector('.runner').style.left = `${75 + cell.offsetLeft}px`;
-    $('stage').querySelectorAll('[data-number]').forEach(el => el.classList.toggle('lit', Number(el.dataset.number) === n));
-  }
-  function render() {
-    cancel(); solved = false; played = false;
-    const s = scenes[index];
-    $('topic').textContent = s.topic; $('title').textContent = s.title;
-    $('question').textContent = s.question; $('equation').textContent = s.expression || '';
-    $('program').innerHTML = s.program.map(p=>{const [cls,label]=p.split('|');return `<span class="chip ${cls}">${label}</span>`;}).join('');
-    $('answers').replaceChildren();
-    if(s.choices) {
-      for(const answer of s.choices) {
-        const button = document.createElement('button');
-        button.textContent = String(answer);
-        button.className = typeof answer === 'string' ? 'word-answer' : '';
-        button.addEventListener('click',()=>choose(answer,button));
-        $('answers').append(button);
-      }
-    } else {
-      $('answers').innerHTML = s.mode === 'closing' ? '<div class="intro-action"><a href="../../materiale/Lectia_01_ScratchJr/index.html">La următoarea întâlnire: construim în ScratchJr →</a></div>' : `<div class="intro-action">${s.mode === 'intro' ? 'Răspundem cu voce tare. Uneori, venim la laptop!' : 'Lângă scaun, cu loc pentru fiecare.'}</div>`;
-    }
-    $('progress').textContent = s.number ? `Oprirea ${s.number} / 10` : s.id.startsWith('rezerva') ? 'Extra · opțional' : s.mode === 'intro' ? 'Pornim împreună' : s.mode === 'break' ? 'Ne dezmorțim' : 'Bravo, creatori!';
-    $('teacher-notes').textContent = `${s.note}${s.answer !== undefined ? ` Răspuns: ${s.answer}.` : ''}`;
-    $('scene-list').querySelectorAll('button').forEach((b,i)=>{ if(i === index) b.setAttribute('aria-current','step'); else b.removeAttribute('aria-current'); });
-    renderStage(s);
-    feedback(s.choices ? 'Mai întâi, spunem ce credem. Apoi alegem un răspuns.' : 'Profesorul alege când mergem mai departe.');
+  function renderEditor(){
+    if(!scene().actors)return;
+    $('actor').replaceChildren();scene().actors.forEach(a=>$('actor').add(new Option(a.name,a.id)));$('actor').value=project.actor;
+    $('script').replaceChildren();project.programs[project.actor].forEach((s,i)=>$('script').add(new Option(`${i+1} · ${names[s.trigger]}`,i)));$('script').value=project.script;
+    const current=project.programs[project.actor][project.script];$('trigger').value=current.trigger;$('channel').value=current.color;$('channel').hidden=current.trigger!=='message';
+    $('workspace').replaceChildren(renderSequence(body()));
+    const found=selected&&locate(selected);$('selection-label').textContent=found?`${E.BLOCKS[found.block.type].label} selectat · poți muta sau șterge`:'Trage blocuri. Schimbă valorile. Prezice rezultatul.';
     controls();
-    try { const url = new URL(location.href); url.searchParams.set('scena',s.id); history.replaceState(null,'',url); } catch (_) { /* Local files can restrict history. */ }
   }
-  function choose(answer, button) {
-    if (busy || solved) return;
-    const s = scenes[index];
-    $('answers').querySelectorAll('button').forEach(b=>b.classList.remove('try-again'));
-    if (answer !== s.answer) {
-      button.classList.add('try-again'); feedback('Mai privim o dată. Numărăm și încercăm din nou.'); return;
+  function setupStage(){
+    const s=scene();$('stage').replaceChildren();
+    if(!s.actors){$('stage').innerHTML=`<div class="stage-welcome"><img src="assets/Rabbit.svg" alt=""><strong>${s.mode==='intro'?'Personajele urmează codul nostru.':s.mode==='break'?'👏 👏 → un salt → statuie!':'O idee. Un program. O surpriză.'}<small>${s.mode==='intro'?'Tu alegi blocurile. Noi prezicem împreună.':s.mode==='break'?'Schimbăm ordinea și încercăm din nou.':'Ce ai vrea să construiești în ScratchJr?'}</small></strong><img src="assets/Dog.svg" alt=""></div>`;return;}
+    const status=document.createElement('div');status.id='stage-status';$('stage').append(status);
+    if(s.mode==='track'){const track=document.createElement('div');track.className='number-track';track.innerHTML=Array.from({length:11},(_,i)=>`<span data-number="${i}">${i}</span>`).join('');$('stage').append(track);}
+    if(s.mode==='rhythm'){const beats=document.createElement('div');beats.className='beats';beats.id='beats';$('stage').append(beats);}
+    s.actors.forEach((a,i)=>{const el=document.createElement('button');el.className='stage-actor';el.dataset.actor=a.id;el.setAttribute('aria-label',a.name);el.innerHTML=`<img src="assets/${a.asset}.svg" alt="" draggable="false"><span>${a.name}</span>`;
+      if(a.group==='balls'&&s.mode==='track')el.classList.add('small');
+      if(a.group==='controls'&&['dance','final'].includes(s.mode))el.classList.add('control');
+      if(s.mode==='objects'){el.style.left=`${16+(i%5)*17}%`;el.style.top=`${i<5?40:150}px`;el.style.height='105px';el.querySelector('img').style.height='74px';}
+      el.onclick=()=>{if(busy)return;if(armed)execute({type:'tap',actor:a.id});else{project.actor=a.id;project.script=0;selected=null;insertion={parent:'',index:body().length};renderEditor();drawStage();}};
+      $('stage').append(el);
+    });drawStage();
+  }
+  function drawStage(active=[]){
+    const s=scene();$('stage').className=state.page==='park'?'':state.page;
+    if(!s.actors)return;
+    for(const el of $('stage').querySelectorAll('.stage-actor')){
+      const a=state.actors[el.dataset.actor];el.hidden=!a.visible||a.page!==state.page;
+      if(s.mode!=='objects')el.style.left=`${8+a.x*8.4}%`;
+      el.querySelector('img').style.transform=`translateY(${-a.jump*18}px) scale(${a.scale})`;
+      el.classList.toggle('dancing',a.dancing&&!busy);el.classList.toggle('executing',active.some(step=>step.actor===a.id));el.setAttribute('aria-pressed',String(a.id===project.actor&&!armed));
     }
-    solved = true; button.classList.add('correct');
-    $('answers').querySelectorAll('button').forEach(b=>b.disabled = true);
-    feedback('Da! Acum apăsăm „Arată” și verificăm împreună.'); controls();
+    const canTap=Object.values(state.actors).some(a=>a.visible&&a.page===state.page&&project.programs[a.id].some(p=>p.trigger==='tap'));
+    $('stage-status').textContent=`${{park:'Parc',beach:'Plajă',night:'Noapte'}[state.page]} · ${busy?'Rulăm codul…':armed?(canTap?'Cod pornit · apasă personajele':'Programul a rulat'):'Alege un personaj pentru codul lui'}`;
+    $('stage').querySelectorAll('[data-number]').forEach(el=>el.classList.toggle('lit',Number(el.dataset.number)===state.actors.rabbit?.x));
+    if($('beats')&&$('beats').children.length!==Math.min(state.sounds,10))$('beats').innerHTML=Array.from({length:Math.min(state.sounds,10)},(_,i)=>`<span class="beat${i===state.sounds-1?' flash':''}">♪</span>`).join('');
+    document.querySelectorAll('.code-block').forEach(el=>el.classList.toggle('executing',active.some(a=>a.actor===project.actor&&a.script===project.script&&(a.block===el.dataset.block||a.repeat===el.dataset.block))));
   }
-  function complete(text) {
-    busy = false; played = true; feedback(text || 'Am verificat! Putem încerca din nou sau mergem mai departe.'); controls();
+  function pop(){if(muted)return;const a=new Audio('assets/pop.mp3');sounds.add(a);a.addEventListener('ended',()=>sounds.delete(a),{once:true});try{a.play()?.catch(()=>{sounds.delete(a);$('sound').title='Sunetul nu a pornit; urmărim cercurile.';});}catch(_){sounds.delete(a);}}
+  function resultLabel(value){return scene().choices?.find(([v])=>String(v)===String(value))?.[1]??String(value);}
+  async function execute(event={type:'flag'}){
+    if(busy||!scene().actors||$('prediction').value==='')return;
+    if(event.type==='flag'){stop();state=E.initial(scene());passed=false;}
+    const token=epoch,answer=$('prediction').value;armed=true;busy=true;controls();
+    const result=E.simulate(scene(),project.programs,state,event);let tick=state.tick;
+    if(result.error&&!result.frames.length){busy=false;armed=false;say(result.error);controls();return;}
+    say('Urmărim blocurile și ce fac personajele…');
+    for(const frame of result.frames){if(!await wait(Math.max(80,(frame.tick-tick)*100),token))return;tick=frame.tick;state=E.clone(frame.state);drawStage(frame.active);for(let n=0;n<frame.pops;n++)pop();}
+    if(!await wait(350,token))return;
+    state=result.state;busy=false;passed=!!result.achieved;drawStage();controls();
+    if(result.error){say(result.error);return;}
+    const actual=E.measure(scene(),state),right=String(actual)===answer;
+    if(scene().id==='lant'&&!passed){say('Jocul este pornit. Apasă un personaj vizibil sau oprește și schimbă codul.');return;}
+    const prediction=right?'Predicția se potrivește.':`Am prezis ${resultLabel(answer)}; codul a produs ${resultLabel(actual)}.`;
+    say(`${passed?'Ținta reușită!':'Mai ajustăm codul.'} Rezultat: ${resultLabel(actual)}. ${prediction}`);
   }
-  function pop() {
-    const audio = new Audio('assets/pop.mp3'); sounds.add(audio);
-    audio.addEventListener('ended',()=>sounds.delete(audio), {once:true});
-    try { const result = audio.play(); if(result) result.catch(()=>sounds.delete(audio)); } catch (_) { sounds.delete(audio); }
+  function render(){
+    stop();const s=scene();if(!models.has(s.id))models.set(s.id,{programs:E.clone(s.starter),actor:s.focus,script:0,undo:[]});project=models.get(s.id);state=E.initial(s);passed=false;selected=null;insertion={parent:'',index:s.actors?body().length:0};
+    $('presentation').classList.toggle('no-code',!s.actors);$('topic').textContent=s.topic;$('title').textContent=s.title;$('goal').textContent=s.goal||s.question;$('question').textContent=s.question;$('equation').textContent=s.math||'';$('intro-message').textContent=s.actors?'':s.mode==='intro'?'Tu construiești, copiii prezic. Un voluntar vine la laptop.':'Profesorul alege când continuăm.';
+    $('prediction').replaceChildren(new Option('Ce credeți?',''));for(const [value,label]of s.choices||Array.from({length:11},(_,i)=>[i,String(i)]))$('prediction').add(new Option(label,value));
+    $('progress').textContent=s.number?`Oprirea ${s.number} / 10`:s.id.startsWith('rezerva')?'Rezervă':s.mode==='intro'?'Începem':s.mode==='break'?'Ne dezmorțim':'Bravo, creatori!';
+    $('teacher-notes').textContent=s.note;$('scene-list').querySelectorAll('button').forEach((b,i)=>{if(i===index)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current');});
+    $('palette').replaceChildren();for(const type of s.palette||[]){const d=E.BLOCKS[type],el=document.createElement('button');el.className=`palette-block ${d.color}`;el.dataset.type=type;el.innerHTML=`<span class="icon">${d.icon}</span>${d.label}`;el.setAttribute('aria-label',`Adaugă ${d.label}`);el.onclick=()=>{if(Date.now()-lastDrag>300)add(type);};$('palette').append(el);}
+    setupStage();if(s.actors)renderEditor();else $('workspace').innerHTML='<span class="workflow-step">1. Construim</span><span class="workflow-step">2. Prezicem</span><span class="workflow-step">3. Rulăm</span>';
+    say(s.actors?'Construiește codul, alege o predicție și apasă Rulează.':'Profesorul conduce; copiii vin pe rând să creeze.');controls();
+    try{const url=new URL(location.href);url.searchParams.set('scena',s.id);history.replaceState(null,'',url);}catch(_){}
   }
-  async function rhythm(finish) {
-    if(busy) return;
-    const token = epoch; busy = true; controls();
-    const beats = [...$('stage').querySelectorAll('.beat')];
-    for(let i=0;i<beats.length;i++) {
-      beats[i].classList.add('flash'); pop();
-      if(!await wait(350,token)) return;
-      beats[i].classList.remove('flash');
-      if(!await wait(i===1?1000:300,token)) return;
-    }
-    if(finish) complete('Trei sunete. Pauza ne ajută să auzim ritmul.');
-    else { busy = false; feedback('Câte sunete ai auzit sau văzut? Alege răspunsul.'); controls(); }
+  function go(n){if(n<0||n>=scenes.length)return;index=n;render();}
+  function closeMenu(){$('menu').close();$('contents').focus();}
+  function clearDrag(){document.querySelectorAll('.drop-over').forEach(el=>el.classList.remove('drop-over'));document.querySelector('.drag-ghost')?.remove();drag=null;}
+  function targetAt(x,y){
+    const el=document.elementFromPoint(x,y);if(!el)return null;
+    if(el.closest('.trash'))return{trash:true,el:el.closest('.trash')};
+    const slot=el.closest('.drop-slot');if(slot)return{parent:slot.dataset.parent,index:Number(slot.dataset.at),el:slot};
+    const seq=el.closest('.sequence')||(el.closest('#workspace')?$('workspace').querySelector('.sequence'):null);if(!seq)return null;
+    const children=[...seq.children].filter(e=>e.classList.contains('code-block'));let at=children.findIndex(e=>x<e.getBoundingClientRect().left+e.getBoundingClientRect().width/2);if(at<0)at=children.length;
+    return{parent:seq.dataset.parent,index:at,el:seq.querySelector(`:scope > .drop-slot[data-at="${at}"]`)};
   }
-  function chain(i) {
-    if(!busy || i!==chainStep || scenes[index].mode!=='chain') return;
-    $(`chain-${i}`).disabled = true; chainStep++;
-    if(i<2) {
-      const next = $(`chain-${i+1}`); next.classList.remove('hidden-target'); next.disabled = false;
-      feedback(i===0 ? 'A apărut cățelul! Atinge-l.' : 'A apărut mingea! Atinge-o.'); next.focus();
-    } else {
-      $('stage').className = 'night';
-      $('stage').innerHTML = `<div class="stage-content">${picture('Rabbit','sprite hero-sprite')}<div class="welcome-sign">Ai descoperit finalul!</div></div>`;
-      complete('Fluture → cățel → minge → o pagină nouă.'); $('next').focus();
-    }
-  }
-  async function demo() {
-    if(!solved || busy) return;
-    const s=scenes[index];
-    if(s.mode === 'rhythm') { renderStage(s); await rhythm(true); return; }
-    cancel(); const token = epoch; renderStage(s); busy = true; played = false; controls();
-    feedback('Privim cu atenție…');
-    switch(s.mode) {
-      case 'steps': case 'repeat': {
-        let start = s.mode==='steps'?3:0, end = s.answer;
-        for(let n=start+1;n<=end;n++) {
-          if(!await wait(650,token)) return;
-          if(s.mode==='repeat') $('stage').querySelectorAll('.group').forEach((g,i)=>g.classList.toggle('active',i===Math.floor((n-1)/2)));
-          moveRunner(n);
-        }
-        if(!await wait(650,token)) return;
-        break;
-      }
-      case 'hide': case 'collect': {
-        const objects=[...$('stage').querySelectorAll('.object')];
-        for(let i=0;i<s.remove;i++) {
-          if(s.mode === 'collect') {
-            const gridEl = objects[i].parentElement, runner=$('stage').querySelector('.collector');
-            runner.style.left = `${gridEl.offsetLeft + objects[i].offsetLeft - 10}px`;
-            runner.style.top = `${gridEl.offsetTop + objects[i].offsetTop - 5}px`;
-          }
-          if(!await wait(700,token)) return;
-          objects[i].classList.add('gone');
-        }
-        if(s.mode==='collect') { $('stage').querySelector('.collector').style.left='24px'; $('stage').querySelector('.collector').style.top='90px'; }
-        if(!await wait(600,token)) return;
-        $('stage').querySelector('.stage-label').textContent = `${s.answer} ${s.answer===0 ? 'mingi vizibile. Nimic nu se mai vede!' : 'mingi rămân vizibile.'}`;
-        break;
-      }
-      case 'missing': {
-        for(const object of $('stage').querySelectorAll('.empty')) {
-          if(!await wait(650,token)) return;
-          object.innerHTML=picture('Ball','','Minge'); object.classList.remove('empty');
-        }
-        break;
-      }
-      case 'message':
-        if(!await wait(700,token)) return;
-        $('stage').querySelectorAll('.orange').forEach(el=>el.classList.add('grow'));
-        if(!await wait(700,token)) return;
-        $('stage').querySelectorAll('.sprite')[2].classList.add('grow');
-        if(!await wait(700,token)) return;
-        break;
-      case 'page':
-        $('stage').querySelectorAll('.door')[1].classList.add('chosen');
-        if(!await wait(1000,token)) return;
-        $('stage').className='beach';
-        $('stage').innerHTML=`<div class="stage-content">${picture('Rabbit','sprite hero-sprite')}${picture('Dog','sprite hero-sprite')}<div class="welcome-sign">Bine ai venit pe plajă!<small>O altă pagină, o altă aventură.</small></div></div>`;
-        break;
-      case 'freeze':
-        if(!await wait(1400,token)) return;
-        $('stage').querySelectorAll('.marked').forEach(el=>el.classList.remove('dancing'));
-        if(!await wait(700,token)) return;
-        break;
-      case 'chain':
-        $('chain-0').disabled=false; $('chain-0').focus();
-        feedback('Vino la laptop: atinge fluturele și descoperă ce urmează.'); return;
-      case 'final': {
-        if(!await wait(850,token)) return;
-        $('stage').querySelectorAll('.waiting').forEach(el=>el.classList.remove('waiting'));
-        $('stage').querySelector('.stage-label').textContent='4 + 3 = 7 animale pe scenă.';
-        if(!await wait(2000,token)) return;
-        [...$('stage').querySelectorAll('.sprite')].slice(0,2).forEach(el=>el.classList.add('leaving'));
-        $('stage').querySelector('.stage-label').textContent='7 − 2 = 5 animale rămân.';
-        if(!await wait(1000,token)) return;
-        const back=document.createElement('button'); back.id='return-show'; back.textContent='↻ Înapoi la început'; back.addEventListener('click',render); $('stage').append(back);
-        break;
-      }
-    }
-    if(token === epoch) complete();
-  }
-  function go(next) { if(next<0 || next>=scenes.length) return; index=next; render(); }
-  function closeMenu() { $('menu').close(); $('contents').focus(); }
-  scenes.forEach((s,i)=>{
-    const button=document.createElement('button'); button.textContent = `${s.number ? String(s.number).padStart(2,'0')+' · ' : ''}${s.title}`;
-    button.addEventListener('click',()=>{ go(i); closeMenu(); }); $('scene-list').append(button);
+  document.addEventListener('pointerdown',e=>{
+    if(busy||e.button!==0)return;const source=e.target.closest('.palette-block,.block-handle');if(!source)return;
+    drag={pointer:e.pointerId,x:e.clientX,y:e.clientY,source,type:source.dataset.type,id:source.dataset.block,started:false};source.setPointerCapture?.(e.pointerId);
   });
-  $('previous').addEventListener('click',()=>go(index-1));
-  $('next').addEventListener('click',()=>{if(!$('next').disabled)go(index+1);});
-  $('reset').addEventListener('click',render);
-  $('demo').addEventListener('click',demo);
-  $('hint').addEventListener('click',()=>feedback(scenes[index].hint));
-  $('contents').addEventListener('click',()=>$('menu').showModal());
-  $('close-menu').addEventListener('click',closeMenu);
-  $('skip').addEventListener('click',()=>{go(Math.min(index+1,scenes.length-1));closeMenu();});
-  async function fullscreen() {
-    try {
-      if(document.fullscreenElement) await document.exitFullscreen();
-      else if(document.documentElement.requestFullscreen) await document.documentElement.requestFullscreen();
-      else feedback('Pentru ecran complet, folosește F11 în browser.');
-    } catch (_) { feedback('Pentru ecran complet, folosește F11 în browser.'); }
-  }
-  $('fullscreen').addEventListener('click',fullscreen);
+  document.addEventListener('pointermove',e=>{
+    if(!drag||drag.pointer!==e.pointerId)return;
+    if(!drag.started&&Math.hypot(e.clientX-drag.x,e.clientY-drag.y)<7)return;
+    e.preventDefault();if(!drag.started){drag.started=true;const ghost=document.createElement('div');ghost.className=`drag-ghost ${E.BLOCKS[drag.type||locate(drag.id).block.type].color}`;ghost.textContent=E.BLOCKS[drag.type||locate(drag.id).block.type].label;document.body.append(ghost);}
+    const ghost=document.querySelector('.drag-ghost');ghost.style.left=`${e.clientX+12}px`;ghost.style.top=`${e.clientY-20}px`;
+    document.querySelectorAll('.drop-over').forEach(el=>el.classList.remove('drop-over'));targetAt(e.clientX,e.clientY)?.el?.classList.add('drop-over');
+  },{passive:false});
+  document.addEventListener('pointerup',e=>{
+    if(!drag||drag.pointer!==e.pointerId)return;const current=drag,target=targetAt(e.clientX,e.clientY);if(current.started)lastDrag=Date.now();clearDrag();
+    if(!current.started)return;e.preventDefault();
+    if(target?.trash&&current.id){selected=current.id;remove();}else if(target&&!target.trash){if(current.type)add(current.type,target.parent,target.index);else move(current.id,target.parent,target.index);}else say('Blocul nu a fost schimbat. Trage-l în zona programului.');
+  });
+  document.addEventListener('pointercancel',clearDrag);
+  $('actor').onchange=()=>{project.actor=$('actor').value;project.script=0;selected=null;insertion={parent:'',index:body().length};renderEditor();drawStage();};
+  $('script').onchange=()=>{project.script=Number($('script').value);selected=null;insertion={parent:'',index:body().length};renderEditor();};
+  $('trigger').onchange=()=>mutate(()=>{project.programs[project.actor][project.script].trigger=$('trigger').value;});
+  $('channel').onchange=()=>mutate(()=>{project.programs[project.actor][project.script].color=$('channel').value;});
+  $('add-script').onclick=()=>mutate(()=>{project.programs[project.actor].push({trigger:'tap',color:'orange',body:[]});project.script=project.programs[project.actor].length-1;selected=null;insertion={parent:'',index:0};});
+  $('clear').onclick=()=>{if(body().length)mutate(()=>{body().length=0;selected=null;insertion={parent:'',index:0};});};
+  $('undo').onclick=()=>{if(busy||!project.undo.length)return;project.programs=project.undo.pop();project.script=Math.min(project.script,project.programs[project.actor].length-1);selected=null;insertion={parent:'',index:body().length};invalidate();say('Am revenit la codul anterior.');};
+  $('move-left').onclick=()=>{const f=locate(selected);move(selected,f.parent,f.index-1);};$('move-right').onclick=()=>{const f=locate(selected);move(selected,f.parent,f.index+2);};$('delete').onclick=remove;
+  $('prediction').onchange=controls;$('run').onclick=()=>execute();$('stop').onclick=()=>{stop();drawStage();controls();say('Oprit. Codul se păstrează; poți modifica și rula din nou.');};
+  $('reset').onclick=()=>{stop();passed=false;state=E.initial(scene());drawStage();controls();say('Scena este la început. Codul tău s-a păstrat.');};
+  $('hint').onclick=()=>say(scene().hint);$('sound').onclick=()=>{muted=!muted;$('sound').setAttribute('aria-pressed',String(!muted));$('sound').setAttribute('aria-label',muted?'Sunet oprit':'Sunet activ');$('sound').textContent=muted?'♫̸':'♫';};
+  $('previous').onclick=()=>go(index-1);$('next').onclick=()=>{if(!$('next').disabled)go(index+1);};
+  $('contents').onclick=()=>$('menu').showModal();$('close-menu').onclick=closeMenu;
+  scenes.forEach((s,i)=>{const el=document.createElement('button');el.textContent=`${s.number?String(s.number).padStart(2,'0')+' · ':''}${s.title}`;el.onclick=()=>{go(i);closeMenu();};$('scene-list').append(el);});
+  $('example').onclick=()=>{stop();mutate(()=>{project.programs=E.clone(scene().solution);project.actor=scene().focus;project.script=0;selected=null;insertion={parent:'',index:body().length};},'Exemplul este editabil. Schimbă un bloc și compară rezultatul.');closeMenu();};
+  $('restart').onclick=()=>{stop();mutate(()=>{project.programs=E.clone(scene().starter);project.actor=scene().focus;project.script=0;selected=null;insertion={parent:'',index:body().length};});closeMenu();};$('skip').onclick=()=>{go(Math.min(index+1,scenes.length-1));closeMenu();};
+  async function fullscreen(){try{if(document.fullscreenElement)await document.exitFullscreen();else if(document.documentElement.requestFullscreen)await document.documentElement.requestFullscreen();else say('Folosește F11 pentru ecran complet.');}catch(_){say('Folosește F11 pentru ecran complet.');}}
+  $('fullscreen').onclick=fullscreen;
   document.addEventListener('keydown',e=>{
-    if($('menu').open || e.altKey || e.ctrlKey || e.metaKey) return;
-    if(e.key==='ArrowRight') {e.preventDefault();if(!$('next').disabled)go(index+1);}
-    else if(e.key==='ArrowLeft') {e.preventDefault();go(index-1);}
-    else if(e.key.toLowerCase()==='r') render();
-    else if(e.key.toLowerCase()==='f') fullscreen();
-    else if((e.key===' ' || e.key==='Enter') && e.target===document.body && !$('demo').disabled) {e.preventDefault();demo();}
+    if($('menu').open||e.altKey||e.ctrlKey||e.metaKey||['SELECT','INPUT','TEXTAREA'].includes(e.target.tagName))return;
+    if(e.key==='Escape'){stop();drawStage();controls();say('Oprit.');}
+    else if(e.key.toLowerCase()==='r'&&!$('reset').disabled)$('reset').click();
+    else if(e.key.toLowerCase()==='f')fullscreen();
+    else if(e.key==='Delete'&&!busy&&selected)remove();
+    else if(e.key===' '&&e.target.tagName!=='BUTTON'&&!$('run').disabled){e.preventDefault();execute();}
+    else if(e.key==='ArrowRight'&&e.target.tagName!=='BUTTON'&&!$('next').disabled)go(index+1);
+    else if(e.key==='ArrowLeft'&&e.target.tagName!=='BUTTON')go(index-1);
   });
-  function fit() { $('presentation').style.transform=`scale(${Math.min(innerWidth/1440,innerHeight/810)})`; }
-  addEventListener('resize',fit); addEventListener('pagehide',cancel);
-  fit(); render();
+  function fit(){$('presentation').style.transform=`scale(${Math.min(innerWidth/1440,innerHeight/810)})`;}
+  addEventListener('resize',fit);addEventListener('pagehide',stop);fit();render();
 }());

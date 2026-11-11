@@ -1,0 +1,279 @@
+{
+  "date": "2026-11-11",
+  "version": "editable-coding",
+  "solutions": [
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: 5. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "Dă-i iepurașului instrucțiuni",
+      "visibleActors": [
+        "Iepuraș"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: 6. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "O idee, de trei ori",
+      "visibleActors": [
+        "Iepuraș"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: 4. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "Scriem un truc de magie",
+      "visibleActors": [
+        "Minge 4",
+        "Minge 5",
+        "Minge 6",
+        "Minge 7"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: Cățel. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "Programează telecomanda",
+      "visibleActors": [
+        "Fluture",
+        "Iepuraș",
+        "Cățel"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Mai ajustăm codul. Rezultat: Iepuraș. Predicția se potrivește.",
+      "next": false,
+      "predictionClipped": false,
+      "title": "Programează telecomanda",
+      "visibleActors": [
+        "Fluture",
+        "Iepuraș",
+        "Cățel"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: 3. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "Compunem un ritm",
+      "visibleActors": [
+        "Iepuraș"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: 6. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "Contactul pornește codul",
+      "visibleActors": [
+        "Iepuraș",
+        "Minge 5",
+        "Minge 6",
+        "Minge 7",
+        "Minge 8",
+        "Minge 9",
+        "Minge 10"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: 7. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "Codul deschide o altă scenă",
+      "visibleActors": [
+        "Cățel · plajă"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: 2. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "Oprim doar o parte din dans",
+      "visibleActors": [
+        "Dansator 1",
+        "Dansator 2",
+        "Dansator 3",
+        "Dansator 4",
+        "Dansator 5",
+        "Dansator 6",
+        "Telecomanda"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: Noapte. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "Construim un lanț de surprize",
+      "visibleActors": [
+        "Iepuraș · noapte"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: 5. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "Tu regizezi marea finală",
+      "visibleActors": [
+        "Iepuraș 3",
+        "Iepuraș 4",
+        "Cățel 1",
+        "Cățel 2",
+        "Cățel 3",
+        "Regizorul · minge"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: 0. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "Înapoi la zero",
+      "visibleActors": [
+        "Iepuraș"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: 10. Predicția se potrivește.",
+      "next": false,
+      "predictionClipped": false,
+      "title": "Completează până la zece",
+      "visibleActors": [
+        "Iepuraș"
+      ]
+    },
+    {
+      "brokenImages": [],
+      "feedback": "Ținta reușită! Rezultat: 6. Predicția se potrivește.",
+      "next": true,
+      "predictionClipped": false,
+      "title": "O idee, de trei ori",
+      "visibleActors": [
+        "Iepuraș"
+      ]
+    }
+  ],
+  "layout4by3": [
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": 0,
+      "title": "Laboratorul de cod"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "Dă-i iepurașului instrucțiuni"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "O idee, de trei ori"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "Scriem un truc de magie"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "Programează telecomanda"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "Compunem un ritm"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": 0,
+      "title": "Noi suntem personajele!"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "Contactul pornește codul"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "Codul deschide o altă scenă"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "Oprim doar o parte din dans"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "Construim un lanț de surprize"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "Tu regizezi marea finală"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": 0,
+      "title": "Codul este ideea noastră"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "Înapoi la zero"
+    },
+    {
+      "clipped": [],
+      "frameBottom": 672,
+      "predictionClipped": false,
+      "title": "Completează până la zece"
+    }
+  ],
+  "manualChecks": [
+    "Native pointer drag from palette to program",
+    "Native pointer drag into repeat body",
+    "Value 2 changed to 4: result changed from 5 to 7",
+    "Native drag reorder: Hide/Show result 7; Show/Hide result 6",
+    "Native drag to trash; undo restored block",
+    "Drop in blank workspace appended block",
+    "Draft value 4 preserved across activity switches",
+    "Blue message changed grown character from dog to rabbit",
+    "Two dancers remained; Stop removed all dancing animations",
+    "Hidden dog and ball could not be clicked until revealed",
+    "Three actual taps opened night page",
+    "Stop during a running repeat cancelled pending motion",
+    "Reset kept repeat value 5 and restored position 0"
+  ],
+  "audio": "Pop playback requested by browser; rhythm visuals verified. Classroom audibility requires the laptop speakers.",
+  "consoleErrors": []
+}

@@ -8,7 +8,7 @@
       "url": "http://127.0.0.1:8774/Pregatitoare1/",
       "path": "index.html",
       "status": 200,
-      "bytes": 2805,
+      "bytes": 2834,
       "matches_local_file": true,
       "content_type": "text/html",
       "pass": true
@@ -71,7 +71,7 @@
       "url": "http://127.0.0.1:8774/Pregatitoare1/index.html",
       "path": "index.html",
       "status": 200,
-      "bytes": 2805,
+      "bytes": 2834,
       "matches_local_file": true,
       "content_type": "text/html",
       "pass": true
@@ -2708,7 +2708,7 @@
       "url": "http://127.0.0.1:8774/Pregatitoare1/materiale/Plan_10_lectii_ScratchJr.md",
       "path": "materiale/Plan_10_lectii_ScratchJr.md",
       "status": 200,
-      "bytes": 39464,
+      "bytes": 39539,
       "matches_local_file": true,
       "content_type": "text/markdown",
       "pass": true
@@ -2762,7 +2762,7 @@
       "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/index.html",
       "path": "scratchjr/index.html",
       "status": 200,
-      "bytes": 10441,
+      "bytes": 10462,
       "matches_local_file": true,
       "content_type": "text/html",
       "pass": true
@@ -2771,16 +2771,16 @@
       "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/README.md",
       "path": "scratchjr/lectia-0/README.md",
       "status": 200,
-      "bytes": 6582,
+      "bytes": 9214,
       "matches_local_file": true,
       "content_type": "text/markdown",
       "pass": true
     },
     {
-      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/app.js",
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/app.js?v=coding-2",
       "path": "scratchjr/lectia-0/app.js",
       "status": 200,
-      "bytes": 16265,
+      "bytes": 22103,
       "matches_local_file": true,
       "content_type": "text/javascript",
       "pass": true
@@ -2813,28 +2813,37 @@
       "pass": true
     },
     {
-      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/index.html",
-      "path": "scratchjr/lectia-0/index.html",
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/engine.js?v=coding-2",
+      "path": "scratchjr/lectia-0/engine.js",
       "status": 200,
-      "bytes": 2121,
-      "matches_local_file": true,
-      "content_type": "text/html",
-      "pass": true
-    },
-    {
-      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/lesson.js",
-      "path": "scratchjr/lectia-0/lesson.js",
-      "status": 200,
-      "bytes": 8526,
+      "bytes": 8813,
       "matches_local_file": true,
       "content_type": "text/javascript",
       "pass": true
     },
     {
-      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/style.css",
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/index.html",
+      "path": "scratchjr/lectia-0/index.html",
+      "status": 200,
+      "bytes": 3893,
+      "matches_local_file": true,
+      "content_type": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/lesson.js?v=coding-2",
+      "path": "scratchjr/lectia-0/lesson.js",
+      "status": 200,
+      "bytes": 11621,
+      "matches_local_file": true,
+      "content_type": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:8774/Pregatitoare1/scratchjr/lectia-0/style.css?v=coding-2",
       "path": "scratchjr/lectia-0/style.css",
       "status": 200,
-      "bytes": 8574,
+      "bytes": 10194,
       "matches_local_file": true,
       "content_type": "text/css",
       "pass": true
@@ -2870,43 +2879,34 @@
       "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/lectia-0/README.md",
       "path": "verificare_site/lectia-0/README.md",
       "status": 200,
-      "bytes": 2545,
+      "bytes": 3435,
       "matches_local_file": true,
       "content_type": "text/markdown",
       "pass": true
     },
     {
-      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/lectia-0/browser.json",
-      "path": "verificare_site/lectia-0/browser.json",
+      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/lectia-0/coding-16-9.png",
+      "path": "verificare_site/lectia-0/coding-16-9.png",
       "status": 200,
-      "bytes": 5478,
-      "matches_local_file": true,
-      "content_type": "application/json",
-      "pass": true
-    },
-    {
-      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/lectia-0/projector-16-9.png",
-      "path": "verificare_site/lectia-0/projector-16-9.png",
-      "status": 200,
-      "bytes": 70593,
+      "bytes": 91227,
       "matches_local_file": true,
       "content_type": "image/png",
       "pass": true
     },
     {
-      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/lectia-0/projector-4-3.png",
-      "path": "verificare_site/lectia-0/projector-4-3.png",
+      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/lectia-0/coding-4-3.png",
+      "path": "verificare_site/lectia-0/coding-4-3.png",
       "status": 200,
-      "bytes": 74535,
+      "bytes": 79641,
       "matches_local_file": true,
       "content_type": "image/png",
       "pass": true
     },
     {
-      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/local-links.json",
-      "path": "verificare_site/local-links.json",
+      "url": "http://127.0.0.1:8774/Pregatitoare1/verificare_site/lectia-0/coding-browser.json",
+      "path": "verificare_site/lectia-0/coding-browser.json",
       "status": 200,
-      "bytes": 110808,
+      "bytes": 7299,
       "matches_local_file": true,
       "content_type": "application/json",
       "pass": true
