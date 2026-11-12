@@ -20,17 +20,28 @@ Iepure în stânga jos, câine în dreapta jos; mingea sus în dreapta. Fluturel
 
 Arătăm demo-ul: fluturele deschide finalul, iepurele performează, apoi câinele; mingea apare la sfârșit. Întrebăm: „Cine poate anunța că s-a terminat?”. Copiii vor construi treptat acest rezultat.
 
-| Minute | Activitate | Ținta |
+| Minute | Activitate | Acțiunea profesorului |
 | --- | --- | --- |
-| 0-5 | Demo | Observăm ordinea și butonul care așteaptă. |
-| 5-8 | Redeschidem | Propriul proiect și pagina de final. |
-| 8-17 | Misiunea 1 | Două transformări, cu revenire. |
-| 17-27 | Misiunea 2 | Mesajul de final dezvăluie butonul. |
-| 27-30 | Pauză | Tabletele jos. |
-| 30-44 | Puzzle dificil | Iepure, câine, apoi întoarcere. |
-| 44-50 | Joc complet | Fiecare testează și salvează. |
+| 0-4 | Exemplu oficial adaptat | Truc, mesaj, următorul artist. |
+| 4-7 | Redeschidem | Proiectul L9 și pagina finală. |
+| 7-14 | Misiunea 1 | Două transformări cu revenire. |
+| 14-24 | Misiunea 2 | Butonul apare după mesajul de încheiere. |
+| 24-27 | Pauză | Mimăm predarea rândului. |
+| 27-37 | Puzzle dificil | Iepure, câine, apoi întoarcere. |
+| 37-45 | Creația mea | Un final personal, cu ordinea păstrată. |
+| 45-50 | Joc complet și salvare | Două runde, o alegere explicată, redeschidere. |
 
-<!-- pagebreak -->
+**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+
+## Exemplu oficial adaptat: Artiștii își dau rândul
+
+**Reper:** [Conversation](https://www.scratchjr.org/teach/activities/conversation). Preluăm ideea mai multor mesaje succesive din Conversation. În locul replicilor scrise, artiștii fac trucuri. Rulează finalul existent și urmărește mesajul trimis după fiecare truc. Copiii identifică cine anunță că următorul poate începe.
+
+**Model pentru demonstrație:** La intrarea pe final, iepurele își face trucul și trimite portocaliu; câinele primește, își face trucul și trimite albastru; mingea primește albastru și apare. Păstrăm inițializarea la steag și programele complete din M3.
+
+**Întreabă înainte de rulare:** „Dacă aleg un truc mai lung, cum știe mingea când să apară? Urmărim plicul de după ultima acțiune, fără să ghicim o pauză.”
+
+Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
 
 ## Misiunea 1 Sărbătoarea mea
 
@@ -59,8 +70,6 @@ Plicul albastru se pune **după întregul Repeat**, în afara lui. Dacă este î
 
 **Indiciu:** „Cine știe sigur că iepurele a terminat?”. Ascunde și Arată au o scurtă tranziție vizuală. Atingerea se testează pe scenă, nu în lista personajelor. Un personaj ascuns poate primi un mesaj, dar nu poate fi apăsat pe scenă.
 
-<!-- pagebreak -->
-
 ## Misiunea 3 Marea finală
 
 **Puzzle dificil pentru toți:** iepurele face cele două măriri; câinele își așteaptă rândul. Când iepurele termină, câinele se micșorează, așteaptă și revine la normal. Numai apoi apare mingea. Jocul complet funcționează de două ori.
@@ -87,7 +96,19 @@ Programul câinelui cu steag doar pregătește dimensiunea. Trucul lui pornește
 
 **Loc pentru creație:** decor, poziții și o variație scurtă a unuia dintre artiști. Păstrăm ordinea, finalul vizibil și două jocuri complete. Nu evaluăm viteza de lucru sau prezentarea în fața clasei. Fiecare copil își testează proiectul și poate explica profesorului prin gesturi sau arătarea blocurilor.
 
-<!-- pagebreak -->
+## Creația mea: Finalul pe care îl semnez eu
+
+**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
+
+**Spune copiilor:** „Alege ce sărbătoresc personajele și schimbă trucurile lor folosind efectele cunoscute. Poți schimba gestul, ordinea efectelor sau durata unei pauze. Păstrează ordinea artiștilor, mesajul de încheiere și întoarcerea disponibilă numai la final.”
+
+**Verificarea autorului:** Joacă două runde de pe insulă până la final și înapoi, pe propria tabletă. Arată o decizie personală și explică ce anunță ultimul mesaj. La final fiecare poate spune: «Am ales…; programul meu face…».
+
+**Sprijin și extensie:** Modifică un singur truc din finalul funcțional. Pentru mai multă dificultate, fă trucuri cu durate diferite și arată că ordinea rămâne corectă datorită mesajelor.
+
+Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+
+**Ce urmăresc la încheiere:** Copilul justifică locul mesajului de final și demonstrează că jocul se poate relua.
 
 ## Rezervă 1 Încă o dată!
 
@@ -120,3 +141,5 @@ Folosim verde pentru pregătire și pornire, portocaliu pentru rândul câinelui
 Rezervele sunt peste cele 50 de minute și nu înlocuiesc puzzle-ul dificil sau salvarea. La final, fiecare copil joacă, revine în galerie și redeschide. Pentru o nouă probă alege pagina 1 și apasă steagul. Profesorul poate păstra o copie prin rutina de export a clasei. Prezentările sunt opționale.
 
 Înainte de clasă, probează M3 pe Lenovo: atingere, ordine, două runde și redeschidere offline. Raportul browserului: verificare/README.md.
+
+**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.

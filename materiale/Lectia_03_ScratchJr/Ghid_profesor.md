@@ -24,20 +24,30 @@ Introdu **Ascunde**, **Arată** și **Așteaptă** abia înainte de misiunea 2. 
 
 La misiunea 3 arată blocul mov **Revino la mărimea inițială / Reset Size**, fără să dai tot programul. El reface dimensiunea standard a personajului; nu îl mută și nu îl face automat vizibil. **Arată** reface vizibilitatea, nu dimensiunea.
 
-<!-- pagebreak -->
 ## Cele 50 de minute
 
 | Minute | Activitate | Acțiunea profesorului |
 | --- | --- | --- |
-| 0-5 | Ating și observ | Demonstrează atingere + mărire; compară cu steagul verde. |
-| 5-11 | Construim scena | Iepure, câine, spațiu între ei; două programe independente. |
-| 11-20 | Misiunea 1 | Copiii aleg mărire pentru unul și micșorare pentru celălalt. |
-| 20-29 | Misiunea 2 | Introdu ascunderea, așteptarea și reapariția; copiii aleg ordinea. |
-| 29-32 | Pauză | Tabletele jos; mimăm mare, mic și ascuns. |
-| 32-45 | Misiunea dificilă | Introdu Reset Size și oferă indicii progresive pentru trucul complet. |
-| 45-50 | Prezic și salvez | În perechi, o predicție și o rulare; galerie și redeschidere. |
+| 0-4 | Demonstrație | Atingerea pornește mărirea; prezicem efectul. |
+| 4-8 | Scena | Iepure și câine, cu loc pentru efecte. |
+| 8-17 | Misiunea 1 | Mărire și micșorare. |
+| 17-24 | Misiunea 2 și exemplul | Dispariție, pauză, revenire; legătura cu Sunset. |
+| 24-27 | Pauză | Mimăm mare, mic, ascuns. |
+| 27-37 | Puzzle dificil | Truc complet, repetabil fără resetare. |
+| 37-45 | Creația mea | Inventăm altă ordine a efectelor. |
+| 45-50 | Explic și salvez | Două probe, galerie și redeschidere. |
 
-Rezervele sunt pregătite în plus față de aceste 50 de minute. Le oferim celor care termină sau folosim timpul câștigat cu întreaga clasă. Nu eliminăm pauza ori încheierea. Dacă scena durează mai mult, sprijinim misiunea 1 în grup, păstrând provocarea dificilă pentru toți.
+**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+
+## Exemplu oficial adaptat: Când personajul dispare
+
+**Reper:** [Sunset](https://www.scratchjr.org/teach/activities/sunset). Exemplul oficial face soarele să dispară. Folosim aceeași idee vizuală pentru iepurele magician, fără deplasare. La început arată numai atingere → mărește 4. Păstrează demonstrația dispariției pentru trecerea la M2, în timpul alocat acelei misiuni.
+
+**Model pentru demonstrație:** La M2, Rabbit: atingere → ascunde → așteaptă 10 → arată. Rulează o dată, apoi încă o dată după revenire. Nu adăugăm soare, pagini sau alte personaje pentru această explicație.
+
+**Întreabă înainte de rulare:** „Cum poate reveni singur dacă nu-l mai putem atinge? Copiii propun ce urmează după ascundere, apoi verificăm.”
+
+Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
 
 ## Misiunea 1 Uriaș și pitic
 
@@ -57,7 +67,6 @@ Rezervele sunt pregătite în plus față de aceste 50 de minute. Le oferim celo
 
 **Indicii:** „Ce trebuie să se întâmple după ascundere?”, „Unde punem pauza ca să apucăm să vedem dispariția?”. Nu cerem atingerea unui personaj invizibil. Pentru redeschiderea cortinei este necesar blocul Arată în același program.
 
-<!-- pagebreak -->
 ## Misiunea 3 Trucul complet
 
 **Provocare dificilă pentru toți:** „La un singur tap, iepurele se face mare și rămâne așa o clipă. Apoi dispare, așteaptă ascuns și reapare direct la mărimea normală. Când îl atingi iar, trucul funcționează din nou, fără resetare.”
@@ -72,6 +81,20 @@ Personajul rămâne în același loc, iar câinele rămâne neschimbat. Cerem do
 
 Un copil care are nevoie de sprijin construiește întâi dispariția și revenirea, apoi adaugă mărirea și refacerea dimensiunii. Toți primesc provocarea; nu cerem terminarea fără ajutor și nu facem clasamente.
 
+## Creația mea: Trucul meu de magician
+
+**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
+
+**Spune copiilor:** „Alege ordinea a două efecte vizuale: mare/mic, ascuns/vizibil. Introdu o pauză acolo unde publicul trebuie să vadă efectul. La final personajul este vizibil și la mărimea inițială. Trucul pornește la o singură atingere.”
+
+**Verificarea autorului:** Rulează de două ori fără resetare între trucuri. Explică ce moment ai vrut să surprindă publicul. Nu impunem un număr maxim de blocuri în acest atelier.
+
+**Sprijin și extensie:** Schimbă durata unei pauze sau mărimea unui efect dintr-un truc reușit. Pentru mai multă dificultate, dă câinelui un truc diferit care se repetă tot fără resetare.
+
+Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+
+**Ce urmăresc la încheiere:** Copilul explică diferența dintre Arată și Mărimea inițială.
+
 ## Rezervă 1 Al treilea secret
 
 **6-8 minute, suplimentar.** Adăugăm Butterfly din bibliotecă, în spațiul liber de sus. Copilul construiește o surpriză a lui. Ținta concretă a exemplului: la o singură atingere, fluturele dispare și reapare de două ori, apoi rămâne vizibil. Iepurele și câinele nu se schimbă.
@@ -82,7 +105,6 @@ Un copil care are nevoie de sprijin construiește întâi dispariția și reveni
 
 **Indiciu:** „Ce grup produce o singură dispariție și revenire?”, „Unde trebuie să construiești programul fluturelui?”. Copilul poate inventa altă surpriză vizuală, dacă o explică și păstrează independența personajelor.
 
-<!-- pagebreak -->
 ## Rezervă 2 Magie în cinci blocuri
 
 **8-10 minute, suplimentar.** Copilul inventează un truc cu cel mult **cinci blocuri de acțiune după pornirea la atingere**. Blocul galben nu se numără; Așteaptă și Mărimea inițială se numără. În această provocare nu folosim Repeat sau mișcare, ca să fie clară limita.
@@ -112,3 +134,5 @@ Copilul spune ce pornește trucul și arată un bloc care schimbă aspectul. Exp
 Raportul din verificare/README.md descrie testele efectuate. Browserul comunitar nu certifică atingerea cu degetul, fluiditatea sau lucrul offline în aplicația oficială pe Lenovo. Proiectele profesorului nu trebuie distribuite copiilor.
 
 **Referințe:** [Blocurile oficiale ScratchJr](https://www.scratchjr.org/pdfs/blocks.pdf) pentru pornire, aspect și așteptare; [interfața ScratchJr](https://sites.bc.edu/scratchjr/learn/) pentru personaje, programare și salvare.
+
+**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.

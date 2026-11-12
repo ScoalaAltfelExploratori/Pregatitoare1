@@ -2,6 +2,14 @@
 
 **50 de minute, 6-7 ani. Trei misiuni de construire, cu ținte precise și o provocare dificilă inclusă.** Mecanismul nou este Repeat: repetarea unui grup de acțiuni.
 
+## Exemplu, puzzle și creație proprie
+
+Deschidem cu **O săritură, de mai multe ori**, pornind de la [Dribble a Basketball](https://www.scratchjr.org/teach/activities/dribble-a-basketball). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+
+**Minutele 37-45: Patrula mea** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+
+[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_02.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+
 ## Pe tabletele copiilor
 
 Dacă ScratchJr este deja instalat, nu mai trebuie instalat sau copiat nimic. Folosim numai **Rabbit, Ball și Park** din biblioteca aplicației. Copiii construiesc scena și programele urmând demonstrațiile scurte ale profesorului. Mingea rămâne fără program și marchează coloana destinației.

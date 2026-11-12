@@ -2,6 +2,14 @@
 
 **50 de minute, 6-7 ani. Trei misiuni, inclusiv una dificilă pentru toți, plus două rezerve în afara celor 50 de minute.** Copiii construiesc propriile programe pentru ținte concrete.
 
+## Exemplu, puzzle și creație proprie
+
+Deschidem cu **Povestea continuă în altă scenă**, pornind de la [Moonrise after Sunset](https://www.scratchjr.org/teach/activities/moonrise-after-sunset). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+
+**Minutele 37-45: Două alegeri care spun o poveste** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+
+[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_07.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+
 ## Pregătire simplă
 
 ScratchJr instalat este suficient pentru resurse: folosim numai **Rabbit, Dog, Ball, Park, Beach Day și Beach Night**, din biblioteca aplicației. Fără importuri, conturi ale copiilor, fișiere de copiat, microfon sau descărcări. Scenele se construiesc împreună în timpul lecției. SJR-urile sunt doar exemple opționale pentru profesor.
@@ -10,7 +18,7 @@ ScratchJr instalat este suficient pentru resurse: folosim numai **Rabbit, Dog, B
 
 ## Materiale
 
-- [Ghidul profesorului](Ghid_profesor.md) și [PDF de patru pagini](Ghid_profesor_Lectia_07.pdf).
+- [Ghidul profesorului](Ghid_profesor.md) și [PDF de cinci pagini](Ghid_profesor_Lectia_07.pdf).
 - [Cinci cartonașe PDF](Cartonase_Lectia_07.pdf), cu ținte vizuale și fără soluțiile complete.
 - [Soluțiile și cinci proiecte SJR](solutii/lectia_07/README.md).
 - [Demo](proiecte/00_Demo_Pagina.sjr) și [scenă fără programe](proiecte/01_Start_Poveste.sjr).

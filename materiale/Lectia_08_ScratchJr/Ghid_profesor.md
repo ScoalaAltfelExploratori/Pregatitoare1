@@ -22,19 +22,30 @@ Iepure: steag → mărime inițială → mărește 4 → așteaptă 10 → micș
 
 Separat, pe același iepure: atingere → Stop portocaliu. Atingem personajul pe scenă; rămâne în starea din momentul opririi. Steagul repornește rutina de la început. Miniatura din stânga este pentru editare, nu pentru probă. Nu folosim Reset între cele două rulări; programul însuși își pregătește mărimea.
 
-<!-- pagebreak -->
-
 ## Cele 50 de minute
 
-| Minute | Activitate | Ce urmărim |
+| Minute | Activitate | Acțiunea profesorului |
 | --- | --- | --- |
-| 0-6 | Demonstrație | Repetare continuă, înghețare, repornire. |
-| 6-11 | Scena | Iepure și câine, separați și vizibili. |
-| 11-20 | Misiunea 1 | Trei runde fără acumularea mărimii. |
-| 20-29 | Misiunea 2 | Fiecare artist poate fi oprit separat. |
-| 29-32 | Pauză | Joc de statui, cu tabletele jos. |
-| 32-45 | Puzzle dificil | Două butoane controlează ambii artiști. |
-| 45-50 | Explic și salvez | Pornire-oprire de două ori, galerie și redeschidere. |
+| 0-4 | Exemplu oficial adaptat | Dansăm, înghețăm, repornim. |
+| 4-8 | Scena | Iepure și câine, separați. |
+| 8-17 | Misiunea 1 | Rutina continuă și oprirea. |
+| 17-24 | Misiunea 2 | Oprim artiștii separat. |
+| 24-27 | Pauză | Joc scurt de statui. |
+| 27-37 | Puzzle dificil | Regizorul comandă grupul. |
+| 37-45 | Creația mea | Coregrafii personale, comenzi păstrate. |
+| 45-50 | Explic și salvez | Oprim toate rutinele, salvăm și redeschidem. |
+
+**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+
+## Exemplu oficial adaptat: Dans și înghețare
+
+**Reper:** [CAL clasa I - Freeze Dance Party (lecția 16)](https://sites.bc.edu/codingasanotherlanguage/curricula/scratchjr-curricula/1st-grade-scratchjr/). Pornim de la jocul de dans și înghețare din CAL. Mimăm o mișcare și o oprire, apoi urmărim același lucru pe ecran. Păstrăm personajele și demo-ul existent, fără muzică sau înregistrări.
+
+**Model pentru demonstrație:** Rabbit are două programe: steag → sari 2 → repetă mereu; separat, atingere → oprește. Oprirea portocalie oprește programele personajului. Steagul repornește dansul.
+
+**Întreabă înainte de rulare:** „Cum îl opresc fără butonul roșu de sus? Arată programul care ascultă atingerea în timp ce celălalt continuă.”
+
+Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
 
 Rezervele de 6-8 și 8-10 minute sunt în plus. Păstrăm puzzle-ul dificil pentru toți, cu indicii. Dacă adăugarea butoanelor durează, o demonstrăm pentru întreaga clasă. Copiii construiesc pentru ținte, fără copierea unor greșeli impuse.
 
@@ -58,8 +69,6 @@ Rezervele de 6-8 și 8-10 minute sunt în plus. Păstrăm puzzle-ul dificil pent
 
 **Verificare:** după atingerea iepurelui așteptăm încă o rundă a câinelui. După atingerea câinelui, amândoi rămân înghețați. Repetăm fără Reset. **Indiciu:** „Pe ce personaj trebuie să fie Stop ca să îl oprești numai pe el?”.
 
-<!-- pagebreak -->
-
 ## Misiunea 3 Regizorul statuilor
 
 **Puzzle dificil pentru toți:** fluturele pornește ambii artiști; mingea îi îngheață pe amândoi. Repetăm **fluture → minge → fluture → minge**, folosind numai personajele de pe scenă. Artiștii reîncep de la mărimea inițială. Nu apăsăm Reset sau butonul general de oprire în timpul probei.
@@ -82,6 +91,20 @@ Rezervele de 6-8 și 8-10 minute sunt în plus. Păstrăm puzzle-ul dificil pent
 
 Copiii pot alege pauze mai lungi sau alt număr moderat, egal în cele două blocuri de mărire/micșorare. Păstrăm mărimea inițială la începutul rutinei. Nu cerem ca artiștii să înghețe la aceeași dimensiune sau în aceeași fază.
 
+## Creația mea: Coregrafia mea
+
+**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
+
+**Spune copiilor:** „Alege o rutină funcțională și schimbă grupul de acțiuni cu două acțiuni alese de tine: salturi de înălțimi diferite sau un mic drum dus-întors. Păstrează comanda de înghețare. Alege dacă artiștii dansează la fel sau diferit.”
+
+**Verificarea autorului:** Pornește, oprește și repornește. Observă că oprirea poate surprinde personajul între două acțiuni. Nu cere revenirea la normal prin simplul Stop; aceea este o comandă separată din rezerve.
+
+**Sprijin și extensie:** Schimbă numai saltul sau pauza dintre salturi. Pentru mai multă dificultate, păstrează comenzile de grup din puzzle și inventează rutine diferite pentru cei doi artiști.
+
+Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+
+**Ce urmăresc la încheiere:** Copilul arată care program continuă și care eveniment îl poate opri.
+
 ## Rezervă 1 Trei ipostaze
 
 **6-8 minute în plus.** Iepurele trece repetat prin normal, mare, mic, cu pauze vizibile. Partenerul alege ipostaza mare; copilul încearcă să îl înghețe în acea stare. Un nou steag permite încă o încercare. Câinele și butoanele nu au programe în această probă; se pot elimina butoanele.
@@ -89,8 +112,6 @@ Copiii pot alege pauze mai lungi sau alt număr moderat, egal în cele două blo
 **Soluție:** steag → mărime inițială → așteaptă 20 → mărește 4 → așteaptă 20 → micșorează 8 → așteaptă 20 → Forever. Separat: atingere → Stop.
 
 **Indiciu:** „Ce trei stări trebuie să vedem?”, „Ce pauză îți dă timp să atingi?”. Dacă este dificil, mărim pauzele la 30. Copiii pot alege apoi altă stare-țintă; nu evaluăm rapiditatea degetului.
-
-<!-- pagebreak -->
 
 ## Rezervă 2 Cortina automată
 
@@ -126,3 +147,5 @@ Copilul explică „de trei ori” și „până îl opresc”. Un coleg încear
 Raport: verificare/README.md. Înainte de clasă reconstruim M2 și M3 pe Lenovo: înghețare, două reporniri, salvare/redeschidere offline. Browserul nu verifică tableta fizică.
 
 **Referințe:** [ghidul de referință ScratchJr](https://scratched.gse.harvard.edu/sites/default/files/scratchjr-reference-page.pdf) și [blocurile oficiale](https://www.scratchjr.org/explore/blocks).
+
+**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.

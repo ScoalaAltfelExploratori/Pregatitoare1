@@ -14,23 +14,34 @@ Proiect nou cu **Beach Day, Butterfly și Dog**. Fluturele în stânga sus, câi
 
 Nu sunt necesare coordonate exacte, grilă, sunete, texte, desene externe sau importuri. Păstrăm mărimile inițiale și distanțe suficiente pentru atingere. Profesorul arată un pas, copiii îl construiesc. SJR-urile sunt numai exemple opționale pentru profesor.
 
-## Demonstrație de 5 minute
+## Demonstrație de 4 minute
 
 Pe o singură pagină: câinele are steag → ascunde și, separat, la mesaj portocaliu → arată. Fluturele are atingere → trimite portocaliu. Apăsăm steagul, apoi fluturele. Întrebăm: „Ce puteam atinge înainte? Ce putem atinge acum?”. Un nou steag ascunde iar câinele. Demo-ul arată mecanismul; în M1 pornim cu două personaje vizibile.
 
 ## Cele 50 de minute
 
-| Minute | Activitate | Ținta |
+| Minute | Activitate | Acțiunea profesorului |
 | --- | --- | --- |
-| 0-5 | Demonstrație | O descoperire prin mesaj. |
-| 5-9 | Scena | Două personaje și fundalul zilei. |
-| 9-18 | Misiunea 1 | Două reacții care pot fi repetate. |
-| 18-29 | Misiunea 2 | Ieșire ascunsă, final, întoarcere. |
-| 29-32 | Pauză | Tabletele jos. |
-| 32-45 | Puzzle dificil | Descoperiri în ordine, două runde. |
-| 45-50 | Test și salvare | Fiecare verifică propriul joc. |
+| 0-4 | Exemplu și regulă | Scopul jocului și o descoperire. |
+| 4-7 | Scena | Fluture, câine și fundal. |
+| 7-14 | Misiunea 1 | Reacții repetabile. |
+| 14-24 | Misiunea 2 | Ieșire, final și întoarcere. |
+| 24-27 | Pauză | Spunem regula fără tabletă. |
+| 27-37 | Puzzle dificil | Descoperiri în ordine, două runde. |
+| 37-45 | Creația mea | Un secret și o reacție personală. |
+| 45-50 | Testez și salvez | Propriul joc; îl păstrăm pentru lecția 10. |
 
-<!-- pagebreak -->
+**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+
+## Exemplu oficial adaptat: Jocul are o regulă pe care o pot explica
+
+**Reper:** [Animated Genres - proiectul Game](https://www.scratchjr.org/curricula/animatedgenres/full.pdf). Folosim ideea proiectului de joc din Animated Genres: copilul decide un scop și acțiunile jucătorului. Arată o singură descoperire din demo-ul insulei. Copiii spun ce se poate face acum și ce devine posibil după semnal. Nu adăugăm un mecanism nou.
+
+**Model pentru demonstrație:** Dog: steag → ascunde; separat, la portocaliu → arată. Butterfly: atingere → trimite portocaliu. După steag vedem fluturele; după atingere apare câinele.
+
+**Întreabă înainte de rulare:** „Ce îl împiedică pe jucător să sară direct la următorul pas? Copilul descrie ce se vede, nu doar numele blocurilor.”
+
+Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
 
 ## Misiunea 1 Insula reacționează
 
@@ -62,8 +73,6 @@ Câinele de pe prima pagină poate păstra surpriza M1. Exemplul profesorului fo
 
 **Indicii:** „Cine primește plicul?”, „Ce trebuie să se întâmple când ajungi înapoi?”, „Programul pentru întoarcere este pe mingea din care pagină?”. Nu mutăm manual mingea și nu folosim miniaturile pentru a trece proba.
 
-<!-- pagebreak -->
-
 ## Misiunea 3 Lanțul descoperirilor
 
 **Puzzle dificil pentru toți:** după steag vedem numai fluturele. Fluturele dezvăluie câinele; câinele dezvăluie mingea; mingea deschide finalul. Mingea de pe final ne aduce înapoi, unde trebuie să vedem din nou numai fluturele. Facem două runde complete.
@@ -92,7 +101,19 @@ Pe pagina 2 păstrăm întoarcerea: mingea are atingere → pagina 1. Iepurele p
 
 **Loc pentru creație:** alegerea decorului, locurile personajelor și o surpriză de final. Păstrăm țintele și zonele de atingere clare. Nu cerem numărătoare de puncte, inventar sau introducerea unei parole.
 
-<!-- pagebreak -->
+## Creația mea: Secretul insulei mele
+
+**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
+
+**Spune copiilor:** „Alege ce reprezintă descoperirile: un prieten ascuns, un indiciu și o ieșire, de exemplu. Adaugă un gest scurt care arată bucurie sau surpriză după apariția câinelui, înainte de următoarea comandă. Fiecare lucrează și testează pe propria tabletă.”
+
+**Verificarea autorului:** Spune regula jocului într-o propoziție și joacă două runde. Ieșirea nu trebuie să devină disponibilă prea devreme; la întoarcere se refac ascunderile inițiale.
+
+**Sprijin și extensie:** Personalizează o singură descoperire și păstrează restul legăturilor. Pentru mai multă dificultate, fă indicii vizuale diferite pentru pașii succesivi, fără a adăuga încă o pagină.
+
+Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+
+**Ce urmăresc la încheiere:** Copilul explică ordinea descoperirilor și verifică din nou starea de început.
 
 ## Rezervă 1 Surpriza opțională
 
@@ -129,3 +150,5 @@ Dacă modificăm M3, scoatem programele de ascundere și apariție ale câinelui
 Fiecare copil verifică propria rundă, revine în galerie și redeschide proiectul. La redeschidere alege prima pagină și apasă steagul. Notează oral sau prin desen un lucru de continuat la lecția 10. Prezentarea către alți copii este opțională.
 
 Rezervele sunt peste cele 50 de minute și nu înlocuiesc puzzle-ul dificil sau salvarea. Înainte de clasă probează M3 pe Lenovo, inclusiv atingerea personajelor, întoarcerea și redeschiderea offline. Raportul browserului: verificare/README.md.
+
+**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.

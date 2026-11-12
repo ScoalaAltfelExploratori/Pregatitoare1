@@ -2,6 +2,14 @@
 
 50 de minute, copii de 6–7 ani. Construim o scenă cu **Rabbit (iepurele), Ball (mingea) și Park (parcul)**, toate din biblioteca ScratchJr. Copiii creează două programe, rezolvă mini-puzzle-ul „Două blocuri până acasă” și inventează un final.
 
+## Exemplu, puzzle și creație proprie
+
+Deschidem cu **Două personaje, două programe**, pornind de la [Spooky Forest](https://www.scratchjr.org/teach/activities/spooky-forest). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+
+**Minutele 35-45: Salutul inventat de mine** - 10 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+
+[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_01.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+
 ## Varianta simplă pentru clasă
 
 1. Instalează o singură dată [ScratchJr de la Scratch Foundation din Google Play](https://play.google.com/store/apps/details?id=org.scratchjr.android) pe fiecare Lenovo K10. Tabletele rulează aplicația direct, fără emulator.

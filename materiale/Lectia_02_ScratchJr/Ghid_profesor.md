@@ -26,20 +26,29 @@ Activează grila din bara de sus. Selectează iepurele și urmărește numerele 
 
 Mingea marchează **coloana destinației**. Iepurele trece deasupra ei; nu trebuie să o atingă și nu folosim blocul de coliziune. Între coloanele afișate 5 și 11 sunt șase pași, iar între 5 și 13 sunt opt. Numărăm spațiile parcurse, fără a număra startul ca pas. Coordonatele interne sunt numai pentru profesor și nu sunt numerele de pe grila afișată. Pentru copii acceptăm alinierea pe aceeași coloană, fără precizie la pixel.
 
-<!-- pagebreak -->
-
 ## Cele 50 de minute
 
-| Minute | Activitate | Ce face profesorul |
+| Minute | Activitate | Acțiunea profesorului |
 | --- | --- | --- |
-| 0-6 | Scena și Repeat | Verifică cele două personaje și demonstrează o buclă scurtă. |
-| 6-16 | Trei patrulări | Citește ținta; copiii construiesc și numără revenirile. |
-| 16-26 | Șase pătrățele | Arată coloana mingii; copiii găsesc distanța unei deplasări. |
-| 26-29 | Pauză de mișcare | Tabletele jos; mimăm un grup de acțiuni repetat. |
-| 29-44 | Expediția dificilă | Mută reperul la opt pătrățele. Oferă indicii pe rând. |
-| 44-50 | Arătăm și salvăm | Demonstrații în perechi, revenire în galerie și redeschidere. |
+| 0-7 | Scena și exemplul | Iepure, reper fix și săritura repetată. |
+| 7-15 | Misiunea 1 | O patrulare, apoi trei ture. |
+| 15-23 | Misiunea 2 | Trei deplasări egale până la țintă. |
+| 23-26 | Pauză | Mimăm grupul de acțiuni. |
+| 26-37 | Puzzle dificil | Dus și întors cu două bucle; indicii pe rând. |
+| 37-45 | Creația mea | O patrulă cu reguli alese de copil. |
+| 45-50 | Explic și salvez | Arătăm grupul repetat și redeschidem proiectul. |
 
-Dacă scena consumă mai mult timp, construiește prima buclă împreună cu clasa și scurtează prima misiune. Păstrează minimum zece minute pentru încercarea exercițiului dificil. Toți îl văd și îl încearcă; nu cerem tuturor să-l termine fără sprijin.
+**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+
+## Exemplu oficial adaptat: O săritură, de mai multe ori
+
+**Reper:** [Dribble a Basketball](https://www.scratchjr.org/teach/activities/dribble-a-basketball). Preluăm ideea repetării săriturii din exemplul cu mingea. În demonstrația noastră sare iepurele, iar mingea rămâne reper fix, ca în misiuni. Întâi rulează o singură săritură; apoi încadreaz-o în Repeat.
+
+**Model pentru demonstrație:** Rabbit: steag → Repeat 2 [sari 2]. Mingea nu are program. Arată diferența dintre numărul repetărilor și înălțimea saltului. Acesta este și modelul din 00_Demo_Repeat.sjr.
+
+**Întreabă înainte de rulare:** „Ce număr schimb pentru trei sărituri, fără să sar mai sus? Lasă un copil să arate numărul înainte să rulezi.”
+
+Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
 
 ## Demonstrația noului mecanism
 
@@ -58,8 +67,6 @@ Pentru introducerea mai multor acțiuni, conectează-le una după alta în inter
 Spunem ce vrem să se întâmple, construim, anticipăm rezultatul, resetăm pozițiile și apăsăm steagul verde. Apoi verificăm ținta și explicăm o alegere. O nepotrivire este un motiv să încercăm o ajustare, nu un exercițiu separat de copiere a unei greșeli.
 
 Resetarea se folosește **înaintea unei probe complete**. În misiunea dificilă, întoarcerea trebuie produsă de program, fără resetare sau tragerea personajului în timpul rulării. Nu modifica startul iepurelui între misiuni; mutăm numai mingea la ultima provocare.
-
-<!-- pagebreak -->
 
 ## Misiunea 1 - Trei patrulări
 
@@ -91,8 +98,6 @@ Profesorul circulă și cere copilului să arate ținta, programul și rezultatu
 
 Acceptăm programe echivalente care respectă constrângerile. Alegerea altui fundal nu înlocuiește construcția comportamentului. Nu impunem viteză și nu folosim clasamente.
 
-<!-- pagebreak -->
-
 ## Misiunea 3 - Expediția dus-întors
 
 **Exercițiul dificil este inclus pentru toată clasa.** Mută mingea două pătrățele spre dreapta, pe coloana afișată 13, rândul 3. Iepurele rămâne la start, pe coloana afișată 5, rândul 7.
@@ -108,6 +113,20 @@ Copiii pot adapta programul lor din misiunea 2. Construiesc a doua buclă după 
 **Indiciul 1:** „Construiește mai întâi numai drumul până la țintă.” **Indiciul 2:** „În ce direcție este startul acum?” **Indiciul 3:** „Poți repeta și mișcarea de întoarcere într-un al doilea cadru?”. Oferă un singur indiciu, apoi lasă timp de lucru.
 
 Pentru cei care termină: păstrează rezultatul și fă doar două deplasări egale la întoarcere, tot într-un al doilea Repeat. Profesorul poate verifica Repeat 2 cu stânga 4; aceasta este o extensie, nu o a patra misiune obligatorie.
+
+## Creația mea: Patrula mea
+
+**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
+
+**Spune copiilor:** „Inventează un grup de două sau trei acțiuni și repetă-l de două, trei sau patru ori. Alege o distanță mică, cu loc pe scenă. Decide dacă patrula revine după fiecare tur sau înaintează spre o destinație aleasă de tine.”
+
+**Verificarea autorului:** Spune înainte unde crezi că se oprește. Rulează și arată exact grupul repetat. Mingea poate marca destinația aleasă, dar rămâne fără program.
+
+**Sprijin și extensie:** Pleacă de la o patrulare reușită din M1 și schimbă înălțimea saltului și numărul turelor. Pentru mai multă dificultate, revino la start printr-o a doua buclă diferită.
+
+Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+
+**Ce urmăresc la încheiere:** Copilul deosebește numărul de ture de numărul de pași sau de înălțimea saltului.
 
 ## Dificultăți și sprijin
 
@@ -125,3 +144,5 @@ Pentru cei care termină: păstrează rezultatul și fă doar două deplasări e
 Fiecare arată unui coleg grupul repetat și numărul de repetări. Revenim la galerie, denumim opțional „L02 Iepuraș” și redeschidem. Notăm nivelul de sprijin în Observatii_dupa_lectie.md. La următoarea lecție păstrăm aceeași tabletă.
 
 Repere: [interfața oficială](https://sites.bc.edu/scratchjr/learn/), [blocurile ScratchJr](https://www.scratchjr.org/explore/blocks) și [salvarea proiectelor](https://mitscratch.freshdesk.com/en/support/solutions/articles/4000211814-how-can-i-save-or-export-my-project-on-scratchjr-). Testele browserului comunitar sunt separate de proba fizică pe Lenovo.
+
+**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.

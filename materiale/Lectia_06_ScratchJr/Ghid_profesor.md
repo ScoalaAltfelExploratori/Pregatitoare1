@@ -22,19 +22,30 @@ Iepure: **steag → dreapta 5**. Câine: **ciocnire → sus 5**. Atingem câinel
 
 **Înaintea fiecărei probe: Reset, apoi un singur steag.** Reset readuce pozițiile, mărimile și vizibilitatea. Nu tragem personajele înapoi după rulare, fiindcă putem schimba pozițiile inițiale. Așteptăm terminarea reacției. Dacă două personaje rămân suprapuse, programul la ciocnire poate porni din nou; de aceea reacția le separă sau ascunde obiectul.
 
-<!-- pagebreak -->
-
 ## Cele 50 de minute
 
-| Minute | Activitate | Ce urmărim |
+| Minute | Activitate | Acțiunea profesorului |
 | --- | --- | --- |
-| 0-6 | Demonstrație | Contact pe scenă versus atingere cu degetul. |
-| 6-12 | Construim parcul | Două personaje, grila, mărimi inițiale. |
-| 12-21 | Misiunea 1 | Un contact, un Pop, câinele eliberează drumul. |
-| 21-29 | Misiunea 2 | Două întâlniri în ordinea traseului. |
-| 29-32 | Pauză | Mimăm o ștafetă, fără tablete. |
-| 32-45 | Puzzle dificil | Câinele duce mai departe reacția. |
-| 45-50 | Explic și salvez | Reset, repetăm, galerie și redeschidere. |
+| 0-4 | Exemplu oficial adaptat | Leapșa: contact, reacție, separare. |
+| 4-9 | Scena | Așezăm personajele pentru un contact clar. |
+| 9-17 | Misiunea 1 | Trezește paznicul. |
+| 17-24 | Misiunea 2 | Două vizite, două reacții. |
+| 24-27 | Pauză | Mimăm un semnal de contact. |
+| 27-37 | Puzzle dificil | Lanțul iepure-câine-fluture. |
+| 37-45 | Creația mea | O reacție care are sens în povestea copilului. |
+| 45-50 | Testez și salvez | Două probe și redeschidere. |
+
+**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+
+## Exemplu oficial adaptat: Leapșa pornește o reacție
+
+**Reper:** [Playground Games - Tag (lecția 5)](https://sites.bc.edu/devtech/wp-content/uploads/sites/181/2022/10/Playground-Games.pdf). Arată două personaje pe aceeași linie. Iepurele vine până la câine; contactul îl trezește. Folosește pozițiile modelului din ghid sau demo-ul existent. Copiii urmăresc momentul întâlnirii, fără să atingă câinele cu degetul.
+
+**Model pentru demonstrație:** Rabbit: steag → dreapta 5. Dog: la ciocnire → sus 5. Folosește pozițiile modelului din ghid. Urcarea separă personajele după contact; Pop va fi adăugat în M1.
+
+**Întreabă înainte de rulare:** „Ce a pornit câinele: degetul meu sau iepurele? Copiii arată blocul galben cu două personaje.”
+
+Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
 
 Rezervele sunt în plus: 6-8 și 8-10 minute. Nu înlocuiesc puzzle-ul dificil sau salvarea. Dacă poziționarea durează, o facem împreună. Copiii construiesc programe pentru ținte concrete, fără să copieze intenționat greșeli.
 
@@ -56,8 +67,6 @@ Rezervele sunt în plus: 6-8 și 8-10 minute. Nu înlocuiesc puzzle-ul dificil s
 
 **Verificare:** două reacții distincte, în ordinea întâlnirilor, un singur Pop. După Reset repetăm. **Indiciu:** „Dacă iepurele se oprește după prima vizită, ce trebuie schimbat?”. Cerem predicția înaintea probei.
 
-<!-- pagebreak -->
-
 ## Misiunea 3 Reacția în lanț
 
 **Puzzle dificil pentru toți.** Un singur steag. Iepurele ajunge la câine; câinele pornește spre fluture; fluturele spune Pop și urcă. Iepurele parcurge doar traseul scurt. Câinele face legătura cu fluturele. Fără mesaje și fără alte atingeri cu degetul.
@@ -76,6 +85,20 @@ Rezervele sunt în plus: 6-8 și 8-10 minute. Nu înlocuiesc puzzle-ul dificil s
 
 **Verificare:** observăm iepure → câine → fluture, exact un Pop, apoi oprire. Așteptăm încă două secunde, Reset și repetăm. Toți primesc provocarea cu sprijin; nu este concurs de viteză.
 
+## Creația mea: Surpriza întâlnirii
+
+**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
+
+**Spune copiilor:** „Păstrează o întâlnire care funcționează și inventează reacția personajului atins. Alege Pop, o săritură sau un efect vizual cunoscut. Decide de ce reacționează astfel în povestea ta. Păstrează mișcarea de separare după contact.”
+
+**Verificarea autorului:** Pornește de două ori din start. Reacția trebuie să apară numai după contact. Spune ce face programul pentru ca personajele să nu rămână lipite.
+
+**Sprijin și extensie:** Adaugă un singur efect înaintea mișcării de separare. Pentru mai multă dificultate, al doilea personaj întâlnit are altă reacție. Nu schimbăm toate distanțele simultan.
+
+Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+
+**Ce urmăresc la încheiere:** Copilul deosebește atingerea cu degetul de contactul dintre personaje.
+
 ## Rezervă 1 Comoara
 
 **6-8 minute în plus.** Mingea inclusă devine comoară. Un singur steag duce iepurele la minge; la contact auzim un Pop și mingea dispare. Nu atingem mingea cu degetul. După Reset comoara reapare și jocul poate fi repetat.
@@ -83,8 +106,6 @@ Rezervele sunt în plus: 6-8 și 8-10 minute. Nu înlocuiesc puzzle-ul dificil s
 **Scenă:** înlocuim câinele și fluturele cu Ball la coloana 14, linia 5. Iepurele pornește din coloana 4. **Soluție:** iepure, steag → dreapta 10; minge, ciocnire → Pop → ascunde.
 
 **Verificare:** un Pop, mingea invizibilă, iepurele la coloana 14. Reset restabilește mingea. **Indiciu:** „Cine trebuie să primească blocul Ascunde?”. Mingea rămâne personaj, nu desen de fundal.
-
-<!-- pagebreak -->
 
 ## Rezervă 2 Alarma la distanță
 
@@ -117,3 +138,5 @@ Copilul explică cine pornește și ce declanșează următorul personaj. Reveni
 Testele din browser și dovezile sunt în verificare/README.md. Înainte de clasă, profesorul reconstruiește M1 și M3 pe un Lenovo, repetă cu Reset și verifică salvarea/redeschiderea fără internet. Nu trebuie distribuit niciun fișier pe tabletele copiilor.
 
 **Referințe:** [blocurile oficiale](https://www.scratchjr.org/explore/blocks) și [activitatea oficială Start on Bump](https://www.scratchjr.org/curricula/playground/playground-5.pdf).
+
+**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.

@@ -2,6 +2,14 @@
 
 **50 de minute, 6-7 ani. Trei misiuni, inclusiv un puzzle dificil pentru toți, plus două rezerve suplimentare.** Ideile noi sunt Repeat Forever și Stop: controlăm un program în timp ce rulează și îl repornim de la un început clar.
 
+## Exemplu, puzzle și creație proprie
+
+Deschidem cu **Dans și înghețare**, pornind de la [CAL clasa I - Freeze Dance Party (lecția 16)](https://sites.bc.edu/codingasanotherlanguage/curricula/scratchjr-curricula/1st-grade-scratchjr/). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+
+**Minutele 37-45: Coregrafia mea** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+
+[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_08.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+
 ## Pregătire simplă
 
 Numai **Rabbit, Dog, Butterfly, Ball și Park**, din biblioteca ScratchJr. Fără importuri pe tabletele copiilor, descărcări, sunete, înregistrări sau texte de scris. Creăm scena împreună; copiii construiesc programele. SJR-urile sunt referințe opționale pentru profesor.
@@ -10,7 +18,7 @@ Iepurele și câinele sunt separați și rămân pe loc. Folosim transformări d
 
 ## Materiale
 
-- [Ghidul profesorului](Ghid_profesor.md) și [PDF de patru pagini](Ghid_profesor_Lectia_08.pdf).
+- [Ghidul profesorului](Ghid_profesor.md) și [PDF de cinci pagini](Ghid_profesor_Lectia_08.pdf).
 - [Cinci cartonașe PDF](Cartonase_Lectia_08.pdf), cu ținte și scheme, fără soluțiile complete.
 - [Soluții explicate și cinci SJR-uri](solutii/lectia_08/README.md).
 - [Demo](proiecte/00_Demo_Statuie.sjr), [scenă fără programe](proiecte/01_Start_Statui.sjr), [index pentru proiector](index.html).

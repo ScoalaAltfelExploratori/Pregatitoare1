@@ -24,19 +24,30 @@ Adăugăm pagina 2 înainte să căutăm blocul roșu către ea. Revenim la pagi
 
 Modelele principale așteaptă atingeri, inclusiv la sosire. La rezerve folosim un fapt nou: când un program execută Mergi la pagină, programele cu steag de pe pagina destinație pornesc automat. Selectarea miniaturii în editor nu este aceeași probă.
 
-<!-- pagebreak -->
-
 ## Cele 50 de minute
 
-| Minute | Activitate | Ce urmărim |
+| Minute | Activitate | Acțiunea profesorului |
 | --- | --- | --- |
-| 0-6 | Demonstrație | Programul schimbă pagina. |
-| 6-14 | Două scene | Adăugăm pagină, fundal și personaj. |
-| 14-22 | Misiunea 1 | Acțiune înainte de schimbarea scenei. |
-| 22-29 | Misiunea 2 | Buton de întoarcere și încă o călătorie. |
-| 29-32 | Pauză | Alegem imaginar două uși. |
-| 32-45 | Puzzle dificil | Două finaluri, acțiuni și întoarcere. |
-| 45-50 | Explic și salvez | Explorăm ambele finaluri, apoi galerie. |
+| 0-4 | Exemplu oficial adaptat | O acțiune, apoi altă scenă. |
+| 4-10 | Două pagini | Fundaluri și personaje din bibliotecă. |
+| 10-18 | Misiunea 1 | Portalul pornește din program. |
+| 18-24 | Misiunea 2 | Construim și probăm întoarcerea. |
+| 24-27 | Pauză | Spunem două continuări posibile. |
+| 27-37 | Puzzle dificil | Două finaluri și întoarcere. |
+| 37-45 | Creația mea | Alegem sensul și gestul fiecărui final. |
+| 45-50 | Testez și salvez | Explorăm drumurile, salvăm și redeschidem. |
+
+**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+
+## Exemplu oficial adaptat: Povestea continuă în altă scenă
+
+**Reper:** [Moonrise after Sunset](https://www.scratchjr.org/teach/activities/moonrise-after-sunset). Exemplul oficial leagă apusul de apariția lunii. Adaptăm ideea de continuare la personajele noastre: iepurele părăsește parcul și întâlnește câinele pe plajă. Pregătește două pagini din bibliotecă înainte de a arăta blocul roșu. Nu avem nevoie să edităm fundaluri.
+
+**Model pentru demonstrație:** Pagina 1, Rabbit: atingere → sari 2 → pagina 2. Pagina 2 are Beach Day și Dog. Copilul spune oral ce se întâmplă după sosire; nu adăugăm încă pornire automată pe pagina 2. Aceasta rămâne la rezerve.
+
+**Întreabă înainte de rulare:** „Ce parte a poveștii se întâmplă înainte de blocul roșu? Rulează prin atingerea iepurelui, nu prin miniatura paginii.”
+
+Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
 
 Rezervele de 6-8 și 8-10 minute sunt suplimentare. Păstrăm puzzle-ul dificil pentru toți. Limităm decorarea până funcționează călătoria; pozițiile nu trebuie copiate exact.
 
@@ -60,8 +71,6 @@ Rezervele de 6-8 și 8-10 minute sunt suplimentare. Păstrăm puzzle-ul dificil 
 
 **Indiciu:** „Cine poate fi butonul de întoarcere?”. Copilul poate alege alt personaj inclus, suficient de mare și separat, dacă este consecvent la toate finalurile.
 
-<!-- pagebreak -->
-
 ## Misiunea 3 Două finaluri
 
 **Puzzle dificil pentru toți.** În parc avem două alegeri: iepurele deschide plaja de zi, câinele deschide plaja de noapte. Ziua, atingem câinele și sare. Noaptea, atingem iepurele: crește, așteaptă, revine la mărimea inițială. Fiecare final are o minge care ne întoarce în parc. Vizităm ambele finaluri fără miniaturi.
@@ -83,13 +92,25 @@ Rezervele de 6-8 și 8-10 minute sunt suplimentare. Păstrăm puzzle-ul dificil 
 
 **Verificare:** plecăm din parc, vizităm ziua, probăm câinele, revenim. Alegem noaptea, probăm iepurele, așteptăm mărimea inițială, revenim. Repetăm circuitul fără Reset; fiecare final rămâne deschis până atingem mingea. Toți primesc provocarea, cu sprijin dacă este nevoie.
 
+## Creația mea: Două alegeri care spun o poveste
+
+**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
+
+**Spune copiilor:** „Alege ce înseamnă cele două drumuri și inventează un gest pentru fiecare final. De exemplu, ziua mergem la joacă, iar seara ne liniștim. Povestea se spune oral; programul arată diferența. Poți păstra cele trei fundaluri existente.”
+
+**Verificarea autorului:** Urmează fiecare drum prin personajele programate și întoarce-te. Arată ce ai ales tu: acțiunea, ordinea sau semnificația finalului. Miniaturile se folosesc numai la editare.
+
+**Sprijin și extensie:** Personalizează un singur drum funcțional dus-întors. Pentru mai multă dificultate, finalurile au gesturi diferite, dar folosesc aceleași două tipuri de blocuri.
+
+Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+
+**Ce urmăresc la încheiere:** Copilul arată pagina căreia îi aparține programul și blocul care schimbă scena.
+
 ## Rezervă 1 Finalul pornește singur
 
 **6-8 minute în plus.** Păstrăm cele două alegeri și mingile. Schimbăm doar pornirea acțiunilor de pe paginile 2 și 3 din atingere în steag. Câinele sare automat când ajungem la zi; iepurele crește și revine automat când ajungem la noapte.
 
 **Verificare:** atingem doar alegerea din parc. Acțiunea finalului pornește fără alt tap. Finalul rămâne acolo; mingea ne întoarce. Repetăm ambele alegeri. **Indiciu:** „Ce programe pornesc când blocul roșu ne aduce pe pagina nouă?”. Nu punem Mergi la pagină după acțiunile finalurilor din această rezervă.
-
-<!-- pagebreak -->
 
 ## Rezervă 2 Trei opriri
 
@@ -125,3 +146,5 @@ Un coleg explorează ambele finaluri. Copilul explică alegerea și întoarcerea
 Raport: verificare/README.md. Înainte de clasă reconstruim M3 pe Lenovo: ambele ramuri de două ori, salvare și redeschidere offline. Fără distribuirea fișierelor.
 
 **Referințe:** [blocurile oficiale ScratchJr](https://www.scratchjr.org/explore/blocks) și [cartonașele oficiale](https://www.scratchjr.org/pdfs/blocks.pdf), pentru Go to Page și pornirile de program.
+
+**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.

@@ -2,6 +2,14 @@
 
 **50 de minute, 6-7 ani. Trei misiuni, inclusiv una dificilă pentru toți, plus două rezerve în afara celor 50 de minute.** Copiii construiesc propriile programe pentru ținte concrete.
 
+## Exemplu, puzzle și creație proprie
+
+Deschidem cu **Leapșa pornește o reacție**, pornind de la [Playground Games - Tag (lecția 5)](https://sites.bc.edu/devtech/wp-content/uploads/sites/181/2022/10/Playground-Games.pdf). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+
+**Minutele 37-45: Surpriza întâlnirii** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+
+[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_06.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+
 ## Pregătire simplă
 
 ScratchJr instalat este suficient pentru resurse: folosim numai **Rabbit, Dog, Butterfly, Ball, Park și Pop**, din biblioteca aplicației. Fără importuri, conturi ale copiilor, fișiere de copiat, microfon sau descărcări. Scenele se construiesc împreună în timpul lecției. SJR-urile sunt doar exemple opționale pentru profesor.
@@ -10,7 +18,7 @@ Reset înaintea fiecărei probe, apoi un singur steag. Păstrăm mărimile iniț
 
 ## Materiale
 
-- [Ghidul profesorului](Ghid_profesor.md) și [PDF de patru pagini](Ghid_profesor_Lectia_06.pdf).
+- [Ghidul profesorului](Ghid_profesor.md) și [PDF de cinci pagini](Ghid_profesor_Lectia_06.pdf).
 - [Cinci cartonașe PDF](Cartonase_Lectia_06.pdf), cu ținte vizuale și fără soluțiile complete.
 - [Soluțiile și cinci proiecte SJR](solutii/lectia_06/README.md).
 - [Demo](proiecte/00_Demo_Contact.sjr) și [scenă fără programe](proiecte/01_Start_Parc.sjr).

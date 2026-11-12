@@ -48,15 +48,25 @@ Pentru fiecare probă: apasă resetarea personajelor din bara de sus, apoi steag
 
 | Minute | Activitate | Acțiunea profesorului |
 | --- | --- | --- |
-| 0-5 | Vedem întâlnirea | Rulează exemplul. Întreabă ce face fiecare personaj și ce cred copiii că ai programat. |
-| 5-12 | Construim scena | Proiect nou, două personaje și un fundal din bibliotecă. Demonstrează câte un pas, apoi lasă copiii să-l execute. |
-| 12-22 | Programăm întâlnirea | Demonstrează steag, deplasare și săritură pe un singur personaj. Copiii construiesc ambele programe. |
-| 22-25 | Pauză | Tabletele jos. Doi copii mimează întâlnirea. |
-| 25-35 | Două blocuri până acasă | Completăm întâlnirea cu o săgeată de revenire per personaj, apoi prezentăm varianta dificilă. |
-| 35-45 | Inventăm un final | Fiecare adaugă o acțiune sau o secvență proprie. |
-| 45-50 | Arătăm și salvăm | Demonstrație în perechi, două exemple pentru clasă, galerie și redeschidere. |
+| 0-4 | Exemplu oficial adaptat | Două programe; prezicem cine se mișcă. |
+| 4-11 | Scena | Două personaje; fundalul este opțional. |
+| 11-20 | Misiunea 1 | Construim întâlnirea și o probăm. |
+| 20-23 | Pauză | Mimăm întâlnirea, cu tabletele jos. |
+| 23-35 | Mini-puzzle și dificil | Revenire cu o săgeată, apoi două valori diferite; fiecare încearcă. |
+| 35-45 | Creația mea | Salut propriu, în proiectul deja construit. |
+| 45-50 | Explic și salvez | O alegere explicată, galerie și redeschidere. |
 
-Dacă alegerea personajelor consumă prea mult timp, păstrează personajul inițial și un singur partener; fundalul este opțional. Scurtează demonstrația inițială și oferă indicii în timpul construirii. Păstrează provocarea dificilă vizibilă și minimum cinci minute pentru creația personală.
+**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+
+## Exemplu oficial adaptat: Două personaje, două programe
+
+**Reper:** [Spooky Forest](https://www.scratchjr.org/teach/activities/spooky-forest). Adaptăm ideea personajelor cu programe proprii la întâlnirea din parc. Arată iepurele și mingea, la distanță. Selectează pe rând fiecare miniatură: zona de programare se schimbă. La steagul de sus pornesc amândoi.
+
+**Model pentru demonstrație:** Rabbit: steag → dreapta 3 → sari 2. Ball: steag → stânga 3 → sari 2. Folosește starturile din secțiunea Programul model; nu adăugăm mesaje sau Repeat.
+
+**Întreabă înainte de rulare:** „Dacă schimb numai săgeata iepurelui, se schimbă și drumul mingii? Copiii prezic; rulezi și le ceri să arate programul care explică rezultatul.”
+
+Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
 
 ## Misiunea 1 Fă-i să se întâlnească
 
@@ -90,18 +100,19 @@ Lasă un minut de gândire înainte să trageți blocurile. Copiii arată cu deg
 
 În cele zece minute: aproximativ 2 minute cerință și predicție, 5 minute construire și probă, 3 minute provocarea dificilă și explicarea unei soluții.
 
-## Misiunea 3 Inventează finalul
+## Creația mea: Salutul inventat de mine
 
-**Cerința:** „Ce fac după întâlnire? Acum alegi tu.”
+**Minutele 35-45: 10 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
 
-- Sar de două sau trei ori, folosind mai multe blocuri de săritură.
-- Un personaj merge puțin în sus și apoi în jos.
-- Înainte de întoarcere, personajele fac un mic dans inventat de copil.
-- Copilul alege alte personaje din bibliotecă și păstrează o acțiune proprie.
+**Spune copiilor:** „După apropiere, inventează un salut din două sau trei acțiuni albastre cunoscute. Poate fi un salt înalt urmat de unul mic sau o mișcare scurtă dus-întors. Alegi cine salută și în ce fel. Păstrează drumul de întoarcere la start.”
 
-Exemplul opțional al profesorului: iepurele face dreapta 3, sari 2, sari 2, stânga 3; mingea face stânga 3, sari 2, sari 2, dreapta 3. Ambele pornesc la steag, se apropie, sar de două ori și revin la start. Nu este singurul final corect.
+**Verificarea autorului:** Rulează de două ori din start. Arată acțiunea aleasă de tine și explică ce ai schimbat. Dacă ai adăugat o deplasare în salut, compenseaz-o înainte de revenirea deja construită.
 
-**Reușită:** copilul adaugă cel puțin o acțiune și poate explica ce a vrut să se întâmple. Alegerea decorului nu înlocuiește schimbarea comportamentului.
+**Sprijin și extensie:** Păstrează întâlnirea simplă și adaugă doar o săritură aleasă de copil. Pentru mai multă dificultate, cei doi fac saluturi diferite și tot revin la start.
+
+Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+
+**Ce urmăresc la încheiere:** Copilul selectează personajul corect și arată blocul care îi schimbă comportamentul.
 
 ## Dificultăți și sprijin
 
@@ -130,3 +141,5 @@ Pe fișa de observații, notează „singur”, „cu indiciu” sau „mai exer
 - [Salvare și export](https://mitscratch.freshdesk.com/en/support/solutions/articles/4000211814-how-can-i-save-or-export-my-project-on-scratchjr-): proiectele se păstrează pe dispozitiv.
 
 Programarea copiilor se face în ScratchJr. Site-ul lecției este un index pentru profesor, iar testele în browser folosesc separat un port comunitar al editorului.
+
+**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.

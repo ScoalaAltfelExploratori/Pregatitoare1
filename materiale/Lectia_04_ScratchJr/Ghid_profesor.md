@@ -24,21 +24,30 @@ Mesajul nu numește un personaj: pornește programele de aceeași culoare de pe 
 
 **Regula probei:** atingem o singură dată personajul de comandă pe scenă, apoi așteptăm finalul. Miniatura din stânga selectează personajul pentru editare. Steagul verde nu pornește exemplele lecției. Resetarea este o probă nouă, nu o parte a soluției.
 
-<!-- pagebreak -->
-
 ## Cele 50 de minute
 
 | Minute | Activitate | Acțiunea profesorului |
 | --- | --- | --- |
-| 0-6 | Semnalul colorat | Joc scurt și demonstrarea celor două blocuri noi. |
-| 6-11 | Scena | Iepure și câine; pregătim locul și selectarea personajelor. |
-| 11-20 | Misiunea 1 | Copiii leagă expeditorul de destinatar și compun trucul. |
-| 20-29 | Misiunea 2 | Adăugăm fluturele și al doilea program separat al câinelui. |
-| 29-32 | Pauză | Tabletele jos; mimăm cine trimite și cine primește. |
-| 32-45 | Misiunea dificilă | Construim lanțul și testăm ordinea; indicii progresive. |
-| 45-50 | Explic și salvez | Un coleg prezice, apoi galerie și redeschidere. |
+| 0-4 | Exemplu oficial adaptat | Un mesaj, o reacție vizibilă. |
+| 4-8 | Scena | Iepure și câine; două capete ale legăturii. |
+| 8-17 | Misiunea 1 | Comanda și revenirea la normal. |
+| 17-24 | Misiunea 2 | Al doilea buton și altă culoare. |
+| 24-27 | Pauză | Mimăm trimiterea și primirea. |
+| 27-37 | Puzzle dificil | Lanțul celor trei artiști. |
+| 37-45 | Creația mea | Comenzi sau trucuri proprii în lanț. |
+| 45-50 | Explic și salvez | Urmărim un mesaj, salvăm și redeschidem. |
 
-Rezervele sunt în plus față de cele 50 de minute. Le oferim celor care termină devreme sau folosim timpul câștigat cu clasa. Păstrăm încercarea provocării dificile pentru toți și timpul final de salvare. Dacă pregătirea durează, sprijinim împreună M1.
+**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+
+## Exemplu oficial adaptat: Un semnal îi dă rândul celuilalt
+
+**Reper:** [Meet and Greet](https://www.scratchjr.org/teach/activities/meet-and-greet). Adaptăm salutul dintre personaje la o comandă vizuală. Păstrăm ideea mesajului, folosim iepurele și câinele deja cunoscuți și eliminăm dialogul de tastat. Arată ambele capete ale legăturii înainte de rulare.
+
+**Model pentru demonstrație:** Rabbit: atingere → trimite portocaliu. Dog: la mesaj portocaliu → mărește 2. Este demonstrația scurtă din ghid; resetăm mărimea între probe. Revenirea automată va fi construită de copii în M1.
+
+**Întreabă înainte de rulare:** „Pe cine ating și cine face trucul? Copilul urmărește culoarea dintre cele două programe.”
+
+Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
 
 ## Misiunea 1 Magia la distanță
 
@@ -60,8 +69,6 @@ Rezervele sunt în plus față de cele 50 de minute. Le oferim celor care termin
 
 **Indicii:** „Cum află câinele ce truc i-ai cerut?”, „Unde începe al doilea program?”, „Ce se întâmplă dacă ambele programe ascultă aceeași culoare?”. Ultima întrebare este o predicție; nu cerem să construiască o eroare.
 
-<!-- pagebreak -->
-
 ## Misiunea 3 Spectacolul în lanț
 
 **Provocarea dificilă, pentru toți:** atingem numai iepurele. El crește, așteaptă și revine normal. Abia apoi câinele dispare și reapare. După revenirea câinelui, fluturele crește și revine normal. La final toți sunt vizibili și normali; întregul spectacol funcționează la un nou tap, fără resetare.
@@ -80,6 +87,20 @@ Rezervele sunt în plus față de cele 50 de minute. Le oferim celor care termin
 
 **Probă:** un tap, mâinile jos, descriem cele trei momente. După final repetăm fără resetare. Ultimul personaj nu trimite un mesaj înapoi; spectacolul trebuie să se oprească. Copilul care are nevoie de sprijin poate încheia cu primele două personaje și explica locul celui de-al treilea. Toți primesc provocarea, fără clasament.
 
+## Creația mea: Telecomanda inventată de mine
+
+**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
+
+**Spune copiilor:** „Personalizează programul care îți funcționează. Dacă ai telecomanda, alege trucuri diferite pentru cele două culori. Dacă ai lanțul, inventează alte trucuri pentru artiști și păstrează plicurile la sfârșit. Tu alegi efectele și pauzele; la final personajele sunt vizibile și la mărimea inițială.”
+
+**Verificarea autorului:** Probează fiecare buton separat, de două ori. Explică ce comandă ai inventat și ce culoare o pornește. Dacă ai construit deja lanțul dificil, poți personaliza trucurile din el, păstrând plicurile la sfârșit, fără să reconstruiești telecomanda.
+
+**Sprijin și extensie:** Personalizează o singură comandă funcțională. Pentru mai multă dificultate, ambele comenzi produc câte două efecte și pot fi folosite în orice ordine, după terminarea trucului anterior.
+
+Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+
+**Ce urmăresc la încheiere:** Copilul arată expeditorul, receptorul și culorile care se potrivesc.
+
 ## Rezervă 1 Un semnal, două surprize
 
 **6-8 minute suplimentar.** La un tap pe iepure, câinele crește iar fluturele dispare o clipă. Trucurile pornesc împreună; la final amândoi sunt normali și vizibili. Folosim **o singură culoare și un singur bloc de trimitere**.
@@ -87,8 +108,6 @@ Rezervele sunt în plus față de cele 50 de minute. Le oferim celor care termin
 **Soluție:** iepure, atingere → trimite portocaliu. Câine, la portocaliu → mărește 4 → așteaptă 10 → mărimea inițială. Fluture, la portocaliu → ascunde → așteaptă 10 → arată. Câinele nu mai trimite albastru; fluturele ascultă acum portocaliu.
 
 **Verificare:** vedem câinele mare în timp ce fluturele este ascuns. Nu cerem finalizare exact simultană. Două rulări fără resetare. **Indiciu:** „Poate același semnal să fie auzit de doi artiști?”.
-
-<!-- pagebreak -->
 
 ## Rezervă 2 De-a v-ați ascunselea
 
@@ -119,3 +138,5 @@ Un coleg prezice cine va reacționa; autorul atinge un singur personaj și expli
 Testele și limitele lor sunt în verificare/README.md. Browserul comunitar nu certifică atingerea cu degetul, fluiditatea sau funcționarea offline pe Lenovo. Înainte de clasă, profesorul construiește legătura simplă și lanțul în aplicația oficială, apoi verifică salvarea și redeschiderea fără internet.
 
 **Referințe:** [blocurile oficiale ScratchJr](https://www.scratchjr.org/explore/blocks) și [cartonașele oficiale](https://www.scratchjr.org/pdfs/blocks.pdf) pentru Send Message, Start on Message și blocurile de aspect.
+
+**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.

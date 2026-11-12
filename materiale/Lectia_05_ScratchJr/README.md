@@ -2,6 +2,14 @@
 
 **50 de minute, 6-7 ani. Trei misiuni principale, una dificilă și două rezerve suplimentare.** Programăm numărul sunetelor și pauzele dintre ele. Singurul bloc nou este Pop; refolosim Repeat, Așteaptă și mesajele.
 
+## Exemplu, puzzle și creație proprie
+
+Deschidem cu **Un sunet pentru fiecare pas de dans**, pornind de la [Dance Party](https://www.scratchjr.org/teach/activities/dance-party). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+
+**Minutele 37-45: Semnătura mea sonoră** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+
+[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_05.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+
 ## Pregătire simplă
 
 ScratchJr instalat este suficient pentru resurse. Creăm un proiect nou cu **Rabbit, Dog și Park**, din biblioteca aplicației; folosim sunetul inclus **Pop**. Fără importuri, fișiere de copiat pe tablete, microfon, înregistrări sau descărcări. Nu folosim sunetele suplimentare oferite de portul comunitar.
@@ -10,7 +18,7 @@ Verifică volumul media și sunetul înainte de clasă. Ascultăm pe rând sau �
 
 ## Materiale
 
-- [Ghidul profesorului](Ghid_profesor.md) și [PDF-ul de patru pagini](Ghid_profesor_Lectia_05.pdf).
+- [Ghidul profesorului](Ghid_profesor.md) și [PDF-ul de cinci pagini](Ghid_profesor_Lectia_05.pdf).
 - [Cinci cartonașe vizuale PDF](Cartonase_Lectia_05.pdf), cu cerințe și ritmuri, fără programele complete.
 - [Soluțiile explicate și cele cinci SJR-uri](solutii/lectia_05/README.md).
 - [Demo Pop](proiecte/00_Demo_Pop.sjr), [scenă fără programe](proiecte/01_Start_Ritmuri.sjr), [indexul materialelor](index.html).

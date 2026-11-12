@@ -2,6 +2,14 @@
 
 **50 de minute, 6-7 ani. Lucru individual:** fiecare copil construiește și testează pe propria tabletă. Trei misiuni, un puzzle dificil pentru toți și două rezerve suplimentare. Nu sunt necesare schimbul de tablete sau interacțiunea între copii.
 
+## Exemplu, puzzle și creație proprie
+
+Deschidem cu **Jocul are o regulă pe care o pot explica**, pornind de la [Animated Genres - proiectul Game](https://www.scratchjr.org/curricula/animatedgenres/full.pdf). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+
+**Minutele 37-45: Secretul insulei mele** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+
+[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_09.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+
 ## Pregătire simplă
 
 Numai **Butterfly, Dog, Ball, Rabbit, Beach Day și Beach Night**, din biblioteca ScratchJr. Fără descărcări, conturi ale copiilor, imagini externe, înregistrări sau fișiere de copiat pe tablete. Nu sunt blocuri noi: combinăm mesaje, vizibilitate, atingere și pagini.
@@ -20,7 +28,7 @@ Rezervele de 6-8 și 8-10 minute sunt peste conținutul de bază. Nu înlocuiesc
 
 ## Materiale
 
-- [Ghidul profesorului](Ghid_profesor.md) și [PDF de patru pagini](Ghid_profesor_Lectia_09.pdf).
+- [Ghidul profesorului](Ghid_profesor.md) și [PDF de cinci pagini](Ghid_profesor_Lectia_09.pdf).
 - [Cinci cartonașe PDF](Cartonase_Lectia_09.pdf), cu ținte, fără soluții complete.
 - [Soluțiile explicate și cele cinci SJR-uri](solutii/lectia_09/README.md).
 - [Demo](proiecte/00_Demo_Descoperire.sjr), [scenă fără programe](proiecte/01_Start_Insula.sjr), [pagina pentru proiector](index.html).

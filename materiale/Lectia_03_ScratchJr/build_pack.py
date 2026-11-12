@@ -51,47 +51,12 @@ def fmt(s):
     return s.replace("–","-").replace("—","-")
 
 def teacher_pdf():
-    out=ROOT/"Ghid_profesor_Lectia_03.pdf"
-    st={
-      "body":ParagraphStyle("body",fontName="Body",fontSize=10.5,leading=14.5,textColor=INK,spaceAfter=7),
-      "h1":ParagraphStyle("h1",fontName="Bold",fontSize=25,leading=30,textColor=INK,spaceAfter=15,keepWithNext=True),
-      "h2":ParagraphStyle("h2",fontName="Bold",fontSize=16,leading=20,textColor=INK,spaceBefore=14,spaceAfter=8,keepWithNext=True),
-      "cell":ParagraphStyle("cell",fontName="Body",fontSize=9.2,leading=12.5,textColor=INK),
-      "list":ParagraphStyle("list",fontName="Body",fontSize=10.5,leading=14.5,textColor=INK,leftIndent=10,spaceAfter=6)}
-    lines=(ROOT/"Ghid_profesor.md").read_text(encoding="utf-8-sig").splitlines();story=[];i=0
-    while i<len(lines):
-        line=lines[i].strip()
-        if not line:i+=1;continue
-        if line == "<!-- pagebreak -->":
-            story.append(PageBreak());i+=1;continue
-        if line.startswith("|"):
-            rows=[]
-            while i<len(lines) and lines[i].strip().startswith("|"):
-                cells=[x.strip() for x in lines[i].strip().strip("|").split("|")]
-                if not all(re.fullmatch(r"[-: ]+",x) for x in cells):rows.append(cells)
-                i+=1
-            n=len(rows[0]);widths=[135,380] if n==2 else [53,103,359]
-            t=Table([[Paragraph(fmt(v),st["cell"]) for v in r] for r in rows],colWidths=widths,repeatRows=1,hAlign="LEFT")
-            t.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,0),MINT),("VALIGN",(0,0),(-1,-1),"TOP"),("LEFTPADDING",(0,0),(-1,-1),8),("RIGHTPADDING",(0,0),(-1,-1),8),("TOPPADDING",(0,0),(-1,-1),7),("BOTTOMPADDING",(0,0),(-1,-1),7),("LINEBELOW",(0,0),(-1,-1),.4,LINE)]))
-            story.extend([t,Spacer(1,10)]);continue
-        if line.startswith("# "):story.append(Paragraph(fmt(line[2:]),st["h1"]))
-        elif line.startswith("## "):
-            story.append(Paragraph(fmt(line[3:]),st["h2"]))
-        elif line.startswith("- "):story.append(Paragraph("• "+fmt(line[2:]),st["list"]))
-        elif re.match(r"^\d+\. ",line):story.append(Paragraph(fmt(line),st["list"]))
-        else:story.append(Paragraph(fmt(line),st["body"]))
-        i+=1
-    def decorate(c,doc):
-        pw,ph=A4;c.saveState();c.setFont("Body",8);c.setFillColor(MUTED)
-        c.drawString(40,ph-26,"SCRATCHJR / LECȚIA 3 / GHID PENTRU PROFESOR")
-        c.setStrokeColor(LINE);c.line(40,36,pw-40,36)
-        c.drawString(40,23,"50 de minute · 6-7 ani · Versiune pentru probă");c.drawRightString(pw-40,23,str(doc.page));c.restoreState()
-    SimpleDocTemplate(str(out),pagesize=A4,leftMargin=40,rightMargin=40,topMargin=48,bottomMargin=49,title="Lecția 3 ScratchJr - Ghidul profesorului").build(story,onFirstPage=decorate,onLaterPages=decorate)
-    reader=PdfReader(str(out));extracted="\n".join(p.extract_text() for p in reader.pages)
-    assert len(reader.pages)==4, f"Guide overflow: {len(reader.pages)} pages"
-    for phrase in ["Misiunea 1","Misiunea 2","Dificultăți și sprijin","50 de minute"]:assert phrase in extracted,phrase
-    return len(reader.pages)
-
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("course_guides", ROOT.parent / "render_teacher_guides.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    module.teacher_html(ROOT)
+    return module.teacher_pdf(ROOT)
 
 
 def dog(c,x,y,r=22):

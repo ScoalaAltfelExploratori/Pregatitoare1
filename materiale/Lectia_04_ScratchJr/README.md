@@ -2,6 +2,14 @@
 
 **50 de minute, 6-7 ani. Trei misiuni principale, inclusiv una dificilă, plus două rezerve.** Copiii folosesc mesaje colorate pentru a comanda alte personaje și pentru a lega trucuri într-un spectacol.
 
+## Exemplu, puzzle și creație proprie
+
+Deschidem cu **Un semnal îi dă rândul celuilalt**, pornind de la [Meet and Greet](https://www.scratchjr.org/teach/activities/meet-and-greet). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+
+**Minutele 37-45: Telecomanda inventată de mine** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+
+[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_04.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+
 ## Pregătirea simplă a clasei
 
 ScratchJr este deja instalat. Creăm un proiect nou cu **Rabbit, Dog și Park** din biblioteca aplicației; la misiunea 2 adăugăm **Butterfly**. Eliminăm pisica inițială dacă folosim exact modelul. Lăsăm loc între personaje, la dimensiunile inițiale; nu cerem grilă sau poziții exacte.

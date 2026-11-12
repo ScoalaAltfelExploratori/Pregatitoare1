@@ -1,0 +1,633 @@
+{
+  "updated": "2026-11-12",
+  "lessons": [
+    {
+      "lesson": 1,
+      "source_title": "Spooky Forest",
+      "source_url": "https://www.scratchjr.org/teach/activities/spooky-forest",
+      "opening_title": "Două personaje, două programe",
+      "opening": "Adaptăm ideea personajelor cu programe proprii la întâlnirea din parc. Arată iepurele și mingea, la distanță. Selectează pe rând fiecare miniatură: zona de programare se schimbă. La steagul de sus pornesc amândoi.",
+      "model": "Rabbit: steag → dreapta 3 → sari 2. Ball: steag → stânga 3 → sari 2. Folosește starturile din secțiunea Programul model; nu adăugăm mesaje sau Repeat.",
+      "question": "Dacă schimb numai săgeata iepurelui, se schimbă și drumul mingii? Copiii prezic; rulezi și le ceri să arate programul care explică rezultatul.",
+      "creation_title": "Salutul inventat de mine",
+      "creation": "După apropiere, inventează un salut din două sau trei acțiuni albastre cunoscute. Poate fi un salt înalt urmat de unul mic sau o mișcare scurtă dus-întors. Alegi cine salută și în ce fel. Păstrează drumul de întoarcere la start.",
+      "creation_check": "Rulează de două ori din start. Arată acțiunea aleasă de tine și explică ce ai schimbat. Dacă ai adăugat o deplasare în salut, compenseaz-o înainte de revenirea deja construită.",
+      "creation_support": "Păstrează întâlnirea simplă și adaugă doar o săritură aleasă de copil. Pentru mai multă dificultate, cei doi fac saluturi diferite și tot revin la start.",
+      "check": "Copilul selectează personajul corect și arată blocul care îi schimbă comportamentul.",
+      "schedule": [
+        [
+          0,
+          4,
+          "Exemplu oficial adaptat",
+          "Două programe; prezicem cine se mișcă."
+        ],
+        [
+          4,
+          11,
+          "Scena",
+          "Două personaje; fundalul este opțional."
+        ],
+        [
+          11,
+          20,
+          "Misiunea 1",
+          "Construim întâlnirea și o probăm."
+        ],
+        [
+          20,
+          23,
+          "Pauză",
+          "Mimăm întâlnirea, cu tabletele jos."
+        ],
+        [
+          23,
+          35,
+          "Mini-puzzle și dificil",
+          "Revenire cu o săgeată, apoi două valori diferite; fiecare încearcă."
+        ],
+        [
+          35,
+          45,
+          "Creația mea",
+          "Salut propriu, în proiectul deja construit."
+        ],
+        [
+          45,
+          50,
+          "Explic și salvez",
+          "O alegere explicată, galerie și redeschidere."
+        ]
+      ]
+    },
+    {
+      "lesson": 2,
+      "source_title": "Dribble a Basketball",
+      "source_url": "https://www.scratchjr.org/teach/activities/dribble-a-basketball",
+      "opening_title": "O săritură, de mai multe ori",
+      "opening": "Preluăm ideea repetării săriturii din exemplul cu mingea. În demonstrația noastră sare iepurele, iar mingea rămâne reper fix, ca în misiuni. Întâi rulează o singură săritură; apoi încadreaz-o în Repeat.",
+      "model": "Rabbit: steag → Repeat 2 [sari 2]. Mingea nu are program. Arată diferența dintre numărul repetărilor și înălțimea saltului. Acesta este și modelul din 00_Demo_Repeat.sjr.",
+      "question": "Ce număr schimb pentru trei sărituri, fără să sar mai sus? Lasă un copil să arate numărul înainte să rulezi.",
+      "creation_title": "Patrula mea",
+      "creation": "Inventează un grup de două sau trei acțiuni și repetă-l de două, trei sau patru ori. Alege o distanță mică, cu loc pe scenă. Decide dacă patrula revine după fiecare tur sau înaintează spre o destinație aleasă de tine.",
+      "creation_check": "Spune înainte unde crezi că se oprește. Rulează și arată exact grupul repetat. Mingea poate marca destinația aleasă, dar rămâne fără program.",
+      "creation_support": "Pleacă de la o patrulare reușită din M1 și schimbă înălțimea saltului și numărul turelor. Pentru mai multă dificultate, revino la start printr-o a doua buclă diferită.",
+      "check": "Copilul deosebește numărul de ture de numărul de pași sau de înălțimea saltului.",
+      "schedule": [
+        [
+          0,
+          7,
+          "Scena și exemplul",
+          "Iepure, reper fix și săritura repetată."
+        ],
+        [
+          7,
+          15,
+          "Misiunea 1",
+          "O patrulare, apoi trei ture."
+        ],
+        [
+          15,
+          23,
+          "Misiunea 2",
+          "Trei deplasări egale până la țintă."
+        ],
+        [
+          23,
+          26,
+          "Pauză",
+          "Mimăm grupul de acțiuni."
+        ],
+        [
+          26,
+          37,
+          "Puzzle dificil",
+          "Dus și întors cu două bucle; indicii pe rând."
+        ],
+        [
+          37,
+          45,
+          "Creația mea",
+          "O patrulă cu reguli alese de copil."
+        ],
+        [
+          45,
+          50,
+          "Explic și salvez",
+          "Arătăm grupul repetat și redeschidem proiectul."
+        ]
+      ]
+    },
+    {
+      "lesson": 3,
+      "source_title": "Sunset",
+      "source_url": "https://www.scratchjr.org/teach/activities/sunset",
+      "opening_title": "Când personajul dispare",
+      "opening": "Exemplul oficial face soarele să dispară. Folosim aceeași idee vizuală pentru iepurele magician, fără deplasare. La început arată numai atingere → mărește 4. Păstrează demonstrația dispariției pentru trecerea la M2, în timpul alocat acelei misiuni.",
+      "model": "La M2, Rabbit: atingere → ascunde → așteaptă 10 → arată. Rulează o dată, apoi încă o dată după revenire. Nu adăugăm soare, pagini sau alte personaje pentru această explicație.",
+      "question": "Cum poate reveni singur dacă nu-l mai putem atinge? Copiii propun ce urmează după ascundere, apoi verificăm.",
+      "creation_title": "Trucul meu de magician",
+      "creation": "Alege ordinea a două efecte vizuale: mare/mic, ascuns/vizibil. Introdu o pauză acolo unde publicul trebuie să vadă efectul. La final personajul este vizibil și la mărimea inițială. Trucul pornește la o singură atingere.",
+      "creation_check": "Rulează de două ori fără resetare între trucuri. Explică ce moment ai vrut să surprindă publicul. Nu impunem un număr maxim de blocuri în acest atelier.",
+      "creation_support": "Schimbă durata unei pauze sau mărimea unui efect dintr-un truc reușit. Pentru mai multă dificultate, dă câinelui un truc diferit care se repetă tot fără resetare.",
+      "check": "Copilul explică diferența dintre Arată și Mărimea inițială.",
+      "schedule": [
+        [
+          0,
+          4,
+          "Demonstrație",
+          "Atingerea pornește mărirea; prezicem efectul."
+        ],
+        [
+          4,
+          8,
+          "Scena",
+          "Iepure și câine, cu loc pentru efecte."
+        ],
+        [
+          8,
+          17,
+          "Misiunea 1",
+          "Mărire și micșorare."
+        ],
+        [
+          17,
+          24,
+          "Misiunea 2 și exemplul",
+          "Dispariție, pauză, revenire; legătura cu Sunset."
+        ],
+        [
+          24,
+          27,
+          "Pauză",
+          "Mimăm mare, mic, ascuns."
+        ],
+        [
+          27,
+          37,
+          "Puzzle dificil",
+          "Truc complet, repetabil fără resetare."
+        ],
+        [
+          37,
+          45,
+          "Creația mea",
+          "Inventăm altă ordine a efectelor."
+        ],
+        [
+          45,
+          50,
+          "Explic și salvez",
+          "Două probe, galerie și redeschidere."
+        ]
+      ]
+    },
+    {
+      "lesson": 4,
+      "source_title": "Meet and Greet",
+      "source_url": "https://www.scratchjr.org/teach/activities/meet-and-greet",
+      "opening_title": "Un semnal îi dă rândul celuilalt",
+      "opening": "Adaptăm salutul dintre personaje la o comandă vizuală. Păstrăm ideea mesajului, folosim iepurele și câinele deja cunoscuți și eliminăm dialogul de tastat. Arată ambele capete ale legăturii înainte de rulare.",
+      "model": "Rabbit: atingere → trimite portocaliu. Dog: la mesaj portocaliu → mărește 2. Este demonstrația scurtă din ghid; resetăm mărimea între probe. Revenirea automată va fi construită de copii în M1.",
+      "question": "Pe cine ating și cine face trucul? Copilul urmărește culoarea dintre cele două programe.",
+      "creation_title": "Telecomanda inventată de mine",
+      "creation": "Personalizează programul care îți funcționează. Dacă ai telecomanda, alege trucuri diferite pentru cele două culori. Dacă ai lanțul, inventează alte trucuri pentru artiști și păstrează plicurile la sfârșit. Tu alegi efectele și pauzele; la final personajele sunt vizibile și la mărimea inițială.",
+      "creation_check": "Probează fiecare buton separat, de două ori. Explică ce comandă ai inventat și ce culoare o pornește. Dacă ai construit deja lanțul dificil, poți personaliza trucurile din el, păstrând plicurile la sfârșit, fără să reconstruiești telecomanda.",
+      "creation_support": "Personalizează o singură comandă funcțională. Pentru mai multă dificultate, ambele comenzi produc câte două efecte și pot fi folosite în orice ordine, după terminarea trucului anterior.",
+      "check": "Copilul arată expeditorul, receptorul și culorile care se potrivesc.",
+      "schedule": [
+        [
+          0,
+          4,
+          "Exemplu oficial adaptat",
+          "Un mesaj, o reacție vizibilă."
+        ],
+        [
+          4,
+          8,
+          "Scena",
+          "Iepure și câine; două capete ale legăturii."
+        ],
+        [
+          8,
+          17,
+          "Misiunea 1",
+          "Comanda și revenirea la normal."
+        ],
+        [
+          17,
+          24,
+          "Misiunea 2",
+          "Al doilea buton și altă culoare."
+        ],
+        [
+          24,
+          27,
+          "Pauză",
+          "Mimăm trimiterea și primirea."
+        ],
+        [
+          27,
+          37,
+          "Puzzle dificil",
+          "Lanțul celor trei artiști."
+        ],
+        [
+          37,
+          45,
+          "Creația mea",
+          "Comenzi sau trucuri proprii în lanț."
+        ],
+        [
+          45,
+          50,
+          "Explic și salvez",
+          "Urmărim un mesaj, salvăm și redeschidem."
+        ]
+      ]
+    },
+    {
+      "lesson": 5,
+      "source_title": "Dance Party",
+      "source_url": "https://www.scratchjr.org/teach/activities/dance-party",
+      "opening_title": "Un sunet pentru fiecare pas de dans",
+      "opening": "Pornim de la ideea unui personaj care dansează cu sunet. Folosim numai Pop și o săritură, fără muzică descărcată sau înregistrări. Mai întâi ascultăm un Pop; apoi arătăm dansul scurt. La misiuni ne concentrăm pe ritm.",
+      "model": "Rabbit: atingere → Repeat 2 [Pop → sari 2 → așteaptă 6]. După două sunete și două salturi se oprește. Folosim Repeat finit, deja învățat, în locul repetării continue din activitatea originală.",
+      "question": "Câte sunete auzi? Ce se schimbă dacă pauza devine mai lungă? Săritura are și ea o durată, deci nu folosim acest model pentru a măsura numai pauza.",
+      "creation_title": "Semnătura mea sonoră",
+      "creation": "Inventează un cod cu trei până la șase Pop și cel puțin două feluri de pauze. Bate-l întâi din palme, apoi programează-l. Tu alegi gruparea; poți folosi Repeat. Testăm pe rând, ca să putem asculta.",
+      "creation_check": "Numără sunetele fără să numeri blocurile. Repetă codul după ce se încheie și explică unde este pauza lungă. Codul trebuie să se oprească singur.",
+      "creation_support": "Păstrează trei Pop din M1 și mută pauza lungă. Pentru mai multă dificultate, câinele răspunde o singură dată după mesajul trimis la sfârșit.",
+      "check": "Copilul distinge numărul de sunete de felul în care sunt grupate.",
+      "schedule": [
+        [
+          0,
+          4,
+          "Exemplu oficial adaptat",
+          "Pop și dans scurt; anticipăm numărul sunetelor."
+        ],
+        [
+          4,
+          8,
+          "Scena",
+          "Două personaje; verificăm volumul."
+        ],
+        [
+          8,
+          17,
+          "Misiunea 1",
+          "Construim codul de trei sunete."
+        ],
+        [
+          17,
+          24,
+          "Misiunea 2",
+          "Patru sunete cu două grupări."
+        ],
+        [
+          24,
+          27,
+          "Pauză",
+          "Repetăm ritmul din palme."
+        ],
+        [
+          27,
+          37,
+          "Puzzle dificil",
+          "Trei perechi, apoi răspunsul câinelui."
+        ],
+        [
+          37,
+          45,
+          "Creația mea",
+          "Un cod sonor inventat de copil."
+        ],
+        [
+          45,
+          50,
+          "Ascult și salvez",
+          "O probă pe rând, galerie și redeschidere."
+        ]
+      ]
+    },
+    {
+      "lesson": 6,
+      "source_title": "Playground Games - Tag (lecția 5)",
+      "source_url": "https://sites.bc.edu/devtech/wp-content/uploads/sites/181/2022/10/Playground-Games.pdf",
+      "opening_title": "Leapșa pornește o reacție",
+      "opening": "Arată două personaje pe aceeași linie. Iepurele vine până la câine; contactul îl trezește. Folosește pozițiile modelului din ghid sau demo-ul existent. Copiii urmăresc momentul întâlnirii, fără să atingă câinele cu degetul.",
+      "model": "Rabbit: steag → dreapta 5. Dog: la ciocnire → sus 5. Folosește pozițiile modelului din ghid. Urcarea separă personajele după contact; Pop va fi adăugat în M1.",
+      "question": "Ce a pornit câinele: degetul meu sau iepurele? Copiii arată blocul galben cu două personaje.",
+      "creation_title": "Surpriza întâlnirii",
+      "creation": "Păstrează o întâlnire care funcționează și inventează reacția personajului atins. Alege Pop, o săritură sau un efect vizual cunoscut. Decide de ce reacționează astfel în povestea ta. Păstrează mișcarea de separare după contact.",
+      "creation_check": "Pornește de două ori din start. Reacția trebuie să apară numai după contact. Spune ce face programul pentru ca personajele să nu rămână lipite.",
+      "creation_support": "Adaugă un singur efect înaintea mișcării de separare. Pentru mai multă dificultate, al doilea personaj întâlnit are altă reacție. Nu schimbăm toate distanțele simultan.",
+      "check": "Copilul deosebește atingerea cu degetul de contactul dintre personaje.",
+      "schedule": [
+        [
+          0,
+          4,
+          "Exemplu oficial adaptat",
+          "Leapșa: contact, reacție, separare."
+        ],
+        [
+          4,
+          9,
+          "Scena",
+          "Așezăm personajele pentru un contact clar."
+        ],
+        [
+          9,
+          17,
+          "Misiunea 1",
+          "Trezește paznicul."
+        ],
+        [
+          17,
+          24,
+          "Misiunea 2",
+          "Două vizite, două reacții."
+        ],
+        [
+          24,
+          27,
+          "Pauză",
+          "Mimăm un semnal de contact."
+        ],
+        [
+          27,
+          37,
+          "Puzzle dificil",
+          "Lanțul iepure-câine-fluture."
+        ],
+        [
+          37,
+          45,
+          "Creația mea",
+          "O reacție care are sens în povestea copilului."
+        ],
+        [
+          45,
+          50,
+          "Testez și salvez",
+          "Două probe și redeschidere."
+        ]
+      ]
+    },
+    {
+      "lesson": 7,
+      "source_title": "Moonrise after Sunset",
+      "source_url": "https://www.scratchjr.org/teach/activities/moonrise-after-sunset",
+      "opening_title": "Povestea continuă în altă scenă",
+      "opening": "Exemplul oficial leagă apusul de apariția lunii. Adaptăm ideea de continuare la personajele noastre: iepurele părăsește parcul și întâlnește câinele pe plajă. Pregătește două pagini din bibliotecă înainte de a arăta blocul roșu. Nu avem nevoie să edităm fundaluri.",
+      "model": "Pagina 1, Rabbit: atingere → sari 2 → pagina 2. Pagina 2 are Beach Day și Dog. Copilul spune oral ce se întâmplă după sosire; nu adăugăm încă pornire automată pe pagina 2. Aceasta rămâne la rezerve.",
+      "question": "Ce parte a poveștii se întâmplă înainte de blocul roșu? Rulează prin atingerea iepurelui, nu prin miniatura paginii.",
+      "creation_title": "Două alegeri care spun o poveste",
+      "creation": "Alege ce înseamnă cele două drumuri și inventează un gest pentru fiecare final. De exemplu, ziua mergem la joacă, iar seara ne liniștim. Povestea se spune oral; programul arată diferența. Poți păstra cele trei fundaluri existente.",
+      "creation_check": "Urmează fiecare drum prin personajele programate și întoarce-te. Arată ce ai ales tu: acțiunea, ordinea sau semnificația finalului. Miniaturile se folosesc numai la editare.",
+      "creation_support": "Personalizează un singur drum funcțional dus-întors. Pentru mai multă dificultate, finalurile au gesturi diferite, dar folosesc aceleași două tipuri de blocuri.",
+      "check": "Copilul arată pagina căreia îi aparține programul și blocul care schimbă scena.",
+      "schedule": [
+        [
+          0,
+          4,
+          "Exemplu oficial adaptat",
+          "O acțiune, apoi altă scenă."
+        ],
+        [
+          4,
+          10,
+          "Două pagini",
+          "Fundaluri și personaje din bibliotecă."
+        ],
+        [
+          10,
+          18,
+          "Misiunea 1",
+          "Portalul pornește din program."
+        ],
+        [
+          18,
+          24,
+          "Misiunea 2",
+          "Construim și probăm întoarcerea."
+        ],
+        [
+          24,
+          27,
+          "Pauză",
+          "Spunem două continuări posibile."
+        ],
+        [
+          27,
+          37,
+          "Puzzle dificil",
+          "Două finaluri și întoarcere."
+        ],
+        [
+          37,
+          45,
+          "Creația mea",
+          "Alegem sensul și gestul fiecărui final."
+        ],
+        [
+          45,
+          50,
+          "Testez și salvez",
+          "Explorăm drumurile, salvăm și redeschidem."
+        ]
+      ]
+    },
+    {
+      "lesson": 8,
+      "source_title": "CAL clasa I - Freeze Dance Party (lecția 16)",
+      "source_url": "https://sites.bc.edu/codingasanotherlanguage/curricula/scratchjr-curricula/1st-grade-scratchjr/",
+      "opening_title": "Dans și înghețare",
+      "opening": "Pornim de la jocul de dans și înghețare din CAL. Mimăm o mișcare și o oprire, apoi urmărim același lucru pe ecran. Păstrăm personajele și demo-ul existent, fără muzică sau înregistrări.",
+      "model": "Rabbit are două programe: steag → sari 2 → repetă mereu; separat, atingere → oprește. Oprirea portocalie oprește programele personajului. Steagul repornește dansul.",
+      "question": "Cum îl opresc fără butonul roșu de sus? Arată programul care ascultă atingerea în timp ce celălalt continuă.",
+      "creation_title": "Coregrafia mea",
+      "creation": "Alege o rutină funcțională și schimbă grupul de acțiuni cu două acțiuni alese de tine: salturi de înălțimi diferite sau un mic drum dus-întors. Păstrează comanda de înghețare. Alege dacă artiștii dansează la fel sau diferit.",
+      "creation_check": "Pornește, oprește și repornește. Observă că oprirea poate surprinde personajul între două acțiuni. Nu cere revenirea la normal prin simplul Stop; aceea este o comandă separată din rezerve.",
+      "creation_support": "Schimbă numai saltul sau pauza dintre salturi. Pentru mai multă dificultate, păstrează comenzile de grup din puzzle și inventează rutine diferite pentru cei doi artiști.",
+      "check": "Copilul arată care program continuă și care eveniment îl poate opri.",
+      "schedule": [
+        [
+          0,
+          4,
+          "Exemplu oficial adaptat",
+          "Dansăm, înghețăm, repornim."
+        ],
+        [
+          4,
+          8,
+          "Scena",
+          "Iepure și câine, separați."
+        ],
+        [
+          8,
+          17,
+          "Misiunea 1",
+          "Rutina continuă și oprirea."
+        ],
+        [
+          17,
+          24,
+          "Misiunea 2",
+          "Oprim artiștii separat."
+        ],
+        [
+          24,
+          27,
+          "Pauză",
+          "Joc scurt de statui."
+        ],
+        [
+          27,
+          37,
+          "Puzzle dificil",
+          "Regizorul comandă grupul."
+        ],
+        [
+          37,
+          45,
+          "Creația mea",
+          "Coregrafii personale, comenzi păstrate."
+        ],
+        [
+          45,
+          50,
+          "Explic și salvez",
+          "Oprim toate rutinele, salvăm și redeschidem."
+        ]
+      ]
+    },
+    {
+      "lesson": 9,
+      "source_title": "Animated Genres - proiectul Game",
+      "source_url": "https://www.scratchjr.org/curricula/animatedgenres/full.pdf",
+      "opening_title": "Jocul are o regulă pe care o pot explica",
+      "opening": "Folosim ideea proiectului de joc din Animated Genres: copilul decide un scop și acțiunile jucătorului. Arată o singură descoperire din demo-ul insulei. Copiii spun ce se poate face acum și ce devine posibil după semnal. Nu adăugăm un mecanism nou.",
+      "model": "Dog: steag → ascunde; separat, la portocaliu → arată. Butterfly: atingere → trimite portocaliu. După steag vedem fluturele; după atingere apare câinele.",
+      "question": "Ce îl împiedică pe jucător să sară direct la următorul pas? Copilul descrie ce se vede, nu doar numele blocurilor.",
+      "creation_title": "Secretul insulei mele",
+      "creation": "Alege ce reprezintă descoperirile: un prieten ascuns, un indiciu și o ieșire, de exemplu. Adaugă un gest scurt care arată bucurie sau surpriză după apariția câinelui, înainte de următoarea comandă. Fiecare lucrează și testează pe propria tabletă.",
+      "creation_check": "Spune regula jocului într-o propoziție și joacă două runde. Ieșirea nu trebuie să devină disponibilă prea devreme; la întoarcere se refac ascunderile inițiale.",
+      "creation_support": "Personalizează o singură descoperire și păstrează restul legăturilor. Pentru mai multă dificultate, fă indicii vizuale diferite pentru pașii succesivi, fără a adăuga încă o pagină.",
+      "check": "Copilul explică ordinea descoperirilor și verifică din nou starea de început.",
+      "schedule": [
+        [
+          0,
+          4,
+          "Exemplu și regulă",
+          "Scopul jocului și o descoperire."
+        ],
+        [
+          4,
+          7,
+          "Scena",
+          "Fluture, câine și fundal."
+        ],
+        [
+          7,
+          14,
+          "Misiunea 1",
+          "Reacții repetabile."
+        ],
+        [
+          14,
+          24,
+          "Misiunea 2",
+          "Ieșire, final și întoarcere."
+        ],
+        [
+          24,
+          27,
+          "Pauză",
+          "Spunem regula fără tabletă."
+        ],
+        [
+          27,
+          37,
+          "Puzzle dificil",
+          "Descoperiri în ordine, două runde."
+        ],
+        [
+          37,
+          45,
+          "Creația mea",
+          "Un secret și o reacție personală."
+        ],
+        [
+          45,
+          50,
+          "Testez și salvez",
+          "Propriul joc; îl păstrăm pentru lecția 10."
+        ]
+      ]
+    },
+    {
+      "lesson": 10,
+      "source_title": "Conversation",
+      "source_url": "https://www.scratchjr.org/teach/activities/conversation",
+      "opening_title": "Artiștii își dau rândul",
+      "opening": "Preluăm ideea mai multor mesaje succesive din Conversation. În locul replicilor scrise, artiștii fac trucuri. Rulează finalul existent și urmărește mesajul trimis după fiecare truc. Copiii identifică cine anunță că următorul poate începe.",
+      "model": "La intrarea pe final, iepurele își face trucul și trimite portocaliu; câinele primește, își face trucul și trimite albastru; mingea primește albastru și apare. Păstrăm inițializarea la steag și programele complete din M3.",
+      "question": "Dacă aleg un truc mai lung, cum știe mingea când să apară? Urmărim plicul de după ultima acțiune, fără să ghicim o pauză.",
+      "creation_title": "Finalul pe care îl semnez eu",
+      "creation": "Alege ce sărbătoresc personajele și schimbă trucurile lor folosind efectele cunoscute. Poți schimba gestul, ordinea efectelor sau durata unei pauze. Păstrează ordinea artiștilor, mesajul de încheiere și întoarcerea disponibilă numai la final.",
+      "creation_check": "Joacă două runde de pe insulă până la final și înapoi, pe propria tabletă. Arată o decizie personală și explică ce anunță ultimul mesaj. La final fiecare poate spune: «Am ales…; programul meu face…».",
+      "creation_support": "Modifică un singur truc din finalul funcțional. Pentru mai multă dificultate, fă trucuri cu durate diferite și arată că ordinea rămâne corectă datorită mesajelor.",
+      "check": "Copilul justifică locul mesajului de final și demonstrează că jocul se poate relua.",
+      "schedule": [
+        [
+          0,
+          4,
+          "Exemplu oficial adaptat",
+          "Truc, mesaj, următorul artist."
+        ],
+        [
+          4,
+          7,
+          "Redeschidem",
+          "Proiectul L9 și pagina finală."
+        ],
+        [
+          7,
+          14,
+          "Misiunea 1",
+          "Două transformări cu revenire."
+        ],
+        [
+          14,
+          24,
+          "Misiunea 2",
+          "Butonul apare după mesajul de încheiere."
+        ],
+        [
+          24,
+          27,
+          "Pauză",
+          "Mimăm predarea rândului."
+        ],
+        [
+          27,
+          37,
+          "Puzzle dificil",
+          "Iepure, câine, apoi întoarcere."
+        ],
+        [
+          37,
+          45,
+          "Creația mea",
+          "Un final personal, cu ordinea păstrată."
+        ],
+        [
+          45,
+          50,
+          "Joc complet și salvare",
+          "Două runde, o alegere explicată, redeschidere."
+        ]
+      ]
+    }
+  ]
+}

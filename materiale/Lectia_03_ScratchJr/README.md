@@ -2,6 +2,14 @@
 
 **50 de minute, 6-7 ani. Trei misiuni principale, inclusiv una dificilă, plus două rezerve.** Copiii creează transformări pornite prin atingere: mărire, micșorare, dispariție și reapariție. Personajele rămân pe loc.
 
+## Exemplu, puzzle și creație proprie
+
+Deschidem cu **Când personajul dispare**, pornind de la [Sunset](https://www.scratchjr.org/teach/activities/sunset). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+
+**Minutele 37-45: Trucul meu de magician** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+
+[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_03.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+
 ## Varianta simplă pentru clasă
 
 ScratchJr este deja instalat. Copiii pornesc un proiect nou și aleg **Rabbit, Dog și Park** din bibliotecă. La prima rezervă adaugă **Butterfly**. Nu copiem fișiere pe tablete, nu importăm proiecte și nu descărcăm resurse. Fundalul alb este acceptat. Eliminăm pisica inițială dacă folosim exact personajele modelului.

@@ -22,19 +22,30 @@ Arătăm separat cum un Așteaptă între două Pop creează liniște. Pentru ex
 
 **Regula probei:** atingem o dată și ascultăm până la final. Nu apăsăm repetat în timpul ritmului. Steagul verde nu pornește exemplele. Niciun proiect nu folosește Repetă la nesfârșit. După final, o nouă atingere repetă același ritm fără resetare.
 
-<!-- pagebreak -->
-
 ## Cele 50 de minute
 
 | Minute | Activitate | Acțiunea profesorului |
 | --- | --- | --- |
-| 0-6 | Ascult și anticipez | Un Pop, apoi o demonstrație a pauzei. |
-| 6-11 | Scena | Iepure, câine, fundal; verificăm sunetul pe rând. |
-| 11-20 | Misiunea 1 | Batem codul din palme, apoi copiii îl construiesc. |
-| 20-29 | Misiunea 2 | Același număr de sunete, două grupări prin Repeat. |
-| 29-32 | Pauză | Tabletele jos; mimăm două perechi de bătăi. |
-| 32-45 | Misiunea dificilă | Trei perechi și răspunsul final; indicii progresive. |
-| 45-50 | Explic și salvez | Numărăm, arătăm bucla, salvăm și redeschidem. |
+| 0-4 | Exemplu oficial adaptat | Pop și dans scurt; anticipăm numărul sunetelor. |
+| 4-8 | Scena | Două personaje; verificăm volumul. |
+| 8-17 | Misiunea 1 | Construim codul de trei sunete. |
+| 17-24 | Misiunea 2 | Patru sunete cu două grupări. |
+| 24-27 | Pauză | Repetăm ritmul din palme. |
+| 27-37 | Puzzle dificil | Trei perechi, apoi răspunsul câinelui. |
+| 37-45 | Creația mea | Un cod sonor inventat de copil. |
+| 45-50 | Ascult și salvez | O probă pe rând, galerie și redeschidere. |
+
+**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+
+## Exemplu oficial adaptat: Un sunet pentru fiecare pas de dans
+
+**Reper:** [Dance Party](https://www.scratchjr.org/teach/activities/dance-party). Pornim de la ideea unui personaj care dansează cu sunet. Folosim numai Pop și o săritură, fără muzică descărcată sau înregistrări. Mai întâi ascultăm un Pop; apoi arătăm dansul scurt. La misiuni ne concentrăm pe ritm.
+
+**Model pentru demonstrație:** Rabbit: atingere → Repeat 2 [Pop → sari 2 → așteaptă 6]. După două sunete și două salturi se oprește. Folosim Repeat finit, deja învățat, în locul repetării continue din activitatea originală.
+
+**Întreabă înainte de rulare:** „Câte sunete auzi? Ce se schimbă dacă pauza devine mai lungă? Săritura are și ea o durată, deci nu folosim acest model pentru a măsura numai pauza.”
+
+Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
 
 Rezervele de 6-8 și 8-10 minute sunt suplimentare. Le oferim celor care termină devreme; păstrăm provocarea dificilă pentru toți și timpul de salvare. Dacă scena durează, construim începutul M1 împreună.
 
@@ -58,8 +69,6 @@ Rezervele de 6-8 și 8-10 minute sunt suplimentare. Le oferim celor care termin�
 
 **Trecere:** înlocuim codul M1 al iepurelui cu ritmul regulat, apoi construim programul câinelui. Păstrăm scena. Nu lăsăm două programe la atingere pe același personaj.
 
-<!-- pagebreak -->
-
 ## Misiunea 3 Salutul secret
 
 **Provocarea dificilă, pentru toți:** un singur tap pe iepure pornește trei perechi de Pop. Între perechi sunt pauze lungi. După ultima pereche și încă o pauză lungă, câinele răspunde cu un singur Pop, pornit prin mesaj. În total auzim șapte sunete, apoi programul se oprește. A doua probă merge fără resetare.
@@ -79,6 +88,20 @@ Rezervele de 6-8 și 8-10 minute sunt suplimentare. Le oferim celor care termin�
 
 Copilul care are nevoie de ajutor poate construi întâi o pereche și răspunsul câinelui, apoi extinde la trei perechi. Toți primesc provocarea, cu sprijin, fără clasament sau obligația de a o termina singuri.
 
+## Creația mea: Semnătura mea sonoră
+
+**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
+
+**Spune copiilor:** „Inventează un cod cu trei până la șase Pop și cel puțin două feluri de pauze. Bate-l întâi din palme, apoi programează-l. Tu alegi gruparea; poți folosi Repeat. Testăm pe rând, ca să putem asculta.”
+
+**Verificarea autorului:** Numără sunetele fără să numeri blocurile. Repetă codul după ce se încheie și explică unde este pauza lungă. Codul trebuie să se oprească singur.
+
+**Sprijin și extensie:** Păstrează trei Pop din M1 și mută pauza lungă. Pentru mai multă dificultate, câinele răspunde o singură dată după mesajul trimis la sfârșit.
+
+Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+
+**Ce urmăresc la încheiere:** Copilul distinge numărul de sunete de felul în care sunt grupate.
+
 ## Rezervă 1 Ecoul
 
 **6-8 minute în plus.** Iepurele cântă codul M1: două Pop apropiate, pauză lungă, unul. După o pauză lungă, câinele repetă exact codul. Un singur tap, șase sunete în total, fără suprapunere și fără ecou la nesfârșit.
@@ -86,8 +109,6 @@ Copilul care are nevoie de ajutor poate construi întâi o pereche și răspunsu
 **Soluție:** iepure, atingere → Pop → așteaptă 3 → Pop → așteaptă 12 → Pop → așteaptă 12 → trimite portocaliu. Câine, la portocaliu → Pop → așteaptă 3 → Pop → așteaptă 12 → Pop. Înlocuim programele anterioare, păstrând scena.
 
 **Verificare:** două grupe identice de trei sunete, despărțite clar. **Indiciu:** „Ce trebuie să fie la fel în programul câinelui? Cine anunță că primul cod s-a terminat?”. Niciun mesaj nu se întoarce la iepure.
-
-<!-- pagebreak -->
 
 ## Rezervă 2 Șapte sunete, două blocuri
 
@@ -118,3 +139,5 @@ Un copil explică ce se repetă și ce se întâmplă numai la final. Revenim î
 Testele efectuate și limitele lor sunt în verificare/README.md. Înainte de clasă, profesorul construiește M1 și M3 pe un Lenovo, verifică sunetul, două rulări, salvarea și redeschiderea fără internet. Browserul nu certifică difuzorul, atingerea sau performanța tabletei.
 
 **Referințe:** [blocurile oficiale ScratchJr](https://www.scratchjr.org/explore/blocks) și [cartonașele oficiale](https://www.scratchjr.org/pdfs/blocks.pdf) pentru Pop, Wait, Repeat și mesaje.
+
+**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.
