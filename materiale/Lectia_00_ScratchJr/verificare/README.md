@@ -1,22 +1,30 @@
-# Verificare — Lecția 0
+# Verificare — Picnicul întrerupt de ploaie
 
-11 noiembrie 2026. Patru fișiere native `.sjr`, importate și verificate în ScratchJr Desktop Reborn. Editorul web propriu a fost înlocuit.
+12 noiembrie 2026. Proiecte native `.sjr`, importate prin Open și rulate în ScratchJr Desktop Reborn, portul comunitar pentru browser.
 
-| Proiect | Verificare |
+| Probă | Rezultat urmărit |
 | --- | --- |
-| Spectacolul din parc | Cele patru scene pornesc prin apăsare. Iepurașul merge de la 3 la 5; din 7 mingi rămân 4; semnalul are 5 Pop; finala trece prin 4, 7 și 5 artiști. Fluturele apare după program și schimbă pagina. Finala revine la început. |
-| Construim spectacolul | Import cu patru programe principale goale. În editor am tras și conectat Dreapta, am schimbat valoarea în 2 și am executat deplasarea de 48 de pixeli, adică două pătrățele ScratchJr. Am salvat și redeschis copia de test. |
-| Rezerva Contact | Steagul pornește deplasarea. Contactul produce un Pop și ascunde mingea. |
-| Rezerva Statui | Fluturele pornește transformările repetitive. Mingea le oprește; personajele rămân stabile după oprire. |
+| Ocolul gardului | Iepurașul ocolește gardul, atinge cățelul, se aude Pop și se deschide pagina 2. |
+| Drum direct, copie separată de test | Gardul declanșează întoarcerea iepurașului la plecare; pagina rămâne 1. Copia nu se distribuie elevilor. |
+| Merele | Trei mere coboară din copac la aceeași înălțime cu cele două de pe masă. Trei Pop. |
+| Masa | Cele cinci mere rămân vizibile după pornire. Primul grup mănâncă exact două; al doilea, cele trei rămase. Contactele produc 2, respectiv 3 Pop. |
+| Adăpostul | Primii doi ajung la ușă înainte să pornească ceilalți trei. Toți cinci dispar la ușă; apoi norul pleacă, soarele revine și se aude Pop. |
+| Repetarea | Repetă 2 [Dreapta 5] produce același ocol. Cățelul răspunde o singură dată și se dă la o parte. |
+| Statuile | Toți cinci dansează. Pasărea îi oprește pe primii doi; ceilalți trei continuă. |
+| Construim împreună | Cele patru pagini se importă; rămân numai declanșatoarele la sarcinile de construit. Un bloc adăugat manual a fost conectat, schimbat la 4 și rulat. Salvarea a fost verificată separat într-o copie redenumită, cu blocul Jos 1. |
 
-Proiectul principal final a fost parcurs și în aplicația publică, inclusiv decorul Theatre și întoarcerea la început. [Captură din editorul ScratchJr](spectacol-scratchjr.png).
+Înregistrări: [ocol](01_ocolul.json), [mere](02_mere.json), [masa înainte de contact](03_masa_initial.json), [primii doi](04_masa_doi.json), [ceilalți trei](05_masa_trei.json), [adăpost](06_adapost.json), [repetare](07_repetare.json), [statui](08_statui.json), [gard](09_gard.json), [construcție](10_constructie.json).
 
-Înregistrările [drumului](01_drumul.json), [recuzitei](02_recuzita.json), [semnalului](03_semnal.json) și [finalei](04_spectacol.json) provin dintr-o copie locală a aplicației publicate, cu un observator separat pentru transformări și audio. Programele și motorul ScratchJr nu au fost modificate. Capturile de comportament au precedat schimbarea exclusiv vizuală a decorurilor de scenă în Theatre; apoi am parcurs din nou proiectul final în aplicația publică. Cele cinci evenimente audio ale semnalului au semnal nenul. Testul nu măsoară difuzorul fizic al laptopului.
+Înregistrările provin dintr-o copie locală a aplicației publice cu un observator pentru transformările scenei și ieșirea audio. Motorul ScratchJr nu este modificat. Proiectul final a fost parcurs și în aplicația publică. Testarea audio verifică semnalul produs de browser, nu difuzorul fizic.
 
-[Contact](05_contact.json) · [Statui](06_statui.json) · [Construcție](07_constructie.json) · [Blocul conectat în editor](constructie-manuala.png)
+În acest port, scena cu contact trebuie pornită cu steagul. În scena mesei, programul pregătit al mesei menține scena activă în timp ce profesorul discută și apasă personajele. Această particularitate este tratată și în ghid. La prima încărcare, unele pictograme de plic pot rămâne goale în acest port, deși mesajele rulează; alegerea culorii din meniul blocului le redesenează.
 
-Toate arhivele au JSON valid, identificatori unici, maximum patru pagini și numai personaje, decoruri și sunete din biblioteca aplicației. Park, Theatre, Rabbit, Dog, Ball, Butterfly și Pop există și în pachetul oficial Android inspectat. Fișierele nu includ personaje sau decoruri personalizate.
+Arhivele sunt verificate pentru JSON valid, identificatori unici, destinații existente și maximum patru pagini. Nu conțin personaje sau decoruri personalizate. Rabbit, Chicken, Dog, Duck, Bird, House3, Fence, Table, Tree1, Apple, Thundercloud, Sun, Park și Pop sunt resurse incluse în ScratchJr. Hashurile fișierelor sunt în `lesson.json`.
 
-Verificarea de aici este pentru varianta comunitară în browser, nu pentru aplicația Android oficială. Importul a fost făcut prin Open, acțiunile și editarea prin interfața ScratchJr.
+Verificarea funcțională de aici este în browser; nu reprezintă un test pe tabletele Android ale clasei. Website-ul are și verificări automate pentru proiecte și navigare, inclusiv toate cele zece lecții și secțiunea Robo.
 
-Website: 126 de teste automate au trecut; după introducerea poveștii, cele nouă verificări ale proiectelor și navigării au trecut din nou. Legăturile și descărcările Lecției 0 au fost verificate la publicare.
+[Scena din aplicația publică](picnicul-scratchjr.png) · [Blocul adăugat manual](constructie-manuala.png) · [Copia salvată și redeschisă](constructie-salvata.png)
+
+Cele zece înregistrări au trecut verificările din `check_results.py`. Cele nouă teste automate pentru arhivele lecției și navigarea website-ului au trecut.
+
+La prima probă, copia proaspăt importată nu a păstrat blocul după ieșire. Redenumirea proiectului înainte de lucru a permis salvarea și redeschiderea cu blocul conectat. Ghidul include acest pas; fișierele originale rămân disponibile pentru reimport.

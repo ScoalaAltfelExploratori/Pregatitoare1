@@ -1,28 +1,288 @@
 {
   "lesson": 0,
-  "title": "Pregatim spectacolul din parc",
+  "title": "Picnicul întrerupt de ploaie",
   "duration": 50,
   "projects": [
     {
       "path": "proiecte/00_Laboratorul_ScratchJr.sjr",
-      "name": "L00 Spectacolul din parc",
+      "name": "L00 Picnicul intrerupt de ploaie",
       "pages": [
         {
           "background": "Park.svg",
+          "focus": "iepuras",
+          "build": [
+            [
+              "iepuras",
+              0
+            ]
+          ],
+          "texts": [
+            {
+              "text": "1. Îl chemăm pe cățel",
+              "position": [
+                240,
+                28
+              ],
+              "size": 24,
+              "color": "#1b2a34"
+            }
+          ],
           "sprites": [
+            {
+              "id": "casa",
+              "asset": "House3.svg",
+              "name": "Casa cățelului",
+              "size": [
+                286,
+                323
+              ],
+              "position": [
+                380,
+                140
+              ],
+              "scale": 0.5,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "gard",
+              "asset": "Fence.svg",
+              "name": "Gardul de ocolit",
+              "size": [
+                219,
+                123
+              ],
+              "position": [
+                240,
+                288
+              ],
+              "scale": 0.65,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "id": "iepuras",
               "asset": "Rabbit.svg",
-              "name": "Iepurasul organizator",
+              "name": "Iepurașul",
               "size": [
                 217,
                 208
               ],
               "position": [
-                144,
-                165
+                120,
+                288
               ],
-              "scale": 0.32,
+              "scale": 0.22,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 10
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Ocolesc gardul!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "catel",
+              "asset": "Dog.svg",
+              "name": "Cățelul",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                360,
+                288
+              ],
+              "scale": 0.24,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Vin la picnic!"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "Park.svg",
+          "focus": "mar3",
+          "build": [
+            [
+              "mar3",
+              0
+            ],
+            [
+              "mar4",
+              0
+            ],
+            [
+              "mar5",
+              0
+            ]
+          ],
+          "texts": [
+            {
+              "text": "2. Mere pentru fiecare",
+              "position": [
+                240,
+                28
+              ],
+              "size": 24,
+              "color": "#1b2a34"
+            }
+          ],
+          "sprites": [
+            {
+              "id": "pom",
+              "asset": "Tree1.svg",
+              "name": "Mărul",
+              "size": [
+                284,
+                348
+              ],
+              "position": [
+                240,
+                160
+              ],
+              "scale": 0.65,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "masa",
+              "asset": "Table.svg",
+              "name": "Masa de picnic",
+              "size": [
+                399,
+                248
+              ],
+              "position": [
+                240,
+                274
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "mar1",
+              "asset": "Apple.svg",
+              "name": "Măr pe masă 1",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                144,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "mar2",
+              "asset": "Apple.svg",
+              "name": "Măr pe masă 2",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                336,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "mar3",
+              "asset": "Apple.svg",
+              "name": "Mărul de pe ramura stângă",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                192,
+                94
+              ],
+              "scale": 0.25,
               "shown": true,
               "scripts": [
                 {
@@ -36,1164 +296,32 @@
                       "value": "null"
                     },
                     {
-                      "block": "forward",
-                      "value": 2
-                    },
-                    {
-                      "block": "message",
-                      "value": "Orange"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "prieten",
-              "asset": "Dog.svg",
-              "name": "Prietenul din parc",
-              "size": [
-                296,
-                213
-              ],
-              "position": [
-                365,
-                195
-              ],
-              "scale": 0.3,
-              "shown": true,
-              "scripts": []
-            },
-            {
-              "id": "ghid",
-              "asset": "Butterfly.svg",
-              "name": "Ghid spre scena urmatoare",
-              "size": [
-                128,
-                97
-              ],
-              "position": [
-                420,
-                300
-              ],
-              "scale": 0.65,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "gotopage",
-                      "value": 2
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "texts": [
-            {
-              "text": "1. Drumul spre parc",
-              "position": [
-                240,
-                28
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Plecam de la 3. Intrarea este la 5.",
-              "position": [
-                240,
-                65
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "PARC",
-              "position": [
-                192,
-                260
-              ],
-              "size": 16,
-              "color": "#287f46"
-            },
-            {
-              "text": "0",
-              "position": [
-                72,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "1",
-              "position": [
-                96,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "2",
-              "position": [
-                120,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "3",
-              "position": [
-                144,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "4",
-              "position": [
-                168,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "5",
-              "position": [
-                192,
-                225
-              ],
-              "size": 24,
-              "color": "#287f46"
-            },
-            {
-              "text": "6",
-              "position": [
-                216,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "7",
-              "position": [
-                240,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "8",
-              "position": [
-                264,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "9",
-              "position": [
-                288,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "10",
-              "position": [
-                312,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Urmeaza fluturele",
-              "position": [
-                390,
-                343
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            }
-          ]
-        },
-        {
-          "background": "Theatre.svg",
-          "sprites": [
-            {
-              "id": "organizator",
-              "asset": "Rabbit.svg",
-              "name": "Iepurasul organizator",
-              "size": [
-                217,
-                208
-              ],
-              "position": [
-                80,
-                230
-              ],
-              "scale": 0.35,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "message",
-                      "value": "Orange"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "magician",
-              "asset": "Dog.svg",
-              "name": "Magicianul",
-              "size": [
-                296,
-                213
-              ],
-              "position": [
-                325,
-                230
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "repeat": 2,
-                      "body": [
-                        {
-                          "block": "grow",
-                          "value": 2
-                        },
-                        {
-                          "block": "wait",
-                          "value": 5
-                        },
-                        {
-                          "block": "shrink",
-                          "value": 2
-                        }
-                      ]
-                    },
-                    {
-                      "block": "message",
-                      "value": "Blue"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge1",
-              "asset": "Ball.svg",
-              "name": "Minge 1",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                60,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge2",
-              "asset": "Ball.svg",
-              "name": "Minge 2",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                120,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge3",
-              "asset": "Ball.svg",
-              "name": "Minge 3",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                180,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge4",
-              "asset": "Ball.svg",
-              "name": "Minge 4",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                240,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge5",
-              "asset": "Ball.svg",
-              "name": "Minge 5",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                300,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge6",
-              "asset": "Ball.svg",
-              "name": "Minge 6",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                360,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge7",
-              "asset": "Ball.svg",
-              "name": "Minge 7",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                420,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ghid",
-              "asset": "Butterfly.svg",
-              "name": "Ghid spre scena urmatoare",
-              "size": [
-                128,
-                97
-              ],
-              "position": [
-                420,
-                300
-              ],
-              "scale": 0.65,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "gotopage",
-                      "value": 3
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "texts": [
-            {
-              "text": "2. Pregatim scena",
-              "position": [
-                240,
-                28
-              ],
-              "size": 24,
-              "color": "#f2f3f2"
-            },
-            {
-              "text": "4 artisti, cate o minge. Avem 7 mingi.",
-              "position": [
-                240,
-                65
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Urmeaza fluturele",
-              "position": [
-                390,
-                343
-              ],
-              "size": 16,
-              "color": "#f2f3f2"
-            }
-          ]
-        },
-        {
-          "background": "Park.svg",
-          "sprites": [
-            {
-              "id": "iepuras",
-              "asset": "Rabbit.svg",
-              "name": "Doua sunete",
-              "size": [
-                217,
-                208
-              ],
-              "position": [
-                140,
-                180
-              ],
-              "scale": 0.4,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "repeat": 2,
-                      "body": [
-                        {
-                          "block": "playsnd",
-                          "value": "pop.mp3"
-                        },
-                        {
-                          "block": "wait",
-                          "value": 3
-                        }
-                      ]
-                    },
-                    {
-                      "block": "wait",
-                      "value": 10
-                    },
-                    {
-                      "block": "message",
-                      "value": "Orange"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "caine",
-              "asset": "Dog.svg",
-              "name": "Completeaza semnalul",
-              "size": [
-                296,
-                213
-              ],
-              "position": [
-                340,
-                180
-              ],
-              "scale": 0.32,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "repeat": 3,
-                      "body": [
-                        {
-                          "block": "playsnd",
-                          "value": "pop.mp3"
-                        },
-                        {
-                          "block": "wait",
-                          "value": 3
-                        }
-                      ]
-                    },
-                    {
-                      "block": "message",
-                      "value": "Blue"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ghid",
-              "asset": "Butterfly.svg",
-              "name": "Ghid spre scena urmatoare",
-              "size": [
-                128,
-                97
-              ],
-              "position": [
-                420,
-                300
-              ],
-              "scale": 0.65,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "gotopage",
+                      "block": "down",
                       "value": 4
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "texts": [
-            {
-              "text": "3. Chemam publicul",
-              "position": [
-                240,
-                28
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Semnalul are 5 batai. Iepurasul face 2.",
-              "position": [
-                240,
-                65
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Catelul completeaza.",
-              "position": [
-                240,
-                235
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Urmeaza fluturele",
-              "position": [
-                390,
-                343
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            }
-          ]
-        },
-        {
-          "background": "Theatre.svg",
-          "sprites": [
-            {
-              "id": "regizor",
-              "asset": "Butterfly.svg",
-              "name": "Dirijorul spectacolului",
-              "size": [
-                128,
-                97
-              ],
-              "position": [
-                55,
-                300
-              ],
-              "scale": 0.55,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "message",
-                      "value": "Orange"
-                    },
-                    {
-                      "block": "wait",
-                      "value": 10
-                    },
-                    {
-                      "block": "message",
-                      "value": "Blue"
-                    },
-                    {
-                      "block": "wait",
-                      "value": 10
                     },
                     {
                       "block": "playsnd",
                       "value": "pop.mp3"
-                    },
-                    {
-                      "block": "message",
-                      "value": "Purple"
                     }
                   ]
                 }
               ]
             },
             {
-              "id": "iepuras1",
-              "asset": "Rabbit.svg",
-              "name": "Iepuras 1",
+              "id": "mar4",
+              "asset": "Apple.svg",
+              "name": "Mărul de pe ramura joasă",
               "size": [
-                217,
-                208
-              ],
-              "position": [
-                90,
-                145
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "iepuras2",
-              "asset": "Rabbit.svg",
-              "name": "Iepuras 2",
-              "size": [
-                217,
-                208
-              ],
-              "position": [
-                190,
-                145
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "iepuras3",
-              "asset": "Rabbit.svg",
-              "name": "Iepuras 3",
-              "size": [
-                217,
-                208
-              ],
-              "position": [
-                290,
-                145
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "iepuras4",
-              "asset": "Rabbit.svg",
-              "name": "Iepuras 4",
-              "size": [
-                217,
-                208
-              ],
-              "position": [
-                390,
-                145
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "caine1",
-              "asset": "Dog.svg",
-              "name": "Catel 1",
-              "size": [
-                296,
-                213
-              ],
-              "position": [
-                120,
-                210
-              ],
-              "scale": 0.25,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "caine2",
-              "asset": "Dog.svg",
-              "name": "Catel 2",
-              "size": [
-                296,
-                213
+                112,
+                132
               ],
               "position": [
                 240,
-                210
+                118
               ],
               "scale": 0.25,
-              "shown": false,
+              "shown": true,
               "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "caine3",
-              "asset": "Dog.svg",
-              "name": "Catel 3",
-              "size": [
-                296,
-                213
-              ],
-              "position": [
-                360,
-                210
-              ],
-              "scale": 0.25,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ghid",
-              "asset": "Butterfly.svg",
-              "name": "Inca o data",
-              "size": [
-                128,
-                97
-              ],
-              "position": [
-                420,
-                300
-              ],
-              "scale": 0.65,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Purple"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
                 {
                   "trigger": {
                     "block": "onclick",
@@ -1201,1258 +329,179 @@
                   },
                   "actions": [
                     {
-                      "block": "gotopage",
-                      "value": 1
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
                     }
                   ]
                 }
               ]
-            }
-          ],
-          "texts": [
-            {
-              "text": "4. Incepe spectacolul!",
-              "position": [
-                240,
-                28
-              ],
-              "size": 24,
-              "color": "#f2f3f2"
             },
             {
-              "text": "4 artisti. Vin 3 prieteni; 2 ies la culise.",
-              "position": [
-                240,
-                65
+              "id": "mar5",
+              "asset": "Apple.svg",
+              "name": "Mărul de pe ramura dreaptă",
+              "size": [
+                112,
+                132
               ],
-              "size": 24,
-              "color": "#1b2a34"
+              "position": [
+                288,
+                94
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
             },
-            {
-              "text": "Cati artisti raman pentru salut?",
-              "position": [
-                240,
-                265
-              ],
-              "size": 24,
-              "color": "#f2f3f2"
-            },
-            {
-              "text": "Inca o data",
-              "position": [
-                390,
-                343
-              ],
-              "size": 16,
-              "color": "#f2f3f2"
-            }
-          ]
-        }
-      ],
-      "sha256": "8636241c550ecf196e6f629402e78433cd6c3bd9d0ac5bdabdb2230b90b295c8"
-    },
-    {
-      "path": "proiecte/01_Construim_impreuna.sjr",
-      "name": "L00 Construim spectacolul",
-      "pages": [
-        {
-          "background": "Park.svg",
-          "sprites": [
             {
               "id": "iepuras",
               "asset": "Rabbit.svg",
-              "name": "Iepurasul organizator",
+              "name": "Iepuras",
               "size": [
                 217,
                 208
               ],
               "position": [
-                144,
-                165
+                72,
+                270
               ],
-              "scale": 0.32,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": []
-                }
-              ]
-            },
-            {
-              "id": "prieten",
-              "asset": "Dog.svg",
-              "name": "Prietenul din parc",
-              "size": [
-                296,
-                213
-              ],
-              "position": [
-                365,
-                195
-              ],
-              "scale": 0.3,
+              "scale": 0.24,
               "shown": true,
               "scripts": []
             },
             {
-              "id": "ghid",
-              "asset": "Butterfly.svg",
-              "name": "Ghid spre scena urmatoare",
+              "id": "pui",
+              "asset": "Chicken.svg",
+              "name": "Pui",
               "size": [
-                128,
-                97
+                142,
+                148
               ],
               "position": [
-                420,
-                300
+                135,
+                325
               ],
-              "scale": 0.65,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "gotopage",
-                      "value": 2
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "texts": [
-            {
-              "text": "1. Drumul spre parc",
-              "position": [
-                240,
-                28
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Plecam de la 3. Intrarea este la 5.",
-              "position": [
-                240,
-                65
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "PARC",
-              "position": [
-                192,
-                260
-              ],
-              "size": 16,
-              "color": "#287f46"
-            },
-            {
-              "text": "0",
-              "position": [
-                72,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "1",
-              "position": [
-                96,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "2",
-              "position": [
-                120,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "3",
-              "position": [
-                144,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "4",
-              "position": [
-                168,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "5",
-              "position": [
-                192,
-                225
-              ],
-              "size": 24,
-              "color": "#287f46"
-            },
-            {
-              "text": "6",
-              "position": [
-                216,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "7",
-              "position": [
-                240,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "8",
-              "position": [
-                264,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "9",
-              "position": [
-                288,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "10",
-              "position": [
-                312,
-                225
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Urmeaza fluturele",
-              "position": [
-                390,
-                343
-              ],
-              "size": 16,
-              "color": "#1b2a34"
-            }
-          ]
-        },
-        {
-          "background": "Theatre.svg",
-          "sprites": [
-            {
-              "id": "organizator",
-              "asset": "Rabbit.svg",
-              "name": "Iepurasul organizator",
-              "size": [
-                217,
-                208
-              ],
-              "position": [
-                80,
-                230
-              ],
-              "scale": 0.35,
+              "scale": 0.24,
               "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": []
-                }
-              ]
+              "scripts": []
             },
             {
-              "id": "magician",
+              "id": "catel",
               "asset": "Dog.svg",
-              "name": "Magicianul",
+              "name": "Catel",
               "size": [
                 296,
                 213
               ],
               "position": [
-                325,
-                230
+                408,
+                270
               ],
-              "scale": 0.28,
+              "scale": 0.2,
               "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "repeat": 2,
-                      "body": [
-                        {
-                          "block": "grow",
-                          "value": 2
-                        },
-                        {
-                          "block": "wait",
-                          "value": 5
-                        },
-                        {
-                          "block": "shrink",
-                          "value": 2
-                        }
-                      ]
-                    },
-                    {
-                      "block": "message",
-                      "value": "Blue"
-                    }
-                  ]
-                }
-              ]
+              "scripts": []
             },
             {
-              "id": "minge1",
-              "asset": "Ball.svg",
-              "name": "Minge 1",
+              "id": "rata",
+              "asset": "Duck.svg",
+              "name": "Rata",
               "size": [
-                126,
-                129
-              ],
-              "position": [
-                60,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge2",
-              "asset": "Ball.svg",
-              "name": "Minge 2",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                120,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge3",
-              "asset": "Ball.svg",
-              "name": "Minge 3",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                180,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge4",
-              "asset": "Ball.svg",
-              "name": "Minge 4",
-              "size": [
-                126,
-                129
+                155,
+                116
               ],
               "position": [
                 240,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge5",
-              "asset": "Ball.svg",
-              "name": "Minge 5",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                300,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge6",
-              "asset": "Ball.svg",
-              "name": "Minge 6",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                360,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "minge7",
-              "asset": "Ball.svg",
-              "name": "Minge 7",
-              "size": [
-                126,
-                129
-              ],
-              "position": [
-                420,
-                135
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ghid",
-              "asset": "Butterfly.svg",
-              "name": "Ghid spre scena urmatoare",
-              "size": [
-                128,
-                97
-              ],
-              "position": [
-                420,
-                300
-              ],
-              "scale": 0.65,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "gotopage",
-                      "value": 3
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "texts": [
-            {
-              "text": "2. Pregatim scena",
-              "position": [
-                240,
-                28
-              ],
-              "size": 24,
-              "color": "#f2f3f2"
-            },
-            {
-              "text": "4 artisti, cate o minge. Avem 7 mingi.",
-              "position": [
-                240,
-                65
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Urmeaza fluturele",
-              "position": [
-                390,
-                343
-              ],
-              "size": 16,
-              "color": "#f2f3f2"
-            }
-          ]
-        },
-        {
-          "background": "Park.svg",
-          "sprites": [
-            {
-              "id": "iepuras",
-              "asset": "Rabbit.svg",
-              "name": "Doua sunete",
-              "size": [
-                217,
-                208
-              ],
-              "position": [
-                140,
-                180
-              ],
-              "scale": 0.4,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": []
-                }
-              ]
-            },
-            {
-              "id": "caine",
-              "asset": "Dog.svg",
-              "name": "Completeaza semnalul",
-              "size": [
-                296,
-                213
-              ],
-              "position": [
-                340,
-                180
+                325
               ],
               "scale": 0.32,
               "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "repeat": 3,
-                      "body": [
-                        {
-                          "block": "playsnd",
-                          "value": "pop.mp3"
-                        },
-                        {
-                          "block": "wait",
-                          "value": 3
-                        }
-                      ]
-                    },
-                    {
-                      "block": "message",
-                      "value": "Blue"
-                    }
-                  ]
-                }
-              ]
+              "scripts": []
             },
             {
-              "id": "ghid",
-              "asset": "Butterfly.svg",
-              "name": "Ghid spre scena urmatoare",
+              "id": "pasare",
+              "asset": "Bird.svg",
+              "name": "Pasare",
               "size": [
-                128,
-                97
+                146,
+                210
               ],
               "position": [
-                420,
-                300
+                345,
+                325
               ],
-              "scale": 0.65,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "gotopage",
-                      "value": 4
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "texts": [
-            {
-              "text": "3. Chemam publicul",
-              "position": [
-                240,
-                28
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Semnalul are 5 batai. Iepurasul face 2.",
-              "position": [
-                240,
-                65
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Catelul completeaza.",
-              "position": [
-                240,
-                235
-              ],
-              "size": 24,
-              "color": "#1b2a34"
-            },
-            {
-              "text": "Urmeaza fluturele",
-              "position": [
-                390,
-                343
-              ],
-              "size": 16,
-              "color": "#1b2a34"
+              "scale": 0.28,
+              "shown": true,
+              "scripts": []
             }
           ]
         },
         {
-          "background": "Theatre.svg",
-          "sprites": [
-            {
-              "id": "regizor",
-              "asset": "Butterfly.svg",
-              "name": "Dirijorul spectacolului",
-              "size": [
-                128,
-                97
-              ],
-              "position": [
-                55,
-                300
-              ],
-              "scale": 0.55,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": []
-                }
-              ]
-            },
-            {
-              "id": "iepuras1",
-              "asset": "Rabbit.svg",
-              "name": "Iepuras 1",
-              "size": [
-                217,
-                208
-              ],
-              "position": [
-                90,
-                145
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "iepuras2",
-              "asset": "Rabbit.svg",
-              "name": "Iepuras 2",
-              "size": [
-                217,
-                208
-              ],
-              "position": [
-                190,
-                145
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "iepuras3",
-              "asset": "Rabbit.svg",
-              "name": "Iepuras 3",
-              "size": [
-                217,
-                208
-              ],
-              "position": [
-                290,
-                145
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "iepuras4",
-              "asset": "Rabbit.svg",
-              "name": "Iepuras 4",
-              "size": [
-                217,
-                208
-              ],
-              "position": [
-                390,
-                145
-              ],
-              "scale": 0.28,
-              "shown": true,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "caine1",
-              "asset": "Dog.svg",
-              "name": "Catel 1",
-              "size": [
-                296,
-                213
-              ],
-              "position": [
-                120,
-                210
-              ],
-              "scale": 0.25,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "caine2",
-              "asset": "Dog.svg",
-              "name": "Catel 2",
-              "size": [
-                296,
-                213
-              ],
-              "position": [
-                240,
-                210
-              ],
-              "scale": 0.25,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "caine3",
-              "asset": "Dog.svg",
-              "name": "Catel 3",
-              "size": [
-                296,
-                213
-              ],
-              "position": [
-                360,
-                210
-              ],
-              "scale": 0.25,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "ghid",
-              "asset": "Butterfly.svg",
-              "name": "Inca o data",
-              "size": [
-                128,
-                97
-              ],
-              "position": [
-                420,
-                300
-              ],
-              "scale": 0.65,
-              "shown": false,
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onflag",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "hide",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Purple"
-                  },
-                  "actions": [
-                    {
-                      "block": "show",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": [
-                    {
-                      "block": "gotopage",
-                      "value": 1
-                    }
-                  ]
-                }
-              ]
-            }
+          "background": "Park.svg",
+          "focus": "iepuras",
+          "build": [
+            [
+              "iepuras",
+              0
+            ],
+            [
+              "catel",
+              0
+            ]
           ],
           "texts": [
             {
-              "text": "4. Incepe spectacolul!",
+              "text": "3. Poftiți la masă!",
               "position": [
                 240,
                 28
               ],
               "size": 24,
-              "color": "#f2f3f2"
-            },
-            {
-              "text": "4 artisti. Vin 3 prieteni; 2 ies la culise.",
-              "position": [
-                240,
-                65
-              ],
-              "size": 24,
               "color": "#1b2a34"
-            },
-            {
-              "text": "Cati artisti raman pentru salut?",
-              "position": [
-                240,
-                265
-              ],
-              "size": 24,
-              "color": "#f2f3f2"
-            },
-            {
-              "text": "Inca o data",
-              "position": [
-                390,
-                343
-              ],
-              "size": 16,
-              "color": "#f2f3f2"
             }
-          ]
-        }
-      ],
-      "sha256": "d0ce979209829196fb8cdd80453aa3349f9ff31e95e6c78e8602a8e290cbd810"
-    },
-    {
-      "path": "proiecte/02_Rezerva_Contact.sjr",
-      "name": "L00 Rezerva Contact",
-      "pages": [
-        {
-          "background": "Park.svg",
+          ],
           "sprites": [
             {
-              "id": "iepuras1",
-              "name": "Rabbit",
-              "asset": "Rabbit.svg",
+              "id": "masa",
+              "asset": "Table.svg",
+              "name": "Masa de picnic",
               "size": [
-                217,
-                208
+                399,
+                248
               ],
               "position": [
-                72,
-                240
+                240,
+                274
               ],
+              "scale": 0.6,
+              "shown": true,
               "scripts": [
                 {
                   "trigger": {
@@ -2461,25 +510,31 @@
                   },
                   "actions": [
                     {
-                      "block": "forward",
+                      "block": "wait",
                       "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
                     }
                   ]
                 }
               ]
             },
             {
-              "id": "minge1",
-              "name": "Ball",
-              "asset": "Ball.svg",
+              "id": "mar1",
+              "asset": "Apple.svg",
+              "name": "Măr pentru un prieten",
               "size": [
-                126,
-                129
+                112,
+                132
               ],
               "position": [
-                312,
-                240
+                144,
+                190
               ],
+              "scale": 0.25,
+              "shown": true,
               "scripts": [
                 {
                   "trigger": {
@@ -2498,149 +553,153 @@
                   ]
                 }
               ]
-            }
-          ]
-        }
-      ],
-      "sha256": "bd37f950c07177bb5f98ecff8295cd0d55837a9a41d17fcd11c98a9941c53484"
-    },
-    {
-      "path": "proiecte/03_Rezerva_Statui.sjr",
-      "name": "L00 Rezerva Statui",
-      "pages": [
-        {
-          "background": "Park.svg",
-          "sprites": [
+            },
             {
-              "id": "iepuras1",
-              "name": "Rabbit",
+              "id": "mar2",
+              "asset": "Apple.svg",
+              "name": "Măr pentru un prieten",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                192,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mar3",
+              "asset": "Apple.svg",
+              "name": "Măr pentru un prieten",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                240,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mar4",
+              "asset": "Apple.svg",
+              "name": "Măr pentru un prieten",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                288,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mar5",
+              "asset": "Apple.svg",
+              "name": "Măr pentru un prieten",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                336,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "iepuras",
               "asset": "Rabbit.svg",
+              "name": "Iepuras",
               "size": [
                 217,
                 208
               ],
               "position": [
-                140,
-                240
+                144,
+                286
               ],
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "same",
-                      "value": "null"
-                    },
-                    {
-                      "block": "grow",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 10
-                    },
-                    {
-                      "block": "shrink",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 10
-                    },
-                    {
-                      "block": "forever",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
-                    {
-                      "block": "stopmine",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "caine1",
-              "name": "Dog",
-              "asset": "Dog.svg",
-              "size": [
-                296,
-                213
-              ],
-              "position": [
-                335,
-                240
-              ],
-              "scripts": [
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Orange"
-                  },
-                  "actions": [
-                    {
-                      "block": "same",
-                      "value": "null"
-                    },
-                    {
-                      "block": "shrink",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 10
-                    },
-                    {
-                      "block": "grow",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 10
-                    },
-                    {
-                      "block": "forever",
-                      "value": "null"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
-                    {
-                      "block": "stopmine",
-                      "value": "null"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "fluture1",
-              "name": "Butterfly",
-              "asset": "Butterfly.svg",
-              "size": [
-                128,
-                97
-              ],
-              "position": [
-                100,
-                85
-              ],
+              "scale": 0.204,
+              "shown": true,
               "scripts": [
                 {
                   "trigger": {
@@ -2650,24 +709,83 @@
                   "actions": [
                     {
                       "block": "message",
-                      "value": "Orange"
+                      "value": "Red"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
                     }
                   ]
                 }
               ]
             },
             {
-              "id": "minge1",
-              "name": "Ball",
-              "asset": "Ball.svg",
+              "id": "pui",
+              "asset": "Chicken.svg",
+              "name": "Pui",
               "size": [
-                126,
-                129
+                142,
+                148
               ],
               "position": [
-                385,
-                85
+                192,
+                286
               ],
+              "scale": 0.204,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "catel",
+              "asset": "Dog.svg",
+              "name": "Catel",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                240,
+                286
+              ],
+              "scale": 0.17,
+              "shown": true,
               "scripts": [
                 {
                   "trigger": {
@@ -2680,13 +798,2043 @@
                       "value": "Blue"
                     }
                   ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rata",
+              "asset": "Duck.svg",
+              "name": "Rata",
+              "size": [
+                155,
+                116
+              ],
+              "position": [
+                288,
+                286
+              ],
+              "scale": 0.272,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pasare",
+              "asset": "Bird.svg",
+              "name": "Pasare",
+              "size": [
+                146,
+                210
+              ],
+              "position": [
+                336,
+                286
+              ],
+              "scale": 0.23800000000000002,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "Park.svg",
+          "focus": "iepuras",
+          "build": [
+            [
+              "iepuras",
+              0
+            ]
+          ],
+          "texts": [
+            {
+              "text": "4. Toți la adăpost!",
+              "position": [
+                240,
+                28
+              ],
+              "size": 24,
+              "color": "#1b2a34"
+            }
+          ],
+          "sprites": [
+            {
+              "id": "casa",
+              "asset": "House3.svg",
+              "name": "Adăpostul",
+              "size": [
+                286,
+                323
+              ],
+              "position": [
+                360,
+                128
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "soare",
+              "asset": "Sun.svg",
+              "name": "Soarele",
+              "size": [
+                176,
+                176
+              ],
+              "position": [
+                80,
+                68
+              ],
+              "scale": 0.4,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "nor",
+              "asset": "Thundercloud.svg",
+              "name": "Norul de ploaie",
+              "size": [
+                344,
+                270
+              ],
+              "position": [
+                72,
+                122
+              ],
+              "scale": 0.4,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 4
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "iepuras",
+              "asset": "Rabbit.svg",
+              "name": "Iepuras",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                168,
+                312
+              ],
+              "scale": 0.204,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pui",
+              "asset": "Chicken.svg",
+              "name": "Pui",
+              "size": [
+                142,
+                148
+              ],
+              "position": [
+                216,
+                312
+              ],
+              "scale": 0.204,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "catel",
+              "asset": "Dog.svg",
+              "name": "Catel",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                264,
+                312
+              ],
+              "scale": 0.17,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rata",
+              "asset": "Duck.svg",
+              "name": "Rata",
+              "size": [
+                155,
+                116
+              ],
+              "position": [
+                312,
+                312
+              ],
+              "scale": 0.272,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pasare",
+              "asset": "Bird.svg",
+              "name": "Pasare",
+              "size": [
+                146,
+                210
+              ],
+              "position": [
+                360,
+                312
+              ],
+              "scale": 0.23800000000000002,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
                 }
               ]
             }
           ]
         }
       ],
-      "sha256": "677efefc6577032c1f722768db11909bb87536d7c90ebf66db10369e8f2f630a"
+      "sha256": "47605882a94330b128441427478723132fb888b1ec914c0c99f90defc1dfc542"
+    },
+    {
+      "path": "proiecte/01_Construim_impreuna.sjr",
+      "name": "L00 Construim picnicul",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "focus": "iepuras",
+          "build": [
+            [
+              "iepuras",
+              0
+            ]
+          ],
+          "texts": [
+            {
+              "text": "1. Îl chemăm pe cățel",
+              "position": [
+                240,
+                28
+              ],
+              "size": 24,
+              "color": "#1b2a34"
+            }
+          ],
+          "sprites": [
+            {
+              "id": "casa",
+              "asset": "House3.svg",
+              "name": "Casa cățelului",
+              "size": [
+                286,
+                323
+              ],
+              "position": [
+                380,
+                140
+              ],
+              "scale": 0.5,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "gard",
+              "asset": "Fence.svg",
+              "name": "Gardul de ocolit",
+              "size": [
+                219,
+                123
+              ],
+              "position": [
+                240,
+                288
+              ],
+              "scale": 0.65,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "iepuras",
+              "asset": "Rabbit.svg",
+              "name": "Iepurașul",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                120,
+                288
+              ],
+              "scale": 0.22,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": []
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Ocolesc gardul!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "catel",
+              "asset": "Dog.svg",
+              "name": "Cățelul",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                360,
+                288
+              ],
+              "scale": 0.24,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Vin la picnic!"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "Park.svg",
+          "focus": "mar3",
+          "build": [
+            [
+              "mar3",
+              0
+            ],
+            [
+              "mar4",
+              0
+            ],
+            [
+              "mar5",
+              0
+            ]
+          ],
+          "texts": [
+            {
+              "text": "2. Mere pentru fiecare",
+              "position": [
+                240,
+                28
+              ],
+              "size": 24,
+              "color": "#1b2a34"
+            }
+          ],
+          "sprites": [
+            {
+              "id": "pom",
+              "asset": "Tree1.svg",
+              "name": "Mărul",
+              "size": [
+                284,
+                348
+              ],
+              "position": [
+                240,
+                160
+              ],
+              "scale": 0.65,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "masa",
+              "asset": "Table.svg",
+              "name": "Masa de picnic",
+              "size": [
+                399,
+                248
+              ],
+              "position": [
+                240,
+                274
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "mar1",
+              "asset": "Apple.svg",
+              "name": "Măr pe masă 1",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                144,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "mar2",
+              "asset": "Apple.svg",
+              "name": "Măr pe masă 2",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                336,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "mar3",
+              "asset": "Apple.svg",
+              "name": "Mărul de pe ramura stângă",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                192,
+                94
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": []
+                }
+              ]
+            },
+            {
+              "id": "mar4",
+              "asset": "Apple.svg",
+              "name": "Mărul de pe ramura joasă",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                240,
+                118
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": []
+                }
+              ]
+            },
+            {
+              "id": "mar5",
+              "asset": "Apple.svg",
+              "name": "Mărul de pe ramura dreaptă",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                288,
+                94
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": []
+                }
+              ]
+            },
+            {
+              "id": "iepuras",
+              "asset": "Rabbit.svg",
+              "name": "Iepuras",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                72,
+                270
+              ],
+              "scale": 0.24,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "pui",
+              "asset": "Chicken.svg",
+              "name": "Pui",
+              "size": [
+                142,
+                148
+              ],
+              "position": [
+                135,
+                325
+              ],
+              "scale": 0.24,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "catel",
+              "asset": "Dog.svg",
+              "name": "Catel",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                408,
+                270
+              ],
+              "scale": 0.2,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "rata",
+              "asset": "Duck.svg",
+              "name": "Rata",
+              "size": [
+                155,
+                116
+              ],
+              "position": [
+                240,
+                325
+              ],
+              "scale": 0.32,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "pasare",
+              "asset": "Bird.svg",
+              "name": "Pasare",
+              "size": [
+                146,
+                210
+              ],
+              "position": [
+                345,
+                325
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": []
+            }
+          ]
+        },
+        {
+          "background": "Park.svg",
+          "focus": "iepuras",
+          "build": [
+            [
+              "iepuras",
+              0
+            ],
+            [
+              "catel",
+              0
+            ]
+          ],
+          "texts": [
+            {
+              "text": "3. Poftiți la masă!",
+              "position": [
+                240,
+                28
+              ],
+              "size": 24,
+              "color": "#1b2a34"
+            }
+          ],
+          "sprites": [
+            {
+              "id": "masa",
+              "asset": "Table.svg",
+              "name": "Masa de picnic",
+              "size": [
+                399,
+                248
+              ],
+              "position": [
+                240,
+                274
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mar1",
+              "asset": "Apple.svg",
+              "name": "Măr pentru un prieten",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                144,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mar2",
+              "asset": "Apple.svg",
+              "name": "Măr pentru un prieten",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                192,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mar3",
+              "asset": "Apple.svg",
+              "name": "Măr pentru un prieten",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                240,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mar4",
+              "asset": "Apple.svg",
+              "name": "Măr pentru un prieten",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                288,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mar5",
+              "asset": "Apple.svg",
+              "name": "Măr pentru un prieten",
+              "size": [
+                112,
+                132
+              ],
+              "position": [
+                336,
+                190
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "iepuras",
+              "asset": "Rabbit.svg",
+              "name": "Iepuras",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                144,
+                286
+              ],
+              "scale": 0.204,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": []
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pui",
+              "asset": "Chicken.svg",
+              "name": "Pui",
+              "size": [
+                142,
+                148
+              ],
+              "position": [
+                192,
+                286
+              ],
+              "scale": 0.204,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "catel",
+              "asset": "Dog.svg",
+              "name": "Catel",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                240,
+                286
+              ],
+              "scale": 0.17,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": []
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rata",
+              "asset": "Duck.svg",
+              "name": "Rata",
+              "size": [
+                155,
+                116
+              ],
+              "position": [
+                288,
+                286
+              ],
+              "scale": 0.272,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pasare",
+              "asset": "Bird.svg",
+              "name": "Pasare",
+              "size": [
+                146,
+                210
+              ],
+              "position": [
+                336,
+                286
+              ],
+              "scale": 0.23800000000000002,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "background": "Park.svg",
+          "focus": "iepuras",
+          "build": [
+            [
+              "iepuras",
+              0
+            ]
+          ],
+          "texts": [
+            {
+              "text": "4. Toți la adăpost!",
+              "position": [
+                240,
+                28
+              ],
+              "size": 24,
+              "color": "#1b2a34"
+            }
+          ],
+          "sprites": [
+            {
+              "id": "casa",
+              "asset": "House3.svg",
+              "name": "Adăpostul",
+              "size": [
+                286,
+                323
+              ],
+              "position": [
+                360,
+                128
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "soare",
+              "asset": "Sun.svg",
+              "name": "Soarele",
+              "size": [
+                176,
+                176
+              ],
+              "position": [
+                80,
+                68
+              ],
+              "scale": 0.4,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "nor",
+              "asset": "Thundercloud.svg",
+              "name": "Norul de ploaie",
+              "size": [
+                344,
+                270
+              ],
+              "position": [
+                72,
+                122
+              ],
+              "scale": 0.4,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 4
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "iepuras",
+              "asset": "Rabbit.svg",
+              "name": "Iepuras",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                168,
+                312
+              ],
+              "scale": 0.204,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": []
+                }
+              ]
+            },
+            {
+              "id": "pui",
+              "asset": "Chicken.svg",
+              "name": "Pui",
+              "size": [
+                142,
+                148
+              ],
+              "position": [
+                216,
+                312
+              ],
+              "scale": 0.204,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "catel",
+              "asset": "Dog.svg",
+              "name": "Catel",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                264,
+                312
+              ],
+              "scale": 0.17,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rata",
+              "asset": "Duck.svg",
+              "name": "Rata",
+              "size": [
+                155,
+                116
+              ],
+              "position": [
+                312,
+                312
+              ],
+              "scale": 0.272,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pasare",
+              "asset": "Bird.svg",
+              "name": "Pasare",
+              "size": [
+                146,
+                210
+              ],
+              "position": [
+                360,
+                312
+              ],
+              "scale": 0.23800000000000002,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sha256": "e5541d384152ad1106124eeb8ada7e2874a1ce24c9106a6127bed5251eddfd01"
+    },
+    {
+      "path": "proiecte/02_Rezerva_Contact.sjr",
+      "name": "L00 Rezerva Ocolul cu Repeat",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "focus": "iepuras",
+          "build": [
+            [
+              "iepuras",
+              0
+            ]
+          ],
+          "texts": [
+            {
+              "text": "Rezervă: ocolul cu Repetă",
+              "position": [
+                240,
+                28
+              ],
+              "size": 24,
+              "color": "#1b2a34"
+            }
+          ],
+          "sprites": [
+            {
+              "id": "casa",
+              "asset": "House3.svg",
+              "name": "Casa cățelului",
+              "size": [
+                286,
+                323
+              ],
+              "position": [
+                380,
+                140
+              ],
+              "scale": 0.5,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "gard",
+              "asset": "Fence.svg",
+              "name": "Gardul de ocolit",
+              "size": [
+                219,
+                123
+              ],
+              "position": [
+                240,
+                288
+              ],
+              "scale": 0.65,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "iepuras",
+              "asset": "Rabbit.svg",
+              "name": "Iepurașul",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                120,
+                288
+              ],
+              "scale": 0.22,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "forward",
+                          "value": 5
+                        }
+                      ]
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Ocolesc gardul!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "catel",
+              "asset": "Dog.svg",
+              "name": "Cățelul",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                360,
+                288
+              ],
+              "scale": 0.24,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Ai găsit drumul!"
+                    },
+                    {
+                      "block": "hop",
+                      "value": 1
+                    },
+                    {
+                      "block": "forward",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sha256": "12fae7d4ad3bd086c8f9c8d2eb0cbc2deefbf48f7804dba96fb8037b6e8aa2c4"
+    },
+    {
+      "path": "proiecte/03_Rezerva_Statui.sjr",
+      "name": "L00 Rezerva Dans si statui",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "focus": "iepuras",
+          "build": [],
+          "texts": [
+            {
+              "text": "Rezervă: dansăm și înghețăm",
+              "position": [
+                240,
+                28
+              ],
+              "size": 24,
+              "color": "#1b2a34"
+            }
+          ],
+          "sprites": [
+            {
+              "id": "iepuras",
+              "asset": "Rabbit.svg",
+              "name": "Iepuras",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                72,
+                245
+              ],
+              "scale": 0.312,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pui",
+              "asset": "Chicken.svg",
+              "name": "Pui",
+              "size": [
+                142,
+                148
+              ],
+              "position": [
+                156,
+                245
+              ],
+              "scale": 0.312,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "catel",
+              "asset": "Dog.svg",
+              "name": "Catel",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                240,
+                245
+              ],
+              "scale": 0.26,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rata",
+              "asset": "Duck.svg",
+              "name": "Rata",
+              "size": [
+                155,
+                116
+              ],
+              "position": [
+                324,
+                245
+              ],
+              "scale": 0.41600000000000004,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "pasare",
+              "asset": "Bird.svg",
+              "name": "Pasare",
+              "size": [
+                146,
+                210
+              ],
+              "position": [
+                408,
+                245
+              ],
+              "scale": 0.36400000000000005,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sha256": "994fb7b6280136ba7740a3c92176bf403407a5309c462ebd932dc30b00315a8d"
     }
   ]
 }

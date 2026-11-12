@@ -1,4 +1,4 @@
-# Lecția 0 — Pregătim spectacolul din parc
+# Lecția 0 — Picnicul întrerupt de ploaie
 
 Lecția se desfășoară în ScratchJr, cu proiecte native `.sjr`, complet editabile.
 

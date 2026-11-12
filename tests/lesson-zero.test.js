@@ -18,34 +18,38 @@ test('Lesson 0 directs teachers to ScratchJr and native downloadable projects',(
   }
 });
 
-test('story scenes use a completion message to reveal their guide, without answer quizzes',()=>{
-  const pages=data.projects[0].pages;assert.equal(pages.length,4);
-  for(let i=0;i<pages.length;i++){
-    assert.equal(pages[i].sprites.filter(s=>s.id.startsWith('raspuns')).length,0);
-    const guide=pages[i].sprites.find(s=>s.id==='ghid');
-    assert.equal(guide.shown,false);
-    assert.ok(guide.scripts.some(s=>s.trigger.block==='onmessage'&&s.actions.some(a=>a.block==='show')));
-    const exits=guide.scripts.flatMap(sc=>sc.actions.filter(a=>a.block==='gotopage'));
-    assert.deepEqual(exits,[{block:'gotopage',value:i===3?1:i+2}]);
-  }
-});
-
-test('the construction copy leaves main scripts empty and keeps supporting characters',()=>{
+test('the construction copy preserves support programs and leaves only chosen tasks empty',()=>{
   const full=data.projects[0],starter=data.projects[1];
   for(let i=0;i<4;i++){
-    assert.equal(starter.pages[i].sprites[0].scripts[0].trigger.block,'onclick');
-    assert.deepEqual(starter.pages[i].sprites[0].scripts[0].actions,[]);
-    assert.deepEqual(starter.pages[i].sprites.slice(1),full.pages[i].sprites.slice(1));
+    const expected=structuredClone(full.pages[i]);
+    for(const [id,index] of expected.build){
+      const target=expected.sprites.find(s=>s.id===id);
+      assert.ok(target.scripts[index].actions.length>0);
+      target.scripts[index].actions=[];
+    }
+    assert.deepEqual(starter.pages[i],expected);
   }
 });
 
-test('all four projects use only bundled ScratchJr characters and backgrounds',()=>{
-  assert.equal(data.projects.length,4);
+test('native pages have valid destinations and all message receivers use a sent color',()=>{
+  const flatten=items=>items.flatMap(b=>b.body?flatten(b.body):[b]);
   for(const project of data.projects){
     assert.ok(project.pages.length<=4);
     for(const page of project.pages){
-      assert.ok(['Park.svg','Theatre.svg'].includes(page.background));
-      for(const sprite of page.sprites)assert.ok(['Rabbit.svg','Dog.svg','Ball.svg','Butterfly.svg'].includes(sprite.asset));
+      const sent=new Set(page.sprites.flatMap(s=>s.scripts.flatMap(sc=>flatten(sc.actions))).filter(b=>b.block==='message').map(b=>b.value));
+      for(const sprite of page.sprites)for(const sc of sprite.scripts){
+        for(const b of flatten(sc.actions))if(b.block==='gotopage')assert.ok(b.value>=1&&b.value<=project.pages.length);
+        if(project!==data.projects[1]&&sc.trigger.block==='onmessage')assert.ok(sent.has(sc.trigger.value));
+      }
     }
+  }
+});
+
+test('all four projects use only bundled ScratchJr assets',()=>{
+  const bundled=['Rabbit','Chicken','Dog','Duck','Bird','House3','Fence','Table','Tree1','Apple','Thundercloud','Sun'];
+  assert.equal(data.projects.length,4);
+  for(const project of data.projects)for(const page of project.pages){
+    assert.equal(page.background,'Park.svg');
+    for(const sprite of page.sprites)assert.ok(bundled.includes(sprite.asset.replace('.svg','')),sprite.asset);
   }
 });

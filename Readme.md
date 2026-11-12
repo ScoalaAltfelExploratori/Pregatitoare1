@@ -8,7 +8,7 @@ Cursul ScratchJr și jocurile Robo Explorator, în limba română, pentru clasa 
 
 ## Meniul siteului
 
-- [Lecția 0 · Pregătim spectacolul din parc](scratchjr/lectia-0/index.html): proiect nativ `.sjr` cu patru scene editabile, puzzle-uri 0–10, sunete și două rezerve. Lecția se prezintă în ScratchJr de pe laptop. [Instrucțiuni](materiale/Lectia_00_ScratchJr/README.md).
+- [Lecția 0 · Picnicul întrerupt de ploaie](scratchjr/lectia-0/index.html): proiect nativ `.sjr` cu patru scene editabile, puzzle-uri 0–10, sunete și două rezerve. Lecția se prezintă în ScratchJr de pe laptop. [Instrucțiuni](materiale/Lectia_00_ScratchJr/README.md).
 
 - `index.html` este intrarea comună, cu două secțiuni separate.
 - [ScratchJr](scratchjr/index.html) listează toate cele zece lecții. Fiecare are legături la ghid, cartonașe și pachetul ZIP. Paginile lecțiilor au Înapoi/Înainte și întoarcere la meniu.
