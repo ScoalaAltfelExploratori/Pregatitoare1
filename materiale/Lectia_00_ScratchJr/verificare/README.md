@@ -28,3 +28,13 @@ Verificarea funcțională de aici este în browser; nu reprezintă un test pe ta
 Cele zece înregistrări au trecut verificările din `check_results.py`. Cele nouă teste automate pentru arhivele lecției și navigarea website-ului au trecut.
 
 La prima probă, copia proaspăt importată nu a păstrat blocul după ieșire. Redenumirea proiectului înainte de lucru a permis salvarea și redeschiderea cu blocul conectat. Ghidul include acest pas; fișierele originale rămân disponibile pentru reimport.
+
+## Cele trei provocări suplimentare
+
+Verificate pe 12 noiembrie 2026, într-o copie separată a proiectului complet, importată în aplicația publică ScratchJr Desktop Reborn. Copia aplică exact modificările de blocuri descrise în ghid; cele patru proiecte distribuite rămân aceleași.
+
+- O apăsare pe copac coboară toate cele trei mere la înălțimea celor două de pe masă.
+- După schimbarea comenzilor celor două personaje, iepurașul cheamă întâi grupul de trei: rămân două mere. Cățelul cheamă apoi grupul de doi: nu mai rămân mere.
+- După furtună, apăsarea soarelui îi arată pe toți cinci și îi readuce la pozițiile lor de plecare. Norul rămâne ascuns.
+
+[Stările observate în browser](11_bonus.json). Provocările se construiesc live în proiectul principal, fără imagini sau fișiere suplimentare.

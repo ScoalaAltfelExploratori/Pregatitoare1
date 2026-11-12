@@ -1,0 +1,340 @@
+[
+  {
+    "check": "one_click_harvest",
+    "state": {
+      "page": "page2",
+      "sprites": [
+        {
+          "id": "p2_pom",
+          "opacity": 1,
+          "transform": "translate3d(100px, -12px, 0px) rotate(0deg) scale(0.65, 0.65)"
+        },
+        {
+          "id": "p2_masa",
+          "opacity": 1,
+          "transform": "translate3d(41px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p2_mar1",
+          "opacity": 1,
+          "transform": "translate3d(88px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p2_mar2",
+          "opacity": 1,
+          "transform": "translate3d(280px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p2_mar3",
+          "opacity": 1,
+          "transform": "translate3d(136px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p2_mar4",
+          "opacity": 1,
+          "transform": "translate3d(184px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p2_mar5",
+          "opacity": 1,
+          "transform": "translate3d(232px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p2_iepuras",
+          "opacity": 1,
+          "transform": "translate3d(-36px, 166px, 0px) rotate(0deg) scale(0.24, 0.24)"
+        },
+        {
+          "id": "p2_pui",
+          "opacity": 1,
+          "transform": "translate3d(64px, 251px, 0px) rotate(0deg) scale(0.24, 0.24)"
+        },
+        {
+          "id": "p2_catel",
+          "opacity": 1,
+          "transform": "translate3d(260px, 164px, 0px) rotate(0deg) scale(0.2, 0.2)"
+        },
+        {
+          "id": "p2_rata",
+          "opacity": 1,
+          "transform": "translate3d(163px, 267px, 0px) rotate(0deg) scale(0.32, 0.32)"
+        },
+        {
+          "id": "p2_pasare",
+          "opacity": 1,
+          "transform": "translate3d(272px, 220px, 0px) rotate(0deg) scale(0.28, 0.28)"
+        }
+      ]
+    }
+  },
+  {
+    "check": "three_eat_first",
+    "state": {
+      "page": "page3",
+      "sprites": [
+        {
+          "id": "p3_masa",
+          "opacity": 1,
+          "transform": "translate3d(41px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p3_mar1",
+          "opacity": 1,
+          "transform": "translate3d(88px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p3_mar2",
+          "opacity": 1,
+          "transform": "translate3d(136px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p3_mar3",
+          "opacity": 0,
+          "transform": "translate3d(184px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p3_mar4",
+          "opacity": 0,
+          "transform": "translate3d(232px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p3_mar5",
+          "opacity": 0,
+          "transform": "translate3d(280px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p3_iepuras",
+          "opacity": 1,
+          "transform": "translate3d(36px, 182px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_pui",
+          "opacity": 1,
+          "transform": "translate3d(121px, 212px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_catel",
+          "opacity": 1,
+          "transform": "translate3d(92px, 180px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p3_rata",
+          "opacity": 1,
+          "transform": "translate3d(211px, 228px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p3_pasare",
+          "opacity": 1,
+          "transform": "translate3d(263px, 181px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        }
+      ]
+    }
+  },
+  {
+    "check": "remaining_two_eat",
+    "state": {
+      "page": "page3",
+      "sprites": [
+        {
+          "id": "p3_masa",
+          "opacity": 1,
+          "transform": "translate3d(41px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p3_mar1",
+          "opacity": 0,
+          "transform": "translate3d(88px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p3_mar2",
+          "opacity": 0,
+          "transform": "translate3d(136px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p3_mar3",
+          "opacity": 0,
+          "transform": "translate3d(184px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p3_mar4",
+          "opacity": 0,
+          "transform": "translate3d(232px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p3_mar5",
+          "opacity": 0,
+          "transform": "translate3d(280px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p3_iepuras",
+          "opacity": 1,
+          "transform": "translate3d(36px, 182px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_pui",
+          "opacity": 1,
+          "transform": "translate3d(121px, 212px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_catel",
+          "opacity": 1,
+          "transform": "translate3d(92px, 180px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p3_rata",
+          "opacity": 1,
+          "transform": "translate3d(211px, 228px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p3_pasare",
+          "opacity": 1,
+          "transform": "translate3d(263px, 181px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        }
+      ]
+    }
+  },
+  {
+    "check": "shelter_start",
+    "state": {
+      "page": "page4",
+      "sprites": [
+        {
+          "id": "p4_casa",
+          "opacity": 1,
+          "transform": "translate3d(217px, -33px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p4_soare",
+          "opacity": 1,
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p4_nor",
+          "opacity": 1,
+          "transform": "translate3d(-100px, -13px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p4_iepuras",
+          "opacity": 1,
+          "transform": "translate3d(60px, 208px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p4_pui",
+          "opacity": 1,
+          "transform": "translate3d(145px, 238px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p4_catel",
+          "opacity": 1,
+          "transform": "translate3d(116px, 206px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p4_rata",
+          "opacity": 1,
+          "transform": "translate3d(235px, 254px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p4_pasare",
+          "opacity": 1,
+          "transform": "translate3d(287px, 207px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        }
+      ]
+    }
+  },
+  {
+    "check": "shelter_complete",
+    "state": {
+      "page": "page4",
+      "sprites": [
+        {
+          "id": "p4_casa",
+          "opacity": 1,
+          "transform": "translate3d(217px, -33px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p4_soare",
+          "opacity": 1,
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p4_nor",
+          "opacity": 0,
+          "transform": "translate3d(-100px, -13px, 0px) rotate(0deg) scale(-0.4, 0.4)"
+        },
+        {
+          "id": "p4_iepuras",
+          "opacity": 0,
+          "transform": "translate3d(252px, 112px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p4_pui",
+          "opacity": 0,
+          "transform": "translate3d(289px, 142px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p4_catel",
+          "opacity": 0,
+          "transform": "translate3d(212px, 110px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p4_rata",
+          "opacity": 0,
+          "transform": "translate3d(283px, 158px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p4_pasare",
+          "opacity": 0,
+          "transform": "translate3d(287px, 111px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        }
+      ]
+    }
+  },
+  {
+    "check": "everyone_returns",
+    "state": {
+      "page": "page4",
+      "sprites": [
+        {
+          "id": "p4_casa",
+          "opacity": 1,
+          "transform": "translate3d(217px, -33px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p4_soare",
+          "opacity": 1,
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p4_nor",
+          "opacity": 0,
+          "transform": "translate3d(-100px, -13px, 0px) rotate(0deg) scale(-0.4, 0.4)"
+        },
+        {
+          "id": "p4_iepuras",
+          "opacity": 1,
+          "transform": "translate3d(60px, 208px, 0px) rotate(0deg) scale(-0.204, 0.204)"
+        },
+        {
+          "id": "p4_pui",
+          "opacity": 1,
+          "transform": "translate3d(145px, 238px, 0px) rotate(0deg) scale(-0.204, 0.204)"
+        },
+        {
+          "id": "p4_catel",
+          "opacity": 1,
+          "transform": "translate3d(116px, 206px, 0px) rotate(0deg) scale(-0.17, 0.17)"
+        },
+        {
+          "id": "p4_rata",
+          "opacity": 1,
+          "transform": "translate3d(235px, 254px, 0px) rotate(0deg) scale(-0.272, 0.272)"
+        },
+        {
+          "id": "p4_pasare",
+          "opacity": 1,
+          "transform": "translate3d(287px, 207px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        }
+      ]
+    }
+  }
+]

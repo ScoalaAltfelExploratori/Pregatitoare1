@@ -60,10 +60,46 @@ Arată și programul cățelului. **De ce trimitem mesajul după deplasare?** Da
 - **34–46:** puzzle-ul dificil al adăpostului.
 - **46–50:** reluăm o scenă; un copil explică de ce ordinea blocurilor contează.
 
-## Două rezerve
+## Dacă terminăm mai repede
+
+Avem cinci opțiuni, aproximativ **25–35 de minute de rezervă** în total. Alegem una sau două, după timpul rămas; nu trebuie parcurse toate. Duratele includ propunerile copiilor, construirea și testarea.
+
+### Două proiecte de rezervă
 
 - [Același drum, mai puțin cod](proiecte/02_Rezerva_Contact.sjr) · 5–7 minute: ocolim același gard, dar înlocuim Dreapta 10 cu **Repetă 2 [Dreapta 5]**. Pornim cu steagul. Comparăm unde ajunge iepurașul și numărăm 5 + 5.
 - [Dansăm și înghețăm](proiecte/03_Rezerva_Statui.sjr) · 5–7 minute: iepurașul pornește dansul celor cinci. Pasărea îi îngheață pe primii doi; trei continuă. Găsiți programele **Repetă mereu** și **Oprește**. Modificați cine primește semnalul de oprire.
+
+### 3. Scuturăm pomul o singură dată · 4–6 minute
+
+**Misiune:** „Prietenii așteaptă. Putem culege toate cele trei mere cu o singură apăsare pe copac?”
+
+Lucrăm pe pagina 2, după ce am construit coborârea merelor. Adăugăm copacului **La apăsare → Trimite roșu**. La fiecare dintre cele trei mere din copac, înlocuim pornirea La apăsare cu **La mesaj roșu**; păstrăm Înapoi acasă, coborârea și Pop. Cele două mere de pe masă rămân fără program.
+
+Apăsăm Reset Characters, apoi copacul o singură dată. Cele trei mere coboară pe masă. Copiii verifică **2 + 3 = 5** și explică de ce același mesaj poate porni trei programe. Pot veni trei copii, fiecare pentru câte un măr.
+
+### 4. Cei trei prieteni au ajuns primii · 4–6 minute
+
+**Misiune:** „De data aceasta, cățelul, rața și pasărea mănâncă primii. Iepurașul trebuie să-i cheme, iar cățelul îi va chema apoi pe ceilalți doi.”
+
+Pe pagina 3, schimbăm mesajul trimis la apăsarea iepurașului în **albastru**, iar pe cel trimis de cățel în **roșu**. Păstrăm programele care primesc mesajele.
+
+Pornim steagul, apăsăm iepurașul și așteptăm revenirea celor trei. Vedem că **5 − 3 = 2** mere rămân pentru ceilalți. Apăsăm cățelul și verificăm a doua servire. Doi copii pot modifica pe rând câte un buton.
+
+### 5. A trecut ploaia! · 7–9 minute · dificil
+
+**Misiune:** „Soarele a revenit. O singură apăsare pe el trebuie să scoată toți prietenii din casă și să-i ducă la locurile lor.”
+
+Pe pagina 4, adăugăm soarelui **La apăsare → Trimite verde**. Fiecare prieten primește un program nou: **La verde → Arată → Jos 4 → Stânga**. Păstrăm toate programele de intrare în casă.
+
+- Iepurașul: **Stânga 8**.
+- Puiul: **Stânga 6**.
+- Cățelul: **Stânga 4**.
+- Rața: **Stânga 2**.
+- Pasărea: programul se termină după **Jos 4**; locul ei este chiar în fața casei.
+
+Copiii urmăresc traseul de intrare și deduc drumul de întoarcere. Întâi rulăm furtuna până se încheie, apoi apăsăm soarele **o singură dată**. Verificăm că toți cinci sunt vizibili, la locurile de plecare. Pentru o nouă rundă: Stop, Reset Characters, apoi norul.
+
+Aceste trei provocări se construiesc live în copia proiectului principal, folosind obiectele existente. Nu necesită alte fișiere sau imagini. Dacă au rămas doar câteva minute, alege o singură modificare și lasă un copil să explice rezultatul clasei.
 
 ## Reluare și salvare
 
