@@ -70,6 +70,7 @@ def export(entry):
 
 def build():
     from story import make_story
+    from bonus import make_bonus
     full,shortcut,dance=make_story(actor,script,b,label,repeat)
     starter=deepcopy(full)
     for page in starter:
@@ -79,6 +80,7 @@ def build():
               {"name":"L00 Construim picnicul","short":"Construim","path":"proiecte/01_Construim_impreuna.sjr","pages":starter},
               {"name":"L00 Rezerva Ocolul cu Repeat","short":"Ocolul","path":"proiecte/02_Rezerva_Contact.sjr","pages":[shortcut]},
               {"name":"L00 Rezerva Dans si statui","short":"Dansul","path":"proiecte/03_Rezerva_Statui.sjr","pages":[dance]}]
+    projects.extend(make_bonus(full,script,b,label))
     records=[export(p) for p in projects]
     (ROOT/'lesson.json').write_text(json.dumps({'lesson':0,'title':'Picnicul întrerupt de ploaie','duration':50,'projects':records},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Built',len(records),'native ScratchJr projects.')
@@ -99,5 +101,7 @@ def package():
 
 if __name__=='__main__':
     import sys
+    from render_guides import render_all
     if '--package-only' not in sys.argv:build()
+    render_all()
     package()

@@ -31,10 +31,22 @@ La prima probă, copia proaspăt importată nu a păstrat blocul după ieșire. 
 
 ## Cele trei provocări suplimentare
 
-Verificate pe 12 noiembrie 2026, într-o copie separată a proiectului complet, importată în aplicația publică ScratchJr Desktop Reborn. Copia aplică exact modificările de blocuri descrise în ghid; cele patru proiecte distribuite rămân aceleași.
+Verificate pe 12 noiembrie 2026, într-o copie separată a proiectului complet, importată în aplicația publică ScratchJr Desktop Reborn. Copia aplică exact modificările de blocuri descrise în ghid. Cele patru fișiere inițiale nu au fost schimbate.
 
 - O apăsare pe copac coboară toate cele trei mere la înălțimea celor două de pe masă.
 - După schimbarea comenzilor celor două personaje, iepurașul cheamă întâi grupul de trei: rămân două mere. Cățelul cheamă apoi grupul de doi: nu mai rămân mere.
 - După furtună, apăsarea soarelui îi arată pe toți cinci și îi readuce la pozițiile lor de plecare. Norul rămâne ascuns.
 
 [Stările observate în browser](11_bonus.json). Provocările se construiesc live în proiectul principal, fără imagini sau fișiere suplimentare.
+
+## Soluții descărcabile și ghidul profesorului
+
+Fiecare dintre cele trei bonusuri are acum și un fișier `.sjr` separat în `solutii/`, cu o singură pagină și toate programele completate. Fișierele finale au fost importate și rulate individual în aplicația publică:
+
+- **R3 — Scuturăm pomul:** o apăsare pe copac aduce toate cele trei fructe la nivelul mesei.
+- **R4 — Cei trei, primii:** steagul, apoi iepurașul lasă două mere; cățelul pornește a doua servire și rămân zero.
+- **R5 — A trecut ploaia:** norul îi conduce pe toți la adăpost; după încheierea furtunii, soarele îi readuce pe toți cinci la coordonatele lor inițiale.
+
+[Rezultatele fișierelor finale](12_solutii.json). Arhivele au structură validă, iar hashurile tuturor celor șapte proiecte sunt în `lesson.json`. Cele patru fișiere inițiale sunt identice cu versiunile testate anterior.
+
+[Ghidul profesorului](../Ghid_profesor.md) acoperă cele patru scene și toate cele cinci rezerve: formularea misiunii, întrebări, blocuri, pornire, rezultat și verificări practice. Versiunea pentru website poate fi tipărită din browser.

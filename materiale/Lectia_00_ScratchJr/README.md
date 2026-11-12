@@ -6,6 +6,21 @@ Cinci prieteni pregătesc un picnic. Îl chemăm pe cățel, culegem mere pentru
 
 [Desfășurătorul lecției](../../scratchjr/lectia-0/index.html) · [Toate lecțiile](../../scratchjr/index.html)
 
+## Ghidul profesorului și toate soluțiile
+
+[**Ghidul profesorului — ce spui și ce faci, pas cu pas**](Ghid_profesor.md)
+
+Fiecare activitate are un model ScratchJr complet, editabil. Selectează orice personaj din stânga ca să-i vezi programul.
+
+- **Cele patru scene principale:** [soluția completă a poveștii](proiecte/00_Laboratorul_ScratchJr.sjr). Pentru lucru live: [Construim împreună](proiecte/01_Construim_impreuna.sjr).
+- **Rezerva 1 — Ocolul cu Repetă:** [soluția rezolvată](proiecte/02_Rezerva_Contact.sjr).
+- **Rezerva 2 — Dansăm și înghețăm:** [soluția rezolvată](proiecte/03_Rezerva_Statui.sjr).
+- **Rezerva 3 — Scuturăm pomul:** [soluția rezolvată](solutii/03_Scuturam_pomul.sjr).
+- **Rezerva 4 — Cei trei, primii:** [soluția rezolvată](solutii/04_Cei_trei_primii.sjr).
+- **Rezerva 5 — A trecut ploaia:** [soluția rezolvată](solutii/05_A_trecut_ploaia.sjr).
+
+Soluțiile rezervelor au câte o singură pagină. Cele trei provocări noi se pot construi pe paginile 2–4 ale poveștii; modelele separate sunt pentru demonstrație și verificare.
+
 ## Pregătire
 
 1. Descarcă [proiectul complet](proiecte/00_Laboratorul_ScratchJr.sjr) și [varianta de construit](proiecte/01_Construim_impreuna.sjr). Nu dezarhiva fișierele `.sjr`.
@@ -40,7 +55,7 @@ Apăsăm **steagul verde** pentru a activa contactele, apoi apăsăm personajele
 
 Iepuraș: **La apăsare → Trimite roșu.** Cățel: **La apăsare → Trimite albastru.**
 
-Programele de primire sunt pregătite: roșu cheamă primii doi; albastru îi cheamă pe ceilalți trei. Fiecare face **Sus 4 → Așteaptă 5 → Jos 4**. Merele au **La contact → Pop → Ascunde**. Ascunderea înseamnă că fructul a fost mâncat, după atingere. Alegem **pagina 4**.
+Programele de primire sunt pregătite: roșu cheamă primii doi; albastru îi cheamă pe ceilalți trei. Fiecare face **Sus 4 → Așteaptă 5 → Jos 4**. Merele au **La contact → Pop → Ascunde**. Ascunderea înseamnă că fructul a fost mâncat, după atingere. Apăsăm **Stop**, apoi alegem **pagina 4**.
 
 ### 4. Toți la adăpost! · 34–46 minute · dificil
 

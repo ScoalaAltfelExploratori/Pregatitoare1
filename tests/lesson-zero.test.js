@@ -45,9 +45,9 @@ test('native pages have valid destinations and all message receivers use a sent 
   }
 });
 
-test('all four projects use only bundled ScratchJr assets',()=>{
+test('the lesson, construction copy and five reserves use only bundled ScratchJr assets',()=>{
   const bundled=['Rabbit','Chicken','Dog','Duck','Bird','House3','Fence','Table','Tree1','Apple','Thundercloud','Sun'];
-  assert.equal(data.projects.length,4);
+  assert.equal(data.projects.length,7);
   for(const project of data.projects)for(const page of project.pages){
     assert.equal(page.background,'Park.svg');
     for(const sprite of page.sprites)assert.ok(bundled.includes(sprite.asset.replace('.svg','')),sprite.asset);
