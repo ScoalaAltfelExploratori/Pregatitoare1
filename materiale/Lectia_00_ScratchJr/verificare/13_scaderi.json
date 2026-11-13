@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-13",
+  "app": "ScratchJr Desktop Reborn (public browser)",
+  "project": "L00 Picnicul intrerupt de ploaie",
+  "scope": "Existing solution, scenes 2–4; guide-only revision. No Android retest.",
+  "orchard": {
+    "observed": "All five apples visible at the table after tapping the three tree apples.",
+    "appleTransformY": 124
+  },
+  "mealAfterFirstGroup": [
+    {
+      "id": "p3_mar1",
+      "opacity": "0",
+      "transform": "translate3d(88px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+    },
+    {
+      "id": "p3_mar2",
+      "opacity": "0",
+      "transform": "translate3d(136px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+    },
+    {
+      "id": "p3_mar3",
+      "opacity": "1",
+      "transform": "translate3d(184px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+    },
+    {
+      "id": "p3_mar4",
+      "opacity": "1",
+      "transform": "translate3d(232px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+    },
+    {
+      "id": "p3_mar5",
+      "opacity": "1",
+      "transform": "translate3d(280px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+    },
+    {
+      "id": "p3_iepuras",
+      "opacity": "1",
+      "transform": "translate3d(36px, 182px, 0px) rotate(0deg) scale(0.204, 0.204)"
+    },
+    {
+      "id": "p3_pui",
+      "opacity": "1",
+      "transform": "translate3d(121px, 212px, 0px) rotate(0deg) scale(0.204, 0.204)"
+    },
+    {
+      "id": "p3_catel",
+      "opacity": "1",
+      "transform": "translate3d(92px, 180px, 0px) rotate(0deg) scale(0.17, 0.17)"
+    },
+    {
+      "id": "p3_rata",
+      "opacity": "1",
+      "transform": "translate3d(211px, 228px, 0px) rotate(0deg) scale(0.272, 0.272)"
+    },
+    {
+      "id": "p3_pasare",
+      "opacity": "1",
+      "transform": "translate3d(263px, 181px, 0px) rotate(0deg) scale(0.238, 0.238)"
+    }
+  ],
+  "mealAfterSecondGroup": [
+    {
+      "id": "p3_mar1",
+      "opacity": "0"
+    },
+    {
+      "id": "p3_mar2",
+      "opacity": "0"
+    },
+    {
+      "id": "p3_mar3",
+      "opacity": "0"
+    },
+    {
+      "id": "p3_mar4",
+      "opacity": "0"
+    },
+    {
+      "id": "p3_mar5",
+      "opacity": "0"
+    }
+  ],
+  "shelterFinal": [
+    {
+      "id": "p4_casa",
+      "opacity": "1",
+      "transform": "translate3d(217px, -33px, 0px) rotate(0deg) scale(0.6, 0.6)"
+    },
+    {
+      "id": "p4_soare",
+      "opacity": "1",
+      "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+    },
+    {
+      "id": "p4_nor",
+      "opacity": "0",
+      "transform": "translate3d(-100px, -13px, 0px) rotate(0deg) scale(-0.4, 0.4)"
+    },
+    {
+      "id": "p4_iepuras",
+      "opacity": "0",
+      "transform": "translate3d(252px, 112px, 0px) rotate(0deg) scale(0.204, 0.204)"
+    },
+    {
+      "id": "p4_pui",
+      "opacity": "0",
+      "transform": "translate3d(289px, 142px, 0px) rotate(0deg) scale(0.204, 0.204)"
+    },
+    {
+      "id": "p4_catel",
+      "opacity": "0",
+      "transform": "translate3d(212px, 110px, 0px) rotate(0deg) scale(0.17, 0.17)"
+    },
+    {
+      "id": "p4_rata",
+      "opacity": "0",
+      "transform": "translate3d(283px, 158px, 0px) rotate(0deg) scale(0.272, 0.272)"
+    },
+    {
+      "id": "p4_pasare",
+      "opacity": "0",
+      "transform": "translate3d(287px, 111px, 0px) rotate(0deg) scale(0.238, 0.238)"
+    },
+    {
+      "id": "p4_Text1",
+      "opacity": "1",
+      "transform": "translate3d(138.5px, 14px, 0px)"
+    }
+  ]
+}

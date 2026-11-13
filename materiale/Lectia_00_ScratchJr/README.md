@@ -4,6 +4,8 @@
 
 Cinci prieteni pregătesc un picnic. Îl chemăm pe cățel, culegem mere pentru fiecare și îi poftim la masă. Norul de furtună schimbă planul: trebuie să-i conducem pe toți la adăpost.
 
+Adunările și scăderile ne ajută să hotărâm ce programăm: câte mere mai trebuie culese, pentru cine le păstrăm pe cele rămase și câți prieteni mai trebuie chemați în casă. Copiii răspund arătând obiectele din scenă, apoi construiesc sau pornesc acțiunea potrivită.
+
 [Desfășurătorul lecției](../../scratchjr/lectia-0/index.html) · [Toate lecțiile](../../scratchjr/index.html)
 
 ## Ghidul profesorului și toate soluțiile
@@ -45,25 +47,27 @@ Pornim cu **steagul verde**. Copiii urmăresc cele trei laturi ale ocolului. La 
 
 ### 2. Mere pentru fiecare · 13–23 minute
 
-Vedem **cinci prieteni**, **două mere pe masă** și **trei mere în copac**. **Câte mai culegem ca fiecare să primească unul?** Copiii aleg cele trei fructe: 2 + 3 = 5.
+Vedem **cinci prieteni**, **două mere pe masă** și **trei mere în copac**. **Câte mai culegem ca fiecare să primească unul?** Pentru cinci prieteni ne trebuie cinci mere; avem deja două, deci lipsesc **5 − 2 = 3**. Copiii aleg cele trei fructe pentru care vor construi programe.
 
-Construim la cele trei mere din copac: **La apăsare → Înapoi acasă → Jos → Pop**. Merele de pe ramurile laterale coboară **4** pași; cel din mijloc coboară **3**. Pornim pe rând și verificăm că toate ajung pe masă. Alegem apoi **pagina 3 din dreapta**.
+Construim la cele trei mere din copac: **La apăsare → Înapoi acasă → Jos → Pop**. Merele de pe ramurile laterale coboară **4** pași; cel din mijloc coboară **3**. Numărul merelor alese și distanța parcursă de fiecare sunt lucruri diferite. Pornim pe rând și verificăm că toate ajung pe masă: **2 + 3 = 5**, câte unul pentru fiecare prieten. Alegem apoi **pagina 3 din dreapta**.
 
 ### 3. Poftiți la masă! · 23–31 minute
 
-Apăsăm **steagul verde** pentru a activa contactele, apoi apăsăm personajele pe scenă. Cele cinci mere așteaptă cinci prieteni. Chemăm întâi iepurașul și puiul. Ei merg la masă, ating câte un măr și se întorc. **Câte mere mai sunt pentru cei care așteaptă?** Vedem 5 − 2 = 3.
+Apăsăm **steagul verde** pentru a activa contactele, apoi iepurașul pe scenă, o singură dată. El și puiul merg la masă, ating câte un măr și se întorc. **Cine n-a mâncat încă? Ajung merele rămase pentru ei?** Sunt **5 − 2 = 3 mere** pentru cățel, rață și pasăre. Copiii îi identifică și aleg mesajul albastru care îi cheamă. A doua servire așteaptă apăsarea cățelului, deci putem discuta pe îndelete.
 
 Iepuraș: **La apăsare → Trimite roșu.** Cățel: **La apăsare → Trimite albastru.**
 
-Programele de primire sunt pregătite: roșu cheamă primii doi; albastru îi cheamă pe ceilalți trei. Fiecare face **Sus 4 → Așteaptă 5 → Jos 4**. Merele au **La contact → Pop → Ascunde**. Ascunderea înseamnă că fructul a fost mâncat, după atingere. Apăsăm **Stop**, apoi alegem **pagina 4**.
+Programele de primire sunt pregătite: roșu cheamă primii doi; albastru îi cheamă pe ceilalți trei. Fiecare face **Sus 4 → Așteaptă 5 → Jos 4**. Merele au **La contact → Pop → Ascunde**. Ascunderea înseamnă că fructul a fost mâncat, după atingere.
+
+Un copil apasă cățelul o singură dată. Ultimii trei mănâncă: **3 − 3 = 0 mere**. Verificăm că toți cinci au primit câte unul; masa s-a încheiat. Apăsăm **Stop**, apoi alegem **pagina 4**: vremea se schimbă.
 
 ### 4. Toți la adăpost! · 34–46 minute · dificil
 
-Norul se apropie. Casa este adăpostul; cei cinci prieteni sunt afară. **Primii doi intră, apoi îi cheamă pe ceilalți trei. Nimeni nu trebuie uitat.**
+Norul se apropie. Casa este adăpostul; cei cinci prieteni sunt afară. **După ce intră iepurașul și puiul, pe cine mai chemăm?** Rămân **5 − 2 = 3 afară**: cățelul, rața și pasărea. Înainte de pornire, copiii arată cele trei personaje și verifică cine primește mesajul albastru. Nimeni nu trebuie uitat.
 
 Completăm programul iepurașului: **La roșu → Dreapta 8 → Sus 4 → Ascunde → Așteaptă 10 → Trimite albastru.** Ascunde se folosește abia la ușa casei. Pornim apăsând **norul**.
 
-Puiul intră împreună cu iepurașul. Mesajul albastru îi pornește pe ceilalți trei. Cățelul, care are cel mai lung drum din acest grup, trimite mov la sosire: norul pleacă, revine soarele și se aude Pop. Verificăm vizual că nu a rămas nimeni afară.
+Puiul intră împreună cu iepurașul. Mesajul albastru îi pornește pe ceilalți trei. Urmărim lanțul până la capăt: **3 − 3 = 0 afară**, deci toți sunt la adăpost. Prietenii sunt în casă; numărăm cine mai are nevoie de ajutor. Cățelul, care are cel mai lung drum din acest grup, trimite mov la sosire și pornește finalul scenei: norul pleacă, revine soarele și se aude Pop.
 
 Arată și programul cățelului. **De ce trimitem mesajul după deplasare?** Dacă îl trimitem înainte, următoarea acțiune începe prea devreme. Provocare suplimentară: calculați drumul celorlalți — 6, 4, 2 și 0 pași la dreapta, apoi câte 4 în sus.
 
@@ -98,7 +102,7 @@ Apăsăm Reset Characters, apoi copacul o singură dată. Cele trei mere coboar�
 
 Pe pagina 3, schimbăm mesajul trimis la apăsarea iepurașului în **albastru**, iar pe cel trimis de cățel în **roșu**. Păstrăm programele care primesc mesajele.
 
-Pornim steagul, apăsăm iepurașul și așteptăm revenirea celor trei. Vedem că **5 − 3 = 2** mere rămân pentru ceilalți. Apăsăm cățelul și verificăm a doua servire. Doi copii pot modifica pe rând câte un buton.
+Pornim steagul, apăsăm iepurașul și așteptăm revenirea celor trei. **Pentru cine păstrăm cele 5 − 3 = 2 mere?** Copiii arată iepurașul și puiul și aleg mesajul roșu pentru ei. Apăsăm cățelul: **2 − 2 = 0 mere**, iar fiecare prieten a mâncat o singură dată. Doi copii pot modifica pe rând câte un buton.
 
 ### 5. A trecut ploaia! · 7–9 minute · dificil
 

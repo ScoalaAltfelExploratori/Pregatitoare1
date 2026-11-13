@@ -18,6 +18,8 @@
 
 Repetă același ritm: **spunem scopul → propunem blocurile → un copil construiește → prezicem → pornim → explicăm ce vedem**. Schimbă copilul după una sau două instrucțiuni. Ceilalți urmăresc și propun următorul pas.
 
+La calcule, copiii arată obiectele despre care vorbesc și folosesc răspunsul pentru următoarea decizie: câte mere culegem, pe cine mai chemăm sau cine mai are nevoie de adăpost. Spuneți operația după ce au explicat situația. Numărăm mere sau prieteni; numerele din blocurile de mișcare arată pași.
+
 Selectezi personajul **în coloana din stânga** ca să-i editezi codul. Apăsarea **pe scenă** pornește programele La apăsare. Blocurile trebuie să se unească; între ele nu trebuie să rămână spațiu. Apasă numărul unui bloc pentru a-l schimba. Un personaj poate avea mai multe programe; derulează zona de programare ca să le vezi pe toate.
 
 La blocurile cu plic, alege culoarea din săgeata de sub bloc. Dacă plicul apare gol în browser, alegerea culorii îl redesenează. Arată grila numai cât numărați pașii.
@@ -44,7 +46,9 @@ Arată scena, personajele, blocurile și cele patru pagini. Demonstrează o sing
 
 ## 13–23 minute — Culegem mere pentru fiecare
 
-**Spune:** „Fiecare prieten primește un măr. Câte avem pe masă? Câte mai trebuie să culegem?” Numărați cele cinci personaje și cele două mere deja așezate: lipsesc trei.
+**Spune:** „Fiecare prieten primește un măr. Avem deja două pe masă. Câte ne mai trebuie pentru toți cinci?” Un copil arată cei cinci prieteni și potrivește cu degetul cele două mere cu doi dintre ei. Pentru ceilalți lipsesc **5 − 2 = 3 mere**.
+
+**Decideți ce programăm:** copiii aleg cele trei mere de cules și împart sarcinile: câte un copil pentru fiecare fruct. Răspunsul ne spune câte mere coborâm; înălțimea ramurii ne spune câți pași trebuie să facă fiecare.
 
 **Întreabă:** „Toate merele pornesc de la aceeași înălțime? Care are un drum mai scurt până la masă?”
 
@@ -58,13 +62,17 @@ Arată scena, personajele, blocurile și cele patru pagini. Demonstrează o sing
 
 ## 23–31 minute — Chemăm prietenii la masă
 
-**Spune:** „Întâi îi chemăm pe iepuraș și pe pui. După ei vin cățelul, rața și pasărea.”
+**Spune:** „Iepurașul și puiul vin primii la masă. Păstrăm câte un măr și pentru fiecare prieten care încă așteaptă.”
 
 **Construiți două comenzi:** iepurașul — La apăsare → Trimite roșu; cățelul — La apăsare → Trimite albastru. Arată un program deja pregătit care începe cu plicul roșu și unul cu plicul albastru.
 
-**Pornește:** steagul verde, apoi apasă iepurașul. Așteaptă revenirea celor doi. **Întreabă:** „Au fost cinci mere și s-au mâncat două. Câte vedem acum?” Rămân trei. Apasă apoi cățelul.
+**Pornește prima servire:** steagul verde, apoi iepurașul, o singură dată. Așteaptă revenirea celor doi; a doua servire pornește numai când apăsați cățelul, deci aveți timp să decideți împreună.
 
-**Rezultat:** fiecare personaj merge la masă, atinge un măr și se întoarce. După al doilea grup nu mai rămân mere. Arată programul unui măr: La contact → Pop → Ascunde.
+**Întreabă:** „Cine n-a mâncat încă? Ajung merele rămase pentru ei?” Copiii arată cățelul, rața și pasărea și cele **5 − 2 = 3 mere**. Fiecare trebuie chemat o singură dată. Alegeți mesajul pentru acești trei prieteni: **albastru**; un copil apasă cățelul.
+
+**Rezultat:** fiecare personaj merge la masă, atinge un măr și se întoarce. Ultimii trei mănâncă cele trei mere rămase: **3 − 3 = 0**. Verificați și cine a mâncat, nu doar masa goală: toți cinci au primit câte unul. Masa s-a încheiat; puteți continua povestea.
+
+**Arată codul unui măr:** La contact → Pop → Ascunde. Mărul dispare după atingere fiindcă a fost mâncat. Întreabă: „Ce bloc face să nu-l mai vedem?”
 
 **Dacă merele nu dispar:** reia cu steagul pentru activarea contactelor. Verifică și culorile mesajelor. La final apasă **Stop**, apoi alege pagina 4.
 
@@ -76,15 +84,17 @@ Doi copii mimează primul grup, apoi alți trei mimează al doilea. Clasa număr
 
 ## 34–46 minute — Toți la adăpost · dificil
 
-**Spune:** „Vine furtuna. Primii doi intră în casă și îi cheamă pe ceilalți trei. Cum ne asigurăm că nu uităm pe nimeni?”
+**Spune:** „Vine furtuna. Iepurașul și puiul intră primii și îi cheamă de la adăpost pe cei rămași. Cum ne asigurăm că nu uităm pe nimeni?”
+
+**Planificați salvarea înainte să porniți:** arătați cei cinci prieteni. După intrarea primilor doi vor rămâne **5 − 2 = 3 afară**: cățelul, rața și pasărea. Copiii îi identifică și găsesc la fiecare programul care primește albastru. Acesta este grupul pe care trebuie să-l cheme iepurașul.
 
 **Construiți la iepuraș:** La roșu → Dreapta 8 → Sus 4 → Ascunde → Așteaptă 10 → Trimite albastru. Declanșatorul La roșu este deja pregătit.
 
 **Întreabă înainte de pornire:** „Unde trebuie să ajungă înainte să-l ascundem? Când trimitem mesajul pentru ceilalți?” Copiii explică legătura dintre sosire și următoarea comandă.
 
-**Pornește:** apasă norul. **Rezultat:** intră iepurașul și puiul; apoi intră ceilalți trei. Toți dispar la ușă. La final norul pleacă, revine soarele și se aude Pop.
+**Pornește:** apasă norul o singură dată și urmăriți lanțul până la capăt. **Rezultat:** intră iepurașul și puiul; apoi intră ceilalți trei. Toți dispar la ușă. Din cei trei rămași afară intră trei: **3 − 3 = 0 afară**. Prietenii sunt în casă, nu au dispărut din poveste. La final norul pleacă, revine soarele și se aude Pop.
 
-**Arată:** cățelul trimite mov după sosire. Mesajul pornește încheierea furtunii. Dacă rămâne cineva afară, verificați mesajul albastru și programul care îl primește.
+**Arată:** cățelul trimite mov după sosire. El are cel mai lung drum din al doilea grup; când a intrat și el, toți sunt la adăpost. Mesajul pornește finalul scenei, în care furtuna trece. Dacă rămâne cineva afară, salvarea nu este completă: verificați mesajul albastru și programul care îl primește.
 
 **Model:** [povestea rezolvată, pagina 4](proiecte/00_Laboratorul_ScratchJr.sjr).
 
@@ -128,7 +138,7 @@ Un copil explică un program arătând blocurile: „întâi…, apoi…, la sf�
 
 **Soluție:** iepuraș — La apăsare → Trimite **albastru**; cățel — La apăsare → Trimite **roșu**. Programele de primire rămân cele existente.
 
-**Pornește:** steagul, iepurașul, așteaptă revenirea grupului, apoi cățelul. **Verifică:** rămân întâi două mere, apoi zero. Întreabă: „S-au schimbat drumurile sau cine dă comanda?” Încheie cu Stop.
+**Pornește:** steagul, apoi iepurașul. După revenirea grupului, întreabă: „Au mâncat trei. Pentru cine păstrăm cele **5 − 3 = 2 mere**?” Copiii identifică iepurașul și puiul, apoi aleg mesajul roșu care îi cheamă. Apasă cățelul: cei doi mănâncă și rămân **2 − 2 = 0 mere**. Verificați că fiecare a fost servit o singură dată. Întreabă: „S-au schimbat drumurile sau cine dă comanda?” Încheie cu Stop.
 
 [Soluția R4](solutii/04_Cei_trei_primii.sjr).
 

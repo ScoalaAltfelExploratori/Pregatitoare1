@@ -6,7 +6,7 @@ Materialele și explicațiile pentru copii vor fi în română, cu pictograme ș
 
 ## Regula cursului: totul se construiește în aplicație
 
-Înaintea celor zece întâlniri practice avem [Lecția 0 — Picnicul întrerupt de ploaie](../scratchjr/lectia-0/index.html): 50 de minute la proiector, conduse de profesor în ScratchJr. Proiectul nativ are patru pagini: ocolirea gardului, culesul merelor, masa prietenilor și adăpostirea de ploaie; cinci rezerve extind povestea, repetarea și statuile. Copiii propun codul, prezic rezultatul și vin pe rând la laptop. Matematica 0–10 sprijină programarea. [Proiecte și instrucțiuni](Lectia_00_ScratchJr/README.md). Numerotarea lecțiilor 1–10 rămâne aceeași.
+Înaintea celor zece întâlniri practice avem [Lecția 0 — Picnicul întrerupt de ploaie](../scratchjr/lectia-0/index.html): 50 de minute la proiector, conduse de profesor în ScratchJr. Proiectul nativ are patru pagini: ocolirea gardului, culesul merelor, masa prietenilor și adăpostirea de ploaie; cinci rezerve extind povestea, repetarea și statuile. Copiii propun codul, prezic rezultatul și vin pe rând la laptop. Adunările și scăderile 0–10 sprijină deciziile din poveste: câte mere mai culegem, pentru cine le păstrăm pe cele rămase și câți prieteni mai trebuie adăpostiți. [Proiecte și instrucțiuni](Lectia_00_ScratchJr/README.md). Numerotarea lecțiilor 1–10 rămâne aceeași.
 
 Toate cele zece lecții folosesc numai personajele, fundalurile, sunetul Pop și blocurile incluse în ScratchJr. Nu cerem importuri SJR, imagini externe, conturi ale copiilor, descărcări de materiale sau copierea fișierelor pe fiecare tabletă. Instalăm aplicația o singură dată; lecțiile se pot desfășura fără internet după verificarea inițială pe K10.
 

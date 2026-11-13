@@ -50,3 +50,15 @@ Fiecare dintre cele trei bonusuri are acum și un fișier `.sjr` separat în `so
 [Rezultatele fișierelor finale](12_solutii.json). Arhivele au structură validă, iar hashurile tuturor celor șapte proiecte sunt în `lesson.json`. Cele patru fișiere inițiale sunt identice cu versiunile testate anterior.
 
 [Ghidul profesorului](../Ghid_profesor.md) acoperă cele patru scene și toate cele cinci rezerve: formularea misiunii, întrebări, blocuri, pornire, rezultat și verificări practice. Versiunea pentru website poate fi tipărită din browser.
+
+## Scăderi care ajută povestea — 13 noiembrie 2026
+
+Ghidul și pagina lecției leagă acum scăderile de decizii concrete: culegem cele trei mere lipsă pentru cinci prieteni, păstrăm merele rămase pentru cei neserviți și verificăm cine mai trebuie adăpostit. Rezerva R4 include și servirea în ordinea trei, apoi doi. Durata lecției și programele ScratchJr rămân aceleași; toate cele șapte fișiere `.sjr` au fost comparate cu versiunile verificate anterior și sunt identice.
+
+Modelul complet a fost redeschis în aplicația publică ScratchJr Desktop Reborn și au fost rulate scenele 2–4:
+
+- Culesul: cele trei mere din pom coboară la aceeași înălțime cu cele două de pe masă; sunt cinci în total.
+- Servirea: după iepuraș și pui rămân exact trei mere, vizibile cât discutăm; după apăsarea cățelului și servirea celorlalți trei rămân zero.
+- Adăpostul: după lanțul pornit de nor, toți cinci sunt ascunși la ușă, norul este ascuns și soarele este vizibil.
+
+[Stările scenei observate în browser](13_scaderi.json). La această revizie nu au fost rerulate cele cinci rezerve și nu s-a făcut un nou test Android. Cele nouă teste pentru lecție și navigare au trecut; verificarea locală a site-ului a găsit 353 de adrese valide, iar arhiva ZIP conține ghidurile actualizate. Ghidul a fost verificat și vizual în browser.
