@@ -1,5 +1,7 @@
 # Verificare — Picnicul întrerupt de ploaie
 
+**Versiunea curentă:** [masa continuă, verificată pe 15 noiembrie](#masa-continuă--15-noiembrie-2026). Înregistrările de mai jos păstrează istoricul; servirea prin contact și repornirea Stop → steag din probele vechi au fost înlocuite cu mesaje.
+
 12 noiembrie 2026. Proiecte native `.sjr`, importate prin Open și rulate în ScratchJr Desktop Reborn, portul comunitar pentru browser.
 
 | Probă | Rezultat urmărit |
@@ -78,3 +80,19 @@ Cele trei fișiere modificate au fost importate separat în aplicația publică 
 [Rezultatele observate](14_invitatia_mesei.json) · [Invitația vizibilă în aplicație](invitatia-mesei.png).
 
 Cele nouă teste pentru proiecte și navigare au trecut. Cele șapte arhive `.sjr` sunt valide și au hashurile actualizate în `lesson.json`; patru dintre ele sunt neschimbate. Verificarea de aici este pentru browser, nu pentru aplicația Android sau Desktop instalată. Nu au fost rerulate rezervele R1, R2, R4 și R5 la această revizie.
+
+## Masa continuă — 15 noiembrie 2026
+
+Pagina 3 este acum o masă împreună: prietenii se apropie, mănâncă și rămân la masă. După ultima servire apare norul și deschide pagina 4. Casa, masa și pozițiile celor cinci prieteni se păstrează între pagini. Servirea folosește mesaje; nu mai depinde de contact sau de repornirea cu Stop → steag după invitație.
+
+Cele patru proiecte modificate au fost importate în aplicația publică ScratchJr Desktop Reborn:
+
+- **Povestea completă:** după cules și apăsarea mesei, invitația pornește pagina 3 fără alt clic. Toți cinci se apropie; primele două mere se micșorează și dispar, celelalte trei rămân vizibile în pauză. După a doua servire sunt zero mere, dar toți prietenii rămân la aceleași coordonate. Norul apare după masă și deschide pagina 4. O reluare separată a paginii 3 cu steagul readuce merele și reproduce același rezultat.
+- **Adăpostul:** la apăsarea norului din pagina 4, toți cinci ajung la ușă și sunt ascunși; la final soarele este vizibil și norul ascuns.
+- **Construim împreună:** invitația mesei deschide pagina 3; programul de construit al iepurașului are doar declanșatorul La steag. Masa așteaptă completarea codului. Reacțiile de primire rămân pregătite.
+- **R4 — Cei trei mănâncă primii:** întâi se micșorează și dispar cele trei mere din dreapta; cele două din stânga rămân vizibile. A doua servire lasă zero mere. Prietenii rămân la masă, iar modelul separat rămâne pe unica pagină după apariția norului.
+- **R5 — A trecut ploaia:** norul îi conduce la adăpost; după revenirea soarelui, apăsarea lui readuce toți cei cinci prieteni la pozițiile inițiale de lângă masă.
+
+[Stările observate în browser](15_masa_continua.json) · [Pauza cu trei mere rămase](masa-impreuna.png).
+
+Cele nouă teste automate pentru proiecte și navigare au trecut. Arhivele R1, R2 și R3 sunt neschimbate și nu au fost rerulate. Verificarea funcțională este în browser, nu pe Android sau în aplicația Desktop instalată; ieșirea audio nu a fost măsurată din nou la această revizie.

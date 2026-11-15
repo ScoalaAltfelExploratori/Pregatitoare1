@@ -487,15 +487,11 @@
             [
               "iepuras",
               0
-            ],
-            [
-              "catel",
-              0
             ]
           ],
           "texts": [
             {
-              "text": "3. Poftiți la masă!",
+              "text": "3. Mâncăm împreună",
               "position": [
                 240,
                 28
@@ -506,6 +502,22 @@
           ],
           "sprites": [
             {
+              "id": "casa",
+              "asset": "House3.svg",
+              "name": "Adăpostul de lângă masă",
+              "size": [
+                286,
+                323
+              ],
+              "position": [
+                408,
+                128
+              ],
+              "scale": 0.5,
+              "shown": true,
+              "scripts": []
+            },
+            {
               "id": "masa",
               "asset": "Table.svg",
               "name": "Masa de picnic",
@@ -514,25 +526,106 @@
                 248
               ],
               "position": [
-                240,
+                264,
                 274
               ],
               "scale": 0.6,
               "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "soare",
+              "asset": "Sun.svg",
+              "name": "Soarele",
+              "size": [
+                176,
+                176
+              ],
+              "position": [
+                80,
+                68
+              ],
+              "scale": 0.4,
+              "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "onflag",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "wait",
-                      "value": 10
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "nor",
+              "asset": "Thundercloud.svg",
+              "name": "Norul de ploaie",
+              "size": [
+                344,
+                270
+              ],
+              "position": [
+                72,
+                122
+              ],
+              "scale": 0.4,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
                     },
                     {
-                      "block": "forever",
+                      "block": "home",
                       "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "say",
+                      "value": "Vine ploaia!"
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 4
                     }
                   ]
                 }
@@ -541,27 +634,60 @@
             {
               "id": "mar1",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru iepuras",
               "size": [
                 112,
                 132
               ],
               "position": [
-                144,
-                190
+                168,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -574,27 +700,60 @@
             {
               "id": "mar2",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru pui",
               "size": [
                 112,
                 132
               ],
               "position": [
-                192,
-                190
+                216,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -607,27 +766,60 @@
             {
               "id": "mar3",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru catel",
               "size": [
                 112,
                 132
               ],
               "position": [
-                240,
-                190
+                264,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -640,27 +832,60 @@
             {
               "id": "mar4",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru rata",
               "size": [
                 112,
                 132
               ],
               "position": [
-                288,
-                190
+                312,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -673,27 +898,60 @@
             {
               "id": "mar5",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru pasare",
               "size": [
                 112,
                 132
               ],
               "position": [
-                336,
-                190
+                360,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -712,41 +970,61 @@
                 208
               ],
               "position": [
-                144,
-                286
+                168,
+                314
               ],
               "scale": 0.204,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "onclick",
+                    "block": "onflag",
                     "value": "null"
                   },
                   "actions": [
                     {
                       "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Poftă bună!"
+                    },
+                    {
+                      "block": "message",
                       "value": "Red"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 50
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
                     }
                   ]
                 },
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Red"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -761,8 +1039,8 @@
                 148
               ],
               "position": [
-                192,
-                286
+                216,
+                314
               ],
               "scale": 0.204,
               "shown": true,
@@ -770,20 +1048,16 @@
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Red"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -798,41 +1072,25 @@
                 213
               ],
               "position": [
-                240,
-                286
+                264,
+                314
               ],
               "scale": 0.17,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "onclick",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "message",
-                      "value": "Blue"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
+                      "block": "home",
+                      "value": "null"
+                    },
                     {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -847,8 +1105,8 @@
                 116
               ],
               "position": [
-                288,
-                286
+                312,
+                314
               ],
               "scale": 0.272,
               "shown": true,
@@ -856,20 +1114,16 @@
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Blue"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -884,8 +1138,8 @@
                 210
               ],
               "position": [
-                336,
-                286
+                360,
+                314
               ],
               "scale": 0.23800000000000002,
               "shown": true,
@@ -893,20 +1147,16 @@
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Blue"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -944,10 +1194,10 @@
                 323
               ],
               "position": [
-                360,
+                408,
                 128
               ],
-              "scale": 0.6,
+              "scale": 0.5,
               "shown": true,
               "scripts": [
                 {
@@ -965,6 +1215,22 @@
               ]
             },
             {
+              "id": "masa",
+              "asset": "Table.svg",
+              "name": "Masa de picnic",
+              "size": [
+                399,
+                248
+              ],
+              "position": [
+                264,
+                274
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": []
+            },
+            {
               "id": "soare",
               "asset": "Sun.svg",
               "name": "Soarele",
@@ -977,7 +1243,7 @@
                 68
               ],
               "scale": 0.4,
-              "shown": true,
+              "shown": false,
               "scripts": [
                 {
                   "trigger": {
@@ -1018,7 +1284,7 @@
                 270
               ],
               "position": [
-                72,
+                168,
                 122
               ],
               "scale": 0.4,
@@ -1072,7 +1338,7 @@
               ],
               "position": [
                 168,
-                312
+                242
               ],
               "scale": 0.204,
               "shown": true,
@@ -1085,11 +1351,11 @@
                   "actions": [
                     {
                       "block": "forward",
-                      "value": 8
+                      "value": 10
                     },
                     {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -1117,7 +1383,7 @@
               ],
               "position": [
                 216,
-                312
+                242
               ],
               "scale": 0.204,
               "shown": true,
@@ -1130,11 +1396,11 @@
                   "actions": [
                     {
                       "block": "forward",
-                      "value": 6
+                      "value": 8
                     },
                     {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -1154,7 +1420,7 @@
               ],
               "position": [
                 264,
-                312
+                242
               ],
               "scale": 0.17,
               "shown": true,
@@ -1167,11 +1433,11 @@
                   "actions": [
                     {
                       "block": "forward",
-                      "value": 4
+                      "value": 6
                     },
                     {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -1195,7 +1461,7 @@
               ],
               "position": [
                 312,
-                312
+                242
               ],
               "scale": 0.272,
               "shown": true,
@@ -1208,11 +1474,11 @@
                   "actions": [
                     {
                       "block": "forward",
-                      "value": 2
+                      "value": 4
                     },
                     {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -1232,7 +1498,7 @@
               ],
               "position": [
                 360,
-                312
+                242
               ],
               "scale": 0.23800000000000002,
               "shown": true,
@@ -1244,8 +1510,12 @@
                   },
                   "actions": [
                     {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -1258,7 +1528,7 @@
           ]
         }
       ],
-      "sha256": "777b25083f4ac933f47bf28dcdebefb7d0860e245ba621bfe55a5258e2926334"
+      "sha256": "ab7e8d295831e260035e7fe2fa9d7cb51e023683ff815e40e0144d932ca64b94"
     },
     {
       "path": "proiecte/01_Construim_impreuna.sjr",
@@ -1688,15 +1958,11 @@
             [
               "iepuras",
               0
-            ],
-            [
-              "catel",
-              0
             ]
           ],
           "texts": [
             {
-              "text": "3. Poftiți la masă!",
+              "text": "3. Mâncăm împreună",
               "position": [
                 240,
                 28
@@ -1707,6 +1973,22 @@
           ],
           "sprites": [
             {
+              "id": "casa",
+              "asset": "House3.svg",
+              "name": "Adăpostul de lângă masă",
+              "size": [
+                286,
+                323
+              ],
+              "position": [
+                408,
+                128
+              ],
+              "scale": 0.5,
+              "shown": true,
+              "scripts": []
+            },
+            {
               "id": "masa",
               "asset": "Table.svg",
               "name": "Masa de picnic",
@@ -1715,25 +1997,106 @@
                 248
               ],
               "position": [
-                240,
+                264,
                 274
               ],
               "scale": 0.6,
               "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "soare",
+              "asset": "Sun.svg",
+              "name": "Soarele",
+              "size": [
+                176,
+                176
+              ],
+              "position": [
+                80,
+                68
+              ],
+              "scale": 0.4,
+              "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "onflag",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "wait",
-                      "value": 10
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "nor",
+              "asset": "Thundercloud.svg",
+              "name": "Norul de ploaie",
+              "size": [
+                344,
+                270
+              ],
+              "position": [
+                72,
+                122
+              ],
+              "scale": 0.4,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
                     },
                     {
-                      "block": "forever",
+                      "block": "home",
                       "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "say",
+                      "value": "Vine ploaia!"
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 4
                     }
                   ]
                 }
@@ -1742,27 +2105,60 @@
             {
               "id": "mar1",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru iepuras",
               "size": [
                 112,
                 132
               ],
               "position": [
-                144,
-                190
+                168,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -1775,27 +2171,60 @@
             {
               "id": "mar2",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru pui",
               "size": [
                 112,
                 132
               ],
               "position": [
-                192,
-                190
+                216,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -1808,27 +2237,60 @@
             {
               "id": "mar3",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru catel",
               "size": [
                 112,
                 132
               ],
               "position": [
-                240,
-                190
+                264,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -1841,27 +2303,60 @@
             {
               "id": "mar4",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru rata",
               "size": [
                 112,
                 132
               ],
               "position": [
-                288,
-                190
+                312,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -1874,27 +2369,60 @@
             {
               "id": "mar5",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru pasare",
               "size": [
                 112,
                 132
               ],
               "position": [
-                336,
-                190
+                360,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -1913,15 +2441,15 @@
                 208
               ],
               "position": [
-                144,
-                286
+                168,
+                314
               ],
               "scale": 0.204,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "onclick",
+                    "block": "onflag",
                     "value": "null"
                   },
                   "actions": []
@@ -1929,20 +2457,16 @@
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Red"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -1957,8 +2481,8 @@
                 148
               ],
               "position": [
-                192,
-                286
+                216,
+                314
               ],
               "scale": 0.204,
               "shown": true,
@@ -1966,20 +2490,16 @@
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Red"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -1994,36 +2514,25 @@
                 213
               ],
               "position": [
-                240,
-                286
+                264,
+                314
               ],
               "scale": 0.17,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "onclick",
-                    "value": "null"
-                  },
-                  "actions": []
-                },
-                {
-                  "trigger": {
                     "block": "onmessage",
-                    "value": "Blue"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -2038,8 +2547,8 @@
                 116
               ],
               "position": [
-                288,
-                286
+                312,
+                314
               ],
               "scale": 0.272,
               "shown": true,
@@ -2047,20 +2556,16 @@
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Blue"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -2075,8 +2580,8 @@
                 210
               ],
               "position": [
-                336,
-                286
+                360,
+                314
               ],
               "scale": 0.23800000000000002,
               "shown": true,
@@ -2084,20 +2589,16 @@
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Blue"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -2135,10 +2636,10 @@
                 323
               ],
               "position": [
-                360,
+                408,
                 128
               ],
-              "scale": 0.6,
+              "scale": 0.5,
               "shown": true,
               "scripts": [
                 {
@@ -2156,6 +2657,22 @@
               ]
             },
             {
+              "id": "masa",
+              "asset": "Table.svg",
+              "name": "Masa de picnic",
+              "size": [
+                399,
+                248
+              ],
+              "position": [
+                264,
+                274
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": []
+            },
+            {
               "id": "soare",
               "asset": "Sun.svg",
               "name": "Soarele",
@@ -2168,7 +2685,7 @@
                 68
               ],
               "scale": 0.4,
-              "shown": true,
+              "shown": false,
               "scripts": [
                 {
                   "trigger": {
@@ -2209,7 +2726,7 @@
                 270
               ],
               "position": [
-                72,
+                168,
                 122
               ],
               "scale": 0.4,
@@ -2263,7 +2780,7 @@
               ],
               "position": [
                 168,
-                312
+                242
               ],
               "scale": 0.204,
               "shown": true,
@@ -2287,7 +2804,7 @@
               ],
               "position": [
                 216,
-                312
+                242
               ],
               "scale": 0.204,
               "shown": true,
@@ -2300,11 +2817,11 @@
                   "actions": [
                     {
                       "block": "forward",
-                      "value": 6
+                      "value": 8
                     },
                     {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -2324,7 +2841,7 @@
               ],
               "position": [
                 264,
-                312
+                242
               ],
               "scale": 0.17,
               "shown": true,
@@ -2337,11 +2854,11 @@
                   "actions": [
                     {
                       "block": "forward",
-                      "value": 4
+                      "value": 6
                     },
                     {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -2365,7 +2882,7 @@
               ],
               "position": [
                 312,
-                312
+                242
               ],
               "scale": 0.272,
               "shown": true,
@@ -2378,11 +2895,11 @@
                   "actions": [
                     {
                       "block": "forward",
-                      "value": 2
+                      "value": 4
                     },
                     {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -2402,7 +2919,7 @@
               ],
               "position": [
                 360,
-                312
+                242
               ],
               "scale": 0.23800000000000002,
               "shown": true,
@@ -2414,8 +2931,12 @@
                   },
                   "actions": [
                     {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -2428,7 +2949,7 @@
           ]
         }
       ],
-      "sha256": "dc3f73fa2e00c153f3670eda6c8666c373eadbd8357f50006db5942b8f386eb4"
+      "sha256": "e987daf04eacf3b4be1910c43d95eebafe020633efe1c46dc894326f381786df"
     },
     {
       "path": "proiecte/02_Rezerva_Contact.sjr",
@@ -3197,6 +3718,22 @@
           ],
           "sprites": [
             {
+              "id": "casa",
+              "asset": "House3.svg",
+              "name": "Adăpostul de lângă masă",
+              "size": [
+                286,
+                323
+              ],
+              "position": [
+                408,
+                128
+              ],
+              "scale": 0.5,
+              "shown": true,
+              "scripts": []
+            },
+            {
               "id": "masa",
               "asset": "Table.svg",
               "name": "Masa de picnic",
@@ -3205,25 +3742,102 @@
                 248
               ],
               "position": [
-                240,
+                264,
                 274
               ],
               "scale": 0.6,
               "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "soare",
+              "asset": "Sun.svg",
+              "name": "Soarele",
+              "size": [
+                176,
+                176
+              ],
+              "position": [
+                80,
+                68
+              ],
+              "scale": 0.4,
+              "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "onflag",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "wait",
-                      "value": 10
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "nor",
+              "asset": "Thundercloud.svg",
+              "name": "Norul de ploaie",
+              "size": [
+                344,
+                270
+              ],
+              "position": [
+                72,
+                122
+              ],
+              "scale": 0.4,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
                     },
                     {
-                      "block": "forever",
+                      "block": "home",
                       "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "say",
+                      "value": "Vine ploaia!"
                     }
                   ]
                 }
@@ -3232,27 +3846,60 @@
             {
               "id": "mar1",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru iepuras",
               "size": [
                 112,
                 132
               ],
               "position": [
-                144,
-                190
+                168,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -3265,27 +3912,60 @@
             {
               "id": "mar2",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru pui",
               "size": [
                 112,
                 132
               ],
               "position": [
-                192,
-                190
+                216,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -3298,27 +3978,60 @@
             {
               "id": "mar3",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru catel",
               "size": [
                 112,
                 132
               ],
               "position": [
-                240,
-                190
+                264,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -3331,27 +4044,60 @@
             {
               "id": "mar4",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru rata",
               "size": [
                 112,
                 132
               ],
               "position": [
-                288,
-                190
+                312,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -3364,27 +4110,60 @@
             {
               "id": "mar5",
               "asset": "Apple.svg",
-              "name": "Măr pentru un prieten",
+              "name": "Măr pentru pasare",
               "size": [
                 112,
                 132
               ],
               "position": [
-                336,
-                190
+                360,
+                214
               ],
-              "scale": 0.25,
+              "scale": 0.4,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "ontouch",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "playsnd",
-                      "value": "pop.mp3"
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 2
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
                     },
                     {
                       "block": "hide",
@@ -3403,41 +4182,61 @@
                 208
               ],
               "position": [
-                144,
-                286
+                168,
+                314
               ],
               "scale": 0.204,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "onclick",
+                    "block": "onflag",
                     "value": "null"
                   },
                   "actions": [
                     {
                       "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Poftă bună!"
+                    },
+                    {
+                      "block": "message",
                       "value": "Blue"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 50
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
                     }
                   ]
                 },
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Red"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -3452,8 +4251,8 @@
                 148
               ],
               "position": [
-                192,
-                286
+                216,
+                314
               ],
               "scale": 0.204,
               "shown": true,
@@ -3461,20 +4260,16 @@
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Red"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -3489,41 +4284,25 @@
                 213
               ],
               "position": [
-                240,
-                286
+                264,
+                314
               ],
               "scale": 0.17,
               "shown": true,
               "scripts": [
                 {
                   "trigger": {
-                    "block": "onclick",
-                    "value": "null"
+                    "block": "onmessage",
+                    "value": "Orange"
                   },
                   "actions": [
                     {
-                      "block": "message",
-                      "value": "Red"
-                    }
-                  ]
-                },
-                {
-                  "trigger": {
-                    "block": "onmessage",
-                    "value": "Blue"
-                  },
-                  "actions": [
+                      "block": "home",
+                      "value": "null"
+                    },
                     {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -3538,8 +4317,8 @@
                 116
               ],
               "position": [
-                288,
-                286
+                312,
+                314
               ],
               "scale": 0.272,
               "shown": true,
@@ -3547,20 +4326,16 @@
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Blue"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -3575,8 +4350,8 @@
                 210
               ],
               "position": [
-                336,
-                286
+                360,
+                314
               ],
               "scale": 0.23800000000000002,
               "shown": true,
@@ -3584,20 +4359,16 @@
                 {
                   "trigger": {
                     "block": "onmessage",
-                    "value": "Blue"
+                    "value": "Orange"
                   },
                   "actions": [
                     {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
                       "block": "up",
-                      "value": 4
-                    },
-                    {
-                      "block": "wait",
-                      "value": 5
-                    },
-                    {
-                      "block": "down",
-                      "value": 4
+                      "value": 3
                     }
                   ]
                 }
@@ -3606,7 +4377,7 @@
           ]
         }
       ],
-      "sha256": "99c8e59d98c14a5fa27c51f979a1bbee4d0a977a064b7f7fc3c6139f50490980"
+      "sha256": "f9def9feda0c10f4af426c68874d485a570cf63c32b88e008e53191a71dd2e84"
     },
     {
       "path": "solutii/05_A_trecut_ploaia.sjr",
@@ -3637,10 +4408,10 @@
                 323
               ],
               "position": [
-                360,
+                408,
                 128
               ],
-              "scale": 0.6,
+              "scale": 0.5,
               "shown": true,
               "scripts": [
                 {
@@ -3658,6 +4429,22 @@
               ]
             },
             {
+              "id": "masa",
+              "asset": "Table.svg",
+              "name": "Masa de picnic",
+              "size": [
+                399,
+                248
+              ],
+              "position": [
+                264,
+                274
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": []
+            },
+            {
               "id": "soare",
               "asset": "Sun.svg",
               "name": "Soarele",
@@ -3670,7 +4457,7 @@
                 68
               ],
               "scale": 0.4,
-              "shown": true,
+              "shown": false,
               "scripts": [
                 {
                   "trigger": {
@@ -3723,7 +4510,7 @@
                 270
               ],
               "position": [
-                72,
+                168,
                 122
               ],
               "scale": 0.4,
@@ -3777,7 +4564,7 @@
               ],
               "position": [
                 168,
-                312
+                242
               ],
               "scale": 0.204,
               "shown": true,
@@ -3790,11 +4577,11 @@
                   "actions": [
                     {
                       "block": "forward",
-                      "value": 8
+                      "value": 10
                     },
                     {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -3822,11 +4609,11 @@
                     },
                     {
                       "block": "down",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "back",
-                      "value": 8
+                      "value": 10
                     }
                   ]
                 }
@@ -3842,7 +4629,7 @@
               ],
               "position": [
                 216,
-                312
+                242
               ],
               "scale": 0.204,
               "shown": true,
@@ -3855,11 +4642,11 @@
                   "actions": [
                     {
                       "block": "forward",
-                      "value": 6
+                      "value": 8
                     },
                     {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -3879,11 +4666,11 @@
                     },
                     {
                       "block": "down",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "back",
-                      "value": 6
+                      "value": 8
                     }
                   ]
                 }
@@ -3899,7 +4686,7 @@
               ],
               "position": [
                 264,
-                312
+                242
               ],
               "scale": 0.17,
               "shown": true,
@@ -3912,11 +4699,11 @@
                   "actions": [
                     {
                       "block": "forward",
-                      "value": 4
+                      "value": 6
                     },
                     {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -3940,11 +4727,11 @@
                     },
                     {
                       "block": "down",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "back",
-                      "value": 4
+                      "value": 6
                     }
                   ]
                 }
@@ -3960,7 +4747,7 @@
               ],
               "position": [
                 312,
-                312
+                242
               ],
               "scale": 0.272,
               "shown": true,
@@ -3973,11 +4760,11 @@
                   "actions": [
                     {
                       "block": "forward",
-                      "value": 2
+                      "value": 4
                     },
                     {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -3997,11 +4784,11 @@
                     },
                     {
                       "block": "down",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "back",
-                      "value": 2
+                      "value": 4
                     }
                   ]
                 }
@@ -4017,7 +4804,7 @@
               ],
               "position": [
                 360,
-                312
+                242
               ],
               "scale": 0.23800000000000002,
               "shown": true,
@@ -4029,8 +4816,12 @@
                   },
                   "actions": [
                     {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
                       "block": "up",
-                      "value": 4
+                      "value": 2
                     },
                     {
                       "block": "hide",
@@ -4050,7 +4841,11 @@
                     },
                     {
                       "block": "down",
-                      "value": 4
+                      "value": 2
+                    },
+                    {
+                      "block": "back",
+                      "value": 2
                     }
                   ]
                 }
@@ -4059,7 +4854,7 @@
           ]
         }
       ],
-      "sha256": "d5b0d1df98b118cbbd74caad2a71171cac4e89fc444f35552378cfc3f16dc179"
+      "sha256": "4d046520205ad6c86ea38662e8375d9fed616a2c54e060d038ede5421d512337"
     }
   ]
 }

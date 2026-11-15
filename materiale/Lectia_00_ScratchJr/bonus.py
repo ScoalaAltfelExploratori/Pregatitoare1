@@ -17,13 +17,15 @@ def make_bonus(full, script, b, label):
     table['actions'] = [action for action in table['actions'] if action['block'] != 'gotopage']
     for key in ['mar3', 'mar4', 'mar5']:
         sprite(orchard, key)['scripts'][0]['trigger'] = b('onmessage', 'Red')
-    sprite(meal, 'iepuras')['scripts'][0]['actions'] = [b('message', 'Blue')]
-    sprite(meal, 'catel')['scripts'][0]['actions'] = [b('message', 'Red')]
+    # Change the serving order, keeping arrival and completion in the same chain.
+    for action in sprite(meal, 'iepuras')['scripts'][0]['actions']:
+        if action['block'] == 'message' and action['value'] in ('Red', 'Blue'):
+            action['value'] = 'Blue' if action['value'] == 'Red' else 'Red'
+    cloud = sprite(meal, 'nor')['scripts'][1]
+    cloud['actions'] = [action for action in cloud['actions'] if action['block'] != 'gotopage']
     sprite(rain, 'soare')['scripts'].append(script('onclick', b('message', 'Green')))
     for i, key in enumerate(['iepuras', 'pui', 'catel', 'rata', 'pasare']):
-        actions = [b('show'), b('down', 4)]
-        if i < 4:
-            actions.append(b('back', 8 - 2*i))
+        actions = [b('show'), b('down', 2), b('back', 10 - 2*i)]
         sprite(rain, key)['scripts'].append(script('onmessage', *actions, color='Green'))
     return [
         {'name': 'L00 Solutie R3 Scuturam pomul', 'short': 'Pomul', 'path': 'solutii/03_Scuturam_pomul.sjr', 'pages': [orchard]},

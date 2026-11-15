@@ -2,8 +2,8 @@
 from copy import deepcopy
 
 def make_story(actor,script,b,label,repeat):
-    def a(key,asset,x,y,*scripts,scale=.25,name=None):
-        return actor(key,asset,x,y,*scripts,scale=scale,name=name)
+    def a(key,asset,x,y,*scripts,scale=.25,name=None,shown=True):
+        return actor(key,asset,x,y,*scripts,scale=scale,name=name,shown=shown)
     def header(text):return [label(text,240,28,24)]
     cast=[('iepuras','Rabbit',.24),('pui','Chicken',.24),('catel','Dog',.20),('rata','Duck',.32),('pasare','Bird',.28)]
 
@@ -29,33 +29,43 @@ def make_story(actor,script,b,label,repeat):
     for (key,asset,scale),(x,y) in zip(cast,[(72,270),(135,325),(408,270),(240,325),(345,325)]):
         orchard['sprites'].append(a(key,asset,x,y,scale=scale,name=key.capitalize()))
 
-    picnic={'background':'Park.svg','focus':'iepuras','build':[['iepuras',0],['catel',0]],'texts':header('3. Poftiți la masă!'),'sprites':[
-        a('masa','Table',240,274,script('onflag',b('wait',10),b('forever')),scale=.6,name='Masa de picnic')
+    picnic={'background':'Park.svg','focus':'iepuras','build':[['iepuras',0]],'texts':header('3. Mâncăm împreună'),'sprites':[
+        a('casa','House3',408,128,scale=.5,name='Adăpostul de lângă masă'),
+        a('masa','Table',264,274,scale=.6,name='Masa de picnic'),
+        a('soare','Sun',80,68,script('onmessage',b('show'),color='Orange'),
+          script('onmessage',b('hide'),color='Purple'),scale=.4,name='Soarele'),
+        a('nor','Thundercloud',72,122,
+          script('onmessage',b('hide'),b('home'),color='Orange'),
+          script('onmessage',b('show'),b('forward',4),b('say','Vine ploaia!'),b('gotopage',4),color='Purple'),
+          scale=.4,name='Norul de ploaie',shown=False)
     ]}
-    xs=[144,192,240,288,336]
+    xs=[168,216,264,312,360]
     for i,x in enumerate(xs):
-        picnic['sprites'].append(a('mar'+str(i+1),'Apple',x,190,
-            script('ontouch',b('playsnd','pop.mp3'),b('hide')),scale=.25,name='Măr pentru un prieten'))
+        picnic['sprites'].append(a('mar'+str(i+1),'Apple',x,214,
+            script('onmessage',b('home'),b('same'),b('show'),color='Orange'),
+            script('onmessage',repeat(2,b('shrink',2),b('playsnd','pop.mp3'),b('wait',5)),b('hide'),
+                   color='Red' if i<2 else 'Blue'),scale=.4,name='Măr pentru '+cast[i][0]))
     for i,((key,asset,scale),x) in enumerate(zip(cast,xs)):
         programs=[]
-        if key=='iepuras':programs.append(script('onclick',b('message','Red')))
-        if key=='catel':programs.append(script('onclick',b('message','Blue')))
-        programs.append(script('onmessage',b('up',4),b('wait',5),b('down',4),color='Red' if i<2 else 'Blue'))
-        picnic['sprites'].append(a(key,asset,x,286,*programs,scale=scale*.85,name=key.capitalize()))
+        if key=='iepuras':programs.append(script('onflag',b('message','Orange'),b('say','Poftă bună!'),
+            b('message','Red'),b('wait',50),b('message','Blue'),b('wait',20),b('message','Purple')))
+        programs.append(script('onmessage',b('home'),b('up',3),color='Orange'))
+        picnic['sprites'].append(a(key,asset,x,314,*programs,scale=scale*.85,name=key.capitalize()))
 
     rain={'background':'Park.svg','focus':'iepuras','build':[['iepuras',0]],'texts':header('4. Toți la adăpost!'),'sprites':[
-        a('casa','House3',360,128,script('onmessage',b('playsnd','pop.mp3'),color='Purple'),scale=.6,name='Adăpostul'),
-        a('soare','Sun',80,68,script('onmessage',b('hide'),color='Red'),script('onmessage',b('wait',5),b('show'),color='Purple'),scale=.4,name='Soarele'),
-        a('nor','Thundercloud',72,122,
+        a('casa','House3',408,128,script('onmessage',b('playsnd','pop.mp3'),color='Purple'),scale=.5,name='Adăpostul'),
+        a('masa','Table',264,274,scale=.6,name='Masa de picnic'),
+        a('soare','Sun',80,68,script('onmessage',b('hide'),color='Red'),script('onmessage',b('wait',5),b('show'),color='Purple'),scale=.4,name='Soarele',shown=False),
+        a('nor','Thundercloud',168,122,
           script('onclick',b('home'),b('forward',4),b('message','Red')),
           script('onmessage',b('back',4),b('hide'),color='Purple'),scale=.4,name='Norul de ploaie')
     ]}
     for i,(key,asset,scale) in enumerate(cast):
         x=168+48*i
-        moves=([b('forward',8-2*i)] if i<4 else [])+[b('up',4),b('hide')]
+        moves=[b('forward',10-2*i),b('up',2),b('hide')]
         if i==0:moves += [b('wait',10),b('message','Blue')]
         if i==2:moves += [b('message','Purple')]
-        rain['sprites'].append(a(key,asset,x,312,script('onmessage',*moves,color='Red' if i<2 else 'Blue'),scale=scale*.85,name=key.capitalize()))
+        rain['sprites'].append(a(key,asset,x,242,script('onmessage',*moves,color='Red' if i<2 else 'Blue'),scale=scale*.85,name=key.capitalize()))
 
     shortcut=deepcopy(invitation)
     shortcut['texts']=header('Rezervă: ocolul cu Repetă')

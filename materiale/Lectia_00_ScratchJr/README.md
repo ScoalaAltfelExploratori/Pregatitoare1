@@ -33,7 +33,7 @@ Soluțiile rezervelor au câte o singură pagină. Cele trei provocări noi se p
 
 Importul se face numai pe laptopul profesorului. Copiii nu au nimic de copiat pe tablete. Toate imaginile și sunetul Pop sunt din biblioteca ScratchJr.
 
-**Ai deja o copie importată?** Descarcă și importă din nou proiectul complet și varianta de construit pentru a primi invitația mesei din pagina 2. Copiile existente în ScratchJr nu se actualizează singure; păstrează separat lucrul tău.
+**Ai deja o copie importată?** Descarcă și importă din nou proiectul complet și varianta de construit pentru masa care continuă singură până la ploaie. Rezervele R4 și R5 au fost adaptate la noua scenă. Copiile existente în ScratchJr nu se actualizează singure; păstrează separat lucrul tău.
 
 ## Cum lucrăm
 
@@ -55,33 +55,38 @@ Construim la cele trei mere din copac: **La apăsare → Înapoi acasă → Jos 
 
 **Suntem gata să-i chemăm?** După ce merele au ajuns, un copil apasă **blatul mesei pe scenă**. Masa afișează „Poftiți la masă!”, apoi deschide pagina 3. Programul ei este deja pregătit în ambele proiecte principale: **La apăsare → Spune „Poftiți la masă!” → Mergi la pagina 3**. Îl putem arăta sau reconstrui împreună. Invitația apare într-un balon de text; o citim cu voce tare.
 
-### 3. Poftiți la masă! · 23–31 minute
+### 3. Mâncăm împreună · 23–31 minute
 
-După invitația mesei apare pagina 3. **Înainte de servire:** dacă butonul de sus este Stop roșu, îl apăsăm, apoi apăsăm steagul verde care apare în locul lui. Dacă este deja verde, îl apăsăm direct. Această pornire activează contactele merelor în versiunea pentru browser. Apoi apăsăm **iepurașul pe scenă**, o singură dată.
+După invitația mesei, **toți cei cinci prieteni vin la masă și rămân acolo**. Iepurașul spune „Poftă bună!”. El și puiul mănâncă primii: merele lor se micșorează în două mușcături, se aude Pop și apoi dispar.
 
-Iepurașul și puiul merg la masă, ating câte un măr și se întorc. **Cine n-a mâncat încă? Ajung merele rămase pentru ei?** Sunt **5 − 2 = 3 mere** pentru cățel, rață și pasăre. Copiii îi identifică și aleg mesajul albastru care îi cheamă. A doua servire așteaptă apăsarea cățelului, deci putem discuta pe îndelete.
+În pauză vedem **5 − 2 = 3 mere**. **Pentru cine le păstrăm?** Pentru cățel, rață și pasăre, care așteaptă la aceeași masă. Apoi mănâncă și ei: **3 − 3 = 0**. Toți rămân împreună. După o scurtă pauză apare norul, spune „Vine ploaia!” și deschide **singur pagina 4**. Casa, masa și prietenii își păstrează locurile când se schimbă vremea.
 
-Iepuraș: **La apăsare → Trimite roșu.** Cățel: **La apăsare → Trimite albastru.**
+Construim la iepuraș un singur lanț: **La steag → Trimite portocaliu → Spune „Poftă bună!” → Trimite roșu → Așteaptă 50 → Trimite albastru → Așteaptă 20 → Trimite mov**.
 
-Programele de primire sunt pregătite: roșu cheamă primii doi; albastru îi cheamă pe ceilalți trei. Fiecare face **Sus 4 → Așteaptă 5 → Jos 4**. Merele au **La contact → Pop → Ascunde**. Ascunderea înseamnă că fructul a fost mâncat, după atingere.
+- **Portocaliu:** toți se apropie cu Înapoi acasă → Sus 3; merele sunt pregătite pentru masă.
+- **Roșu:** primele două mere sunt mâncate.
+- **Albastru:** celelalte trei mere sunt mâncate.
+- **Mov:** soarele se ascunde, vine norul și continuăm povestea în pagina 4.
 
-Un copil apasă cățelul o singură dată. Ultimii trei mănâncă: **3 − 3 = 0 mere**. Verificăm că toți cinci au primit câte unul; masa s-a încheiat. Apăsăm **Stop**, apoi alegem **pagina 4**: vremea se schimbă.
+La fiecare măr, programul de mâncat este **La mesaj → Repetă 2 [Micșorează 2 → Pop → Așteaptă 5] → Ascunde**. Pauza 50 durează aproximativ cinci secunde și lasă timp să numărăm merele rămase; o putem lungi înainte de demonstrație. Pauza 20 păstrează prietenii împreună încă două secunde după masă.
+
+În modelul complet, totul pornește prin invitația mesei din pagina 2. În **Construim împreună**, pagina 3 așteaptă să completați lanțul iepurașului, apoi apăsați steagul verde. Pentru a rula separat o pagină 3 completă, alegeți miniatura ei și apăsați steagul. Servirea folosește mesaje și nu mai necesită repornirea contactelor în browser.
 
 ### 4. Toți la adăpost! · 34–46 minute · dificil
 
 Norul se apropie. Casa este adăpostul; cei cinci prieteni sunt afară. **După ce intră iepurașul și puiul, pe cine mai chemăm?** Rămân **5 − 2 = 3 afară**: cățelul, rața și pasărea. Înainte de pornire, copiii arată cele trei personaje și verifică cine primește mesajul albastru. Nimeni nu trebuie uitat.
 
-Completăm programul iepurașului: **La roșu → Dreapta 8 → Sus 4 → Ascunde → Așteaptă 10 → Trimite albastru.** Ascunde se folosește abia la ușa casei. Pornim apăsând **norul**.
+Completăm programul iepurașului: **La roșu → Dreapta 10 → Sus 2 → Ascunde → Așteaptă 10 → Trimite albastru.** Ascunde se folosește abia la ușa casei. Prietenii pornesc de la locurile unde au terminat masa. Pornim apăsând **norul**.
 
 Puiul intră împreună cu iepurașul. Mesajul albastru îi pornește pe ceilalți trei. Urmărim lanțul până la capăt: **3 − 3 = 0 afară**, deci toți sunt la adăpost. Prietenii sunt în casă; numărăm cine mai are nevoie de ajutor. Cățelul, care are cel mai lung drum din acest grup, trimite mov la sosire și pornește finalul scenei: norul pleacă, revine soarele și se aude Pop.
 
-Arată și programul cățelului. **De ce trimitem mesajul după deplasare?** Dacă îl trimitem înainte, următoarea acțiune începe prea devreme. Provocare suplimentară: calculați drumul celorlalți — 6, 4, 2 și 0 pași la dreapta, apoi câte 4 în sus.
+Arată și programul cățelului. **De ce trimitem mesajul după deplasare?** Dacă îl trimitem înainte, următoarea acțiune începe prea devreme. Provocare suplimentară: calculați drumul celorlalți — 8, 6, 4 și 2 pași la dreapta, apoi câte 2 în sus.
 
 ## Ritmul întâlnirii
 
 - **0–5:** povestea, scena, personajele, blocurile și paginile.
 - **5–31:** primele trei scene, cu un copil diferit la fiecare intervenție.
-- **31–34:** pauză — doi copii mimează primii invitați, apoi vin ceilalți trei.
+- **31–34:** pauză — doi copii mimează prima servire, apoi alți trei; toți rămân împreună.
 - **34–46:** puzzle-ul dificil al adăpostului.
 - **46–50:** reluăm o scenă; un copil explică de ce ordinea blocurilor contează.
 
@@ -104,25 +109,25 @@ Apăsăm Reset Characters, apoi copacul o singură dată. Cele trei mere coboar�
 
 În povestea principală, apăsăm apoi masa pentru a continua la pagina 3. În soluția R3 separată, masa afișează aceeași invitație și rămânem pe unica pagină a proiectului.
 
-### 4. Cei trei prieteni au ajuns primii · 4–6 minute
+### 4. Cei trei prieteni mănâncă primii · 4–6 minute
 
-**Misiune:** „De data aceasta, cățelul, rața și pasărea mănâncă primii. Iepurașul trebuie să-i cheme, iar cățelul îi va chema apoi pe ceilalți doi.”
+**Misiune:** „Toți vin la masă împreună, dar cățelul, rața și pasărea mănâncă primii. Iepurașul și puiul așteaptă să le vină rândul.”
 
-Pe pagina 3, schimbăm mesajul trimis la apăsarea iepurașului în **albastru**, iar pe cel trimis de cățel în **roșu**. Păstrăm programele care primesc mesajele.
+În lanțul iepurașului de pe pagina 3, schimbăm prima servire din roșu în **albastru**, iar a doua din albastru în **roșu**. Păstrăm portocaliu la început, mov la final, pauzele și programele care primesc mesajele.
 
-Pornim steagul, apăsăm iepurașul și așteptăm revenirea celor trei. **Pentru cine păstrăm cele 5 − 3 = 2 mere?** Copiii arată iepurașul și puiul și aleg mesajul roșu pentru ei. Apăsăm cățelul: **2 − 2 = 0 mere**, iar fiecare prieten a mâncat o singură dată. Doi copii pot modifica pe rând câte un buton.
+Pornim steagul și urmărim masa. **Pentru cine păstrăm cele 5 − 3 = 2 mere?** Copiii arată iepurașul și puiul. A doua servire pornește singură: **2 − 2 = 0 mere**, iar fiecare prieten a mâncat o singură dată. Doi copii pot modifica pe rând câte un plic. Modelul separat rămâne pe unica lui pagină după apariția norului; în povestea principală se deschide pagina 4.
 
 ### 5. A trecut ploaia! · 7–9 minute · dificil
 
 **Misiune:** „Soarele a revenit. O singură apăsare pe el trebuie să scoată toți prietenii din casă și să-i ducă la locurile lor.”
 
-Pe pagina 4, adăugăm soarelui **La apăsare → Trimite verde**. Fiecare prieten primește un program nou: **La verde → Arată → Jos 4 → Stânga**. Păstrăm toate programele de intrare în casă.
+Pe pagina 4, adăugăm soarelui **La apăsare → Trimite verde**. Fiecare prieten primește un program nou: **La verde → Arată → Jos 2 → Stânga**. Păstrăm toate programele de intrare în casă.
 
-- Iepurașul: **Stânga 8**.
-- Puiul: **Stânga 6**.
-- Cățelul: **Stânga 4**.
-- Rața: **Stânga 2**.
-- Pasărea: programul se termină după **Jos 4**; locul ei este chiar în fața casei.
+- Iepurașul: **Stânga 10**.
+- Puiul: **Stânga 8**.
+- Cățelul: **Stânga 6**.
+- Rața: **Stânga 4**.
+- Pasărea: **Stânga 2**.
 
 Copiii urmăresc traseul de intrare și deduc drumul de întoarcere. Întâi rulăm furtuna până se încheie, apoi apăsăm soarele **o singură dată**. Verificăm că toți cinci sunt vizibili, la locurile de plecare. Pentru o nouă rundă: Stop, Reset Characters, apoi norul.
 
@@ -130,7 +135,7 @@ Aceste trei provocări se construiesc live în copia proiectului principal, folo
 
 ## Reluare și salvare
 
-Apasă **Stop**, apoi **Reset Characters** înainte să reiei o scenă. Resetarea aduce înapoi merele și personajele ascunse. Întâlnirea cu cățelul deschide pagina 2; apăsarea mesei din pagina 2 afișează invitația și deschide pagina 3. După servire, apasă Stop și alege pagina 4 din dreapta. Miniaturile rămân disponibile pentru reluarea oricărei scene; așteaptă încheierea acțiunii înainte să schimbi pagina manual.
+Apasă **Stop**, apoi **Reset Characters** înainte să reiei o scenă. Resetarea aduce înapoi merele și personajele ascunse. Întâlnirea cu cățelul deschide pagina 2; invitația mesei deschide pagina 3 și pornește masa complet programată; după ultima servire, norul deschide pagina 4. Miniaturile rămân disponibile pentru reluarea oricărei scene; așteaptă încheierea acțiunii înainte să schimbi pagina manual.
 
 Pentru salvare, întoarce-te în galeria ScratchJr și redeschide copia ta ca să verifici blocurile. Păstrează fișierele descărcate pentru o copie curată. În rezerve, oprește dansul înainte de a ieși.
 

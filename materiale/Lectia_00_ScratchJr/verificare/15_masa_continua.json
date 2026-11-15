@@ -1,0 +1,772 @@
+{
+  "date": "2026-11-15",
+  "app": "ScratchJr Desktop Reborn public browser port",
+  "testedProjects": [
+    "proiecte/00_Laboratorul_ScratchJr.sjr",
+    "proiecte/01_Construim_impreuna.sjr",
+    "solutii/04_Cei_trei_primii.sjr",
+    "solutii/05_A_trecut_ploaia.sjr"
+  ],
+  "observations": {
+    "mealArrival": {
+      "sprites": [
+        {
+          "id": "p3_casa",
+          "opacity": "1",
+          "transform": "translate3d(265px, -33px, 0px) rotate(0deg) scale(0.5, 0.5)"
+        },
+        {
+          "id": "p3_masa",
+          "opacity": "1",
+          "transform": "translate3d(65px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p3_soare",
+          "opacity": "1",
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_nor",
+          "opacity": "0",
+          "transform": "translate3d(-100px, -13px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar1",
+          "opacity": "1",
+          "transform": "translate3d(112px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar2",
+          "opacity": "1",
+          "transform": "translate3d(160px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar3",
+          "opacity": "1",
+          "transform": "translate3d(208px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar4",
+          "opacity": "1",
+          "transform": "translate3d(256px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar5",
+          "opacity": "1",
+          "transform": "translate3d(304px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_iepuras",
+          "opacity": "1",
+          "transform": "translate3d(60px, 138px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_pui",
+          "opacity": "1",
+          "transform": "translate3d(145px, 168px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_catel",
+          "opacity": "1",
+          "transform": "translate3d(116px, 136px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p3_rata",
+          "opacity": "1",
+          "transform": "translate3d(235px, 184px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p3_pasare",
+          "opacity": "1",
+          "transform": "translate3d(287px, 137px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        },
+        {
+          "id": "p3_Text1",
+          "opacity": "1",
+          "transform": "translate3d(121px, 14px, 0px)"
+        }
+      ],
+      "text": "3. Mâncăm împreună\n\nPoftă bună!"
+    },
+    "afterFirstTwo": {
+      "sprites": [
+        {
+          "id": "p3_casa",
+          "opacity": "1",
+          "transform": "translate3d(265px, -33px, 0px) rotate(0deg) scale(0.5, 0.5)"
+        },
+        {
+          "id": "p3_masa",
+          "opacity": "1",
+          "transform": "translate3d(65px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p3_soare",
+          "opacity": "1",
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_nor",
+          "opacity": "0",
+          "transform": "translate3d(-100px, -13px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar1",
+          "opacity": "0",
+          "transform": "translate3d(112px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p3_mar2",
+          "opacity": "0",
+          "transform": "translate3d(160px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p3_mar3",
+          "opacity": "1",
+          "transform": "translate3d(208px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar4",
+          "opacity": "1",
+          "transform": "translate3d(256px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar5",
+          "opacity": "1",
+          "transform": "translate3d(304px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_iepuras",
+          "opacity": "1",
+          "transform": "translate3d(60px, 138px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_pui",
+          "opacity": "1",
+          "transform": "translate3d(145px, 168px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_catel",
+          "opacity": "1",
+          "transform": "translate3d(116px, 136px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p3_rata",
+          "opacity": "1",
+          "transform": "translate3d(235px, 184px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p3_pasare",
+          "opacity": "1",
+          "transform": "translate3d(287px, 137px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        },
+        {
+          "id": "p3_Text1",
+          "opacity": "1",
+          "transform": "translate3d(121px, 14px, 0px)"
+        }
+      ],
+      "text": "3. Mâncăm împreună"
+    },
+    "afterAllFive": {
+      "sprites": [
+        {
+          "id": "p3_casa",
+          "opacity": "1",
+          "transform": "translate3d(265px, -33px, 0px) rotate(0deg) scale(0.5, 0.5)"
+        },
+        {
+          "id": "p3_masa",
+          "opacity": "1",
+          "transform": "translate3d(65px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p3_soare",
+          "opacity": "1",
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_nor",
+          "opacity": "0",
+          "transform": "translate3d(-100px, -13px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar1",
+          "opacity": "0",
+          "transform": "translate3d(112px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p3_mar2",
+          "opacity": "0",
+          "transform": "translate3d(160px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p3_mar3",
+          "opacity": "0",
+          "transform": "translate3d(208px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p3_mar4",
+          "opacity": "0",
+          "transform": "translate3d(256px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p3_mar5",
+          "opacity": "0",
+          "transform": "translate3d(304px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p3_iepuras",
+          "opacity": "1",
+          "transform": "translate3d(60px, 138px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_pui",
+          "opacity": "1",
+          "transform": "translate3d(145px, 168px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_catel",
+          "opacity": "1",
+          "transform": "translate3d(116px, 136px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p3_rata",
+          "opacity": "1",
+          "transform": "translate3d(235px, 184px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p3_pasare",
+          "opacity": "1",
+          "transform": "translate3d(287px, 137px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        },
+        {
+          "id": "p3_Text1",
+          "opacity": "1",
+          "transform": "translate3d(121px, 14px, 0px)"
+        }
+      ],
+      "text": "3. Mâncăm împreună"
+    },
+    "automaticRainArrival": {
+      "sprites": [
+        {
+          "id": "p4_casa",
+          "opacity": "1",
+          "transform": "translate3d(265px, -33px, 0px) rotate(0deg) scale(0.5, 0.5)"
+        },
+        {
+          "id": "p4_masa",
+          "opacity": "1",
+          "transform": "translate3d(65px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p4_soare",
+          "opacity": "0",
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p4_nor",
+          "opacity": "1",
+          "transform": "translate3d(-4px, -13px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p4_iepuras",
+          "opacity": "1",
+          "transform": "translate3d(60px, 138px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p4_pui",
+          "opacity": "1",
+          "transform": "translate3d(145px, 168px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p4_catel",
+          "opacity": "1",
+          "transform": "translate3d(116px, 136px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p4_rata",
+          "opacity": "1",
+          "transform": "translate3d(235px, 184px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p4_pasare",
+          "opacity": "1",
+          "transform": "translate3d(287px, 137px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        },
+        {
+          "id": "p4_Text1",
+          "opacity": "1",
+          "transform": "translate3d(138.5px, 14px, 0px)"
+        }
+      ],
+      "text": "4. Toți la adăpost!"
+    },
+    "shelterFinished": {
+      "sprites": [
+        {
+          "id": "p4_casa",
+          "opacity": "1",
+          "transform": "translate3d(265px, -33px, 0px) rotate(0deg) scale(0.5, 0.5)"
+        },
+        {
+          "id": "p4_masa",
+          "opacity": "1",
+          "transform": "translate3d(65px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p4_soare",
+          "opacity": "1",
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p4_nor",
+          "opacity": "0",
+          "transform": "translate3d(-4px, -13px, 0px) rotate(0deg) scale(-0.4, 0.4)"
+        },
+        {
+          "id": "p4_iepuras",
+          "opacity": "0",
+          "transform": "translate3d(300px, 90px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p4_pui",
+          "opacity": "0",
+          "transform": "translate3d(337px, 120px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p4_catel",
+          "opacity": "0",
+          "transform": "translate3d(260px, 88px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p4_rata",
+          "opacity": "0",
+          "transform": "translate3d(331px, 136px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p4_pasare",
+          "opacity": "0",
+          "transform": "translate3d(335px, 89px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        },
+        {
+          "id": "p4_Text1",
+          "opacity": "1",
+          "transform": "translate3d(138.5px, 14px, 0px)"
+        }
+      ],
+      "text": "4. Toți la adăpost!"
+    },
+    "starterAfterTableInvitation": {
+      "sprites": [
+        {
+          "id": "p3_casa",
+          "opacity": "1",
+          "transform": "translate3d(265px, -33px, 0px) rotate(0deg) scale(0.5, 0.5)"
+        },
+        {
+          "id": "p3_masa",
+          "opacity": "1",
+          "transform": "translate3d(65px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p3_soare",
+          "opacity": "1",
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_nor",
+          "opacity": "0",
+          "transform": "translate3d(-100px, -13px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar1",
+          "opacity": "1",
+          "transform": "translate3d(112px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar2",
+          "opacity": "1",
+          "transform": "translate3d(160px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar3",
+          "opacity": "1",
+          "transform": "translate3d(208px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar4",
+          "opacity": "1",
+          "transform": "translate3d(256px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_mar5",
+          "opacity": "1",
+          "transform": "translate3d(304px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p3_iepuras",
+          "opacity": "1",
+          "transform": "translate3d(60px, 210px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_pui",
+          "opacity": "1",
+          "transform": "translate3d(145px, 240px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p3_catel",
+          "opacity": "1",
+          "transform": "translate3d(116px, 208px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p3_rata",
+          "opacity": "1",
+          "transform": "translate3d(235px, 256px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p3_pasare",
+          "opacity": "1",
+          "transform": "translate3d(287px, 209px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        },
+        {
+          "id": "p3_Text1",
+          "opacity": "1",
+          "transform": "translate3d(121px, 14px, 0px)"
+        }
+      ],
+      "text": "3. Mâncăm împreună"
+    },
+    "r4ThreeFirst": {
+      "sprites": [
+        {
+          "id": "p1_casa",
+          "opacity": "1",
+          "transform": "translate3d(265px, -33px, 0px) rotate(0deg) scale(0.5, 0.5)"
+        },
+        {
+          "id": "p1_masa",
+          "opacity": "1",
+          "transform": "translate3d(65px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p1_soare",
+          "opacity": "1",
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p1_nor",
+          "opacity": "0",
+          "transform": "translate3d(-100px, -13px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p1_mar1",
+          "opacity": "1",
+          "transform": "translate3d(112px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p1_mar2",
+          "opacity": "1",
+          "transform": "translate3d(160px, 148px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p1_mar3",
+          "opacity": "0",
+          "transform": "translate3d(208px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p1_mar4",
+          "opacity": "0",
+          "transform": "translate3d(256px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p1_mar5",
+          "opacity": "0",
+          "transform": "translate3d(304px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p1_iepuras",
+          "opacity": "1",
+          "transform": "translate3d(60px, 138px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p1_pui",
+          "opacity": "1",
+          "transform": "translate3d(145px, 168px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p1_catel",
+          "opacity": "1",
+          "transform": "translate3d(116px, 136px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p1_rata",
+          "opacity": "1",
+          "transform": "translate3d(235px, 184px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p1_pasare",
+          "opacity": "1",
+          "transform": "translate3d(287px, 137px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        },
+        {
+          "id": "p1_Text1",
+          "opacity": "1",
+          "transform": "translate3d(98px, 14px, 0px)"
+        }
+      ],
+      "text": "Rezervă 4: cei trei, primii"
+    },
+    "r4Finished": {
+      "sprites": [
+        {
+          "id": "p1_casa",
+          "opacity": "1",
+          "transform": "translate3d(265px, -33px, 0px) rotate(0deg) scale(0.5, 0.5)"
+        },
+        {
+          "id": "p1_masa",
+          "opacity": "1",
+          "transform": "translate3d(65px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p1_soare",
+          "opacity": "0",
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p1_nor",
+          "opacity": "1",
+          "transform": "translate3d(-4px, -13px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p1_mar1",
+          "opacity": "0",
+          "transform": "translate3d(112px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p1_mar2",
+          "opacity": "0",
+          "transform": "translate3d(160px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p1_mar3",
+          "opacity": "0",
+          "transform": "translate3d(208px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p1_mar4",
+          "opacity": "0",
+          "transform": "translate3d(256px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p1_mar5",
+          "opacity": "0",
+          "transform": "translate3d(304px, 148px, 0px) rotate(0deg) scale(0.272727, 0.272727)"
+        },
+        {
+          "id": "p1_iepuras",
+          "opacity": "1",
+          "transform": "translate3d(60px, 138px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p1_pui",
+          "opacity": "1",
+          "transform": "translate3d(145px, 168px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p1_catel",
+          "opacity": "1",
+          "transform": "translate3d(116px, 136px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p1_rata",
+          "opacity": "1",
+          "transform": "translate3d(235px, 184px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p1_pasare",
+          "opacity": "1",
+          "transform": "translate3d(287px, 137px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        },
+        {
+          "id": "p1_Text1",
+          "opacity": "1",
+          "transform": "translate3d(98px, 14px, 0px)"
+        }
+      ],
+      "text": "Rezervă 4: cei trei, primii"
+    },
+    "r5Initial": {
+      "sprites": [
+        {
+          "id": "p1_casa",
+          "opacity": "1",
+          "transform": "translate3d(265px, -33px, 0px) rotate(0deg) scale(0.5, 0.5)"
+        },
+        {
+          "id": "p1_masa",
+          "opacity": "1",
+          "transform": "translate3d(65px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p1_soare",
+          "opacity": "0",
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p1_nor",
+          "opacity": "1",
+          "transform": "translate3d(-4px, -13px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p1_iepuras",
+          "opacity": "1",
+          "transform": "translate3d(60px, 138px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p1_pui",
+          "opacity": "1",
+          "transform": "translate3d(145px, 168px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p1_catel",
+          "opacity": "1",
+          "transform": "translate3d(116px, 136px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p1_rata",
+          "opacity": "1",
+          "transform": "translate3d(235px, 184px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p1_pasare",
+          "opacity": "1",
+          "transform": "translate3d(287px, 137px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        },
+        {
+          "id": "p1_Text1",
+          "opacity": "1",
+          "transform": "translate3d(91px, 14px, 0px)"
+        }
+      ],
+      "text": "Rezervă 5: a trecut ploaia!"
+    },
+    "r5Sheltered": {
+      "sprites": [
+        {
+          "id": "p1_casa",
+          "opacity": "1",
+          "transform": "translate3d(265px, -33px, 0px) rotate(0deg) scale(0.5, 0.5)"
+        },
+        {
+          "id": "p1_masa",
+          "opacity": "1",
+          "transform": "translate3d(65px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p1_soare",
+          "opacity": "1",
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p1_nor",
+          "opacity": "0.466668",
+          "transform": "translate3d(-4px, -13px, 0px) rotate(0deg) scale(-0.4, 0.4)"
+        },
+        {
+          "id": "p1_iepuras",
+          "opacity": "0",
+          "transform": "translate3d(300px, 90px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p1_pui",
+          "opacity": "0",
+          "transform": "translate3d(337px, 120px, 0px) rotate(0deg) scale(0.204, 0.204)"
+        },
+        {
+          "id": "p1_catel",
+          "opacity": "0",
+          "transform": "translate3d(260px, 88px, 0px) rotate(0deg) scale(0.17, 0.17)"
+        },
+        {
+          "id": "p1_rata",
+          "opacity": "0",
+          "transform": "translate3d(331px, 136px, 0px) rotate(0deg) scale(0.272, 0.272)"
+        },
+        {
+          "id": "p1_pasare",
+          "opacity": "0",
+          "transform": "translate3d(335px, 89px, 0px) rotate(0deg) scale(0.238, 0.238)"
+        },
+        {
+          "id": "p1_Text1",
+          "opacity": "1",
+          "transform": "translate3d(91px, 14px, 0px)"
+        }
+      ],
+      "text": "Rezervă 5: a trecut ploaia!"
+    },
+    "r5Returned": {
+      "sprites": [
+        {
+          "id": "p1_casa",
+          "opacity": "1",
+          "transform": "translate3d(265px, -33px, 0px) rotate(0deg) scale(0.5, 0.5)"
+        },
+        {
+          "id": "p1_masa",
+          "opacity": "1",
+          "transform": "translate3d(65px, 150px, 0px) rotate(0deg) scale(0.6, 0.6)"
+        },
+        {
+          "id": "p1_soare",
+          "opacity": "1",
+          "transform": "translate3d(-8px, -20px, 0px) rotate(0deg) scale(0.4, 0.4)"
+        },
+        {
+          "id": "p1_nor",
+          "opacity": "0",
+          "transform": "translate3d(-4px, -13px, 0px) rotate(0deg) scale(-0.4, 0.4)"
+        },
+        {
+          "id": "p1_iepuras",
+          "opacity": "1",
+          "transform": "translate3d(60px, 138px, 0px) rotate(0deg) scale(-0.204, 0.204)"
+        },
+        {
+          "id": "p1_pui",
+          "opacity": "1",
+          "transform": "translate3d(145px, 168px, 0px) rotate(0deg) scale(-0.204, 0.204)"
+        },
+        {
+          "id": "p1_catel",
+          "opacity": "1",
+          "transform": "translate3d(116px, 136px, 0px) rotate(0deg) scale(-0.17, 0.17)"
+        },
+        {
+          "id": "p1_rata",
+          "opacity": "1",
+          "transform": "translate3d(235px, 184px, 0px) rotate(0deg) scale(-0.272, 0.272)"
+        },
+        {
+          "id": "p1_pasare",
+          "opacity": "1",
+          "transform": "translate3d(287px, 137px, 0px) rotate(0deg) scale(-0.238, 0.238)"
+        },
+        {
+          "id": "p1_Text1",
+          "opacity": "1",
+          "transform": "translate3d(91px, 14px, 0px)"
+        }
+      ],
+      "text": "Rezervă 5: a trecut ploaia!"
+    }
+  },
+  "limits": [
+    "Read-only DOM observations after real clicks; no injected application state.",
+    "No Android or installed Desktop retest.",
+    "Audio output not remeasured."
+  ]
+}

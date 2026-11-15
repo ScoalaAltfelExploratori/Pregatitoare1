@@ -12,9 +12,9 @@
 4. Dacă vrei rezervele la îndemână, importă și cele cinci modele de mai jos. Nu trebuie instalat nimic pe tabletele copiilor pentru această întâlnire.
 5. Încearcă înainte steagul, Reset Characters și selectarea paginilor. Pentru salvare, revino în galerie și redeschide copia ta ca să verifici blocurile.
 
-În Construim împreună, scena și reacțiile ajutătoare sunt pregătite. Voi completați: traseul iepurașului, cele trei mere din copac, cele două comenzi de la masă și programul iepurașului pentru adăpost.
+În Construim împreună, scena și reacțiile ajutătoare sunt pregătite. Voi completați: traseul iepurașului, cele trei mere din copac, programul mesei condus de iepuraș și programul iepurașului pentru adăpost.
 
-Masa din pagina 2 are deja invitația și trecerea la pagina 3 în ambele proiecte principale. Dacă ai importat o versiune mai veche, descarcă și importă fișierele actualizate; copia existentă în ScratchJr nu se actualizează singură. Păstrează separat proiectul în care ai lucrat.
+Masa din pagina 2 are deja invitația și trecerea la pagina 3 în ambele proiecte principale. În modelul complet, masa prietenilor se desfășoară apoi singură și se deschide pagina 4. În Construim împreună, pagina 3 așteaptă să completați programul iepurașului. Dacă ai importat o versiune mai veche, descarcă și importă fișierele actualizate; copia existentă în ScratchJr nu se actualizează singură. Păstrează separat proiectul în care ai lucrat.
 
 ## Cum implici copiii
 
@@ -66,29 +66,29 @@ Arată scena, personajele, blocurile și cele patru pagini. Demonstrează o sing
 
 **Model:** [povestea rezolvată, pagina 2](proiecte/00_Laboratorul_ScratchJr.sjr).
 
-## 23–31 minute — Chemăm prietenii la masă
+## 23–31 minute — Mâncăm împreună
 
-**Spune:** „Iepurașul și puiul vin primii la masă. Păstrăm câte un măr și pentru fiecare prieten care încă așteaptă.”
+**Spune:** „Ne așezăm toți la masă. Iepurașul și puiul încep să mănânce; ceilalți își păstrează merele pentru rândul lor. Rămânem împreună până terminăm.”
 
-**Construiți două comenzi:** iepurașul — La apăsare → Trimite roșu; cățelul — La apăsare → Trimite albastru. Arată un program deja pregătit care începe cu plicul roșu și unul cu plicul albastru.
+**Arată reacțiile pregătite:** portocaliu îi aduce pe toți cinci la masă și pregătește merele; roșu pornește mâncatul primelor două mere; albastru, al celorlalte trei; mov aduce norul după masă. Prietenii se apropie cu **Înapoi acasă → Sus 3** și rămân acolo.
 
-**Pregătește servirea:** după invitația mesei apare pagina 3. Dacă butonul de sus este **Stop roșu**, apasă-l, apoi apasă **steagul verde** care apare în locul lui. Dacă vezi deja steagul verde, apasă-l direct. În versiunea pentru browser, această pornire activează contactele merelor după schimbarea paginii. Fă pasul înainte să chemi prietenii.
+**Construiți la iepuraș:** La steag → Trimite portocaliu → Spune „Poftă bună!” → Trimite roșu → Așteaptă 50 → Trimite albastru → Așteaptă 20 → Trimite mov. În copia de construit este pregătit doar La steag. Conectați pe rând: așezarea, cele două serviri și schimbarea vremii.
 
-**Pornește prima servire:** apasă iepurașul pe scenă, o singură dată. Așteaptă revenirea celor doi; a doua servire pornește numai când apăsați cățelul, deci aveți timp să decideți împreună.
+**Înainte de pornire:** copiii arată cine mănâncă la roșu și pentru cine păstrăm cele **5 − 2 = 3 mere**. Astfel alegem albastru pentru a doua servire. Așteaptă 50 înseamnă aproximativ cinci secunde; Așteaptă 20, două secunde. Puteți lungi prima pauză înainte de demonstrație dacă vreți mai mult timp pentru răspunsuri.
 
-**Întreabă:** „Cine n-a mâncat încă? Ajung merele rămase pentru ei?” Copiii arată cățelul, rața și pasărea și cele **5 − 2 = 3 mere**. Fiecare trebuie chemat o singură dată. Alegeți mesajul pentru acești trei prieteni: **albastru**; un copil apasă cățelul.
+**Pornește:** în modelul complet, invitația mesei din pagina 2 pornește întregul lanț. În copia de construit, după ce ați conectat blocurile, apăsați steagul verde în pagina 3. Nu mai apăsați personajele în timpul mesei; programul conduce cele două serviri.
 
-**Rezultat:** fiecare personaj merge la masă, atinge un măr și se întoarce. Ultimii trei mănâncă cele trei mere rămase: **3 − 3 = 0**. Verificați și cine a mâncat, nu doar masa goală: toți cinci au primit câte unul. Masa s-a încheiat; puteți continua povestea.
+**Urmăriți:** toți cinci ajung la masă. Primele două mere se micșorează în două mușcături, se aude Pop, apoi dispar. În pauză, cei cinci prieteni stau la masă și vedem cele trei mere pentru cățel, rață și pasăre. Mănâncă și ei: **3 − 3 = 0** mere. După o scurtă pauză apare norul, spune „Vine ploaia!” și deschide singur pagina 4. Masa, casa și prietenii își păstrează pozițiile.
 
-**Arată codul unui măr:** La contact → Pop → Ascunde. Mărul dispare după atingere fiindcă a fost mâncat. Întreabă: „Ce bloc face să nu-l mai vedem?”
+**Arată codul unui măr:** La roșu sau La albastru → Repetă 2 [Micșorează 2 → Pop → Așteaptă 5] → Ascunde. Întreabă: „Cum vedem că mănâncă? De ce vine norul după ultimul grup?”
 
-**Dacă merele nu dispar:** reia cu steagul pentru activarea contactelor. Verifică și culorile mesajelor. La final apasă **Stop**, apoi alege pagina 4.
+**Dacă un grup nu mănâncă:** verificați culoarea mesajului din lanț și plicul de la merele corespunzătoare. La reluare, mesajul portocaliu readuce merele și personajele la începutul mesei. Servirea folosește mesaje; nu necesită repornirea contactelor în browser.
 
 **Model:** [povestea rezolvată, pagina 3](proiecte/00_Laboratorul_ScratchJr.sjr).
 
 ## 31–34 minute — Pauză scurtă
 
-Doi copii mimează primul grup, apoi alți trei mimează al doilea. Clasa numără cine a venit și cine mai așteaptă. Reveniți la laptop pentru schimbarea vremii.
+Doi copii mimează primul grup care mănâncă, apoi alți trei mimează al doilea; toți rămân împreună. Clasa numără cine a mâncat și cine mai așteaptă. Pagina 4 poate rămâne deschisă cât faceți pauza.
 
 ## 34–46 minute — Toți la adăpost · dificil
 
@@ -96,7 +96,7 @@ Doi copii mimează primul grup, apoi alți trei mimează al doilea. Clasa număr
 
 **Planificați salvarea înainte să porniți:** arătați cei cinci prieteni. După intrarea primilor doi vor rămâne **5 − 2 = 3 afară**: cățelul, rața și pasărea. Copiii îi identifică și găsesc la fiecare programul care primește albastru. Acesta este grupul pe care trebuie să-l cheme iepurașul.
 
-**Construiți la iepuraș:** La roșu → Dreapta 8 → Sus 4 → Ascunde → Așteaptă 10 → Trimite albastru. Declanșatorul La roșu este deja pregătit.
+**Construiți la iepuraș:** La roșu → Dreapta 10 → Sus 2 → Ascunde → Așteaptă 10 → Trimite albastru. Declanșatorul La roșu este deja pregătit. Prietenii pornesc de la locurile unde au terminat masa; casa este cea pe care am văzut-o lângă masă.
 
 **Întreabă înainte de pornire:** „Unde trebuie să ajungă înainte să-l ascundem? Când trimitem mesajul pentru ceilalți?” Copiii explică legătura dintre sosire și următoarea comandă.
 
@@ -142,13 +142,13 @@ Un copil explică un program arătând blocurile: „întâi…, apoi…, la sf�
 
 [Soluția R3](solutii/03_Scuturam_pomul.sjr).
 
-### R4. Cei trei au ajuns primii · 4–6 minute
+### R4. Cei trei mănâncă primii · 4–6 minute
 
-**Cerință:** „Iepurașul îi cheamă întâi pe cățel, rață și pasăre. Cățelul îi cheamă apoi pe ceilalți doi.” Lucrați pe pagina 3.
+**Cerință:** „Toți se așază împreună, dar cățelul, rața și pasărea mănâncă primii. După ei mănâncă iepurașul și puiul.” Lucrați pe pagina 3.
 
-**Soluție:** iepuraș — La apăsare → Trimite **albastru**; cățel — La apăsare → Trimite **roșu**. Programele de primire rămân cele existente.
+**Soluție:** în lanțul iepurașului schimbați primul mesaj de servire din roșu în **albastru**, iar al doilea din albastru în **roșu**. Portocaliu rămâne la început și mov la sfârșit; păstrați pauzele și programele de primire.
 
-**Pornește:** steagul, apoi iepurașul. După revenirea grupului, întreabă: „Au mâncat trei. Pentru cine păstrăm cele **5 − 3 = 2 mere**?” Copiii identifică iepurașul și puiul, apoi aleg mesajul roșu care îi cheamă. Apasă cățelul: cei doi mănâncă și rămân **2 − 2 = 0 mere**. Verificați că fiecare a fost servit o singură dată. Întreabă: „S-au schimbat drumurile sau cine dă comanda?” Încheie cu Stop.
+**Pornește:** steagul verde. În pauza dintre serviri întreabă: „Pentru cine păstrăm cele **5 − 3 = 2 mere**?” Copiii identifică iepurașul și puiul. A doua servire pornește singură: **2 − 2 = 0 mere**. Toți rămân la masă. Modelul separat are o singură pagină și se încheie acolo, după apariția norului; în povestea principală continuăm la pagina 4.
 
 [Soluția R4](solutii/04_Cei_trei_primii.sjr).
 
@@ -156,7 +156,7 @@ Un copil explică un program arătând blocurile: „întâi…, apoi…, la sf�
 
 **Cerință:** „După furtună, apăsăm soarele o dată. Toți ies din casă și revin la locurile lor.” Lucrați pe pagina 4.
 
-**Soluție:** soare — La apăsare → Trimite **verde**. Fiecare prieten primește un program nou **La verde → Arată → Jos 4**, urmat de deplasarea la stânga: iepuraș 8, pui 6, cățel 4, rață 2. Pasărea se oprește după Jos 4. Păstrați programele de intrare în casă.
+**Soluție:** soare — La apăsare → Trimite **verde**. Fiecare prieten primește un program nou **La verde → Arată → Jos 2 → Stânga**: iepuraș 10, pui 8, cățel 6, rață 4, pasăre 2. Păstrați programele de intrare în casă. Toți revin la locurile de lângă masă.
 
 **Întreabă:** „Dacă la intrare a mers la dreapta și apoi în sus, cum se întoarce?” Construiți întâi programul iepurașului, apoi lăsați copiii să deducă numerele celorlalți.
 
@@ -169,7 +169,7 @@ Un copil explică un program arătând blocurile: „întâi…, apoi…, la sf�
 - **Copilul a ales alt personaj:** selectează personajul dorit în stânga și verifică numele.
 - **Un bloc nu se execută:** apropie-l până se unește cu programul.
 - **O scenă pare goală:** Stop, apoi Reset Characters readuce obiectele ascunse.
-- **Contactul nu pornește:** folosește steagul în traseul cu gardul. La sosirea în scena mesei, apasă Stop dacă butonul este roșu, apoi steagul verde; abia după aceea cheamă prietenii.
+- **Contactul nu pornește:** folosește steagul în traseul cu gardul. La masă, verifică mesajele colorate din program și de la mere.
 - **Ai pierdut firul:** deschide modelul rezolvat, selectează personajul și urmărește programul împreună cu clasa.
 
 Rezervele oferă aproximativ 25–35 de minute suplimentare. Alege una sau două; păstrează ultimele minute pentru explicațiile copiilor.
