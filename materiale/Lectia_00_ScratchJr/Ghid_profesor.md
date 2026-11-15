@@ -14,6 +14,8 @@
 
 În Construim împreună, scena și reacțiile ajutătoare sunt pregătite. Voi completați: traseul iepurașului, cele trei mere din copac, cele două comenzi de la masă și programul iepurașului pentru adăpost.
 
+Masa din pagina 2 are deja invitația și trecerea la pagina 3 în ambele proiecte principale. Dacă ai importat o versiune mai veche, descarcă și importă fișierele actualizate; copia existentă în ScratchJr nu se actualizează singură. Păstrează separat proiectul în care ai lucrat.
+
 ## Cum implici copiii
 
 Repetă același ritm: **spunem scopul → propunem blocurile → un copil construiește → prezicem → pornim → explicăm ce vedem**. Schimbă copilul după una sau două instrucțiuni. Ceilalți urmăresc și propun următorul pas.
@@ -56,7 +58,11 @@ Arată scena, personajele, blocurile și cele patru pagini. Demonstrează o sing
 
 **Pornește:** apăsați merele pe scenă, pe rând. **Rezultat:** toate cele cinci mere ajung la aceeași înălțime, la marginea mesei. Spuneți împreună „două și încă trei fac cinci”.
 
-**Dacă un măr nu coboară:** selectați fructul potrivit în stânga și verificați dacă blocul este conectat la La apăsare. Dacă nu se aliniază, verificați valoarea 3 sau 4. Apoi alege pagina 3 din dreapta.
+**Continuăm povestea:** când toate cele cinci mere sunt pe masă, întreabă: „Suntem gata să-i chemăm?” Un copil apasă **blatul mesei pe scenă**, o singură dată. Masa afișează „Poftiți la masă!”, apoi se deschide pagina 3. Așteptați să se termine coborârea merelor înainte de invitație.
+
+**Arată programul pregătit al mesei:** La apăsare → Spune „Poftiți la masă!” → Mergi la pagina 3. Balonul este text de citit împreună. Copiii pot reconstrui aceste trei blocuri în copia de lucru. Întreabă: „De ce punem schimbarea paginii după invitație?”
+
+**Dacă un măr nu coboară:** selectați fructul potrivit în stânga și verificați dacă blocul este conectat la La apăsare. Dacă nu se aliniază, verificați valoarea 3 sau 4. Dacă masa nu pornește invitația, apăsați blatul pe scenă; selectarea mesei în stânga arată doar codul.
 
 **Model:** [povestea rezolvată, pagina 2](proiecte/00_Laboratorul_ScratchJr.sjr).
 
@@ -66,7 +72,9 @@ Arată scena, personajele, blocurile și cele patru pagini. Demonstrează o sing
 
 **Construiți două comenzi:** iepurașul — La apăsare → Trimite roșu; cățelul — La apăsare → Trimite albastru. Arată un program deja pregătit care începe cu plicul roșu și unul cu plicul albastru.
 
-**Pornește prima servire:** steagul verde, apoi iepurașul, o singură dată. Așteaptă revenirea celor doi; a doua servire pornește numai când apăsați cățelul, deci aveți timp să decideți împreună.
+**Pregătește servirea:** după invitația mesei apare pagina 3. Dacă butonul de sus este **Stop roșu**, apasă-l, apoi apasă **steagul verde** care apare în locul lui. Dacă vezi deja steagul verde, apasă-l direct. În versiunea pentru browser, această pornire activează contactele merelor după schimbarea paginii. Fă pasul înainte să chemi prietenii.
+
+**Pornește prima servire:** apasă iepurașul pe scenă, o singură dată. Așteaptă revenirea celor doi; a doua servire pornește numai când apăsați cățelul, deci aveți timp să decideți împreună.
 
 **Întreabă:** „Cine n-a mâncat încă? Ajung merele rămase pentru ei?” Copiii arată cățelul, rața și pasărea și cele **5 − 2 = 3 mere**. Fiecare trebuie chemat o singură dată. Alegeți mesajul pentru acești trei prieteni: **albastru**; un copil apasă cățelul.
 
@@ -130,6 +138,8 @@ Un copil explică un program arătând blocurile: „întâi…, apoi…, la sf�
 
 **Pornește:** Reset Characters, apoi copacul o dată. **Verifică:** trei mere coboară; pe masă sunt cinci. Întreabă: „Cum a pornit un singur mesaj trei programe?”
 
+În povestea cu patru pagini, apăsarea mesei continuă la pagina 3. Soluția R3 separată are o singură pagină: masa spune „Poftiți la masă!”, iar scena rămâne deschisă pentru încă o încercare.
+
 [Soluția R3](solutii/03_Scuturam_pomul.sjr).
 
 ### R4. Cei trei au ajuns primii · 4–6 minute
@@ -159,7 +169,7 @@ Un copil explică un program arătând blocurile: „întâi…, apoi…, la sf�
 - **Copilul a ales alt personaj:** selectează personajul dorit în stânga și verifică numele.
 - **Un bloc nu se execută:** apropie-l până se unește cu programul.
 - **O scenă pare goală:** Stop, apoi Reset Characters readuce obiectele ascunse.
-- **Contactul nu pornește:** folosește steagul în scena mesei și în traseul cu gardul.
+- **Contactul nu pornește:** folosește steagul în traseul cu gardul. La sosirea în scena mesei, apasă Stop dacă butonul este roșu, apoi steagul verde; abia după aceea cheamă prietenii.
 - **Ai pierdut firul:** deschide modelul rezolvat, selectează personajul și urmărește programul împreună cu clasa.
 
 Rezervele oferă aproximativ 25–35 de minute suplimentare. Alege una sau două; păstrează ultimele minute pentru explicațiile copiilor.

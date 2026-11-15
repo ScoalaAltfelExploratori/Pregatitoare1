@@ -62,3 +62,19 @@ Modelul complet a fost redeschis în aplicația publică ScratchJr Desktop Rebor
 - Adăpostul: după lanțul pornit de nor, toți cinci sunt ascunși la ușă, norul este ascuns și soarele este vizibil.
 
 [Stările scenei observate în browser](13_scaderi.json). La această revizie nu au fost rerulate cele cinci rezerve și nu s-a făcut un nou test Android. Cele nouă teste pentru lecție și navigare au trecut; verificarea locală a site-ului a găsit 353 de adrese valide, iar arhiva ZIP conține ghidurile actualizate. Ghidul a fost verificat și vizual în browser.
+
+## Invitația mesei — 15 noiembrie 2026
+
+În proiectul complet și în Construim împreună, masa din pagina 2 are acum **La apăsare → Spune „Poftiți la masă!” → Mergi la pagina 3**. Programul este complet și în varianta de construit. Copiii verifică mai întâi că au cules merele, apoi apasă blatul pentru a continua povestea. Masa nu verifică automat numărul merelor.
+
+Cele trei fișiere modificate au fost importate separat în aplicația publică ScratchJr Desktop Reborn:
+
+- **Povestea completă:** traseul ajunge în pagina 2; cele trei mere coboară, iar apăsarea mesei afișează invitația înainte să deschidă pagina 3, cu toate cele cinci mere vizibile.
+- **Construim împreună:** invitația și trecerea la pagina 3 funcționează direct; programele de construit rămân necompletate. La această probă s-a verificat comanda mesei, fără reconstruirea celor trei programe ale merelor.
+- **R3 — Scuturăm pomul:** apăsarea copacului coboară cele trei mere; masa afișează invitația și rămâne pe unica pagină. Soluția separată nu conține o trimitere la pagina 3.
+
+**Particularitate găsită în browser:** după schimbarea automată la pagina 3, personajele se deplasau, dar merele nu reacționau la contact. Apăsarea **Stop → steag verde**, înainte de chemarea prietenilor, activează contactele. Cu acest pas, primul grup lasă trei mere și al doilea zero. Ghidul și pagina lecției includ pornirea explicită; programele de servire sunt cele existente.
+
+[Rezultatele observate](14_invitatia_mesei.json) · [Invitația vizibilă în aplicație](invitatia-mesei.png).
+
+Cele nouă teste pentru proiecte și navigare au trecut. Cele șapte arhive `.sjr` sunt valide și au hashurile actualizate în `lesson.json`; patru dintre ele sunt neschimbate. Verificarea de aici este pentru browser, nu pentru aplicația Android sau Desktop instalată. Nu au fost rerulate rezervele R1, R2, R4 și R5 la această revizie.

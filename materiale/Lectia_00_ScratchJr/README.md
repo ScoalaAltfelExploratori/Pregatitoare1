@@ -33,6 +33,8 @@ Soluțiile rezervelor au câte o singură pagină. Cele trei provocări noi se p
 
 Importul se face numai pe laptopul profesorului. Copiii nu au nimic de copiat pe tablete. Toate imaginile și sunetul Pop sunt din biblioteca ScratchJr.
 
+**Ai deja o copie importată?** Descarcă și importă din nou proiectul complet și varianta de construit pentru a primi invitația mesei din pagina 2. Copiile existente în ScratchJr nu se actualizează singure; păstrează separat lucrul tău.
+
 ## Cum lucrăm
 
 Copiii descriu ce trebuie să se întâmple, aleg blocurile și prezic rezultatul. Un copil vine la laptop și adaugă o instrucțiune. Selectăm personajul **în stânga** pentru cod; îl apăsăm **pe scenă** pentru pornire. Grila ajută la numărarea pașilor, apoi o ascundem. La blocurile cu plic, alegem culoarea din săgeata mică de sub bloc. Dacă plicul nu se vede imediat în browser, selectarea culorii îl redesenează.
@@ -49,11 +51,15 @@ Pornim cu **steagul verde**. Copiii urmăresc cele trei laturi ale ocolului. La 
 
 Vedem **cinci prieteni**, **două mere pe masă** și **trei mere în copac**. **Câte mai culegem ca fiecare să primească unul?** Pentru cinci prieteni ne trebuie cinci mere; avem deja două, deci lipsesc **5 − 2 = 3**. Copiii aleg cele trei fructe pentru care vor construi programe.
 
-Construim la cele trei mere din copac: **La apăsare → Înapoi acasă → Jos → Pop**. Merele de pe ramurile laterale coboară **4** pași; cel din mijloc coboară **3**. Numărul merelor alese și distanța parcursă de fiecare sunt lucruri diferite. Pornim pe rând și verificăm că toate ajung pe masă: **2 + 3 = 5**, câte unul pentru fiecare prieten. Alegem apoi **pagina 3 din dreapta**.
+Construim la cele trei mere din copac: **La apăsare → Înapoi acasă → Jos → Pop**. Merele de pe ramurile laterale coboară **4** pași; cel din mijloc coboară **3**. Numărul merelor alese și distanța parcursă de fiecare sunt lucruri diferite. Pornim pe rând și verificăm că toate ajung pe masă: **2 + 3 = 5**, câte unul pentru fiecare prieten.
+
+**Suntem gata să-i chemăm?** După ce merele au ajuns, un copil apasă **blatul mesei pe scenă**. Masa afișează „Poftiți la masă!”, apoi deschide pagina 3. Programul ei este deja pregătit în ambele proiecte principale: **La apăsare → Spune „Poftiți la masă!” → Mergi la pagina 3**. Îl putem arăta sau reconstrui împreună. Invitația apare într-un balon de text; o citim cu voce tare.
 
 ### 3. Poftiți la masă! · 23–31 minute
 
-Apăsăm **steagul verde** pentru a activa contactele, apoi iepurașul pe scenă, o singură dată. El și puiul merg la masă, ating câte un măr și se întorc. **Cine n-a mâncat încă? Ajung merele rămase pentru ei?** Sunt **5 − 2 = 3 mere** pentru cățel, rață și pasăre. Copiii îi identifică și aleg mesajul albastru care îi cheamă. A doua servire așteaptă apăsarea cățelului, deci putem discuta pe îndelete.
+După invitația mesei apare pagina 3. **Înainte de servire:** dacă butonul de sus este Stop roșu, îl apăsăm, apoi apăsăm steagul verde care apare în locul lui. Dacă este deja verde, îl apăsăm direct. Această pornire activează contactele merelor în versiunea pentru browser. Apoi apăsăm **iepurașul pe scenă**, o singură dată.
+
+Iepurașul și puiul merg la masă, ating câte un măr și se întorc. **Cine n-a mâncat încă? Ajung merele rămase pentru ei?** Sunt **5 − 2 = 3 mere** pentru cățel, rață și pasăre. Copiii îi identifică și aleg mesajul albastru care îi cheamă. A doua servire așteaptă apăsarea cățelului, deci putem discuta pe îndelete.
 
 Iepuraș: **La apăsare → Trimite roșu.** Cățel: **La apăsare → Trimite albastru.**
 
@@ -96,6 +102,8 @@ Lucrăm pe pagina 2, după ce am construit coborârea merelor. Adăugăm copacul
 
 Apăsăm Reset Characters, apoi copacul o singură dată. Cele trei mere coboară pe masă. Copiii verifică **2 + 3 = 5** și explică de ce același mesaj poate porni trei programe. Pot veni trei copii, fiecare pentru câte un măr.
 
+În povestea principală, apăsăm apoi masa pentru a continua la pagina 3. În soluția R3 separată, masa afișează aceeași invitație și rămânem pe unica pagină a proiectului.
+
 ### 4. Cei trei prieteni au ajuns primii · 4–6 minute
 
 **Misiune:** „De data aceasta, cățelul, rața și pasărea mănâncă primii. Iepurașul trebuie să-i cheme, iar cățelul îi va chema apoi pe ceilalți doi.”
@@ -122,7 +130,7 @@ Aceste trei provocări se construiesc live în copia proiectului principal, folo
 
 ## Reluare și salvare
 
-Apasă **Stop**, apoi **Reset Characters** înainte să reiei o scenă. Resetarea aduce înapoi merele și personajele ascunse. Paginile 2–4 se aleg din miniaturile din dreapta; doar întâlnirea cu cățelul schimbă pagina automat. Nu schimba pagina în timpul unui program.
+Apasă **Stop**, apoi **Reset Characters** înainte să reiei o scenă. Resetarea aduce înapoi merele și personajele ascunse. Întâlnirea cu cățelul deschide pagina 2; apăsarea mesei din pagina 2 afișează invitația și deschide pagina 3. După servire, apasă Stop și alege pagina 4 din dreapta. Miniaturile rămân disponibile pentru reluarea oricărei scene; așteaptă încheierea acțiunii înainte să schimbi pagina manual.
 
 Pentru salvare, întoarce-te în galeria ScratchJr și redeschide copia ta ca să verifici blocurile. Păstrează fișierele descărcate pentru o copie curată. În rezerve, oprește dansul înainte de a ieși.
 

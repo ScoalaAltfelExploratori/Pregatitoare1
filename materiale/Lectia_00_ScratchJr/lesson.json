@@ -236,7 +236,24 @@
               ],
               "scale": 0.6,
               "shown": true,
-              "scripts": []
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "say",
+                      "value": "Poftiți la masă!"
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": "mar1",
@@ -1241,7 +1258,7 @@
           ]
         }
       ],
-      "sha256": "47605882a94330b128441427478723132fb888b1ec914c0c99f90defc1dfc542"
+      "sha256": "777b25083f4ac933f47bf28dcdebefb7d0860e245ba621bfe55a5258e2926334"
     },
     {
       "path": "proiecte/01_Construim_impreuna.sjr",
@@ -1459,7 +1476,24 @@
               ],
               "scale": 0.6,
               "shown": true,
-              "scripts": []
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "say",
+                      "value": "Poftiți la masă!"
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": "mar1",
@@ -2394,7 +2428,7 @@
           ]
         }
       ],
-      "sha256": "e5541d384152ad1106124eeb8ada7e2874a1ce24c9106a6127bed5251eddfd01"
+      "sha256": "dc3f73fa2e00c153f3670eda6c8666c373eadbd8357f50006db5942b8f386eb4"
     },
     {
       "path": "proiecte/02_Rezerva_Contact.sjr",
@@ -2899,7 +2933,20 @@
               ],
               "scale": 0.6,
               "shown": true,
-              "scripts": []
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "say",
+                      "value": "Poftiți la masă!"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": "mar1",
@@ -3127,7 +3174,7 @@
           ]
         }
       ],
-      "sha256": "910ca34e4f98b65d65dddb5a6e42d2de916151212201cd0421d6dfd206b86eb2"
+      "sha256": "df7737c1f3da2787156965882ef85714a29f2ce0588bb8eae9cc0599273d081d"
     },
     {
       "path": "solutii/04_Cei_trei_primii.sjr",

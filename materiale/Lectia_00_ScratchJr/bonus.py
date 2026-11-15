@@ -12,6 +12,9 @@ def make_bonus(full, script, b, label):
         page['focus'] = focus
         page['texts'] = [label(title, 240, 28, 24)]
     sprite(orchard, 'pom')['scripts'] = [script('onclick', b('message', 'Red'))]
+    # The standalone orchard has one page: keep the invitation, without a page jump.
+    table = sprite(orchard, 'masa')['scripts'][0]
+    table['actions'] = [action for action in table['actions'] if action['block'] != 'gotopage']
     for key in ['mar3', 'mar4', 'mar5']:
         sprite(orchard, key)['scripts'][0]['trigger'] = b('onmessage', 'Red')
     sprite(meal, 'iepuras')['scripts'][0]['actions'] = [b('message', 'Blue')]

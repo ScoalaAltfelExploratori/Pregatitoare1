@@ -1,0 +1,178 @@
+{
+  "date": "2026-11-15",
+  "app": "ScratchJr Desktop Reborn public browser",
+  "checks": [
+    {
+      "project": "complete",
+      "file": "proiecte/00_Laboratorul_ScratchJr.sjr",
+      "speech": "2. Mere pentru fiecare\n\nPoftiți la masă!",
+      "afterTap": {
+        "apples": [
+          {
+            "id": "p3_mar1",
+            "opacity": "1"
+          },
+          {
+            "id": "p3_mar2",
+            "opacity": "1"
+          },
+          {
+            "id": "p3_mar3",
+            "opacity": "1"
+          },
+          {
+            "id": "p3_mar4",
+            "opacity": "1"
+          },
+          {
+            "id": "p3_mar5",
+            "opacity": "1"
+          }
+        ],
+        "page2": "",
+        "page3": "3. Poftiți la masă!",
+        "runButton": "go off"
+      },
+      "collectedState": [
+        {
+          "id": "p2_mar1",
+          "opacity": "1",
+          "transform": "translate3d(88px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p2_mar2",
+          "opacity": "1",
+          "transform": "translate3d(280px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p2_mar3",
+          "opacity": "1",
+          "transform": "translate3d(136px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p2_mar4",
+          "opacity": "1",
+          "transform": "translate3d(184px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p2_mar5",
+          "opacity": "1",
+          "transform": "translate3d(232px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        }
+      ],
+      "afterFirstServing": [
+        {
+          "id": "p3_mar1",
+          "opacity": "0"
+        },
+        {
+          "id": "p3_mar2",
+          "opacity": "0"
+        },
+        {
+          "id": "p3_mar3",
+          "opacity": "1"
+        },
+        {
+          "id": "p3_mar4",
+          "opacity": "1"
+        },
+        {
+          "id": "p3_mar5",
+          "opacity": "1"
+        }
+      ],
+      "withoutRestart": [
+        {
+          "id": "p3_mar1",
+          "opacity": "1"
+        },
+        {
+          "id": "p3_mar2",
+          "opacity": "1"
+        },
+        {
+          "id": "p3_mar3",
+          "opacity": "1"
+        },
+        {
+          "id": "p3_mar4",
+          "opacity": "1"
+        },
+        {
+          "id": "p3_mar5",
+          "opacity": "1"
+        }
+      ],
+      "restartRequiredInBrowser": true,
+      "afterSecondServing": [
+        {
+          "id": "p3_mar1",
+          "opacity": "0"
+        },
+        {
+          "id": "p3_mar2",
+          "opacity": "0"
+        },
+        {
+          "id": "p3_mar3",
+          "opacity": "0"
+        },
+        {
+          "id": "p3_mar4",
+          "opacity": "0"
+        },
+        {
+          "id": "p3_mar5",
+          "opacity": "0"
+        }
+      ]
+    },
+    {
+      "project": "starter",
+      "file": "proiecte/01_Construim_impreuna.sjr",
+      "speech": "2. Mere pentru fiecare\n\nPoftiți la masă!",
+      "afterTap": {
+        "page2": "",
+        "page3": "3. Poftiți la masă!"
+      }
+    },
+    {
+      "project": "reserve3",
+      "file": "solutii/03_Scuturam_pomul.sjr",
+      "speech": "Rezervă 3: scuturăm pomul\n\nPoftiți la masă!",
+      "collectedState": [
+        {
+          "id": "p1_mar1",
+          "opacity": "1",
+          "transform": "translate3d(88px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p1_mar2",
+          "opacity": "1",
+          "transform": "translate3d(280px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p1_mar3",
+          "opacity": "1",
+          "transform": "translate3d(136px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p1_mar4",
+          "opacity": "1",
+          "transform": "translate3d(184px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        },
+        {
+          "id": "p1_mar5",
+          "opacity": "1",
+          "transform": "translate3d(232px, 124px, 0px) rotate(0deg) scale(0.25, 0.25)"
+        }
+      ],
+      "afterTap": {
+        "hasPage3": false,
+        "page1": "Rezervă 3: scuturăm pomul",
+        "runButton": "go on"
+      }
+    }
+  ]
+}

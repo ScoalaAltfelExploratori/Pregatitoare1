@@ -18,7 +18,8 @@ def make_story(actor,script,b,label,repeat):
 
     orchard={'background':'Park.svg','focus':'mar3','build':[['mar3',0],['mar4',0],['mar5',0]],'texts':header('2. Mere pentru fiecare'),'sprites':[
         a('pom','Tree1',240,160,scale=.65,name='Mărul'),
-        a('masa','Table',240,274,scale=.6,name='Masa de picnic'),
+        a('masa','Table',240,274,
+          script('onclick',b('say','Poftiți la masă!'),b('gotopage',3)),scale=.6,name='Masa de picnic'),
         a('mar1','Apple',144,190,scale=.25,name='Măr pe masă 1'),
         a('mar2','Apple',336,190,scale=.25,name='Măr pe masă 2'),
         a('mar3','Apple',192,94,script('onclick',b('home'),b('down',4),b('playsnd','pop.mp3')),scale=.25,name='Mărul de pe ramura stângă'),
