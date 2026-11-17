@@ -1,6 +1,6 @@
 # Planul celor 10 lecții ScratchJr pentru copii de 6 și 7 ani
 
-**Revizie din 17 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, stil neutru și **60 de minute**. [Noul PDF concis](Plan_lectii_ScratchJr_60min.pdf) conține momentan **Lecția 1 - Programe în lanț**: trei misiuni, creație proprie, soluții scurte și două rezerve. Păstrăm câte o pagină de plan concis pentru fiecare lecție refăcută și adăugăm la final capturi reale cu programele fiecărui personaj, la fiecare etapă. Lecția 1 are acum 8 pagini în PDF: planul și ajutorul vizual. Descrierile de mai jos păstrează parcursul anterior de 50 de minute; lecțiile 2-10 urmează să fie revizuite.
+**Revizie din 17 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, stil neutru și **60 de minute**. [Noul PDF concis](Plan_lectii_ScratchJr_60min.pdf) conține momentan **Lecția 1 - Cursa cu ștafetă**: trei misiuni, creație proprie, soluții scurte și două rezerve. Păstrăm câte o pagină de plan concis pentru fiecare lecție refăcută și adăugăm la final capturi reale cu programele fiecărui personaj, la fiecare etapă. Lecția 1 are acum 13 pagini în PDF: planul și ajutorul vizual. Descrierile de mai jos păstrează parcursul anterior de 50 de minute; lecțiile 2-10 urmează să fie revizuite.
 
 Plan de lucru pentru 10 întâlniri de câte 50 de minute, cu o tabletă Lenovo K10 de 3 GB RAM pentru fiecare copil. Copiii au parcurs deja exercițiile Robo Explorator. Cursul începe direct în ScratchJr și folosește această experiență pentru a trece de la rezolvarea unor trasee la crearea de animații, scene interactive și povești.
 
@@ -24,7 +24,7 @@ Păstrăm aceeași tabletă pentru fiecare copil. Lecția 2 poate refolosi scena
 
 | Lecția | Resurse din aplicație | Pornire fără distribuirea fișierelor |
 | --- | --- | --- |
-| 1 | Rabbit, Ball, Park; sunt acceptate și alte două personaje | Proiect nou, două personaje, un fundal |
+| 1 | Rabbit, Dog, Ball, Park; Fence la puzzle | Proiect nou; alergători și minge programată, două pase vizibile la rezervă |
 | 2 | Rabbit, Ball și Park; mingea rămâne un reper fix | Refolosim scena sau creăm una nouă; programele sunt construite de copii |
 | 3 | Rabbit, Dog, Park; Butterfly la rezervă | Proiect nou, trucuri vizuale pornite prin atingere |
 | 4 | Rabbit, Dog, Butterfly și Park | Mesaje portocalii și albastre între personajele aceluiași proiect |
@@ -85,25 +85,17 @@ Exemplele sunt adaptate la personajele și blocurile cunoscute. Nu adăugăm cer
 
 Mesajele sunt introduse în lecția 4; lecția 6 introduce contactul, iar lecția 7 paginile. Adaptăm ritmul după proiectele construite de copii. Proiectul final reunește secvențe, repetiții, mesaje și pagini. Pentru un copil care are nevoie de sprijin, profesorul simplifică intrarea pe pagina de final și construiește gradual țintele.
 
-## Lecția 1 Ne întâlnim la joacă
+## Lecția 1 Cursa cu ștafetă - 60 de minute
 
-Materiale pentru probă: [proiectele și fișele](Lectia_01_ScratchJr/index.html), [ghidul profesorului](Lectia_01_ScratchJr/Ghid_profesor.md) și [cartonașele](Lectia_01_ScratchJr/Cartonase_Lectia_01.pdf). Profesorul și copiii lucrează direct în aplicația ScratchJr; pagina este numai un index al fișierelor.
+O singură cursă construită în etape: A transportă mingea și i-o pasează lui B; B așteaptă predarea, apoi continuă cu mingea până la sosire. Mesajele au un rol vizibil în desfășurarea cursei. Mingea rămâne pe scenă și are propriile programe.
 
-Pachetul lecției 1 include mini-puzzle-ul de revenire și provocarea dificilă. Copiii continuă propriul proiect funcțional.
+- Prima predare: A și mingea merg 4 pași; mingea continuă încă 2 până la B.
+- Cursa completă: portocaliul pornește B și mingea. La sosire, albastrul pornește sărbătorirea lui A.
+- Puzzle dificil: B și mingea ocolesc un gard cu aceleași trei mișcări.
+- Creație proprie: 10 minute pentru un alt traseu.
+- Rezerve: alt loc de schimb (+5 min); trei alergători și două pase (+10 min).
 
-**Ideea:** folosim experiența Robo într-un proiect creativ cu două personaje și programe separate.
-
-**Împreună:** profesorul rulează o scenă în care două personaje se apropie și sar. Copiii creează apoi scena din biblioteca aplicației; profesorul demonstrează selectarea personajului, conectarea blocurilor, schimbarea unei valori și pornirea la steag.
-
-1. **Construim întâlnirea:** copiii aleg direcții și distanțe pentru ambele personaje și adaugă o săritură.
-2. **Două blocuri până acasă:** după întâlnire și săritură, fiecare personaj revine la start; copilul adaugă exact o săgeată per program. **Mai greu, pentru toți:** aceeași revenire cu două săgeți cu numere diferite, pozitive. Fără blocul Acasă, Repeat sau intervenție în timpul rulării.
-3. **Inventăm finalul:** fiecare adaugă o acțiune proprie. Mai multe sărituri sau un mic dans înainte de întoarcere sunt exemple posibile.
-
-**Ritm:** 0-4 exemplu oficial adaptat; 4-11 scena; 11-20 misiunea 1; 20-23 pauză; 23-35 mini-puzzle și dificil; 35-45 creația mea; 45-50 explic și salvez.
-
-**Verificare:** copilul selectează personajul corect, ajustează mișcarea, explică direcția și distanța revenirii și inventează un final propriu. Fișierele SJR sunt numai exemple opționale pentru profesor. Copiii nu importă nimic. Numărul blocului de săritură indică înălțimea, nu numărul de sărituri.
-
-**Creație proprie:** Salutul inventat de mine. După apropiere, inventează un salut din două sau trei acțiuni albastre cunoscute. Poate fi un salt înalt urmat de unul mic sau o mișcare scurtă dus-întors. Alegi cine salută și în ce fel. Păstrează drumul de întoarcere la start. [Ghid actualizat](Lectia_01_ScratchJr/ghid-profesor.html).
+[Planul și toate programele cu capturi](Plan_lectii_ScratchJr_60min.pdf) · [Ghid online](Lectia_01_ScratchJr/index.html#profesor) · [Proiectele opționale pentru profesor](Lectia_01_ScratchJr/solutii_stafeta/README.md).
 
 ## Lecția 2 Provocările iepurașului
 

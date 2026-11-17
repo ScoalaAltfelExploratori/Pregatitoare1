@@ -1,0 +1,186 @@
+{
+  "examples": [
+    {
+      "key": "m1",
+      "title": "1. Prima predare",
+      "time": "7-19 minute",
+      "scene": "m1-final.jpg",
+      "target": "A duce mingea, apoi o pasează lui B. B rămâne pe loc.",
+      "change": "Alege A și construiește primul program. Alege Minge și construiește al doilea. Pornește cu steagul verde de sus.",
+      "checkpoint": "După predare: A s-a oprit; mingea este deasupra lui B.",
+      "programs": [
+        {
+          "character": "A - primul alergător",
+          "file": "m1-a.jpg",
+          "caption": "La steag: Dreapta 4."
+        },
+        {
+          "character": "Minge - alergare, apoi pasă",
+          "file": "m1-minge.jpg",
+          "caption": "Primii 4 pași sunt împreună cu A. Ultimii 2 sunt pasa; A rămâne pe loc."
+        },
+        {
+          "character": "B - așteaptă mingea",
+          "empty": true,
+          "caption": "B nu are încă niciun program."
+        }
+      ],
+      "check": "Resetează și rulează. A și mingea pornesc împreună; apoi numai mingea continuă. Nu uni cele două blocuri 4 și 2 într-un singur 6: aici vrem să vedem cele două etape."
+    },
+    {
+      "key": "m2",
+      "title": "2. Cursa completă",
+      "time": "19-32 minute",
+      "scene": "m2-final.jpg",
+      "target": "Mingea ajunge la B; B o duce până la sosire. A sărbătorește numai la final.",
+      "change": "Pornește din M1. Adaugă la minge mesajul portocaliu după pasă și un al doilea program. B primește portocaliu. A primește un program separat pentru albastru.",
+      "checkpoint": "La final: B și mingea sunt la SOSIRE. A a rămas la locul predării.",
+      "programs": [
+        {
+          "character": "A - două programe separate",
+          "file": "m2-a.jpg",
+          "caption": "La steag: aleargă 4 pași. La albastru: sărbătorește sosirea. Sari 2 este înălțimea unei sărituri, nu două sărituri."
+        },
+        {
+          "character": "B - pornește la portocaliu",
+          "file": "m2-b.jpg",
+          "caption": "B nu are steag. Mesajul portocaliu îi spune că a primit mingea."
+        }
+      ],
+      "ball": [
+        {
+          "character": "Minge - două programe separate",
+          "file": "m2-minge.jpg",
+          "caption": "Sus: 4 pași cu A, 2 pași de pasă, apoi portocaliu. Jos: la portocaliu, 6 pași cu B, apoi albastru."
+        }
+      ],
+      "check": "Mingea trimite portocaliu după Dreapta 2. B și mingea au aceeași deplasare de 6. Albastru este trimis abia la sosire."
+    },
+    {
+      "key": "m3",
+      "title": "3. Ocolim gardul",
+      "time": "35-47 minute / dificil",
+      "scene": "m3-final.jpg",
+      "target": "B și mingea ocolesc gardul pe sus și ajung la aceeași sosire.",
+      "change": "Pornește din M2. Adaugă Fence la 3 pași în dreapta lui B, pe linia cursei. Folosește exact 3 săgeți pentru ocol, la B și în al doilea program al mingii.",
+      "checkpoint": "La final: gardul rămâne în urmă, iar B și mingea sunt la sosire.",
+      "programs": [
+        {
+          "character": "A - două programe separate",
+          "file": "m2-a.jpg",
+          "caption": "La steag: aleargă 4 pași. La albastru: sărbătorește sosirea. Sari 2 este înălțimea unei sărituri, nu două sărituri."
+        },
+        {
+          "character": "B - trei mișcări pentru ocol",
+          "file": "m3-b.jpg",
+          "caption": "Un exemplu corect: Sus 3, Dreapta 6, Jos 3. Păstrează pornirea pe portocaliu."
+        }
+      ],
+      "ball": [
+        {
+          "character": "Minge - păstrează pasa; schimbă ocolul",
+          "file": "m3-minge.jpg",
+          "caption": "Primul program rămâne ca în M2. În al doilea, copiază exact ocolul lui B și păstrează albastru la sfârșit."
+        }
+      ],
+      "check": "Urmărește întreaga cursă: ambele trec pe deasupra gardului, mingea rămâne lângă B, iar A sărbătorește numai după sosire. Fără Așteaptă sau Acasă."
+    },
+    {
+      "key": "creatie",
+      "title": "4. Traseul echipei mele",
+      "time": "47-57 minute / exemplu",
+      "scene": "creatie-final.jpg",
+      "target": "Proiectează alt ocol, păstrând mingea lângă alergător și sosirea corectă.",
+      "change": "Pornește din M3. Poți muta gardul și schimba ocolul. Exemplul arată un ocol mai larg: 4 în sus și 4 în jos. Găsește și propria variantă.",
+      "checkpoint": "La final: B și mingea ajung tot la sosire, după un alt ocol.",
+      "programs": [
+        {
+          "character": "A - două programe separate",
+          "file": "m2-a.jpg",
+          "caption": "La steag: aleargă 4 pași. La albastru: sărbătorește sosirea. Sari 2 este înălțimea unei sărituri, nu două sărituri."
+        },
+        {
+          "character": "B - o variantă de traseu",
+          "file": "creatie-b.jpg",
+          "caption": "În exemplu: Sus 4, Dreapta 6, Jos 4. Cele două deplasări verticale se compensează."
+        }
+      ],
+      "ball": [
+        {
+          "character": "Minge - același ocol ca B",
+          "file": "creatie-minge.jpg",
+          "caption": "Păstrează pasa din primul program. În al doilea folosește același traseu ca B, apoi trimite albastru."
+        }
+      ],
+      "check": "Traseul trebuie să încapă în scenă și să ocolească gardul. Explică ce ai schimbat în ambele programe. Exemplul te ajută dacă te blochezi; poți inventa altă soluție."
+    },
+    {
+      "key": "r1",
+      "title": "R1. Alt loc de schimb",
+      "time": "+5 minute / rezervă",
+      "scene": "r1-final.jpg",
+      "target": "B primește mingea mai devreme, dar sosirea rămâne în același loc.",
+      "change": "Pornește din M2, fără gard. Resetează, apoi mută B cu 2 pași spre stânga. A va alerga mai puțin, B mai mult. Găsește numerele noi.",
+      "checkpoint": "La final: A s-a oprit mai devreme; B și mingea sunt la aceeași sosire.",
+      "programs": [
+        {
+          "character": "A - aleargă doar 2 pași",
+          "file": "r1-a.jpg",
+          "caption": "Schimbă Dreapta 4 în Dreapta 2. Programul de sărbătorire rămâne."
+        },
+        {
+          "character": "B - mai are 8 pași până la sosire",
+          "file": "r1-b.jpg",
+          "caption": "Păstrează portocaliu; schimbă Dreapta 6 în Dreapta 8."
+        }
+      ],
+      "ball": [
+        {
+          "character": "Minge - adaptează ambele etape",
+          "file": "r1-minge.jpg",
+          "caption": "Sus: 2 pași cu A, 2 de pasă, portocaliu. Jos: 8 pași cu B, albastru."
+        }
+      ],
+      "check": "Pasa trebuie să ajungă la noua poziție a lui B. Înainte de probă, verifică pozițiile inițiale. După mutarea personajului, noua poziție este locul său de plecare."
+    },
+    {
+      "key": "r2",
+      "title": "R2. Trei alergători",
+      "time": "+10 minute / rezervă dificilă",
+      "scene": "r2-final.jpg",
+      "target": "Două pase vizibile: A către B, apoi B către C. Mingea ajunge la sosire cu C.",
+      "change": "Pornește din M2. Adaugă C, încă un Rabbit, cu 4 pași în dreapta lui B. B aleargă 1 pas, apoi mingea parcurge singură încă 3 până la C. C mai are 2 pași până la sosire.",
+      "checkpoint": "La final: A și B au rămas la locurile de predare. Mingea este cu C la sosire.",
+      "programs": [
+        {
+          "character": "A - două programe separate",
+          "file": "m2-a.jpg",
+          "caption": "La steag: aleargă 4 pași. La albastru: sărbătorește sosirea. Sari 2 este înălțimea unei sărituri, nu două sărituri."
+        },
+        {
+          "character": "B - prima parte a etapei a doua",
+          "file": "r2-b.jpg",
+          "caption": "La portocaliu: Dreapta 1. Se oprește și pasează."
+        },
+        {
+          "character": "C - ultimul alergător",
+          "file": "r2-c.jpg",
+          "caption": "La verde: Dreapta 2. C așteaptă până când mingea ajunge la el."
+        }
+      ],
+      "ball": [
+        {
+          "character": "Minge - primele două programe",
+          "file": "r2-minge-12.jpg",
+          "caption": "Sus: 4 cu A, 2 de pasă, portocaliu. Jos: 1 cu B, 3 de pasă, verde."
+        },
+        {
+          "character": "Minge - al treilea program, separat",
+          "file": "r2-minge-3.jpg",
+          "caption": "La verde: Dreapta 2, apoi Trimite albastru. În editor poți pune acest program în dreapta celorlalte."
+        }
+      ],
+      "check": "B pornește la portocaliu; C la verde; A sărbătorește la albastru. În timpul fiecărei pase, următorul alergător stă pe loc. Păstrează o singură minge, mereu vizibilă."
+    }
+  ]
+}

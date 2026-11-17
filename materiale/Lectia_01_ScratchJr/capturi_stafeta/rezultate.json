@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-17",
+  "checks": [
+    {
+      "example": "m1",
+      "frames": 48,
+      "pass": true,
+      "final": {
+        "a": [
+          192.0,
+          264.0
+        ],
+        "b": [
+          264.0,
+          264.0
+        ],
+        "minge": [
+          264.0,
+          240.0
+        ]
+      }
+    },
+    {
+      "example": "m2",
+      "frames": 48,
+      "pass": true,
+      "final": {
+        "a": [
+          192.0,
+          264.0
+        ],
+        "b": [
+          408.0,
+          264.0
+        ],
+        "minge": [
+          408.0,
+          240.0
+        ]
+      }
+    },
+    {
+      "example": "m3",
+      "frames": 72,
+      "pass": true,
+      "final": {
+        "a": [
+          192.0,
+          264.0
+        ],
+        "b": [
+          408.0,
+          264.0
+        ],
+        "gard": [
+          336.0,
+          264.0
+        ],
+        "minge": [
+          408.0,
+          240.0
+        ]
+      }
+    },
+    {
+      "example": "creatie",
+      "frames": 72,
+      "pass": true,
+      "final": {
+        "a": [
+          192.0,
+          264.0
+        ],
+        "b": [
+          408.0,
+          264.0
+        ],
+        "gard": [
+          336.0,
+          264.0
+        ],
+        "minge": [
+          408.0,
+          240.0
+        ]
+      }
+    },
+    {
+      "example": "r1",
+      "frames": 48,
+      "pass": true,
+      "final": {
+        "a": [
+          144.0,
+          264.0
+        ],
+        "b": [
+          408.0,
+          264.0
+        ],
+        "minge": [
+          408.0,
+          240.0
+        ]
+      }
+    },
+    {
+      "example": "r2",
+      "frames": 72,
+      "pass": true,
+      "final": {
+        "a": [
+          192.0,
+          264.0
+        ],
+        "b": [
+          288.0,
+          264.0
+        ],
+        "c": [
+          408.0,
+          264.0
+        ],
+        "minge": [
+          408.0,
+          240.0
+        ]
+      }
+    },
+    {
+      "example": "r2_final",
+      "frames": 65,
+      "pass": true,
+      "final": {
+        "a": [
+          192.0,
+          264.0
+        ],
+        "b": [
+          288.0,
+          264.0
+        ],
+        "c": [
+          408.0,
+          264.0
+        ],
+        "minge": [
+          408.0,
+          240.0
+        ]
+      }
+    }
+  ],
+  "save_reopen": true,
+  "scope": "Complete native examples executed in ScratchJr Desktop Reborn browser. DOM samples and real screenshots. No Android/Windows app retest; audio output not measured."
+}

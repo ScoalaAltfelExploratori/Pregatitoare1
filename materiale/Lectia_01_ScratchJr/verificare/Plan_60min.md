@@ -1,21 +1,26 @@
-# Verificarea noului plan de 60 de minute
+# Verificare - Lecția 1: Cursa cu ștafetă
 
-17 noiembrie 2026. Lecția 1: **Programe în lanț**.
+17 noiembrie 2026. Șase exemple native importate prin interfața **Open** și pornite de la steagul din [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/). Sunt folosite Rabbit, Dog, Ball, Fence și Park din biblioteca aplicației.
 
-Soluțiile din plan au fost construite ca proiecte native de test, importate prin Open și pornite prin interfața aplicației publice ScratchJr Desktop Reborn. Testele au folosit Rabbit pentru A, Dog pentru B, Ball ca reper și încă un Rabbit pentru C. Copiii pot alege alte personaje din biblioteca aplicației; la clasă construiesc dintr-un proiect nou.
-
-| Probă | Rezultat observat |
+| Exemplu | Rezultat observat |
 | --- | --- |
-| M1 - Circuit închis | B execută deplasările și revine la start; A rămâne nemișcat. |
-| M2 - Pornire prin semnal | B rămâne la start cât A înaintează; apoi execută circuitul. A rămâne la 6 pași de start. |
-| M3 - Confirmare și revenire | A ajunge la capăt înainte să se miște B; așteaptă circuitul; ambii revin la start. A doua rulare, fără Reset Characters, se încheie la aceleași poziții. |
-| R1 - Alt drum | Varianta cu Sus 2 înainte de Dreapta 3 rulează și ambii revin la start. |
-| R2 - Trei etape | În timpul deplasării lui C, B este deja la start și A încă așteaptă confirmarea. La final, toate cele trei personaje sunt la start; repetarea fără resetare reușește. |
+| M1 - Prima predare | A și mingea se deplasează împreună 4 pași. A se oprește; mingea continuă 2 până la B. B rămâne pe loc. |
+| M2 - Cursa completă | B pornește numai după sosirea mingii. B și mingea rămân aliniate pe tot traseul de 6 pași. A sare doar după sosire. |
+| M3 - Ocolim gardul | B și mingea urcă 3, merg 6 la dreapta și coboară 3. Au aceeași poziție orizontală și un pas între ele pe verticală în timpul transportului. Ocolesc gardul și ajung împreună. |
+| Creație proprie - exemplu | Ocolul cu 4 în sus și 4 în jos păstrează sincronizarea și sosirea. |
+| R1 - Alt loc de schimb | B mutat 2 pași spre stânga primește pasa la noua poziție. Etapa sa crește la 8 pași; sosirea este aceeași. |
+| R2 - Trei alergători | După prima predare, B merge 1 pas cu mingea. B se oprește; mingea continuă singură 3 până la C. C așteaptă predarea și merge 2 cu mingea până la sosire. |
 
-[Observațiile DOM din timpul rulărilor](revizie_60min.json). Pozițiile au fost citite din elementele vizibile ale scenei, fără apelarea directă a motorului aplicației. Întoarcerea poate schimba orientarea unui personaj; ținta este poziția inițială.
+Pozițiile și vizibilitatea au fost citite din elementele DOM ale scenei la intervale de aproximativ 80-100 ms. Nu a fost apelat direct motorul aplicației. [Observații brute](../capturi_stafeta/verificare.json) · [Rezultate verificate](../capturi_stafeta/rezultate.json).
 
-Testul acoperă soluțiile complete și mecanismele propuse, nu reconstruirea tuturor blocurilor prin drag-and-drop. Nu reprezintă un test pe Android sau în aplicația Windows instalată; ieșirea audio nu a fost măsurată. Înaintea misiunilor se resetează pozițiile; M3 și R2 au fost reluate și fără resetare.
+`check_stafeta.py` verifică observațiile salvate: cele două faze ale primei predări, sincronizarea transportului, ocolirea gardului, a doua predare în R2, pozițiile finale și sărbătorirea numai după sosire. Mingea rămâne vizibilă în toate probele. R2 a fost reluat după aranjarea celui de-al treilea program în dreapta; resetarea, salvarea și redeschiderea au păstrat pozițiile de plecare.
 
-PDF-ul are 8 pagini A4: planul de 60 de minute, apoi pregătirea și șase exemple ilustrate cu capturi reale din ScratchJr. Toate paginile au fost randate și verificate vizual. Programele M1, M2, M3, R1 și R2 au fost rerulate pentru capturi; noul exemplu de creație proprie (Sus 3, Dreapta 4, Jos 3, Stânga 4) a fost rulat de două ori fără resetare. Plicurile din capturi au culorile vizibile. [Proba exemplului nou](../capturi_60min/verificare.json). Cele cinci teste existente de navigare au trecut.
+Capturile arată programele reale. În portul de browser, unele pictograme de plic au rămas inițial goale după import; reselectarea aceleiași culori în meniul blocului le-a afișat. Valorile culorilor și rezultatele rulării au rămas aceleași. Toate plicurile din PDF sunt vizibile.
 
-[Planul nou](../../Plan_lectii_ScratchJr_60min.pdf) · [Pagina lecției](../index.html).
+PDF-ul are 13 pagini A4, randate și verificate vizual: plan, pregătire, toate programele pentru misiuni, creație și rezerve. Programele neschimbate ale lui A refolosesc aceeași captură, indicată ca atare în sursele ajutorului vizual.
+
+**Limitele probei:** au fost executate soluțiile complete importate, nu reconstruite toate blocurile prin drag-and-drop. Nu a fost retestată aplicația Android sau Windows instalată; ieșirea audio nu a fost măsurată. Gardul nu produce coliziune automată: regula ocolului se verifică vizual. Înaintea fiecărei probe se resetează pozițiile.
+
+[Plan și programe ilustrate](../../Plan_lectii_ScratchJr_60min.pdf) · [Ghid online](../index.html#profesor) · [Proiecte native](../solutii_stafeta/README.md).
+
+[Arhiva testelor pentru „Programe în lanț”](Programe_in_lant_60min.md).

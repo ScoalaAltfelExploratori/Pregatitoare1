@@ -1,0 +1,1182 @@
+{
+  "lesson": 1,
+  "title": "Cursa cu ștafetă",
+  "duration": 60,
+  "projects": [
+    {
+      "key": "m1",
+      "file": "m1.sjr",
+      "name": "L01 Ștafeta - 1. Prima predare",
+      "sha256": "121522c35586edd7345a675d2bebbcd18b0d322fbcdb977097680b5b947c9742",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "focus": "a",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "Rabbit.svg",
+              "name": "A",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                96,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "asset": "Dog.svg",
+              "name": "B",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                264,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "minge",
+              "asset": "Ball.svg",
+              "name": "Minge",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                120,
+                240
+              ],
+              "scale": 0.22,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "1. Prima predare",
+              "position": [
+                240,
+                25
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "START",
+              "position": [
+                96,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "SOSIRE",
+              "position": [
+                408,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m2",
+      "file": "m2.sjr",
+      "name": "L01 Ștafeta - 2. Cursa completă",
+      "sha256": "b5183c98d8bf17b841a041930a1fce02ed2e61594198cf658e7d74087d399d5e",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "focus": "a",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "Rabbit.svg",
+              "name": "A",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                96,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "asset": "Dog.svg",
+              "name": "B",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                264,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 6
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge",
+              "asset": "Ball.svg",
+              "name": "Minge",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                120,
+                240
+              ],
+              "scale": 0.22,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "2. Cursa completă",
+              "position": [
+                240,
+                25
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "START",
+              "position": [
+                96,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "SOSIRE",
+              "position": [
+                408,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m3",
+      "file": "m3.sjr",
+      "name": "L01 Ștafeta - 3. Ocolim gardul",
+      "sha256": "a0fc8acf34842bebe36fe042f1317a6f41b7afc23f71063db2d8b00cc8158d89",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "focus": "a",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "Rabbit.svg",
+              "name": "A",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                96,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "asset": "Dog.svg",
+              "name": "B",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                264,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gard",
+              "asset": "Fence.svg",
+              "name": "Gard",
+              "size": [
+                219,
+                123
+              ],
+              "position": [
+                336,
+                264
+              ],
+              "scale": 0.27,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "minge",
+              "asset": "Ball.svg",
+              "name": "Minge",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                120,
+                240
+              ],
+              "scale": 0.22,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "3. Ocolim gardul",
+              "position": [
+                240,
+                25
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "START",
+              "position": [
+                96,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "SOSIRE",
+              "position": [
+                408,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "creatie",
+      "file": "creatie.sjr",
+      "name": "L01 Ștafeta - 4. Traseul echipei",
+      "sha256": "6dd3619780dbbb360cf6052fb4d61eb999ef3f1a3302dffe3641bfd655d8f71d",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "focus": "a",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "Rabbit.svg",
+              "name": "A",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                96,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "asset": "Dog.svg",
+              "name": "B",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                264,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gard",
+              "asset": "Fence.svg",
+              "name": "Gard",
+              "size": [
+                219,
+                123
+              ],
+              "position": [
+                336,
+                264
+              ],
+              "scale": 0.27,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "minge",
+              "asset": "Ball.svg",
+              "name": "Minge",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                120,
+                240
+              ],
+              "scale": 0.22,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "4. Traseul echipei",
+              "position": [
+                240,
+                25
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "START",
+              "position": [
+                96,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "SOSIRE",
+              "position": [
+                408,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "r1",
+      "file": "r1.sjr",
+      "name": "L01 Ștafeta - R1. Alt loc de schimb",
+      "sha256": "00619145de96105ac4c162cb7aa0643cdc904d4329cd05938160279b61c0f976",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "focus": "a",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "Rabbit.svg",
+              "name": "A",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                96,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "asset": "Dog.svg",
+              "name": "B",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge",
+              "asset": "Ball.svg",
+              "name": "Minge",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                120,
+                240
+              ],
+              "scale": 0.22,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "R1. Alt loc de schimb",
+              "position": [
+                240,
+                25
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "START",
+              "position": [
+                96,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "SOSIRE",
+              "position": [
+                408,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "r2",
+      "file": "r2.sjr",
+      "name": "L01 Ștafeta - R2. Trei alergători",
+      "sha256": "4d8fb714405f1ba007690b352cd661e2b4a0b85ab43f4f83bd10227964539fc4",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "focus": "a",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "Rabbit.svg",
+              "name": "A",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                96,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "hop",
+                      "value": 2
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "asset": "Dog.svg",
+              "name": "B",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                264,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "c",
+              "asset": "Rabbit.svg",
+              "name": "C",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                360,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "minge",
+              "asset": "Ball.svg",
+              "name": "Minge",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                120,
+                240
+              ],
+              "scale": 0.22,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 1
+                    },
+                    {
+                      "block": "forward",
+                      "value": 3
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "R2. Trei alergători",
+              "position": [
+                240,
+                25
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "START",
+              "position": [
+                96,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "SOSIRE",
+              "position": [
+                408,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "start",
+      "file": "start.sjr",
+      "name": "L01 Ștafeta - de la zero",
+      "sha256": "263a5905db8092c8c8c4897483f6e415240c308cea015308f922873ffc67364e",
+      "pages": [
+        {
+          "background": "Park.svg",
+          "focus": "a",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "Rabbit.svg",
+              "name": "A",
+              "size": [
+                217,
+                208
+              ],
+              "position": [
+                96,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "b",
+              "asset": "Dog.svg",
+              "name": "B",
+              "size": [
+                296,
+                213
+              ],
+              "position": [
+                264,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "minge",
+              "asset": "Ball.svg",
+              "name": "Minge",
+              "size": [
+                126,
+                129
+              ],
+              "position": [
+                120,
+                240
+              ],
+              "scale": 0.22,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": [
+            {
+              "text": "Ștafeta - construim împreună",
+              "position": [
+                240,
+                25
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "START",
+              "position": [
+                96,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "SOSIRE",
+              "position": [
+                408,
+                318
+              ],
+              "size": 16,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

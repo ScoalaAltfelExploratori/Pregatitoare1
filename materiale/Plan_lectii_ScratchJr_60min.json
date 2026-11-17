@@ -4,65 +4,65 @@
   "lessons": [
     {
       "number": 1,
-      "title": "Programe în lanț",
-      "subtitle": "Secvențe, mesaje și confirmarea unei acțiuni",
-      "goal": "Coordonăm două personaje cu programe separate. O acțiune pornește la primirea unui semnal, iar confirmarea vine abia după terminarea traseului.",
-      "setup": "Proiect nou, fundal simplu, două personaje din bibliotecă: A jos-stânga și B mai sus. Cu grila, lasă loc pentru A: 6 pași la dreapta; B: 3 la dreapta și 2 în sus. O minge fixă, fără cod, marchează colțul din dreapta-sus al traseului lui B. Numai biblioteca aplicației; fără importuri.",
+      "title": "Cursa cu ștafetă",
+      "subtitle": "Mișcare sincronizată, predare vizibilă și mesaje",
+      "goal": "Programăm o echipă care duce mingea la sosire. Următorul alergător pornește numai după ce primește mingea; aceasta se mișcă împreună cu el.",
+      "setup": "Park, Rabbit (A), Dog (B), Ball. A și B pe aceeași linie, la 7 pași distanță; mingea cu 1 pas la dreapta și 1 în sus față de A. Sosirea: 6 pași la dreapta lui B. Viteză normală pentru toți. Fence apare în M3.",
       "schedule": [
         {
           "minutes": "0-7",
-          "title": "Pregătire și predicție",
-          "text": "Construim scena. Demonstrezi selectarea personajului, conectarea blocurilor și schimbarea unui număr. Copiii prezic destinația înainte de rulare."
+          "title": "Povestea și pregătirea",
+          "text": "Echipa trebuie să ducă mingea la sosire, cu o pasă între alergători. Construim scena din bibliotecă. Copiii arată cine aleargă, cine așteaptă și unde se face schimbul."
         },
         {
-          "minutes": "7-17",
-          "title": "1. Circuit închis",
-          "text": "B trece pe la minge și revine la start, din exact patru săgeți: câte una în fiecare direcție. Copiii aleg ordinea și numerele. Verificăm traseul, nu doar poziția finală."
+          "minutes": "7-19",
+          "title": "1. Prima predare",
+          "text": "A și mingea merg 4 pași împreună. A se oprește; mingea continuă încă 2 pași până la B. B așteaptă. Copiii construiesc cele două programe și urmăresc pasa."
         },
         {
-          "minutes": "17-30",
-          "title": "2. Pornire prin semnal",
-          "text": "A merge 6 pași, apoi îl pornește pe B prin mesaj portocaliu. B execută circuitul. Înlocuim steagul lui B cu Primește portocaliu. B trebuie să aștepte până termină A."
+          "minutes": "19-32",
+          "title": "2. Cursa completă",
+          "text": "Mingea trimite portocaliu după pasă. B și mingea parcurg împreună încă 6 pași. La sosire, mingea trimite albastru; A sare și se aude Pop."
         },
         {
-          "minutes": "30-33",
+          "minutes": "32-35",
           "title": "Pauză activă",
-          "text": "Doi copii mimează trimiterea și primirea semnalului. Cine poate începe și cine așteaptă?"
+          "text": "Trei copii joacă rolurile A, B și minge. B poate porni doar după predare. Clasa spune când trebuie trimis fiecare semnal."
         },
         {
-          "minutes": "33-46",
-          "title": "3. Confirmare și revenire | dificil",
-          "text": "După circuit, B trimite albastru. Abia atunci A revine și se aude Pop. Exact 3 programe, 2 culori de mesaj; fără Așteaptă sau Acasă. La final ambii sunt la start. Rulăm de două ori, fără resetare."
+          "minutes": "35-47",
+          "title": "3. Ocolim gardul | dificil",
+          "text": "Punem un gard între B și sosire. Cu exact 3 săgeți, B și mingea îl ocolesc pe sus și termină pe linia inițială. Aceleași direcții, numere și ordine în ambele programe. Fără Așteaptă sau Acasă."
         },
         {
-          "minutes": "46-56",
-          "title": "Proiect propriu",
-          "text": "Copilul inventează alt traseu închis pentru B și mută mingea pe traseu. Păstrează ordinea A pleacă / B execută / A revine. Testează, explică o alegere și ajustează propriul cod."
+          "minutes": "47-57",
+          "title": "Traseul echipei mele",
+          "text": "Copilul schimbă ocolul ori poziția gardului și adaptează ambele programe. Păstrează predarea vizibilă și sosirea împreună. Explică o alegere și testează."
         },
         {
-          "minutes": "56-60",
+          "minutes": "57-60",
           "title": "Verificare și salvare",
-          "text": "Copilul arată cine trimite fiecare mesaj și când. Rulează de la steag, salvează în galerie și redeschide proiectul."
+          "text": "Reset Characters, o cursă completă, apoi resetare și salvare în galerie. Redeschidem proiectul. Copilul arată cine trimite semnalul de predare."
         }
       ],
       "solutions": [
-        "A, programul 1: La steag > Dreapta 6 > Trimite portocaliu.",
-        "B: La portocaliu > Dreapta 3 > Sus 2 > Stânga 3 > Jos 2 > Trimite albastru.",
-        "A, programul 2: La albastru > Stânga 6 > Pop. B nu mai are program La steag."
+        "A: Steag > Dreapta 4. Separat: Primește albastru > Sari 2 > Pop.",
+        "Minge: Steag > Dreapta 4 > Dreapta 2 > Trimite portocaliu. Separat: Primește portocaliu > traseul lui B > Trimite albastru.",
+        "B: Primește portocaliu > Dreapta 6 (M2). În M3, traseul pentru B și Minge: Sus 3 > Dreapta 6 > Jos 3."
       ],
-      "hint": "M1: B pornește la steag. M2: schimbă pornirea lui B; adaugă A1. M3: adaugă confirmarea și A2. Înaintea fiecărei misiuni: Stop și Reset Characters. Doar proba finală se repetă fără resetare. Indiciu: cine știe că traseul s-a terminat?",
+      "hint": "M1 nu are mesaje; B nu are cod. M2 adaugă continuarea cursei. M3 schimbă traseul în două locuri. Resetăm înaintea fiecărei probe. Gardul este o regulă de traseu verificată vizual, nu o barieră automată.",
       "backups": [
         {
-          "title": "R1. Aceeași țintă, alt drum | +5 min",
-          "text": "B atinge aceeași minge și revine, dar începe în sus. Soluție: Sus 2 > Dreapta 3 > Jos 2 > Stânga 3. Păstrează mesajele."
+          "title": "R1. Alt loc de schimb | +5 min",
+          "text": "Din M2, mutăm B cu 2 pași la stânga. A: Dreapta 2; mingea: 2 + 2 până la pasă; apoi B și mingea: Dreapta 8. Sosirea rămâne aceeași."
         },
         {
-          "title": "R2. Trei etape | +8 min",
-          "text": "Adaugă C (Rabbit), care se mișcă după B, înainte să revină A. B înlocuiește albastru cu verde. C: La verde > Dreapta 2 > Stânga 2 > Trimite albastru. A rămâne neschimbat."
+          "title": "R2. Trei alergători | +10 min",
+          "text": "Din M2, C așteaptă la 4 pași de B. B și mingea merg 1; mingea continuă singură 3 și trimite verde. C și mingea merg 2 la sosire; mingea trimite albastru."
         }
       ],
-      "teacher_note": "Toți încearcă provocarea dificilă și au timp de creație. După o încercare proprie, copiii pot consulta exemplele ilustrate. Rezervele sunt în plus față de cele 60 de minute.",
-      "student_reference": "Ajutor vizual: pregătire p. 2; M1 p. 3; M2 p. 4; M3 p. 5; creație proprie p. 6; R1 p. 7; R2 p. 8."
+      "teacher_note": "Toți încearcă puzzle-ul dificil și au 10 minute de creație. Rezervele sunt în plus față de oră. Copiii construiesc direct în aplicație; proiectele pregătite sunt opționale pentru profesor.",
+      "student_reference": "Ajutor: pregătire p. 2; M1 p. 3; M2 p. 4-5; M3 p. 6-7; creație p. 8-9; R1 p. 10-11; R2 p. 12-13."
     }
   ]
 }
