@@ -1,0 +1,67 @@
+{
+  "duration": 60,
+  "revision": "17 noiembrie 2026",
+  "lessons": [
+    {
+      "number": 1,
+      "title": "Programe în lanț",
+      "subtitle": "Secvențe, mesaje și confirmarea unei acțiuni",
+      "goal": "Coordonăm două personaje cu programe separate. O acțiune pornește la primirea unui semnal, iar confirmarea vine abia după terminarea traseului.",
+      "setup": "Proiect nou, fundal simplu, două personaje din bibliotecă: A jos-stânga și B mai sus. Cu grila, lasă loc pentru A: 6 pași la dreapta; B: 3 la dreapta și 2 în sus. O minge fixă, fără cod, marchează colțul din dreapta-sus al traseului lui B. Numai biblioteca aplicației; fără importuri.",
+      "schedule": [
+        {
+          "minutes": "0-7",
+          "title": "Pregătire și predicție",
+          "text": "Construim scena. Demonstrezi selectarea personajului, conectarea blocurilor și schimbarea unui număr. Copiii prezic destinația înainte de rulare."
+        },
+        {
+          "minutes": "7-17",
+          "title": "1. Circuit închis",
+          "text": "B trece pe la minge și revine la start, din exact patru săgeți: câte una în fiecare direcție. Copiii aleg ordinea și numerele. Verificăm traseul, nu doar poziția finală."
+        },
+        {
+          "minutes": "17-30",
+          "title": "2. Pornire prin semnal",
+          "text": "A merge 6 pași, apoi îl pornește pe B prin mesaj portocaliu. B execută circuitul. Înlocuim steagul lui B cu Primește portocaliu. B trebuie să aștepte până termină A."
+        },
+        {
+          "minutes": "30-33",
+          "title": "Pauză activă",
+          "text": "Doi copii mimează trimiterea și primirea semnalului. Cine poate începe și cine așteaptă?"
+        },
+        {
+          "minutes": "33-46",
+          "title": "3. Confirmare și revenire | dificil",
+          "text": "După circuit, B trimite albastru. Abia atunci A revine și se aude Pop. Exact 3 programe, 2 culori de mesaj; fără Așteaptă sau Acasă. La final ambii sunt la start. Rulăm de două ori, fără resetare."
+        },
+        {
+          "minutes": "46-56",
+          "title": "Proiect propriu",
+          "text": "Copilul inventează alt traseu închis pentru B și mută mingea pe traseu. Păstrează ordinea A pleacă / B execută / A revine. Testează, explică o alegere și ajustează propriul cod."
+        },
+        {
+          "minutes": "56-60",
+          "title": "Verificare și salvare",
+          "text": "Copilul arată cine trimite fiecare mesaj și când. Rulează de la steag, salvează în galerie și redeschide proiectul."
+        }
+      ],
+      "solutions": [
+        "A, programul 1: La steag > Dreapta 6 > Trimite portocaliu.",
+        "B: La portocaliu > Dreapta 3 > Sus 2 > Stânga 3 > Jos 2 > Trimite albastru.",
+        "A, programul 2: La albastru > Stânga 6 > Pop. B nu mai are program La steag."
+      ],
+      "hint": "M1: B pornește la steag. M2: schimbă pornirea lui B; adaugă A1. M3: adaugă confirmarea și A2. Înaintea fiecărei misiuni: Stop și Reset Characters. Doar proba finală se repetă fără resetare. Indiciu: cine știe că traseul s-a terminat?",
+      "backups": [
+        {
+          "title": "R1. Aceeași țintă, alt drum | +5 min",
+          "text": "B atinge aceeași minge și revine, dar începe în sus. Soluție: Sus 2 > Dreapta 3 > Jos 2 > Stânga 3. Păstrează mesajele."
+        },
+        {
+          "title": "R2. Trei etape | +8 min",
+          "text": "Adaugă C (Rabbit), care se mișcă după B, înainte să revină A. B înlocuiește albastru cu verde. C: La verde > Dreapta 2 > Stânga 2 > Trimite albastru. A rămâne neschimbat."
+        }
+      ],
+      "teacher_note": "Arată scopul și mecanismul; păstrează soluțiile pentru verificare. Toți încearcă provocarea dificilă și au timp de creație. Rezervele sunt în plus față de cele 60 de minute."
+    }
+  ]
+}

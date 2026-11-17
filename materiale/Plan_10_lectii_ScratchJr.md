@@ -1,5 +1,7 @@
 # Planul celor 10 lecții ScratchJr pentru copii de 6 și 7 ani
 
+**Revizie din 17 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, stil neutru și **60 de minute**. [Noul PDF concis](Plan_lectii_ScratchJr_60min.pdf) conține momentan **Lecția 1 - Programe în lanț**: trei misiuni, creație proprie, soluții scurte și două rezerve. Adăugăm câte o pagină pentru fiecare lecție refăcută. Descrierile de mai jos păstrează parcursul anterior de 50 de minute; lecțiile 2-10 urmează să fie revizuite.
+
 Plan de lucru pentru 10 întâlniri de câte 50 de minute, cu o tabletă Lenovo K10 de 3 GB RAM pentru fiecare copil. Copiii au parcurs deja exercițiile Robo Explorator. Cursul începe direct în ScratchJr și folosește această experiență pentru a trece de la rezolvarea unor trasee la crearea de animații, scene interactive și povești.
 
 Materialele și explicațiile pentru copii vor fi în română, cu pictograme și demonstrații scurte. Planul este o versiune de lucru, actualizată la 12 noiembrie 2026; ritmul se ajustează după primele două întâlniri.

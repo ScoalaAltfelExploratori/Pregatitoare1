@@ -1,0 +1,447 @@
+{
+  "date": "2026-11-17",
+  "scope": "Solutions for the concise 60-minute Lesson 1 plan",
+  "app": "ScratchJr Desktop Reborn public browser port",
+  "cases": [
+    {
+      "case": "M1",
+      "before": {
+        "heading": "M1 - Circuit închis",
+        "sprites": [
+          {
+            "id": "p1_a",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+          },
+          {
+            "id": "p1_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(0.3, 0.3)"
+          },
+          {
+            "id": "p1_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p1_Text1",
+            "opacity": "1",
+            "transform": "translate3d(145px, 12.5px, 0px)"
+          }
+        ]
+      },
+      "after": {
+        "heading": "M1 - Circuit închis",
+        "sprites": [
+          {
+            "id": "p1_a",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+          },
+          {
+            "id": "p1_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+          },
+          {
+            "id": "p1_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p1_Text1",
+            "opacity": "1",
+            "transform": "translate3d(145px, 12.5px, 0px)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "M2",
+      "before": {
+        "heading": "M2 - Pornire prin semnal",
+        "sprites": [
+          {
+            "id": "p2_a",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+          },
+          {
+            "id": "p2_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(0.3, 0.3)"
+          },
+          {
+            "id": "p2_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p2_Text1",
+            "opacity": "1",
+            "transform": "translate3d(111px, 12.5px, 0px)"
+          }
+        ]
+      },
+      "during": {
+        "heading": "M2 - Pornire prin semnal",
+        "sprites": [
+          {
+            "id": "p2_a",
+            "opacity": "1",
+            "transform": "translate3d(28px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+          },
+          {
+            "id": "p2_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(0.3, 0.3)"
+          },
+          {
+            "id": "p2_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p2_Text1",
+            "opacity": "1",
+            "transform": "translate3d(111px, 12.5px, 0px)"
+          }
+        ]
+      },
+      "after": {
+        "heading": "M2 - Pornire prin semnal",
+        "sprites": [
+          {
+            "id": "p2_a",
+            "opacity": "1",
+            "transform": "translate3d(132px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+          },
+          {
+            "id": "p2_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+          },
+          {
+            "id": "p2_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p2_Text1",
+            "opacity": "1",
+            "transform": "translate3d(111px, 12.5px, 0px)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "M3",
+      "before": {
+        "heading": "M3 - Confirmare și revenire",
+        "sprites": [
+          {
+            "id": "p3_a",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+          },
+          {
+            "id": "p3_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(0.3, 0.3)"
+          },
+          {
+            "id": "p3_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p3_Text1",
+            "opacity": "1",
+            "transform": "translate3d(97.5px, 12.5px, 0px)"
+          }
+        ]
+      },
+      "aFirst": {
+        "heading": "M3 - Confirmare și revenire",
+        "sprites": [
+          {
+            "id": "p3_a",
+            "opacity": "1",
+            "transform": "translate3d(24px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+          },
+          {
+            "id": "p3_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(0.3, 0.3)"
+          },
+          {
+            "id": "p3_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p3_Text1",
+            "opacity": "1",
+            "transform": "translate3d(97.5px, 12.5px, 0px)"
+          }
+        ]
+      },
+      "bSecond": {
+        "heading": "M3 - Confirmare și revenire",
+        "sprites": [
+          {
+            "id": "p3_a",
+            "opacity": "1",
+            "transform": "translate3d(132px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+          },
+          {
+            "id": "p3_b",
+            "opacity": "1",
+            "transform": "translate3d(164px, 50px, 0px) rotate(0deg) scale(0.3, 0.3)"
+          },
+          {
+            "id": "p3_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p3_Text1",
+            "opacity": "1",
+            "transform": "translate3d(97.5px, 12.5px, 0px)"
+          }
+        ]
+      },
+      "after": {
+        "heading": "M3 - Confirmare și revenire",
+        "sprites": [
+          {
+            "id": "p3_a",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.42, 0.42)"
+          },
+          {
+            "id": "p3_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+          },
+          {
+            "id": "p3_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p3_Text1",
+            "opacity": "1",
+            "transform": "translate3d(97.5px, 12.5px, 0px)"
+          }
+        ]
+      },
+      "secondRun": {
+        "heading": "M3 - Confirmare și revenire",
+        "sprites": [
+          {
+            "id": "p3_a",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.42, 0.42)"
+          },
+          {
+            "id": "p3_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+          },
+          {
+            "id": "p3_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p3_Text1",
+            "opacity": "1",
+            "transform": "translate3d(97.5px, 12.5px, 0px)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "R2",
+      "before": {
+        "heading": "R2 - Trei etape",
+        "sprites": [
+          {
+            "id": "p4_a",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+          },
+          {
+            "id": "p4_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(0.3, 0.3)"
+          },
+          {
+            "id": "p4_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p4_c",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 16px, 0px) rotate(0deg) scale(0.3, 0.3)"
+          },
+          {
+            "id": "p4_Text1",
+            "opacity": "1",
+            "transform": "translate3d(164.5px, 12.5px, 0px)"
+          }
+        ]
+      },
+      "cStage": {
+        "heading": "R2 - Trei etape",
+        "sprites": [
+          {
+            "id": "p4_a",
+            "opacity": "1",
+            "transform": "translate3d(132px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+          },
+          {
+            "id": "p4_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+          },
+          {
+            "id": "p4_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p4_c",
+            "opacity": "1",
+            "transform": "translate3d(-8px, 16px, 0px) rotate(0deg) scale(0.3, 0.3)"
+          },
+          {
+            "id": "p4_Text1",
+            "opacity": "1",
+            "transform": "translate3d(164.5px, 12.5px, 0px)"
+          }
+        ]
+      },
+      "after": {
+        "heading": "R2 - Trei etape",
+        "sprites": [
+          {
+            "id": "p4_a",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.42, 0.42)"
+          },
+          {
+            "id": "p4_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+          },
+          {
+            "id": "p4_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p4_c",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 16px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+          },
+          {
+            "id": "p4_Text1",
+            "opacity": "1",
+            "transform": "translate3d(164.5px, 12.5px, 0px)"
+          }
+        ]
+      },
+      "secondRun": {
+        "heading": "R2 - Trei etape",
+        "sprites": [
+          {
+            "id": "p4_a",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.42, 0.42)"
+          },
+          {
+            "id": "p4_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+          },
+          {
+            "id": "p4_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p4_c",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 16px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+          },
+          {
+            "id": "p4_Text1",
+            "opacity": "1",
+            "transform": "translate3d(164.5px, 12.5px, 0px)"
+          }
+        ]
+      }
+    },
+    {
+      "case": "R1",
+      "before": {
+        "heading": "R1 - Alt drum",
+        "sprites": [
+          {
+            "id": "p1_a",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+          },
+          {
+            "id": "p1_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(0.3, 0.3)"
+          },
+          {
+            "id": "p1_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p1_Text1",
+            "opacity": "1",
+            "transform": "translate3d(170.5px, 12.5px, 0px)"
+          }
+        ]
+      },
+      "after": {
+        "heading": "R1 - Alt drum",
+        "sprites": [
+          {
+            "id": "p1_a",
+            "opacity": "1",
+            "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.42, 0.42)"
+          },
+          {
+            "id": "p1_b",
+            "opacity": "1",
+            "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+          },
+          {
+            "id": "p1_tinta",
+            "opacity": "1",
+            "transform": "translate3d(249px, 56px, 0px) rotate(0deg) scale(0.25, 0.25)"
+          },
+          {
+            "id": "p1_Text1",
+            "opacity": "1",
+            "transform": "translate3d(170.5px, 12.5px, 0px)"
+          }
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "Tests used complete private QA examples, not an unfinished student starter.",
+    "The child builds from a new project; no SJR files are distributed for this revision.",
+    "No installed Windows or Android test; audio was not measured."
+  ]
+}
