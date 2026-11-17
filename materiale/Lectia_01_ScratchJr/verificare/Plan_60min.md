@@ -16,6 +16,6 @@ Soluțiile din plan au fost construite ca proiecte native de test, importate pri
 
 Testul acoperă soluțiile complete și mecanismele propuse, nu reconstruirea tuturor blocurilor prin drag-and-drop. Nu reprezintă un test pe Android sau în aplicația Windows instalată; ieșirea audio nu a fost măsurată. Înaintea misiunilor se resetează pozițiile; M3 și R2 au fost reluate și fără resetare.
 
-PDF-ul are o singură pagină A4, cu exact 60 de minute, soluții scurte și două rezerve suplimentare. Pagina a fost randată și verificată vizual. Cele cinci teste existente de navigare au trecut.
+PDF-ul are 8 pagini A4: planul de 60 de minute, apoi pregătirea și șase exemple ilustrate cu capturi reale din ScratchJr. Toate paginile au fost randate și verificate vizual. Programele M1, M2, M3, R1 și R2 au fost rerulate pentru capturi; noul exemplu de creație proprie (Sus 3, Dreapta 4, Jos 3, Stânga 4) a fost rulat de două ori fără resetare. Plicurile din capturi au culorile vizibile. [Proba exemplului nou](../capturi_60min/verificare.json). Cele cinci teste existente de navigare au trecut.
 
 [Planul nou](../../Plan_lectii_ScratchJr_60min.pdf) · [Pagina lecției](../index.html).

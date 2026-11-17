@@ -1,4 +1,4 @@
-"""Build one concise A4 page per revised ScratchJr lesson."""
+"""Build concise lesson plans followed by illustrated student references."""
 from pathlib import Path
 import json
 import shutil
@@ -44,6 +44,8 @@ for i, lesson in enumerate(DATA['lessons']):
     story.append(p('DOUĂ PROVOCĂRI DE REZERVĂ', 'head'))
     for item in lesson['backups']: story.append(p('<b>'+escape(item['title'])+'</b> '+escape(item['text'])))
     story.append(p(escape(lesson['teacher_note']), 'small'))
+    if lesson.get('student_reference'):
+        story.append(p(escape(lesson['student_reference']), 'small'))
 
 def decorate(c, doc):
     lesson=DATA['lessons'][min(doc.page-1,len(DATA['lessons'])-1)]
@@ -60,5 +62,8 @@ SimpleDocTemplate(str(OUT),pagesize=A4,leftMargin=34,rightMargin=34,topMargin=45
 reader=PdfReader(str(OUT))
 assert len(reader.pages)==len(DATA['lessons']), f'Expected one page per lesson; got {len(reader.pages)}'
 assert all(page.extract_text().strip() for page in reader.pages)
+from render_snapshot_guide import append_visual_pages
+total=append_visual_pages(OUT)
+assert len(PdfReader(str(OUT)).pages)==total
 shutil.copyfile(OUT,ROOT/OUT.name)
-print(f'Created {len(reader.pages)} page(s): {OUT}')
+print(f'Created {len(reader.pages)} plan page(s), {total} total pages: {OUT}')

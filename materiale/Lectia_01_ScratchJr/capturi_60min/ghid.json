@@ -1,0 +1,141 @@
+{
+  "examples": [
+    {
+      "key": "m1",
+      "title": "1. Circuit închis",
+      "time": "7-17 minute",
+      "scene": "m1-final.jpg",
+      "target": "B trece pe la minge și revine la start. A rămâne pe loc.",
+      "change": "Alege B în lista din stânga. Construiește un singur program, pornit de steag.",
+      "checkpoint": "În captură: B a terminat și este din nou la locul de plecare.",
+      "programs": [
+        {
+          "character": "A - iepurașul",
+          "empty": true,
+          "caption": "Nu adăuga blocuri la A în această misiune."
+        },
+        {
+          "character": "B - câinele",
+          "file": "m1-b.jpg",
+          "caption": "La steag: Dreapta 3, Sus 2, Stânga 3, Jos 2."
+        }
+      ],
+      "check": "Apasă steagul de sus. B merge pe toate cele patru laturi și revine la start. Mingea rămâne fără program."
+    },
+    {
+      "key": "m2",
+      "title": "2. Pornire prin semnal",
+      "time": "17-30 minute",
+      "scene": "m2-final.jpg",
+      "target": "A merge 6 pași. Abia apoi B pornește circuitul.",
+      "change": "Pornește din M1. La B, înlocuiește steagul cu Primește portocaliu. La A, construiește programul de mai jos.",
+      "checkpoint": "La final: A rămâne mai la dreapta; B revine la start.",
+      "programs": [
+        {
+          "character": "A - iepurașul",
+          "file": "m2-a.jpg",
+          "caption": "Trimite portocaliu numai după cei 6 pași."
+        },
+        {
+          "character": "B - câinele",
+          "file": "m2-b.jpg",
+          "caption": "Primește portocaliu, apoi execută cele patru deplasări. B nu mai are steag."
+        }
+      ],
+      "check": "Înainte de probă: Stop și Reset Characters. Apasă steagul de sus. Dacă B pleacă imediat, verifică blocul de pornire al lui B."
+    },
+    {
+      "key": "m3",
+      "title": "3. Confirmare și revenire",
+      "time": "33-46 minute / dificil",
+      "scene": "m3-in-lucru.jpg",
+      "target": "A pleacă, B execută circuitul, A revine. La final ambii sunt la start.",
+      "change": "Pornește din M2. B adaugă Trimite albastru la final. A primește un al doilea program, separat de primul.",
+      "checkpoint": "În timpul rulării: B execută circuitul, iar A așteaptă mesajul albastru.",
+      "programs": [
+        {
+          "character": "A - două programe separate",
+          "file": "m3-a.jpg",
+          "caption": "Sus: pleacă și trimite portocaliu. Jos: primește albastru, revine 6 pași și cântă Pop."
+        },
+        {
+          "character": "B - un singur program",
+          "file": "m3-b.jpg",
+          "caption": "Trimite albastru abia după Jos 2, când circuitul este terminat."
+        }
+      ],
+      "check": "Resetează înainte de prima probă. Rulează până la final, apoi apasă din nou steagul fără resetare. Trebuie să obții aceleași poziții. Mingea nu are cod."
+    },
+    {
+      "key": "creatie",
+      "title": "4. Circuitul meu",
+      "time": "46-56 minute / un exemplu",
+      "scene": "creatie-final.jpg",
+      "target": "Inventează alt circuit, păstrând ordinea semnalelor și întoarcerea la start.",
+      "change": "Exemplu pornit din M3: B începe în sus, cu laturi de 3 și 4 pași. Mută mingea la 4 pași la dreapta și 3 în sus față de startul lui B.",
+      "checkpoint": "La final: ambii revin la start; mingea este în noul colț.",
+      "programs": [
+        {
+          "character": "A - păstrează ambele programe",
+          "file": "creatie-a.jpg",
+          "caption": "Aceeași plecare, același mesaj și aceeași revenire ca în M3."
+        },
+        {
+          "character": "B - circuitul acestui exemplu",
+          "file": "creatie-b.jpg",
+          "caption": "Sus 3, Dreapta 4, Jos 3, Stânga 4; apoi Trimite albastru."
+        }
+      ],
+      "check": "Poți alege alte numere și alt traseu care încape în scenă. Verifică: B trece pe la țintă, se întoarce, apoi îl cheamă pe A înapoi. Nu trebuie să copiezi acest exemplu."
+    },
+    {
+      "key": "r1",
+      "title": "R1. Aceeași țintă, alt drum",
+      "time": "+5 minute / rezervă",
+      "scene": "r1-final.jpg",
+      "target": "B ajunge la aceeași minge și revine, dar prima mișcare este în sus.",
+      "change": "Pornește din M3. Schimbă ordinea săgeților lui B. Mingea rămâne la 3 pași la dreapta și 2 în sus față de B.",
+      "checkpoint": "La final: A și B sunt la start; ținta nu s-a mutat.",
+      "programs": [
+        {
+          "character": "A - păstrează ambele programe",
+          "file": "r1-a.jpg",
+          "caption": "A pornește circuitul și așteaptă confirmarea albastră."
+        },
+        {
+          "character": "B - ordinea nouă",
+          "file": "r1-b.jpg",
+          "caption": "Sus 2, Dreapta 3, Jos 2, Stânga 3; apoi Trimite albastru."
+        }
+      ],
+      "check": "Urmărește traseul, nu doar finalul. B trebuie să urce mai întâi, să atingă ținta și să revină. Mingea rămâne fără program."
+    },
+    {
+      "key": "r2",
+      "title": "R2. Trei etape",
+      "time": "+8 minute / rezervă",
+      "scene": "r2-final.jpg",
+      "target": "A pleacă, B face circuitul, C se mișcă, apoi A revine.",
+      "change": "Pornește din M3. Adaugă C: încă un Rabbit, mai sus, cu loc pentru 2 pași la dreapta. B trimite acum verde; C trimite albastru.",
+      "checkpoint": "La final: toate cele trei personaje sunt la start.",
+      "programs": [
+        {
+          "character": "A - cele două programe rămân",
+          "file": "r2-a.jpg",
+          "caption": "A așteaptă în continuare albastru."
+        },
+        {
+          "character": "B - schimbă ultimul mesaj",
+          "file": "r2-b.jpg",
+          "caption": "Ultimul plic este VERDE, nu albastru."
+        },
+        {
+          "character": "C - iepurașul de sus",
+          "file": "r2-c.jpg",
+          "caption": "La verde: Dreapta 2, Stânga 2, Trimite albastru."
+        }
+      ],
+      "check": "A revine numai după întoarcerea lui C. B și C nu au programe La steag. Mingea nu are cod."
+    }
+  ]
+}

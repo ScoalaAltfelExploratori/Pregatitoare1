@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-17",
+  "source": "Actual ScratchJr Desktop Reborn browser screenshots",
+  "creationExample": {
+    "before": [
+      {
+        "id": "p1_a",
+        "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(0.42, 0.42)"
+      },
+      {
+        "id": "p1_b",
+        "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(0.3, 0.3)"
+      },
+      {
+        "id": "p1_tinta",
+        "transform": "translate3d(273px, 32px, 0px) rotate(0deg) scale(0.25, 0.25)"
+      },
+      {
+        "id": "p1_Text1",
+        "transform": "translate3d(113.5px, 12.5px, 0px)"
+      }
+    ],
+    "after": [
+      {
+        "id": "p1_a",
+        "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.42, 0.42)"
+      },
+      {
+        "id": "p1_b",
+        "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+      },
+      {
+        "id": "p1_tinta",
+        "transform": "translate3d(273px, 32px, 0px) rotate(0deg) scale(0.25, 0.25)"
+      },
+      {
+        "id": "p1_Text1",
+        "transform": "translate3d(113.5px, 12.5px, 0px)"
+      }
+    ],
+    "replay": [
+      {
+        "id": "p1_a",
+        "transform": "translate3d(-12px, 136px, 0px) rotate(0deg) scale(-0.42, 0.42)"
+      },
+      {
+        "id": "p1_b",
+        "transform": "translate3d(92px, 62px, 0px) rotate(0deg) scale(-0.3, 0.3)"
+      },
+      {
+        "id": "p1_tinta",
+        "transform": "translate3d(273px, 32px, 0px) rotate(0deg) scale(0.25, 0.25)"
+      },
+      {
+        "id": "p1_Text1",
+        "transform": "translate3d(113.5px, 12.5px, 0px)"
+      }
+    ]
+  },
+  "notes": [
+    "Screenshots use complete programs; numeric values and message colours were checked visually.",
+    "Existing M1, M2, M3, R1 and R2 examples were rerun while capturing.",
+    "No Android or installed Windows retest."
+  ]
+}
