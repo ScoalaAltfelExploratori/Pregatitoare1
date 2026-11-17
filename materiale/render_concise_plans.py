@@ -9,7 +9,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak
-from pypdf import PdfReader
+from pypdf import PdfReader, PdfWriter
 
 ROOT = Path(__file__).resolve().parent
 DATA = json.loads((ROOT / 'Plan_lectii_ScratchJr_60min.json').read_text(encoding='utf-8'))
@@ -27,10 +27,9 @@ styles = {
     'small': ParagraphStyle('small', fontName='Body', fontSize=8.7, leading=11.4, textColor=MUTED, spaceAfter=4),
 }
 def p(text, style='body'): return Paragraph(text, styles[style])
-story=[]
-for i, lesson in enumerate(DATA['lessons']):
+def plan_story(lesson):
+    story=[]
     assert sum(int(x['minutes'].split('-')[1])-int(x['minutes'].split('-')[0]) for x in lesson['schedule'])==60
-    if i: story.append(PageBreak())
     story += [p(escape(lesson['title']), 'title'), p(escape(lesson['subtitle']), 'sub'),
               p('<b>Obiectiv.</b> '+escape(lesson['goal'])), p('<b>Scena.</b> '+escape(lesson['setup']))]
     rows=[]
@@ -46,24 +45,46 @@ for i, lesson in enumerate(DATA['lessons']):
     story.append(p(escape(lesson['teacher_note']), 'small'))
     if lesson.get('student_reference'):
         story.append(p(escape(lesson['student_reference']), 'small'))
+    return story
 
-def decorate(c, doc):
-    lesson=DATA['lessons'][min(doc.page-1,len(DATA['lessons'])-1)]
+def decorate(c, doc, lesson, number):
     c.saveState();c.setFont('Bold',8);c.setFillColor(TEAL)
     c.drawString(34,A4[1]-29,f'SCRATCHJR / LECȚIA {lesson["number"]:02} / PLAN CONCIS')
     c.drawRightString(A4[0]-34,A4[1]-29,'60 MINUTE / 6-7 ANI')
     c.setStrokeColor(colors.HexColor('#d9e2e8'));c.line(34,31,A4[0]-34,31)
     c.setFont('Body',7.5);c.setFillColor(MUTED)
     c.drawString(34,19,'Biblioteca ScratchJr / Construim pe tabletă / '+DATA['revision'])
-    c.drawRightString(A4[0]-34,19,str(doc.page));c.restoreState()
+    c.drawRightString(A4[0]-34,19,str(number));c.restoreState()
 
 OUT.parent.mkdir(parents=True,exist_ok=True)
-SimpleDocTemplate(str(OUT),pagesize=A4,leftMargin=34,rightMargin=34,topMargin=45,bottomMargin=42,title='ScratchJr - Planuri concise de 60 de minute',author='Școala altfel').build(story,onFirstPage=decorate,onLaterPages=decorate)
-reader=PdfReader(str(OUT))
-assert len(reader.pages)==len(DATA['lessons']), f'Expected one page per lesson; got {len(reader.pages)}'
-assert all(page.extract_text().strip() for page in reader.pages)
-from render_snapshot_guide import append_visual_pages
-total=append_visual_pages(OUT)
-assert len(PdfReader(str(OUT)).pages)==total
+TEMP=ROOT.parent/'tmp/pdfs/concise';TEMP.mkdir(parents=True,exist_ok=True)
+from render_snapshot_guide import render_appendix as relay_appendix
+from render_museum_guide import render_appendix as museum_appendix
+
+def append_lesson(writer,lesson,start):
+    num=lesson['number'];plan=TEMP/f'plan-{num}-{start}.pdf';appendix=TEMP/f'visual-{num}-{start}.pdf'
+    decorate_page=lambda c,doc:decorate(c,doc,lesson,start)
+    SimpleDocTemplate(str(plan),pagesize=A4,leftMargin=34,rightMargin=34,topMargin=45,bottomMargin=42,title=lesson['title'],author='Școala altfel').build(plan_story(lesson),onFirstPage=decorate_page,onLaterPages=decorate_page)
+    reader=PdfReader(str(plan));assert len(reader.pages)==1,(num,len(reader.pages))
+    writer.append(reader)
+    render={1:relay_appendix,2:museum_appendix}[num]
+    outline=render(appendix,start+1)
+    writer.append(PdfReader(str(appendix)))
+    writer.add_outline_item(f'Lecția {num} - {lesson["title"]} - plan',start-1)
+    for title,page in outline:writer.add_outline_item(title,page)
+
+writer=PdfWriter()
+for lesson in DATA['lessons']:append_lesson(writer,lesson,len(writer.pages)+1)
+writer.add_metadata({'/Title':'ScratchJr - Planuri de 60 de minute și programe ilustrate','/Author':'Școala altfel'})
+with OUT.open('wb') as stream:writer.write(stream)
+assert len(PdfReader(str(OUT)).pages)==13*len(DATA['lessons'])
 shutil.copyfile(OUT,ROOT/OUT.name)
-print(f'Created {len(reader.pages)} plan page(s), {total} total pages: {OUT}')
+for lesson in DATA['lessons']:
+    if lesson['number']!=2:continue
+    single=PdfWriter();append_lesson(single,lesson,1)
+    single.add_metadata({'/Title':'Lecția 2 - Muzeul după închidere - Plan și programe ilustrate','/Author':'Școala altfel'})
+    dest=OUT.parent/'Ghid_profesor_Lectia_02.pdf'
+    with dest.open('wb') as stream:single.write(stream)
+    assert len(PdfReader(str(dest)).pages)==13
+    shutil.copyfile(dest,ROOT/'Lectia_02_ScratchJr'/dest.name)
+print(f'Created course PDF ({len(writer.pages)} pages) and Lesson 2 PDF (13 pages).')

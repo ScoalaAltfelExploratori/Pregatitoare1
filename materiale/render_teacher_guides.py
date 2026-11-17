@@ -46,7 +46,7 @@ def blocks(source):
         i += 1
 
 
-def teacher_html(folder):
+def teacher_html(folder, duration=50):
     parts = list(blocks((folder / 'Ghid_profesor.md').read_text(encoding='utf-8-sig')))
     title = next(v for k, v in parts if k == 'h1')
     n = int(folder.name.split('_')[1])
@@ -74,7 +74,7 @@ def teacher_html(folder):
 <link rel="stylesheet" href="../../site-navigation.css"><link rel="stylesheet" href="../teacher-guides.css"></head>
 <body><a class="skip-link" href="#continut">Sari la ghid</a>
 <div class="site-navigation"><nav aria-label="Secțiunile siteului"><a class="site-home" href="../../index.html">Școala altfel</a><a href="../../scratchjr/index.html">ScratchJr · 10 lecții</a><a href="../../robo/index.html">Robo · exerciții</a></nav></div>
-<main id="continut"><p class="eyebrow">Ghid pentru profesor · 50 de minute · 6–7 ani</p>
+<main id="continut"><p class="eyebrow">Ghid pentru profesor · {duration} de minute · 6–7 ani</p>
 <nav class="guide-actions" aria-label="Materialele lecției"><a href="index.html">← Lecția {n}</a><a href="{pdf}">Descarcă ghidul PDF</a><a href="Ghid_profesor.md">Text editabil</a></nav>
 <details class="guide-toc"><summary>Cuprinsul ghidului</summary><ol>{''.join(f'<li><a href="#{i}">{html.escape(t)}</a></li>' for i,t in toc)}</ol></details>
 {''.join(rendered)}

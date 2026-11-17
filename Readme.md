@@ -116,13 +116,13 @@ npm test
 
 ## Cursul ScratchJr: lecția 1
 
-[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește numai resurse incluse în aplicație, fără fișiere de distribuit pe tabletele copiilor. Lecția 1 folosește iepurele, mingea și parcul. Misiunea 2 este mini-puzzle-ul „Două blocuri până acasă”, cu o variantă dificilă.
+[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește numai resurse incluse în aplicație, fără fișiere de distribuit pe tabletele copiilor. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1 și 2 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
 
 [README-ul lecției 1](materiale/Lectia_01_ScratchJr/README.md) conține instalarea pe Lenovo, construirea scenei și testarea opțională în browser. [Raportul de verificare](materiale/Lectia_01_ScratchJr/verificare/README.md) separă cele șapte proiecte finale testate în browser de probele Android și Desktop anterioare.
 
 ## Cursul ScratchJr: lecția 2
 
-[Provocările iepurașului](materiale/Lectia_02_ScratchJr/README.md) introduce Repeat prin trei misiuni de construire, inclusiv expediția dificilă dus-întors. Pachetul conține ghidul de 50 de minute, cartonașe, soluții și [testele în browser](materiale/Lectia_02_ScratchJr/verificare/README.md). Copiii folosesc numai resursele incluse în aplicație, fără importuri.
+[Muzeul după închidere](materiale/Lectia_02_ScratchJr/index.html): 60 de minute, alte personaje din bibliotecă, animație continuă, oprire la inspecție și reluare. Include puzzle greu, zece minute de creație și două rezerve. [PDF cu capturi](materiale/Lectia_02_ScratchJr/Ghid_profesor_Lectia_02.pdf), [ghid](materiale/Lectia_02_ScratchJr/Ghid_profesor.md) și [testele în browser](materiale/Lectia_02_ScratchJr/verificare/Muzeul_60min.md).
 
 ## Cursul ScratchJr: lecția 3
 

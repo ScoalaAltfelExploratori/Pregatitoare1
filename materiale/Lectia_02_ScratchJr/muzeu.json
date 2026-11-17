@@ -1,0 +1,2289 @@
+{
+  "lesson": 2,
+  "title": "Muzeul după închidere",
+  "duration": 60,
+  "projects": [
+    {
+      "key": "m1",
+      "file": "m1.sjr",
+      "name": "L02 Muzeul - 1. Exponatul prinde viață",
+      "sha256": "83774618b0bcf72420d013726d77c65270a9800f9c9591f78c4779eaa156905d",
+      "pages": [
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": [
+            {
+              "text": "1. Exponatul prinde viață",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m2",
+      "file": "m2.sjr",
+      "name": "L02 Muzeul - 2. Încremenim la semnal",
+      "sha256": "2bc7aae2cd1a8b3af78df6f16c4c6f768a9d544eabb806915b4fcf276e0aabc5",
+      "pages": [
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "2. Încremenim la semnal",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m3",
+      "file": "m3.sjr",
+      "name": "L02 Muzeul - 3. Inspecția completă",
+      "sha256": "32f20e7e11e431f68b908145347e38889275aab1194c1af2f06ec1f04578c3af",
+      "pages": [
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 12
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "back",
+                      "value": 12
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "3. Inspecția completă",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "creatie",
+      "file": "creatie.sjr",
+      "name": "L02 Muzeul - 4. Muzeul meu",
+      "sha256": "02643a2f2ee0845f039aa339c34e6daff2d5625ad732960c278053b1536e8480",
+      "pages": [
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 2
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 2
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 12
+                    },
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "back",
+                      "value": 12
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "4. Muzeul meu",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "r1",
+      "file": "r1.sjr",
+      "name": "L02 Muzeul - R1. Exponatul somnoros",
+      "sha256": "2e7ebeecbff8273e34918e099572f21bc5ea5d986040724190df0f049a35d419",
+      "pages": [
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 12
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "back",
+                      "value": 12
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "R1. Exponatul somnoros",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "r2",
+      "file": "r2.sjr",
+      "name": "L02 Muzeul - R2. Inspecție pe rând",
+      "sha256": "09fe40624b823acbf08ff8aab805988c7c9e013761822817bf3224a4918ac2a9",
+      "pages": [
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "back",
+                      "value": 12
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "R2. Inspecție pe rând",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "start",
+      "file": "start.sjr",
+      "name": "L02 Muzeul - de la zero",
+      "sha256": "46b1e1b1e0e7da54da707080a73a6886f293cdfa9ed62a5c338a1438d335e65b",
+      "pages": [
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": [
+            {
+              "text": "Muzeul după închidere",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "lectia_2",
+      "file": "lectia_2.sjr",
+      "name": "L02 Muzeul - cele 4 etape",
+      "sha256": "ffce3427686e47f0f32ae566d8f113b62043a044ee2b8d9d4f7576d0585f71bd",
+      "pages": [
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": [
+            {
+              "text": "1. Exponatul prinde viață",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        },
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "2. Încremenim la semnal",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        },
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 12
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "back",
+                      "value": 12
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "3. Inspecția completă",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        },
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 2
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 2
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 12
+                    },
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "back",
+                      "value": 12
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "4. Muzeul meu",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "rezerve",
+      "file": "rezerve.sjr",
+      "name": "L02 Muzeul - cele 2 rezerve",
+      "sha256": "9add21085e76a9c620f4e9affbe34fad6864c8e623d8bafdabcd3d483b9e1f02",
+      "pages": [
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 12
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "back",
+                      "value": 12
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "R1. Exponatul somnoros",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        },
+        {
+          "background": "EmptyRoom.svg",
+          "focus": "earth",
+          "sprites": [
+            {
+              "id": "earth",
+              "asset": "Earth.svg",
+              "name": "Pământ",
+              "size": [
+                220,
+                220
+              ],
+              "position": [
+                144,
+                144
+              ],
+              "scale": 0.38,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "right",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "planet",
+              "asset": "Planet.svg",
+              "name": "Planetă",
+              "size": [
+                393,
+                271
+              ],
+              "position": [
+                336,
+                144
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "left",
+                      "value": 1
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "guard",
+              "asset": "Father.svg",
+              "name": "Paznic",
+              "size": [
+                210,
+                446
+              ],
+              "position": [
+                48,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "back",
+                      "value": 12
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "R2. Inspecție pe rând",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "INTRARE",
+              "position": [
+                58,
+                334
+              ],
+              "size": 13,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

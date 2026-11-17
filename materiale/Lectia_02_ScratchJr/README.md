@@ -1,67 +1,47 @@
-# Lecția 2 - Provocările iepurașului
+# Lecția 2 - Muzeul după închidere
 
-**50 de minute, 6-7 ani. Trei misiuni de construire, cu ținte precise și o provocare dificilă inclusă.** Mecanismul nou este Repeat: repetarea unui grup de acțiuni.
+**60 de minute · 6-7 ani.** Exponatele se animă după închiderea muzeului, încremenesc la inspecție și reiau mișcarea după întoarcerea paznicului.
 
-## Exemplu, puzzle și creație proprie
+[Lecția pe site](index.html) · [PDF cu plan și capturi](Ghid_profesor_Lectia_02.pdf) · [Ghidul profesorului](ghid-profesor.html) · [Proiectele demonstrative](solutii_muzeu/README.md).
 
-Deschidem cu **O săritură, de mai multe ori**, pornind de la [Dribble a Basketball](https://www.scratchjr.org/teach/activities/dribble-a-basketball). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+## Ce pregătești
 
-**Minutele 37-45: Patrula mea** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+Doar ScratchJr instalat. Copiii pornesc un proiect nou cu **Empty Room, Earth, Planet și Father** din biblioteca aplicației. Personajele sunt diferite de cele din ștafetă. Nu sunt necesare descărcări de imagini, conturi sau copierea proiectelor pe tablete.
 
-[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_02.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+Pământul și planeta stau sus; paznicul pornește jos, în stânga. Alegem viteza normală. Detaliile grilei, programele și indiciile sunt în [ghid](Ghid_profesor.md).
 
-## Pe tabletele copiilor
+## Ora
 
-Dacă ScratchJr este deja instalat, nu mai trebuie instalat sau copiat nimic. Folosim numai **Rabbit, Ball și Park** din biblioteca aplicației. Copiii construiesc scena și programele urmând demonstrațiile scurte ale profesorului. Mingea rămâne fără program și marchează coloana destinației.
+- 0-8 min: Povestea și scena.
+- 8-20 min: 1. Exponatul prinde viață.
+- 20-33 min: 2. Încremenim la semnal.
+- 33-36 min: Pauză activă.
+- 36-48 min: 3. Inspecția completă | dificil.
+- 48-58 min: Muzeul meu.
+- 58-60 min: Probă și salvare.
 
-Pentru a păstra lecția 1, recomandăm un proiect nou. Copiii pot refolosi scena veche dacă acceptă înlocuirea programelor ei. Nu există un program greșit impus și nu distribuim fișiere de pornire.
+Rezerve peste durata orei: **Exponatul somnoros** (+5 min) și **Inspecție pe rând** (+10 min). Toți încearcă puzzle-ul greu și păstrează zece minute de creație proprie.
 
-## Începe aici
+## PDF-ul pentru sprijin
 
-1. Citește [ghidul profesorului](Ghid_profesor.md) sau [PDF-ul](Ghid_profesor_Lectia_02.pdf).
-2. Proiectează sau tipărește [cele trei cartonașe](Cartonase_Lectia_02.pdf). Acestea arată cerințele, fără soluțiile complete.
-3. Probează manual Repeat pe un Lenovo: pune o acțiune în cadru, schimbă numărul, conectează o a doua buclă, salvează și redeschide.
-4. La lecție folosește [soluțiile profesorului](solutii/lectia_02/README.md) numai pentru sprijin, după ce copilul încearcă.
-5. Notează ce ai observat în [fișa pilotului](Observatii_dupa_lectie.md).
+13 pagini: plan p. 1; pregătire p. 2; M1 p. 3; M2 p. 4-5; M3 p. 6-7; creație p. 8-9; R1 p. 10-11; R2 p. 12-13. Include capturi reale ale programelor fiecărui personaj, la fiecare etapă.
 
-## Cele trei misiuni
+[PDF-ul cursului](../Plan_lectii_ScratchJr_60min.pdf) păstrează Lecția 1 la p. 1-13 și adaugă Lecția 2 la p. 14-26. Lecțiile 3-10 nu au fost încă refăcute în formatul de 60 de minute.
 
-| Misiune | Țintă | Constrângere |
-| --- | --- | --- |
-| Trei patrulări | Dreapta, săritură, revenire la start, de trei ori | Un singur Repeat cu întregul grup |
-| Șase pătrățele | Ajunge pe coloana mingii în trei deplasări egale; sare după fiecare | Copilul găsește distanța unei deplasări |
-| Expediția dificilă | Opt pătrățele în patru deplasări egale, cu sărituri; apoi revine singur | Două Repeat în ordine, un singur steag, fără resetare între dus și întors |
+## Proiectele profesorului
 
-Reușita se verifică prin rulare și explicație; ScratchJr nu acordă automat un calificativ. Exercițiul dificil este prezentat tuturor, cu indicii progresive. Nu este obligatoriu să fie terminat fără ajutor.
+Pe laptop, maximizează fereastra editorului: într-un panou îngust, lista personajelor poate acoperi o parte din scenă.
 
-## Poziționarea pe grilă
+În [editorul comunitar în browser](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/), revino în galerie, apasă Open, alege fișierul SJR și deschide miniatura. Pornește cu steagul; pentru inspecție atinge paznicul pe scenă. Înaintea unei probe noi: Stop din bara de sus, Reset Characters, steag. Întoarcerea în galerie salvează proiectul.
 
-Activează grila. Pentru iepure, numerele evidențiate sunt **5 jos, 7 în stânga**. Pentru minge: **11 jos, 3 în stânga**, apoi **13 jos, 3 în stânga** la misiunea dificilă. Selectează fiecare personaj înainte să-i citești poziția. Numerele verticale cresc de jos în sus.
+[Scenă fără cod](solutii_muzeu/start.sjr) · [Cele patru etape](solutii_muzeu/lectia_2.sjr) · [Cele două rezerve](solutii_muzeu/rezerve.sjr). Paginile colecțiilor sunt exemple independente; se aleg manual din dreapta, fără treceri automate.
 
-Mingea este mai jos decât iepurele, ca reper. Ținta este coloana ei; nu trebuie atinsă. Numărăm șase sau opt spații de la start, nu includem pătrățelul de pornire în distanță. Acceptăm aceeași coloană, fără precizie la pixel.
+[Raportul testării](verificare/Muzeul_60min.md) descrie rulările reale și limitele. Nu s-a testat această lecție pe un Lenovo fizic sau în aplicația Android.
 
-## Exemple opționale pentru profesor
+## Regenerare
 
-| Fișier | Utilizare |
-| --- | --- |
-| [00_Demo_Repeat.sjr](proiecte/00_Demo_Repeat.sjr) | Două sărituri prin Repeat 2; demonstrația mecanismului |
-| [01_Start.sjr](proiecte/01_Start.sjr) | Scenă fără programe, pentru proba profesorului |
-| [01_Trei_patrulari.sjr](solutii/lectia_02/01_Trei_patrulari.sjr) | Soluția misiunii 1 |
-| [02_Sase_patratele.sjr](solutii/lectia_02/02_Sase_patratele.sjr) | Soluția misiunii 2 |
-| [03_Expeditia_dus_intors.sjr](solutii/lectia_02/03_Expeditia_dus_intors.sjr) | Soluția exercițiului dificil |
+`build_muzeu.py` construiește proiectele și `muzeu.json`; `../render_concise_plans.py` construiește PDF-ul cursului și PDF-ul acestei lecții. Necesită Python, Pillow, reportlab, pypdf și fonturile Arial din Windows. `verificare/check_muzeu.py` verifică observațiile salvate și arhivele distribuite. După schimbarea programelor, repetă probele în editor și înlocuiește capturile.
 
-Pentru verificarea pe PC, deschide [editorul comunitar în browser](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/). În galerie, folosește Open project / Import, alege un SJR și deschide-l. Resetează înainte de fiecare probă completă, apoi apasă steagul. Revino la galerie pentru salvare și redeschide.
+## Arhiva de 50 de minute
 
-Acesta este un port comunitar, nu aplicația oficială Android. Nu presupune sincronizare între browser și tablete. Copiii nu au nevoie de browser sau de aceste fișiere.
-
-## Ce a fost testat
-
-Pe 9 noiembrie 2026, toate cele cinci fișiere au trecut importul și rularea în browser, numărarea săriturilor, verificarea destinației, resetarea, redeschiderea și rerularea. Mingea a rămas nemișcată. Toate au rămas în galerie după reîncărcare.
-
-A fost construit și un program prin tragere, cu o acțiune în Repeat și un al doilea Repeat conectat după primul; schimbarea numărului, rularea și păstrarea la redeschidere au funcționat. [Raportul și capturile](verificare/README.md) descriu verificările. **Lecția 2 nu a fost testată în aplicația oficială Android sau pe un Lenovo fizic.** Proba tactilă și offline rămâne de făcut pe o tabletă înainte de clasă.
-
-## Surse și regenerare
-
-`lesson.json` definește programele și țintele; `Ghid_profesor.md` este sursa ghidului. Cu Python, reportlab, Pillow și pypdf, rulează `python build_pack.py` pentru PDF-uri și SJR-uri sau `python build_pack.py --projects-only` numai pentru proiecte. Generatorul folosește fonturile Arial din Windows. Verificările de structură și calcul nu înlocuiesc testele din editor; actualizează raportul dacă modifici programele.
-
-[Planul celor zece lecții](../Plan_10_lectii_ScratchJr.md). Pagina `index.html` este un index pentru profesor, nu editorul ScratchJr.
+Materialele vechi „Provocările iepurașului” nu sunt soluțiile muzeului: [instrucțiuni](README_50min.md), [ghid online](ghid-profesor-50min.html), [ghid PDF](Ghid_profesor_Lectia_02_50min.pdf), [cartonașe](Cartonase_Lectia_02.pdf), [soluții vechi](solutii/lectia_02/README.md), [pachet vechi](../Lectia_02_ScratchJr.zip). `lesson.json` și `build_pack.py` aparțin acestei versiuni.

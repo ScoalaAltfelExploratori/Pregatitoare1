@@ -63,6 +63,67 @@
       ],
       "teacher_note": "Toți încearcă puzzle-ul dificil și au 10 minute de creație. Rezervele sunt în plus față de oră. Copiii construiesc direct în aplicație; proiectele pregătite sunt opționale pentru profesor.",
       "student_reference": "Ajutor: pregătire p. 2; M1 p. 3; M2 p. 4-5; M3 p. 6-7; creație p. 8-9; R1 p. 10-11; R2 p. 12-13."
+    },
+    {
+      "number": 2,
+      "title": "Muzeul după închidere",
+      "subtitle": "Animație continuă, oprire la semnal și reluare",
+      "goal": "Exponatele prind viață după închidere. La atingerea paznicului încremenesc, rămân nemișcate în timpul inspecției și repornesc după întoarcerea lui la intrare.",
+      "setup": "Empty Room, Earth, Planet și Father (paznic). Pământul și planeta cu inele stau sus; paznicul pornește jos, în stânga. Un proiect nou, o singură scenă, fără importuri pe tablete.",
+      "schedule": [
+        {
+          "minutes": "0-8",
+          "title": "Povestea și scena",
+          "text": "Construim sala de astronomie. Alegem exponatele din bibliotecă și prezicem ce trebuie să facă atunci când vine paznicul."
+        },
+        {
+          "minutes": "8-20",
+          "title": "1. Exponatul prinde viață",
+          "text": "Pământul se rotește fără să se deplaseze și fără să mai apăsăm steagul. Descoperim blocul roșu Repetă mereu. Planeta și paznicul încă nu au programe."
+        },
+        {
+          "minutes": "20-33",
+          "title": "2. Încremenim la semnal",
+          "text": "Animăm și planeta în sens invers. Atingerea paznicului trimite roșu. Fiecare exponat primește roșu și își oprește propria animație cu blocul portocaliu Stop."
+        },
+        {
+          "minutes": "33-36",
+          "title": "Pauză activă",
+          "text": "Doi copii sunt exponatele; al treilea face inspecția. Clasa stabilește când este permisă repornirea."
+        },
+        {
+          "minutes": "36-48",
+          "title": "3. Inspecția completă | dificil",
+          "text": "O singură atingere: ambele exponate încremenesc; paznicul merge 12 pași, așteaptă 10, revine 12. Doar la intrare trimite albastru, care repornește ambele animații."
+        },
+        {
+          "minutes": "48-58",
+          "title": "Muzeul meu",
+          "text": "Copilul schimbă ritmul, sensul ori mărimea rotației și testează propria variantă. Păstrează oprirea în timpul inspecției și reluarea după întoarcere."
+        },
+        {
+          "minutes": "58-60",
+          "title": "Probă și salvare",
+          "text": "O inspecție completă, Stop din bara de sus, resetare, galerie și redeschidere. Copilul arată de ce exponatele nu repornesc prea devreme."
+        }
+      ],
+      "solutions": [
+        "Pământ: Steag > Rotire dreapta 1 > Repetă mereu. Planetă: la fel, cu Rotire stânga 1. Fiecare: Primește roșu > Stop; separat, Primește albastru > rotația sa > Repetă mereu.",
+        "Paznic, M3: Atingere > Acasă > Trimite roșu > Dreapta 12 > Așteaptă 10 > Stânga 12 > Trimite albastru. Acasă pregătește startul; întoarcerea se vede, prin Stânga 12."
+      ],
+      "hint": "Stop oprește celelalte programe ale personajului care îl execută. Trebuie pus la ambele exponate. Așteaptă 10 înseamnă aproximativ o secundă. Albastrul se trimite după întoarcere.",
+      "backups": [
+        {
+          "title": "R1. Exponatul somnoros | +5 min",
+          "text": "După inspecție, Pământul repornește singur, iar planeta numai când o atingem. Schimbăm declanșatorul repornirii planetei."
+        },
+        {
+          "title": "R2. Inspecție pe rând | +10 min",
+          "text": "La prima inspecție se oprește numai Pământul. Apoi Pământul reia rotația, iar planeta se oprește până la întoarcerea paznicului. Trei culori coordonează schimbul."
+        }
+      ],
+      "teacher_note": "Toți încearcă puzzle-ul greu și au 10 minute pentru creație. Rezervele sunt în plus față de oră. Nu folosim piese sau personaje din afara bibliotecii.",
+      "student_reference": "În PDF-ul lecției: pregătire p. 2; M1 p. 3; M2 p. 4-5; M3 p. 6-7; creație p. 8-9; R1 p. 10-11; R2 p. 12-13. În PDF-ul cursului, adaugă 13 la aceste numere."
     }
   ]
 }

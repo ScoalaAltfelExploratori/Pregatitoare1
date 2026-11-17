@@ -1,8 +1,8 @@
 # Planul celor 10 lecții ScratchJr pentru copii de 6 și 7 ani
 
-**Revizie din 17 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, stil neutru și **60 de minute**. [Noul PDF concis](Plan_lectii_ScratchJr_60min.pdf) conține momentan **Lecția 1 - Cursa cu ștafetă**: trei misiuni, creație proprie, soluții scurte și două rezerve. Păstrăm câte o pagină de plan concis pentru fiecare lecție refăcută și adăugăm la final capturi reale cu programele fiecărui personaj, la fiecare etapă. Lecția 1 are acum 13 pagini în PDF: planul și ajutorul vizual. Descrierile de mai jos păstrează parcursul anterior de 50 de minute; lecțiile 2-10 urmează să fie revizuite.
+**Revizie din 17 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, povești coerente și **60 de minute**. [PDF-ul cursului](Plan_lectii_ScratchJr_60min.pdf) cuprinde **Lecția 1 - Cursa cu ștafetă (p. 1-13)** și **Lecția 2 - Muzeul după închidere (p. 14-26)**. Fiecare are un plan concis, pregătire și capturi reale cu programele tuturor personajelor. Lecțiile 3-10 păstrează parcursul anterior de 50 de minute până la revizuire.
 
-Plan de lucru pentru 10 întâlniri de câte 50 de minute, cu o tabletă Lenovo K10 de 3 GB RAM pentru fiecare copil. Copiii au parcurs deja exercițiile Robo Explorator. Cursul începe direct în ScratchJr și folosește această experiență pentru a trece de la rezolvarea unor trasee la crearea de animații, scene interactive și povești.
+Plan de lucru pentru 10 întâlniri, în curs de trecere de la 50 la 60 de minute, cu o tabletă Lenovo K10 de 3 GB RAM pentru fiecare copil. Copiii au parcurs deja exercițiile Robo Explorator. Cursul începe direct în ScratchJr și folosește această experiență pentru a trece de la rezolvarea unor trasee la crearea de animații, scene interactive și povești.
 
 Materialele și explicațiile pentru copii vor fi în română, cu pictograme și demonstrații scurte. Planul este o versiune de lucru, actualizată la 12 noiembrie 2026; ritmul se ajustează după primele două întâlniri.
 
@@ -18,14 +18,14 @@ Profesorul arată un pas, copiii îl fac în propriul proiect, apoi continuăm. 
 
 **În fiecare lecție includem un exercițiu dificil.** Acesta combină mecanisme deja explicate și are un rezultat verificabil, nu înseamnă doar mai multă decorare sau copiere. Îl prezentăm tuturor, cu indicii progresive; terminarea lui fără ajutor nu este o condiție de reușită a lecției. Conținutul exact se rafinează la pregătirea fiecărei întâlniri.
 
-**Din lecția 3 pregătim și două puzzle-uri de rezervă**, peste conținutul de bază pentru 50 de minute. Le folosim pentru cei care termină repede sau dacă întreaga clasă câștigă timp. Rezervele au cerințe, indicii și soluții; nu înlocuiesc exercițiul dificil prezentat tuturor sau timpul final de salvare.
+**Fiecare lecție refăcută are și două puzzle-uri de rezervă**, peste conținutul orei. Le folosim pentru cei care termină repede sau dacă întreaga clasă câștigă timp. Rezervele au cerințe, indicii și soluții; nu înlocuiesc exercițiul dificil prezentat tuturor sau timpul final de salvare.
 
-Păstrăm aceeași tabletă pentru fiecare copil. Lecția 2 poate refolosi scena lecției 1; pentru lecția 3 recomandăm un proiect nou cu iepure și câine. Lecția 10 continuă proiectul din lecția 9. Salvarea în galerie și redeschiderea încheie fiecare întâlnire.
+Păstrăm aceeași tabletă pentru fiecare copil. Lecția 2 începe un muzeu nou cu Pământ, planetă și paznic; pentru lecția 3 recomandăm un proiect nou cu iepure și câine. Lecția 10 continuă proiectul din lecția 9. Salvarea în galerie și redeschiderea încheie fiecare întâlnire.
 
 | Lecția | Resurse din aplicație | Pornire fără distribuirea fișierelor |
 | --- | --- | --- |
 | 1 | Rabbit, Dog, Ball, Park; Fence la puzzle | Proiect nou; alergători și minge programată, două pase vizibile la rezervă |
-| 2 | Rabbit, Ball și Park; mingea rămâne un reper fix | Refolosim scena sau creăm una nouă; programele sunt construite de copii |
+| 2 | Earth, Planet, Father, Empty Room | Proiect nou; exponate animate, oprire și reluare după inspecție |
 | 3 | Rabbit, Dog, Park; Butterfly la rezervă | Proiect nou, trucuri vizuale pornite prin atingere |
 | 4 | Rabbit, Dog, Butterfly și Park | Mesaje portocalii și albastre între personajele aceluiași proiect |
 | 5 | Rabbit, Dog, Park și Pop | Ritmuri construite în aplicație, fără înregistrări sau fișiere audio |
@@ -47,16 +47,16 @@ Citirea fluentă și scrierea de replici nu sunt condiții de participare. Profe
 
 ## Ritmul unei întâlniri
 
-Fiecare ghid are un program de exact 50 de minute. O demonstrație scurtă, legată de un exemplu oficial, introduce ideea. Urmează misiunile de construire, pauza și încercarea provocării dificile. **Ultimele 13-15 minute sunt protejate: 8-10 minute pentru o creație personală și 5 minute pentru explicație, salvare și redeschidere.**
+Lecțiile 1 și 2 au câte 60 de minute; ghidurile nerevizuite au câte 50. O demonstrație scurtă, legată de un exemplu oficial, introduce ideea. Urmează misiunile de construire, pauza și încercarea provocării dificile. **Ultimele 13-15 minute sunt protejate: 8-10 minute pentru o creație personală și 5 minute pentru explicație, salvare și redeschidere.**
 
-Atelierul nu este o recompensă pentru viteză. Fiecare copil personalizează cel mai avansat program care îi funcționează. Dacă ritmul este lent, construim o parte din M2 împreună și simplificăm scena; păstrăm încercarea provocării dificile, atelierul și salvarea. Rezervele existente rămân suplimentare, cu indicii și soluții. În lecțiile 1-2 păstrăm extensiile existente; cele două rezerve dedicate încep de la lecția 3.
+Atelierul nu este o recompensă pentru viteză. Fiecare copil personalizează cel mai avansat program care îi funcționează. Dacă ritmul este lent, construim o parte din M2 împreună și simplificăm scena; păstrăm încercarea provocării dificile, atelierul și salvarea. Rezervele existente rămân suplimentare, cu indicii și soluții. Lecțiile 1 și 2 au fiecare două rezerve dedicate, cu programe ilustrate.
 
 Profesorul cere o predicție înainte de rulare, o alegere făcută de copil și o explicație scurtă după probă. Alegerea trebuie să schimbe un comportament sau o regulă; decorarea poate însoți programarea. Copiii lucrează pe propriile tablete. Nu cerem schimb de proiecte sau interacțiuni între dispozitive.
 
 | Lecția | Reper oficial pentru profesor | Creația copilului | Timp |
 | --- | --- | --- | --- |
-| 1 | [Spooky Forest](https://www.scratchjr.org/teach/activities/spooky-forest) | Salutul inventat de mine | 35-45 min |
-| 2 | [Dribble a Basketball](https://www.scratchjr.org/teach/activities/dribble-a-basketball) | Patrula mea | 37-45 min |
+| 1 | Mesaje și mișcare sincronizată; ștafetă proprie | Traseul echipei mele | 47-57 min |
+| 2 | [Ghidul blocurilor: Stop și Repetă mereu](https://www.scratchjr.org/explore/blocks) | Muzeul meu | 48-58 min |
 | 3 | [Sunset](https://www.scratchjr.org/teach/activities/sunset) | Trucul meu de magician | 37-45 min |
 | 4 | [Meet and Greet](https://www.scratchjr.org/teach/activities/meet-and-greet) | Telecomanda inventată de mine | 37-45 min |
 | 5 | [Dance Party](https://www.scratchjr.org/teach/activities/dance-party) | Semnătura mea sonoră | 37-45 min |
@@ -72,8 +72,8 @@ Exemplele sunt adaptate la personajele și blocurile cunoscute. Nu adăugăm cer
 
 | Lecția | Ideea principală | Creația copilului |
 | --- | --- | --- |
-| 1 | Două personaje cu programe proprii | O întâlnire cu un final inventat |
-| 2 | Repetăm un grup de acțiuni | Trei provocări cu trasee și ținte precise |
+| 1 | Predare vizibilă și coordonare prin mesaje | Cursa cu ștafetă |
+| 2 | Animație continuă, întrerupere și reluare la semnal | Muzeul după închidere |
 | 3 | Atingerea pornește transformări vizuale | Atelier de magie, un truc dificil și două rezerve |
 | 4 | Personajele comunică prin mesaje colorate | Telecomandă, două comenzi, lanț dificil și două rezerve |
 | 5 | Programăm sunete, pauze și grupuri repetate | Coduri ritmice, salut dificil cu șapte sunete și două rezerve |
@@ -97,31 +97,18 @@ O singură cursă construită în etape: A transportă mingea și i-o pasează l
 
 [Planul și toate programele cu capturi](Plan_lectii_ScratchJr_60min.pdf) · [Ghid online](Lectia_01_ScratchJr/index.html#profesor) · [Proiectele opționale pentru profesor](Lectia_01_ScratchJr/solutii_stafeta/README.md).
 
-## Lecția 2 Provocările iepurașului
+## Lecția 2 Muzeul după închidere - 60 de minute
 
-**Stare:** pachet pregătit în [Lectia_02_ScratchJr](Lectia_02_ScratchJr/README.md), cu ghid, trei cartonașe, demonstrație și soluții pentru profesor. Cele cinci exemple au trecut testele browserului comunitar; proba pe Lenovo rămâne de făcut. Principii aplicate: ținte concrete, construire de către copii, fără programe greșite impuse și un exercițiu dificil inclus.
+Pământul și planeta cu inele sunt exponate animate. Paznicul face inspecția; ele încremenesc, apoi își reiau mișcarea. **Noutate:** Repetă mereu și Stop, coordonate prin atingere și mesaje. Personaje: Earth, Planet și Father, pe fundal Empty Room.
 
-**Ideea nouă:** blocul Repeat repetă un grup de acțiuni în aceeași ordine. Diferențiem numărul de repetări de distanța unei deplasări.
+1. Pământul se rotește continuu pe loc.
+2. O atingere a paznicului oprește ambele exponate.
+3. Puzzle greu: o singură atingere pornește oprirea, drumul dus-întors și reluarea numai după întoarcere.
+4. Zece minute pentru ritmul și animația inventate de copil.
 
-**Pregătire:** Rabbit, Ball și Park din biblioteca aplicației. Putem refolosi scena lecției 1, dar construim programele acestei lecții și lăsăm mingea fără program. Mingea este un reper fix pentru destinație; nu folosim detectarea coliziunilor. Profesorul arată poziționarea cu grila. Pentru țintele de deplasare contează coloana destinației; mingea poate sta pe un rând inferior, astfel încât să nu acopere iepurele. Așezarea a fost verificată în browser: iepurele la (5, 7) pe grila afișată, mingea la (11, 3), apoi la (13, 3). Numerele grilei diferă de coordonatele interne ale scenei.
+Două rezerve: exponatul care se trezește numai la atingere; inspecția separată a celor două exponate. Fiecare are soluții și capturi.
 
-**Împreună:** demonstrăm numai mecanismul: punem două acțiuni cunoscute în Repeat, alegem numărul de repetări și anticipăm rezultatul. Copiii nu primesc programul complet al fiecărei misiuni. Nu cerem calcule de înmulțire; putem număra deplasările pe grilă sau mima grupul de acțiuni.
-
-1. **Misiunea 1 — Trei patrulări:** construiește un program în care iepurele merge la dreapta, sare și revine la start, de trei ori. Folosește un singur Repeat, fără trei copii ale secvenței. Reușită: trei sărituri, trei reveniri și poziția finală egală cu startul. Exemplu pentru profesor: steag → repetă 3 [dreapta 2, sari 2, stânga 2].
-2. **Misiunea 2 — Ajungem la țintă:** destinația este la șase pătrățele spre dreapta. Construiește trei deplasări egale, cu o săritură după fiecare, folosind Repeat. Reușită: trei sărituri și oprire pe coloana țintei. Exemplu: steag → repetă 3 [dreapta 2, sari 2].
-3. **Misiunea dificilă — Expediția dus-întors:** mută ținta la opt pătrățele spre dreapta. Ajungi acolo în patru deplasări egale, cu o săritură după fiecare, apoi revii la start cu un al doilea Repeat. Totul pornește de la un singur steag; fără resetare între dus și întors. Reușită: atinge coloana țintei după patru sărituri și revine singur la start. Exemplu: steag → repetă 4 [dreapta 2, sari 2] → repetă 4 [stânga 2]. Revenirea poate include și sărituri, dacă elevul le dorește.
-
-Varianta de opt pătrățele în patru deplasări și întoarcerea cu o a doua buclă sunt incluse în exercițiul dificil, construit de copil. Nu modificăm intenționat un program corect ca să producă o greșeală.
-
-**Ritm:** 0-7 scena și exemplul; 7-15 misiunea 1; 15-23 misiunea 2; 23-26 pauză; 26-37 puzzle dificil; 37-45 creația mea; 45-50 explic și salvez.
-
-**Indicii pentru exercițiul dificil:** întâi construiește drumul până la țintă; apoi arată direcția de întoarcere; în cele din urmă construiește o a doua buclă. Nu cerem bucle imbricate sau blocuri încă neexplicate.
-
-**Verificare:** copilul arată ce grup se repetă, de câte ori și dacă rezultatul respectă ținta. În cazul unei nepotriviri, îl ajutăm să compare ce a dorit cu ce s-a întâmplat în propriul program. ScratchJr nu acordă automat un calificativ; verificăm prin rulare și discuție.
-
-**Sprijin:** alegerea personajelor și a numerelor poate fi asistată; construcția programului rămâne la copil. Sari 2 înseamnă o singură săritură de înălțime 2. Resetăm înainte de o nouă probă completă, nu în mijlocul expediției dus-întors.
-
-**Creație proprie:** Patrula mea. Inventează un grup de două sau trei acțiuni și repetă-l de două, trei sau patru ori. Alege o distanță mică, cu loc pe scenă. Decide dacă patrula revine după fiecare tur sau înaintează spre o destinație aleasă de tine. [Ghid actualizat](Lectia_02_ScratchJr/ghid-profesor.html).
+[Lecția pe site](Lectia_02_ScratchJr/index.html) · [Ghid](Lectia_02_ScratchJr/Ghid_profesor.md) · [PDF cu programe](Lectia_02_ScratchJr/Ghid_profesor_Lectia_02.pdf) · [Testarea în browser](Lectia_02_ScratchJr/verificare/Muzeul_60min.md).
 
 ## Lecția 3 Atelierul de magie
 

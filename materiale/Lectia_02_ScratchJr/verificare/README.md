@@ -1,3 +1,5 @@
+**Arhivă: versiunea de 50 de minute, „Provocările iepurașului”. Pentru lecția refăcută, vezi [verificarea muzeului](Muzeul_60min.md).**
+
 # Verificarea lecției 2 - 9 noiembrie 2026
 
 ## Teste în editorul pentru browser
