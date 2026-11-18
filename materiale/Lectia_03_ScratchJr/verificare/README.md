@@ -1,3 +1,5 @@
+> Arhivă: Atelierul de magie, 50 de minute. Pentru lecția nouă vezi [verificarea autobuzului](Autobuzul_60min.md).
+
 # Verificarea lecției 3 - Atelierul de magie
 
 Data: **10 noiembrie 2026**. Această verificare aparține versiunii cu magie. Vechea lecție cu viteze și dovezile ei sunt păstrate numai în arhiva profesorului.

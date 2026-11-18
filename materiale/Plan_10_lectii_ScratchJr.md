@@ -1,6 +1,6 @@
 # Planul celor 10 lecții ScratchJr pentru copii de 6 și 7 ani
 
-**Revizie din 17 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, povești coerente și **60 de minute**. [PDF-ul cursului](Plan_lectii_ScratchJr_60min.pdf) cuprinde **Lecția 1 - Cursa cu ștafetă (p. 1-13)** și **Lecția 2 - Muzeul după închidere (p. 14-26)**. Fiecare are un plan concis, pregătire și capturi reale cu programele tuturor personajelor. Lecțiile 3-10 păstrează parcursul anterior de 50 de minute până la revizuire.
+**Revizie din 18 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, povești coerente și **60 de minute**. [PDF-ul cursului](Plan_lectii_ScratchJr_60min.pdf) cuprinde **Lecția 1 - Cursa cu ștafetă (p. 1-13)** și **Lecția 2 - Muzeul după închidere (p. 14-26)** și **Lecția 3 - Autobuzul spre plajă (p. 27-41)**. Fiecare are un plan concis, pregătire și capturi reale cu programele tuturor personajelor. Lecțiile 4-10 păstrează parcursul anterior de 50 de minute până la revizuire.
 
 Plan de lucru pentru 10 întâlniri, în curs de trecere de la 50 la 60 de minute, cu o tabletă Lenovo K10 de 3 GB RAM pentru fiecare copil. Copiii au parcurs deja exercițiile Robo Explorator. Cursul începe direct în ScratchJr și folosește această experiență pentru a trece de la rezolvarea unor trasee la crearea de animații, scene interactive și povești.
 
@@ -26,7 +26,7 @@ Păstrăm aceeași tabletă pentru fiecare copil. Lecția 2 începe un muzeu nou
 | --- | --- | --- |
 | 1 | Rabbit, Dog, Ball, Park; Fence la puzzle | Proiect nou; alergători și minge programată, două pase vizibile la rezervă |
 | 2 | Earth, Planet, Father, Empty Room | Proiect nou; exponate animate, oprire și reluare după inspecție |
-| 3 | Rabbit, Dog, Park; Butterfly la rezervă | Proiect nou, trucuri vizuale pornite prin atingere |
+| 3 | Bus, trei Child, Suburbs, Beach Day; Park la creație și rezervă | Urcare, scene, coborâre; 60 min |
 | 4 | Rabbit, Dog, Butterfly și Park | Mesaje portocalii și albastre între personajele aceluiași proiect |
 | 5 | Rabbit, Dog, Park și Pop | Ritmuri construite în aplicație, fără înregistrări sau fișiere audio |
 | 6 | Rabbit, Dog, Butterfly, Ball, Park și Pop | Contacte și reacții, construite în aplicație |
@@ -47,9 +47,9 @@ Citirea fluentă și scrierea de replici nu sunt condiții de participare. Profe
 
 ## Ritmul unei întâlniri
 
-Lecțiile 1 și 2 au câte 60 de minute; ghidurile nerevizuite au câte 50. O demonstrație scurtă, legată de un exemplu oficial, introduce ideea. Urmează misiunile de construire, pauza și încercarea provocării dificile. **Ultimele 13-15 minute sunt protejate: 8-10 minute pentru o creație personală și 5 minute pentru explicație, salvare și redeschidere.**
+Lecțiile 1–3 au câte 60 de minute; ghidurile nerevizuite au câte 50. O demonstrație scurtă introduce ideea, apoi urmează misiunile de construire, pauza și provocarea dificilă. **În lecțiile refăcute păstrăm 10 minute pentru creație proprie și ultimele 2 minute pentru proba finală și salvare.** Explicațiile și testele se fac și pe parcursul misiunilor.
 
-Atelierul nu este o recompensă pentru viteză. Fiecare copil personalizează cel mai avansat program care îi funcționează. Dacă ritmul este lent, construim o parte din M2 împreună și simplificăm scena; păstrăm încercarea provocării dificile, atelierul și salvarea. Rezervele existente rămân suplimentare, cu indicii și soluții. Lecțiile 1 și 2 au fiecare două rezerve dedicate, cu programe ilustrate.
+Atelierul nu este o recompensă pentru viteză. Fiecare copil personalizează cel mai avansat program care îi funcționează. Dacă ritmul este lent, construim o parte din M2 împreună și simplificăm scena; păstrăm încercarea provocării dificile, atelierul și salvarea. Rezervele rămân suplimentare, cu indicii și soluții. Lecțiile 1–3 au fiecare două rezerve dedicate, cu programe ilustrate.
 
 Profesorul cere o predicție înainte de rulare, o alegere făcută de copil și o explicație scurtă după probă. Alegerea trebuie să schimbe un comportament sau o regulă; decorarea poate însoți programarea. Copiii lucrează pe propriile tablete. Nu cerem schimb de proiecte sau interacțiuni între dispozitive.
 
@@ -57,7 +57,7 @@ Profesorul cere o predicție înainte de rulare, o alegere făcută de copil și
 | --- | --- | --- | --- |
 | 1 | Mesaje și mișcare sincronizată; ștafetă proprie | Traseul echipei mele | 47-57 min |
 | 2 | [Ghidul blocurilor: Stop și Repetă mereu](https://www.scratchjr.org/explore/blocks) | Muzeul meu | 48-58 min |
-| 3 | [Sunset](https://www.scratchjr.org/teach/activities/sunset) | Trucul meu de magician | 37-45 min |
+| 3 | Blocurile Ascunde, Arată și Pagina: aplicate călătoriei | Excursia mea | 48-58 min |
 | 4 | [Meet and Greet](https://www.scratchjr.org/teach/activities/meet-and-greet) | Telecomanda inventată de mine | 37-45 min |
 | 5 | [Dance Party](https://www.scratchjr.org/teach/activities/dance-party) | Semnătura mea sonoră | 37-45 min |
 | 6 | [Playground Games - Tag (lecția 5)](https://sites.bc.edu/devtech/wp-content/uploads/sites/181/2022/10/Playground-Games.pdf) | Surpriza întâlnirii | 37-45 min |
@@ -74,7 +74,7 @@ Exemplele sunt adaptate la personajele și blocurile cunoscute. Nu adăugăm cer
 | --- | --- | --- |
 | 1 | Predare vizibilă și coordonare prin mesaje | Cursa cu ștafetă |
 | 2 | Animație continuă, întrerupere și reluare la semnal | Muzeul după închidere |
-| 3 | Atingerea pornește transformări vizuale | Atelier de magie, un truc dificil și două rezerve |
+| 3 | Vizibilitate și schimbarea paginii | Autobuzul spre plajă, puzzle greu și două rezerve |
 | 4 | Personajele comunică prin mesaje colorate | Telecomandă, două comenzi, lanț dificil și două rezerve |
 | 5 | Programăm sunete, pauze și grupuri repetate | Coduri ritmice, salut dificil cu șapte sunete și două rezerve |
 | 6 | Contactul pornește reacții | Parc cu surprize, lanț dificil și două rezerve |
@@ -110,25 +110,20 @@ Două rezerve: exponatul care se trezește numai la atingere; inspecția separat
 
 [Lecția pe site](Lectia_02_ScratchJr/index.html) · [Ghid](Lectia_02_ScratchJr/Ghid_profesor.md) · [PDF cu programe](Lectia_02_ScratchJr/Ghid_profesor_Lectia_02.pdf) · [Testarea în browser](Lectia_02_ScratchJr/verificare/Muzeul_60min.md).
 
-## Lecția 3 Atelierul de magie
+## Lecția 3 Autobuzul spre plajă - 60 de minute
 
-**Stare:** pachet pregătit în [Lectia_03_ScratchJr](Lectia_03_ScratchJr/README.md), cu ghid actualizat, online și PDF, cinci cartonașe, demonstrație, starter și cinci soluții. Toate cele șapte exemple au trecut testele în browser la 10 noiembrie 2026. Trucul dificil a fost construit și prin tragerea blocurilor în editor. Proba tactilă și offline pe Lenovo rămâne de făcut.
+Trei copii vin din locuri diferite. Autobuzul așteaptă să urce toți; la plajă oprește înainte să coboare. Noutăți: **Ascunde / Arată** și **pagini**. Folosim numai Bus, trei Child, Suburbs, Beach Day și Park din bibliotecă.
 
-**Ideea nouă:** atingerea personajului pornește un program care îi schimbă mărimea și vizibilitatea. Așteptarea face efectele observabile. Ordinea contează: refacem mărimea cât personajul este ascuns, ca el să reapară direct normal. Nu lucrăm deplasări în această lecție.
+1. **Primul pasager:** Ana ajunge la ușă, apoi dispare. Autobuzul stă.
+2. **Prima cursă:** după urcare autobuzul pleacă, schimbă pagina, oprește și permite coborârea.
+3. **Nimeni nu rămâne în urmă - dificil:** trei distanțe de urcare, fără pauză ghicită; fiecare coboară în alt loc.
+4. **Excursia mea:** 10 minute pentru altă destinație și trasee proprii.
 
-**Pregătire:** proiect nou cu Rabbit, Dog și Park din biblioteca aplicației. Iepure în stânga, câine în dreapta, cu loc pentru mărire; păstrăm mărimile inițiale. Fără grilă sau poziționare exactă. Folosim Pornire la atingere / Start on Tap, nu Pornire la ciocnire. Steagul verde nu pornește trucurile.
+**Rezerve:** Mara merge lent (+5 min); oprire în parc pentru Ana și apoi la plajă pentru Dan și Mara (+10 min).
 
-1. **Uriaș și pitic:** un tap mărește iepurele, un tap micșorează câinele; celălalt rămâne neschimbat. Copiii aleg numere vizibile. Model: mărește 4 / micșorează 4. Resetăm înainte de o nouă probă: efectul se poate acumula.
-2. **Dispar și revin:** un singur tap ascunde iepurele, îl lasă ascuns o clipă și îl arată din nou. Nu atingem un personaj invizibil. Model: atingere → ascunde → așteaptă 10 → arată.
-3. **Trucul complet - dificilă, pentru toți:** la un tap, iepurele devine mare, rămâne astfel o clipă, dispare, așteaptă ascuns și reapare direct normal. Al doilea tap, după terminare, trebuie să producă același truc fără resetare. Model: atingere → mărește 4 → așteaptă 10 → ascunde → așteaptă 10 → mărimea inițială → arată. Indicii: ce vrem să vedem? Ce refacem cât este ascuns? Ce deschide cortina?
+**Ritm:** 0-8 pregătire; 8-20 M1; 20-33 M2; 33-36 pauză; 36-48 puzzle greu; 48-58 creație; 58-60 probă și salvare.
 
-**Două rezerve în plus:** R1, „Al treilea secret” (6-8 minute): adăugăm Butterfly, cu reacție proprie; exemplul dispare și reapare de două ori la un tap, fără să schimbe celelalte personaje. R2, „Magie în cinci blocuri” (8-10 minute): inventează un truc cu maximum cinci acțiuni, două schimbări vizibile și final normal și vizibil; repetă fără resetare. Așteptările se numără; blocul galben nu. Fără Repeat sau mișcare în R2. Un exemplu: mărește 4 → așteaptă 10 → micșorează 8 → așteaptă 10 → mărimea inițială. Copiii pot găsi alte soluții.
-
-**Ritm:** 0-4 demonstrație; 4-8 scena; 8-17 misiunea 1; 17-24 misiunea 2 și exemplul; 24-27 pauză; 27-37 puzzle dificil; 37-45 creația mea; 45-50 explic și salvez.
-
-**Sprijin:** demonstrăm blocurile treptat, înaintea misiunii care le cere. Așteaptă 10 înseamnă aproximativ o secundă, fără lecție despre fracții. Arată schimbă vizibilitatea; Mărimea inițială schimbă dimensiunea. Copiii construiesc propriile soluții, fără programe greșite impuse. La testare atingem o dată și așteptăm finalul.
-
-**Creație proprie:** Trucul meu de magician. Alege ordinea a două efecte vizuale: mare/mic, ascuns/vizibil. Introdu o pauză acolo unde publicul trebuie să vadă efectul. La final personajul este vizibil și la mărimea inițială. Trucul pornește la o singură atingere. [Ghid actualizat](Lectia_03_ScratchJr/ghid-profesor.html).
+[Ghid pas cu pas](Lectia_03_ScratchJr/ghid-profesor.html) · [PDF cu capturi, 15 pagini](Lectia_03_ScratchJr/Ghid_profesor_Lectia_03.pdf) · [Proiecte native](Lectia_03_ScratchJr/solutii_autobuz/README.md) · [Verificări în browser](Lectia_03_ScratchJr/verificare/Autobuzul_60min.md).
 
 ## Lecția 4 Telecomanda fermecată
 

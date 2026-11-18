@@ -1,0 +1,2346 @@
+{
+  "lesson": 3,
+  "title": "Autobuzul spre plajă",
+  "duration": 60,
+  "projects": [
+    {
+      "key": "m1",
+      "file": "m1.sjr",
+      "name": "L03 Autobuzul - 1. Primul pasager · 60 min",
+      "sha256": "68f6ce3a1d42811404eb2cb94c42788c383528a91c6ddb788a887f6109aa84bb",
+      "pages": [
+        {
+          "background": "Suburbs.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                348,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                144,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "1. Urcăm în autobuz",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m2",
+      "file": "m2.sjr",
+      "name": "L03 Autobuzul - 2. Prima cursă · 60 min",
+      "sha256": "10a7211bf17773392e260805c8396a1d09e18526c30173344796505a4f200d6b",
+      "pages": [
+        {
+          "background": "Suburbs.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                348,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                144,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "1. Urcăm în autobuz",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                84,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Am ajuns la plajă",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m3",
+      "file": "m3.sjr",
+      "name": "L03 Autobuzul - 3. Nimeni nu rămâne în urmă · 60 min",
+      "sha256": "56b1ac30059821319258436152e584fb2e785c86dfd5a764b79e27c540b5e737",
+      "pages": [
+        {
+          "background": "Suburbs.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                348,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                144,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dan",
+              "asset": "Boy2.svg",
+              "name": "Dan",
+              "size": [
+                156,
+                309
+              ],
+              "position": [
+                192,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mara",
+              "asset": "Girl3.svg",
+              "name": "Mara",
+              "size": [
+                145,
+                298
+              ],
+              "position": [
+                240,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "1. Urcăm în autobuz",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                84,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dan",
+              "asset": "Boy2.svg",
+              "name": "Dan",
+              "size": [
+                156,
+                309
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mara",
+              "asset": "Girl3.svg",
+              "name": "Mara",
+              "size": [
+                145,
+                298
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Am ajuns la plajă",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "creatie",
+      "file": "creatie.sjr",
+      "name": "L03 Autobuzul - 4. Excursia mea · 60 min",
+      "sha256": "65d839aceaeab1b5adf18f42a0652020acffba6ee6b14b8d4932c3e033016847",
+      "pages": [
+        {
+          "background": "Suburbs.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                348,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                144,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dan",
+              "asset": "Boy2.svg",
+              "name": "Dan",
+              "size": [
+                156,
+                309
+              ],
+              "position": [
+                192,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mara",
+              "asset": "Girl3.svg",
+              "name": "Mara",
+              "size": [
+                145,
+                298
+              ],
+              "position": [
+                240,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "1. Urcăm în autobuz",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        },
+        {
+          "background": "Park.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                84,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    },
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dan",
+              "asset": "Boy2.svg",
+              "name": "Dan",
+              "size": [
+                156,
+                309
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mara",
+              "asset": "Girl3.svg",
+              "name": "Mara",
+              "size": [
+                145,
+                298
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 2
+                    },
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Oprire în parc",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "r1",
+      "file": "r1.sjr",
+      "name": "L03 Autobuzul - R1. Pasagerul mai lent · 60 min",
+      "sha256": "9e5f97cc475794e80ba05ba3ed6ee4c1c3e9e40abd99db5453f2bd466b7ce615",
+      "pages": [
+        {
+          "background": "Suburbs.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                348,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                144,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dan",
+              "asset": "Boy2.svg",
+              "name": "Dan",
+              "size": [
+                156,
+                309
+              ],
+              "position": [
+                192,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mara",
+              "asset": "Girl3.svg",
+              "name": "Mara",
+              "size": [
+                145,
+                298
+              ],
+              "position": [
+                240,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 0
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "1. Urcăm în autobuz",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                84,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dan",
+              "asset": "Boy2.svg",
+              "name": "Dan",
+              "size": [
+                156,
+                309
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mara",
+              "asset": "Girl3.svg",
+              "name": "Mara",
+              "size": [
+                145,
+                298
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Am ajuns la plajă",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "r2",
+      "file": "r2.sjr",
+      "name": "L03 Autobuzul - R2. Două opriri · 60 min",
+      "sha256": "a90844c6eaeb081bc6d2f321dc29d2c3b5cfb82e22ca53f3981672c68956c870",
+      "pages": [
+        {
+          "background": "Suburbs.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                348,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                144,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dan",
+              "asset": "Boy2.svg",
+              "name": "Dan",
+              "size": [
+                156,
+                309
+              ],
+              "position": [
+                192,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mara",
+              "asset": "Girl3.svg",
+              "name": "Mara",
+              "size": [
+                145,
+                298
+              ],
+              "position": [
+                240,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "1. Urcăm în autobuz",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        },
+        {
+          "background": "Park.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                84,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dan",
+              "asset": "Boy2.svg",
+              "name": "Dan",
+              "size": [
+                156,
+                309
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mara",
+              "asset": "Girl3.svg",
+              "name": "Mara",
+              "size": [
+                145,
+                298
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Oprire în parc",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                84,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dan",
+              "asset": "Boy2.svg",
+              "name": "Dan",
+              "size": [
+                156,
+                309
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mara",
+              "asset": "Girl3.svg",
+              "name": "Mara",
+              "size": [
+                145,
+                298
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Am ajuns la plajă",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "start",
+      "file": "start.sjr",
+      "name": "L03 Autobuzul - de la zero · 60 min",
+      "sha256": "ff7027f3fd2b67e96280f1c8b9158d5a4c54962d544420bb268d5e84b73c1e17",
+      "pages": [
+        {
+          "background": "Suburbs.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                348,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                144,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": [
+            {
+              "text": "1. Urcăm în autobuz",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        },
+        {
+          "background": "BeachDay.svg",
+          "focus": "bus",
+          "sprites": [
+            {
+              "id": "bus",
+              "asset": "Bus.svg",
+              "name": "Autobuz",
+              "size": [
+                600,
+                319
+              ],
+              "position": [
+                84,
+                264
+              ],
+              "scale": 0.28,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "ana",
+              "asset": "Girl1.svg",
+              "name": "Ana",
+              "size": [
+                133,
+                318
+              ],
+              "position": [
+                216,
+                264
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": [
+            {
+              "text": "Am ajuns la plajă",
+              "position": [
+                240,
+                25
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

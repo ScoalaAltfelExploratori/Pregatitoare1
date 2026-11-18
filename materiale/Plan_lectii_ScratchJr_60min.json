@@ -124,6 +124,68 @@
       ],
       "teacher_note": "Toți încearcă puzzle-ul greu și au 10 minute pentru creație. Rezervele sunt în plus față de oră. Nu folosim piese sau personaje din afara bibliotecii.",
       "student_reference": "În PDF-ul lecției: pregătire p. 2; M1 p. 3; M2 p. 4-5; M3 p. 6-7; creație p. 8-9; R1 p. 10-11; R2 p. 12-13. În PDF-ul cursului, adaugă 13 la aceste numere."
+    },
+    {
+      "number": 3,
+      "revision": "18 noiembrie 2026",
+      "title": "Autobuzul spre plajă",
+      "subtitle": "Urcare, călătorie între scene și coborâre în siguranță",
+      "goal": "Trei copii vin din locuri diferite. Autobuzul așteaptă să urce toți; la plajă oprește înainte ca ei să coboare. Ascunde și Arată au un rol vizibil în poveste.",
+      "setup": "Bus, trei personaje Child, Suburbs și Beach Day. Începem numai cu Ana. Adăugăm Dan și Mara la puzzle. Park este destinația exemplului de creație și oprirea din R2.",
+      "schedule": [
+        {
+          "minutes": "0-8",
+          "title": "Povestea și scena",
+          "text": "Alegem autobuzul și Ana din bibliotecă. Între Ana și ușă sunt 10 pași. Descoperim Ascunde și Arată."
+        },
+        {
+          "minutes": "8-20",
+          "title": "1. Primul pasager",
+          "text": "O atingere pe autobuz pornește urcarea. Ana merge la ușă și dispare numai acolo. Autobuzul stă."
+        },
+        {
+          "minutes": "20-33",
+          "title": "2. Prima cursă",
+          "text": "După urcare, autobuzul pleacă. Pagina 2 arată plaja. Autobuzul intră, oprește, apoi Ana apare la ușă și se îndepărtează."
+        },
+        {
+          "minutes": "33-36",
+          "title": "Pauză activă",
+          "text": "Trei copii mimează pasagerii. Un șofer arată când poate pleca; clasa explică de ce."
+        },
+        {
+          "minutes": "36-48",
+          "title": "3. Nimeni nu rămâne în urmă | dificil",
+          "text": "Adăugăm Dan și Mara, la 8 și 6 pași de ușă. Autobuzul așteaptă toți pasagerii fără o pauză ghicită. La plajă fiecare merge în alt loc."
+        },
+        {
+          "minutes": "48-58",
+          "title": "Excursia mea",
+          "text": "Altă destinație din bibliotecă și alte trasee de coborâre. Copilul păstrează regula urcării și a opririi înainte de coborâre."
+        },
+        {
+          "minutes": "58-60",
+          "title": "Probă și salvare",
+          "text": "Resetăm de pe pagina 1, testăm cursa, salvăm în galerie. Copilul explică de ce nu pleacă autobuzul prea devreme."
+        }
+      ],
+      "solutions": [
+        "Urcare: Autobuz — Atingere > portocaliu > Dreapta 4 > Pagina 2. Copii — Primește portocaliu > Dreapta 10 / 8 / 6 > Ascunde.",
+        "Sosire: Autobuz — Steag > Acasă > portocaliu > Dreapta 4 > albastru. Copii — portocaliu: Ascunde > Acasă; albastru: Arată > traseul propriu."
+      ],
+      "hint": "Trimite așteaptă terminarea tuturor firelor pornite de acel mesaj. Niciun fir de urcare nu are Repetă mereu. Pagina 2 pornește automat programele cu Steag de acolo.",
+      "backups": [
+        {
+          "title": "R1. Pasagerul mai lent | +5 min",
+          "text": "Mara merge lent și ajunge ultima. Păstrăm programul autobuzului; acesta trebuie să o aștepte."
+        },
+        {
+          "title": "R2. Două opriri | +10 min",
+          "text": "Ana coboară în parc. Autobuzul pleacă după coborârea ei; Dan și Mara coboară numai la plajă."
+        }
+      ],
+      "teacher_note": "O oră, inclusiv 10 minute de creație. Rezervele sunt suplimentare. Copiii construiesc direct în ScratchJr, fără importuri sau resurse externe.",
+      "student_reference": "Ajutor: pregătire p. 2-3; M1 p. 4; M2 p. 5-6; M3 p. 7-8; creație p. 9-10; R1 p. 11-12; R2 p. 13-15. În PDF-ul cursului adaugă 26."
     }
   ]
 }

@@ -11,7 +11,7 @@ Cursul ScratchJr și jocurile Robo Explorator, în limba română, pentru clasa 
 - [Lecția 0 · Picnicul întrerupt de ploaie](scratchjr/lectia-0/index.html): proiect nativ `.sjr` cu patru scene editabile, puzzle-uri 0–10, sunete și două rezerve. Lecția se prezintă în ScratchJr de pe laptop. [Instrucțiuni](materiale/Lectia_00_ScratchJr/README.md).
 
 - `index.html` este intrarea comună, cu două secțiuni separate.
-- [ScratchJr](scratchjr/index.html) listează toate cele zece lecții. Fiecare are legături la ghid, cartonașe și pachetul ZIP. Paginile lecțiilor au Înapoi/Înainte și întoarcere la meniu.
+- [ScratchJr](scratchjr/index.html) listează toate cele zece lecții. Lecțiile refăcute au planuri și programe cu capturi; materialele vechi rămân în arhivele lor. Paginile lecțiilor au Înapoi/Înainte și întoarcere la meniu.
 - [Robo](robo/index.html) păstrează jocul original, cele 22 de activități pentru clasă și aventura de acasă. Fișele pentru acasă sunt în continuare în antetul jocului.
 - Linkurile vechi cu `?lesson=8&variant=2`, `?adventure=home` sau `#joaca` continuă să deschidă Robo. Pagina fără parametri arată meniul. Progresul Robo folosește aceleași chei în același browser.
 
@@ -19,6 +19,10 @@ Nu este un al doilea site sau un alt repository. Toate legăturile sunt relative
 
 [Raportul verificării meniului și legăturilor](verificare_site/README.md).
 
+
+## Lecția 3 refăcută: Autobuzul spre plajă
+
+O oră, puzzle greu, creație proprie și două rezerve. [Ghid](materiale/Lectia_03_ScratchJr/ghid-profesor.html) · [Plan și programe cu capturi](materiale/Lectia_03_ScratchJr/Ghid_profesor_Lectia_03.pdf) · [Teste în browser](materiale/Lectia_03_ScratchJr/verificare/Autobuzul_60min.md). Numai elemente din aplicație, fără distribuire de fișiere pe tablete.
 
 ## Cum folosim Robo
 
@@ -116,7 +120,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 1
 
-[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește numai resurse incluse în aplicație, fără fișiere de distribuit pe tabletele copiilor. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1 și 2 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
+[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește numai resurse incluse în aplicație, fără fișiere de distribuit pe tabletele copiilor. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–3 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
 
 [README-ul lecției 1](materiale/Lectia_01_ScratchJr/README.md) conține instalarea pe Lenovo, construirea scenei și testarea opțională în browser. [Raportul de verificare](materiale/Lectia_01_ScratchJr/verificare/README.md) separă cele șapte proiecte finale testate în browser de probele Android și Desktop anterioare.
 
@@ -126,7 +130,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 3
 
-[Atelierul de magie](materiale/Lectia_03_ScratchJr/README.md) introduce transformări vizuale pornite la atingere: mărire, micșorare, dispariție și reapariție. Trucul dificil trebuie să funcționeze de două ori fără resetare. Două puzzle-uri de rezervă sunt pregătite peste planul de 50 de minute. Pachetul conține ghid, cinci cartonașe, soluții și [testele în browser](materiale/Lectia_03_ScratchJr/verificare/README.md). Copiii folosesc Rabbit, Dog, Park și, la rezervă, Butterfly din aplicație, fără fișiere de distribuit.
+[Autobuzul spre plajă](materiale/Lectia_03_ScratchJr/README.md): 60 de minute, Ascunde și Arată pentru urcare și coborâre, călătorie între scene, puzzle greu și două rezerve. [PDF cu toate programele](materiale/Lectia_03_ScratchJr/Ghid_profesor_Lectia_03.pdf) · [Testele în browser](materiale/Lectia_03_ScratchJr/verificare/Autobuzul_60min.md). Numai elemente din aplicație.
 
 ## Cursul ScratchJr: lecția 4
 

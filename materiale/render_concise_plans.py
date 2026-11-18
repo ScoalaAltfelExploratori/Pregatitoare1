@@ -53,13 +53,14 @@ def decorate(c, doc, lesson, number):
     c.drawRightString(A4[0]-34,A4[1]-29,'60 MINUTE / 6-7 ANI')
     c.setStrokeColor(colors.HexColor('#d9e2e8'));c.line(34,31,A4[0]-34,31)
     c.setFont('Body',7.5);c.setFillColor(MUTED)
-    c.drawString(34,19,'Biblioteca ScratchJr / Construim pe tabletă / '+DATA['revision'])
+    c.drawString(34,19,'Biblioteca ScratchJr / Construim pe tabletă / '+lesson.get('revision',DATA['revision']))
     c.drawRightString(A4[0]-34,19,str(number));c.restoreState()
 
 OUT.parent.mkdir(parents=True,exist_ok=True)
 TEMP=ROOT.parent/'tmp/pdfs/concise';TEMP.mkdir(parents=True,exist_ok=True)
 from render_snapshot_guide import render_appendix as relay_appendix
 from render_museum_guide import render_appendix as museum_appendix
+from render_bus_guide import render_appendix as bus_appendix
 
 def append_lesson(writer,lesson,start):
     num=lesson['number'];plan=TEMP/f'plan-{num}-{start}.pdf';appendix=TEMP/f'visual-{num}-{start}.pdf'
@@ -67,7 +68,7 @@ def append_lesson(writer,lesson,start):
     SimpleDocTemplate(str(plan),pagesize=A4,leftMargin=34,rightMargin=34,topMargin=45,bottomMargin=42,title=lesson['title'],author='Școala altfel').build(plan_story(lesson),onFirstPage=decorate_page,onLaterPages=decorate_page)
     reader=PdfReader(str(plan));assert len(reader.pages)==1,(num,len(reader.pages))
     writer.append(reader)
-    render={1:relay_appendix,2:museum_appendix}[num]
+    render={1:relay_appendix,2:museum_appendix,3:bus_appendix}[num]
     outline=render(appendix,start+1)
     writer.append(PdfReader(str(appendix)))
     writer.add_outline_item(f'Lecția {num} - {lesson["title"]} - plan',start-1)
@@ -77,14 +78,14 @@ writer=PdfWriter()
 for lesson in DATA['lessons']:append_lesson(writer,lesson,len(writer.pages)+1)
 writer.add_metadata({'/Title':'ScratchJr - Planuri de 60 de minute și programe ilustrate','/Author':'Școala altfel'})
 with OUT.open('wb') as stream:writer.write(stream)
-assert len(PdfReader(str(OUT)).pages)==13*len(DATA['lessons'])
+assert len(PdfReader(str(OUT)).pages)==len(writer.pages)
 shutil.copyfile(OUT,ROOT/OUT.name)
 for lesson in DATA['lessons']:
-    if lesson['number']!=2:continue
+    if lesson['number']!=DATA['lessons'][-1]['number']:continue
     single=PdfWriter();append_lesson(single,lesson,1)
-    single.add_metadata({'/Title':'Lecția 2 - Muzeul după închidere - Plan și programe ilustrate','/Author':'Școala altfel'})
-    dest=OUT.parent/'Ghid_profesor_Lectia_02.pdf'
+    single.add_metadata({'/Title':f'Lecția {lesson["number"]} - {lesson["title"]} - Plan și programe ilustrate','/Author':'Școala altfel'})
+    dest=OUT.parent/f'Ghid_profesor_Lectia_{lesson["number"]:02}.pdf'
     with dest.open('wb') as stream:single.write(stream)
-    assert len(PdfReader(str(dest)).pages)==13
-    shutil.copyfile(dest,ROOT/'Lectia_02_ScratchJr'/dest.name)
-print(f'Created course PDF ({len(writer.pages)} pages) and Lesson 2 PDF (13 pages).')
+    assert len(PdfReader(str(dest)).pages)==len(single.pages)
+    shutil.copyfile(dest,ROOT/f'Lectia_{lesson["number"]:02}_ScratchJr'/dest.name)
+print(f'Created course PDF ({len(writer.pages)} pages) and current lesson PDF ({len(single.pages)} pages).')

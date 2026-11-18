@@ -1,138 +1,112 @@
-# Lecția 3 Atelierul de magie
+# Lecția 3 - Autobuzul spre plajă
 
-50 de minute, copii de 6-7 ani. Trei misiuni principale, inclusiv una dificilă, plus două rezerve de aproximativ 14-18 minute. Copiii construiesc transformări vizuale: personajele își schimbă mărimea și vizibilitatea, fără deplasare.
+**60 de minute · 6-7 ani · puzzle greu, creație proprie și două rezerve.**
 
-## Ce învățăm
+[Plan și programe cu capturi - PDF](Ghid_profesor_Lectia_03.pdf) · [Pagina lecției](index.html) · [Proiectele profesorului](solutii_autobuz/README.md)
 
-O atingere a personajului poate porni programul lui. Ordinea blocurilor schimbă rezultatul: dacă vrem să reapară la mărimea normală, refacem mărimea înainte de apariție. O așteptare scurtă ne lasă să vedem efectul. Copiii creează propriile programe; nu copiază intenționat greșeli.
+## Povestea pentru copii
 
-Lecția 1 a lucrat întâlnirea și revenirea; lecția 2 Repeat. Aici construim efecte și interacțiuni. Repeat este doar o opțiune cunoscută pentru prima rezervă, nu mecanismul principal al lecției.
+„Ana, Dan și Mara pleacă la plajă. Vin din locuri diferite, dar trebuie să prindă același autobuz. Șoferul nu pleacă până nu urcă toți. La plajă, autobuzul oprește înainte să coboare. Voi programați călătoria, astfel încât nimeni să nu rămână în urmă.”
 
-## Pregătire fără fișiere pe tablete
+Noutățile față de ștafetă și muzeu: **Ascunde / Arată pentru urcare și coborâre**, respectiv **pagini pentru locurile călătoriei**. Mesajele coordonează etapele. Numerele stabilesc distanțele până la ușă și traseele de coborâre; nu adăugăm întrebări matematice separate.
 
-ScratchJr este deja instalat. Creăm un proiect nou și alegem **Rabbit, Dog și Park** din bibliotecă. Eliminăm pisica inițială dacă vrem exact cele două personaje din model. Iepurele stă în stânga, câinele în dreapta, cu spațiu între ei pentru mărire. Păstrăm dimensiunile inițiale. Grila și pozițiile exacte nu sunt necesare. La prima rezervă adăugăm **Butterfly**, în spațiul liber de sus.
+## Pregătirea scenei - 0-8 minute
 
-Toate resursele sunt incluse în aplicație. Copiii nu importă proiecte, nu descarcă imagini și nu au nevoie de conturi. Fundalul alb este acceptat. Proiectele SJR din pachet sunt numai referințe pentru profesor.
+1. Proiect nou, fundal **Suburbs**, autobuzul **Bus**, fata **Child** cu fustă mov. Redenumește-o **Ana**. Elimină pisica dacă nu o folosești. Începem cu un singur pasager.
+2. Autobuzul: aproximativ **7 pătrățele lățime**; copilul: aproximativ **3 pătrățele înălțime**. Autobuzul privește spre dreapta, cu ușa în față. Copilul merge în fața desenului autobuzului până la ușă.
+3. Activează grila. Așază Ana pe linia ușii, la **10 spații spre stânga**. În exemplu: centrul Anei (144, 264), ușa (384, 264), într-o scenă de 480 × 360. Pe tabletă numărăm spațiile, fără coordonate în cod. Dacă alegi alte mărimi, aliniază ușa cu locul unde dispare copilul și adaptează distanța.
+4. Poziționează prin tragere înainte de programare. Acestea sunt pozițiile la care revine **Acasă**. Toți pornesc cu viteza normală.
+5. Titlurile ABC sunt opționale. Toate imaginile există în aplicație; copiii nu importă proiecte, imagini sau sunete.
 
-## Demonstrații scurte, pe rând
+**Înaintea fiecărei probe:** pagina 1 → Stop sus dacă rulează → Reset Characters (săgeata rotundă) → Steag sus → o singură atingere pe autobuzul de pe scenă. Așteaptă finalul înainte de o nouă cursă. Selectarea în lista din stânga nu pornește programul.
 
-La început arată doar blocul galben **Pornire la atingere** și blocul mov **Mărește**. Conectează-le, apoi atinge iepurele pe scenă. Atingerea miniaturii din stânga selectează personajul pentru editare; nu este gestul cu care rulăm trucul. Nu folosim blocul de pornire la ciocnire.
+## 1. Primul pasager - 8-20 minute
 
-Steagul verde de sus nu pornește programele de atingere. Pentru o probă nouă a mărimii folosim **butonul de resetare a personajelor** din bara de sus. La misiunea 1, atingerile repetate pot mări sau micșora din nou personajul; apăsăm o dată, observăm și resetăm înainte de altă probă.
+**Ținta:** Ana ajunge la ușă și dispare numai acolo. Autobuzul rămâne pe loc.
 
-Introdu **Ascunde**, **Arată** și **Așteaptă** abia înainte de misiunea 2. Așteaptă este portocaliu; celelalte sunt mov. În ScratchJr numărul de la așteptare reprezintă zecimi de secundă: **10 înseamnă aproximativ o secundă**, nu zece secunde. Profesorul arată valoarea, fără lecție despre fracții.
-
-La misiunea 3 arată blocul mov **Revino la mărimea inițială / Reset Size**, fără să dai tot programul. El reface dimensiunea standard a personajului; nu îl mută și nu îl face automat vizibil. **Arată** reface vizibilitatea, nu dimensiunea.
-
-## Cele 50 de minute
-
-| Minute | Activitate | Acțiunea profesorului |
-| --- | --- | --- |
-| 0-4 | Demonstrație | Atingerea pornește mărirea; prezicem efectul. |
-| 4-8 | Scena | Iepure și câine, cu loc pentru efecte. |
-| 8-17 | Misiunea 1 | Mărire și micșorare. |
-| 17-24 | Misiunea 2 și exemplul | Dispariție, pauză, revenire; legătura cu Sunset. |
-| 24-27 | Pauză | Mimăm mare, mic, ascuns. |
-| 27-37 | Puzzle dificil | Truc complet, repetabil fără resetare. |
-| 37-45 | Creația mea | Inventăm altă ordine a efectelor. |
-| 45-50 | Explic și salvez | Două probe, galerie și redeschidere. |
-
-**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
-
-## Exemplu oficial adaptat: Când personajul dispare
-
-**Reper:** [Sunset](https://www.scratchjr.org/teach/activities/sunset). Exemplul oficial face soarele să dispară. Folosim aceeași idee vizuală pentru iepurele magician, fără deplasare. La început arată numai atingere → mărește 4. Păstrează demonstrația dispariției pentru trecerea la M2, în timpul alocat acelei misiuni.
-
-**Model pentru demonstrație:** La M2, Rabbit: atingere → ascunde → așteaptă 10 → arată. Rulează o dată, apoi încă o dată după revenire. Nu adăugăm soare, pagini sau alte personaje pentru această explicație.
-
-**Întreabă înainte de rulare:** „Cum poate reveni singur dacă nu-l mai putem atinge? Copiii propun ce urmează după ascundere, apoi verificăm.”
-
-Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
-
-## Misiunea 1 Uriaș și pitic
-
-**Ținta:** „Ating iepurele: se face mai mare. Ating câinele: se face mai mic. Celălalt rămâne la fel.” Fiecare personaj are propriul bloc galben de pornire la atingere. Copiii construiesc câte un program, aleg efectul și o valoare ușor de observat.
-
-**Model:** iepure, atingere → mărește 4; câine, atingere → micșorează 4. Numărul 4 este o alegere vizibilă, nu singurul răspuns corect. Nu pretindem că personajul devine de patru ori mai mare. O atingere schimbă o dată mărimea; la alte atingeri efectul se acumulează.
-
-**Verificare:** resetăm, atingem iepurele o dată și comparăm personajele; resetăm, atingem câinele o dată și comparăm din nou. Steagul verde nu trebuie să declanșeze niciun truc. Niciun personaj nu se deplasează.
-
-**Indicii:** „Pe cine ai selectat în stânga?”, „Unde trebuie să atingi ca să pornească?”, „Ce face blocul mov ales?”. Dacă personajul devine prea mic, resetăm înainte de următoarea probă.
-
-## Misiunea 2 Dispar și revin
-
-**Ținta:** „Ating iepurele o singură dată. Dispare, stă ascuns o clipă și revine singur, în același loc.” Înlocuim efectul iepurelui cu noul truc. Programul câinelui poate rămâne, dar nu îl atingem în această probă.
-
-**Soluție:** atingere → ascunde → așteaptă 10 → arată. **Verificare:** există un interval în care iepurele nu se vede; apoi reapare fără alt tap și fără resetare. Câinele nu se schimbă. După revenire, un nou tap repetă trucul.
-
-**Indicii:** „Ce trebuie să se întâmple după ascundere?”, „Unde punem pauza ca să apucăm să vedem dispariția?”. Nu cerem atingerea unui personaj invizibil. Pentru redeschiderea cortinei este necesar blocul Arată în același program.
-
-## Misiunea 3 Trucul complet
-
-**Provocare dificilă pentru toți:** „La un singur tap, iepurele se face mare și rămâne așa o clipă. Apoi dispare, așteaptă ascuns și reapare direct la mărimea normală. Când îl atingi iar, trucul funcționează din nou, fără resetare.”
-
-Personajul rămâne în același loc, iar câinele rămâne neschimbat. Cerem două rulări consecutive, a doua pornită după terminarea primei. Nu apăsăm resetarea între ele. Nu apăsăm repetat în timpul unui truc; se poate reporni programul.
-
-**Soluție pentru profesor:** atingere → mărește 4 → așteaptă 10 → ascunde → așteaptă 10 → mărimea inițială → arată. Sunt șase blocuri de acțiune după cel galben. Prima așteptare face vizibilă starea mare; a doua păstrează dispariția. Refacem mărimea cât timp personajul este ascuns, apoi îl arătăm.
-
-**Reușită:** mare și vizibil → ascuns → vizibil la mărimea normală. A doua rulare are același efect și aceeași mărime finală. Dacă Arată este înainte de revenirea la mărimea inițială, poate apărea mare pentru o clipă; discutăm dacă respectă cerința „reapare direct normal”.
-
-**Indicii, pe rând:** „Cum facem să se vadă că a crescut?”, „Ce trebuie refăcut cât timp nu-l vedem?”, „Care bloc deschide cortina?”. Profesorul poate așeza cartonașe cu cele trei stări dorite, fără a arăta ordinea blocurilor soluției.
-
-Un copil care are nevoie de sprijin construiește întâi dispariția și revenirea, apoi adaugă mărirea și refacerea dimensiunii. Toți primesc provocarea; nu cerem terminarea fără ajutor și nu facem clasamente.
-
-## Creația mea: Trucul meu de magician
-
-**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
-
-**Spune copiilor:** „Alege ordinea a două efecte vizuale: mare/mic, ascuns/vizibil. Introdu o pauză acolo unde publicul trebuie să vadă efectul. La final personajul este vizibil și la mărimea inițială. Trucul pornește la o singură atingere.”
-
-**Verificarea autorului:** Rulează de două ori fără resetare între trucuri. Explică ce moment ai vrut să surprindă publicul. Nu impunem un număr maxim de blocuri în acest atelier.
-
-**Sprijin și extensie:** Schimbă durata unei pauze sau mărimea unui efect dintr-un truc reușit. Pentru mai multă dificultate, dă câinelui un truc diferit care se repetă tot fără resetare.
-
-Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
-
-**Ce urmăresc la încheiere:** Copilul explică diferența dintre Arată și Mărimea inițială.
-
-## Rezervă 1 Al treilea secret
-
-**6-8 minute, suplimentar.** Adăugăm Butterfly din bibliotecă, în spațiul liber de sus. Copilul construiește o surpriză a lui. Ținta concretă a exemplului: la o singură atingere, fluturele dispare și reapare de două ori, apoi rămâne vizibil. Iepurele și câinele nu se schimbă.
-
-**Soluție opțională:** atingere → Repeat 2 [ascunde, așteaptă 5, arată, așteaptă 5]. Folosim ce știm de la lecția 2. Se acceptă și două grupuri consecutive, fără Repeat; obiectivul aici este răspunsul independent al celui de-al treilea personaj. Pauza de după Arată face vizibilă fiecare apariție.
-
-**Verificare:** două dispariții distincte și două reveniri, apoi fluturele rămâne pe ecran. Numărăm aparițiile la un singur tap, nu atingem de două ori ca să obținem două trucuri. După încheiere putem repeta. Un coleg poate testa pe rând cele trei personaje; doar cel atins trebuie să reacționeze.
-
-**Indiciu:** „Ce grup produce o singură dispariție și revenire?”, „Unde trebuie să construiești programul fluturelui?”. Copilul poate inventa altă surpriză vizuală, dacă o explică și păstrează independența personajelor.
-
-## Rezervă 2 Magie în cinci blocuri
-
-**8-10 minute, suplimentar.** Copilul inventează un truc cu cel mult **cinci blocuri de acțiune după pornirea la atingere**. Blocul galben nu se numără; Așteaptă și Mărimea inițială se numără. În această provocare nu folosim Repeat sau mișcare, ca să fie clară limita.
-
-Trucul trebuie să aibă cel puțin două schimbări vizibile și să se termine cu personajul vizibil, la mărimea normală. Așteptările trebuie să lase colegul să observe efectele. Colegul prezice ordinea înainte de probă, apoi compară cu ce vede. La un nou tap, după terminare, trucul funcționează fără resetare.
-
-**Un exemplu, nu singura soluție:** atingere → mărește 4 → așteaptă 10 → micșorează 8 → așteaptă 10 → mărimea inițială. Avem exact cinci acțiuni: mare, apoi mic, apoi normal. Micșorarea este mai mare decât mărirea pentru a trece sub dimensiunea normală. Copiii pot găsi alte numere sau altă combinație de efecte; nu cerem memorarea numerelor.
-
-**Indicii:** „Câte blocuri mai ai?”, „Ce stări vrem să poată vedea colegul?”, „Cum te asiguri că la final poți porni din nou?”. Dacă aleg ascunderea, trebuie să păstreze loc pentru Arată. Dacă trucul depășește cinci acțiuni, aleg ce efect păstrează.
-
-## Dificultăți și sprijin
-
-| Ce observăm | Cum ajutăm |
+| Personaj | Fire separate |
 | --- | --- |
-| Steagul nu pornește trucul | Este normal: atingem personajul pe scenă, nu miniatura din stânga. |
-| Se schimbă alt personaj | Verificăm personajul selectat și programul de sub el. |
-| Personajul rămâne invizibil | Verificăm că Arată este conectat după ascundere și pauză. Resetăm pentru o nouă probă. |
-| Efectul trece prea repede | Punem o așteptare între două schimbări; 10 este aproximativ o secundă. |
-| Mărimea se acumulează | La M1 resetăm înainte de fiecare probă; la M3 și R2 programul trebuie să se termine normal. |
-| Copilul atinge repetat | Un singur tap, apoi mâinile jos până la final. |
-| Rămâne prea puțin timp | Oferim indicii la M1 și M2; păstrăm încercarea provocării dificile și salvarea. |
+| Autobuz | Steag → Acasă; Atingere → Trimite portocaliu |
+| Ana | Steag → Acasă → Arată; Primește portocaliu → Dreapta 10 → Ascunde |
 
-## Încheiere și verificare
+Ascunde și Arată sunt blocurile mov cu siluetă transparentă, respectiv albă. Copilul rămâne în lista personajelor când este ascuns. Plicul închis trimite, cel deschis primește; alegem aceeași culoare din săgeata mică.
 
-Copilul spune ce pornește trucul și arată un bloc care schimbă aspectul. Explică de ce este necesară o pauză sau refacerea mărimii. Revine la galerie, redeschide și încearcă din nou. Păstrăm aceeași tabletă la următoarea întâlnire.
+Întreabă: „Unde trebuie să ajungă Ana înainte să dispară?” Verificăm ușa, nu doar dispariția. Dacă o depășește, ajustăm poziția inițială sau distanța.
 
-Raportul din verificare/README.md descrie testele efectuate. Browserul comunitar nu certifică atingerea cu degetul, fluiditatea sau lucrul offline în aplicația oficială pe Lenovo. Proiectele profesorului nu trebuie distribuite copiilor.
+## 2. Prima cursă - 20-33 minute
 
-**Referințe:** [Blocurile oficiale ScratchJr](https://www.scratchjr.org/pdfs/blocks.pdf) pentru pornire, aspect și așteptare; [interfața ScratchJr](https://sites.bc.edu/scratchjr/learn/) pentru personaje, programare și salvare.
+**Ținta:** urcare → plecare → plajă → oprire → coborâre. Fără o nouă apăsare a steagului la plajă.
 
-**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.
+Pe pagina 1, continuă firul autobuzului: **Atingere → Trimite portocaliu → Dreapta 4 → Pagina 2**. Blocul roșu cu miniatura paginii apare după ce există pagina 2 și se pune ultimul.
+
+### Construirea paginii 2
+
+1. Apasă **+** în lista paginilor. Alege **Beach Day**, apoi adaugă din bibliotecă Bus și aceeași fată. Fiecare pagină are propriile personaje și programe; codul nu se transferă automat.
+2. Pune temporar autobuzul unde va opri și Ana chiar la ușă. Mută **numai autobuzul 4 spații spre stânga**. Ana rămâne la viitoarea ușă. În exemplu, autobuzul pornește cu centrul la (84, 264), oprește la (180, 264), iar Ana așteaptă la (216, 264).
+3. Selectează Ana, trage **Ascunde** în zona albă și atinge blocul: copilul dispare. Folosește apoi blocul în firul de pregătire de mai jos. Ana rămâne selectabilă în lista din stânga.
+4. Construiește programele paginii 2:
+
+| Personaj | Fire separate |
+| --- | --- |
+| Autobuz | Steag → Acasă → Trimite portocaliu → Dreapta 4 → Trimite albastru |
+| Ana | Primește portocaliu → Ascunde → Acasă; Primește albastru → Arată → Dreapta 2 → Sus 2 |
+
+**De ce funcționează:** Trimite așteaptă terminarea tuturor firelor pornite de mesaj. Pe pagina 1, autobuzul continuă după urcare. La plajă, albastrul vine după deplasarea autobuzului. Schimbarea paginii pornește automat programele cu Steag de acolo. Mesajele acționează în pagina curentă, deci portocaliul poate avea aici rol de pregătire.
+
+Proba pornește de pe pagina 1. Urmărește ușa la plecare și după oprire. Programul nu detectează automat ușa: construim traseul și verificăm vizual rezultatul.
+
+## Pauză activă - 33-36 minute
+
+Trei copii mimează pasagerii, unul șoferul. Un pasager merge mai încet. Clasa dă semnul plecării când au urcat toți. Discutăm de ce o pauză de două secunde poate fi insuficientă.
+
+## 3. Nimeni nu rămâne în urmă - 36-48 minute - puzzle greu
+
+**Ținta:** trei pasageri cu distanțe diferite. Autobuzul îi așteaptă pe toți, **fără bloc Așteaptă**. La plajă, fiecare merge în alt loc.
+
+Adaugă pe ambele pagini **Child cu tricou galben (Dan)** și **Child cu rochie roz (Mara)**. Pe pagina 1, Dan este la 8 pași de ușă, Mara la 6; Ana păstrează cei 10. Toți au viteza normală.
+
+| Personaj | Pagina 1: urcare | Pagina 2: coborâre |
+| --- | --- | --- |
+| Ana | Portocaliu → Dreapta 10 → Ascunde | Albastru → Arată → Dreapta 2 → Sus 2 |
+| Dan | Portocaliu → Dreapta 8 → Ascunde | Albastru → Arată → Dreapta 4 |
+| Mara | Portocaliu → Dreapta 6 → Ascunde | Albastru → Arată → Dreapta 6 → Jos 2 |
+
+Portocaliu și Albastru din tabel sunt **Primește mesaj**, nu Trimite. Fiecare copil are și **Steag → Acasă → Arată** pe pagina 1, respectiv **Primește portocaliu → Ascunde → Acasă** pe pagina 2. La sosire, toți pornesc ascunși din același loc: ușa după oprire. Autobuzul păstrează programele M2.
+
+Indicii: „Cine ajunge ultimul?” → „Ce comandă pornește toate urcările?” → „Unde trebuie să fie plecarea?” Trimite așteaptă toate firele pornite, nu doar primul. Nu pune Repetă mereu în firele de urcare: atunci ele nu se mai termină.
+
+**Reușită:** nimeni nu dispare înaintea ușii; autobuzul stă cât timp mai urcă cineva; copiii apar la plajă după oprire și ajung în trei locuri diferite.
+
+## Excursia mea - 48-58 minute
+
+Copilul alege o altă destinație din bibliotecă și inventează locurile de coborâre. Are **10 minute pentru creație**. Păstrează urcarea la ușă și coborârea după oprire.
+
+Exemplul complet din PDF folosește **Park** și adaugă **Sus 1** la sfârșitul traseului fiecărui pasager. Programele de urcare și ale autobuzului rămân. Este o variantă posibilă, nu singura soluție. Copilul explică unde merge fiecare și testează cursa.
+
+## Probă și salvare - 58-60 minute
+
+Revino la pagina 1, oprește dacă este nevoie, resetează și pornește o cursă completă. Salvează revenind în galerie, apoi redeschide proiectul. Dacă este deschis la destinație, revino la pagina 1 înainte de cursă.
+
+## R1. Pasagerul mai lent - rezervă, +5 minute
+
+Pornește de la M3. La Mara, pe pagina 1: **Primește portocaliu → Viteză lentă → Dreapta 6 → Ascunde**. Selectează pietonul lent din blocul portocaliu Viteză. Restul programelor sunt identice cu M3.
+
+Mara are drumul cel mai scurt, dar ajunge ultima. **Nu modifica programul autobuzului și nu adăuga Așteaptă.** Verifică dacă o așteaptă și ajung toți la plajă. Pentru revenirea la M3, setează Mara din nou la viteza normală.
+
+## R2. Două opriri - rezervă, +10 minute
+
+Trei pagini: **1 Suburbs → 2 Park → 3 Beach Day**. Ana coboară în parc; Dan și Mara continuă spre plajă.
+
+| Pagina | Autobuz | Pasageri |
+| --- | --- | --- |
+| 1 - Suburbs | Programele M3, inclusiv Pagina 2 | Toți urcă la fel ca în M3 |
+| 2 - Park | Steag → Acasă → Trimite portocaliu → Dreapta 4 → Trimite albastru → Dreapta 8 → Pagina 3 | Toți: Primește portocaliu → Ascunde → Acasă. Numai Ana: Primește albastru → Arată → Dreapta 2 → Sus 2. Dan și Mara nu au fir albastru aici. |
+| 3 - Beach Day | Steag → Acasă → Trimite portocaliu → Dreapta 4 → Trimite albastru | Adaugă numai Dan și Mara, cu programele de pregătire și coborâre din M3. |
+
+La parc, Trimite albastru așteaptă ca Ana să termine coborârea. Abia apoi autobuzul pleacă. Ana nu se adaugă pe pagina 3, fiindcă a rămas în parc. Nu schimbăm scena manual în timpul probei.
+
+## Ajutorul din PDF
+
+Plan p. 1; pregătire p. 2-3; M1 p. 4; M2 p. 5-6; M3 p. 7-8; creație p. 9-10; R1 p. 11-12; R2 p. 13-15. Fiecare pagină de soluție arată scena și **toate programele fiecărui personaj**. În PDF-ul cursului adaugă 26.
+
+[Raportul probelor în browser](verificare/Autobuzul_60min.md). Proiectele distribuite au fost importate și executate în ScratchJr Desktop Reborn. Proba pe un Lenovo fizic nu este inclusă.
