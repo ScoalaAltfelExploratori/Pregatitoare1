@@ -14,10 +14,12 @@
 
 Această lecție folosește robotul și atelierul create pentru curs. Ele **nu sunt în biblioteca standard**. Fișierul [start.sjr](solutii_inspectie/start.sjr) conține decorul, robotul, două bariere și stația, toate fără programe. Nu copia imaginile separat.
 
-1. Pe laptop, deschide [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html). Din galerie: **Open**, alege `start.sjr`, apoi cardul **L06 Robotul de inspecție - de la zero · 60 min**. La import nu apăsa încă o dată Open; așteaptă apariția cardului.
+1. Pe laptop, deschide [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html). Din galerie: **Open**, alege `start.sjr`, apoi cardul **L06 Atelier - de la zero · v2.1**. La import nu apăsa încă o dată Open; așteaptă apariția cardului.
 2. Pe un Lenovo, descarcă `start.sjr` de pe pagina lecției. Din Descărcări/Fișiere deschide-l cu ScratchJr, dacă aplicația este oferită ca destinație. Verifică importul, salvarea și redeschiderea pe modelul folosit în clasă înainte să pregătești restul tabletelor. Browserul de pe laptop nu transferă automat proiectul pe Android. Ruta exactă de deschidere poate depinde de managerul de fișiere; nu a fost verificată pe tableta fizică.
 3. Pregătește proiectul pe fiecare tabletă înaintea orei; importul nu consumă cele 60 de minute. Copiii construiesc programele în acest proiect, nu deschid pe rând soluțiile profesorului.
 4. Testează o rulare din `m3.sjr` pe tableta de probă și verifică volumul pentru **Pop**. Lecția rămâne inteligibilă și fără sunet.
+
+**Atelier revizuit:** dacă ai importat varianta anterioară, descarcă din nou starterul și importă-l ca proiect nou. Copiile deja importate nu se actualizează automat. În galerie, alege cardul cu **v2.1**. Pentru proiecție, butonul de ecran complet mărește scena; revino în editor când construiești codul.
 
 În browser, toate fișierele au fost importate, rulate și capturate. Versiunea web a raportat o eroare la înregistrarea resurselor în biblioteca globală, însă imaginile din proiect au rămas vizibile după salvare, redeschidere și reîncărcare. De aceea pornim de la SJR-ul inclus și nu cerem căutarea robotului în galeria globală. [Detalii și limitele testării](verificare/Inspectie_60min.md).
 
@@ -25,7 +27,7 @@ Această lecție folosește robotul și atelierul create pentru curs. Ele **nu s
 
 Deschidem proiectul fără cod. Jos sunt robotul, bariera și stația cu bifă. **Bariera 2**, sus în stânga, este pusă deoparte pentru a doua rezervă; nu are cod. Nu schimbăm mărimile. Fundalul este decor: contactul funcționează între personaje, nu cu dulapurile desenate pe perete.
 
-Arată trei lucruri: lista personajelor, programele separate ale fiecăruia și grila. Un pas înseamnă un pătrățel. Robotul pornește la aproximativ 3 pătrățele de marginea stângă, bariera la 9½, stația la 18½; toate pe aceeași linie, aproape de rândul 4. Pozițiile sunt deja pregătite. Grila este un ajutor, nu trebuie să reconstruim decorul.
+Arată trei lucruri: lista personajelor, programele separate ale fiecăruia și grila. Un pas înseamnă un pătrățel. Robotul pornește la aproximativ 2½ pătrățele de marginea stângă, bariera la 9½, stația la 18½; toate pe aceeași linie, aproape de rândul 3, numărat de jos. Pozițiile sunt deja pregătite. Grila este un ajutor, nu trebuie să reconstruim decorul.
 
 **Înainte de fiecare probă:** Stop dacă rulează, **Reset Characters** sus, apoi **un singur steag**. Nu mutăm personajele în timpul rulării. Selectarea din lista din stânga deschide codul; atingerea robotului nu pornește aceste programe.
 
@@ -61,12 +63,12 @@ Plic închis = Trimite; plic deschis = Primește. Alegem culoarea din săgeata d
 | Personaj | Program complet |
 | --- | --- |
 | Robot de inspecție | Steag → Dreapta 20 |
-| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 3 → Dreapta 5 → Jos 3 → Spune Cale liberă! |
+| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 6 → Jos 4 → Spune Cale liberă! |
 | Barieră | La ciocnire → Trimite portocaliu |
 | Stație de control | Fără program; nu intervine în această etapă |
 | Bariera 2 | Fără program; nu intervine în această etapă |
 
-**Partea grea, pentru toți:** ordinea este Stop, retragere, urcare, traversare, coborâre. Sus 3 și Jos 3 se compensează; Dreapta 5 lasă loc pentru întregul robot, nu numai pentru centrul lui. Dacă schimbăm mărimile personajelor, trebuie recalibrat ocolul. Nu avem un motor fizic care să împiedice trecerea prin obiecte.
+**Partea grea, pentru toți:** ordinea este Stop, retragere, urcare, traversare, coborâre. Sus 4 și Jos 4 se compensează; Dreapta 6 lasă loc pentru întregul robot, nu numai pentru centrul lui. Dacă schimbăm mărimile personajelor, trebuie recalibrat ocolul. Nu avem un motor fizic care să împiedice trecerea prin obiecte.
 
 **Probă:** atingere scurtă la început, apoi un singur ocol, fără traversarea barierei pe linia de jos. Stația și Bariera 2 rămân fără cod.
 
@@ -83,7 +85,7 @@ Un copil mimează robotul, fără să se lovească de nimeni. Profesorul spune �
 | Personaj | Program complet |
 | --- | --- |
 | Robot de inspecție | Steag → Dreapta 20 |
-| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 3 → Dreapta 5 → Jos 3 → Dreapta 20 |
+| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 6 → Jos 4 → Dreapta 20 |
 | Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
 | Barieră | La ciocnire → Trimite portocaliu |
 | Stație de control | La ciocnire → Trimite albastru |
@@ -97,20 +99,20 @@ Un copil mimează robotul, fără să se lovească de nimeni. Profesorul spune �
 
 ## Creația mea - 48-58 minute
 
-Copiii aleg locul barierei și înălțimea ocolului. Păstrăm retragerea, loc pentru întregul robot și oprirea finală. Nu cerem o singură soluție. Se poate porni de la M2 dacă M3 încă are nevoie de sprijin.
+Copiii aleg locul barierei și lățimea ocolului. Păstrăm retragerea, loc pentru întregul robot și oprirea finală. Nu cerem o singură soluție. Se poate porni de la M2 dacă M3 încă are nevoie de sprijin.
 
-**Exemplul complet „Ocolul meu”:** mutăm bariera un pătrățel spre stânga față de M3; schimbăm Sus 3/Jos 3 în **Sus 4/Jos 4**. Dreapta 5 rămâne. Stația și robotul pornesc din aceleași locuri. A doua barieră rămâne sus, fără cod. Păstrăm distanță față de ea.
+**Exemplul complet „Ocolul meu”:** mutăm bariera un pătrățel spre stânga față de M3; schimbăm traversarea **Dreapta 6 în Dreapta 7**. Sus 4 și Jos 4 rămân. Stația și robotul pornesc din aceleași locuri. A doua barieră rămâne sus, fără cod. Păstrăm distanță față de ea.
 
 | Personaj | Program complet |
 | --- | --- |
 | Robot de inspecție | Steag → Dreapta 20 |
-| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 5 → Jos 4 → Dreapta 20 |
+| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 7 → Jos 4 → Dreapta 20 |
 | Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
 | Barieră | La ciocnire → Trimite portocaliu |
 | Stație de control | La ciocnire → Trimite albastru |
 | Bariera 2 | Fără program; nu intervine în această etapă |
 
-**Probă:** robotul reacționează mai devreme, ocolește mai sus și ajunge tot la stație. Copilul explică ce două numere trebuie schimbate împreună și de ce. Nu mutăm bariera foarte aproape de pornire sau de stație: trebuie loc pentru retragere și coborâre.
+**Probă:** robotul reacționează mai devreme, traversează un pas în plus pe sus și ajunge tot la stație. Copilul explică de ce îi trebuie loc pentru întregul robot înainte să coboare. Nu mutăm bariera foarte aproape de pornire sau de stație: trebuie loc pentru retragere și coborâre.
 
 ## Probă și salvare - 58-60 minute
 
@@ -123,7 +125,7 @@ Pornim de la M3. În firul Steag punem **Viteză rapidă** înainte de Dreapta 2
 | Personaj | Program complet |
 | --- | --- |
 | Robot de inspecție | Steag → Viteză rapidă → Dreapta 20 |
-| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 3 → Dreapta 5 → Jos 3 → Dreapta 20 |
+| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 6 → Jos 4 → Dreapta 20 |
 | Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
 | Barieră | La ciocnire → Trimite portocaliu |
 | Stație de control | La ciocnire → Trimite albastru |
@@ -133,14 +135,14 @@ Pornim de la M3. În firul Steag punem **Viteză rapidă** înainte de Dreapta 2
 
 ## Rezervă 2. Două zone închise - încă 10 minute
 
-Pornim de la M3, la viteza normală. Folosim **Bariera 2 deja inclusă în proiect**, nu importăm încă un fișier. Mutăm prima barieră două pătrățele spre stânga; aducem Bariera 2 de sus pe linia robotului, la 6 pătrățele spre dreapta de prima. Modelul are centrele la 7½ și 13½ pătrățele de marginea stângă. Stația rămâne la 18½.
+Pornim de la M3, la viteza normală. Folosim **Bariera 2 deja inclusă în proiect**, nu importăm încă un fișier. Mutăm prima barieră 3½ pătrățele spre stânga; aducem Bariera 2 de sus pe linia robotului, la 6 pătrățele spre dreapta de prima. Modelul are centrele la 6 și 12 pătrățele de marginea stângă. Stația rămâne la 18½.
 
 Adăugăm la Bariera 2 același La ciocnire → Trimite portocaliu. Robotul păstrează **un singur fir de evitare**, reutilizat la ambele obstacole.
 
 | Personaj | Program complet |
 | --- | --- |
 | Robot de inspecție | Steag → Dreapta 20 |
-| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 3 → Dreapta 5 → Jos 3 → Dreapta 20 |
+| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 6 → Jos 4 → Dreapta 20 |
 | Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
 | Barieră | La ciocnire → Trimite portocaliu |
 | Stație de control | La ciocnire → Trimite albastru |
@@ -152,7 +154,7 @@ Adăugăm la Bariera 2 același La ciocnire → Trimite portocaliu. Robotul păs
 
 - Robotul trece prin barieră: verificăm La ciocnire la barieră, plicurile portocalii și Stop la robot. Fundalul nu detectează contacte.
 - Robotul tremură lângă obiect: verificăm Stânga 1 imediat după Stop și faptul că obiectele sunt separate la pornire.
-- Ocolul lovește bariera din nou: resetăm; păstrăm mărimile din starter și distanțele Sus 3, Dreapta 5, Jos 3.
+- Ocolul lovește bariera din nou: resetăm; păstrăm mărimile din starter și distanțele Sus 4, Dreapta 6, Jos 4.
 - Nu ajunge la stație: în M3, după coborâre trebuie Dreapta 20, în locul replicii din M2.
 - Nu se oprește la stație: aceasta trimite albastru, iar robotul primește albastru într-un fir separat cu Stop.
 - Un plic apare gol în versiunea web: apasă săgeata și selectează din nou culoarea indicată; nu există un „bloc gol” de adăugat.

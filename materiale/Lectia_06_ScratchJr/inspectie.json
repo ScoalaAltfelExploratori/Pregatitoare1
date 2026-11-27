@@ -6,11 +6,11 @@
     {
       "key": "start",
       "file": "start.sjr",
-      "name": "L06 Robotul de inspecție - de la zero · 60 min",
-      "sha256": "15d91c93cc9e5823a10b4928d74890558a97a01ae598b2ed8820b2a149e7406e",
+      "name": "L06 Atelier - de la zero · v2.1",
+      "sha256": "b3b77bbb73f6fa666870351e0613fc29f185a961eebeb973e051c60e99260376",
       "pages": [
         {
-          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
           "focus": "robot",
           "sprites": [
             {
@@ -22,58 +22,58 @@
                 102
               ],
               "position": [
-                72,
-                272
+                60,
+                300
               ],
-              "scale": 0.6,
+              "scale": 0.85,
               "shown": true,
               "scripts": []
             },
             {
               "id": "bariera",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Barieră",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
                 228,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": []
             },
             {
               "id": "statie",
-              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "asset": "ff0798868a930b64f3e1d2fcd3a8439d.svg",
               "name": "Stație de control",
               "size": [
                 64,
-                80
+                100
               ],
               "position": [
                 444,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": []
             },
             {
               "id": "bariera2",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Bariera 2",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
-                72,
-                128
+                60,
+                190
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": []
             }
@@ -85,11 +85,11 @@
     {
       "key": "m1",
       "file": "m1.sjr",
-      "name": "L06 Robotul de inspecție - 1. Frâna de siguranță · 60 min",
-      "sha256": "2ce0cfcf1af78aac0e0c906ef1f0e3a6b5e4e48fec134d33b25d01e32f10a78c",
+      "name": "L06 Atelier - 1. Frâna de siguranță · v2.1",
+      "sha256": "cadd661d6fa9d6ff174b53acb720efd7256d6ed2a3807c9bf8905b7d77aee402",
       "pages": [
         {
-          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
           "focus": "robot",
           "sprites": [
             {
@@ -101,10 +101,10 @@
                 102
               ],
               "position": [
-                72,
-                272
+                60,
+                300
               ],
-              "scale": 0.6,
+              "scale": 0.85,
               "shown": true,
               "scripts": [
                 {
@@ -139,17 +139,17 @@
             },
             {
               "id": "bariera",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Barieră",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
                 228,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": [
                 {
@@ -168,33 +168,33 @@
             },
             {
               "id": "statie",
-              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "asset": "ff0798868a930b64f3e1d2fcd3a8439d.svg",
               "name": "Stație de control",
               "size": [
                 64,
-                80
+                100
               ],
               "position": [
                 444,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": []
             },
             {
               "id": "bariera2",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Bariera 2",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
-                72,
-                128
+                60,
+                190
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": []
             }
@@ -206,11 +206,11 @@
     {
       "key": "m2",
       "file": "m2.sjr",
-      "name": "L06 Robotul de inspecție - 2. Retragere și ocolire · 60 min",
-      "sha256": "41b5628daf1a83624317fbbb48c7a98ea9857c82921f6c5c745847a65ed8e40c",
+      "name": "L06 Atelier - 2. Retragere și ocolire · v2.1",
+      "sha256": "1436899690a1e69311b682c64236e478e6eee1f6d608bf60bc33a65c456ead9d",
       "pages": [
         {
-          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
           "focus": "robot",
           "sprites": [
             {
@@ -222,10 +222,10 @@
                 102
               ],
               "position": [
-                72,
-                272
+                60,
+                300
               ],
-              "scale": 0.6,
+              "scale": 0.85,
               "shown": true,
               "scripts": [
                 {
@@ -260,15 +260,15 @@
                     },
                     {
                       "block": "up",
-                      "value": 3
+                      "value": 4
                     },
                     {
                       "block": "forward",
-                      "value": 5
+                      "value": 6
                     },
                     {
                       "block": "down",
-                      "value": 3
+                      "value": 4
                     },
                     {
                       "block": "say",
@@ -280,17 +280,17 @@
             },
             {
               "id": "bariera",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Barieră",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
                 228,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": [
                 {
@@ -309,33 +309,33 @@
             },
             {
               "id": "statie",
-              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "asset": "ff0798868a930b64f3e1d2fcd3a8439d.svg",
               "name": "Stație de control",
               "size": [
                 64,
-                80
+                100
               ],
               "position": [
                 444,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": []
             },
             {
               "id": "bariera2",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Bariera 2",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
-                72,
-                128
+                60,
+                190
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": []
             }
@@ -347,11 +347,11 @@
     {
       "key": "m3",
       "file": "m3.sjr",
-      "name": "L06 Robotul de inspecție - 3. Inspecția completă · 60 min",
-      "sha256": "a950c4c6c348898e427d92f0fa3e9e2b7f0f063f956fdecc655fe8922899133a",
+      "name": "L06 Atelier - 3. Inspecția completă · v2.1",
+      "sha256": "cebcaf686e13d94df14f688102588d5fca44e4a0abdef8d7fc175a909467e3c2",
       "pages": [
         {
-          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
           "focus": "robot",
           "sprites": [
             {
@@ -363,10 +363,10 @@
                 102
               ],
               "position": [
-                72,
-                272
+                60,
+                300
               ],
-              "scale": 0.6,
+              "scale": 0.85,
               "shown": true,
               "scripts": [
                 {
@@ -401,15 +401,15 @@
                     },
                     {
                       "block": "up",
-                      "value": 3
+                      "value": 4
                     },
                     {
                       "block": "forward",
-                      "value": 5
+                      "value": 6
                     },
                     {
                       "block": "down",
-                      "value": 3
+                      "value": 4
                     },
                     {
                       "block": "forward",
@@ -441,17 +441,17 @@
             },
             {
               "id": "bariera",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Barieră",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
                 228,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": [
                 {
@@ -470,17 +470,17 @@
             },
             {
               "id": "statie",
-              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "asset": "ff0798868a930b64f3e1d2fcd3a8439d.svg",
               "name": "Stație de control",
               "size": [
                 64,
-                80
+                100
               ],
               "position": [
                 444,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": [
                 {
@@ -499,17 +499,17 @@
             },
             {
               "id": "bariera2",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Bariera 2",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
-                72,
-                128
+                60,
+                190
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": []
             }
@@ -521,11 +521,11 @@
     {
       "key": "creatie",
       "file": "creatie.sjr",
-      "name": "L06 Robotul de inspecție - 4. Ocolul meu · 60 min",
-      "sha256": "a4ade86abccd551bc4b743742afa4282fcb860ce720ab40b3265af555a094771",
+      "name": "L06 Atelier - 4. Ocolul meu · v2.1",
+      "sha256": "8a63628d1c30b25344320cacba938dbd1a4b3c2b3279bb0cd5d1178f9e169fcf",
       "pages": [
         {
-          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
           "focus": "robot",
           "sprites": [
             {
@@ -537,10 +537,10 @@
                 102
               ],
               "position": [
-                72,
-                272
+                60,
+                300
               ],
-              "scale": 0.6,
+              "scale": 0.85,
               "shown": true,
               "scripts": [
                 {
@@ -579,7 +579,7 @@
                     },
                     {
                       "block": "forward",
-                      "value": 5
+                      "value": 7
                     },
                     {
                       "block": "down",
@@ -615,17 +615,17 @@
             },
             {
               "id": "bariera",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Barieră",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
                 204,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": [
                 {
@@ -644,17 +644,17 @@
             },
             {
               "id": "statie",
-              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "asset": "ff0798868a930b64f3e1d2fcd3a8439d.svg",
               "name": "Stație de control",
               "size": [
                 64,
-                80
+                100
               ],
               "position": [
                 444,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": [
                 {
@@ -673,17 +673,17 @@
             },
             {
               "id": "bariera2",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Bariera 2",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
-                72,
-                128
+                60,
+                190
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": []
             }
@@ -695,11 +695,11 @@
     {
       "key": "r1",
       "file": "r1.sjr",
-      "name": "L06 Robotul de inspecție - R1. Robotul merge mai repede · 60 min",
-      "sha256": "48cd9af9d2cf12c5396231eedd09ab351c71abaadf7dae325ef38fade32baae7",
+      "name": "L06 Atelier - R1. Robotul merge mai repede · v2.1",
+      "sha256": "f3530f609b503ac66b80fb1e96db046dbe24d452a4d42bd124b951da3e58803e",
       "pages": [
         {
-          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
           "focus": "robot",
           "sprites": [
             {
@@ -711,10 +711,10 @@
                 102
               ],
               "position": [
-                72,
-                272
+                60,
+                300
               ],
-              "scale": 0.6,
+              "scale": 0.85,
               "shown": true,
               "scripts": [
                 {
@@ -753,15 +753,15 @@
                     },
                     {
                       "block": "up",
-                      "value": 3
+                      "value": 4
                     },
                     {
                       "block": "forward",
-                      "value": 5
+                      "value": 6
                     },
                     {
                       "block": "down",
-                      "value": 3
+                      "value": 4
                     },
                     {
                       "block": "forward",
@@ -793,17 +793,17 @@
             },
             {
               "id": "bariera",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Barieră",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
                 228,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": [
                 {
@@ -822,17 +822,17 @@
             },
             {
               "id": "statie",
-              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "asset": "ff0798868a930b64f3e1d2fcd3a8439d.svg",
               "name": "Stație de control",
               "size": [
                 64,
-                80
+                100
               ],
               "position": [
                 444,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": [
                 {
@@ -851,17 +851,17 @@
             },
             {
               "id": "bariera2",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Bariera 2",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
-                72,
-                128
+                60,
+                190
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": []
             }
@@ -873,11 +873,11 @@
     {
       "key": "r2",
       "file": "r2.sjr",
-      "name": "L06 Robotul de inspecție - R2. Două zone închise · 60 min",
-      "sha256": "4ead1c0ebcb20f8082de3863c8f7bdd4ebd5f3ef13c53287060e66a5cbda6f20",
+      "name": "L06 Atelier - R2. Două zone închise · v2.1",
+      "sha256": "71df0098867c3c5b1c9c243c7b592ab6cd9488b944fb3a7d910814019667b043",
       "pages": [
         {
-          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
           "focus": "robot",
           "sprites": [
             {
@@ -889,10 +889,10 @@
                 102
               ],
               "position": [
-                72,
-                272
+                60,
+                300
               ],
-              "scale": 0.6,
+              "scale": 0.85,
               "shown": true,
               "scripts": [
                 {
@@ -927,15 +927,15 @@
                     },
                     {
                       "block": "up",
-                      "value": 3
+                      "value": 4
                     },
                     {
                       "block": "forward",
-                      "value": 5
+                      "value": 6
                     },
                     {
                       "block": "down",
-                      "value": 3
+                      "value": 4
                     },
                     {
                       "block": "forward",
@@ -967,17 +967,17 @@
             },
             {
               "id": "bariera",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Barieră",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
-                180,
-                272
+                144,
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": [
                 {
@@ -996,17 +996,17 @@
             },
             {
               "id": "statie",
-              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "asset": "ff0798868a930b64f3e1d2fcd3a8439d.svg",
               "name": "Stație de control",
               "size": [
                 64,
-                80
+                100
               ],
               "position": [
                 444,
-                272
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": [
                 {
@@ -1025,17 +1025,17 @@
             },
             {
               "id": "bariera2",
-              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "asset": "c41e436fb9f88289fcdc9a8338000c57.svg",
               "name": "Bariera 2",
               "size": [
-                24,
-                64
+                32,
+                88
               ],
               "position": [
-                324,
-                272
+                288,
+                300
               ],
-              "scale": 0.75,
+              "scale": 1,
               "shown": true,
               "scripts": [
                 {

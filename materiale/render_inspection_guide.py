@@ -32,15 +32,15 @@ NOTES={
 'm1':('Steagul pornește mersul; contactul cu bariera îl întrerupe. Robotul se retrage un pas și rămâne pe loc.',
       'Stop este la robot: oprește celălalt fir al robotului. Stânga 1 eliberează contactul. Mută bariera două pătrățele spre stânga și probează același cod; frânarea trebuie să apară mai devreme. Apoi readu bariera la loc.'),
 'm2':('Un contact, o retragere și un ocol. La final robotul stă de cealaltă parte a barierei.',
-      'Sus 3 și Jos 3 readuc robotul pe aceeași linie. Dreapta 5 lasă loc pentru întregul robot. Păstrează mărimile din starter; după redimensionare trebuie recalibrat ocolul.'),
+      'Sus 4 și Jos 4 readuc robotul pe aceeași linie. Dreapta 6 lasă loc pentru întregul robot. Păstrează mărimile din starter; după redimensionare trebuie recalibrat ocolul.'),
 'm3':('Un steag: contact cu bariera, ocol, continuare, contact cu stația și oprire definitivă.',
       'Înlocuiește replica din M2 cu Dreapta 20. Albastru oprește inclusiv mersul din firul portocaliu. Nu trimite aceeași culoare de la barieră și de la stație: reacțiile au scopuri diferite.'),
-'creatie':('Exemplu propriu: bariera este cu un pătrățel mai la stânga; ocolul urcă și coboară câte 4 pași.',
-      'Alege înălțimea ocolului și locul barierei. Sus și Jos trebuie schimbate împreună. Păstrează loc pentru retragere, coborâre și sosirea la stație. Ai 10 minute pentru propria variantă.'),
+'creatie':('Exemplu propriu: bariera este cu un pătrățel mai la stânga; traversarea pe sus are 7 pași în loc de 6.',
+      'Alege lățimea ocolului și locul barierei. Sus 4 și Jos 4 rămân. Păstrează loc pentru retragere, coborâre și sosirea la stație. Ai 10 minute pentru propria variantă.'),
 'r1':('Pornire la viteză rapidă. Robotul păstrează ocolul și oprirea finală la stație.',
       'Viteza se păstrează și în firele de reacție. Compară durata, nu pixelul exact al opririi. Pentru a reveni la M3 selectează explicit viteza normală; scoaterea blocului rapid nu este suficientă.'),
 'r2':('Două bariere pe traseu: robotul refolosește de două ori același fir portocaliu.',
-      'Mută prima barieră două pătrățele la stânga și adu Bariera 2 de sus pe traseu, la 6 pătrățele spre dreapta de prima. Ambele trimit portocaliu. Viteză normală; două ocoluri, apoi stația.')}
+      'Mută prima barieră 3½ pătrățele la stânga și adu Bariera 2 de sus pe traseu. Centrele sunt la 6 și 12 pătrățele de marginea stângă. Ambele trimit portocaliu. Viteză normală; două ocoluri, apoi stația.')}
 def scripts(c,key,actors,y):
     for a in actors:
         y=para(c,a['name'],34,y,W-68,11,bold=True)-4
@@ -57,9 +57,9 @@ def render_appendix(dest,start_page=2):
     def begin(title,tag):out.append((title,num-1));return frame(c,num,title,tag)
     y=begin('Deschidem atelierul, construim codul','0-8 MINUTE')
     y=para(c,'Robotul trebuie să ajungă la stația de control. O barieră închide o zonă de lucru: la contact, robotul se retrage și ocolește. La stație se oprește.',34,y,W-68,11)-10
-    y=photo(c,'start_grid',34,y,300,(401,75,478,358))-12
+    y=photo(c,'start_grid',34,y,360,(401,75,478,358))-12
     for title,text in [
-      ('Înainte de oră: un singur import','Importă start.sjr pe fiecare tabletă. Conține robotul, atelierul, stația și două bariere, fără cod. Sunt resurse noi, nu din biblioteca standard. Nu trebuie copiate imagini separat. Verifică importul pe Lenovo înainte de clasă.'),
+      ('Înainte de oră: un singur import','Importă start.sjr pe fiecare tabletă: robot, atelier, stație și două bariere, fără cod. Alege cardul Atelier v2.1; reimportă dacă ai varianta veche. Resurse noi incluse, fără imagini de copiat separat. Verifică importul pe Lenovo înainte de clasă.'),
       ('Citim scena','Jos: robotul în stânga, bariera la mijloc, stația cu bifă în dreapta. Bariera 2, sus în stânga, rămâne fără cod până la R2. Păstrează mărimile și pozițiile pregătite. Un pas = un pătrățel.'),
       ('Contact, nu atingere cu degetul','Blocul standard La ciocnire are două siluete, fără selector. Reacționează la orice personaj atins, nu la decor. Simulăm un senzor de contact; camerele desenate pe robot nu detectează nimic.'),
       ('Două semnale, două reacții','Bariera trimite portocaliu: robotul oprește, se retrage și ocolește. Stația trimite albastru: robotul oprește și încheie. Plic închis = Trimite; plic deschis = Primește. Culoarea se alege din săgeată.'),
@@ -76,15 +76,15 @@ def render_appendix(dest,start_page=2):
             suffix='' if len(groups)==1 else (' / robotul' if gi==0 else ' / barierele și stația')
             y=begin(title+suffix,'REZERVĂ' if key.startswith('r') else 'BAZĂ / SOLUȚIE COMPLETĂ')
             if gi==0:
-                top=y;photo(c,key+'_robot',34,top,200,(401,75,478,358))
-                ny=para(c,NOTES[key][0],252,top,W-286,11)-10
-                ny=para(c,'START: Reset Characters, apoi un steag.',252,ny,W-286,10,bold=True)
-                y=min(top-155,ny)-12
+                top=y;photo(c,key+'_robot',34,top,240,(401,75,478,358))
+                ny=para(c,NOTES[key][0],292,top,W-326,11)-10
+                ny=para(c,'START: Reset Characters, apoi un steag.',292,ny,W-326,10,bold=True)
+                y=min(top-185,ny)-12
             else:y=para(c,'Toate programele celorlalte personaje, inclusiv cele păstrate din etapa anterioară.',34,y,W-68,11)-12
             y=scripts(c,key,group,y)
             y=para(c,NOTES[key][1],34,y-1,W-68,10)-12
             if gi==1 and key in ('m3','r2'):
-                y=photo(c,key+'_final',34,y,200,(401,75,478,358))-7
+                y=photo(c,key+'_final',34,y,240,(401,75,478,358))-7
                 y=para(c,'Rezultat: robotul a ocolit barierele și stă lângă stație. Nu repornește singur.',34,y,W-68,9)
             assert y>40,(key,gi,y)
             c.showPage();num+=1

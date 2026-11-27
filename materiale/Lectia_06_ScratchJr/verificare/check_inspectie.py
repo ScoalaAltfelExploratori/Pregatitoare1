@@ -26,21 +26,20 @@ for p in m['projects']:
             for s in a['scripts']:
                 for b in [s['trigger']]+s['actions']:
                     assert b['block'] in {'onflag','ontouch','onmessage','message','forward','back','up','down','stopmine','say','setspeed','playsnd'}
-assert all(x==(24,221) for x in path('start'))
-assert path('m1')[-1]==(124,221)
-assert path('m1_bariera_mutata')[-1]==(76,221)
+assert all(x==(12,249) for x in path('start'))
+assert path('m1')[-1]==(108,249)
+assert path('m1_bariera_mutata')[-1]==(60,249)
 assert max(x for x,y in path('m1'))-max(x for x,y in path('m1_bariera_mutata'))==48
-assert path('m2')[-1]==(244,221)
+assert path('m2')[-1]==(252,249)
 summaries={}
 for key in runs:
     points=path(key);xs,ys=zip(*points)
-    excursions=sum(y<200 and (i==0 or points[i-1][1]>=200) for i,(x,y) in enumerate(points))
+    excursions=sum(y<225 and (i==0 or points[i-1][1]>=225) for i,(x,y) in enumerate(points))
     if key in ('m2','m3','m3_reset','m3_redeschis','creatie','r1'):assert excursions==1,(key,excursions)
     if key=='r2':assert excursions==2
-    if key.startswith('m3') or key in ('creatie','r2'):assert points[-1]==(336,221),key
-    if key=='r1':assert 330<=points[-1][0]<=350 and points[-1][1]==221
-    if key in ('m2','m3','m3_reset','m3_redeschis','r1','r2'):assert min(ys)==149,key
-    if key=='creatie':assert min(ys)==125
+    if key.startswith('m3') or key in ('creatie','r2'):assert points[-1]==(316,249),key
+    if key=='r1':assert 315<=points[-1][0]<=330 and points[-1][1]==249
+    if key in ('m2','m3','m3_reset','m3_redeschis','r1','r2','creatie'):assert min(ys)==153,key
     assert len(set(points[-12:]))==1,(key,'did not stay parked')
     assert runs[key][-1]['go']=='go on',key
     for actor in ['p1_bariera','p1_bariera2','p1_statie']:assert len(set(path(key,actor)))==1,(key,actor)

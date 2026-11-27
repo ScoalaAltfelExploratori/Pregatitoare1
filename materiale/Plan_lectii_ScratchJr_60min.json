@@ -332,7 +332,7 @@
         {
           "minutes": "20-32",
           "title": "2. Retragere și ocolire",
-          "text": "După frânare: Pop, Sus 3, Dreapta 5, Jos 3. Un singur ocol și revenire pe linia de mers."
+          "text": "După frânare: Pop, Sus 4, Dreapta 6, Jos 4. Un singur ocol și revenire pe linia de mers."
         },
         {
           "minutes": "32-35",
@@ -347,7 +347,7 @@
         {
           "minutes": "48-58",
           "title": "Ocolul meu",
-          "text": "Alegem poziția barierei și înălțimea ocolului. Exemplu complet: bariera mutată, Sus 4 și Jos 4."
+          "text": "Alegem poziția barierei și lățimea ocolului. Exemplu: bariera mutată, Dreapta 7 în loc de 6."
         },
         {
           "minutes": "58-60",
@@ -356,7 +356,7 @@
         }
       ],
       "solutions": [
-        "Portocaliu la robot: Stop > Stânga 1 > Pop > Sus 3 > Dreapta 5 > Jos 3 > Dreapta 20.",
+        "Portocaliu la robot: Stop > Stânga 1 > Pop > Sus 4 > Dreapta 6 > Jos 4 > Dreapta 20.",
         "Albastru la robot: Stop > Stânga 1 > Inspecție gata! Barierele trimit portocaliu; stația trimite albastru, la contact."
       ],
       "hint": "La ciocnire: blocul standard cu două siluete. Stop oprește celelalte fire ale robotului. Înaintea fiecărei probe: Stop, Reset Characters, un steag.",

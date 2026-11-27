@@ -3,6 +3,7 @@
 Data: ____ Clasa: ____ Număr copii: ____
 
 - Importul a fost pregătit înainte de oră pe toate tabletele? ____
+- Se văd clar robotul, barierele și stația în atelierul revizuit? ____
 - Au deosebit contactul dintre personaje de atingerea cu degetul? ____
 - Au pus Stop la robot și retragerea înaintea ocolului? ____
 - Au observat frânarea mai devreme după mutarea barierei? ____

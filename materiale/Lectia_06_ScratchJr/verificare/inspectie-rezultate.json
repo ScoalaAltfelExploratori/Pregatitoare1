@@ -1,101 +1,101 @@
 {
+  "r2": {
+    "samples": 185,
+    "detours": 2,
+    "min_y": 153.0,
+    "final_translation": [
+      316.0,
+      249.0
+    ],
+    "movement_ms": 6944
+  },
+  "m3": {
+    "samples": 148,
+    "detours": 1,
+    "min_y": 153.0,
+    "final_translation": [
+      316.0,
+      249.0
+    ],
+    "movement_ms": 4734
+  },
+  "m3_reset": {
+    "samples": 149,
+    "detours": 1,
+    "min_y": 153.0,
+    "final_translation": [
+      316.0,
+      249.0
+    ],
+    "movement_ms": 4800
+  },
+  "m3_redeschis": {
+    "samples": 149,
+    "detours": 1,
+    "min_y": 153.0,
+    "final_translation": [
+      316.0,
+      249.0
+    ],
+    "movement_ms": 4762
+  },
   "m1": {
     "samples": 74,
     "detours": 0,
-    "min_y": 221.0,
+    "min_y": 249.0,
     "final_translation": [
-      124.0,
-      221.0
+      108.0,
+      249.0
     ],
-    "movement_ms": 938
+    "movement_ms": 874
   },
   "m1_bariera_mutata": {
     "samples": 74,
     "detours": 0,
-    "min_y": 221.0,
+    "min_y": 249.0,
     "final_translation": [
-      76.0,
-      221.0
+      60.0,
+      249.0
     ],
-    "movement_ms": 569
+    "movement_ms": 509
   },
   "m2": {
-    "samples": 111,
+    "samples": 148,
     "detours": 1,
-    "min_y": 149.0,
+    "min_y": 153.0,
     "final_translation": [
-      244.0,
-      221.0
+      252.0,
+      249.0
     ],
-    "movement_ms": 3338
-  },
-  "m3": {
-    "samples": 111,
-    "detours": 1,
-    "min_y": 149.0,
-    "final_translation": [
-      336.0,
-      221.0
-    ],
-    "movement_ms": 4414
-  },
-  "m3_reset": {
-    "samples": 111,
-    "detours": 1,
-    "min_y": 149.0,
-    "final_translation": [
-      336.0,
-      221.0
-    ],
-    "movement_ms": 4416
-  },
-  "m3_redeschis": {
-    "samples": 112,
-    "detours": 1,
-    "min_y": 149.0,
-    "final_translation": [
-      336.0,
-      221.0
-    ],
-    "movement_ms": 4479
+    "movement_ms": 3840
   },
   "creatie": {
-    "samples": 112,
+    "samples": 148,
     "detours": 1,
-    "min_y": 125.0,
+    "min_y": 153.0,
     "final_translation": [
-      336.0,
-      221.0
+      316.0,
+      249.0
     ],
-    "movement_ms": 4832
+    "movement_ms": 4731
   },
   "r1": {
     "samples": 111,
     "detours": 1,
-    "min_y": 149.0,
+    "min_y": 153.0,
     "final_translation": [
-      344.0,
-      221.0
+      324.0,
+      249.0
     ],
-    "movement_ms": 2258
-  },
-  "r2": {
-    "samples": 147,
-    "detours": 2,
-    "min_y": 149.0,
-    "final_translation": [
-      336.0,
-      221.0
-    ],
-    "movement_ms": 6249
+    "movement_ms": 2435
   },
   "start": {
     "samples": 37,
     "detours": 0,
-    "min_y": 221.0,
+    "min_y": 249.0,
     "final_translation": [
-      24.0,
-      221.0
+      12.0,
+      249.0
     ],
     "movement_ms": 0
   }
