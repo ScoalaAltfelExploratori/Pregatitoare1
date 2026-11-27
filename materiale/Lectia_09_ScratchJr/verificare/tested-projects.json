@@ -1,0 +1,52 @@
+{
+  "browser": "ScratchJr Desktop Reborn",
+  "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html",
+  "revision": "v1.1",
+  "projects": [
+    {
+      "key": "start",
+      "file": "start.sjr",
+      "sha256": "d456cc30581f4a0f5f77cfef25f1caf0a390eb32d5a487763c78c93252769ec0",
+      "imported": true
+    },
+    {
+      "key": "m1",
+      "file": "m1.sjr",
+      "sha256": "2ad27060c5f0848fe263c008ed3757c01fb452b9be31af418c4bf3307c0cf1d4",
+      "imported": true
+    },
+    {
+      "key": "m2",
+      "file": "m2.sjr",
+      "sha256": "53ed98118742adb58fe3e993445971c7e5988ee3d1c43e9e7d374c771e01f0f2",
+      "imported": true
+    },
+    {
+      "key": "m3",
+      "file": "m3.sjr",
+      "sha256": "b5149958f342896a9e9e782b3ee060d05b7ecc2b09d7465f4a37a4f99e3592ce",
+      "imported": true
+    },
+    {
+      "key": "r1",
+      "file": "r1.sjr",
+      "sha256": "e4e77730755824a64e3778d7b6fa68c3f3bbe1fb3daf88684731652f2c016fa1",
+      "imported": true
+    },
+    {
+      "key": "r2",
+      "file": "r2.sjr",
+      "sha256": "27b863dcaec3d3f9060b5fa05f43fff0568188ecaf2b483985afdb0ddb50d3f5",
+      "imported": true
+    }
+  ],
+  "reopened": [
+    "m1",
+    "m2",
+    "m3",
+    "r1",
+    "start",
+    "r2"
+  ],
+  "physicalAndroidTested": false
+}

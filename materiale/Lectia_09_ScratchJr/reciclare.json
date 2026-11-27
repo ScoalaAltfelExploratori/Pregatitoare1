@@ -1,0 +1,3475 @@
+{
+  "lesson": 9,
+  "title": "Robotul de reciclare",
+  "duration": 60,
+  "revision": "v1.1",
+  "projects": [
+    {
+      "key": "start",
+      "name": "L09 Robotul de reciclare - de la zero · v1.1",
+      "file": "start.sjr",
+      "sha256": "d456cc30581f4a0f5f77cfef25f1caf0a390eb32d5a487763c78c93252769ec0",
+      "pages": [
+        {
+          "background": "18ce735a2cfcdf73fd861617d32c5f08.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "spate0",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient plastic",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                96,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate1",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient metal",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                240,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate2",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient hârtie",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                384,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sticla1",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 1",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "doza",
+              "asset": "354d8ceca4e8910f8c9ada8d3739182f.svg",
+              "name": "Doza",
+              "size": [
+                42,
+                48
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "hartie",
+              "asset": "935b138f3d0dea1a4eee895d0f2fbcb4.svg",
+              "name": "Hârtia",
+              "size": [
+                72,
+                54
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sticla2",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 2",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata0",
+              "asset": "6203e6b21130855b7b43284ecf2ecabc.svg",
+              "name": "Etichetă plastic",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                96,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata1",
+              "asset": "3007f7113e9c2ceeffb87732872cfffa.svg",
+              "name": "Etichetă metal",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                240,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata2",
+              "asset": "7366e8cdd2b3c4e60c9f0f4ff4dbb43e.svg",
+              "name": "Etichetă hârtie",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                384,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "robot",
+              "asset": "883ff3b2d692780b1144cf507c5cd51e.svg",
+              "name": "Robotul de reciclare",
+              "size": [
+                112,
+                128
+              ],
+              "position": [
+                240,
+                92
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "panou",
+              "asset": "bd30568d0c8be6b041112e4c377392d1.svg",
+              "name": "Panoul lotului",
+              "size": [
+                108,
+                28
+              ],
+              "position": [
+                240,
+                344
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "golire",
+              "asset": "0ba6fc12038556d6a9a68292d5ac9eda.svg",
+              "name": "Buton Golire",
+              "size": [
+                104,
+                44
+              ],
+              "position": [
+                416,
+                54
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m1",
+      "name": "L09 Robotul de reciclare - 1. Prima sticlă · v1.1",
+      "file": "m1.sjr",
+      "sha256": "2ad27060c5f0848fe263c008ed3757c01fb452b9be31af418c4bf3307c0cf1d4",
+      "pages": [
+        {
+          "background": "18ce735a2cfcdf73fd861617d32c5f08.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "spate0",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient plastic",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                96,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate1",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient metal",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                240,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate2",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient hârtie",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                384,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sticla1",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 1",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 7
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "doza",
+              "asset": "354d8ceca4e8910f8c9ada8d3739182f.svg",
+              "name": "Doza",
+              "size": [
+                42,
+                48
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "hartie",
+              "asset": "935b138f3d0dea1a4eee895d0f2fbcb4.svg",
+              "name": "Hârtia",
+              "size": [
+                72,
+                54
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sticla2",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 2",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata0",
+              "asset": "6203e6b21130855b7b43284ecf2ecabc.svg",
+              "name": "Etichetă plastic",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                96,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata1",
+              "asset": "3007f7113e9c2ceeffb87732872cfffa.svg",
+              "name": "Etichetă metal",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                240,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata2",
+              "asset": "7366e8cdd2b3c4e60c9f0f4ff4dbb43e.svg",
+              "name": "Etichetă hârtie",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                384,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "robot",
+              "asset": "883ff3b2d692780b1144cf507c5cd51e.svg",
+              "name": "Robotul de reciclare",
+              "size": [
+                112,
+                128
+              ],
+              "position": [
+                240,
+                92
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 7
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 7
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "panou",
+              "asset": "bd30568d0c8be6b041112e4c377392d1.svg",
+              "name": "Panoul lotului",
+              "size": [
+                108,
+                28
+              ],
+              "position": [
+                240,
+                344
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Lot terminat!"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "golire",
+              "asset": "0ba6fc12038556d6a9a68292d5ac9eda.svg",
+              "name": "Buton Golire",
+              "size": [
+                104,
+                44
+              ],
+              "position": [
+                416,
+                54
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m2",
+      "name": "L09 Robotul de reciclare - 2. Trei categorii · v1.1",
+      "file": "m2.sjr",
+      "sha256": "53ed98118742adb58fe3e993445971c7e5988ee3d1c43e9e7d374c771e01f0f2",
+      "pages": [
+        {
+          "background": "18ce735a2cfcdf73fd861617d32c5f08.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "spate0",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient plastic",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                96,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate1",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient metal",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                240,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate2",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient hârtie",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                384,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sticla1",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 1",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 7
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "doza",
+              "asset": "354d8ceca4e8910f8c9ada8d3739182f.svg",
+              "name": "Doza",
+              "size": [
+                42,
+                48
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "hartie",
+              "asset": "935b138f3d0dea1a4eee895d0f2fbcb4.svg",
+              "name": "Hârtia",
+              "size": [
+                72,
+                54
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "sticla2",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 2",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata0",
+              "asset": "6203e6b21130855b7b43284ecf2ecabc.svg",
+              "name": "Etichetă plastic",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                96,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata1",
+              "asset": "3007f7113e9c2ceeffb87732872cfffa.svg",
+              "name": "Etichetă metal",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                240,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata2",
+              "asset": "7366e8cdd2b3c4e60c9f0f4ff4dbb43e.svg",
+              "name": "Etichetă hârtie",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                384,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "robot",
+              "asset": "883ff3b2d692780b1144cf507c5cd51e.svg",
+              "name": "Robotul de reciclare",
+              "size": [
+                112,
+                128
+              ],
+              "position": [
+                240,
+                92
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 7
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 7
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "back",
+                      "value": 6
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  40,
+                  210
+                ],
+                [
+                  40,
+                  305
+                ]
+              ]
+            },
+            {
+              "id": "panou",
+              "asset": "bd30568d0c8be6b041112e4c377392d1.svg",
+              "name": "Panoul lotului",
+              "size": [
+                108,
+                28
+              ],
+              "position": [
+                240,
+                344
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Lot terminat!"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "golire",
+              "asset": "0ba6fc12038556d6a9a68292d5ac9eda.svg",
+              "name": "Buton Golire",
+              "size": [
+                104,
+                44
+              ],
+              "position": [
+                416,
+                54
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m3",
+      "name": "L09 Robotul de reciclare - 3. Lotul amestecat · v1.1",
+      "file": "m3.sjr",
+      "sha256": "b5149958f342896a9e9e782b3ee060d05b7ecc2b09d7465f4a37a4f99e3592ce",
+      "pages": [
+        {
+          "background": "18ce735a2cfcdf73fd861617d32c5f08.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "spate0",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient plastic",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                96,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate1",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient metal",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                240,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate2",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient hârtie",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                384,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sticla1",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 1",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 7
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "doza",
+              "asset": "354d8ceca4e8910f8c9ada8d3739182f.svg",
+              "name": "Doza",
+              "size": [
+                42,
+                48
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "hartie",
+              "asset": "935b138f3d0dea1a4eee895d0f2fbcb4.svg",
+              "name": "Hârtia",
+              "size": [
+                72,
+                54
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "sticla2",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 2",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "fata0",
+              "asset": "6203e6b21130855b7b43284ecf2ecabc.svg",
+              "name": "Etichetă plastic",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                96,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata1",
+              "asset": "3007f7113e9c2ceeffb87732872cfffa.svg",
+              "name": "Etichetă metal",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                240,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata2",
+              "asset": "7366e8cdd2b3c4e60c9f0f4ff4dbb43e.svg",
+              "name": "Etichetă hârtie",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                384,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "robot",
+              "asset": "883ff3b2d692780b1144cf507c5cd51e.svg",
+              "name": "Robotul de reciclare",
+              "size": [
+                112,
+                128
+              ],
+              "position": [
+                240,
+                92
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 7
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 7
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "back",
+                      "value": 6
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  40,
+                  210
+                ],
+                [
+                  40,
+                  305
+                ],
+                [
+                  40,
+                  400
+                ]
+              ]
+            },
+            {
+              "id": "panou",
+              "asset": "bd30568d0c8be6b041112e4c377392d1.svg",
+              "name": "Panoul lotului",
+              "size": [
+                108,
+                28
+              ],
+              "position": [
+                240,
+                344
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Lot terminat!"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "golire",
+              "asset": "0ba6fc12038556d6a9a68292d5ac9eda.svg",
+              "name": "Buton Golire",
+              "size": [
+                104,
+                44
+              ],
+              "position": [
+                416,
+                54
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r1",
+      "name": "L09 Robotul de reciclare - R1. Compactăm hârtia · v1.1",
+      "file": "r1.sjr",
+      "sha256": "e4e77730755824a64e3778d7b6fa68c3f3bbe1fb3daf88684731652f2c016fa1",
+      "pages": [
+        {
+          "background": "18ce735a2cfcdf73fd861617d32c5f08.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "spate0",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient plastic",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                96,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate1",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient metal",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                240,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate2",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient hârtie",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                384,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sticla1",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 1",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 7
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "doza",
+              "asset": "354d8ceca4e8910f8c9ada8d3739182f.svg",
+              "name": "Doza",
+              "size": [
+                42,
+                48
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "hartie",
+              "asset": "935b138f3d0dea1a4eee895d0f2fbcb4.svg",
+              "name": "Hârtia",
+              "size": [
+                72,
+                54
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "grow",
+                      "value": 10
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "shrink",
+                          "value": 5
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  40,
+                  210
+                ]
+              ]
+            },
+            {
+              "id": "sticla2",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 2",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "fata0",
+              "asset": "6203e6b21130855b7b43284ecf2ecabc.svg",
+              "name": "Etichetă plastic",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                96,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata1",
+              "asset": "3007f7113e9c2ceeffb87732872cfffa.svg",
+              "name": "Etichetă metal",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                240,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata2",
+              "asset": "7366e8cdd2b3c4e60c9f0f4ff4dbb43e.svg",
+              "name": "Etichetă hârtie",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                384,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "robot",
+              "asset": "883ff3b2d692780b1144cf507c5cd51e.svg",
+              "name": "Robotul de reciclare",
+              "size": [
+                112,
+                128
+              ],
+              "position": [
+                240,
+                92
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 7
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 7
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "back",
+                      "value": 6
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  40,
+                  210
+                ],
+                [
+                  40,
+                  305
+                ],
+                [
+                  40,
+                  400
+                ]
+              ]
+            },
+            {
+              "id": "panou",
+              "asset": "bd30568d0c8be6b041112e4c377392d1.svg",
+              "name": "Panoul lotului",
+              "size": [
+                108,
+                28
+              ],
+              "position": [
+                240,
+                344
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Lot terminat!"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "golire",
+              "asset": "0ba6fc12038556d6a9a68292d5ac9eda.svg",
+              "name": "Buton Golire",
+              "size": [
+                104,
+                44
+              ],
+              "position": [
+                416,
+                54
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r2",
+      "name": "L09 Robotul de reciclare - R2. Golim recipientele · v1.1",
+      "file": "r2.sjr",
+      "sha256": "27b863dcaec3d3f9060b5fa05f43fff0568188ecaf2b483985afdb0ddb50d3f5",
+      "pages": [
+        {
+          "background": "18ce735a2cfcdf73fd861617d32c5f08.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "spate0",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient plastic",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                96,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate1",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient metal",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                240,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "spate2",
+              "asset": "3f90661626ceb83b55636cc2a6d89e93.svg",
+              "name": "Recipient hârtie",
+              "size": [
+                124,
+                94
+              ],
+              "position": [
+                384,
+                280
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sticla1",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 1",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 7
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  40,
+                  210
+                ]
+              ]
+            },
+            {
+              "id": "doza",
+              "asset": "354d8ceca4e8910f8c9ada8d3739182f.svg",
+              "name": "Doza",
+              "size": [
+                42,
+                48
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  40,
+                  210
+                ]
+              ]
+            },
+            {
+              "id": "hartie",
+              "asset": "935b138f3d0dea1a4eee895d0f2fbcb4.svg",
+              "name": "Hârtia",
+              "size": [
+                72,
+                54
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  40,
+                  210
+                ]
+              ]
+            },
+            {
+              "id": "sticla2",
+              "asset": "f84789fc8ed349b6c59ba46d8745cb54.svg",
+              "name": "Sticla 2",
+              "size": [
+                40,
+                56
+              ],
+              "position": [
+                240,
+                164
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "same",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  40,
+                  210
+                ]
+              ]
+            },
+            {
+              "id": "fata0",
+              "asset": "6203e6b21130855b7b43284ecf2ecabc.svg",
+              "name": "Etichetă plastic",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                96,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata1",
+              "asset": "3007f7113e9c2ceeffb87732872cfffa.svg",
+              "name": "Etichetă metal",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                240,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "fata2",
+              "asset": "7366e8cdd2b3c4e60c9f0f4ff4dbb43e.svg",
+              "name": "Etichetă hârtie",
+              "size": [
+                124,
+                56
+              ],
+              "position": [
+                384,
+                304
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "robot",
+              "asset": "883ff3b2d692780b1144cf507c5cd51e.svg",
+              "name": "Robotul de reciclare",
+              "size": [
+                112,
+                128
+              ],
+              "position": [
+                240,
+                92
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 7
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 7
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "back",
+                      "value": 6
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "back",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  40,
+                  210
+                ],
+                [
+                  40,
+                  305
+                ],
+                [
+                  40,
+                  400
+                ]
+              ]
+            },
+            {
+              "id": "panou",
+              "asset": "bd30568d0c8be6b041112e4c377392d1.svg",
+              "name": "Panoul lotului",
+              "size": [
+                108,
+                28
+              ],
+              "position": [
+                240,
+                344
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Golim recipientele."
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "golire",
+              "asset": "0ba6fc12038556d6a9a68292d5ac9eda.svg",
+              "name": "Buton Golire",
+              "size": [
+                104,
+                44
+              ],
+              "position": [
+                416,
+                54
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  40,
+                  210
+                ]
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    }
+  ]
+}

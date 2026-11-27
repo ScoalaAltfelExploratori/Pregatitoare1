@@ -1,0 +1,860 @@
+[
+  {
+    "key": "m1",
+    "actor": "panou",
+    "script": 0,
+    "capture": "m1-panou-I0.jpg",
+    "clip": [
+      37,
+      553,
+      285,
+      92.3021240234375
+    ],
+    "page": 3
+  },
+  {
+    "key": "m1",
+    "actor": "robot",
+    "script": 0,
+    "capture": "r2-robot-I0.jpg",
+    "clip": [
+      37,
+      553,
+      285,
+      89
+    ],
+    "page": 3
+  },
+  {
+    "key": "m1",
+    "actor": "robot",
+    "script": 1,
+    "capture": "r2-robot-I0.jpg",
+    "clip": [
+      37,
+      648,
+      545,
+      92.3021240234375
+    ],
+    "page": 3
+  },
+  {
+    "key": "m1",
+    "actor": "sticla1",
+    "script": 0,
+    "capture": "r2-sticla1-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 3
+  },
+  {
+    "key": "m1",
+    "actor": "sticla1",
+    "script": 1,
+    "capture": "r2-sticla1-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 3
+  },
+  {
+    "key": "m2",
+    "actor": "panou",
+    "script": 0,
+    "capture": "m2-panou-I0.jpg",
+    "clip": [
+      37,
+      553,
+      415,
+      92.3021240234375
+    ],
+    "page": 4
+  },
+  {
+    "key": "m2",
+    "actor": "robot",
+    "script": 0,
+    "capture": "r2-robot-I0.jpg",
+    "clip": [
+      37,
+      553,
+      285,
+      89
+    ],
+    "page": 4
+  },
+  {
+    "key": "m2",
+    "actor": "robot",
+    "script": 1,
+    "capture": "r2-robot-I0.jpg",
+    "clip": [
+      37,
+      648,
+      545,
+      92.3021240234375
+    ],
+    "page": 4
+  },
+  {
+    "key": "m2",
+    "actor": "robot",
+    "script": 2,
+    "capture": "r2-robot-I1.jpg",
+    "clip": [
+      37,
+      595.6666870117188,
+      415,
+      92.30206298828125
+    ],
+    "page": 4
+  },
+  {
+    "key": "m2",
+    "actor": "robot",
+    "script": 3,
+    "capture": "r2-robot-I2.jpg",
+    "clip": [
+      37,
+      616,
+      545,
+      92.3021240234375
+    ],
+    "page": 4
+  },
+  {
+    "key": "m2",
+    "actor": "sticla1",
+    "script": 0,
+    "capture": "r2-sticla1-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 5
+  },
+  {
+    "key": "m2",
+    "actor": "sticla1",
+    "script": 1,
+    "capture": "r2-sticla1-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 5
+  },
+  {
+    "key": "m2",
+    "actor": "doza",
+    "script": 0,
+    "capture": "r2-doza-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 5
+  },
+  {
+    "key": "m2",
+    "actor": "doza",
+    "script": 1,
+    "capture": "r2-doza-I0.jpg",
+    "clip": [
+      37,
+      648,
+      350,
+      92.3021240234375
+    ],
+    "page": 5
+  },
+  {
+    "key": "m2",
+    "actor": "hartie",
+    "script": 0,
+    "capture": "r2-hartie-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 6
+  },
+  {
+    "key": "m2",
+    "actor": "hartie",
+    "script": 1,
+    "capture": "r2-hartie-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 6
+  },
+  {
+    "key": "m3",
+    "actor": "panou",
+    "script": 0,
+    "capture": "m3-panou-I0.jpg",
+    "clip": [
+      37,
+      553,
+      480,
+      92.3021240234375
+    ],
+    "page": 7
+  },
+  {
+    "key": "m3",
+    "actor": "robot",
+    "script": 0,
+    "capture": "r2-robot-I0.jpg",
+    "clip": [
+      37,
+      553,
+      285,
+      89
+    ],
+    "page": 7
+  },
+  {
+    "key": "m3",
+    "actor": "robot",
+    "script": 1,
+    "capture": "r2-robot-I0.jpg",
+    "clip": [
+      37,
+      648,
+      545,
+      92.3021240234375
+    ],
+    "page": 7
+  },
+  {
+    "key": "m3",
+    "actor": "robot",
+    "script": 2,
+    "capture": "r2-robot-I1.jpg",
+    "clip": [
+      37,
+      595.6666870117188,
+      415,
+      92.30206298828125
+    ],
+    "page": 7
+  },
+  {
+    "key": "m3",
+    "actor": "robot",
+    "script": 3,
+    "capture": "r2-robot-I2.jpg",
+    "clip": [
+      37,
+      616,
+      545,
+      92.3021240234375
+    ],
+    "page": 7
+  },
+  {
+    "key": "m3",
+    "actor": "robot",
+    "script": 4,
+    "capture": "r2-robot-I2.jpg",
+    "clip": [
+      37,
+      711,
+      545,
+      89
+    ],
+    "page": 7
+  },
+  {
+    "key": "m3",
+    "actor": "sticla1",
+    "script": 0,
+    "capture": "r2-sticla1-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 8
+  },
+  {
+    "key": "m3",
+    "actor": "sticla1",
+    "script": 1,
+    "capture": "r2-sticla1-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 8
+  },
+  {
+    "key": "m3",
+    "actor": "doza",
+    "script": 0,
+    "capture": "r2-doza-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 8
+  },
+  {
+    "key": "m3",
+    "actor": "doza",
+    "script": 1,
+    "capture": "r2-doza-I0.jpg",
+    "clip": [
+      37,
+      648,
+      350,
+      92.3021240234375
+    ],
+    "page": 8
+  },
+  {
+    "key": "m3",
+    "actor": "hartie",
+    "script": 0,
+    "capture": "r2-hartie-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 9
+  },
+  {
+    "key": "m3",
+    "actor": "hartie",
+    "script": 1,
+    "capture": "r2-hartie-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 9
+  },
+  {
+    "key": "m3",
+    "actor": "sticla2",
+    "script": 0,
+    "capture": "r2-sticla2-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 9
+  },
+  {
+    "key": "m3",
+    "actor": "sticla2",
+    "script": 1,
+    "capture": "r2-sticla2-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 9
+  },
+  {
+    "key": "r1",
+    "actor": "panou",
+    "script": 0,
+    "capture": "r1-panou-I0.jpg",
+    "clip": [
+      37,
+      553,
+      545,
+      92.3021240234375
+    ],
+    "page": 10
+  },
+  {
+    "key": "r1",
+    "actor": "robot",
+    "script": 0,
+    "capture": "r2-robot-I0.jpg",
+    "clip": [
+      37,
+      553,
+      285,
+      89
+    ],
+    "page": 10
+  },
+  {
+    "key": "r1",
+    "actor": "robot",
+    "script": 1,
+    "capture": "r2-robot-I0.jpg",
+    "clip": [
+      37,
+      648,
+      545,
+      92.3021240234375
+    ],
+    "page": 10
+  },
+  {
+    "key": "r1",
+    "actor": "robot",
+    "script": 2,
+    "capture": "r2-robot-I1.jpg",
+    "clip": [
+      37,
+      595.6666870117188,
+      415,
+      92.30206298828125
+    ],
+    "page": 10
+  },
+  {
+    "key": "r1",
+    "actor": "robot",
+    "script": 3,
+    "capture": "r2-robot-I2.jpg",
+    "clip": [
+      37,
+      616,
+      545,
+      92.3021240234375
+    ],
+    "page": 10
+  },
+  {
+    "key": "r1",
+    "actor": "robot",
+    "script": 4,
+    "capture": "r2-robot-I2.jpg",
+    "clip": [
+      37,
+      711,
+      545,
+      89
+    ],
+    "page": 10
+  },
+  {
+    "key": "r1",
+    "actor": "sticla1",
+    "script": 0,
+    "capture": "r2-sticla1-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 11
+  },
+  {
+    "key": "r1",
+    "actor": "sticla1",
+    "script": 1,
+    "capture": "r2-sticla1-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 11
+  },
+  {
+    "key": "r1",
+    "actor": "doza",
+    "script": 0,
+    "capture": "r2-doza-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 11
+  },
+  {
+    "key": "r1",
+    "actor": "doza",
+    "script": 1,
+    "capture": "r2-doza-I0.jpg",
+    "clip": [
+      37,
+      648,
+      350,
+      92.3021240234375
+    ],
+    "page": 11
+  },
+  {
+    "key": "r1",
+    "actor": "hartie",
+    "script": 0,
+    "capture": "r2-hartie-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 12
+  },
+  {
+    "key": "r1",
+    "actor": "hartie",
+    "script": 1,
+    "capture": "r2-hartie-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 12
+  },
+  {
+    "key": "r1",
+    "actor": "hartie",
+    "script": 2,
+    "capture": "r1-hartie-I0.jpg",
+    "clip": [
+      37,
+      602.6669921875,
+      515,
+      108.3021240234375
+    ],
+    "page": 12
+  },
+  {
+    "key": "r1",
+    "actor": "sticla2",
+    "script": 0,
+    "capture": "r2-sticla2-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 12
+  },
+  {
+    "key": "r1",
+    "actor": "sticla2",
+    "script": 1,
+    "capture": "r2-sticla2-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 12
+  },
+  {
+    "key": "r2",
+    "actor": "panou",
+    "script": 0,
+    "capture": "r2-panou-I0.jpg",
+    "clip": [
+      37,
+      553,
+      480,
+      92.3021240234375
+    ],
+    "page": 13
+  },
+  {
+    "key": "r2",
+    "actor": "robot",
+    "script": 0,
+    "capture": "r2-robot-I0.jpg",
+    "clip": [
+      37,
+      553,
+      285,
+      89
+    ],
+    "page": 13
+  },
+  {
+    "key": "r2",
+    "actor": "robot",
+    "script": 1,
+    "capture": "r2-robot-I0.jpg",
+    "clip": [
+      37,
+      648,
+      545,
+      92.3021240234375
+    ],
+    "page": 13
+  },
+  {
+    "key": "r2",
+    "actor": "robot",
+    "script": 2,
+    "capture": "r2-robot-I1.jpg",
+    "clip": [
+      37,
+      595.6666870117188,
+      415,
+      92.30206298828125
+    ],
+    "page": 13
+  },
+  {
+    "key": "r2",
+    "actor": "robot",
+    "script": 3,
+    "capture": "r2-robot-I2.jpg",
+    "clip": [
+      37,
+      616,
+      545,
+      92.3021240234375
+    ],
+    "page": 13
+  },
+  {
+    "key": "r2",
+    "actor": "robot",
+    "script": 4,
+    "capture": "r2-robot-I2.jpg",
+    "clip": [
+      37,
+      711,
+      545,
+      89
+    ],
+    "page": 13
+  },
+  {
+    "key": "r2",
+    "actor": "sticla1",
+    "script": 0,
+    "capture": "r2-sticla1-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 14
+  },
+  {
+    "key": "r2",
+    "actor": "sticla1",
+    "script": 1,
+    "capture": "r2-sticla1-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 14
+  },
+  {
+    "key": "r2",
+    "actor": "sticla1",
+    "script": 2,
+    "capture": "r2-sticla1-I1.jpg",
+    "clip": [
+      37,
+      595.6666870117188,
+      155,
+      89.0
+    ],
+    "page": 14
+  },
+  {
+    "key": "r2",
+    "actor": "doza",
+    "script": 0,
+    "capture": "r2-doza-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 14
+  },
+  {
+    "key": "r2",
+    "actor": "doza",
+    "script": 1,
+    "capture": "r2-doza-I0.jpg",
+    "clip": [
+      37,
+      648,
+      350,
+      92.3021240234375
+    ],
+    "page": 14
+  },
+  {
+    "key": "r2",
+    "actor": "doza",
+    "script": 2,
+    "capture": "r2-doza-I1.jpg",
+    "clip": [
+      37,
+      595.6666870117188,
+      155,
+      89.0
+    ],
+    "page": 14
+  },
+  {
+    "key": "r2",
+    "actor": "hartie",
+    "script": 0,
+    "capture": "r2-hartie-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 15
+  },
+  {
+    "key": "r2",
+    "actor": "hartie",
+    "script": 1,
+    "capture": "r2-hartie-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 15
+  },
+  {
+    "key": "r2",
+    "actor": "hartie",
+    "script": 2,
+    "capture": "r2-hartie-I1.jpg",
+    "clip": [
+      37,
+      595.6666870117188,
+      155,
+      89.0
+    ],
+    "page": 15
+  },
+  {
+    "key": "r2",
+    "actor": "sticla2",
+    "script": 0,
+    "capture": "r2-sticla2-I0.jpg",
+    "clip": [
+      37,
+      553,
+      350,
+      89
+    ],
+    "page": 15
+  },
+  {
+    "key": "r2",
+    "actor": "sticla2",
+    "script": 1,
+    "capture": "r2-sticla2-I0.jpg",
+    "clip": [
+      37,
+      648,
+      415,
+      92.3021240234375
+    ],
+    "page": 15
+  },
+  {
+    "key": "r2",
+    "actor": "sticla2",
+    "script": 2,
+    "capture": "r2-sticla2-I1.jpg",
+    "clip": [
+      37,
+      595.6666870117188,
+      155,
+      89.0
+    ],
+    "page": 15
+  },
+  {
+    "key": "r2",
+    "actor": "golire",
+    "script": 0,
+    "capture": "r2-golire-I0.jpg",
+    "clip": [
+      37,
+      553,
+      155,
+      72
+    ],
+    "page": 16
+  },
+  {
+    "key": "r2",
+    "actor": "golire",
+    "script": 1,
+    "capture": "r2-golire-I0.jpg",
+    "clip": [
+      37,
+      648,
+      155,
+      89
+    ],
+    "page": 16
+  },
+  {
+    "key": "r2",
+    "actor": "golire",
+    "script": 2,
+    "capture": "r2-golire-I1.jpg",
+    "clip": [
+      37,
+      595.6666870117188,
+      285,
+      89.0
+    ],
+    "page": 16
+  }
+]

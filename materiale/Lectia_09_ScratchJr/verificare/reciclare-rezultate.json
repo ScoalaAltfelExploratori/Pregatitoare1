@@ -1,0 +1,50 @@
+{
+  "result": "PASS",
+  "packages": 6,
+  "observations": 138,
+  "rendered_frames": 3985,
+  "coupled_transport_samples": 543,
+  "max_cargo_offset_error_px": 0,
+  "observed_orders": {
+    "m1": [
+      "sticla1"
+    ],
+    "m2": [
+      "sticla1",
+      "doza",
+      "hartie"
+    ],
+    "m3": [
+      "sticla1",
+      "hartie",
+      "doza",
+      "sticla2"
+    ],
+    "r1": [
+      "sticla1",
+      "hartie",
+      "doza",
+      "sticla2"
+    ],
+    "r2": [
+      "sticla1",
+      "hartie",
+      "doza"
+    ]
+  },
+  "checked": [
+    "native import and reopen",
+    "blank starter",
+    "one / three / four items",
+    "synchronized transport",
+    "distinct bottle positions",
+    "empty robot return",
+    "stop and restart",
+    "paper compaction before dispatch",
+    "stable pause",
+    "clear bins before next item",
+    "hidden button ignored",
+    "M3 and R2 replay after reopen"
+  ],
+  "scope": "ScratchJr Desktop Reborn in browser; physical Lenovo not tested."
+}

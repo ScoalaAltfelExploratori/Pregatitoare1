@@ -492,6 +492,60 @@
       "teacher_note": "Părțile grele sunt în bază; zece minute de creație și două rezerve suplimentare. Verificat în browser; proba pe Lenovo rămâne necesară.",
       "student_reference": "Urmează pregătirea și capturile tuturor programelor, inclusiv firele neschimbate. În PDF-ul cursului, Lecția 8 începe la pagina 105.",
       "footer": "Resurse incluse în starter / Construim programele pe tabletă"
+    },
+    {
+      "number": 9,
+      "revision": "27 noiembrie 2026",
+      "title": "Robotul de reciclare",
+      "subtitle": "O stație care sortează un lot amestecat",
+      "goal": "Programăm rute diferite, transportul vizibil și returul gol. Două sticle ocupă locuri distincte în același recipient.",
+      "setup": "Robot și obiecte mari; o scenă, 13 personaje. Starter fără cod, cu toate resursele incluse. Un import înaintea orei.",
+      "schedule": [
+        {
+          "minutes": "0-5",
+          "title": "Misiunea stației",
+          "text": "După evenimentul din parc, sortăm ambalajele. Citim etichetele și prezicem traseele."
+        },
+        {
+          "minutes": "5-20",
+          "title": "M1. Prima sticlă",
+          "text": "Robotul și sticla merg împreună. Sticla rămâne la plastic; robotul revine gol."
+        },
+        {
+          "minutes": "20-35",
+          "title": "M2. Trei categorii",
+          "text": "Adăugăm doza și hârtia. Panoul trimite pe rând roșu, portocaliu, galben."
+        },
+        {
+          "minutes": "35-55",
+          "title": "M3. Lotul amestecat | dificil, pentru toți",
+          "text": "Sticlă, hârtie, doză, sticlă. A doua sticlă merge 5 pași la stânga, prima 7: două locuri separate."
+        },
+        {
+          "minutes": "55-60",
+          "title": "Probă și salvare",
+          "text": "Un singur Steag, patru obiecte sortate. Explicăm un plic, salvăm și redeschidem."
+        }
+      ],
+      "solutions": [
+        "Robot și obiect: Arată > Așteaptă 5 > aceeași rută > Jos 3. Obiectul mai coboară 1; robotul așteaptă 10 și revine gol.",
+        "Roșu: Stânga 7. Portocaliu: fără mișcare laterală. Galben: Dreapta 6. Verde: Stânga 5. Returul inversează deplasarea.",
+        "Panoul M3: Steag > Așteaptă 10 > roșu > galben > portocaliu > verde > „Lot terminat!”."
+      ],
+      "hint": "Viteză normală pentru robot și obiecte. Reluare: Stop, apoi Steag. Panoul execută comenzile succesiv; nu este recunoaștere automată.",
+      "backups": [
+        {
+          "title": "R1. Compactăm hârtia | +5–8 min",
+          "text": "Albastru înainte de galben: hârtie mare, două micșorări, apoi transport."
+        },
+        {
+          "title": "R2. Golim recipientele | +8–10 min",
+          "text": "Pauză după trei obiecte. Golire ascunde lotul, apoi pornește ultima sticlă."
+        }
+      ],
+      "teacher_note": "Fără creație proprie. Puzzle-ul greu este în baza orei. Rezervele pornesc separat din M3. Verificat în browser; proba pe Lenovo rămâne necesară.",
+      "student_reference": "Urmează pregătirea și capturile tuturor programelor la fiecare etapă, inclusiv rezervele. În PDF-ul cursului, Lecția 9 începe la pagina 124.",
+      "footer": "Resurse incluse în starter / Construim programele pe tabletă"
     }
   ]
 }

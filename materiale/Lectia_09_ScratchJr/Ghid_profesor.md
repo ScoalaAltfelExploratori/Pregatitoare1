@@ -1,154 +1,270 @@
-# Lecția 9 Insula misterioasă
+# Lecția 9 – Robotul de reciclare
 
-50 de minute, copii de 6-7 ani. Trei misiuni de construire, inclusiv un puzzle dificil pentru toți, plus două rezerve suplimentare. Fiecare copil lucrează și testează pe propria tabletă. Nu cerem schimb de tablete, lucru în perechi sau testarea proiectului altui copil.
+60 de minute · 6–7 ani · fără creație proprie · puzzle greu în bază · două rezerve.
 
-## Ideea: descopăr următorul pas
+## Povestea pentru copii
 
-Nu introducem blocuri noi. Combinăm atingerea, Ascunde/Arată, mesajele și paginile pentru a construi o descoperire în etape. Un personaj ascuns nu poate fi atins pe scenă; un mesaj îl poate face vizibil. Apoi devine următorul lucru pe care îl putem atinge.
+„După evenimentul din parc au rămas sticle de plastic, doze și ambalaje de hârtie. La stația de sortare, robotul poate transporta câte un obiect. Noi îi scriem comenzile: unde îl duce, când îl lasă și cum se întoarce. La final, toate ambalajele trebuie să fie în recipientul potrivit. Vor veni și două sticle: trebuie să le facem loc amândurora.”
 
-Jocul trebuie să poată fi reluat. Programele cu steag pregătesc scena: ascund descoperirile la început și la revenirea prin Go to Page. Alegerea unei miniaturi în editor nu ține locul intrării programate în pagină. Începem proba cu steagul; între două runde complete folosim numai personajele scenei.
+## Obiectivul orei
 
-## Pregătire din biblioteca aplicației
+Construim o stație care execută automat un lot mixt. Noul accent este alegerea unor rute diferite prin mesaje și ocuparea unor locuri distincte în același recipient. Copilul vede transportul, depunerea și returul gol. Panoul are programul lotului; robotul și obiectul execută împreună fiecare comandă.
 
-Proiect nou cu **Beach Day, Butterfly și Dog**. Fluturele în stânga sus, câinele spre centru, separați. La M2 adăugăm **Ball** în dreapta și o a doua pagină, **Beach Night**, cu **Rabbit** și încă o **Ball**. Mingea este ieșirea, apoi întoarcerea. La R1 adăugăm un iepure și pe prima pagină, jos în stânga.
+## Pregătire
 
-Nu sunt necesare coordonate exacte, grilă, sunete, texte, desene externe sau importuri. Păstrăm mărimile inițiale și distanțe suficiente pentru atingere. Profesorul arată un pas, copiii îl construiesc. SJR-urile sunt numai exemple opționale pentru profesor.
+Importă [start.sjr](solutii_reciclare/start.sjr) o singură dată pe fiecare tabletă înaintea orei. Are o scenă și 13 personaje fără cod. Deschide [m3.sjr](solutii_reciclare/m3.sjr) pe laptop pentru demonstrație. [Instrucțiuni de import](README.md).
 
-## Demonstrație de 4 minute
+Păstrăm pozițiile și dimensiunile din starter. Personajele ascunse se aleg din lista din stânga: Doza, Hârtia, Sticla 2, Buton Golire. Cele trei personaje Recipient și cele trei Etichetă sunt decor și nu primesc cod. O sticlă mică desenată pe etichetă nu este un obiect depus.
 
-Pe o singură pagină: câinele are steag → ascunde și, separat, la mesaj portocaliu → arată. Fluturele are atingere → trimite portocaliu. Apăsăm steagul, apoi fluturele. Întrebăm: „Ce puteam atinge înainte? Ce putem atinge acum?”. Un nou steag ascunde iar câinele. Demo-ul arată mecanismul; în M1 pornim cu două personaje vizibile.
+Pentru fiecare etapă construim programele din secțiunea ei; programele neschimbate sunt repetate în ghid și în PDF. Copiii nu importă soluția următoare și nu scriu întâi un program greșit. Rezervele pornesc separat din M3.
 
-## Cele 50 de minute
+## Planul de 60 de minute
 
-| Minute | Activitate | Acțiunea profesorului |
-| --- | --- | --- |
-| 0-4 | Exemplu și regulă | Scopul jocului și o descoperire. |
-| 4-7 | Scena | Fluture, câine și fundal. |
-| 7-14 | Misiunea 1 | Reacții repetabile. |
-| 14-24 | Misiunea 2 | Ieșire, final și întoarcere. |
-| 24-27 | Pauză | Spunem regula fără tabletă. |
-| 27-37 | Puzzle dificil | Descoperiri în ordine, două runde. |
-| 37-45 | Creația mea | Un secret și o reacție personală. |
-| 45-50 | Testez și salvez | Propriul joc; îl păstrăm pentru lecția 10. |
+| Timp | Activitate | Rezultat observabil |
+|---|---|---|
+| 0–5 | Poveste, demonstrație, identificarea recipientelor | Copiii prezic unde trebuie dus fiecare obiect. |
+| 5–20 | M1 – Prima sticlă | Sticla rămâne la plastic; robotul revine gol. |
+| 20–35 | M2 – Trei categorii | Câte un obiect în fiecare recipient, transportate pe rând. |
+| 35–55 | M3 – Lotul amestecat, dificil pentru toți | Patru obiecte, două sticle vizibile separat, un singur Steag. |
+| 55–60 | Probă, explicație, salvare | Copilul explică o pereche de plicuri și redeschide proiectul. |
 
-**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+Dacă un copil se blochează, arătăm numai programul personajului respectiv din PDF. Păstrăm M3 în ora de bază. Cele două rezerve sunt suplimentare pentru cei care termină mai repede, fără secțiune de creație liberă.
 
-## Exemplu oficial adaptat: Jocul are o regulă pe care o pot explica
+## Legenda comenzilor
 
-**Reper:** [Animated Genres - proiectul Game](https://www.scratchjr.org/curricula/animatedgenres/full.pdf). Folosim ideea proiectului de joc din Animated Genres: copilul decide un scop și acțiunile jucătorului. Arată o singură descoperire din demo-ul insulei. Copiii spun ce se poate face acum și ce devine posibil după semnal. Nu adăugăm un mecanism nou.
+| Plic | Rol |
+|---|---|
+| Roșu | Robotul și Sticla 1: locul din stânga al recipientului de plastic. |
+| Portocaliu | Robotul și Doza: recipientul de metal. |
+| Galben | Robotul și Hârtia: recipientul de hârtie. |
+| Verde | Robotul și Sticla 2: al doilea loc din recipientul de plastic. |
+| Albastru în R1 | Hârtia: compactare înainte de transport. |
+| Albastru în R2 | Toate ambalajele: ascundere pentru golire. |
+| Mov în R2 | Arată butonul Golire. |
 
-**Model pentru demonstrație:** Dog: steag → ascunde; separat, la portocaliu → arată. Butterfly: atingere → trimite portocaliu. După steag vedem fluturele; după atingere apare câinele.
+R1 și R2 sunt proiecte separate: albastrul are alt rol în fiecare. Culorile plicurilor identifică programe; nu sunt culorile recipientelor.
 
-**Întreabă înainte de rulare:** „Ce îl împiedică pe jucător să sară direct la următorul pas? Copilul descrie ce se vede, nu doar numele blocurilor.”
+În ScratchJr, Așteaptă 5 înseamnă aproximativ jumătate de secundă, iar 10 aproximativ o secundă. Robotul și obiectul au aceeași viteză normală și același început Arată → Așteaptă 5. După deplasarea comună Jos 3, obiectul mai coboară 1. Robotul așteaptă 10 și se întoarce gol.
 
-Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
+Panoul trimite mesajele succesiv. Fiecare Trimitere așteaptă programele pe care le-a pornit; de aceea următorul obiect apare după retur. Nu punem culorile în fire separate pornite toate la Steag.
 
-## Misiunea 1 Insula reacționează
+## Construim primul ciclu
 
-**Ținta:** la atingere, fluturele devine mare o clipă și revine la normal. Câinele dispare o clipă și reapare singur. Celălalt personaj nu se schimbă. Fiecare surpriză funcționează de două ori fără Reset.
+5–20 min. Selectăm Robotul, apoi Sticla 1 și Panoul. Sticla pleacă de sub clește, se așază în stânga recipientului de plastic, iar robotul revine în centru.
 
-- Fluture: atingere → mărime inițială → mărește 4 → așteaptă 10 → mărime inițială.
-- Câine: atingere → ascunde → așteaptă 10 → arată.
+**Întrebare:** Ce trebuie să facă obiectul după ce robotul se oprește deasupra recipientului?
 
-**Indiciu:** „Cum faci ca surpriza să fie gata pentru încă o încercare?”. Atingem personajul pe scenă, nu miniatura de editare. Așteptăm terminarea efectului înainte de următoarea atingere. 10 înseamnă aproximativ o secundă de pauză.
+**Indiciu / soluție:** Sticla mai coboară 1. Robotul așteaptă, apoi revine: Sus 3, Dreapta 7.
 
-Copilul poate alege o altă reacție scurtă, cu început și sfârșit clare. Nu adăugăm încă mesaje sau Forever. Reacția trebuie să lase personajul vizibil și gata de folosit.
+[Soluția nativă](solutii_reciclare/m1.sjr).
 
-## Misiunea 2 Ieșirea ascunsă
+### Sticla 1
 
-**Ținta:** steagul ascunde mingea. Fluturele o dezvăluie. Mingea trece la pagina de final, iar mingea de pe final ne aduce înapoi. La revenire, ieșirea este ascunsă din nou.
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește roșu → Arată → Așteaptă 5 → Stânga 7 → Jos 3 → Jos 1
 
-Adăugăm Ball pe prima pagină și construim pagina 2 cu Beach Night, Rabbit și o altă Ball. Personajele de pe pagini diferite au programe separate. Copiii pot alege alt fundal inclus, dacă diferența dintre scene rămâne clară.
+### Robotul de reciclare
 
-| Personaj | Program |
-| --- | --- |
-| Fluture, pagina 1 | Înlocuim trucul M1 cu atingere → trimite portocaliu. |
-| Minge, pagina 1 | Steag → ascunde. Separat: la portocaliu → arată. Separat: atingere → pagina 2. |
-| Minge, pagina 2 | Atingere → pagina 1. |
-| Iepure, pagina 2 | Poate rămâne fără program. În exemplul profesorului: steag → mărime inițială → mărește 4 → așteaptă 10 → mărime inițială. |
+- Steag → La poziția inițială → Arată → Viteză normală
+- Primește roșu → Arată → Așteaptă 5 → Stânga 7 → Jos 3 → Așteaptă 10 → Sus 3 → Dreapta 7
 
-Câinele de pe prima pagină poate păstra surpriza M1. Exemplul profesorului folosește o mărire scurtă, cu revenire la normal. Trucul lui nu dezvăluie ieșirea. Nu este necesară copierea acestui detaliu pentru a rezolva M2.
+### Panoul lotului
 
-**Test propriu:** steag → fluture → minge → final → minge → insulă. La revenire verificăm că ieșirea a dispărut. Reluăm drumul fără un nou steag și fără Reset.
+- Steag → Așteaptă 10 → Trimite roșu → Spune Lot terminat!
 
-**Indicii:** „Cine primește plicul?”, „Ce trebuie să se întâmple când ajungi înapoi?”, „Programul pentru întoarcere este pe mingea din care pagină?”. Nu mutăm manual mingea și nu folosim miniaturile pentru a trece proba.
+**Fără cod:** cele trei recipiente și cele trei etichete; Doza, Hârtia, Sticla 2, Buton Golire.
 
-## Misiunea 3 Lanțul descoperirilor
+## Adăugăm celelalte două materiale
 
-**Puzzle dificil pentru toți:** după steag vedem numai fluturele. Fluturele dezvăluie câinele; câinele dezvăluie mingea; mingea deschide finalul. Mingea de pe final ne aduce înapoi, unde trebuie să vedem din nou numai fluturele. Facem două runde complete.
+20–35 min. Păstrăm M1. Adăugăm Doza și Hârtia, cele două răspunsuri ale robotului și două mesaje la Panou. Ordine: roșu, portocaliu, galben.
 
-**Trecerea de la M2:** păstrăm fluturele și paginile. Înlocuim surpriza câinelui cu programele de descoperire de mai jos. Mingea primește acum albastru, nu portocaliu. Nu lăsăm vechiul receptor portocaliu pe minge: ar sări peste pasul câinelui.
+**Întrebare:** Doza este deja deasupra recipientului ei. Mai are nevoie de o deplasare laterală?
 
-| Personaj | Programe pe pagina 1 |
-| --- | --- |
-| Fluture | Atingere → trimite portocaliu. |
-| Câine | Steag → ascunde. Separat: la portocaliu → arată. Separat: atingere → trimite albastru. |
-| Minge | Steag → ascunde. Separat: la albastru → arată. Separat: atingere → pagina 2. |
+**Indiciu / soluție:** Nu: doar Jos 3 și depunere. Hârtia merge Dreapta 6, robotul revine Stânga 6.
 
-Pe pagina 2 păstrăm întoarcerea: mingea are atingere → pagina 1. Iepurele poate rămâne decor sau poate avea mărirea scurtă din exemplul profesorului. Reușita puzzle-ului nu depinde de animația de final.
+[Soluția nativă](solutii_reciclare/m2.sjr).
 
-**Ce este dificil:** două mesaje au roluri diferite, iar vizibilitatea stabilește ordinea acțiunilor disponibile. Ascunderea de la început trebuie să se execute și la întoarcere. Copilul construiește o regulă a jocului, apoi o verifică.
+### Sticla 1
 
-## Testul meu în cinci pași
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește roșu → Arată → Așteaptă 5 → Stânga 7 → Jos 3 → Jos 1
 
-1. Apăs steagul: văd fluturele; câinele și mingea sunt ascunși.
-2. Ating fluturele: apare câinele, dar mingea rămâne ascunsă.
-3. Ating câinele: apare mingea.
-4. Ating mingea: ajung la final. Mingea de acolo mă aduce înapoi.
-5. Văd iar numai fluturele. Repet pașii 2-4, fără Reset sau un nou steag.
+### Doza
 
-**Indicii progresive:** „Fă întâi să apară numai câinele”, „Cine poate trimite a doua culoare?”, „Ce ascunzi pentru o rundă nouă?”, „Poți ajunge la final înainte de a descoperi mingea?”. Profesorul ajută pe tableta copilului, fără o etapă de lucru cu un coleg.
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește portocaliu → Arată → Așteaptă 5 → Jos 3 → Jos 1
 
-**Loc pentru creație:** alegerea decorului, locurile personajelor și o surpriză de final. Păstrăm țintele și zonele de atingere clare. Nu cerem numărătoare de puncte, inventar sau introducerea unei parole.
+### Hârtia
 
-## Creația mea: Secretul insulei mele
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește galben → Arată → Așteaptă 5 → Dreapta 6 → Jos 3 → Jos 1
 
-**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
+### Robotul de reciclare
 
-**Spune copiilor:** „Alege ce reprezintă descoperirile: un prieten ascuns, un indiciu și o ieșire, de exemplu. Adaugă un gest scurt care arată bucurie sau surpriză după apariția câinelui, înainte de următoarea comandă. Fiecare lucrează și testează pe propria tabletă.”
+- Steag → La poziția inițială → Arată → Viteză normală
+- Primește roșu → Arată → Așteaptă 5 → Stânga 7 → Jos 3 → Așteaptă 10 → Sus 3 → Dreapta 7
+- Primește portocaliu → Arată → Așteaptă 5 → Jos 3 → Așteaptă 10 → Sus 3
+- Primește galben → Arată → Așteaptă 5 → Dreapta 6 → Jos 3 → Așteaptă 10 → Sus 3 → Stânga 6
 
-**Verificarea autorului:** Spune regula jocului într-o propoziție și joacă două runde. Ieșirea nu trebuie să devină disponibilă prea devreme; la întoarcere se refac ascunderile inițiale.
+### Panoul lotului
 
-**Sprijin și extensie:** Personalizează o singură descoperire și păstrează restul legăturilor. Pentru mai multă dificultate, fă indicii vizuale diferite pentru pașii succesivi, fără a adăuga încă o pagină.
+- Steag → Așteaptă 10 → Trimite roșu → Trimite portocaliu → Trimite galben → Spune Lot terminat!
 
-Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+**Fără cod:** cele trei recipiente și cele trei etichete; Sticla 2, Buton Golire.
 
-**Ce urmăresc la încheiere:** Copilul explică ordinea descoperirilor și verifică din nou starea de început.
+## Puzzle greu: două sticle, două locuri
 
-## Rezervă 1 Surpriza opțională
+35–55 min · dificil. Păstrăm cele trei rute, adăugăm Sticla 2 și comanda verde. Panoul primește ordinea roșu, galben, portocaliu, verde. Un singur Steag; cele două sticle trebuie văzute separat.
 
-**6-8 minute în plus. Pornim de la M3.** Adăugăm Rabbit jos în stânga, separat de fluture și câine. Iepurele rămâne vizibil și face un truc repetabil, fără să dezvăluie câinele sau mingea.
+**Întrebare:** Prima sticlă este la 7 pași în stânga. Al doilea loc este cu 2 pași mai aproape: cât trebuie să meargă a doua?
 
-**Model:** iepure, atingere → mărime inițială → mărește 4 → așteaptă 10 → mărime inițială. Copilul poate alege alt truc scurt. Nu îi adăugăm plicurile care deschid descoperirile.
+**Indiciu / soluție:** 7 − 2 = 5. Robotul și Sticla 2 merg Stânga 5. Returul gol este Sus 3, Dreapta 5. Prima rută rămâne Stânga 7.
 
-**Test propriu:** după steag ating iepurele; câinele și mingea rămân ascunși. Parcurg lanțul și revin. Surpriza iepurelui funcționează din nou. **Indiciu:** „Cum îl faci distractiv fără să deschidă drumul?”.
+[Soluția nativă](solutii_reciclare/m3.sjr).
 
-## Rezervă 2 Două drumuri
+### Sticla 1
 
-**8-10 minute în plus. Revenim la varianta M2.** Fluturele și câinele sunt vizibili, mingea este ascunsă. Oricare dintre cele două personaje poate dezvălui singur ieșirea. Nu este nevoie să le atingem pe amândouă.
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește roșu → Arată → Așteaptă 5 → Stânga 7 → Jos 3 → Jos 1
 
-- Fluture și câine: fiecare are atingere → trimite portocaliu.
-- Minge pe insulă: steag → ascunde; la portocaliu → arată; atingere → pagina 2.
-- Minge de pe final: atingere → pagina 1.
+### Doza
 
-Dacă modificăm M3, scoatem programele de ascundere și apariție ale câinelui și îi schimbăm plicul trimis în portocaliu. Mingea ascultă tot portocaliu. Nu păstrăm vechiul lanț albastru în paralel.
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește portocaliu → Arată → Așteaptă 5 → Jos 3 → Jos 1
 
-**Test propriu:** intru prin fluture și revin; apoi intru prin câine și revin. La începutul fiecărui traseu mingea este ascunsă. **Indiciu:** „Pot doi expeditori să trimită aceeași culoare?”.
+### Hârtia
 
-## Dificultăți și sprijin
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește galben → Arată → Așteaptă 5 → Dreapta 6 → Jos 3 → Jos 1
 
-| Ce observăm | Cum ajutăm |
-| --- | --- |
-| Descoperirile sunt vizibile la deschidere | Selectăm prima pagină și pornim proba cu steagul. |
-| Mingea apare prea devreme în M3 | Numai câinele trimite albastru; mingea ascultă albastru. |
-| Personajul nu apare | Verificăm culoarea, personajul selectat și conectarea blocurilor. |
-| La întoarcere nu se ascund | Folosim mingea cu Go to Page 1; păstrăm steag → ascunde pe descoperiri. |
-| Reacția pare să nu pornească | Atingem personajul pe scenă. Personajele ascunse nu sunt butoane active. |
+### Sticla 2
 
-## Încheiere și continuare
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește verde → Arată → Așteaptă 5 → Stânga 5 → Jos 3 → Jos 1
 
-Fiecare copil verifică propria rundă, revine în galerie și redeschide proiectul. La redeschidere alege prima pagină și apasă steagul. Notează oral sau prin desen un lucru de continuat la lecția 10. Prezentarea către alți copii este opțională.
+### Robotul de reciclare
 
-Rezervele sunt peste cele 50 de minute și nu înlocuiesc puzzle-ul dificil sau salvarea. Înainte de clasă probează M3 pe Lenovo, inclusiv atingerea personajelor, întoarcerea și redeschiderea offline. Raportul browserului: verificare/README.md.
+- Steag → La poziția inițială → Arată → Viteză normală
+- Primește roșu → Arată → Așteaptă 5 → Stânga 7 → Jos 3 → Așteaptă 10 → Sus 3 → Dreapta 7
+- Primește portocaliu → Arată → Așteaptă 5 → Jos 3 → Așteaptă 10 → Sus 3
+- Primește galben → Arată → Așteaptă 5 → Dreapta 6 → Jos 3 → Așteaptă 10 → Sus 3 → Stânga 6
+- Primește verde → Arată → Așteaptă 5 → Stânga 5 → Jos 3 → Așteaptă 10 → Sus 3 → Dreapta 5
 
-**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.
+### Panoul lotului
+
+- Steag → Așteaptă 10 → Trimite roșu → Trimite galben → Trimite portocaliu → Trimite verde → Spune Lot terminat!
+
+**Fără cod:** cele trei recipiente și cele trei etichete; Buton Golire.
+
+## Rezervă 1: compactăm înainte să transportăm
+
+Rezervă · +5–8 min. Pornim din M3. Pachetul mare de hârtie este prea lat pentru recipient. Îl micșorăm în două etape, apoi îl transportăm. Panoul trimite albastru înainte de galben.
+
+**Întrebare:** Dacă trimitem mai întâi galben, unde s-ar afla hârtia când începe compactarea?
+
+**Indiciu / soluție:** Compactarea trebuie terminată la încărcare. Hârtia: Mărește 10, Arată, Așteaptă 5, Repetă 2 { Micșorează 5, Așteaptă 5 }. Este o reprezentare vizuală prin mărime, fără o presă mecanică.
+
+[Soluția nativă](solutii_reciclare/r1.sjr).
+
+### Sticla 1
+
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește roșu → Arată → Așteaptă 5 → Stânga 7 → Jos 3 → Jos 1
+
+### Doza
+
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește portocaliu → Arată → Așteaptă 5 → Jos 3 → Jos 1
+
+### Hârtia
+
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește galben → Arată → Așteaptă 5 → Dreapta 6 → Jos 3 → Jos 1
+- Primește albastru → Mărește 10 → Arată → Așteaptă 5 → Repetă 2 { Micșorează 5 → Așteaptă 5 }
+
+### Sticla 2
+
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește verde → Arată → Așteaptă 5 → Stânga 5 → Jos 3 → Jos 1
+
+### Robotul de reciclare
+
+- Steag → La poziția inițială → Arată → Viteză normală
+- Primește roșu → Arată → Așteaptă 5 → Stânga 7 → Jos 3 → Așteaptă 10 → Sus 3 → Dreapta 7
+- Primește portocaliu → Arată → Așteaptă 5 → Jos 3 → Așteaptă 10 → Sus 3
+- Primește galben → Arată → Așteaptă 5 → Dreapta 6 → Jos 3 → Așteaptă 10 → Sus 3 → Stânga 6
+- Primește verde → Arată → Așteaptă 5 → Stânga 5 → Jos 3 → Așteaptă 10 → Sus 3 → Dreapta 5
+
+### Panoul lotului
+
+- Steag → Așteaptă 10 → Trimite roșu → Trimite albastru → Trimite galben → Trimite portocaliu → Trimite verde → Spune Lot terminat!
+
+**Fără cod:** cele trei recipiente și cele trei etichete; Buton Golire.
+
+## Rezervă 2: operatorul golește recipientele
+
+Rezervă · +8–10 min. Pornim separat din M3. Procesăm sticlă, hârtie, doză. Panoul trimite mov și robotul așteaptă. Golire apare numai atunci. Atingerea lui ascunde lotul vechi și pornește ultima sticlă.
+
+**Întrebare:** Ce mesaj trebuie trimis primul: golirea sau următoarea sticlă?
+
+**Indiciu / soluție:** Albastru golește, apoi verde transportă Sticla 2. Butonul se ascunde imediat; apăsările repetate nu pornesc un al doilea transport. Nu folosim un senzor de umplere.
+
+[Soluția nativă](solutii_reciclare/r2.sjr).
+
+### Sticla 1
+
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește roșu → Arată → Așteaptă 5 → Stânga 7 → Jos 3 → Jos 1
+- Primește albastru → Ascunde
+
+### Doza
+
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește portocaliu → Arată → Așteaptă 5 → Jos 3 → Jos 1
+- Primește albastru → Ascunde
+
+### Hârtia
+
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește galben → Arată → Așteaptă 5 → Dreapta 6 → Jos 3 → Jos 1
+- Primește albastru → Ascunde
+
+### Sticla 2
+
+- Steag → La poziția inițială → Mărime inițială → Ascunde → Viteză normală
+- Primește verde → Arată → Așteaptă 5 → Stânga 5 → Jos 3 → Jos 1
+- Primește albastru → Ascunde
+
+### Robotul de reciclare
+
+- Steag → La poziția inițială → Arată → Viteză normală
+- Primește roșu → Arată → Așteaptă 5 → Stânga 7 → Jos 3 → Așteaptă 10 → Sus 3 → Dreapta 7
+- Primește portocaliu → Arată → Așteaptă 5 → Jos 3 → Așteaptă 10 → Sus 3
+- Primește galben → Arată → Așteaptă 5 → Dreapta 6 → Jos 3 → Așteaptă 10 → Sus 3 → Stânga 6
+- Primește verde → Arată → Așteaptă 5 → Stânga 5 → Jos 3 → Așteaptă 10 → Sus 3 → Dreapta 5
+
+### Panoul lotului
+
+- Steag → Așteaptă 10 → Trimite roșu → Trimite galben → Trimite portocaliu → Trimite mov → Spune Golim recipientele.
+
+### Buton Golire
+
+- Steag → Ascunde
+- Primește mov → Arată
+- La atingere → Ascunde → Trimite albastru → Trimite verde
+
+**Fără cod:** cele trei recipiente și cele trei etichete.
+
+## Verificare finală și salvare
+
+- M3 pornește cu un singur Steag. Robotul duce patru obiecte în ordinea stabilită și revine gol după fiecare.
+- La final sunt două sticle alăturate, o doză și un pachet de hârtie. Nu numărăm pictogramele de pe etichete ca obiecte.
+- Reluarea readuce robotul și ambalajele la pozițiile inițiale și ascunde lotul anterior.
+- În R1 hârtia se micșorează înainte de deplasare. În R2 avem o pauză reală înainte de Golire; după golire rămâne numai ultima sticlă.
+- Revenim în galerie, redeschidem proiectul și verificăm că programele s-au păstrat.
+
+## Dacă un copil se blochează
+
+Verificăm personajul selectat, plicurile de aceeași culoare, numerele și viteza normală. Dacă obiectul se separă de clește, comparăm începutul și deplasările robotului cu ale obiectului. La retur doar robotul urcă. Dacă sticlele se suprapun, a doua rută trebuie să fie 5, nu 7. Dacă lotul pornește simultan, toate mesajele trebuie puse într-un singur fir al Panoului.
+
+Proiectele sunt modele programate: nu recunosc automat materialele. Importul și comportamentul au fost testate în portul web; [raport și limite](verificare/Reciclarea_60min.md). Verifică starterul pe un Lenovo al școlii înainte de oră.

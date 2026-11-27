@@ -1,5 +1,8 @@
 # Lecția 10 - Marea finală: Jocul meu complet
 
+> Această versiune de 50 de minute continuă [Insula misterioasă din arhiva Lecției 9](../Lectia_09_ScratchJr/README_50min.md). Nu continuă noul proiect Robotul de reciclare; Lecția 10 urmează să fie revizuită.
+
+
 **50 de minute, 6-7 ani. Lucru individual.** Continuăm propriul proiect din lecția 9 și construim o sărbătoare cu început, ordine și sfârșit. Trei misiuni, inclusiv un puzzle dificil pentru toți, plus două rezerve suplimentare.
 
 ## Exemplu, puzzle și creație proprie

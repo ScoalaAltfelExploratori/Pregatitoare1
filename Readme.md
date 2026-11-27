@@ -120,7 +120,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 1
 
-[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește resursele aplicației, cu trei excepții: Lecțiile 6, 7 și 8 includ atelierul, fabrica de roboți și misiunea submarină în câte un starter SJR, de importat înaintea orei. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–8 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
+[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește resursele aplicației, cu patru excepții: Lecțiile 6–9 includ atelierul, fabrica de roboți, misiunea submarină și stația de reciclare în câte un starter SJR, de importat înaintea orei. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–9 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
 
 [README-ul lecției 1](materiale/Lectia_01_ScratchJr/README.md) conține instalarea pe Lenovo, construirea scenei și testarea opțională în browser. [Raportul de verificare](materiale/Lectia_01_ScratchJr/verificare/README.md) separă cele șapte proiecte finale testate în browser de probele Android și Desktop anterioare.
 
@@ -154,8 +154,8 @@ npm test
 
 ## Cursul ScratchJr: lecția 9
 
-[Insula misterioasă](materiale/Lectia_09_ScratchJr/README.md) combină mesaje, vizibilitate și pagini: surprize, ieșire ascunsă și lanțul dificil de descoperiri, repetabil prin întoarcerea din final. Fiecare copil construiește și testează individual. Două rezerve: surpriza opțională și două drumuri spre aceeași ieșire. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [104 verificări în browser](materiale/Lectia_09_ScratchJr/verificare/README.md). Numai resurse incluse, fără fișiere de distribuit pe tablete.
+[Robotul de reciclare](materiale/Lectia_09_ScratchJr/README.md): 60 de minute, fără creație proprie. Transport vizibil, trei categorii și puzzle greu cu două sticle în locuri distincte. Două rezerve: compactarea hârtiei și golirea recipientelor. Șase proiecte native, resurse noi și mari incluse în starter, ghid și PDF de 17 pagini cu programele tuturor personajelor. [Verificat în browser](materiale/Lectia_09_ScratchJr/verificare/Reciclarea_60min.md); Lenovo fizic netestat.
 
 ## Cursul ScratchJr: lecția 10
 
-[Marea finală - Jocul meu complet](materiale/Lectia_10_ScratchJr/README.md) continuă individual insula lecției 9: două transformări, buton care așteaptă, apoi iepure → câine → întoarcere. Puzzle dificil și două rezerve: Encore și întoarcere automată. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [102 verificări de comportament în browser](materiale/Lectia_10_ScratchJr/verificare/README.md). Numai resurse incluse în aplicație, fără fișiere de distribuit copiilor. Cele zece pachete de lecții sunt pregătite; meniul siteului le reunește în secțiunea ScratchJr.
+[Marea finală - Jocul meu complet](materiale/Lectia_10_ScratchJr/README.md) continuă individual insula din arhiva de 50 de minute a lecției 9: două transformări, buton care așteaptă, apoi iepure → câine → întoarcere. Puzzle dificil și două rezerve: Encore și întoarcere automată. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [102 verificări de comportament în browser](materiale/Lectia_10_ScratchJr/verificare/README.md). Numai resurse incluse în aplicație, fără fișiere de distribuit copiilor. Cele zece pachete de lecții sunt pregătite; meniul siteului le reunește în secțiunea ScratchJr.

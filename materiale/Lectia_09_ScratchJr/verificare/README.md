@@ -1,3 +1,5 @@
+> Arhivă: Insula misterioasă, 50 de minute. Pentru lecția actuală: [Robotul de reciclare, 60 de minute](Reciclarea_60min.md).
+
 # Verificare - Lecția 9
 
 **PASS, 10 noiembrie 2026. Șapte proiecte, 104 verificări finale în browser.** 65 de probe principale, 35 după salvare/redeschidere și patru pentru programul de apariție construit prin tragerea blocurilor. Numărul reprezintă verificări de comportament, nu misiuni distincte.

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-27",
+  "lesson_pdf_pages": 17,
+  "course_pdf_pages": 140,
+  "previous_course_pages_unchanged": 123,
+  "illustrated_programs": 66,
+  "native_projects": 6,
+  "navigation_tests": 5,
+  "local_http_urls": 579,
+  "local_http_documents": 142,
+  "website_viewports": [
+    [
+      1280,
+      800
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "horizontal_overflow": false,
+  "physical_lenovo_tested": false,
+  "pdf_sha256": {
+    "materiale\\Lectia_09_ScratchJr\\Ghid_profesor_Lectia_09.pdf": "40d951037013dd494c902999a0cd4016ca5a87413bb928a5aab1d9160676eccb",
+    "materiale\\Plan_lectii_ScratchJr_60min.pdf": "d8cbb4d02be75349c3c8a17b94ef777a4c95da031ee5b10b0d9e6415b2373f3c"
+  }
+}
