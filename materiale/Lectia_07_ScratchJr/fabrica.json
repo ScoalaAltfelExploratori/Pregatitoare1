@@ -1,0 +1,2146 @@
+{
+  "lesson": 7,
+  "title": "Fabrica de roboți: construim un rover",
+  "duration": 60,
+  "revision": "v1.0",
+  "projects": [
+    {
+      "key": "start",
+      "file": "start.sjr",
+      "name": "L07 Fabrica de roboți - de la zero · v1.0",
+      "sha256": "2b817dae83de42a5c37d5da3f03cc5e92e39ea6ce0453756adc4b30cefa05e67",
+      "pages": [
+        {
+          "background": "a7934cab8ffe23ec14f806f97a6558be.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "banc",
+              "asset": "a62a10e72a0f43658ce032c856daf273.svg",
+              "name": "Banc de probă",
+              "size": [
+                300,
+                68
+              ],
+              "position": [
+                324,
+                314
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "robot",
+              "asset": "a2cb88587d72abeb5b7cf09c176e4f10.svg",
+              "name": "Robot industrial",
+              "size": [
+                126,
+                116
+              ],
+              "position": [
+                84,
+                230
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "sasiu",
+              "asset": "58f6763b6ad8421e13347e8ed88597e2.svg",
+              "name": "Șasiu",
+              "size": [
+                192,
+                96
+              ],
+              "position": [
+                288,
+                96
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "stanga",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata stângă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                120,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "dreapta",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata dreaptă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                408,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "rover",
+              "asset": "88f94286eb7411620e9cb2b8835d00b1.svg",
+              "name": "Rover complet",
+              "size": [
+                192,
+                120
+              ],
+              "position": [
+                288,
+                228
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": []
+            },
+            {
+              "id": "far",
+              "asset": "f6c757d753638c70288195f93e9a18fe.svg",
+              "name": "Far",
+              "size": [
+                36,
+                30
+              ],
+              "position": [
+                376,
+                236
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m1",
+      "file": "m1.sjr",
+      "name": "L07 Fabrica de roboți - 1. Șasiul · v1.0",
+      "sha256": "ffd0651b4375222a97954cf6a249645504ca499dcec125569a282c23c7d15704",
+      "pages": [
+        {
+          "background": "a7934cab8ffe23ec14f806f97a6558be.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "banc",
+              "asset": "a62a10e72a0f43658ce032c856daf273.svg",
+              "name": "Banc de probă",
+              "size": [
+                300,
+                68
+              ],
+              "position": [
+                324,
+                314
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "robot",
+              "asset": "a2cb88587d72abeb5b7cf09c176e4f10.svg",
+              "name": "Robot industrial",
+              "size": [
+                126,
+                116
+              ],
+              "position": [
+                84,
+                230
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Șasiu montat!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "sasiu",
+              "asset": "58f6763b6ad8421e13347e8ed88597e2.svg",
+              "name": "Șasiu",
+              "size": [
+                192,
+                96
+              ],
+              "position": [
+                288,
+                96
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata stângă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                120,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata dreaptă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                408,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rover",
+              "asset": "88f94286eb7411620e9cb2b8835d00b1.svg",
+              "name": "Rover complet",
+              "size": [
+                192,
+                120
+              ],
+              "position": [
+                288,
+                228
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": []
+            },
+            {
+              "id": "far",
+              "asset": "f6c757d753638c70288195f93e9a18fe.svg",
+              "name": "Far",
+              "size": [
+                36,
+                30
+              ],
+              "position": [
+                376,
+                236
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m2",
+      "file": "m2.sjr",
+      "name": "L07 Fabrica de roboți - 2. Roțile în paralel · v1.0",
+      "sha256": "78a5d962deae07661bb267e9a3d4d7aebae3b58e33b83c3b94b81a37937bf0d2",
+      "pages": [
+        {
+          "background": "a7934cab8ffe23ec14f806f97a6558be.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "banc",
+              "asset": "a62a10e72a0f43658ce032c856daf273.svg",
+              "name": "Banc de probă",
+              "size": [
+                300,
+                68
+              ],
+              "position": [
+                324,
+                314
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "robot",
+              "asset": "a2cb88587d72abeb5b7cf09c176e4f10.svg",
+              "name": "Robot industrial",
+              "size": [
+                126,
+                116
+              ],
+              "position": [
+                84,
+                230
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Roți montate!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "sasiu",
+              "asset": "58f6763b6ad8421e13347e8ed88597e2.svg",
+              "name": "Șasiu",
+              "size": [
+                192,
+                96
+              ],
+              "position": [
+                288,
+                96
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata stângă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                120,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata dreaptă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                408,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "back",
+                      "value": 3
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rover",
+              "asset": "88f94286eb7411620e9cb2b8835d00b1.svg",
+              "name": "Rover complet",
+              "size": [
+                192,
+                120
+              ],
+              "position": [
+                288,
+                228
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": []
+            },
+            {
+              "id": "far",
+              "asset": "f6c757d753638c70288195f93e9a18fe.svg",
+              "name": "Far",
+              "size": [
+                36,
+                30
+              ],
+              "position": [
+                376,
+                236
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m3",
+      "file": "m3.sjr",
+      "name": "L07 Fabrica de roboți - 3. Roverul complet · v1.0",
+      "sha256": "4ea26dc42d385fe94e592e2fa4ad9ba75b2aad5c276925b5c1fe0b44bce2e01c",
+      "pages": [
+        {
+          "background": "a7934cab8ffe23ec14f806f97a6558be.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "banc",
+              "asset": "a62a10e72a0f43658ce032c856daf273.svg",
+              "name": "Banc de probă",
+              "size": [
+                300,
+                68
+              ],
+              "position": [
+                324,
+                314
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "robot",
+              "asset": "a2cb88587d72abeb5b7cf09c176e4f10.svg",
+              "name": "Robot industrial",
+              "size": [
+                126,
+                116
+              ],
+              "position": [
+                84,
+                230
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Gata!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "sasiu",
+              "asset": "58f6763b6ad8421e13347e8ed88597e2.svg",
+              "name": "Șasiu",
+              "size": [
+                192,
+                96
+              ],
+              "position": [
+                288,
+                96
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 5
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata stângă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                120,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata dreaptă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                408,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 0
+                    },
+                    {
+                      "block": "back",
+                      "value": 3
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rover",
+              "asset": "88f94286eb7411620e9cb2b8835d00b1.svg",
+              "name": "Rover complet",
+              "size": [
+                192,
+                120
+              ],
+              "position": [
+                288,
+                228
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "far",
+              "asset": "f6c757d753638c70288195f93e9a18fe.svg",
+              "name": "Far",
+              "size": [
+                36,
+                30
+              ],
+              "position": [
+                376,
+                236
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "show",
+                          "value": "null"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        },
+                        {
+                          "block": "hide",
+                          "value": "null"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "creatie",
+      "file": "creatie.sjr",
+      "name": "L07 Fabrica de roboți - 4. Proba mea · v1.0",
+      "sha256": "dc74172aba443102f1f1b4b1a9476bb6fb0dd3b4608d3cc8441309d90d11c9d1",
+      "pages": [
+        {
+          "background": "a7934cab8ffe23ec14f806f97a6558be.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "banc",
+              "asset": "a62a10e72a0f43658ce032c856daf273.svg",
+              "name": "Banc de probă",
+              "size": [
+                300,
+                68
+              ],
+              "position": [
+                324,
+                314
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "robot",
+              "asset": "a2cb88587d72abeb5b7cf09c176e4f10.svg",
+              "name": "Robot industrial",
+              "size": [
+                126,
+                116
+              ],
+              "position": [
+                84,
+                230
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Gata!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "sasiu",
+              "asset": "58f6763b6ad8421e13347e8ed88597e2.svg",
+              "name": "Șasiu",
+              "size": [
+                192,
+                96
+              ],
+              "position": [
+                288,
+                96
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 5
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata stângă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                120,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata dreaptă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                408,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 0
+                    },
+                    {
+                      "block": "back",
+                      "value": 3
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rover",
+              "asset": "88f94286eb7411620e9cb2b8835d00b1.svg",
+              "name": "Rover complet",
+              "size": [
+                192,
+                120
+              ],
+              "position": [
+                288,
+                228
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "far",
+              "asset": "f6c757d753638c70288195f93e9a18fe.svg",
+              "name": "Far",
+              "size": [
+                36,
+                30
+              ],
+              "position": [
+                376,
+                236
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 3,
+                      "body": [
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "show",
+                          "value": "null"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 3
+                        },
+                        {
+                          "block": "hide",
+                          "value": "null"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 7
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r1",
+      "file": "r1.sjr",
+      "name": "L07 Fabrica de roboți - R1. Montaj pe rând · v1.0",
+      "sha256": "a3e94414249915d848fae8aa5ed74c17177c4649826033277aeae923f65d3730",
+      "pages": [
+        {
+          "background": "a7934cab8ffe23ec14f806f97a6558be.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "banc",
+              "asset": "a62a10e72a0f43658ce032c856daf273.svg",
+              "name": "Banc de probă",
+              "size": [
+                300,
+                68
+              ],
+              "position": [
+                324,
+                314
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "robot",
+              "asset": "a2cb88587d72abeb5b7cf09c176e4f10.svg",
+              "name": "Robot industrial",
+              "size": [
+                126,
+                116
+              ],
+              "position": [
+                84,
+                230
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Gata!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "sasiu",
+              "asset": "58f6763b6ad8421e13347e8ed88597e2.svg",
+              "name": "Șasiu",
+              "size": [
+                192,
+                96
+              ],
+              "position": [
+                288,
+                96
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 5
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata stângă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                120,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata dreaptă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                408,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 0
+                    },
+                    {
+                      "block": "back",
+                      "value": 3
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rover",
+              "asset": "88f94286eb7411620e9cb2b8835d00b1.svg",
+              "name": "Rover complet",
+              "size": [
+                192,
+                120
+              ],
+              "position": [
+                288,
+                228
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "far",
+              "asset": "f6c757d753638c70288195f93e9a18fe.svg",
+              "name": "Far",
+              "size": [
+                36,
+                30
+              ],
+              "position": [
+                376,
+                236
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "show",
+                          "value": "null"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        },
+                        {
+                          "block": "hide",
+                          "value": "null"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r2",
+      "file": "r2.sjr",
+      "name": "L07 Fabrica de roboți - R2. Două probe, o plecare · v1.0",
+      "sha256": "117377a93c2b9d2eb0658456db8dfba7e755b95311dac0d63a9dcccd0327ef66",
+      "pages": [
+        {
+          "background": "a7934cab8ffe23ec14f806f97a6558be.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "banc",
+              "asset": "a62a10e72a0f43658ce032c856daf273.svg",
+              "name": "Banc de probă",
+              "size": [
+                300,
+                68
+              ],
+              "position": [
+                324,
+                314
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "robot",
+              "asset": "a2cb88587d72abeb5b7cf09c176e4f10.svg",
+              "name": "Robot industrial",
+              "size": [
+                126,
+                116
+              ],
+              "position": [
+                84,
+                230
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Gata!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "sasiu",
+              "asset": "58f6763b6ad8421e13347e8ed88597e2.svg",
+              "name": "Șasiu",
+              "size": [
+                192,
+                96
+              ],
+              "position": [
+                288,
+                96
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 5
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata stângă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                120,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "26fa5ddb7f92c85a43fbafc2163aee3a.svg",
+              "name": "Roata dreaptă",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                408,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 0
+                    },
+                    {
+                      "block": "back",
+                      "value": 3
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rover",
+              "asset": "88f94286eb7411620e9cb2b8835d00b1.svg",
+              "name": "Rover complet",
+              "size": [
+                192,
+                120
+              ],
+              "position": [
+                288,
+                228
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "forward",
+                          "value": 2
+                        },
+                        {
+                          "block": "back",
+                          "value": 2
+                        },
+                        {
+                          "block": "message",
+                          "value": "Yellow"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "forward",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "far",
+              "asset": "f6c757d753638c70288195f93e9a18fe.svg",
+              "name": "Far",
+              "size": [
+                36,
+                30
+              ],
+              "position": [
+                376,
+                236
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "show",
+                          "value": "null"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        },
+                        {
+                          "block": "hide",
+                          "value": "null"
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    }
+  ]
+}

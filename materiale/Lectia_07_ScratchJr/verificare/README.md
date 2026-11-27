@@ -1,3 +1,5 @@
+> Arhivă: raportul de mai jos aparține lecției vechi, „Povestea cu două finaluri”. Pentru fabrica nouă vezi [Fabrica_60min.md](Fabrica_60min.md).
+
 # Verificare - Lecția 7
 
 **PASS, 10 noiembrie 2026. Șapte proiecte, 64 verificări finale în browser.** 42 probe principale, 21 după redeschidere, 0 atingeri inactive și o construcție manuală. Aceste numere reprezintă verificări de comportament, nu numărul misiunilor.

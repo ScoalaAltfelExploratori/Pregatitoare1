@@ -1,49 +1,33 @@
-# Lecția 7 - Povestea cu două finaluri
+# Lecția 7 - Fabrica de roboți: construim un rover
 
-**50 de minute, 6-7 ani. Trei misiuni, inclusiv una dificilă pentru toți, plus două rezerve în afara celor 50 de minute.** Copiii construiesc propriile programe pentru ținte concrete.
+O oră de robotică în ScratchJr: șasiu, montarea roților în paralel, probă a farului și plecare. Puzzle-ul cu roata lentă este în bază, urmat de 10 minute de creație. Două rezerve: montaj pe rând și două probe înaintea plecării.
 
-## Exemplu, puzzle și creație proprie
+[Lecția pe site](index.html) · [Ghidul profesorului](ghid-profesor.html) · [Plan și programe cu capturi PDF](Ghid_profesor_Lectia_07.pdf) · [Soluții](solutii_fabrica/README.md).
 
-Deschidem cu **Povestea continuă în altă scenă**, pornind de la [Moonrise after Sunset](https://www.scratchjr.org/teach/activities/moonrise-after-sunset). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+## Pregătirea cea mai simplă
 
-**Minutele 37-45: Două alegeri care spun o poveste** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+Importă doar [start.sjr](solutii_fabrica/start.sjr) pe fiecare tabletă înaintea orei. Fișierul include fabrica, robotul industrial, șasiul, două roți, roverul complet, farul și bancul. Nu se copiază imagini separat. În starter toate programele sunt goale; copiii construiesc în același proiect. Roverul complet și farul sunt ascunse inițial, selectabile din listă.
 
-[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_07.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+**Pe laptop, în browser:** deschide [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html), apasă Open în galerie, alege SJR-ul și apoi cardul **L07 Fabrica de roboți - de la zero · v1.0**. Nu este necesar emulatorul pentru această probă. Acesta este portul comunitar folosit la verificare, distinct de aplicația Android.
 
-## Pregătire simplă
+**Pe Lenovo:** cu ScratchJr instalat, descarcă SJR-ul și încearcă deschiderea lui din Fișiere/Descărcări cu ScratchJr, dacă sistemul oferă aplicația. Înainte de distribuire verifică această asociere, importul, salvarea, redeschiderea și rularea soluției `m3.sjr` pe o tabletă a școlii. Proba actuală nu a folosit un Lenovo fizic. Nu presupunem că simpla instalare a aplicației adaugă noile resurse; starterul trebuie importat o dată.
 
-ScratchJr instalat este suficient pentru resurse: folosim numai **Rabbit, Dog, Ball, Park, Beach Day și Beach Night**, din biblioteca aplicației. Fără importuri, conturi ale copiilor, fișiere de copiat, microfon sau descărcări. Scenele se construiesc împreună în timpul lecției. SJR-urile sunt doar exemple opționale pentru profesor.
+**Pornire:** Stop dacă rulează, Reset Characters, apoi un steag. M1-M3, creația și cele două rezerve au aceeași pornire. Lasă proba să se încheie înainte de alt steag. Pentru salvare revino în galerie și redeschide cardul. Importurile deja făcute nu se actualizează automat când se schimbă fișierul de pe site.
 
-Începem pe pagina 1 și atingem personajele pe scenă. Miniaturile din dreapta servesc editării. M2, M3 și rezervele permit revenirea prin minge și repetarea fără Reset.
+## Ce conține pachetul nou
 
-## Materiale
+- [Starter și șase soluții native SJR](solutii_fabrica/README.md), toate editabile.
+- [Ghidul complet](Ghid_profesor.md): poveste, ritm, indicii, programele fiecărui personaj și ambele rezerve.
+- [PDF cu 18 pagini](Ghid_profesor_Lectia_07.pdf): plan concis, pregătire și capturi reale pentru fiecare etapă.
+- [Resurse și proveniență](resurse_fabrica/README.md), incluse în fiecare SJR.
+- [Verificarea în browser](verificare/Fabrica_60min.md): șapte importuri și zece rulări observate, inclusiv resetare, reluare și redeschidere.
 
-- [Ghidul profesorului](Ghid_profesor.md) și [PDF de cinci pagini](Ghid_profesor_Lectia_07.pdf).
-- [Cinci cartonașe PDF](Cartonase_Lectia_07.pdf), cu ținte vizuale și fără soluțiile complete.
-- [Soluțiile și cinci proiecte SJR](solutii/lectia_07/README.md).
-- [Demo](proiecte/00_Demo_Pagina.sjr) și [scenă fără programe](proiecte/01_Start_Poveste.sjr).
-- [Index pentru proiector](index.html), [raportul testelor](verificare/README.md), [fișa de observații](Observatii_dupa_lectie.md).
+Montajul folosește poziții programate. La final ascundem piesele și arătăm desenul roverului complet în aceeași poziție; aplicația nu le lipește automat. Robotul industrial este controlerul instalației, fără animația articulațiilor.
 
-| Activitate | Puzzle |
-| --- | --- |
-| Misiunea 1 | Portalul |
-| Misiunea 2 | Dus-întors |
-| Misiunea 3 - dificilă | Două finaluri |
-| Rezervă 1 - 6-8 minute | Finalul pornește singur |
-| Rezervă 2 - 8-10 minute | Trei opriri |
+Portul web a raportat erori în interogările bibliotecii globale de imagini personalizate (`usershapes`/`userbkgs`). Acestea nu au împiedicat importul, afișarea resurselor incluse, rularea ori redeschiderea proiectelor testate. Nu ne bazăm pe adăugarea imaginilor din acea bibliotecă.
 
-Rezervele sunt pentru cei care termină devreme. Păstrăm puzzle-ul dificil, pauza și salvarea pentru toată clasa. Nu cerem construirea unor programe greșite pentru reparare.
+Dacă în portul web un plic sau o viteză apare fără pictogramă, deschide săgeata blocului și selectează din nou aceeași culoare/viteză din ghid. La verificare aceasta a refăcut pictograma. Nu este un bloc special sau un bloc gol de construit; capturile PDF au fost refăcute astfel.
 
-## Testare pe PC, în browser
+## Arhiva veche
 
-Deschide [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/), portul comunitar folosit pentru verificări. Din galerie apasă Open și selectează un SJR de mai sus. Urmează proba din ghid, revino în galerie pentru salvare și redeschide. Browserul nu se sincronizează cu tabletele.
-
-Începem pe pagina 1 și atingem personajele pe scenă. Miniaturile din dreapta servesc editării. M2, M3 și rezervele permit revenirea prin minge și repetarea fără Reset.
-
-Raportul documentează testele efective, corecțiile și limitele. Testarea în browser nu este o testare a aplicației Android sau a tabletei fizice. Înainte de clasă reconstruiește M1 și M3 pe un Lenovo, verifică două rulări, salvarea și redeschiderea fără internet. Pe tabletele copiilor nu trebuie instalat nimic în afara ScratchJr.
-
-## Surse editabile
-
-`lesson.json` conține programele, cartonașele și țintele verificărilor. `Ghid_profesor.md` este sursa ghidului. `python build_pack.py` regenerează cele două PDF-uri și șapte SJR-uri; `--projects-only` generează numai proiectele. Necesită Python, reportlab, Pillow, pypdf și Arial din Windows. După modificarea programelor repetă probele în editor.
-
-[Planul celor zece lecții](../Plan_10_lectii_ScratchJr.md).
+[Povestea cu două finaluri · 50 min](README_50min.md) · [Ghid vechi](ghid-profesor-50min.html) · [PDF vechi](Ghid_profesor_Lectia_07_50min.pdf) · [Cartonașe vechi](Cartonase_Lectia_07.pdf) · [ZIP vechi](../Lectia_07_ScratchJr.zip). Acestea nu sunt materialele fabricii.

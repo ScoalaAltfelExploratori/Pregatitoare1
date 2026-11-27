@@ -1,150 +1,211 @@
-# Lecția 7 Povestea cu două finaluri
+# Lecția 7 - Fabrica de roboți: construim un rover
 
-50 de minute, copii de 6-7 ani. Trei misiuni, un puzzle dificil pentru toți și două rezerve suplimentare. Copiii construiesc o poveste în care spectatorul alege unde ajunge și se poate întoarce să vadă celălalt final.
+**60 de minute · 6-7 ani · părțile grele în bază · 10 minute de creație · două rezerve.**
 
-## Ideea nouă: programul schimbă pagina
+[Plan și programe cu capturi](Ghid_profesor_Lectia_07.pdf) · [Starter fără cod](solutii_fabrica/start.sjr) · [Soluțiile profesorului](solutii_fabrica/README.md)
 
-Introducem **Adaugă pagină** și blocul roșu **Mergi la pagină / Go to Page**. O pagină este o scenă cu propriul fundal, personaje și programe. Imaginea din blocul roșu arată destinația. Este un bloc de sfârșit: acțiunile acelei scene se pun înaintea lui, nu după el.
+## Povestea pentru copii
 
-Folosim atingerea cu degetul, săritura, mărirea, Așteaptă și mărimea inițială, deja cunoscute. Nu cerem texte, dialoguri scrise, înregistrări sau personaje personalizate. Copilul poate spune oral povestea.
+„Fabrica a primit o comandă: un rover care va transporta piese în atelier. Deocamdată avem șasiul și două roți separate. Programăm instalația să le monteze, să verifice farul și să trimită roverul la lucru. Dacă o roată se montează mai încet, roverul trebuie să o aștepte.”
 
-## Pregătire numai cu biblioteca instalată
+Ideea nouă este **asamblarea în paralel**: aceeași comandă pornește două operații diferite, iar pasul următor așteaptă ambele rezultate. În rezervă comparăm cu montajul pe rând.
 
-Creăm un proiect nou. **Pagina 1: Park și Rabbit. Pagina 2: Beach Day și Dog.** Adăugăm a doua pagină cu plusul din dreapta, alegem fundalul ei și personajul. Eliminăm pisica inițială de pe fiecare pagină dacă urmăm modelul. Centrele personajelor pot fi aproximative; în această lecție nu folosim ciocniri.
+## Înainte de oră
 
-La M2 adăugăm **Ball** pe pagina 2, jos în dreapta, ca buton de întoarcere. La M3 adăugăm Dog pe pagina 1 și o a treia pagină, **Beach Night**, cu Rabbit și Ball. Personajele trebuie să fie separate și vizibile ca să poată fi atinse ușor. Nu micșorăm butonul-minge.
+1. Importă [start.sjr](solutii_fabrica/start.sjr) pe fiecare tabletă. Titlul este **L07 Fabrica de roboți - de la zero · v1.0**. Include fundalul și toate personajele, fără programe. Nu copia imagini separat.
+2. Pe laptop: [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html), **Open** în galerie, alegi SJR-ul, apoi deschizi cardul. Pe Lenovo, încearcă deschiderea fișierului din Descărcări cu ScratchJr, dacă aplicația este oferită; verifică importul, salvarea și redeschiderea pe configurația școlii înainte de distribuire.
+3. Pe tabletă sunt necesare doar starterul și aplicația. Copiii construiesc treptat în același proiect. M1-M3, creația și rezervele sunt soluții separate pentru profesor și pentru ajutor. PDF-ul include și programele păstrate neschimbate.
+4. Păstrează pozițiile și mărimile. Pornește grila; un pas este un pătrățel. Verifică volumul dacă folosești Pop la creație. Nu sunt necesare descărcări în timpul orei.
 
-Nu copiem fișiere pe tablete. Toate cele trei fundaluri și personajele sunt incluse. SJR-urile sunt referințe opționale pentru profesor; copiii construiesc paginile în timpul lecției.
+## 0-6 minute - citim fabrica
 
-## Demonstrația care evită confuzia
+Arată cele șapte personaje din listă: Robot industrial, Șasiu, Roata stângă, Roata dreaptă, Rover complet, Far și Banc de probă. **Rover complet și Far sunt ascunse inițial**, dar pot fi selectate din listă. Banc de probă rămâne fără cod.
 
-Adăugăm pagina 2 înainte să căutăm blocul roșu către ea. Revenim la pagina 1 prin miniatura din dreapta. Iepure: **atingere → mergi la pagina 2**. Atingem iepurele pe scenă: fundalul și personajul se schimbă.
+Robotul industrial reprezintă controlerul instalației. Brațul lui nu este animat; comenzile lui pun în mișcare piesele. Montăm șasiul și roțile prin trasee programate. După montaj, ascundem piesele și arătăm un personaj nou, Rover complet, în exact aceeași poziție. ScratchJr nu le grupează și nu verifică automat dacă sunt montate corect. Copiii verifică vizual alinierea.
 
-**Miniaturile din dreapta sunt pentru editare.** În joc, paginile se schimbă prin personajele programate. Nu considerăm misiunea rezolvată dacă un copil folosește miniaturile pentru călătorie. Aceleași desene de personaje pe pagini diferite sunt personaje separate: fiecare primește propriul program.
+**Înaintea fiecărei probe:** Stop dacă rulează, Reset Characters, apoi un singur steag. Blocul albastru „La poziția inițială” are săgeată curbată și X. Arată și Ascunde sunt în categoria mov.
 
-Modelele principale așteaptă atingeri, inclusiv la sosire. La rezerve folosim un fapt nou: când un program execută Mergi la pagină, programele cu steag de pe pagina destinație pornesc automat. Selectarea miniaturii în editor nu este aceeași probă.
-
-## Cele 50 de minute
-
-| Minute | Activitate | Acțiunea profesorului |
+| Mesaj | Destinatar | Rol |
 | --- | --- | --- |
-| 0-4 | Exemplu oficial adaptat | O acțiune, apoi altă scenă. |
-| 4-10 | Două pagini | Fundaluri și personaje din bibliotecă. |
-| 10-18 | Misiunea 1 | Portalul pornește din program. |
-| 18-24 | Misiunea 2 | Construim și probăm întoarcerea. |
-| 24-27 | Pauză | Spunem două continuări posibile. |
-| 27-37 | Puzzle dificil | Două finaluri și întoarcere. |
-| 37-45 | Creația mea | Alegem sensul și gestul fiecărui final. |
-| 45-50 | Testez și salvez | Explorăm drumurile, salvăm și redeschidem. |
+| Portocaliu | Șasiu | Coboară pe banc |
+| Albastru | Ambele roți | Pornește montajul în paralel |
+| Galben | Far | Proba luminii |
+| Verde | Șasiu, ambele roți, Rover complet | Ascunde piesele, arată roverul |
+| Roșu | Rover complet | Pornește deplasarea |
+| Mov, numai R1 | Roata dreaptă | Montează a doua roată pe rând |
 
-**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+Plic închis = Trimite; plic deschis = Primește. Alege culoarea din săgeata de sub plic. **Trimite așteaptă terminarea tuturor programelor pornite de acel mesaj.** Folosim bucle finite; un destinatar cu Repetă mereu nu ar termina operația.
 
-## Exemplu oficial adaptat: Povestea continuă în altă scenă
+## 6-18 minute - M1. Șasiul
 
-**Reper:** [Moonrise after Sunset](https://www.scratchjr.org/teach/activities/moonrise-after-sunset). Exemplul oficial leagă apusul de apariția lunii. Adaptăm ideea de continuare la personajele noastre: iepurele părăsește parcul și întâlnește câinele pe plajă. Pregătește două pagini din bibliotecă înainte de a arăta blocul roșu. Nu avem nevoie să edităm fundaluri.
+**Țintă:** șasiul coboară 5 pași până la banc; abia atunci robotul spune „Șasiu montat!”. Roțile stau.
 
-**Model pentru demonstrație:** Pagina 1, Rabbit: atingere → sari 2 → pagina 2. Pagina 2 are Beach Day și Dog. Copilul spune oral ce se întâmplă după sosire; nu adăugăm încă pornire automată pe pagina 2. Aceasta rămâne la rezerve.
+Copiii construiesc întâi firul de resetare al șasiului: Steag, La poziția inițială, Arată. Separat: Primește portocaliu, Jos 5. Robotul trimite portocaliu și apoi vorbește. La fiecare roată pregătesc firul Steag, La poziția inițială, Arată, util pentru probele următoare.
 
-**Întreabă înainte de rulare:** „Ce parte a poveștii se întâmplă înainte de blocul roșu? Rulează prin atingerea iepurelui, nu prin miniatura paginii.”
+**Întrebare:** „Cine decide când coboară șasiul? De ce replica vine după coborâre?” Dacă nu se mișcă, verifică perechea de plicuri portocalii și faptul că blocurile sunt conectate.
 
-Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
+## 18-32 minute - M2. Roțile în paralel
 
-Rezervele de 6-8 și 8-10 minute sunt suplimentare. Păstrăm puzzle-ul dificil pentru toți. Limităm decorarea până funcționează călătoria; pozițiile nu trebuie copiate exact.
+**Țintă:** șasiul este deja pe banc când ambele roți pornesc. Roata stângă merge Dreapta 5, Sus 2; cea dreaptă Stânga 3, Sus 2. Ambele au viteză normală.
 
-## Misiunea 1 Portalul
+La robot, după portocaliu adaugă Trimite albastru; schimbă replica în „Roți montate!”. La ambele roți adaugă un fir nou cu Primește albastru, Viteză normală și traseul propriu. Nu șterge firele cu Steag. „Stângă” și „dreaptă” sunt numele pieselor; săgeata primei roți indică dreapta, spre centrul roverului.
 
-**Ținta:** atingem iepurele din parc. Sare o dată, apoi ajungem la plaja de zi. Acolo câinele așteaptă; la atingere sare o dată. Nu folosim miniaturile în timpul probei.
+**Probă:** pornesc împreună, dar nu trebuie să termine simultan. Copiii urmăresc dacă fiecare ajunge la butucul potrivit. Două mâini pot mima operațiile înainte de rulare.
 
-**Soluție:** pagina 1, iepure: atingere → sari 2 → mergi la pagina 2. Pagina 2, câine: atingere → sari 2. Numărul 2 din Sari indică înălțimea, nu două sărituri.
+## 32-47 minute - M3. Roverul complet | dificil, pentru toți
 
-**Verificare:** săritura iepurelui se vede înainte de schimbare. Câinele nu sare până nu este atins. Pentru o nouă probă M1, profesorul revine la pagina 1 în editor; M2 adaugă întoarcerea în poveste.
+**Țintă:** un steag execută șasiul, montajul roților, două clipiri, apariția roverului complet și plecarea cu 3 pași. Roata dreaptă este lentă. Nici lumina, nici plecarea nu trebuie să înceapă prea devreme.
 
-**Indicii:** „Ce se întâmplă înainte să dispară parcul?”, „Unde trebuie să fie blocul roșu?”, „Pe ce pagină și pe ce personaj lucrezi acum?”. Copiii primesc ținta, nu o greșeală de copiat.
+1. La roata dreaptă schimbă Viteză normală în **lentă**. Păstrează traseul.
+2. La Far: Steag, Ascunde. Separat: Primește galben, Repetă 2 { Arată, Așteaptă 5, Ascunde, Așteaptă 5 }. Ambele pauze sunt în ramă. Așteaptă 5 este aproximativ o jumătate de secundă.
+3. La Șasiu și la FIECARE roată: un al treilea fir, Primește verde, Ascunde.
+4. La Rover complet: Steag, La poziția inițială, Ascunde. Separat: Primește verde, Arată. Separat: Primește roșu, Dreapta 3.
+5. Robotul are un singur fir: Steag, portocaliu, albastru, galben, verde, roșu, Spune Gata! Înlocuiește replica din M2, nu lăsa două fire de comandă concurente.
 
-## Misiunea 2 Dus-întors
+**Indicii progresive:** „Cine termină ultimul?” → „Ce trebuie să fie gata înaintea luminii?” → „Pune galben imediat după albastru; Trimite așteaptă ambele roți.”
 
-**Ținta:** păstrăm portalul și săritura câinelui. Mingea de pe plajă ne întoarce în parc. Putem face aceeași călătorie de două ori, numai prin personajele de pe scenă.
+**Verificăm:** dreapta termină ultima; farul clipește de două ori; piesele dispar exact când apare desenul complet; roverul se deplasează cu toate roțile lui. Dacă o piesă rămâne în urmă, verifică firul ei verde. Dacă farul rămâne aprins, verifică Ascunde din buclă. Așezarea finală este o condiție verificată de copil, fără senzor automat.
 
-**Trecere:** adăugăm Ball pe pagina 2, jos în dreapta, separat de câine. Minge: atingere → mergi la pagina 1. Celelalte programe rămân cele din M1.
+## 47-57 minute - Proba mea
 
-**Verificare:** iepure → plajă; câine → săritură; minge → parc. Repetăm fără Reset și fără miniaturi. Revenirea în parc așteaptă un nou tap; nu ne trimite automat iar pe plajă.
+Fiecare copil inventează altă probă a farului: 1-4 clipiri, alte pauze sau Pop. Păstrează montajul complet, farul stins la sfârșit și plecarea după probă. Copilul prezice numărul clipirilor, pornește o dată și compară.
 
-**Indiciu:** „Cine poate fi butonul de întoarcere?”. Copilul poate alege alt personaj inclus, suficient de mare și separat, dacă este consecvent la toate finalurile.
+Exemplul oferit: trei clipiri, fiecare cu Pop, Arată, Așteaptă 3, Ascunde, Așteaptă 7. Toate celelalte programe rămân ca la M3. Exemplul nu este singura soluție.
 
-## Misiunea 3 Două finaluri
+## 57-60 minute - probă și salvare
 
-**Puzzle dificil pentru toți.** În parc avem două alegeri: iepurele deschide plaja de zi, câinele deschide plaja de noapte. Ziua, atingem câinele și sare. Noaptea, atingem iepurele: crește, așteaptă, revine la mărimea inițială. Fiecare final are o minge care ne întoarce în parc. Vizităm ambele finaluri fără miniaturi.
+Un singur steag și așteptăm „Gata!”. Copilul arată blocul care pornește ambele roți și explică de ce cea lentă nu este abandonată. Resetăm, revenim în galerie și redeschidem proiectul. Nu salvăm numai captura: păstrăm proiectul editabil.
 
-**Trecere:** la pagina 1 adăugăm Dog. Adăugăm pagina 3 cu Beach Night, Rabbit și Ball. În model simplificăm iepurele paginii 1 la atingere → pagina 2; săritura de dinainte rămâne opțională. Programul câinelui de pe pagina 2 și mingea de întoarcere rămân.
+## Rezerva 1 - Montaj pe rând | +5-8 minute
 
-| Pagina și actorul | Soluția profesorului |
+Pornim de la M3. Fabrica poate monta acum o singură roată la un moment dat. Stânga se montează complet, apoi dreapta; proba și plecarea vin după ambele.
+
+La roata dreaptă înlocuiește declanșatorul albastru cu mov. La robot adaugă Trimite mov între albastru și galben. Nu schimba verdele. Compară două rulări: ce operații se suprapuneau în M3 și ce operații nu se mai suprapun aici?
+
+## Rezerva 2 - Două probe, o plecare | +8-10 minute
+
+Pornim separat de la M3, cu roțile în paralel. După montaj, roverul merge 2 pași la dreapta, revine 2 și își verifică farul. Repetă această probă de două ori. La final merge 3 pași la dreapta, o singură dată.
+
+Schimbă numai firul roșu al roverului: Repetă 2 { Dreapta 2, Stânga 2, Trimite galben }, apoi Dreapta 3. **Plecarea stă în afara buclei.** Farul rămâne pe banc, deci îl aprindem numai după întoarcere. Vedem șase clipiri: două inițiale și câte două la fiecare probă.
+
+## Programele complete, etapă cu etapă
+
+Fiecare rând este un fir separat. Acoladele arată interiorul blocului Repetă. Un program nou se adaugă separat, nu se conectează sub declanșatorul altui fir. PDF-ul arată aceleași programe în capturi din aplicație.
+
+### 1. Șasiul
+
+| Personaj | Program complet |
 | --- | --- |
-| 1, iepure | Atingere → mergi la pagina 2. |
-| 1, câine | Atingere → mergi la pagina 3. |
-| 2, câine | Atingere → sari 2. |
-| 2, minge | Atingere → mergi la pagina 1. |
-| 3, iepure | Atingere → mărește 4 → așteaptă 10 → mărime inițială. |
-| 3, minge | Atingere → mergi la pagina 1. |
+| Banc de probă | Fără program |
+| Robot industrial | Steag → Trimite portocaliu → Spune Șasiu montat! |
+| Șasiu | Steag → La poziția inițială → Arată |
+| Șasiu | Primește portocaliu → Jos 5 |
+| Roata stângă | Steag → La poziția inițială → Arată |
+| Roata dreaptă | Steag → La poziția inițială → Arată |
+| Rover complet | Fără program · ascuns |
+| Far | Fără program · ascuns |
 
-**Ce este dificil:** legăm trei scene într-o hartă cu două ramuri și două drumuri de întoarcere. Două personaje pot arăta la fel și totuși au roluri diferite pe pagini diferite. Nu introducem condiții, scoruri sau variabile.
+### 2. Roțile în paralel
 
-**Indicii progresive:** „Construiește întâi drumul de zi și întoarcerea”, „Ce personaj alegem pentru cealaltă destinație?”, „Pe ce pagină trebuie pus programul de mărire?”, „Ambele mingi trebuie să ducă unde?”. Desenăm trei dreptunghiuri și săgețile înainte să programăm.
-
-**Verificare:** plecăm din parc, vizităm ziua, probăm câinele, revenim. Alegem noaptea, probăm iepurele, așteptăm mărimea inițială, revenim. Repetăm circuitul fără Reset; fiecare final rămâne deschis până atingem mingea. Toți primesc provocarea, cu sprijin dacă este nevoie.
-
-## Creația mea: Două alegeri care spun o poveste
-
-**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
-
-**Spune copiilor:** „Alege ce înseamnă cele două drumuri și inventează un gest pentru fiecare final. De exemplu, ziua mergem la joacă, iar seara ne liniștim. Povestea se spune oral; programul arată diferența. Poți păstra cele trei fundaluri existente.”
-
-**Verificarea autorului:** Urmează fiecare drum prin personajele programate și întoarce-te. Arată ce ai ales tu: acțiunea, ordinea sau semnificația finalului. Miniaturile se folosesc numai la editare.
-
-**Sprijin și extensie:** Personalizează un singur drum funcțional dus-întors. Pentru mai multă dificultate, finalurile au gesturi diferite, dar folosesc aceleași două tipuri de blocuri.
-
-Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
-
-**Ce urmăresc la încheiere:** Copilul arată pagina căreia îi aparține programul și blocul care schimbă scena.
-
-## Rezervă 1 Finalul pornește singur
-
-**6-8 minute în plus.** Păstrăm cele două alegeri și mingile. Schimbăm doar pornirea acțiunilor de pe paginile 2 și 3 din atingere în steag. Câinele sare automat când ajungem la zi; iepurele crește și revine automat când ajungem la noapte.
-
-**Verificare:** atingem doar alegerea din parc. Acțiunea finalului pornește fără alt tap. Finalul rămâne acolo; mingea ne întoarce. Repetăm ambele alegeri. **Indiciu:** „Ce programe pornesc când blocul roșu ne aduce pe pagina nouă?”. Nu punem Mergi la pagină după acțiunile finalurilor din această rezervă.
-
-## Rezervă 2 Trei opriri
-
-**8-10 minute în plus.** O singură atingere pornește trei scene în ordine: o săritură în parc, două sărituri pe plaja de zi, apoi creștere și revenire pe plaja de noapte. Se oprește acolo. Mingea ne întoarce în parc, unde așteaptă un nou tap.
-
-**Pornim de la M3.** P1: numai iepure. P2: numai câine. P3: iepure și minge. Înlocuim programele vechi.
-
-- Pagina 1, iepure: atingere → sari 2 → mergi la pagina 2.
-- Pagina 2, câine: steag → repetă 2 [sari 2] → mergi la pagina 3.
-- Pagina 3, iepure: steag → mărește 4 → așteaptă 10 → mărime inițială.
-- Pagina 3, minge: atingere → mergi la pagina 1.
-
-**Verificare:** 1, apoi 2, apoi 3; o săritură, două sărituri, o transformare. Blocul de schimbare a paginii este după Repeat. Așteptăm la noapte: nu se reia singur. Mingea revine la parc; abia o nouă atingere a iepurelui pornește călătoria.
-
-**Indicii:** „Cine anunță scena următoare?”, „Unde punem trecerea ca să vedem ambele sărituri?”, „Ce trebuie să aștepte un tap?”.
-
-## Dificultăți și sprijin
-
-| Ce observăm | Cum ajutăm |
+| Personaj | Program complet |
 | --- | --- |
-| Blocul către pagina dorită lipsește | Adăugăm mai întâi pagina destinație. Verificăm pictograma ei. |
-| Programul apare pe alt personaj | Selectăm pagina, apoi personajul, apoi edităm. |
-| Acțiunea nu se vede | Punem acțiunea înaintea blocului roșu, nu după schimbarea scenei. |
-| Povestea merge doar prin miniaturi | Programăm personajele și probăm atingând scena. |
-| Sari 2 produce o singură săritură | Numărul schimbă înălțimea. Pentru două folosim Repeat 2. |
-| Rezerva nu pornește în pagina 2 | Testăm intrând prin programul paginii 1, nu doar alegând miniatura. |
-| Povestea se repetă fără oprire | Pagina 1 trebuie să aștepte atingerea; nu automatizăm întoarcerea. |
+| Banc de probă | Fără program |
+| Robot industrial | Steag → Trimite portocaliu → Trimite albastru → Spune Roți montate! |
+| Șasiu | Steag → La poziția inițială → Arată |
+| Șasiu | Primește portocaliu → Jos 5 |
+| Roata stângă | Steag → La poziția inițială → Arată |
+| Roata stângă | Primește albastru → Viteză normală → Dreapta 5 → Sus 2 |
+| Roata dreaptă | Steag → La poziția inițială → Arată |
+| Roata dreaptă | Primește albastru → Viteză normală → Stânga 3 → Sus 2 |
+| Rover complet | Fără program · ascuns |
+| Far | Fără program · ascuns |
 
-## Încheiere și verificare
+### 3. Roverul complet
 
-Un coleg explorează ambele finaluri. Copilul explică alegerea și întoarcerea. Salvăm prin galerie, redeschidem și probăm din pagina 1.
+| Personaj | Program complet |
+| --- | --- |
+| Banc de probă | Fără program |
+| Robot industrial | Steag → Trimite portocaliu → Trimite albastru → Trimite galben → Trimite verde → Trimite roșu → Spune Gata! |
+| Șasiu | Steag → La poziția inițială → Arată |
+| Șasiu | Primește portocaliu → Jos 5 |
+| Șasiu | Primește verde → Ascunde |
+| Roata stângă | Steag → La poziția inițială → Arată |
+| Roata stângă | Primește albastru → Viteză normală → Dreapta 5 → Sus 2 |
+| Roata stângă | Primește verde → Ascunde |
+| Roata dreaptă | Steag → La poziția inițială → Arată |
+| Roata dreaptă | Primește albastru → Viteză lentă → Stânga 3 → Sus 2 |
+| Roata dreaptă | Primește verde → Ascunde |
+| Rover complet | Steag → La poziția inițială → Ascunde |
+| Rover complet | Primește verde → Arată |
+| Rover complet | Primește roșu → Dreapta 3 |
+| Far | Steag → Ascunde |
+| Far | Primește galben → Repetă 2 { Arată → Așteaptă 5 → Ascunde → Așteaptă 5 } |
 
-Raport: verificare/README.md. Înainte de clasă reconstruim M3 pe Lenovo: ambele ramuri de două ori, salvare și redeschidere offline. Fără distribuirea fișierelor.
+### 4. Proba mea
 
-**Referințe:** [blocurile oficiale ScratchJr](https://www.scratchjr.org/explore/blocks) și [cartonașele oficiale](https://www.scratchjr.org/pdfs/blocks.pdf), pentru Go to Page și pornirile de program.
+| Personaj | Program complet |
+| --- | --- |
+| Banc de probă | Fără program |
+| Robot industrial | Steag → Trimite portocaliu → Trimite albastru → Trimite galben → Trimite verde → Trimite roșu → Spune Gata! |
+| Șasiu | Steag → La poziția inițială → Arată |
+| Șasiu | Primește portocaliu → Jos 5 |
+| Șasiu | Primește verde → Ascunde |
+| Roata stângă | Steag → La poziția inițială → Arată |
+| Roata stângă | Primește albastru → Viteză normală → Dreapta 5 → Sus 2 |
+| Roata stângă | Primește verde → Ascunde |
+| Roata dreaptă | Steag → La poziția inițială → Arată |
+| Roata dreaptă | Primește albastru → Viteză lentă → Stânga 3 → Sus 2 |
+| Roata dreaptă | Primește verde → Ascunde |
+| Rover complet | Steag → La poziția inițială → Ascunde |
+| Rover complet | Primește verde → Arată |
+| Rover complet | Primește roșu → Dreapta 3 |
+| Far | Steag → Ascunde |
+| Far | Primește galben → Repetă 3 { Sunet Pop → Arată → Așteaptă 3 → Ascunde → Așteaptă 7 } |
 
-**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.
+### R1. Montaj pe rând
+
+| Personaj | Program complet |
+| --- | --- |
+| Banc de probă | Fără program |
+| Robot industrial | Steag → Trimite portocaliu → Trimite albastru → Trimite mov → Trimite galben → Trimite verde → Trimite roșu → Spune Gata! |
+| Șasiu | Steag → La poziția inițială → Arată |
+| Șasiu | Primește portocaliu → Jos 5 |
+| Șasiu | Primește verde → Ascunde |
+| Roata stângă | Steag → La poziția inițială → Arată |
+| Roata stângă | Primește albastru → Viteză normală → Dreapta 5 → Sus 2 |
+| Roata stângă | Primește verde → Ascunde |
+| Roata dreaptă | Steag → La poziția inițială → Arată |
+| Roata dreaptă | Primește mov → Viteză lentă → Stânga 3 → Sus 2 |
+| Roata dreaptă | Primește verde → Ascunde |
+| Rover complet | Steag → La poziția inițială → Ascunde |
+| Rover complet | Primește verde → Arată |
+| Rover complet | Primește roșu → Dreapta 3 |
+| Far | Steag → Ascunde |
+| Far | Primește galben → Repetă 2 { Arată → Așteaptă 5 → Ascunde → Așteaptă 5 } |
+
+### R2. Două probe, o plecare
+
+| Personaj | Program complet |
+| --- | --- |
+| Banc de probă | Fără program |
+| Robot industrial | Steag → Trimite portocaliu → Trimite albastru → Trimite galben → Trimite verde → Trimite roșu → Spune Gata! |
+| Șasiu | Steag → La poziția inițială → Arată |
+| Șasiu | Primește portocaliu → Jos 5 |
+| Șasiu | Primește verde → Ascunde |
+| Roata stângă | Steag → La poziția inițială → Arată |
+| Roata stângă | Primește albastru → Viteză normală → Dreapta 5 → Sus 2 |
+| Roata stângă | Primește verde → Ascunde |
+| Roata dreaptă | Steag → La poziția inițială → Arată |
+| Roata dreaptă | Primește albastru → Viteză lentă → Stânga 3 → Sus 2 |
+| Roata dreaptă | Primește verde → Ascunde |
+| Rover complet | Steag → La poziția inițială → Ascunde |
+| Rover complet | Primește verde → Arată |
+| Rover complet | Primește roșu → Repetă 2 { Dreapta 2 → Stânga 2 → Trimite galben } → Dreapta 3 |
+| Far | Steag → Ascunde |
+| Far | Primește galben → Repetă 2 { Arată → Așteaptă 5 → Ascunde → Așteaptă 5 } |
+
+## Materiale și verificare
+
+[Proiectele editabile](solutii_fabrica/README.md) · [PDF, 18 pagini](Ghid_profesor_Lectia_07.pdf) · [Import și instalare](README.md) · [Raportul verificării în browser](verificare/Fabrica_60min.md) · [Resursele](resurse_fabrica/README.md) · [Observații după oră](Observatii_dupa_lectie.md).
+
+[Arhiva de 50 de minute: Povestea cu două finaluri](Ghid_profesor_50min.md).

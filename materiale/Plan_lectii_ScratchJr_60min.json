@@ -374,6 +374,65 @@
       "teacher_note": "Puzzle-ul greu este în bază. Două rezerve suplimentare. Importul și rularea sunt testate în browser; verifică și pe Lenovo.",
       "student_reference": "Capturi: pregătire p. 2; M1 p. 3-4; M2 p. 5-6; M3 p. 7-8; M4 p. 9-12; creație p. 13-16; R1 p. 17-20; R2 p. 21-25. În PDF-ul cursului adaugă 61.",
       "footer": "Resurse incluse în starter / Construim programele pe tabletă"
+    },
+    {
+      "number": 7,
+      "revision": "27 noiembrie 2026",
+      "title": "Fabrica de roboți: construim un rover",
+      "subtitle": "Montaj în paralel, verificare și plecare sincronizată",
+      "goal": "Asamblăm roverul și îl trimitem la lucru numai după montajul ambelor roți și proba farului.",
+      "setup": "O scenă, șapte personaje mari, toate resursele incluse în starterul fără cod. Un import înaintea orei.",
+      "schedule": [
+        {
+          "minutes": "0-6",
+          "title": "Comanda fabricii",
+          "text": "Citirea scenei: șasiu, două roți, robot industrial, far și banc. Roverul complet este ascuns."
+        },
+        {
+          "minutes": "6-18",
+          "title": "M1. Șasiul",
+          "text": "Robotul comandă coborârea șasiului. Confirmarea vine după montaj."
+        },
+        {
+          "minutes": "18-32",
+          "title": "M2. Roțile în paralel",
+          "text": "Ambele roți primesc aceeași comandă, dar au trasee diferite până la butuci."
+        },
+        {
+          "minutes": "32-47",
+          "title": "M3. Roverul complet | dificil, pentru toți",
+          "text": "Roata dreaptă merge lent. După ambele roți: două clipiri, schimbarea pieselor cu roverul complet și plecare."
+        },
+        {
+          "minutes": "47-57",
+          "title": "Proba mea",
+          "text": "Inventăm un ritm finit pentru far, cu sau fără Pop. Păstrăm montajul și plecarea la final."
+        },
+        {
+          "minutes": "57-60",
+          "title": "Probă și salvare",
+          "text": "Un singur steag. Explicăm de ce așteaptă roverul; salvăm și redeschidem."
+        }
+      ],
+      "solutions": [
+        "Șasiu: portocaliu > Jos 5. Roți la albastru: Dreapta 5 > Sus 2; respectiv Stânga 3 > Sus 2.",
+        "M3, robot: Steag > portocaliu > albastru > galben > verde > roșu > Gata! Dreapta are viteză lentă.",
+        "Far: galben > Repetă 2 { Arată, Așteaptă 5, Ascunde, Așteaptă 5 }. Verde schimbă imaginea; roșu deplasează roverul 3 pași."
+      ],
+      "hint": "Trimite așteaptă toți destinatarii. Piesele nu se lipesc automat: le ascundem și arătăm desenul complet în aceeași poziție.",
+      "backups": [
+        {
+          "title": "R1. Montaj pe rând | +5-8 min",
+          "text": "Roata dreaptă primește mov. Robotul trimite albastru, apoi mov; comparăm cu montajul paralel."
+        },
+        {
+          "title": "R2. Două probe, o plecare | +8-10 min",
+          "text": "Repetă 2 { Dreapta 2, Stânga 2, galben }, apoi Dreapta 3. Plecarea este în afara buclei."
+        }
+      ],
+      "teacher_note": "Părțile grele sunt în bază. Zece minute de creație; două rezerve suplimentare. Importul și rularea sunt testate în browser; verifică starterul și pe Lenovo.",
+      "student_reference": "Capturi: pregătire p. 2; M1 p. 3-4; M2 p. 5-6; M3 p. 7-9; creație p. 10-12; R1 p. 13-15; R2 p. 16-18. În PDF-ul cursului adaugă 86.",
+      "footer": "Resurse incluse în starter / Construim programele pe tabletă"
     }
   ]
 }

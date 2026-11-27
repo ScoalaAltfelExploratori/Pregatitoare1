@@ -1,0 +1,15 @@
+# Resurse originale - fabrica de roboți
+
+Generate cu instrumentul integrat imagegen, 27 noiembrie 2026. PNG-urile originale sunt păstrate nemodificate. Robotul și șasiul au transparență; fișierele SVG native le încorporează și le poziționează în ScratchJr. Roțile și farul sunt elemente vectoriale native, desenate în generator pentru poziționare precisă.
+
+## factory
+
+Create a polished 4:3 background illustration for a ScratchJr robotics lesson, for ages 6–7 but with a clear industrial, neutral style. Side-on orthographic view into a compact robot assembly cell. Upper third: cobalt-blue structural beams, bright white factory wall, a few large windows and an overhead gantry rail; amber industrial accents. Lower two thirds: an unobstructed pale blue-gray assembly surface, with a thin horizontal baseline near the bottom, suitable for placing large movable characters on top. The main assembly takes place in the center-right; keep the whole lower two-thirds simple and readable. Attractive crisp illustrated materials, subtle shading, no photorealism, no perspective floor stretching to the horizon. No robot, no vehicles, no loose parts, no words, no numbers, no labels, no arrows, no watermark. All important decoration stays in the top third. This is a game background, not a poster.
+
+## robot
+
+Create a single large industrial assembly robot sprite for a ScratchJr robotics lesson. Orthographic side/front three-quarter very shallow view, facing right. A compact cobalt blue and white pedestal base, two articulated orange arm segments with large round pivots, ending in a clearly visible open two-finger industrial gripper toward the upper right. Real recognizable articulated factory robot, no face, no eyes, no humanoid body, no wheels, no tools held, no background, no floor or cast shadow. Crisp high quality illustrated sprite with bold edges and modest shading; age 6–7 classroom but neutral machinery styling. Entire silhouette fits inside the image with small even margins. Genuinely transparent background, no labels, text, numbers or watermark.
+
+## chassis
+
+Create one isolated side-view rover CHASSIS sprite, without any wheels. It will be assembled by children from separate parts in ScratchJr. Low wide cobalt-blue and white angular vehicle body, front faces RIGHT. A compact upper sensor mast or camera on the left-center of the body, amber small equipment details. Two visible empty circular wheel attachment hubs along the lower edge, symmetric horizontally, at approximately 24 percent and 77 percent of width, so separate large wheels can later overlap them. A small rectangular unlit headlamp at the right front. Clean orthographic side elevation, not perspective, no underbody shadow, no ground. Width roughly twice height. Crisp high quality illustrated machinery, clear outlines, modest shading, large readable features, no face. Entire body and mast visible. Transparent background. NO wheels or tires anywhere, no background, no text, no numbers, no logo or watermark.

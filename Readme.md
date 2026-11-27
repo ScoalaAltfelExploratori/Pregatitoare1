@@ -120,7 +120,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 1
 
-[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește resursele aplicației, cu o excepție: Lecția 6 include robotul și atelierul noi într-un singur starter SJR, de importat înaintea orei. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–6 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
+[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește resursele aplicației, cu două excepții: Lecțiile 6 și 7 includ atelierul și fabrica de roboți în câte un starter SJR, de importat înaintea orei. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–7 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
 
 [README-ul lecției 1](materiale/Lectia_01_ScratchJr/README.md) conține instalarea pe Lenovo, construirea scenei și testarea opțională în browser. [Raportul de verificare](materiale/Lectia_01_ScratchJr/verificare/README.md) separă cele șapte proiecte finale testate în browser de probele Android și Desktop anterioare.
 
@@ -146,7 +146,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 7
 
-[Povestea cu două finaluri](materiale/Lectia_07_ScratchJr/README.md) introduce paginile: portal, întoarcere și puzzle cu două finaluri. Două rezerve adaugă pornirea automată la sosire și o secvență de trei scene. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul testelor](materiale/Lectia_07_ScratchJr/verificare/README.md). Lecția 7 folosește numai biblioteca aplicației, fără distribuirea fișierelor pe tabletele copiilor.
+[Fabrica de roboți: construim un rover](materiale/Lectia_07_ScratchJr/index.html): 60 de minute, montaj în paralel, roată lentă, probă a farului și plecare. Părțile grele sunt în bază; 10 minute de creație și două rezerve. [Starter cu resurse noi și mari](materiale/Lectia_07_ScratchJr/solutii_fabrica/start.sjr), [PDF de 18 pagini cu toate programele](materiale/Lectia_07_ScratchJr/Ghid_profesor_Lectia_07.pdf), [ghid](materiale/Lectia_07_ScratchJr/ghid-profesor.html) și [testele în browser](materiale/Lectia_07_ScratchJr/verificare/Fabrica_60min.md).
 
 ## Cursul ScratchJr: lecția 8
 

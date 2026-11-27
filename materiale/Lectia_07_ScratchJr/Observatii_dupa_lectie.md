@@ -1,21 +1,12 @@
-# Observații după lecția 7
+# Observații după Lecția 7
 
-Data: __________  Grupa: __________  Număr copii: __________
-
-| Observație | Singur / cu sprijin / de reluat |
-| --- | --- |
-| A construit scena din biblioteca aplicației | |
-| A ales pornirea potrivită | |
-| A anticipat ce se întâmplă | |
-| A realizat M1 și M2 | |
-| A încercat puzzle-ul dificil | |
-| A explicat legătura dintre personaje sau pagini | |
-| A repetat proba și a salvat/redeschis | |
-
-Minute reale: scenă ___ M1 ___ M2 ___ dificil ___ salvare ___
-
-Rezerve folosite: __________  Cea mai utilă întrebare de sprijin: __________
-
-Dificultăți pe Lenovo / modificări pentru data viitoare: __________
-
-Nu folosim fișa pentru clasamente. Notăm ce sprijin a ajutat și ce putem simplifica.
+- Data, grupa și numărul de copii:
+- Importul și redeschiderea pe Lenovo au funcționat:
+- M1 / M2 / M3: timpul real și ajutorul necesar:
+- Copiii au diferențiat montajul în paralel de montajul pe rând:
+- Au înțeles ce așteaptă mesajul albastru:
+- Pozițiile și dimensiunile au rămas potrivite:
+- Au folosit PDF-ul pentru toate firele unui personaj:
+- Ce probe proprii au inventat:
+- Ce rezerve am folosit și cât au durat:
+- Ce ajustăm înaintea următoarei ore:
