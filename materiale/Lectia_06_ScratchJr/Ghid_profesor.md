@@ -1,162 +1,287 @@
-# Lecția 6 - Robotul de inspecție
+# Lecția 6 - Robotul pregătește atelierul
 
-**60 de minute · părțile grele în baza lecției · 10 minute de creație · două rezerve suplimentare.**
+**60 de minute · 6-7 ani · puzzle greu în baza lecției · 10 minute de creație · două rezerve.**
 
-[PDF cu plan și capturi](Ghid_profesor_Lectia_06.pdf) · [Proiect de pornire fără cod](solutii_inspectie/start.sjr) · [Toate soluțiile](solutii_inspectie/README.md)
+[Plan și capturi PDF](Ghid_profesor_Lectia_06.pdf) · [Starter fără cod](solutii_atelier/start.sjr) · [Toate soluțiile](solutii_atelier/README.md)
 
 ## Povestea pentru copii
 
-„Atelierul se pregătește pentru lucru. Robotul trebuie să ajungă la stația de control și să anunțe că inspecția s-a terminat. Unele zone sunt închise cu bariere, iar locul lor se poate schimba. Când atinge o barieră, robotul trebuie să se oprească, să se retragă și să o ocolească. La stația de control trebuie să se oprească definitiv. După steag, voi doar observați.”
+„Dimineața, atelierul trebuie pregătit înainte să înceapă lucrul. Robotul are nevoie de încărcare. Pe podea au rămas resturi, iar ușa de acces este închisă. Îl programăm să se încarce, să curețe podeaua și să deschidă ușa înainte să intre. La sfârșit, un singur steag trebuie să pornească întreaga misiune.”
 
-**Ce este nou față de curier:** traseul se schimbă în urma unui contact. Simulăm un senzor de contact, ca un buton din bara de protecție. Nu detectăm obstacolul de la distanță și nu folosim camerele desenate pe robot. Este o simulare în ScratchJr, fără conectare la un robot fizic.
+Învățăm trei comportamente diferite: așteptarea unei operații, reacția la contact și coordonarea unui mecanism. Bateria este un indicator animat al încărcării, fără consum automat de energie. Curățenia folosește contactul dintre personaje; nu este detectare la distanță.
 
-## Înainte de oră: un singur import pe tabletă
+## Înainte de oră - pregătirea tabletelor
 
-Această lecție folosește robotul și atelierul create pentru curs. Ele **nu sunt în biblioteca standard**. Fișierul [start.sjr](solutii_inspectie/start.sjr) conține decorul, robotul, două bariere și stația, toate fără programe. Nu copia imaginile separat.
+1. Descarcă [start.sjr](solutii_atelier/start.sjr). Conține două scene, robotul mare, încărcătorul, segmentele bateriei, trei resturi, ușa, cadrul ei și cele două butoane. Toate personajele sunt fără programe. Segmentele pornesc ascunse, dar sunt selectabile în lista din stânga. Resursele personalizate sunt incluse; nu copia imagini separat.
+2. Pe laptop, în [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html), apasă **Open** în galerie, alege fișierul și așteaptă cardul **L06 Pregătim atelierul - de la zero · v3.1**. Proiectele vechi cu bariere nu se actualizează automat.
+3. Pe un Lenovo descarcă SJR-ul, apoi deschide-l din Fișiere/Descărcări cu ScratchJr, dacă aplicația este oferită. Verifică această rută, salvarea, redeschiderea și o rulare a `m4.sjr` înainte de distribuirea pe toate tabletele. Importul pe un Lenovo fizic nu a fost testat aici.
+4. Pregătește starterul pe toate tabletele înaintea orei. Copiii construiesc în același proiect; soluțiile M1-M4 sunt repere pentru profesor. În timpul orei nu este necesară altă descărcare. Verifică volumul pentru Pop.
 
-1. Pe laptop, deschide [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html). Din galerie: **Open**, alege `start.sjr`, apoi cardul **L06 Atelier - de la zero · v2.1**. La import nu apăsa încă o dată Open; așteaptă apariția cardului.
-2. Pe un Lenovo, descarcă `start.sjr` de pe pagina lecției. Din Descărcări/Fișiere deschide-l cu ScratchJr, dacă aplicația este oferită ca destinație. Verifică importul, salvarea și redeschiderea pe modelul folosit în clasă înainte să pregătești restul tabletelor. Browserul de pe laptop nu transferă automat proiectul pe Android. Ruta exactă de deschidere poate depinde de managerul de fișiere; nu a fost verificată pe tableta fizică.
-3. Pregătește proiectul pe fiecare tabletă înaintea orei; importul nu consumă cele 60 de minute. Copiii construiesc programele în acest proiect, nu deschid pe rând soluțiile profesorului.
-4. Testează o rulare din `m3.sjr` pe tableta de probă și verifică volumul pentru **Pop**. Lecția rămâne inteligibilă și fără sunet.
+## 0-5 minute - citim cele două scene
 
-**Atelier revizuit:** dacă ai importat varianta anterioară, descarcă din nou starterul și importă-l ca proiect nou. Copiile deja importate nu se actualizează automat. În galerie, alege cardul cu **v2.1**. Pentru proiecție, butonul de ecran complet mărește scena; revino în editor când construiești codul.
+**Scena 1:** robotul, încărcătorul și trei segmente. **Scena 2:** robotul, trei resturi, butonul verde, ușa și cadrul ei. Butonul roșu este pregătit pentru rezerva 2; până atunci rămâne fără cod.
 
-În browser, toate fișierele au fost importate, rulate și capturate. Versiunea web a raportat o eroare la înregistrarea resurselor în biblioteca globală, însă imaginile din proiect au rămas vizibile după salvare, redeschidere și reîncărcare. De aceea pornim de la SJR-ul inclus și nu cerem căutarea robotului în galeria globală. [Detalii și limitele testării](verificare/Inspectie_60min.md).
+Păstrăm mărimile și pozițiile din starter. Arată grila: un pas înseamnă un pătrățel. În scena 1, robotul înaintează 4 pași până la încărcător. În scena 2, resturile formează un traseu în sus și spre dreapta. Copiii pot urmări traseul cu degetul înainte să adauge blocuri.
 
-## Pregătirea scenei - 0-8 minute
+**Înaintea fiecărei probe:** Stop dacă rulează, selectează scena, Reset Characters sus, apoi un steag. Pentru misiunea completă selectează **scena 1**. Blocul albastru „La poziția inițială” este săgeata curbată cu X, nu Stânga. Selectarea unui personaj din listă deschide codul lui; butonul roșu din rezervă se apasă pe scenă.
 
-Deschidem proiectul fără cod. Jos sunt robotul, bariera și stația cu bifă. **Bariera 2**, sus în stânga, este pusă deoparte pentru a doua rezervă; nu are cod. Nu schimbăm mărimile. Fundalul este decor: contactul funcționează între personaje, nu cu dulapurile desenate pe perete.
-
-Arată trei lucruri: lista personajelor, programele separate ale fiecăruia și grila. Un pas înseamnă un pătrățel. Robotul pornește la aproximativ 2½ pătrățele de marginea stângă, bariera la 9½, stația la 18½; toate pe aceeași linie, aproape de rândul 3, numărat de jos. Pozițiile sunt deja pregătite. Grila este un ajutor, nu trebuie să reconstruim decorul.
-
-**Înainte de fiecare probă:** Stop dacă rulează, **Reset Characters** sus, apoi **un singur steag**. Nu mutăm personajele în timpul rulării. Selectarea din lista din stânga deschide codul; atingerea robotului nu pornește aceste programe.
-
-Blocul galben **La ciocnire / Start on Bump** are două siluete. Nu este blocul cu degetul, care pornește la atingerea ecranului. Folosim blocul standard, fără selector de personaj. El reacționează la contact cu orice alt personaj. Barierele și stația nu trebuie să se atingă între ele.
-
-| Semnal | Cine îl trimite | Ce face robotul |
+| Culoare | Cine primește | Rol |
 | --- | --- | --- |
-| Portocaliu | Bariera atinsă | Oprește deplasarea, se retrage și ocolește |
-| Albastru | Stația atinsă | Oprește deplasarea, se retrage puțin și anunță finalul |
+| Portocaliu | Încărcătorul | Pornește încărcarea |
+| Galben | Cele trei segmente | Se aprind pe rând |
+| Albastru | Butonul verde | Cere deschiderea |
+| Mov | Ușa | Ridică ușa |
+| Roșu | Robotul și ușa | Oprire de urgență, numai în R2 |
 
-Plic închis = Trimite; plic deschis = Primește. Alegem culoarea din săgeata de sub plic. Blocul portocaliu **Stop**, cu mâna, oprește celelalte programe ale aceluiași personaj; firul care l-a executat continuă.
+Plic închis = Trimite; plic deschis = Primește. Culoarea se alege din săgeată. **Trimite așteaptă terminarea programelor pornite de mesaj**; de aceea robotul poate aștepta încărcarea și ușa fără pauze ghicite.
 
-## 1. Frâna de siguranță - 8-20 minute
+## 5-17 minute - M1. Încărcarea
 
-**Ținta:** steagul pornește robotul. Contactul cu bariera întrerupe mersul; robotul se retrage un pas și rămâne pe loc. Construim întâi firul barierei, apoi cele două fire separate ale robotului; probăm după ce toate sunt conectate.
+**Ținta:** robotul ajunge la încărcător, stă până se aprind cele trei segmente, apoi revine și spune „Încărcat!”. Lucrăm în scena 1.
 
-| Personaj | Program complet |
-| --- | --- |
-| Robot de inspecție | Steag → Dreapta 20 |
-| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 |
-| Barieră | La ciocnire → Trimite portocaliu |
-| Stație de control | Fără program; nu intervine în această etapă |
-| Bariera 2 | Fără program; nu intervine în această etapă |
+Construim firul robotului și firul încărcătorului. La fiecare segment punem două fire separate: Steag → Ascunde și Primește galben → Așteaptă → Arată. La Așteaptă, 10 înseamnă o secundă; segmentele folosesc 10, 20 și 30, deci apar după una, două și trei secunde. Toate primesc același mesaj.
 
-**Partea grea, pentru toți:** Stop trebuie să fie la robot, în firul portocaliu. La barieră ar opri doar programele barierei. Stânga 1 rupe contactul, astfel încât evenimentul să nu se repete continuu. Nu este întoarcere la poziția inițială.
+**Partea grea, pentru toți:** robotul așteaptă încărcătorul, iar încărcătorul așteaptă toate cele trei segmente. Stânga 4 se execută numai după ultimul segment. Nu punem câte un steag separat pe mișcarea de întoarcere.
 
-**Probă în două poziții:** după resetare, mutăm bariera două pătrățele spre stânga, fără să schimbăm Dreapta 20. La următorul steag robotul trebuie să frâneze mai devreme. Readucem bariera la loc pentru M2. Dreapta 20 este o comandă lungă pe care contactul o întrerupe, nu distanța calculată până la obstacol. Fără reacția de contact, personajul poate trece prin barieră și reapărea din cealaltă parte a scenei.
-
-## 2. Retragere și ocolire - 20-32 minute
-
-**Ținta:** după frânare, robotul se retrage, emite Pop și ocolește bariera pe sus. Revine pe linia de mers, în partea cealaltă, și spune „Cale liberă!”. Extindem același fir portocaliu; păstrăm Steag și programul barierei.
+### Încărcare - toate programele
 
 | Personaj | Program complet |
 | --- | --- |
-| Robot de inspecție | Steag → Dreapta 20 |
-| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 6 → Jos 4 → Spune Cale liberă! |
-| Barieră | La ciocnire → Trimite portocaliu |
-| Stație de control | Fără program; nu intervine în această etapă |
-| Bariera 2 | Fără program; nu intervine în această etapă |
+| Robot | Steag → La poziția inițială → Dreapta 4 → Trimite portocaliu → Stânga 4 → Spune Încărcat! |
+| Încărcător | Primește portocaliu → Trimite galben → Sunet Pop |
+| Segment 1 | Steag → Ascunde |
+| Segment 1 | Primește galben → Așteaptă 10 → Arată |
+| Segment 2 | Steag → Ascunde |
+| Segment 2 | Primește galben → Așteaptă 20 → Arată |
+| Segment 3 | Steag → Ascunde |
+| Segment 3 | Primește galben → Așteaptă 30 → Arată |
 
-**Partea grea, pentru toți:** ordinea este Stop, retragere, urcare, traversare, coborâre. Sus 4 și Jos 4 se compensează; Dreapta 6 lasă loc pentru întregul robot, nu numai pentru centrul lui. Dacă schimbăm mărimile personajelor, trebuie recalibrat ocolul. Nu avem un motor fizic care să împiedice trecerea prin obiecte.
 
-**Probă:** atingere scurtă la început, apoi un singur ocol, fără traversarea barierei pe linia de jos. Stația și Bariera 2 rămân fără cod.
+**Probă:** vedem trei aprinderi distincte; robotul rămâne lângă încărcător până la a treia. Repetăm după resetare: segmentele trebuie să pornească stinse.
 
-## Pauză activă - 32-35 minute
+## 17-32 minute - M2. Curățenia
 
-Un copil mimează robotul, fără să se lovească de nimeni. Profesorul spune „Contact!”. Clasa dictează: oprește, înapoi, ocolește, continuă. La „Stație!” trebuie altă reacție. Legăm fiecare reacție de evenimentul care o pornește.
+**Ținta:** fiecare dintre cele trei resturi dispare la contact cu robotul și produce Pop. Lucrăm în scena 2. Ușa, cadrul, butonul verde și butonul roșu nu au încă programe.
 
-## 3. Inspecția completă - 35-48 minute · puzzle greu de bază
+La FIECARE rest construim Steag → Arată și La ciocnire → Ascunde → Pop. La ciocnire este blocul cu două siluete; blocul cu degetul ar cere atingerea ecranului. Robotul urmează traseul Dreapta 4 → Sus 4 → Dreapta 4 → Jos 4.
 
-**Ținta:** un steag pornește inspecția, robotul ocolește bariera, continuă până la stație și se oprește lângă ea. „Inspecție gata!” apare numai la contactul cu stația.
-
-Înlocuim replica „Cale liberă!” din M2 cu Dreapta 20. Adăugăm firul de contact al stației și al treilea fir al robotului, cu plic albastru. Nu unim cele trei declanșatoare într-un singur șir.
-
-| Personaj | Program complet |
-| --- | --- |
-| Robot de inspecție | Steag → Dreapta 20 |
-| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 6 → Jos 4 → Dreapta 20 |
-| Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
-| Barieră | La ciocnire → Trimite portocaliu |
-| Stație de control | La ciocnire → Trimite albastru |
-| Bariera 2 | Fără program; nu intervine în această etapă |
-
-**Partea grea, pentru toți:** două contacte au două sensuri. Portocaliu permite continuarea după ocol; albastru oprește inspecția. Stop din firul albastru întrerupe și mersul care a început în firul portocaliu. Retragerea de un pas eliberează contactul cu stația, apoi robotul stă.
-
-**Indicii:** 1. Cine a fost atins? 2. Ce culoare trimite acel personaj? 3. Are robotul un fir separat care primește aceeași culoare? 4. Stop este înaintea noii mișcări?
-
-**Probă completă:** resetare, un steag, contact cu bariera, un ocol, contact cu stația, oprire. Așteptăm și verificăm că nu repornește. Resetăm și repetăm, apoi salvăm și redeschidem. Toți încearcă acest puzzle în timpul de bază.
-
-## Creația mea - 48-58 minute
-
-Copiii aleg locul barierei și lățimea ocolului. Păstrăm retragerea, loc pentru întregul robot și oprirea finală. Nu cerem o singură soluție. Se poate porni de la M2 dacă M3 încă are nevoie de sprijin.
-
-**Exemplul complet „Ocolul meu”:** mutăm bariera un pătrățel spre stânga față de M3; schimbăm traversarea **Dreapta 6 în Dreapta 7**. Sus 4 și Jos 4 rămân. Stația și robotul pornesc din aceleași locuri. A doua barieră rămâne sus, fără cod. Păstrăm distanță față de ea.
+### Atelier - toate programele
 
 | Personaj | Program complet |
 | --- | --- |
-| Robot de inspecție | Steag → Dreapta 20 |
-| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 7 → Jos 4 → Dreapta 20 |
-| Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
-| Barieră | La ciocnire → Trimite portocaliu |
-| Stație de control | La ciocnire → Trimite albastru |
-| Bariera 2 | Fără program; nu intervine în această etapă |
+| Cadrul ușii | Fără program |
+| Ușă | Fără program |
+| Robot | Steag → La poziția inițială → Dreapta 4 → Sus 4 → Dreapta 4 → Jos 4 → Spune Curat! |
+| Buton verde | Fără program |
+| Rest 1 | Steag → Arată |
+| Rest 1 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 2 | Steag → Arată |
+| Rest 2 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 3 | Steag → Arată |
+| Rest 3 | La ciocnire → Ascunde → Sunet Pop |
 
-**Probă:** robotul reacționează mai devreme, traversează un pas în plus pe sus și ajunge tot la stație. Copilul explică de ce îi trebuie loc pentru întregul robot înainte să coboare. Nu mutăm bariera foarte aproape de pornire sau de stație: trebuie loc pentru retragere și coborâre.
 
-## Probă și salvare - 58-60 minute
+**Partea grea, pentru toți:** numai robotul primește traseul. Resturile reacționează când sunt atinse; nu dispar toate la steag. Mută temporar primul rest în colțul de sus-stânga, departe de traseu, și probează același cod: acel rest trebuie să rămână. Readu-l la loc. Această probă arată diferența dintre contact și dispariția programată după un timp.
 
-Resetăm și pornim o dată. Copilul arată unde se întrerupe mersul și explică diferența dintre portocaliu și albastru. Revenim în galerie pentru salvare. Nume sugerat: „Inspecție - prenume”.
+**Probă:** trei resturi dispărute, robotul înapoi pe linia de jos, ușa închisă. Copilul arată locul în care a fost atins fiecare rest.
 
-## Rezervă 1. Robotul merge mai repede - încă 5 minute
+## 32-39 minute - M3. Deschidem ușa
 
-Pornim de la M3. În firul Steag punem **Viteză rapidă** înainte de Dreapta 20; toate celelalte programe rămân complete mai jos. Predicție: unde se produce reacția și ce se schimbă în durată?
+**Ținta:** după curățenie, robotul ajunge la butonul verde, ușa se ridică complet, apoi robotul intră. Continuăm scena 2 și păstrăm programele resturilor.
 
-| Personaj | Program complet |
-| --- | --- |
-| Robot de inspecție | Steag → Viteză rapidă → Dreapta 20 |
-| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 6 → Jos 4 → Dreapta 20 |
-| Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
-| Barieră | La ciocnire → Trimite portocaliu |
-| Stație de control | La ciocnire → Trimite albastru |
-| Bariera 2 | Fără program; nu intervine în această etapă |
+În firul robotului înlocuim „Curat!” cu Dreapta 2 → Trimite albastru → Dreapta 5 → Spune „Atelier pregătit!”. La butonul verde adăugăm Primește albastru → Pop → Trimite mov. Ușa primește mov și urcă 5 pași. Butonul este activat de mesajul robotului când acesta ajunge la el, nu de un clic al copilului.
 
-**Probă:** aceeași ordine a evenimentelor, un ocol și oprire la stație, într-un timp mai scurt. Contactul se verifică în pași de animație; la viteza mai mare punctul exact de oprire poate diferi puțin. Nu cerem același pixel. Pentru revenire la M3, selectăm explicit Viteză normală; simpla scoatere a blocului rapid nu readuce neapărat viteza.
-
-## Rezervă 2. Două zone închise - încă 10 minute
-
-Pornim de la M3, la viteza normală. Folosim **Bariera 2 deja inclusă în proiect**, nu importăm încă un fișier. Mutăm prima barieră 3½ pătrățele spre stânga; aducem Bariera 2 de sus pe linia robotului, la 6 pătrățele spre dreapta de prima. Modelul are centrele la 6 și 12 pătrățele de marginea stângă. Stația rămâne la 18½.
-
-Adăugăm la Bariera 2 același La ciocnire → Trimite portocaliu. Robotul păstrează **un singur fir de evitare**, reutilizat la ambele obstacole.
+### Atelier - toate programele
 
 | Personaj | Program complet |
 | --- | --- |
-| Robot de inspecție | Steag → Dreapta 20 |
-| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 6 → Jos 4 → Dreapta 20 |
-| Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
-| Barieră | La ciocnire → Trimite portocaliu |
-| Stație de control | La ciocnire → Trimite albastru |
-| Bariera 2 | La ciocnire → Trimite portocaliu |
+| Cadrul ușii | Fără program |
+| Ușă | Steag → La poziția inițială |
+| Ușă | Primește mov → Sus 5 |
+| Robot | Steag → La poziția inițială → Dreapta 4 → Sus 4 → Dreapta 4 → Jos 4 → Dreapta 2 → Trimite albastru → Dreapta 5 → Spune Atelier pregătit! |
+| Buton verde | Primește albastru → Sunet Pop → Trimite mov |
+| Rest 1 | Steag → Arată |
+| Rest 1 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 2 | Steag → Arată |
+| Rest 2 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 3 | Steag → Arată |
+| Rest 3 | La ciocnire → Ascunde → Sunet Pop |
 
-**Probă:** două contacte, două retrageri, două ocoluri, apoi contact cu stația și oprire. Nu punem barierele lipite: robotul trebuie să coboare și să reintre pe traseu înaintea următorului contact.
+
+**Partea grea, pentru toți:** robotul așteaptă butonul, iar butonul așteaptă ușa. Dreapta 5 vine după Trimite albastru. Dacă deplasarea este într-un alt fir cu Steag, robotul poate pleca prea devreme.
+
+**Probă:** robotul stă lângă buton pe toată durata ridicării ușii. Abia după terminarea ei traversează. Cadrul ușii nu are program; se mișcă numai panoul.
+
+## 39-47 minute - M4. Atelierul pregătit · puzzle greu pentru toți
+
+**Ținta:** un singur steag din scena 1 pornește încărcarea, curățenia, deschiderea și intrarea. Nu apăsăm manual miniatura scenei 2 în timpul probei.
+
+În scena 1 înlocuim replica „Încărcat!” cu **Pagina 2**, blocul roșu care arată miniatura celeilalte scene. În scena 2 păstrăm toate programele M3. La schimbarea paginii pornesc firele cu Steag de pe pagina nouă. Robotul din fiecare scenă este un personaj separat, cu propriul cod.
+
+### Încărcare - toate programele
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot | Steag → La poziția inițială → Dreapta 4 → Trimite portocaliu → Stânga 4 → Pagina 2 |
+| Încărcător | Primește portocaliu → Trimite galben → Sunet Pop |
+| Segment 1 | Steag → Ascunde |
+| Segment 1 | Primește galben → Așteaptă 10 → Arată |
+| Segment 2 | Steag → Ascunde |
+| Segment 2 | Primește galben → Așteaptă 20 → Arată |
+| Segment 3 | Steag → Ascunde |
+| Segment 3 | Primește galben → Așteaptă 30 → Arată |
+
+### Atelier - toate programele
+
+| Personaj | Program complet |
+| --- | --- |
+| Cadrul ușii | Fără program |
+| Ușă | Steag → La poziția inițială |
+| Ușă | Primește mov → Sus 5 |
+| Robot | Steag → La poziția inițială → Dreapta 4 → Sus 4 → Dreapta 4 → Jos 4 → Dreapta 2 → Trimite albastru → Dreapta 5 → Spune Atelier pregătit! |
+| Buton verde | Primește albastru → Sunet Pop → Trimite mov |
+| Rest 1 | Steag → Arată |
+| Rest 1 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 2 | Steag → Arată |
+| Rest 2 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 3 | Steag → Arată |
+| Rest 3 | La ciocnire → Ascunde → Sunet Pop |
+
+
+**Verificăm patru condiții:** 1. Robotul așteaptă toate segmentele. 2. Scena se schimbă singură. 3. Toate cele trei resturi dispar. 4. Robotul așteaptă ușa înainte să intre. Resturile rămase se verifică vizual; programul nu le numără automat și nu blochează ușa în funcție de numărul lor.
+
+**Indicii:** cine trimite mesajul, cine îl primește, ce trebuie să termine înainte de următorul bloc? Toți încearcă misiunea completă; ea nu este o rezervă pentru cei rapizi.
+
+## 47-57 minute - Creația mea
+
+Copiii aleg pozițiile celor trei resturi și construiesc o rută proprie. Păstrează încărcarea, curățarea la contact și așteptarea ușii. Nu așeza resturi peste ușă, butoane sau unele peste altele: La ciocnire reacționează la orice personaj atins. Lasă robotului loc să ajungă lângă buton pe linia de jos.
+
+**Exemplul complet:** două resturi sunt sus, la 4 pătrățele distanță pe orizontală, iar al treilea este jos, sub cel din dreapta. Ruta devine Sus 4 → Dreapta 8 → Jos 4; apoi urmează aceleași Dreapta 2, albastru, Dreapta 5. Pozițiile sunt ilustrate în PDF. Copiii pot porni de la M2 dacă încă au nevoie de sprijin la mesaje.
+
+### Încărcare - toate programele
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot | Steag → La poziția inițială → Dreapta 4 → Trimite portocaliu → Stânga 4 → Pagina 2 |
+| Încărcător | Primește portocaliu → Trimite galben → Sunet Pop |
+| Segment 1 | Steag → Ascunde |
+| Segment 1 | Primește galben → Așteaptă 10 → Arată |
+| Segment 2 | Steag → Ascunde |
+| Segment 2 | Primește galben → Așteaptă 20 → Arată |
+| Segment 3 | Steag → Ascunde |
+| Segment 3 | Primește galben → Așteaptă 30 → Arată |
+
+### Atelier - toate programele
+
+| Personaj | Program complet |
+| --- | --- |
+| Cadrul ușii | Fără program |
+| Ușă | Steag → La poziția inițială |
+| Ușă | Primește mov → Sus 5 |
+| Robot | Steag → La poziția inițială → Sus 4 → Dreapta 8 → Jos 4 → Dreapta 2 → Trimite albastru → Dreapta 5 → Spune Atelier pregătit! |
+| Buton verde | Primește albastru → Sunet Pop → Trimite mov |
+| Rest 1 | Steag → Arată |
+| Rest 1 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 2 | Steag → Arată |
+| Rest 2 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 3 | Steag → Arată |
+| Rest 3 | La ciocnire → Ascunde → Sunet Pop |
+
+
+## 57-60 minute - probă și salvare
+
+Pornim din scena 1, după resetare. Copilul explică un lucru: de ce robotul așteaptă, cum dispare un rest sau de ce nu intră prin ușa închisă. Salvăm revenind în galerie; nume sugerat: „Atelierul - prenume”.
+
+## Rezervă 1. Mai puțini pași - încă 5 minute
+
+Păstrăm aceleași poziții ale resturilor ca în M4. Putem curăța tot cu o rută mai scurtă?
+
+**Soluția testată:** Sus 3 și Jos 3 în loc de 4 și 4. Curățenia folosește 4 + 3 + 4 + 3 = 14 pași, în loc de 16. Celelalte deplasări nu se schimbă. Robotul ocupă o suprafață; centrele nu trebuie să coincidă pentru a exista contact. Aceasta este o soluție mai scurtă, nu o afirmație că nu există una și mai scurtă.
+
+### Încărcare - toate programele
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot | Steag → La poziția inițială → Dreapta 4 → Trimite portocaliu → Stânga 4 → Pagina 2 |
+| Încărcător | Primește portocaliu → Trimite galben → Sunet Pop |
+| Segment 1 | Steag → Ascunde |
+| Segment 1 | Primește galben → Așteaptă 10 → Arată |
+| Segment 2 | Steag → Ascunde |
+| Segment 2 | Primește galben → Așteaptă 20 → Arată |
+| Segment 3 | Steag → Ascunde |
+| Segment 3 | Primește galben → Așteaptă 30 → Arată |
+
+### Atelier - toate programele
+
+| Personaj | Program complet |
+| --- | --- |
+| Cadrul ușii | Fără program |
+| Ușă | Steag → La poziția inițială |
+| Ușă | Primește mov → Sus 5 |
+| Robot | Steag → La poziția inițială → Dreapta 4 → Sus 3 → Dreapta 4 → Jos 3 → Dreapta 2 → Trimite albastru → Dreapta 5 → Spune Atelier pregătit! |
+| Buton verde | Primește albastru → Sunet Pop → Trimite mov |
+| Rest 1 | Steag → Arată |
+| Rest 1 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 2 | Steag → Arată |
+| Rest 2 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 3 | Steag → Arată |
+| Rest 3 | La ciocnire → Ascunde → Sunet Pop |
+
+
+**Probă:** aceleași trei resturi dispar; încărcarea și ușa se comportă la fel. Dacă un rest rămâne, verificăm mărimile și pozițiile înainte să mai scurtăm traseul.
+
+## Rezervă 2. Oprire de urgență - încă 10 minute
+
+Folosim butonul roșu deja inclus în scena 2. La el punem La atingere → Trimite roșu. Robotul și ușa primesc fiecare câte un fir nou Primește roșu → Stop. Robotul adaugă și replica „Oprit!”.
+
+### Încărcare - toate programele
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot | Steag → La poziția inițială → Dreapta 4 → Trimite portocaliu → Stânga 4 → Pagina 2 |
+| Încărcător | Primește portocaliu → Trimite galben → Sunet Pop |
+| Segment 1 | Steag → Ascunde |
+| Segment 1 | Primește galben → Așteaptă 10 → Arată |
+| Segment 2 | Steag → Ascunde |
+| Segment 2 | Primește galben → Așteaptă 20 → Arată |
+| Segment 3 | Steag → Ascunde |
+| Segment 3 | Primește galben → Așteaptă 30 → Arată |
+
+### Atelier - toate programele
+
+| Personaj | Program complet |
+| --- | --- |
+| Cadrul ușii | Fără program |
+| Ușă | Steag → La poziția inițială |
+| Ușă | Primește mov → Sus 5 |
+| Ușă | Primește roșu → Stop |
+| Robot | Steag → La poziția inițială → Dreapta 4 → Sus 4 → Dreapta 4 → Jos 4 → Dreapta 2 → Trimite albastru → Dreapta 5 → Spune Atelier pregătit! |
+| Robot | Primește roșu → Stop → Spune Oprit! |
+| Buton verde | Primește albastru → Sunet Pop → Trimite mov |
+| Rest 1 | Steag → Arată |
+| Rest 1 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 2 | Steag → Arată |
+| Rest 2 | La ciocnire → Ascunde → Sunet Pop |
+| Rest 3 | Steag → Arată |
+| Rest 3 | La ciocnire → Ascunde → Sunet Pop |
+| Oprire de urgență | La atingere → Trimite roșu |
+
+
+**Partea grea:** Stop de la robot nu oprește ușa. Amândoi trebuie să primească roșu și să își oprească propriile programe. Niciun fir de deplasare nu trebuie să continue după oprire.
+
+**Două probe:** apasă butonul roșu pe scenă în timp ce robotul merge; apoi reia de la început și apasă în timp ce ușa se ridică. În a doua probă ușa rămâne parțial ridicată și robotul rămâne lângă buton. Așteptăm câteva secunde: nimic nu repornește singur. Reluarea este de la început, cu scena 1, Reset Characters și steag; nu avem un buton de continuare din locul întrerupt.
 
 ## Când un copil se blochează
 
-- Robotul trece prin barieră: verificăm La ciocnire la barieră, plicurile portocalii și Stop la robot. Fundalul nu detectează contacte.
-- Robotul tremură lângă obiect: verificăm Stânga 1 imediat după Stop și faptul că obiectele sunt separate la pornire.
-- Ocolul lovește bariera din nou: resetăm; păstrăm mărimile din starter și distanțele Sus 4, Dreapta 6, Jos 4.
-- Nu ajunge la stație: în M3, după coborâre trebuie Dreapta 20, în locul replicii din M2.
-- Nu se oprește la stație: aceasta trimite albastru, iar robotul primește albastru într-un fir separat cu Stop.
-- Un plic apare gol în versiunea web: apasă săgeata și selectează din nou culoarea indicată; nu există un „bloc gol” de adăugat.
+- Segmentul nu apare: verificăm Primește galben, Așteaptă și Arată; numele segmentului este în lista din stânga chiar când el e ascuns.
+- Robotul pleacă înainte de încărcare: întoarcerea trebuie să fie după Trimite portocaliu, în același fir.
+- Un rest nu dispare: verificăm contactul real, La ciocnire și Ascunde. Un rest așezat în decor nu are program.
+- Resturile dispar imediat: la Steag punem Arată; Ascunde este în firul de contact. Nu suprapunem resturile peste alte personaje.
+- Ușa se ridică, dar robotul pleacă prea devreme: verificăm lanțul albastru la buton și mov la ușă; traversarea urmează mesajul albastru.
+- Scena 2 nu pornește singură: verificăm Pagina 2 la finalul robotului din scena 1 și Steag la robotul din scena 2.
+- Butonul roșu oprește numai robotul: lipsește firul roșu cu Stop de la ușă.
+- Un plic pare gol în portul web: deschide săgeata și reselectează culoarea; nu există un bloc gol de adăugat.
 
-PDF: plan p. 1; pregătire p. 2; M1 p. 3; M2 p. 4; M3 p. 5-6; creație p. 7-8; R1 p. 9-10; R2 p. 11-12. În PDF-ul cursului adaugă 61. Capturile arată toate firele, inclusiv pe cele neschimbate.
+PDF: plan p. 1; pregătire p. 2; M1 p. 3-4; M2 p. 5-6; M3 p. 7-8; M4 p. 9-12; creație p. 13-16; R1 p. 17-20; R2 p. 21-25. În PDF-ul cursului adaugă 61. Toate programele sunt incluse, chiar când o parte rămâne neschimbată.
+
+[Raportul testării în browser](verificare/Atelierul_60min.md) · [Varianta anterioară cu bariere](README_inspectie_v2.md).

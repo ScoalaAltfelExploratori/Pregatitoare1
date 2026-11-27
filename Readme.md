@@ -142,7 +142,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 6
 
-[Robotul de inspecție](materiale/Lectia_06_ScratchJr/README.md) are 60 de minute: contact, frânare, retragere, ocolire și oprire la stație. Toate părțile grele sunt în bază; 10 minute de creație și două rezerve. Robot și atelier noi, incluse în [starterul fără cod](materiale/Lectia_06_ScratchJr/solutii_inspectie/start.sjr): un import pe tabletă, fără imagini separate. [PDF de 12 pagini cu capturi](materiale/Lectia_06_ScratchJr/Ghid_profesor_Lectia_06.pdf) · [Teste în browser](materiale/Lectia_06_ScratchJr/verificare/Inspectie_60min.md).
+[Robotul pregătește atelierul](materiale/Lectia_06_ScratchJr/README.md): 60 de minute, încărcare vizibilă, curățenie la contact și ușă automată. Puzzle greu în bază, 10 minute de creație, traseu economic și oprire de urgență. [Starter cu două scene](materiale/Lectia_06_ScratchJr/solutii_atelier/start.sjr), cu toate resursele incluse. [PDF de 25 de pagini cu capturi](materiale/Lectia_06_ScratchJr/Ghid_profesor_Lectia_06.pdf) · [Teste în browser](materiale/Lectia_06_ScratchJr/verificare/Atelierul_60min.md).
 
 ## Cursul ScratchJr: lecția 7
 

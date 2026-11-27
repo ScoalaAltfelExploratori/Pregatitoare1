@@ -1,5 +1,7 @@
 # Verificare - Robotul de inspecție, 60 de minute
 
+> Arhivă: varianta cu bariere, cu [PDF-ul său de 12 pagini](../Ghid_profesor_Inspectie_v2.pdf). [Testele lecției actuale](Atelierul_60min.md).
+
 27 noiembrie 2026 · **Atelier v2.1, cu obiecte mărite și distanțe recalibrate.** Teste efectuate în [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html), aplicația din browser, la 1280 × 800. Nu este un simulator propriu și nu este un test pe un Lenovo fizic.
 
 ## Importul real

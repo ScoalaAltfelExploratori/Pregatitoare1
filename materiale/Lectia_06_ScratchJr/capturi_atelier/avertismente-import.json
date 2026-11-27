@@ -1,0 +1,242 @@
+[
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:19:46.767Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:19:46.769Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:19:46.770Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:19:46.772Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:19:46.773Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:19:46.775Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:19:46.856Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on userbkgs: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:19:46.927Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:05.463Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:05.465Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:05.467Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:05.469Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:05.471Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:05.473Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:05.566Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on userbkgs: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:05.636Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:39.374Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:39.377Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:39.477Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on userbkgs: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:39.551Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:58.312Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:58.314Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:58.316Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:58.317Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:58.417Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on userbkgs: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:21:58.490Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:38.395Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:38.397Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:38.398Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:38.494Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on userbkgs: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:38.572Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:50.208Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:50.210Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:50.212Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:50.215Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:50.217Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:50.220Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:50.223Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on usershapes: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:50.328Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  },
+  {
+    "level": "error",
+    "message": "[browserClient] database_query error: Error: unknown items column on userbkgs: *\n    at validationError (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:599:47)\n    at assertColumns (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:634:31)\n    at https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js:710:21\n    at async i.query (https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/dist/chunk-RMPXSKQE.js:5:42969)",
+    "timestamp": "2026-11-27T11:22:50.404Z",
+    "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/browserClient.js"
+  }
+]

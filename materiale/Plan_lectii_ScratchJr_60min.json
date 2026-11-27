@@ -314,64 +314,65 @@
     {
       "number": 6,
       "revision": "27 noiembrie 2026",
-      "title": "Robotul de inspecție",
-      "subtitle": "Contact, oprire și ocolire într-un atelier de robotică",
-      "goal": "Robotul ajunge la stația de control. Contactul cu o barieră schimbă traseul; contactul cu stația încheie inspecția.",
-      "setup": "Importăm înaintea orei start.sjr: atelier, robot, două bariere și stație, fără cod. Resurse noi incluse; nicio imagine de copiat separat.",
+      "title": "Robotul pregătește atelierul",
+      "subtitle": "Încărcare, curățenie la contact și o ușă automată",
+      "goal": "Un singur steag: încărcăm, curățăm trei resturi și intrăm numai după deschiderea ușii.",
+      "setup": "Starter cu două scene și obiecte mari, fără cod. Resurse incluse; un import pe tabletă înainte de oră.",
       "schedule": [
         {
-          "minutes": "0-8",
-          "title": "Robotul și senzorul de contact",
-          "text": "Deschidem starterul. Bariera 2 stă deoparte. Contactul este între personaje, nu cu fundalul."
+          "minutes": "0-5",
+          "title": "Povestea și cele două scene",
+          "text": "Încărcătorul, segmentele, resturile și ușa. Selectăm personajele și citim grila."
         },
         {
-          "minutes": "8-20",
-          "title": "1. Frâna de siguranță",
-          "text": "Steag, mers; contactul trimite portocaliu. Robotul oprește și se retrage 1. Mutăm bariera și comparăm."
+          "minutes": "5-17",
+          "title": "M1. Încărcarea",
+          "text": "Cele trei segmente se aprind pe rând. Robotul așteaptă încărcarea înainte să plece."
         },
         {
-          "minutes": "20-32",
-          "title": "2. Retragere și ocolire",
-          "text": "După frânare: Pop, Sus 4, Dreapta 6, Jos 4. Un singur ocol și revenire pe linia de mers."
+          "minutes": "17-32",
+          "title": "M2. Curățenia",
+          "text": "Resturile dispar la contact. Un rest scos din traseu trebuie să rămână vizibil."
         },
         {
-          "minutes": "32-35",
-          "title": "Pauză activă",
-          "text": "Mimăm robotul. La „Contact!” ocolim; la „Stație!” încheiem."
+          "minutes": "32-39",
+          "title": "M3. Deschidem ușa",
+          "text": "După curățenie, robotul comandă butonul și așteaptă ridicarea completă a ușii."
         },
         {
-          "minutes": "35-48",
-          "title": "3. Inspecția completă | dificil, pentru toți",
-          "text": "Continuăm după ocol. Stația trimite albastru; robotul oprește, se retrage și anunță finalul."
+          "minutes": "39-47",
+          "title": "M4. Misiunea completă | dificil, pentru toți",
+          "text": "Legăm scenele cu Pagina 2. Un singur steag pentru toate cele trei activități."
         },
         {
-          "minutes": "48-58",
-          "title": "Ocolul meu",
-          "text": "Alegem poziția barierei și lățimea ocolului. Exemplu: bariera mutată, Dreapta 7 în loc de 6."
+          "minutes": "47-57",
+          "title": "Creația mea",
+          "text": "Alte poziții ale resturilor, alt traseu. Păstrăm încărcarea și așteptarea ușii."
         },
         {
-          "minutes": "58-60",
+          "minutes": "57-60",
           "title": "Probă și salvare",
-          "text": "Resetăm, un steag, explicăm cele două semnale. Salvăm în galerie."
+          "text": "Pornim din scena 1. Explicăm un eveniment și salvăm în galerie."
         }
       ],
       "solutions": [
-        "Portocaliu la robot: Stop > Stânga 1 > Pop > Sus 4 > Dreapta 6 > Jos 4 > Dreapta 20.",
-        "Albastru la robot: Stop > Stânga 1 > Inspecție gata! Barierele trimit portocaliu; stația trimite albastru, la contact."
+        "Încărcare: portocaliu la încărcător, galben la segmente; Așteaptă 10 / 20 / 30, apoi Arată.",
+        "Curățenie: Dreapta 4 > Sus 4 > Dreapta 4 > Jos 4. Resturile: La ciocnire > Ascunde > Pop.",
+        "Ușă: robotul trimite albastru; butonul trimite mov; ușa urcă 5. Traversarea urmează mesajul."
       ],
-      "hint": "La ciocnire: blocul standard cu două siluete. Stop oprește celelalte fire ale robotului. Înaintea fiecărei probe: Stop, Reset Characters, un steag.",
+      "hint": "Trimite așteaptă destinatarii. Reset Characters înaintea probei; misiunea completă pornește din scena 1.",
       "backups": [
         {
-          "title": "R1. Robotul merge mai repede | +5 min",
-          "text": "Viteză rapidă după Steag; păstrăm ocolul și oprirea la stație."
+          "title": "R1. Mai puțini pași | +5 min",
+          "text": "Sus 3 / Jos 3: 14 pași de curățenie, în loc de 16."
         },
         {
-          "title": "R2. Două zone închise | +10 min",
-          "text": "Aducem Bariera 2 pe traseu. Ambele trimit portocaliu; robotul refolosește aceeași reacție."
+          "title": "R2. Oprire de urgență | +10 min",
+          "text": "Buton roșu: robotul și ușa primesc roșu și execută Stop."
         }
       ],
-      "teacher_note": "Părțile grele sunt în bază. Două rezerve în plus. Un import pe tabletă, verificat înainte de oră; testarea publicată este în browser.",
-      "student_reference": "Capturi: pregătire p. 2; M1 p. 3; M2 p. 4; M3 p. 5-6; creație p. 7-8; R1 p. 9-10; R2 p. 11-12. În PDF-ul cursului adaugă 61.",
+      "teacher_note": "Puzzle-ul greu este în bază. Două rezerve suplimentare. Importul și rularea sunt testate în browser; verifică și pe Lenovo.",
+      "student_reference": "Capturi: pregătire p. 2; M1 p. 3-4; M2 p. 5-6; M3 p. 7-8; M4 p. 9-12; creație p. 13-16; R1 p. 17-20; R2 p. 21-25. În PDF-ul cursului adaugă 61.",
       "footer": "Resurse incluse în starter / Construim programele pe tabletă"
     }
   ]

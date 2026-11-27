@@ -1,17 +1,16 @@
-# Observații după Lecția 6 - Robotul de inspecție
+# Observații după Lecția 6 - Robotul pregătește atelierul
 
 Data: ____ Clasa: ____ Număr copii: ____
 
-- Importul a fost pregătit înainte de oră pe toate tabletele? ____
-- Se văd clar robotul, barierele și stația în atelierul revizuit? ____
-- Au deosebit contactul dintre personaje de atingerea cu degetul? ____
-- Au pus Stop la robot și retragerea înaintea ocolului? ____
-- Au observat frânarea mai devreme după mutarea barierei? ____
-- Au încercat toți cele două reacții din puzzle-ul greu? ____
-- Au păstrat 10 minute pentru propriul traseu? ____
-- Au resetat și salvat? ____
-- Rezerve folosite: viteza / două bariere / niciuna.
+- Starterul a fost importat înaintea orei? ____
+- Obiectele sunt suficient de mari și clare pe tabletă? ____
+- Au înțeles de ce robotul așteaptă ultimul segment? ____
+- Resturile dispar la contact, iar cel scos din traseu rămâne? ____
+- Robotul așteaptă deschiderea completă a ușii? ____
+- Toți au încercat misiunea completă cu un singur steag? ____
+- Au rămas 10 minute pentru creație? ____
+- Rezerve folosite: traseu economic / oprire de urgență / niciuna.
 
-Minute: pregătire ____ M1 ____ M2 ____ pauză ____ M3 ____ creație ____ salvare ____
+Minute: introducere ____ încărcare ____ curățenie ____ ușă ____ misiune ____ creație ____ salvare ____
 
-Ce reluăm data viitoare: ____
+Ce reluăm: ____

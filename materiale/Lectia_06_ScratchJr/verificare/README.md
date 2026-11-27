@@ -1,4 +1,4 @@
-> Arhivă: Parcul cu surprize, 50 min. Pentru lecția actuală: [Robotul de inspecție - teste](Inspectie_60min.md).
+> Arhivă: Parcul cu surprize, 50 min. Pentru lecția actuală: [Robotul pregătește atelierul - teste](Atelierul_60min.md). [Varianta cu bariere](Inspectie_60min.md).
 
 # Verificare - Lecția 6
 

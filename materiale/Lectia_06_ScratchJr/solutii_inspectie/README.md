@@ -1,3 +1,5 @@
+> Arhivă: varianta cu bariere. [Lecția 6 actuală](../index.html).
+
 # Proiectele Lecției 6 - Robotul de inspecție
 
 Versiunea **Atelier v2.1** are obiecte mărite și programe recalibrate. Descarcă și importă din nou dacă ai copia anterioară; proiectele deja importate nu se actualizează automat.
@@ -16,4 +18,4 @@ Pe tabletele copiilor se importă numai starterul, o dată înainte de oră. Sol
 
 Import pe laptop: Open în galeria ScratchJr Desktop Reborn, selectează fișierul, apoi cardul L06 Atelier cu etapa aleasă și sufixul v2.1. Stop, Reset Characters, un steag înaintea fiecărei probe. Starterul nu are cod. Bariera 2 stă deoparte până la R2.
 
-[Instrucțiuni pentru tablete](../README.md) · [Ghid complet](../Ghid_profesor.md) · [PDF](../Ghid_profesor_Lectia_06.pdf) · [Testare](../verificare/Inspectie_60min.md)
+[Instrucțiuni pentru tablete](../README_inspectie_v2.md) · [Ghid complet](../Ghid_profesor_inspectie_v2.md) · [PDF](../Ghid_profesor_Inspectie_v2.pdf) · [Testare](../verificare/Inspectie_60min.md)

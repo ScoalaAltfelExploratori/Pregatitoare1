@@ -1,29 +1,31 @@
-# Lecția 6 - Robotul de inspecție
+# Lecția 6 - Robotul pregătește atelierul
 
-**60 de minute.** Robotul traversează atelierul, frânează la contact, ocolește barierele și se oprește la stația de control. Părțile grele sunt în baza lecției; păstrăm 10 minute de creație și două rezerve.
+**60 de minute.** Încărcare în trei pași, curățenie la contact și o ușă care trebuie deschisă înainte de traversare. Puzzle greu în timpul de bază, 10 minute pentru creație și două rezerve: traseul economic și oprirea de urgență.
 
 - [Lecția pe site](index.html) · [Ghidul profesorului](ghid-profesor.html).
-- [PDF de 12 pagini: plan concis și toate programele cu capturi](Ghid_profesor_Lectia_06.pdf).
-- [Proiectul de pornire fără cod](solutii_inspectie/start.sjr) · [Cele șase soluții](solutii_inspectie/README.md).
-- [PDF-ul cursului, lecțiile 1-6](../Plan_lectii_ScratchJr_60min.pdf); Lecția 6: p. 62-73.
-- [Testarea în browser](verificare/Inspectie_60min.md) · [Fișa de observații](Observatii_dupa_lectie.md).
+- [PDF: plan concis și toate programele cu capturi, 25 de pagini](Ghid_profesor_Lectia_06.pdf).
+- [Starter fără cod](solutii_atelier/start.sjr) · [Cele șapte soluții](solutii_atelier/README.md).
+- [PDF-ul cursului](../Plan_lectii_ScratchJr_60min.pdf): Lecția 6 la p. 62-86.
+- [Testarea în browser](verificare/Atelierul_60min.md) · [Observații după oră](Observatii_dupa_lectie.md).
 
-## Atelier revizuit · v2.1
+## Instalare și import
 
-Robotul este mai mare, barierele și stația sunt mai ușor de deosebit, iar bancul de lucru ocupă partea de sus a scenei. Programele și capturile au fost refăcute pentru noile dimensiuni. **Dacă ai importat deja proiectele vechi, descarcă-le din nou și importă noile fișiere.** Proiectele locale nu se actualizează automat; cardurile noi au sufixul `v2.1`.
+Importă o singură dată **start.sjr** pe fiecare tabletă, înaintea orei. Include toate resursele personalizate și două scene, fără cod. Nu copia imagini separat și nu importa fiecare soluție pe tabletele copiilor. Nu mai sunt necesare descărcări în timpul lecției.
 
-## Pregătirea tabletelor
+Pe laptop: [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html) → Open în galerie → start.sjr → cardul **L06 Pregătim atelierul - de la zero · v3.1**. Așteaptă apariția cardului după import. Dacă ai proiectul vechi cu bariere, importă acest fișier nou; copia veche nu se actualizează singură.
 
-**Excepție față de lecțiile precedente:** robotul și atelierul sunt resurse noi, nu elemente standard. Importă o singură dată `start.sjr` pe fiecare tabletă, înaintea orei. Fișierul conține toate imaginile, stația și ambele bariere, fără programe. Nu trebuie copiate imagini separat și nu se importă fiecare misiune. Copiii construiesc programele în starter.
+Pe Android: descarcă fișierul de pe site și deschide-l din Fișiere/Descărcări cu ScratchJr, dacă aplicația este oferită. Verifică ruta de import pe un Lenovo, apoi probează m4.sjr, salvarea și redeschiderea înainte să pregătești restul tabletelor. Testarea publicată este în browser, nu pe un Lenovo fizic.
 
-Pe Android descarcă SJR-ul și deschide-l din Fișiere/Descărcări cu ScratchJr, dacă este oferit ca aplicație. Verifică această rută pe un Lenovo înainte de distribuirea pe restul tabletelor. Importul pe Android fizic nu a fost testat aici; verifică și o rulare completă cu `m3.sjr`, salvarea și redeschiderea. După pregătirea proiectului, lecția nu are nevoie de descărcări în timpul orei.
+## Rulare
 
-## Import și test pe laptop
+Stop dacă rulează → selectează scena → Reset Characters → un steag. M1 este scena de încărcare; M2 și M3 sunt atelierul. M4, creația și rezervele pornesc din scena 1 și trec automat la scena 2. Starterul nu se mișcă la steag, fiind fără programe. Segmentele sunt ascunse inițial, dar apar în lista personajelor. Butonul roșu din starter rămâne fără cod până la R2.
 
-În [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html): **Open** în galerie → selectează SJR-ul → deschide noul card **L06 Atelier** cu etapa dorită. Înainte de fiecare probă: Stop dacă rulează → Reset Characters → un steag. Starterul nu se mișcă, deoarece nu are cod. Salvează revenind în galerie.
+R2: apasă butonul roșu pe scenă pentru oprire. Reluarea este de la început, nu continuare din locul oprit. Salvează revenind în galerie.
 
-Cele șapte fișiere au fost importate în browser. S-au verificat toate misiunile, rezervele, mutarea barierei, resetarea și redeschiderea proiectului complet. Versiunea web raportează o eroare la înregistrarea imaginilor în biblioteca globală; imaginile din proiect și rularea au funcționat inclusiv după reîncărcare. Nu trebuie găsite ulterior în galeria globală. Raportul păstrează avertismentele și observațiile efective.
+În portul web, unele plicuri au apărut inițial fără pictogramă. Dacă vezi un bloc galben gol cu săgeată de selecție, deschide lista și selectează din nou culoarea indicată în ghid; pictograma se redesenează. Nu este un bloc nou sau un spațiu de completat.
 
-## Arhivă
+Cele opt fișiere au fost importate și testate în browser. Au trecut 14 probe, inclusiv obiectul mutat în afara traseului, ordinea încărcării, așteptarea ușii, două opriri de urgență și redeschiderea. Portul web raportează o eroare la înscrierea imaginilor în biblioteca globală; imaginile din proiecte s-au păstrat. Folosește starterul, nu căutarea imaginilor în acea bibliotecă. [Dovezi și limite](verificare/Atelierul_60min.md).
 
-[Parcul cu surprize - 50 min](README_50min.md) · [Ghid vechi](ghid-profesor-50min.html) · [PDF vechi](Ghid_profesor_Lectia_06_50min.pdf) · [ZIP vechi](../Lectia_06_ScratchJr.zip). Materialele noi sunt în `solutii_inspectie`.
+## Arhive
+
+[Robotul de inspecție - varianta cu bariere](README_inspectie_v2.md) · [Parcul cu surprize - 50 min](README_50min.md). ZIP-ul vechi al Lecției 6 aparține variantei de 50 de minute.

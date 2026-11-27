@@ -1,0 +1,3151 @@
+{
+  "lesson": 6,
+  "title": "Robotul pregătește atelierul",
+  "duration": 60,
+  "revision": "v3.1",
+  "projects": [
+    {
+      "key": "start",
+      "file": "start.sjr",
+      "name": "L06 Pregătim atelierul - de la zero · v3.1",
+      "sha256": "123b8216e860b15a83717dd55f0bd66a5e26147be49560d79ccf0aca57e52747",
+      "pages": [
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                252
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "incarcator",
+              "asset": "c9a4373bf875dd395585d10b3a74ff46.svg",
+              "name": "Încărcător",
+              "size": [
+                200,
+                160
+              ],
+              "position": [
+                300,
+                216
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "segment1",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 1",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                254,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": []
+            },
+            {
+              "id": "segment2",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 2",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                300,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": []
+            },
+            {
+              "id": "segment3",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 3",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                346,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": []
+            }
+          ],
+          "texts": []
+        },
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "cadru",
+              "asset": "99ce41dd3c38b2d536d8ba3b1c4abc7e.svg",
+              "name": "Cadrul ușii",
+              "size": [
+                112,
+                190
+              ],
+              "position": [
+                414,
+                260
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "usa",
+              "asset": "f50ba606ce930d89373e33e514385704.svg",
+              "name": "Ușă",
+              "size": [
+                86,
+                142
+              ],
+              "position": [
+                414,
+                272
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                300
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "buton",
+              "asset": "c828a8fb7712be2c1e30ae0e2765272f.svg",
+              "name": "Buton verde",
+              "size": [
+                48,
+                54
+              ],
+              "position": [
+                324,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "rest1",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 1",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "rest2",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 2",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "rest3",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 3",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                252,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "urgenta",
+              "asset": "021c972e9e4262f1936d4f02dadcc1f6.svg",
+              "name": "Oprire de urgență",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                60,
+                180
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m1",
+      "file": "m1.sjr",
+      "name": "L06 Pregătim atelierul - 1. Încărcarea · v3.1",
+      "sha256": "50d86e1793bb5343a153b0edbdde335e9a04e0fd36593a6631d1c89a8864356c",
+      "pages": [
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                252
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "back",
+                      "value": 4
+                    },
+                    {
+                      "block": "say",
+                      "value": "Încărcat!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "incarcator",
+              "asset": "c9a4373bf875dd395585d10b3a74ff46.svg",
+              "name": "Încărcător",
+              "size": [
+                200,
+                160
+              ],
+              "position": [
+                300,
+                216
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment1",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 1",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                254,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment2",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 2",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                300,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment3",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 3",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                346,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 30
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m2",
+      "file": "m2.sjr",
+      "name": "L06 Pregătim atelierul - 2. Curățenia · v3.1",
+      "sha256": "841090bd18802cd9edf90ceefe8cdd60018c6763413c415d818257498e9bd58c",
+      "pages": [
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "cadru",
+              "asset": "99ce41dd3c38b2d536d8ba3b1c4abc7e.svg",
+              "name": "Cadrul ușii",
+              "size": [
+                112,
+                190
+              ],
+              "position": [
+                414,
+                260
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "usa",
+              "asset": "f50ba606ce930d89373e33e514385704.svg",
+              "name": "Ușă",
+              "size": [
+                86,
+                142
+              ],
+              "position": [
+                414,
+                272
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                300
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "say",
+                      "value": "Curat!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "buton",
+              "asset": "c828a8fb7712be2c1e30ae0e2765272f.svg",
+              "name": "Buton verde",
+              "size": [
+                48,
+                54
+              ],
+              "position": [
+                324,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "rest1",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 1",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest2",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 2",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest3",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 3",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                252,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m3",
+      "file": "m3.sjr",
+      "name": "L06 Pregătim atelierul - 3. Deschidem ușa · v3.1",
+      "sha256": "8fa393931d7110b01f968603f5de0fc6b1340c6411f5ddcdafca07216edf7561",
+      "pages": [
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "cadru",
+              "asset": "99ce41dd3c38b2d536d8ba3b1c4abc7e.svg",
+              "name": "Cadrul ușii",
+              "size": [
+                112,
+                190
+              ],
+              "position": [
+                414,
+                260
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "usa",
+              "asset": "f50ba606ce930d89373e33e514385704.svg",
+              "name": "Ușă",
+              "size": [
+                86,
+                142
+              ],
+              "position": [
+                414,
+                272
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                300
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "say",
+                      "value": "Atelier pregătit!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "buton",
+              "asset": "c828a8fb7712be2c1e30ae0e2765272f.svg",
+              "name": "Buton verde",
+              "size": [
+                48,
+                54
+              ],
+              "position": [
+                324,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest1",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 1",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest2",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 2",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest3",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 3",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                252,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m4",
+      "file": "m4.sjr",
+      "name": "L06 Pregătim atelierul - 4. Atelierul pregătit · v3.1",
+      "sha256": "17b5fa750313e42a38ff05a8899229261f527223e6d1f0e8cc06456e78f1c3b0",
+      "pages": [
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                252
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "back",
+                      "value": 4
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "incarcator",
+              "asset": "c9a4373bf875dd395585d10b3a74ff46.svg",
+              "name": "Încărcător",
+              "size": [
+                200,
+                160
+              ],
+              "position": [
+                300,
+                216
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment1",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 1",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                254,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment2",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 2",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                300,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment3",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 3",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                346,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 30
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        },
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "cadru",
+              "asset": "99ce41dd3c38b2d536d8ba3b1c4abc7e.svg",
+              "name": "Cadrul ușii",
+              "size": [
+                112,
+                190
+              ],
+              "position": [
+                414,
+                260
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "usa",
+              "asset": "f50ba606ce930d89373e33e514385704.svg",
+              "name": "Ușă",
+              "size": [
+                86,
+                142
+              ],
+              "position": [
+                414,
+                272
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                300
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "say",
+                      "value": "Atelier pregătit!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "buton",
+              "asset": "c828a8fb7712be2c1e30ae0e2765272f.svg",
+              "name": "Buton verde",
+              "size": [
+                48,
+                54
+              ],
+              "position": [
+                324,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest1",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 1",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest2",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 2",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest3",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 3",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                252,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "creatie",
+      "file": "creatie.sjr",
+      "name": "L06 Pregătim atelierul - 5. Traseul meu · v3.1",
+      "sha256": "858de0fd7f5cf9cf6411cbfaa8799a2ec2c9060f5ed3bc8672058c4da8dea861",
+      "pages": [
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                252
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "back",
+                      "value": 4
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "incarcator",
+              "asset": "c9a4373bf875dd395585d10b3a74ff46.svg",
+              "name": "Încărcător",
+              "size": [
+                200,
+                160
+              ],
+              "position": [
+                300,
+                216
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment1",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 1",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                254,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment2",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 2",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                300,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment3",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 3",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                346,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 30
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        },
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "cadru",
+              "asset": "99ce41dd3c38b2d536d8ba3b1c4abc7e.svg",
+              "name": "Cadrul ușii",
+              "size": [
+                112,
+                190
+              ],
+              "position": [
+                414,
+                260
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "usa",
+              "asset": "f50ba606ce930d89373e33e514385704.svg",
+              "name": "Ușă",
+              "size": [
+                86,
+                142
+              ],
+              "position": [
+                414,
+                272
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                300
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "say",
+                      "value": "Atelier pregătit!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "buton",
+              "asset": "c828a8fb7712be2c1e30ae0e2765272f.svg",
+              "name": "Buton verde",
+              "size": [
+                48,
+                54
+              ],
+              "position": [
+                324,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest1",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 1",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest2",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 2",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                252,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest3",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 3",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                252,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r1",
+      "file": "r1.sjr",
+      "name": "L06 Pregătim atelierul - R1. Mai puțini pași · v3.1",
+      "sha256": "29ccf9429fbb29fd228602a3b1534fde48750f84f779a3dd805700f260cf3343",
+      "pages": [
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                252
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "back",
+                      "value": 4
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "incarcator",
+              "asset": "c9a4373bf875dd395585d10b3a74ff46.svg",
+              "name": "Încărcător",
+              "size": [
+                200,
+                160
+              ],
+              "position": [
+                300,
+                216
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment1",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 1",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                254,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment2",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 2",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                300,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment3",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 3",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                346,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 30
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        },
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "cadru",
+              "asset": "99ce41dd3c38b2d536d8ba3b1c4abc7e.svg",
+              "name": "Cadrul ușii",
+              "size": [
+                112,
+                190
+              ],
+              "position": [
+                414,
+                260
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "usa",
+              "asset": "f50ba606ce930d89373e33e514385704.svg",
+              "name": "Ușă",
+              "size": [
+                86,
+                142
+              ],
+              "position": [
+                414,
+                272
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                300
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "say",
+                      "value": "Atelier pregătit!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "buton",
+              "asset": "c828a8fb7712be2c1e30ae0e2765272f.svg",
+              "name": "Buton verde",
+              "size": [
+                48,
+                54
+              ],
+              "position": [
+                324,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest1",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 1",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest2",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 2",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest3",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 3",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                252,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r2",
+      "file": "r2.sjr",
+      "name": "L06 Pregătim atelierul - R2. Oprire de urgență · v3.1",
+      "sha256": "cfa39aadb3d06b6d0e894918199836100cffb6f4581a3fb6e7b9294699c27054",
+      "pages": [
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                252
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "back",
+                      "value": 4
+                    },
+                    {
+                      "block": "gotopage",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "incarcator",
+              "asset": "c9a4373bf875dd395585d10b3a74ff46.svg",
+              "name": "Încărcător",
+              "size": [
+                200,
+                160
+              ],
+              "position": [
+                300,
+                216
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment1",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 1",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                254,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment2",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 2",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                300,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "segment3",
+              "asset": "8ea365f6e557203c071f0df817151285.svg",
+              "name": "Segment 3",
+              "size": [
+                32,
+                40
+              ],
+              "position": [
+                346,
+                180
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 30
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        },
+        {
+          "background": "467b745b1a67255415ff9e94ff5ffd9b.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "cadru",
+              "asset": "99ce41dd3c38b2d536d8ba3b1c4abc7e.svg",
+              "name": "Cadrul ușii",
+              "size": [
+                112,
+                190
+              ],
+              "position": [
+                414,
+                260
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "usa",
+              "asset": "f50ba606ce930d89373e33e514385704.svg",
+              "name": "Ușă",
+              "size": [
+                86,
+                142
+              ],
+              "position": [
+                414,
+                272
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 5
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                60,
+                300
+              ],
+              "scale": 0.85,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "say",
+                      "value": "Atelier pregătit!"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Oprit!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "buton",
+              "asset": "c828a8fb7712be2c1e30ae0e2765272f.svg",
+              "name": "Buton verde",
+              "size": [
+                48,
+                54
+              ],
+              "position": [
+                324,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest1",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 1",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                300
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest2",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 2",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                156,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "rest3",
+              "asset": "68e2167e4c21b380875a38c319edc716.svg",
+              "name": "Rest 3",
+              "size": [
+                40,
+                30
+              ],
+              "position": [
+                252,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "urgenta",
+              "asset": "021c972e9e4262f1936d4f02dadcc1f6.svg",
+              "name": "Oprire de urgență",
+              "size": [
+                60,
+                60
+              ],
+              "position": [
+                60,
+                180
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    }
+  ]
+}

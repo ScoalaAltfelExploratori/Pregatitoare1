@@ -1,0 +1,130 @@
+{
+  "m4": {
+    "samples": 255,
+    "final_page": "page2",
+    "robot": [
+      372.0,
+      249.0
+    ],
+    "stopped": true,
+    "workshop_steps": 23.0
+  },
+  "m4_reset": {
+    "samples": 252,
+    "final_page": "page2",
+    "robot": [
+      372.0,
+      249.0
+    ],
+    "stopped": true
+  },
+  "m4_redeschis": {
+    "samples": 251,
+    "final_page": "page2",
+    "robot": [
+      372.0,
+      249.0
+    ],
+    "stopped": true
+  },
+  "r1": {
+    "samples": 253,
+    "final_page": "page2",
+    "robot": [
+      372.0,
+      249.0
+    ],
+    "stopped": true,
+    "workshop_steps": 21.0
+  },
+  "r2_stop_robot": {
+    "samples": 95,
+    "final_page": "page2",
+    "robot": [
+      204.0,
+      209.0
+    ],
+    "stopped": true
+  },
+  "r2_stop_usa": {
+    "samples": 156,
+    "final_page": "page2",
+    "robot": [
+      252.0,
+      249.0
+    ],
+    "stopped": true
+  },
+  "r2": {
+    "samples": 248,
+    "final_page": "page2",
+    "robot": [
+      372.0,
+      249.0
+    ],
+    "stopped": true
+  },
+  "creatie": {
+    "samples": 253,
+    "final_page": "page2",
+    "robot": [
+      372.0,
+      249.0
+    ],
+    "stopped": true
+  },
+  "m1": {
+    "samples": 124,
+    "final_page": "page1",
+    "robot": [
+      12.0,
+      201.0
+    ],
+    "stopped": true
+  },
+  "m2": {
+    "samples": 96,
+    "final_page": "page1",
+    "robot": [
+      204.0,
+      249.0
+    ],
+    "stopped": true
+  },
+  "m2_rest_mutat": {
+    "samples": 95,
+    "final_page": "page1",
+    "robot": [
+      204.0,
+      249.0
+    ],
+    "stopped": true
+  },
+  "m3": {
+    "samples": 124,
+    "final_page": "page1",
+    "robot": [
+      372.0,
+      249.0
+    ],
+    "stopped": true
+  },
+  "start_p1": {
+    "samples": 31,
+    "final_page": "page1",
+    "robot": [
+      12.0,
+      249.0
+    ],
+    "stopped": true
+  },
+  "start_p2": {
+    "samples": 31,
+    "final_page": "page2",
+    "robot": [
+      12.0,
+      249.0
+    ],
+    "stopped": true
+  }
+}
