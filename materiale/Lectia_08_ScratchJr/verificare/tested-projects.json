@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-27",
+  "browser": "ScratchJr Desktop Reborn / Chromium in-app",
+  "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/index.html",
+  "projects": [
+    {
+      "key": "start",
+      "name": "L08 Robotul submarin - de la zero · v1.3",
+      "sha256": "da4546ac6d0cce70ac6c8fb3c09208dd977f5191ca7578f99fafbc87113ed049"
+    },
+    {
+      "key": "m1",
+      "name": "L08 Robotul submarin - 1. Telecomanda · v1.3",
+      "sha256": "b58517933c978954c3edb76ce3a30e284c7d0ca39eb186ab3da14ae785f515e5"
+    },
+    {
+      "key": "m2",
+      "name": "L08 Robotul submarin - 2. Recuperarea · v1.3",
+      "sha256": "d200bd712e480cb7a92f5378340dfb3e7573fbca84a6a0b52d24f08ddf4022c9"
+    },
+    {
+      "key": "m3",
+      "name": "L08 Robotul submarin - 3. Misiunea completă · v1.3",
+      "sha256": "cb7a968953cf56fbf734320884461b41ab0d9378f7786b1a7804ba2a471a86ef"
+    },
+    {
+      "key": "creatie",
+      "name": "L08 Robotul submarin - 4. Pilotaj de precizie · v1.3",
+      "sha256": "852a48a442ac21b86e736c56abc963aa805de54ad8f28bcb06e7a35b11c6763c"
+    },
+    {
+      "key": "r1",
+      "name": "L08 Robotul submarin - R1. Transport fragil · v1.3",
+      "sha256": "2d8ef00d18a70887b0a9491f3291d2f6aad4f424ea316aa56b6c2477730f17eb"
+    },
+    {
+      "key": "r2",
+      "name": "L08 Robotul submarin - R2. Întoarcere automată · v1.3",
+      "sha256": "f21355cfd9d0a9ee6c5ef20e8ef130b88de85cedbc470e7da276015d6c50c8cd"
+    }
+  ],
+  "reopened": [
+    "start",
+    "m1",
+    "m2",
+    "m3",
+    "creatie",
+    "r1",
+    "r2"
+  ],
+  "notes": [
+    "Pictogramele au fost redesenate prin reselectarea acelorași culori și viteze în UI pentru capturi.",
+    "SJR-urile testate sunt pachetele v1.3, fără modificări ulterioare ale programelor."
+  ]
+}

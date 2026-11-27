@@ -1,6 +1,6 @@
 # Repere oficiale pentru cursul nostru ScratchJr
 
-Revizuire: 27 noiembrie 2026. Cursul de zece întâlniri folosește demonstrații scurte inspirate din resursele ScratchJr, urmate de puzzle-urile proprii și de 8-10 minute de creație personală. Exemplele sunt explicate în română în fiecare ghid. Legăturile de mai jos sunt pentru pregătirea profesorului; copiii pot lucra fără internet după instalare, verificare și, pentru Lecțiile 6 și 7, importarea starterului.
+Revizuire: 27 noiembrie 2026. Cursul de zece întâlniri folosește demonstrații scurte inspirate din resursele ScratchJr, urmate de puzzle-urile proprii și de 8-10 minute de creație personală. Exemplele sunt explicate în română în fiecare ghid. Legăturile de mai jos sunt pentru pregătirea profesorului; copiii pot lucra fără internet după instalare, verificare și, pentru Lecțiile 6, 7 și 8, importarea starterului.
 
 | Lecții | Sursa | Ce preluăm și adaptăm |
 | --- | --- | --- |
@@ -11,7 +11,7 @@ Revizuire: 27 noiembrie 2026. Cursul de zece întâlniri folosește demonstrați
 | 5 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper tehnic pentru mișcare, mesaje și viteze. Robotul curier este o poveste locală despre încărcare, transport și retur; simulare pe ecran. |
 | 6 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper tehnic: Start on Bump, mesaje, Wait, Go to Page și Stop. Robotul pregătește atelierul este o poveste locală: încărcare, curățenie și ușă automată, cu resurse originale incluse în starter. |
 | 7 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper pentru mesaje, viteze, Arată/Ascunde și Repetă finit. Fabrica de roboți este o poveste locală, cu montaj în paralel și resurse originale. |
-| 8 | [CAL, clasa I, lecția 16 - Freeze Dance Party](https://sites.bc.edu/codingasanotherlanguage/curricula/scratchjr-curricula/1st-grade-scratchjr/) | Dans și înghețare, fără muzică descărcată sau înregistrată. |
+| 8 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper pentru atingere, ciocnire, mesaje, viteze și vizibilitate. Robotul submarin este o poveste locală cu pilotaj interactiv, recuperare și resurse originale. |
 | 9 | [Animated Genres - Game](https://www.scratchjr.org/curricula/animatedgenres/full.pdf) | Un joc cu scop și reguli alese și explicate de copil. |
 | 10 | [Conversation](https://www.scratchjr.org/teach/activities/conversation) | Mesaje succesive; artiști cu trucuri în locul replicilor de tastat. |
 
@@ -27,8 +27,8 @@ Activitățile ScratchJr și documentul Animated Genres citat sunt create de Dev
 
 Playground Games, ediția 2022 citată, este creat de DevTech Research Group, condus de Marina Bers, și publicat sub [Creative Commons Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/). Adaptarea din arhiva „Parcul cu surprize”, versiunea veche a lecției 6, păstrează această licență.
 
-CAL ScratchJr, clasa I, © 2020-2025 DevTech Research Group, este publicat sub [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Adaptarea introducerii pentru lecția 8 păstrează această licență.
+CAL ScratchJr, clasa I, © 2020-2025 DevTech Research Group, este publicat sub [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Adaptarea din arhiva „Statuile fermecate”, versiunea veche a lecției 8, păstrează această licență.
 
 Numele activităților și legăturile sunt păstrate pentru identificarea surselor. Cursul nostru nu este aprobat sau certificat de autorii materialelor oficiale.
 
-Lecțiile 6 și 7 folosesc resurse originale, incluse în câte un SJR de pornire. Celelalte lecții păstrează biblioteca instalată. Proveniență: [atelierul](Lectia_06_ScratchJr/resurse_atelier/README.md), [fabrica](Lectia_07_ScratchJr/resurse_fabrica/README.md).
+Lecțiile 6, 7 și 8 folosesc resurse originale, incluse în câte un SJR de pornire. Celelalte lecții păstrează biblioteca instalată. Proveniență: [atelierul](Lectia_06_ScratchJr/resurse_atelier/README.md), [fabrica](Lectia_07_ScratchJr/resurse_fabrica/README.md), [submarinul](Lectia_08_ScratchJr/resurse_submarin/README.md).

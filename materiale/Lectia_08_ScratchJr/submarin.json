@@ -1,0 +1,4389 @@
+{
+  "lesson": 8,
+  "title": "Robotul submarin: recuperăm capsula de cercetare",
+  "duration": 60,
+  "revision": "v1.3",
+  "projects": [
+    {
+      "key": "start",
+      "name": "L08 Robotul submarin - de la zero · v1.3",
+      "file": "start.sjr",
+      "sha256": "da4546ac6d0cce70ac6c8fb3c09208dd977f5191ca7578f99fafbc87113ed049",
+      "pages": [
+        {
+          "background": "f035550d661974fb038eb38bdbcea706.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "platforma",
+              "asset": "cb1dff6914437e689dfc36251798bbf2.svg",
+              "name": "Platforma",
+              "size": [
+                150,
+                46
+              ],
+              "position": [
+                96,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "stanca",
+              "asset": "bacd4ace04d8037aba8143610030f5ec.svg",
+              "name": "Stânca",
+              "size": [
+                120,
+                96
+              ],
+              "position": [
+                220,
+                226
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sol",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula de pe fund",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                336,
+                240
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "livrata",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula livrată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "transport",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula transportată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "robot",
+              "asset": "8537383e491306eb33cc5e51c47ace64.svg",
+              "name": "Robot submarin",
+              "size": [
+                112,
+                84
+              ],
+              "position": [
+                96,
+                60
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "stanga",
+              "asset": "f7616a241458ed445b765a0fcb891443.svg",
+              "name": "Buton Stânga",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                36,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "dreapta",
+              "asset": "d9586d7f699a703d925aedf83a5bcfff.svg",
+              "name": "Buton Dreapta",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                100,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sus",
+              "asset": "3a9757bfbc3774b6139aef857f30d921.svg",
+              "name": "Buton Sus",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                164,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "jos",
+              "asset": "43e1431491938e71d9d2724d464a1d3c.svg",
+              "name": "Buton Jos",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                228,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "depune",
+              "asset": "90ed20387cade6e706b4120dde5b0ba0.svg",
+              "name": "Buton Depune",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                326,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "auto",
+              "asset": "240e1bae514f28693c1906d5145aaf3d.svg",
+              "name": "Buton Întoarcere",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                418,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m1",
+      "name": "L08 Robotul submarin - 1. Telecomanda · v1.3",
+      "file": "m1.sjr",
+      "sha256": "b58517933c978954c3edb76ce3a30e284c7d0ca39eb186ab3da14ae785f515e5",
+      "pages": [
+        {
+          "background": "f035550d661974fb038eb38bdbcea706.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "platforma",
+              "asset": "cb1dff6914437e689dfc36251798bbf2.svg",
+              "name": "Platforma",
+              "size": [
+                150,
+                46
+              ],
+              "position": [
+                96,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanca",
+              "asset": "bacd4ace04d8037aba8143610030f5ec.svg",
+              "name": "Stânca",
+              "size": [
+                120,
+                96
+              ],
+              "position": [
+                220,
+                226
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sol",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula de pe fund",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                336,
+                240
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "livrata",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula livrată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "transport",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula transportată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "robot",
+              "asset": "8537383e491306eb33cc5e51c47ace64.svg",
+              "name": "Robot submarin",
+              "size": [
+                112,
+                84
+              ],
+              "position": [
+                96,
+                60
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ],
+                [
+                  660,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "f7616a241458ed445b765a0fcb891443.svg",
+              "name": "Buton Stânga",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                36,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "d9586d7f699a703d925aedf83a5bcfff.svg",
+              "name": "Buton Dreapta",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                100,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "sus",
+              "asset": "3a9757bfbc3774b6139aef857f30d921.svg",
+              "name": "Buton Sus",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                164,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "jos",
+              "asset": "43e1431491938e71d9d2724d464a1d3c.svg",
+              "name": "Buton Jos",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                228,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "depune",
+              "asset": "90ed20387cade6e706b4120dde5b0ba0.svg",
+              "name": "Buton Depune",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                326,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "auto",
+              "asset": "240e1bae514f28693c1906d5145aaf3d.svg",
+              "name": "Buton Întoarcere",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                418,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m2",
+      "name": "L08 Robotul submarin - 2. Recuperarea · v1.3",
+      "file": "m2.sjr",
+      "sha256": "d200bd712e480cb7a92f5378340dfb3e7573fbca84a6a0b52d24f08ddf4022c9",
+      "pages": [
+        {
+          "background": "f035550d661974fb038eb38bdbcea706.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "platforma",
+              "asset": "cb1dff6914437e689dfc36251798bbf2.svg",
+              "name": "Platforma",
+              "size": [
+                150,
+                46
+              ],
+              "position": [
+                96,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanca",
+              "asset": "bacd4ace04d8037aba8143610030f5ec.svg",
+              "name": "Stânca",
+              "size": [
+                120,
+                96
+              ],
+              "position": [
+                220,
+                226
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sol",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula de pe fund",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                336,
+                240
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "livrata",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula livrată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "transport",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula transportată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ],
+                [
+                  660,
+                  20
+                ],
+                [
+                  660,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "8537383e491306eb33cc5e51c47ace64.svg",
+              "name": "Robot submarin",
+              "size": [
+                112,
+                84
+              ],
+              "position": [
+                96,
+                60
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ],
+                [
+                  660,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "f7616a241458ed445b765a0fcb891443.svg",
+              "name": "Buton Stânga",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                36,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "d9586d7f699a703d925aedf83a5bcfff.svg",
+              "name": "Buton Dreapta",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                100,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "sus",
+              "asset": "3a9757bfbc3774b6139aef857f30d921.svg",
+              "name": "Buton Sus",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                164,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "jos",
+              "asset": "43e1431491938e71d9d2724d464a1d3c.svg",
+              "name": "Buton Jos",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                228,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "depune",
+              "asset": "90ed20387cade6e706b4120dde5b0ba0.svg",
+              "name": "Buton Depune",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                326,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "auto",
+              "asset": "240e1bae514f28693c1906d5145aaf3d.svg",
+              "name": "Buton Întoarcere",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                418,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m3",
+      "name": "L08 Robotul submarin - 3. Misiunea completă · v1.3",
+      "file": "m3.sjr",
+      "sha256": "cb7a968953cf56fbf734320884461b41ab0d9378f7786b1a7804ba2a471a86ef",
+      "pages": [
+        {
+          "background": "f035550d661974fb038eb38bdbcea706.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "platforma",
+              "asset": "cb1dff6914437e689dfc36251798bbf2.svg",
+              "name": "Platforma",
+              "size": [
+                150,
+                46
+              ],
+              "position": [
+                96,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanca",
+              "asset": "bacd4ace04d8037aba8143610030f5ec.svg",
+              "name": "Stânca",
+              "size": [
+                120,
+                96
+              ],
+              "position": [
+                220,
+                226
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sol",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula de pe fund",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                336,
+                240
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "livrata",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula livrată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "transport",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula transportată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ],
+                [
+                  660,
+                  20
+                ],
+                [
+                  660,
+                  115
+                ],
+                [
+                  970,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "8537383e491306eb33cc5e51c47ace64.svg",
+              "name": "Robot submarin",
+              "size": [
+                112,
+                84
+              ],
+              "position": [
+                96,
+                60
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ],
+                [
+                  660,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "f7616a241458ed445b765a0fcb891443.svg",
+              "name": "Buton Stânga",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                36,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "d9586d7f699a703d925aedf83a5bcfff.svg",
+              "name": "Buton Dreapta",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                100,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "sus",
+              "asset": "3a9757bfbc3774b6139aef857f30d921.svg",
+              "name": "Buton Sus",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                164,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "jos",
+              "asset": "43e1431491938e71d9d2724d464a1d3c.svg",
+              "name": "Buton Jos",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                228,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "depune",
+              "asset": "90ed20387cade6e706b4120dde5b0ba0.svg",
+              "name": "Buton Depune",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                326,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "auto",
+              "asset": "240e1bae514f28693c1906d5145aaf3d.svg",
+              "name": "Buton Întoarcere",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                418,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "creatie",
+      "name": "L08 Robotul submarin - 4. Pilotaj de precizie · v1.3",
+      "file": "creatie.sjr",
+      "sha256": "852a48a442ac21b86e736c56abc963aa805de54ad8f28bcb06e7a35b11c6763c",
+      "pages": [
+        {
+          "background": "f035550d661974fb038eb38bdbcea706.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "platforma",
+              "asset": "cb1dff6914437e689dfc36251798bbf2.svg",
+              "name": "Platforma",
+              "size": [
+                150,
+                46
+              ],
+              "position": [
+                96,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanca",
+              "asset": "bacd4ace04d8037aba8143610030f5ec.svg",
+              "name": "Stânca",
+              "size": [
+                120,
+                96
+              ],
+              "position": [
+                220,
+                226
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sol",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula de pe fund",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                360,
+                240
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "livrata",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula livrată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "transport",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula transportată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ],
+                [
+                  660,
+                  20
+                ],
+                [
+                  660,
+                  115
+                ],
+                [
+                  970,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "8537383e491306eb33cc5e51c47ace64.svg",
+              "name": "Robot submarin",
+              "size": [
+                112,
+                84
+              ],
+              "position": [
+                96,
+                60
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ],
+                [
+                  660,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "f7616a241458ed445b765a0fcb891443.svg",
+              "name": "Buton Stânga",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                36,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "d9586d7f699a703d925aedf83a5bcfff.svg",
+              "name": "Buton Dreapta",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                100,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "sus",
+              "asset": "3a9757bfbc3774b6139aef857f30d921.svg",
+              "name": "Buton Sus",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                164,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "jos",
+              "asset": "43e1431491938e71d9d2724d464a1d3c.svg",
+              "name": "Buton Jos",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                228,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "depune",
+              "asset": "90ed20387cade6e706b4120dde5b0ba0.svg",
+              "name": "Buton Depune",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                326,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "auto",
+              "asset": "240e1bae514f28693c1906d5145aaf3d.svg",
+              "name": "Buton Întoarcere",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                418,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r1",
+      "name": "L08 Robotul submarin - R1. Transport fragil · v1.3",
+      "file": "r1.sjr",
+      "sha256": "2d8ef00d18a70887b0a9491f3291d2f6aad4f424ea316aa56b6c2477730f17eb",
+      "pages": [
+        {
+          "background": "f035550d661974fb038eb38bdbcea706.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "platforma",
+              "asset": "cb1dff6914437e689dfc36251798bbf2.svg",
+              "name": "Platforma",
+              "size": [
+                150,
+                46
+              ],
+              "position": [
+                96,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanca",
+              "asset": "bacd4ace04d8037aba8143610030f5ec.svg",
+              "name": "Stânca",
+              "size": [
+                120,
+                96
+              ],
+              "position": [
+                220,
+                226
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sol",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula de pe fund",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                336,
+                240
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "livrata",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula livrată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "transport",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula transportată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 0
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ],
+                [
+                  660,
+                  20
+                ],
+                [
+                  660,
+                  115
+                ],
+                [
+                  970,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "8537383e491306eb33cc5e51c47ace64.svg",
+              "name": "Robot submarin",
+              "size": [
+                112,
+                84
+              ],
+              "position": [
+                96,
+                60
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 0
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ],
+                [
+                  660,
+                  20
+                ],
+                [
+                  660,
+                  115
+                ],
+                [
+                  970,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "f7616a241458ed445b765a0fcb891443.svg",
+              "name": "Buton Stânga",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                36,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "d9586d7f699a703d925aedf83a5bcfff.svg",
+              "name": "Buton Dreapta",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                100,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "sus",
+              "asset": "3a9757bfbc3774b6139aef857f30d921.svg",
+              "name": "Buton Sus",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                164,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "jos",
+              "asset": "43e1431491938e71d9d2724d464a1d3c.svg",
+              "name": "Buton Jos",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                228,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "depune",
+              "asset": "90ed20387cade6e706b4120dde5b0ba0.svg",
+              "name": "Buton Depune",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                326,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "auto",
+              "asset": "240e1bae514f28693c1906d5145aaf3d.svg",
+              "name": "Buton Întoarcere",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                418,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r2",
+      "name": "L08 Robotul submarin - R2. Întoarcere automată · v1.3",
+      "file": "r2.sjr",
+      "sha256": "f21355cfd9d0a9ee6c5ef20e8ef130b88de85cedbc470e7da276015d6c50c8cd",
+      "pages": [
+        {
+          "background": "f035550d661974fb038eb38bdbcea706.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "platforma",
+              "asset": "cb1dff6914437e689dfc36251798bbf2.svg",
+              "name": "Platforma",
+              "size": [
+                150,
+                46
+              ],
+              "position": [
+                96,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forever",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanca",
+              "asset": "bacd4ace04d8037aba8143610030f5ec.svg",
+              "name": "Stânca",
+              "size": [
+                120,
+                96
+              ],
+              "position": [
+                220,
+                226
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "sol",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula de pe fund",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                336,
+                240
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "wait",
+                      "value": 5
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "livrata",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula livrată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "transport",
+              "asset": "747bdbd3023e440c39e6688eb8339152.svg",
+              "name": "Capsula transportată",
+              "size": [
+                40,
+                60
+              ],
+              "position": [
+                96,
+                120
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ],
+                [
+                  660,
+                  20
+                ],
+                [
+                  660,
+                  115
+                ],
+                [
+                  970,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "8537383e491306eb33cc5e51c47ace64.svg",
+              "name": "Robot submarin",
+              "size": [
+                112,
+                84
+              ],
+              "position": [
+                96,
+                60
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "down",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ],
+                [
+                  660,
+                  20
+                ]
+              ]
+            },
+            {
+              "id": "stanga",
+              "asset": "f7616a241458ed445b765a0fcb891443.svg",
+              "name": "Buton Stânga",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                36,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "dreapta",
+              "asset": "d9586d7f699a703d925aedf83a5bcfff.svg",
+              "name": "Buton Dreapta",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                100,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "sus",
+              "asset": "3a9757bfbc3774b6139aef857f30d921.svg",
+              "name": "Buton Sus",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                164,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "jos",
+              "asset": "43e1431491938e71d9d2724d464a1d3c.svg",
+              "name": "Buton Jos",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                228,
+                324
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  40,
+                  115
+                ],
+                [
+                  350,
+                  20
+                ],
+                [
+                  350,
+                  115
+                ]
+              ]
+            },
+            {
+              "id": "depune",
+              "asset": "90ed20387cade6e706b4120dde5b0ba0.svg",
+              "name": "Buton Depune",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                326,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "auto",
+              "asset": "240e1bae514f28693c1906d5145aaf3d.svg",
+              "name": "Buton Întoarcere",
+              "size": [
+                56,
+                46
+              ],
+              "position": [
+                418,
+                324
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "repeat": 5,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Yellow"
+                        }
+                      ]
+                    },
+                    {
+                      "repeat": 5,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Red"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  20
+                ],
+                [
+                  650,
+                  20
+                ],
+                [
+                  960,
+                  20
+                ]
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    }
+  ]
+}

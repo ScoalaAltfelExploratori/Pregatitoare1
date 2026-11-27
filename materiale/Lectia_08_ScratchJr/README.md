@@ -1,55 +1,33 @@
-# Lecția 8 - Statuile fermecate
+# Lecția 8 - Robotul submarin: recuperăm capsula de cercetare
 
-**50 de minute, 6-7 ani. Trei misiuni, inclusiv un puzzle dificil pentru toți, plus două rezerve suplimentare.** Ideile noi sunt Repeat Forever și Stop: controlăm un program în timp ce rulează și îl repornim de la un început clar.
+O oră în ScratchJr: construim telecomanda, recuperăm capsula de pe fundul mării și o depunem pe platformă. Puzzle-ul complet este în bază, urmat de 10 minute de creație. Două rezerve: transport fragil și întoarcere automată.
 
-## Exemplu, puzzle și creație proprie
+[Lecția pe site](index.html) · [Ghidul profesorului](ghid-profesor.html) · [PDF cu toate programele și capturi](Ghid_profesor_Lectia_08.pdf) · [Soluții](solutii_submarin/README.md).
 
-Deschidem cu **Dans și înghețare**, pornind de la [CAL clasa I - Freeze Dance Party (lecția 16)](https://sites.bc.edu/codingasanotherlanguage/curricula/scratchjr-curricula/1st-grade-scratchjr/). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+## Pregătirea cea mai simplă
 
-**Minutele 37-45: Coregrafia mea** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+Importă doar [start.sjr](solutii_submarin/start.sjr) pe fiecare tabletă înaintea orei. Conține toate imaginile noi: robot mare, capsulă, fundal subacvatic, platformă, stâncă și butoane. Nu se copiază imagini separat. Toate cele 12 personaje sunt fără cod. Copiii construiesc M1-M3 în același proiect.
 
-[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_08.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+**Pe laptop, în browser:** deschide [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html), apasă Open, alege SJR-ul și cardul **L08 Robotul submarin - de la zero · v1.3**. Nu este necesar emulatorul. Acesta este portul comunitar testat, distinct de aplicația Android.
 
-## Pregătire simplă
+**Pe Lenovo:** cu ScratchJr instalat, descarcă SJR-ul și încearcă deschiderea din Fișiere/Descărcări cu ScratchJr, dacă sistemul oferă aplicația. Verifică asocierea fișierului, importul, salvarea, redeschiderea și m3.sjr pe o tabletă a școlii înainte de distribuire. Testele actuale nu au folosit un Lenovo fizic. Instalarea aplicației nu adaugă singură aceste resurse; starterul trebuie importat o dată. După import nu sunt necesare descărcări în timpul orei.
 
-Numai **Rabbit, Dog, Butterfly, Ball și Park**, din biblioteca ScratchJr. Fără importuri pe tabletele copiilor, descărcări, sunete, înregistrări sau texte de scris. Creăm scena împreună; copiii construiesc programele. SJR-urile sunt referințe opționale pentru profesor.
+**Pornire:** un steag pornește stația. Apasă săgețile pe rând și așteaptă fiecare mișcare; după contact, așteaptă prinderea capsulei. Pentru reluare: Stop, apoi Steag. La salvare: Stop și revenire în galerie. Proiectul de pornire nu reacționează până când copiii adaugă programele.
 
-Iepurele și câinele sunt separați și rămân pe loc. Folosim transformări de mărime, fără coordonate exacte. La M3 adăugăm fluturele pentru Pornire și mingea pentru Înghețare, sus și separate de artiști. Nu micșorăm butoanele.
+Importurile făcute anterior nu se actualizează automat. Pentru această lecție folosește cardurile v1.3. Soluțiile separate sunt pentru consultare; nu trebuie distribuite toate copiilor.
 
 ## Materiale
 
-- [Ghidul profesorului](Ghid_profesor.md) și [PDF de cinci pagini](Ghid_profesor_Lectia_08.pdf).
-- [Cinci cartonașe PDF](Cartonase_Lectia_08.pdf), cu ținte și scheme, fără soluțiile complete.
-- [Soluții explicate și cinci SJR-uri](solutii/lectia_08/README.md).
-- [Demo](proiecte/00_Demo_Statuie.sjr), [scenă fără programe](proiecte/01_Start_Statui.sjr), [index pentru proiector](index.html).
-- [Raportul testelor](verificare/README.md) și [fișa de observații](Observatii_dupa_lectie.md).
+- [Starter și șase soluții native SJR](solutii_submarin/README.md), toate editabile.
+- [Ghid complet](Ghid_profesor.md): poveste, timp, indicii și programele tuturor personajelor.
+- [Plan concis și capturi reale în PDF](Ghid_profesor_Lectia_08.pdf), inclusiv ambele rezerve.
+- [Resurse și proveniență](resurse_submarin/README.md), incluse în fiecare SJR.
+- [Raportul verificării în browser](verificare/Submarinul_60min.md).
 
-| Activitate | Ținta |
-| --- | --- |
-| M1 Artistul neobosit | Mare-normal, la nesfârșit, fără acumularea mărimii |
-| M2 Fiecare cu pauza lui | Atingerea oprește numai artistul ales |
-| M3 Regizorul statuilor - dificilă | Două butoane și două mesaje: pornire-înghețare de două ori |
-| R1 Trei ipostaze | Normal-mare-mic; înghețarea într-o stare aleasă |
-| R2 Cortina automată | Un tap pornește artiștii și cronometrul, apoi oprire automată |
+Stânca este un obstacol verificat vizual. Depune nu verifică automat poziția: copilul aliniază capsula cu platforma, apoi apasă butonul. Capsula are trei imagini coordonate: pe fund, transportată și livrată. Ghidul explică aceste roluri.
 
-Rezervele de 6-8 și 8-10 minute sunt peste cele 50 de minute. Nu înlocuiesc provocarea dificilă, pauza sau salvarea. Copiii construiesc pentru ținte; nu copiază intenționat programe greșite.
+Portul web raportează erori la biblioteca globală de imagini personalizate (usershapes/userbkgs). Resursele incluse în proiecte s-au importat, afișat și păstrat la redeschidere. Nu ne bazăm pe biblioteca globală. Dacă un plic sau o viteză apare fără pictogramă, reselectează aceeași culoare/viteză din săgeata blocului; aceasta a refăcut pictogramele pentru capturile PDF.
 
-## Detalii importante pentru predare
+## Arhiva veche
 
-Forever se pune la sfârșitul rutinei. Stop portocaliu se pune în alt program al aceluiași artist. Nu îl confundăm cu End roșu sau cu oprirea generală din bara aplicației. Stop oprește celelalte programe active ale personajului său; pentru doi artiști, fiecare trebuie să primească mesajul de oprire.
-
-O nouă pornire reia rutina de la început, nu din locul întrerupt. Mărime inițială la început permite repetarea fără Reset. Nu cerem o dimensiune exactă la înghețare, cu excepția țintei alese în R1. În R2, mingea cronometrează în paralel, pornită de același mesaj ca artiștii.
-
-## Proba pe PC în browser
-
-Deschide [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/), portul comunitar folosit pentru teste. În galerie, Open → alege SJR-ul → deschide proiectul. Demo, M1, M2 și R1 pornesc la steag. M3 și R2 pornesc prin fluture. Starterul nu are programe.
-
-La M1 oprește din bara aplicației. La demo și R1 atinge iepurele. La M2 oprește pe rând iepurele și câinele. La M3 folosește mingea, iar la R2 așteaptă oprirea automată. Repetă fără Reset, oprește, revino în galerie și redeschide.
-
-Browserul nu se sincronizează cu tabletele. [Raportul](verificare/README.md) descrie verificările reale și limitele lor. Înainte de clasă reconstruiește M2 și M3 pe un Lenovo, verifică două reporniri, salvarea și redeschiderea fără internet. Nu trebuie distribuite fișiere copiilor.
-
-## Surse editabile
-
-`lesson.json` definește programele și cartonașele. `Ghid_profesor.md` este sursa ghidului. `python build_pack.py` regenerează cele două PDF-uri și șapte SJR-uri; `--projects-only` generează doar proiectele. Necesită Python, reportlab, Pillow, pypdf și fonturile Arial din Windows. Modificarea programelor cere repetarea testelor în editor.
-
-[Planul celor zece lecții](../Plan_10_lectii_ScratchJr.md).
+[Statuile fermecate · 50 min](README_50min.md) · [Ghid vechi](ghid-profesor-50min.html) · [PDF vechi](Ghid_profesor_Lectia_08_50min.pdf) · [Cartonașe vechi](Cartonase_Lectia_08.pdf) · [ZIP vechi](../Lectia_08_ScratchJr.zip). Nu sunt materialele submarinului.

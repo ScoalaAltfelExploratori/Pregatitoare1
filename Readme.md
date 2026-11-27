@@ -120,7 +120,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 1
 
-[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește resursele aplicației, cu două excepții: Lecțiile 6 și 7 includ atelierul și fabrica de roboți în câte un starter SJR, de importat înaintea orei. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–7 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
+[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește resursele aplicației, cu trei excepții: Lecțiile 6, 7 și 8 includ atelierul, fabrica de roboți și misiunea submarină în câte un starter SJR, de importat înaintea orei. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–8 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
 
 [README-ul lecției 1](materiale/Lectia_01_ScratchJr/README.md) conține instalarea pe Lenovo, construirea scenei și testarea opțională în browser. [Raportul de verificare](materiale/Lectia_01_ScratchJr/verificare/README.md) separă cele șapte proiecte finale testate în browser de probele Android și Desktop anterioare.
 
@@ -150,7 +150,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 8
 
-[Statuile fermecate](materiale/Lectia_08_ScratchJr/README.md) introduce Forever și Stop: artiști care se transformă continuu, oprire individuală și puzzle dificil cu două comenzi pentru ambii artiști. Două rezerve: trei ipostaze și cortina automată. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul celor 50 de verificări în browser](materiale/Lectia_08_ScratchJr/verificare/README.md). Numai resurse incluse în aplicație, fără fișiere de distribuit copiilor.
+[Robotul submarin](materiale/Lectia_08_ScratchJr/index.html): 60 de minute, telecomandă, recuperare la contact, transport și depunere. Puzzle greu în bază, 10 minute de creație și două rezerve: transport fragil, întoarcere automată. [Starter cu resurse noi și mari](materiale/Lectia_08_ScratchJr/solutii_submarin/start.sjr), [PDF de 19 pagini cu toate programele](materiale/Lectia_08_ScratchJr/Ghid_profesor_Lectia_08.pdf), [ghid](materiale/Lectia_08_ScratchJr/ghid-profesor.html) și [testele în browser](materiale/Lectia_08_ScratchJr/verificare/Submarinul_60min.md).
 
 ## Cursul ScratchJr: lecția 9
 

@@ -1,151 +1,316 @@
-# Lecția 8 Statuile fermecate
+# Lecția 8 - Robotul submarin: recuperăm capsula de cercetare
 
-50 de minute, copii de 6-7 ani. Trei misiuni, inclusiv un puzzle dificil pentru toți, plus două rezerve suplimentare. Copiii construiesc artiști care se transformă continuu și inventează comenzi pentru a-i îngheța și reporni.
+60 de minute · 6-7 ani · puzzle greu în bază · 10 minute de creație · două rezerve suplimentare.
 
-## Ideea nouă: continuă până primește alt semnal
+[Plan și programe cu capturi](Ghid_profesor_Lectia_08.pdf) · [Proiect de pornire](solutii_submarin/start.sjr) · [Toate soluțiile](solutii_submarin/README.md).
 
-Introducem **Repetă la nesfârșit / Repeat Forever**, blocul roșu cu săgeată circulară, și **Oprește / Stop**, blocul portocaliu. Forever se pune la sfârșitul programului și reia acțiunile acelui program. Repeat cu număr are un sfârșit; Forever continuă până este oprit. Nu punem alte acțiuni după blocul roșu.
+## Povestea pentru copii
 
-Blocul portocaliu Stop întrerupe celelalte programe active ale personajului care îl execută. Nu oprește automat toate personajele. Îl punem într-un program separat, pornit la atingere sau la mesaj. Blocul roșu End nu înlocuiește Stop. Butonul roșu din bara aplicației oprește tot proiectul și rămâne disponibil profesorului.
+„O capsulă cu măsurători s-a desprins de la stația de cercetare și a ajuns pe fundul mării. Robotul submarin poate ajunge la ea. Noi îi construim telecomanda: trebuie să ocolească stânca, să prindă capsula și să o aducă pe platformă. După depunere, robotul trebuie să poată pleca singur la următoarea misiune.”
 
-**Înghețare nu înseamnă reluare din același punct.** La o nouă pornire, rutina începe de la primul bloc. Folosim Mărime inițială la început, astfel încât fiecare repornire să aibă un început clar, chiar după o oprire în mijlocul transformării.
+Noutatea față de fabrică: pilotul decide următoarea mișcare în timpul rulării. Același robot lucrează gol sau încărcat. Mesajele coordonează telecomanda și sarcina; apariția unui buton arată ce acțiune este disponibilă.
 
-## Pregătire numai cu resurse incluse
+## Înaintea orei
 
-Proiect nou: **Park, Rabbit și Dog** din biblioteca instalată. Iepurele în stânga, câinele în dreapta, la mărimile inițiale, cu spațiu între ei. Pozițiile exacte și grila nu sunt necesare. Personajele nu merg și nu se ciocnesc; doar dimensiunile se schimbă.
+Importă numai start.sjr pe fiecare tabletă. Cardul este **L08 Robotul submarin - de la zero · v1.3**. Toate cele 12 personaje sunt fără programe; resursele sunt deja incluse. Nu copiem imagini separat. Verifică importul și redeschiderea pe un Lenovo al școlii; testele acestui pachet au folosit portul din browser.
 
-La M3 adăugăm **Butterfly** sus în stânga pentru Pornire și **Ball** sus în dreapta pentru Înghețare. Nu le micșorăm: trebuie să fie ușor de atins. Folosim toate cele patru personaje pe o singură pagină, fără sunete, texte, înregistrări, importuri sau fișiere copiate pe tablete.
+Păstrează pozițiile și dimensiunile starterului. Platforma și stânca sunt repere. Capsula are trei copii: pe fund, transportată și livrată. Ultimele două sunt ascunse la început, ca și butoanele Depune și Întoarcere. Personajele ascunse pot fi selectate în lista din stânga. M1, M2 și M3 se construiesc în același proiect; soluțiile separate sunt repere, nu importuri obligatorii la fiecare pas.
 
-## Demonstrație scurtă
+Pentru probe: un steag pornește stația. Butonul devine Stop și rămâne așa în timpul pilotajului. **O apăsare de săgeată, apoi așteptăm terminarea mișcării.** Pentru reluare: Stop, apoi Steag. Nu apăsăm steagul între două comenzi. Salvare: Stop, revenire în galerie, redeschidere.
 
-Iepure: steag → mărime inițială → mărește 4 → așteaptă 10 → micșorează 4 → așteaptă 10 → Forever. Arătăm cel puțin trei runde: dimensiunea mare nu crește de la o rundă la alta. Așteaptă 10 înseamnă aproximativ o secundă de pauză.
+## 0-7 minute - Citim scena
 
-Separat, pe același iepure: atingere → Stop portocaliu. Atingem personajul pe scenă; rămâne în starea din momentul opririi. Steagul repornește rutina de la început. Miniatura din stânga este pentru editare, nu pentru probă. Nu folosim Reset între cele două rulări; programul însuși își pregătește mărimea.
+Arată capsula, cleștele, platforma și stânca. Copiii propun traseul fără să miște robotul cu degetul. Verificăm grila: o apăsare Dreapta/Stânga va însemna 2 pătrățele; Sus/Jos, 1 pătrățel. Stânca trebuie ocolită și cu încărcătura, nu doar cu corpul robotului.
 
-## Cele 50 de minute
+Întrebarea orei: „Cum facem ca robotul și capsula să rămână împreună, chiar când schimbăm direcția?”
 
-| Minute | Activitate | Acțiunea profesorului |
-| --- | --- | --- |
-| 0-4 | Exemplu oficial adaptat | Dansăm, înghețăm, repornim. |
-| 4-8 | Scena | Iepure și câine, separați. |
-| 8-17 | Misiunea 1 | Rutina continuă și oprirea. |
-| 17-24 | Misiunea 2 | Oprim artiștii separat. |
-| 24-27 | Pauză | Joc scurt de statui. |
-| 27-37 | Puzzle dificil | Regizorul comandă grupul. |
-| 37-45 | Creația mea | Coregrafii personale, comenzi păstrate. |
-| 45-50 | Explic și salvez | Oprim toate rutinele, salvăm și redeschidem. |
+## 7-20 minute - M1. Telecomanda
 
-**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+**Țintă:** patru butoane comandă același robot. Dreapta, Jos, Stânga, Sus îl aduc înapoi la punctul de pornire.
 
-## Exemplu oficial adaptat: Dans și înghețare
+1. Platforma: Steag → Așteaptă 10 → Repetă mereu. Aceasta este stația care rămâne pornită cât timp așteaptă comenzile pilotului. Folosim blocul roșu Repetă mereu, nu rama portocalie cu număr.
+2. Robotul: Steag → La poziția inițială → Arată → Viteză normală.
+3. Buton Stânga: La atingere → Trimite roșu. Robotul: un fir separat Primește roșu → Stânga 2. Fă această pereche împreună cu ei, apoi fiecare construiește celelalte trei.
+4. Buton Dreapta trimite portocaliu; robotul primește portocaliu și face Dreapta 2. Sus trimite galben, robotul face Sus 1. Jos trimite albastru, robotul face Jos 1.
+5. La fiecare săgeată: Steag → Arată. La Capsula de pe fund: Steag → Arată. Celelalte copii și cele două butoane speciale rămân fără cod, ascunse.
 
-**Reper:** [CAL clasa I - Freeze Dance Party (lecția 16)](https://sites.bc.edu/codingasanotherlanguage/curricula/scratchjr-curricula/1st-grade-scratchjr/). Pornim de la jocul de dans și înghețare din CAL. Mimăm o mișcare și o oprire, apoi urmărim același lucru pe ecran. Păstrăm personajele și demo-ul existent, fără muzică sau înregistrări.
+**Probă:** steag; Dreapta, Jos, Stânga, Sus. Copilul arată o pereche de plicuri și explică cine trimite și cine execută. Dacă robotul nu răspunde, verificăm culoarea, conectarea și personajul selectat. Nu înlocuim cele patru fire cu un singur traseu automat.
 
-**Model pentru demonstrație:** Rabbit are două programe: steag → sari 2 → repetă mereu; separat, atingere → oprește. Oprirea portocalie oprește programele personajului. Steagul repornește dansul.
+## 20-32 minute - M2. Recuperarea
 
-**Întreabă înainte de rulare:** „Cum îl opresc fără butonul roșu de sus? Arată programul care ascultă atingerea în timp ce celălalt continuă.”
+**Țintă:** ajungem deasupra capsulei, coborâm și o ridicăm vizibil sub clește. Capsula de pe fund nu dispare până la contact.
 
-Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
+1. Selectează Capsula transportată din listă. Steag → La poziția inițială → Ascunde → Viteză normală. Poziția ei inițială este sub cleștele robotului, nu pe fundul mării.
+2. Copiază cele patru fire cu mesaje de mișcare de la robot la această capsulă. În ScratchJr poți trage un fir în miniatura altui personaj. Verifică fiecare culoare și număr după copiere. Ambele personaje trebuie să răspundă la aceleași patru comenzi.
+3. Capsula de pe fund: un fir nou La ciocnire → Așteaptă 5 → Ascunde → Trimite verde. Pauza scurtă lasă cleștele să termine coborârea. Păstrează Steag → Arată.
+4. Capsula transportată: Primește verde → Arată. Ea a urmat invizibil robotul; apare exact în locul capsulei de pe fund.
 
-Rezervele de 6-8 și 8-10 minute sunt în plus. Păstrăm puzzle-ul dificil pentru toți, cu indicii. Dacă adăugarea butoanelor durează, o demonstrăm pentru întreaga clasă. Copiii construiesc pentru ținte, fără copierea unor greșeli impuse.
+**Probă:** Stop, Steag; 5 apăsări Dreapta, apoi 5 Jos. Așteaptă să se termine prinderea. Apasă Sus: capsula trebuie să urce sub clește. În M2 nu există încă depunere.
 
-## Misiunea 1 Artistul neobosit
+**Indicii:** „Cine primește plicul albastru?” → „Ambele imagini au același număr?” → „De unde pornește copia ascunsă?” Nu mutăm cu degetul doar copia transportată ca să reparăm decalajul: refacem poziția din starter și perechile de programe.
 
-**Ținta:** după steag, iepurele alternează mare-normal, cu o pauză la fiecare mărime, fără să se oprească singur. Câinele rămâne nemișcat. După trei runde, mărimea mare trebuie să fie aceeași ca în prima rundă.
+## 32-47 minute - M3. Misiunea completă | dificil, pentru toți
 
-**Soluție:** steag → mărime inițială → mărește 4 → așteaptă 10 → micșorează 4 → așteaptă 10 → Forever. Câinele nu are program. Copiii văd ținta și aleg blocurile deja cunoscute; profesorul demonstrează atașarea noului bloc roșu.
+**Țintă:** recuperăm, ocolim stânca, depunem pe platformă și plecăm cu robotul gol. Toate aceste părți sunt în baza orei.
 
-**Verificare:** observăm trei runde. Folosim butonul general de oprire din bara aplicației pentru a încheia proba, apoi steagul pentru o nouă probă. La M2 construim propriul mod de oprire.
+1. Capsula transportată: adaugă Primește mov → Ascunde.
+2. Capsula livrată: Steag → Ascunde; separat Primește mov → Arată. Această copie este deja așezată pe marcajul platformei; nu îi adăuga săgeți de deplasare.
+3. Buton Depune: Steag → Ascunde; Primește verde → Arată; La atingere → Ascunde → Trimite mov. Astfel apare abia după prindere și dispare după folosire.
+4. Păstrăm toate firele din M1 și M2. Buton Întoarcere rămâne fără cod și ascuns.
 
-**Indicii:** „Ce trebuie să revină la fiecare rundă?”, „Cum faci să vezi starea mare o clipă?”, „De unde începe următoarea rundă?”. Forever reia tot programul de după pornire; nu are număr de runde.
+**Traseu de verificare:** 5 Dreapta, 5 Jos; după prindere, 5 Sus, 5 Stânga. Capsula ajunge deasupra marcajului verde. Apasă Depune și așteaptă schimbarea. Apoi Dreapta: robotul pleacă, capsula rămâne pe platformă.
 
-## Misiunea 2 Fiecare cu pauza lui
+**Criterii:** capsula apare sub clește; rămâne la aceeași distanță în toate direcțiile; ocolim stânca; depunem aliniat; capsula livrată nu urmează robotul; o nouă pornire reface scena.
 
-**Ținta:** steagul pornește doi artiști. Iepurele alternează mare-normal; câinele mic-normal. Atingem iepurele: îngheață, iar câinele continuă. Atingem câinele: îngheață și el. Un nou steag repornește amândoi.
+**Reguli ale simulării:** stânca nu blochează automat robotul. Copilul verifică vizual traseul. Butonul Depune nu testează poziția robotului: îl folosim numai deasupra platformei. O apăsare în alt loc ar schimba imaginile și ar face capsula să pară că sare pe platformă; aceasta nu este o livrare corectă. La ciocnire reacționează la orice personaj vizibil, de aceea nu mutăm decorul peste capsulă.
 
-- Iepurele păstrează rutina M1 și primește separat: atingere → Stop portocaliu.
-- Câine: steag → mărime inițială → micșorează 4 → așteaptă 10 → mărește 4 → așteaptă 10 → Forever.
-- Câinele primește separat: atingere → Stop portocaliu.
+## 47-57 minute - Pilotajul meu
 
-**Verificare:** după atingerea iepurelui așteptăm încă o rundă a câinelui. După atingerea câinelui, amândoi rămân înghețați. Repetăm fără Reset. **Indiciu:** „Pe ce personaj trebuie să fie Stop ca să îl oprești numai pe el?”.
+Copilul alege o poziție nouă a capsulei, pe aceeași linie de fund, și decide cât de fin răspunde telecomanda. Modifică pașii orizontali la robot **și** la copia transportată. Înainte de probă spune traseul; după probă explică o schimbare.
 
-## Misiunea 3 Regizorul statuilor
+Exemplul din soluție: capsula este cu un pătrățel mai la dreapta. Stânga/Dreapta devin câte 1 pas pentru ambele personaje. 11 Dreapta, 5 Jos; după prindere 5 Sus, 11 Stânga, Depune. Exemplul este o posibilitate, nu o cerință pentru toată clasa. Păstrăm platforma, distanța robot-capsulă și spațiul pentru ocolire.
 
-**Puzzle dificil pentru toți:** fluturele pornește ambii artiști; mingea îi îngheață pe amândoi. Repetăm **fluture → minge → fluture → minge**, folosind numai personajele de pe scenă. Artiștii reîncep de la mărimea inițială. Nu apăsăm Reset sau butonul general de oprire în timpul probei.
+## 57-60 minute - Probă și salvare
 
-**Trecere:** păstrăm rutinele M2. Înlocuim steagul fiecărui artist cu La mesaj portocaliu. Înlocuim pornirea La atingere a fiecărui Stop cu La mesaj albastru. Nu lăsăm programele vechi în paralel. Adăugăm Butterfly și Ball, separat de artiști.
+Copilul arată capsula rămasă pe platformă și mișcă robotul gol. Explică unul dintre plicuri sau motivul pentru care două personaje primesc aceeași comandă. Stop, Steag pentru resetare, Stop, apoi salvare în galerie și redeschidere.
 
-| Personaj | Program |
+## Rezerva 1 - Transport fragil | +5-8 minute
+
+Capsula conține un senzor sensibil. Robotul merge normal când este gol și lent când o transportă. Pornim din M3.
+
+Robotul primește verde → Viteză lentă; mov → Viteză normală. La capsula transportată, după Arată din firul verde punem Viteză lentă; după Ascunde din firul mov punem Viteză normală. Steagul setează normal la ambele. Nu schimbăm distanțele.
+
+**Probă:** drumul încărcat durează mai mult, dar capsula nu rămâne în urmă. După Depune, o apăsare Dreapta mută robotul gol cu viteza normală. Dacă schimbăm viteza doar la unul, încărcătura se desface de clește.
+
+## Rezerva 2 - Întoarcere automată | +8-10 minute
+
+După prindere, pilotul pornește un traseu automat cunoscut. Pornim separat din M3, cu viteza normală și pași orizontali de 2; nu din R1 sau din creație.
+
+1. La fiecare săgeată: Primește verde → Ascunde; Primește mov → Arată. Păstrăm cele două fire inițiale. Din momentul prinderii, pilotul nu mai poate schimba traseul manual.
+2. Buton Întoarcere: Steag → Ascunde; Primește verde → Arată. La atingere → Ascunde → Repetă 5 { Trimite galben } → Repetă 5 { Trimite roșu } → Trimite mov.
+3. Buton Depune rămâne ascuns și fără programe în această variantă. Depunerea este ultima comandă a traseului automat.
+
+**Probă:** 5 Dreapta, 5 Jos, așteptăm prinderea, apoi o singură atingere a butonului Întoarcere. Săgețile dispar, robotul urcă, revine, depune. Săgețile apar din nou; robotul poate pleca gol. Apăsările în locul săgeților ascunse nu schimbă traseul. Dacă mutăm capsula sau schimbăm pasul, recalculăm buclele: programul nu caută singur platforma.
+
+## Programele complete, etapă cu etapă
+
+Fiecare rând este un fir separat. PDF-ul arată aceleași programe în capturi reale, inclusiv firele păstrate din etapa anterioară. Repetă mereu este blocul roșu; Repetă 5 este rama portocalie. Platforma are programul stației; Stânca nu are cod.
+
+### 1. Telecomanda
+
+| Personaj | Program complet |
 | --- | --- |
-| Fluture | Atingere → trimite portocaliu. |
-| Minge | Atingere → trimite albastru. |
-| Iepure, rutina | La portocaliu → mărime inițială → mărește 4 → așteaptă 10 → micșorează 4 → așteaptă 10 → Forever. |
-| Câine, rutina | La portocaliu → mărime inițială → micșorează 4 → așteaptă 10 → mărește 4 → așteaptă 10 → Forever. |
-| Fiecare artist, separat | La albastru → Stop portocaliu. |
+| Platforma | Steag → Așteaptă 10 → Repetă mereu |
+| Stânca | Fără program |
+| Capsula de pe fund | Steag → Arată |
+| Capsula livrată | Fără program · ascuns |
+| Capsula transportată | Fără program · ascuns |
+| Robot submarin | Steag → La poziția inițială → Arată → Viteză normală |
+| Robot submarin | Primește roșu → Stânga 2 |
+| Robot submarin | Primește portocaliu → Dreapta 2 |
+| Robot submarin | Primește galben → Sus 1 |
+| Robot submarin | Primește albastru → Jos 1 |
+| Buton Stânga | La atingere → Trimite roșu |
+| Buton Stânga | Steag → Arată |
+| Buton Dreapta | La atingere → Trimite portocaliu |
+| Buton Dreapta | Steag → Arată |
+| Buton Sus | La atingere → Trimite galben |
+| Buton Sus | Steag → Arată |
+| Buton Jos | La atingere → Trimite albastru |
+| Buton Jos | Steag → Arată |
+| Buton Depune | Fără program · ascuns |
+| Buton Întoarcere | Fără program · ascuns |
 
-**Ce este dificil:** un mesaj pornește două rutine continue, iar alt mesaj le întrerupe. Fiecare artist trebuie să primească ambele comenzi. Butonul-minge trimite mesajul; Stop trebuie să fie pe artiști, pentru că fiecare personaj își oprește propriile programe.
+### 2. Recuperarea
 
-**Indicii progresive:** „Fă întâi fluturele să pornească numai iepurele”, „Cine mai ascultă același plic?”, „Unde trebuie să ajungă comanda de înghețare?”, „Cine are nevoie de Stop?”, „Ce pregătește mărimea la o nouă pornire?”.
-
-**Verificare:** două secvențe complete pornire-înghețare. La înghețare așteptăm două secunde: nimeni nu își continuă transformarea. Atingerea directă a artiștilor nu îi oprește în acest model. Folosim câte un tap clar și așteptăm înghețarea înainte de repornire.
-
-Copiii pot alege pauze mai lungi sau alt număr moderat, egal în cele două blocuri de mărire/micșorare. Păstrăm mărimea inițială la începutul rutinei. Nu cerem ca artiștii să înghețe la aceeași dimensiune sau în aceeași fază.
-
-## Creația mea: Coregrafia mea
-
-**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
-
-**Spune copiilor:** „Alege o rutină funcțională și schimbă grupul de acțiuni cu două acțiuni alese de tine: salturi de înălțimi diferite sau un mic drum dus-întors. Păstrează comanda de înghețare. Alege dacă artiștii dansează la fel sau diferit.”
-
-**Verificarea autorului:** Pornește, oprește și repornește. Observă că oprirea poate surprinde personajul între două acțiuni. Nu cere revenirea la normal prin simplul Stop; aceea este o comandă separată din rezerve.
-
-**Sprijin și extensie:** Schimbă numai saltul sau pauza dintre salturi. Pentru mai multă dificultate, păstrează comenzile de grup din puzzle și inventează rutine diferite pentru cei doi artiști.
-
-Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
-
-**Ce urmăresc la încheiere:** Copilul arată care program continuă și care eveniment îl poate opri.
-
-## Rezervă 1 Trei ipostaze
-
-**6-8 minute în plus.** Iepurele trece repetat prin normal, mare, mic, cu pauze vizibile. Partenerul alege ipostaza mare; copilul încearcă să îl înghețe în acea stare. Un nou steag permite încă o încercare. Câinele și butoanele nu au programe în această probă; se pot elimina butoanele.
-
-**Soluție:** steag → mărime inițială → așteaptă 20 → mărește 4 → așteaptă 20 → micșorează 8 → așteaptă 20 → Forever. Separat: atingere → Stop.
-
-**Indiciu:** „Ce trei stări trebuie să vedem?”, „Ce pauză îți dă timp să atingi?”. Dacă este dificil, mărim pauzele la 30. Copiii pot alege apoi altă stare-țintă; nu evaluăm rapiditatea degetului.
-
-## Rezervă 2 Cortina automată
-
-**8-10 minute în plus.** Un singur tap pe fluture pornește ambii artiști. Mingea devine cronometru și trimite singură comanda de înghețare după o pauză. Totul rămâne oprit până la următorul tap pe fluture.
-
-**Pornim de la M3.** Schimbăm numai mingea: La mesaj portocaliu înlocuiește atingerea; adăugăm Așteaptă 50 înainte de plicul albastru.
-
-- Fluture: atingere → trimite portocaliu.
-- Iepure și câine: rutinele la portocaliu și Stop la albastru, ca la M3.
-- Minge: la portocaliu → așteaptă 50 → trimite albastru.
-
-**Mingea cronometrează în paralel.** Portocaliul pornește trei destinatari: doi artiști și cronometru. Expeditorul unui mesaj așteaptă terminarea programelor pornite de el; de aceea cronometrul este într-un program separat.
-
-**Verificare:** un tap, transformări, înghețare automată; așteptăm încă două secunde. Repetăm fără Reset. 50 înseamnă aproximativ cinci secunde de pauză, nu 50 de secunde sau un număr de runde. Așteptăm înghețarea înainte de repornire.
-
-**Indicii:** „Cine numără în timp ce artiștii lucrează?”, „Ce mesaj îi pornește pe toți trei?”. Copiii pot schimba durata și anticipa rezultatul.
-
-## Dificultăți și sprijin
-
-| Ce observăm | Cum ajutăm |
+| Personaj | Program complet |
 | --- | --- |
-| Se oprește după o rundă | Verificăm Forever roșu, conectat la sfârșit. |
-| Devine tot mai mare sau mai mic | Mărimea inițială readuce reperul în fiecare rundă. |
-| Atingerea nu îngheață | Blocurile sunt conectate, nu doar suprapuse. Stop este separat, pe artist. La M3 folosim mingea. |
-| Mingea nu oprește artiștii | Comparăm plicurile albastre; fiecare artist are La albastru → Stop. |
-| Se oprește numai un artist | Adăugăm receptorul albastru și celuilalt. |
-| Cronometrul nu încheie show-ul | Mingea are propriul program La portocaliu → Așteaptă → trimite albastru. |
+| Platforma | Steag → Așteaptă 10 → Repetă mereu |
+| Stânca | Fără program |
+| Capsula de pe fund | Steag → Arată |
+| Capsula de pe fund | La ciocnire → Așteaptă 5 → Ascunde → Trimite verde |
+| Capsula livrată | Fără program · ascuns |
+| Capsula transportată | Steag → La poziția inițială → Ascunde → Viteză normală |
+| Capsula transportată | Primește roșu → Stânga 2 |
+| Capsula transportată | Primește portocaliu → Dreapta 2 |
+| Capsula transportată | Primește galben → Sus 1 |
+| Capsula transportată | Primește albastru → Jos 1 |
+| Capsula transportată | Primește verde → Arată |
+| Robot submarin | Steag → La poziția inițială → Arată → Viteză normală |
+| Robot submarin | Primește roșu → Stânga 2 |
+| Robot submarin | Primește portocaliu → Dreapta 2 |
+| Robot submarin | Primește galben → Sus 1 |
+| Robot submarin | Primește albastru → Jos 1 |
+| Buton Stânga | La atingere → Trimite roșu |
+| Buton Stânga | Steag → Arată |
+| Buton Dreapta | La atingere → Trimite portocaliu |
+| Buton Dreapta | Steag → Arată |
+| Buton Sus | La atingere → Trimite galben |
+| Buton Sus | Steag → Arată |
+| Buton Jos | La atingere → Trimite albastru |
+| Buton Jos | Steag → Arată |
+| Buton Depune | Fără program · ascuns |
+| Buton Întoarcere | Fără program · ascuns |
 
-## Încheiere și verificare
+### 3. Misiunea completă
 
-Copilul explică „de trei ori” și „până îl opresc”. Un coleg încearcă butoanele. Oprim înainte de editare sau ieșire. Salvăm prin galerie, redeschidem și probăm.
+| Personaj | Program complet |
+| --- | --- |
+| Platforma | Steag → Așteaptă 10 → Repetă mereu |
+| Stânca | Fără program |
+| Capsula de pe fund | Steag → Arată |
+| Capsula de pe fund | La ciocnire → Așteaptă 5 → Ascunde → Trimite verde |
+| Capsula livrată | Steag → Ascunde |
+| Capsula livrată | Primește mov → Arată |
+| Capsula transportată | Steag → La poziția inițială → Ascunde → Viteză normală |
+| Capsula transportată | Primește roșu → Stânga 2 |
+| Capsula transportată | Primește portocaliu → Dreapta 2 |
+| Capsula transportată | Primește galben → Sus 1 |
+| Capsula transportată | Primește albastru → Jos 1 |
+| Capsula transportată | Primește verde → Arată |
+| Capsula transportată | Primește mov → Ascunde |
+| Robot submarin | Steag → La poziția inițială → Arată → Viteză normală |
+| Robot submarin | Primește roșu → Stânga 2 |
+| Robot submarin | Primește portocaliu → Dreapta 2 |
+| Robot submarin | Primește galben → Sus 1 |
+| Robot submarin | Primește albastru → Jos 1 |
+| Buton Stânga | La atingere → Trimite roșu |
+| Buton Stânga | Steag → Arată |
+| Buton Dreapta | La atingere → Trimite portocaliu |
+| Buton Dreapta | Steag → Arată |
+| Buton Sus | La atingere → Trimite galben |
+| Buton Sus | Steag → Arată |
+| Buton Jos | La atingere → Trimite albastru |
+| Buton Jos | Steag → Arată |
+| Buton Depune | Steag → Ascunde |
+| Buton Depune | Primește verde → Arată |
+| Buton Depune | La atingere → Ascunde → Trimite mov |
+| Buton Întoarcere | Fără program · ascuns |
 
-Raport: verificare/README.md. Înainte de clasă reconstruim M2 și M3 pe Lenovo: înghețare, două reporniri, salvare/redeschidere offline. Browserul nu verifică tableta fizică.
+### 4. Pilotaj de precizie
 
-**Referințe:** [ghidul de referință ScratchJr](https://scratched.gse.harvard.edu/sites/default/files/scratchjr-reference-page.pdf) și [blocurile oficiale](https://www.scratchjr.org/explore/blocks).
+| Personaj | Program complet |
+| --- | --- |
+| Platforma | Steag → Așteaptă 10 → Repetă mereu |
+| Stânca | Fără program |
+| Capsula de pe fund | Steag → Arată |
+| Capsula de pe fund | La ciocnire → Așteaptă 5 → Ascunde → Trimite verde |
+| Capsula livrată | Steag → Ascunde |
+| Capsula livrată | Primește mov → Arată |
+| Capsula transportată | Steag → La poziția inițială → Ascunde → Viteză normală |
+| Capsula transportată | Primește roșu → Stânga 1 |
+| Capsula transportată | Primește portocaliu → Dreapta 1 |
+| Capsula transportată | Primește galben → Sus 1 |
+| Capsula transportată | Primește albastru → Jos 1 |
+| Capsula transportată | Primește verde → Arată |
+| Capsula transportată | Primește mov → Ascunde |
+| Robot submarin | Steag → La poziția inițială → Arată → Viteză normală |
+| Robot submarin | Primește roșu → Stânga 1 |
+| Robot submarin | Primește portocaliu → Dreapta 1 |
+| Robot submarin | Primește galben → Sus 1 |
+| Robot submarin | Primește albastru → Jos 1 |
+| Buton Stânga | La atingere → Trimite roșu |
+| Buton Stânga | Steag → Arată |
+| Buton Dreapta | La atingere → Trimite portocaliu |
+| Buton Dreapta | Steag → Arată |
+| Buton Sus | La atingere → Trimite galben |
+| Buton Sus | Steag → Arată |
+| Buton Jos | La atingere → Trimite albastru |
+| Buton Jos | Steag → Arată |
+| Buton Depune | Steag → Ascunde |
+| Buton Depune | Primește verde → Arată |
+| Buton Depune | La atingere → Ascunde → Trimite mov |
+| Buton Întoarcere | Fără program · ascuns |
 
-**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.
+### R1. Transport fragil
+
+| Personaj | Program complet |
+| --- | --- |
+| Platforma | Steag → Așteaptă 10 → Repetă mereu |
+| Stânca | Fără program |
+| Capsula de pe fund | Steag → Arată |
+| Capsula de pe fund | La ciocnire → Așteaptă 5 → Ascunde → Trimite verde |
+| Capsula livrată | Steag → Ascunde |
+| Capsula livrată | Primește mov → Arată |
+| Capsula transportată | Steag → La poziția inițială → Ascunde → Viteză normală |
+| Capsula transportată | Primește roșu → Stânga 2 |
+| Capsula transportată | Primește portocaliu → Dreapta 2 |
+| Capsula transportată | Primește galben → Sus 1 |
+| Capsula transportată | Primește albastru → Jos 1 |
+| Capsula transportată | Primește verde → Arată → Viteză lentă |
+| Capsula transportată | Primește mov → Ascunde → Viteză normală |
+| Robot submarin | Steag → La poziția inițială → Arată → Viteză normală |
+| Robot submarin | Primește roșu → Stânga 2 |
+| Robot submarin | Primește portocaliu → Dreapta 2 |
+| Robot submarin | Primește galben → Sus 1 |
+| Robot submarin | Primește albastru → Jos 1 |
+| Robot submarin | Primește verde → Viteză lentă |
+| Robot submarin | Primește mov → Viteză normală |
+| Buton Stânga | La atingere → Trimite roșu |
+| Buton Stânga | Steag → Arată |
+| Buton Dreapta | La atingere → Trimite portocaliu |
+| Buton Dreapta | Steag → Arată |
+| Buton Sus | La atingere → Trimite galben |
+| Buton Sus | Steag → Arată |
+| Buton Jos | La atingere → Trimite albastru |
+| Buton Jos | Steag → Arată |
+| Buton Depune | Steag → Ascunde |
+| Buton Depune | Primește verde → Arată |
+| Buton Depune | La atingere → Ascunde → Trimite mov |
+| Buton Întoarcere | Fără program · ascuns |
+
+### R2. Întoarcere automată
+
+| Personaj | Program complet |
+| --- | --- |
+| Platforma | Steag → Așteaptă 10 → Repetă mereu |
+| Stânca | Fără program |
+| Capsula de pe fund | Steag → Arată |
+| Capsula de pe fund | La ciocnire → Așteaptă 5 → Ascunde → Trimite verde |
+| Capsula livrată | Steag → Ascunde |
+| Capsula livrată | Primește mov → Arată |
+| Capsula transportată | Steag → La poziția inițială → Ascunde → Viteză normală |
+| Capsula transportată | Primește roșu → Stânga 2 |
+| Capsula transportată | Primește portocaliu → Dreapta 2 |
+| Capsula transportată | Primește galben → Sus 1 |
+| Capsula transportată | Primește albastru → Jos 1 |
+| Capsula transportată | Primește verde → Arată |
+| Capsula transportată | Primește mov → Ascunde |
+| Robot submarin | Steag → La poziția inițială → Arată → Viteză normală |
+| Robot submarin | Primește roșu → Stânga 2 |
+| Robot submarin | Primește portocaliu → Dreapta 2 |
+| Robot submarin | Primește galben → Sus 1 |
+| Robot submarin | Primește albastru → Jos 1 |
+| Buton Stânga | La atingere → Trimite roșu |
+| Buton Stânga | Steag → Arată |
+| Buton Stânga | Primește verde → Ascunde |
+| Buton Stânga | Primește mov → Arată |
+| Buton Dreapta | La atingere → Trimite portocaliu |
+| Buton Dreapta | Steag → Arată |
+| Buton Dreapta | Primește verde → Ascunde |
+| Buton Dreapta | Primește mov → Arată |
+| Buton Sus | La atingere → Trimite galben |
+| Buton Sus | Steag → Arată |
+| Buton Sus | Primește verde → Ascunde |
+| Buton Sus | Primește mov → Arată |
+| Buton Jos | La atingere → Trimite albastru |
+| Buton Jos | Steag → Arată |
+| Buton Jos | Primește verde → Ascunde |
+| Buton Jos | Primește mov → Arată |
+| Buton Depune | Fără program · ascuns |
+| Buton Întoarcere | La atingere → Ascunde → Repetă 5 { Trimite galben } → Repetă 5 { Trimite roșu } → Trimite mov |
+| Buton Întoarcere | Steag → Ascunde |
+| Buton Întoarcere | Primește verde → Arată |
+
+## Ajutor rapid
+
+- Robotul nu răspunde: verifică Steagul, plicurile pereche și personajul selectat.
+- Capsula nu se prinde: stația de pe Platformă trebuie să ruleze, iar cleștele să atingă capsula. Așteaptă finalul prinderii înainte de altă comandă.
+- Capsula alunecă: robotul și copia transportată trebuie să aibă aceiași pași, aceleași viteze și pozițiile inițiale din starter.
+- Capsula sare la depunere: aliniază robotul deasupra platformei înainte de Depune.
+- Plic gol în portul web: deschide săgeata și selectează din nou aceeași culoare. Nu este un bloc special.
+- Reluare: Stop, apoi Steag. Copia de pe fund reapare; copiile transportată și livrată se ascund.
+
+## Repere și verificare
+
+[Ghidul oficial al blocurilor](https://www.scratchjr.org/explore/blocks): evenimente, mesaje, mișcare, vizibilitate și control. Povestea și puzzle-urile submarinului sunt locale. [Raportul testelor](verificare/Submarinul_60min.md) separă verificarea în browser de proba necesară pe Lenovo. [Resursele originale](resurse_submarin/README.md) sunt incluse în fiecare proiect.

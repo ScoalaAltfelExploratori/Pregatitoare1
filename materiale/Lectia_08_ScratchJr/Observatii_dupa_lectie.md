@@ -1,20 +1,10 @@
-# Observații după lecția 8
+# După Lecția 8 - Robotul submarin
 
-Data: __________ Grupa: __________ Număr copii: __________
-
-| Observație | Singur / cu sprijin / de reluat |
-| --- | --- |
-| Distinge Repeat cu număr de Forever | |
-| Menține rutina fără acumularea mărimii | |
-| Oprește numai artistul ales la M2 | |
-| Folosește cele două mesaje în puzzle-ul dificil | |
-| Repornește fără Reset și explică începutul rutinei | |
-| Salvează și regăsește proiectul | |
-
-Minute reale: scenă ___ M1 ___ M2 ___ dificil ___ salvare ___
-
-Rezerve folosite: __________ Indiciul cel mai util: __________
-
-Dificultăți pe Lenovo / modificări pentru data viitoare: __________
-
-Nu facem clasamente. Observăm înțelegerea și sprijinul util, nu viteza de atingere.
+- Câți copii au legat singuri prima pereche de plicuri?
+- Au păstrat pașii și vitezele identice la robot și la capsula transportată?
+- Prinderea și depunerea au fost înțelese ca schimbări între cele trei copii?
+- A fost suficient spațiu pentru ocolirea stâncii cu încărcătura?
+- Cât a durat M3? Am păstrat cele 10 minute de creație?
+- Ce au schimbat copiii în propriul pilotaj?
+- Cine a încercat transportul fragil sau întoarcerea automată?
+- Pe Lenovo: import, afișare, atingere, salvare și redeschidere.

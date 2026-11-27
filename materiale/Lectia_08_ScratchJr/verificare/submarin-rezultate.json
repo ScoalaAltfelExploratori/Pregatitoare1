@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "packages": 7,
+  "observations": 171,
+  "rendered_frames": 2898,
+  "max_cargo_offset_error_px": 0,
+  "r1_speed_px_per_ms": {
+    "right1": 0.12310606060606061,
+    "left1": 0.06557377049180328,
+    "empty-speed": 0.13114754098360656
+  },
+  "checked": [
+    "four directions",
+    "contact pickup",
+    "synchronized cargo",
+    "manual deposit",
+    "empty departure",
+    "reset",
+    "M3 replay",
+    "precision variant",
+    "loaded slow / empty normal",
+    "automatic return",
+    "hidden controls ignored",
+    "reopen blank starter"
+  ],
+  "scope": "Browser port; physical Lenovo not tested."
+}

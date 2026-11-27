@@ -1,3 +1,5 @@
+> Arhivă: verificarea vechii lecții „Statuile fermecate”, 50 min. Pentru lecția actuală: [Robotul submarin](Submarinul_60min.md).
+
 # Verificare - Lecția 8
 
 **PASS, 10 noiembrie 2026. Șapte proiecte, 50 de verificări finale în browser.** 28 de probe principale, 14 după salvare și redeschidere, patru pentru blocurile adăugate manual și patru probe suplimentare de control. Numărul reprezintă verificări de comportament, nu misiuni distincte.

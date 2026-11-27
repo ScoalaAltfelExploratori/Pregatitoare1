@@ -433,6 +433,65 @@
       "teacher_note": "Părțile grele sunt în bază. Zece minute de creație; două rezerve suplimentare. Importul și rularea sunt testate în browser; verifică starterul și pe Lenovo.",
       "student_reference": "Capturi: pregătire p. 2; M1 p. 3-4; M2 p. 5-6; M3 p. 7-9; creație p. 10-12; R1 p. 13-15; R2 p. 16-18. În PDF-ul cursului adaugă 86.",
       "footer": "Resurse incluse în starter / Construim programele pe tabletă"
+    },
+    {
+      "number": 8,
+      "revision": "27 noiembrie 2026",
+      "title": "Robotul submarin",
+      "subtitle": "Recuperăm capsula de cercetare",
+      "goal": "Construim telecomanda și transportăm capsula până la platformă, apoi robotul pleacă gol.",
+      "setup": "O scenă, robot și obiecte mari. Starter fără cod, cu toate imaginile incluse; un import înaintea orei.",
+      "schedule": [
+        {
+          "minutes": "0-7",
+          "title": "Misiunea de recuperare",
+          "text": "Citirea scenei și a grilei. Alegem un drum care ocolește stânca și cu încărcătura."
+        },
+        {
+          "minutes": "7-20",
+          "title": "M1. Telecomanda",
+          "text": "Patru butoane trimit comenzi: Stânga/Dreapta câte 2 pași, Sus/Jos câte 1."
+        },
+        {
+          "minutes": "20-32",
+          "title": "M2. Recuperarea",
+          "text": "Contactul schimbă copia de pe fund cu cea transportată. Robotul și capsula primesc aceleași deplasări."
+        },
+        {
+          "minutes": "32-47",
+          "title": "M3. Misiunea completă | dificil, pentru toți",
+          "text": "Recuperăm, revenim deasupra platformei și depunem. Robotul pleacă gol; capsula rămâne."
+        },
+        {
+          "minutes": "47-57",
+          "title": "Pilotajul meu",
+          "text": "Altă poziție a capsulei, alt pas al telecomenzii. Modificăm robotul și copia transportată împreună."
+        },
+        {
+          "minutes": "57-60",
+          "title": "Probă și salvare",
+          "text": "Explicăm un mesaj. Stop, resetare cu Steag, salvare și redeschidere."
+        }
+      ],
+      "solutions": [
+        "Stația: Steag > Așteaptă 10 > Repetă mereu. Roșu/stânga, portocaliu/dreapta, galben/sus, albastru/jos.",
+        "Capsula de pe fund: La ciocnire > Așteaptă 5 > Ascunde > verde. Verde arată copia transportată; mov arată copia livrată.",
+        "Traseu: 5 Dreapta, 5 Jos; după prindere 5 Sus, 5 Stânga, Depune. O apăsare, o mișcare terminată."
+      ],
+      "hint": "Stânca și alinierea la platformă se verifică vizual. Depune nu verifică automat poziția. Reluare: Stop, apoi Steag.",
+      "backups": [
+        {
+          "title": "R1. Transport fragil | +5-8 min",
+          "text": "Robotul și capsula: lent la verde, normal la mov. Aceleași distanțe."
+        },
+        {
+          "title": "R2. Întoarcere automată | +8-10 min",
+          "text": "Ascundem săgețile după prindere. Buton: 5 mesaje Sus, 5 Stânga, apoi depunere."
+        }
+      ],
+      "teacher_note": "Părțile grele sunt în bază; zece minute de creație și două rezerve suplimentare. Verificat în browser; proba pe Lenovo rămâne necesară.",
+      "student_reference": "Urmează pregătirea și capturile tuturor programelor, inclusiv firele neschimbate. În PDF-ul cursului, Lecția 8 începe la pagina 105.",
+      "footer": "Resurse incluse în starter / Construim programele pe tabletă"
     }
   ]
 }
