@@ -1,60 +1,37 @@
-# Lecția 10 - Marea finală: Jocul meu complet
+# Lecția 10 — Robotul grădinar
 
-> Această versiune de 50 de minute continuă [Insula misterioasă din arhiva Lecției 9](../Lectia_09_ScratchJr/README_50min.md). Nu continuă noul proiect Robotul de reciclare; Lecția 10 urmează să fie revizuită.
+O oră în ScratchJr, fără creație proprie. Două plante cer câte două porții de apă, iar în rezervor încap trei. Construim udarea, reumplerea și misiunea completă. Puzzle greu în bază și două rezerve: rezervor de patru porții, două treceri prin seră.
 
+[Lecția pe site](index.html) · [Ghidul profesorului](ghid-profesor.html) · [PDF cu plan și toate programele](Ghid_profesor_Lectia_10.pdf) · [Soluții](solutii_gradinar/README.md).
 
-**50 de minute, 6-7 ani. Lucru individual.** Continuăm propriul proiect din lecția 9 și construim o sărbătoare cu început, ordine și sfârșit. Trei misiuni, inclusiv un puzzle dificil pentru toți, plus două rezerve suplimentare.
+## Pregătirea cea mai simplă
 
-## Exemplu, puzzle și creație proprie
+Importă numai [start.sjr](solutii_gradinar/start.sjr) pe fiecare tabletă înaintea orei. Include robotul, sera, ghivecele, plantele, jeturile și indicatorul. Cele 13 personaje sunt fără cod. Copiii construiesc M1–M3 în același proiect; nu se copiază imagini separat și nu sunt necesare descărcări în timpul rulării.
 
-Deschidem cu **Artiștii își dau rândul**, pornind de la [Conversation](https://www.scratchjr.org/teach/activities/conversation). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+**Pe laptop, în browser:** în [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html), apasă Open în galerie, alege fișierul SJR, apoi cardul **L10 Robotul grădinar - de la zero · v1.2**. Nu este necesar un emulator. Acesta este portul comunitar testat, distinct de aplicația Android. Folosește o fereastră lată.
 
-**Minutele 37-45: Finalul pe care îl semnez eu** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+**Pe Lenovo:** cu ScratchJr instalat, descarcă starterul și încearcă deschiderea din Fișiere/Descărcări cu ScratchJr, dacă sistemul oferă aplicația. Înainte de distribuire, verifică importul, salvarea, redeschiderea și soluția [m3.sjr](solutii_gradinar/m3.sjr) pe o tabletă a școlii. Testele acestei lecții nu au folosit un Lenovo fizic. Instalarea ScratchJr nu include aceste resurse noi: este necesar importul starterului.
 
-[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_10.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+**Pornire:** Steag. Pentru o probă nouă în timpul mișcării: Stop, apoi Steag. Pentru salvare, revenim în galerie. Starterul nu se mișcă până când copiii adaugă programele. Păstrăm pozițiile și dimensiunile; în R1 mutăm doar Indicatorul de la 3 la 4, cu grila pornită.
 
-## Pregătire simplă
-
-Numai **Rabbit, Dog, Ball, Butterfly, Beach Day și Beach Night**, deja incluse în ScratchJr. Copiii nu primesc fișiere, nu importă proiecte și nu descarcă resurse. Redeschid proiectul L9 pe aceeași tabletă. Lucrează pe pagina de final; traseul propriu al insulei poate rămâne.
-
-Exemplele profesorului includ ambele pagini și lanțul de descoperiri L9. Demo-ul are o intrare scurtă prin fluture; starterul păstrează insula funcțională, dar iepurele de pe final nu are program. Acestea sunt referințe opționale pentru profesor, nu fișiere de distribuit copiilor.
-
-**Dacă lipsește proiectul:** construim o intrare simplă, cu două pagini: fluture cu atingere → pagina 2; pe final, iepure și minge cu atingere → pagina 1. Nu este necesară refacerea întregii lecții 9.
-
-| Activitate | Ținta |
-| --- | --- |
-| M1 Sărbătoarea mea | Două măriri egale, cu revenire la normal |
-| M2 Butonul așteaptă | Mingea apare numai după terminarea iepurelui |
-| M3 Marea finală - dificilă | Iepure, câine, apoi întoarcere; două jocuri complete |
-| R1 Încă o dată! | Encore pe aceeași pagină, cu butoanele indisponibile în timpul show-ului |
-| R2 Întoarcere automată | Trei secunde după artiști, apoi revenire automată pe insulă |
-
-Rezervele de 8-10 și 6-8 minute sunt în plus. Nu înlocuiesc provocarea dificilă sau salvarea. Nu cerem lucru în perechi, schimb de tablete, prezentări obligatorii sau construirea unor programe greșite pentru reparare.
+Importurile vechi nu se actualizează automat. Folosește cardurile v1.2. Cele cinci soluții sunt pentru consultare; nu trebuie distribuite toate copiilor.
 
 ## Materiale
 
-- [Ghidul profesorului](Ghid_profesor.md) și [PDF de cinci pagini](Ghid_profesor_Lectia_10.pdf).
-- [Cinci cartonașe PDF](Cartonase_Lectia_10.pdf), cu ținte și scheme.
-- [Soluții explicate și cinci SJR-uri](solutii/lectia_10/README.md).
-- [Demo](proiecte/00_Demo_Marea_finala.sjr), [starter cu insula L9](proiecte/01_Start_Insula_L09.sjr), [pagina pentru proiector](index.html).
-- [Raportul testelor](verificare/README.md), [observații după lecție](Observatii_dupa_lectie.md), [planul cursului](../Plan_10_lectii_ScratchJr.md).
+- [Starter și cinci soluții native](solutii_gradinar/README.md), editabile.
+- [Ghidul profesorului](Ghid_profesor.md): poveste, orar, întrebări, indicii și programele fiecărui personaj la fiecare etapă.
+- [PDF ilustrat](Ghid_profesor_Lectia_10.pdf): plan concis, pregătire și capturi reale ale programelor, inclusiv ambele rezerve.
+- [Resurse și proveniență](resurse_gradinar/README.md), incluse în fiecare proiect.
+- [Raportul testării în browser](verificare/Gradinarul_60min.md).
 
-## Pornire și test individual
+## Cum funcționează
 
-Selectează pagina 1 și apasă steagul. În exemplele complete: fluture → câine → minge. În demo: fluture. Intrarea programată în pagina 2 pornește sărbătoarea. Alegerea miniaturii de editare nu înlocuiește această intrare.
+Roșu și portocaliu comandă câte o porție pentru A și B. Fiecare porție face să apară jetul și mută Indicatorul cu o unitate la stânga. Verde și mov schimbă planta ofilită cu cea udată, după a doua porție. Galben pornește apa stației; albastru readuce indicatorul la plin.
 
-La M1 mingea rămâne disponibilă, dar în probă așteptăm spectacolul complet. La M2/M3 ea se ascunde și apare după artiști. La R1 se adaugă fluturele Encore pe final; și el așteaptă terminarea. La R2 mingea rămâne ascunsă, iar întoarcerea se face singură.
+Indicatorul este un model programat, fără variabile sau oprire automată la zero. Copilul alege când revine la stație. M3: 3 → 2 → 1 → 3 → 2 → 1. R1: 4 → 3 → 2 → 1 → 0. R2: 3 → 2 → 1 → 0 → 3 → 2.
 
-Nu apăsa Reset sau steagul între două runde ale jocului. La revenirea prin Go to Page se execută pregătirea insulei. După salvare/redeschidere, alege prima pagină și apasă steagul pentru pregătire.
+Unele pictograme importate pot apărea goale în portul web. Deschide săgeata blocului și reselectează aceeași culoare/viteză. Capturile programelor au fost făcute în aplicație după reselectare; nu au fost desenate pictograme peste capturi.
 
-## Proba opțională în browser pe PC
+## Arhiva veche
 
-Deschide [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/), portul comunitar folosit pentru teste. În galerie: Open → alege SJR-ul → deschide proiectul. Parcurge două runde, salvează prin galerie și redeschide. Browserul nu sincronizează proiectele cu tabletele.
-
-[Raportul](verificare/README.md) explică probele efectuate și limitele lor. Înainte de clasă reconstruiește M3 pe un Lenovo și verifică atingerea, ordinea, două runde și salvarea/redeschiderea offline. Verificarea în browser nu înlocuiește tableta fizică.
-
-## Surse editabile
-
-`lesson.json` definește programele și cartonașele. `Ghid_profesor.md` este sursa ghidului. `python build_pack.py` regenerează cele două PDF-uri și șapte SJR-uri; `--projects-only` generează numai proiectele. Necesită Python, reportlab, Pillow, pypdf și fonturile Arial din Windows. Schimbarea programelor cere repetarea testelor în editor.
-
-Cursul se încheie cu un proiect funcțional pe tableta fiecărui copil. Explicația către profesor poate fi prin gesturi și arătarea blocurilor. Profesorul stabilește păstrarea/exportul proiectelor importante; nu ștergem datele aplicației după curs.
+[Marea finală · 50 min](arhiva_finala/index.html) · [Ghid vechi](arhiva_finala/ghid-profesor.html) · [PDF vechi](arhiva_finala/Ghid_profesor_Lectia_10.pdf) · [ZIP vechi](../Lectia_10_ScratchJr.zip). Acea versiune continuă insula veche din Lecția 9. Robotul grădinar începe un proiect nou.

@@ -1,145 +1,314 @@
-# Lecția 10 Marea finală
+# Lecția 10 — Robotul grădinar
 
-Jocul meu complet. 50 de minute, copii de 6-7 ani. Continuăm insula salvată la lecția 9. Fiecare copil construiește și testează individual, cu ajutorul profesorului. Avem trei misiuni, un puzzle dificil pentru toți și două rezerve peste timpul de bază.
+60 de minute · 6–7 ani · fără creație proprie · puzzle greu în bază · două rezerve.
 
-## Ideea: am terminat, poți continua
+## Povestea pentru copii
 
-Un mesaj trimis la sfârșitul programului anunță terminarea unei acțiuni. Folosim acest semnal pentru a porni următorul artist și pentru a face disponibilă întoarcerea. Nu încercăm să ghicim durata întregului spectacol printr-o pauză lungă pe buton.
+„Instalația de udare din seră s-a oprit. Cele două plante au nevoie de câte două porții de apă. Robotul grădinar poate duce numai trei porții într-o cursă. Îi programăm drumul, pornirea jetului și întoarcerea la stație. Trebuie să terminăm ambele ghivece fără să udăm podeaua și fără să folosim apă pe care nu o mai avem.”
 
-Mesajele coordonează personaje de pe aceeași pagină. La intrarea prin Go to Page, programele cu steag ale paginii de final pornesc singure. Pagina 1 păstrează descoperirile lecției 9; în această lecție lucrăm în principal pe pagina 2.
+## Ce este nou
 
-## Pregătire simplă
+Planificăm o resursă care se consumă. Fiecare porție produce două efecte: apare jetul lângă plantă și indicatorul scade cu o unitate. Deplasarea începe numai după oprirea jetului. Scăderile au un rol în alegerea momentului reumplerii.
 
-Redeschidem proiectul propriu, pe aceeași tabletă. Pe final avem **Rabbit și Ball**, pe **Beach Night**. La M3 adăugăm **Dog**, iar la R1 încă un **Butterfly**. Acestea sunt din biblioteca instalată. Fără importuri pe tabletele copiilor, descărcări, sunete sau înregistrări.
+## Pregătire înaintea orei
 
-Iepure în stânga jos, câine în dreapta jos; mingea sus în dreapta. Fluturele de la rezervă stă sus în stânga. Păstrăm mărimile inițiale și separăm zonele de atingere. Nu sunt necesare coordonate exacte. Mingea de pe final are alt program decât mingea de pe insulă.
+Importă [start.sjr](solutii_gradinar/start.sjr) o singură dată pe fiecare tabletă. Are toate imaginile și 13 personaje fără programe. Pe laptop deschide [m3.sjr](solutii_gradinar/m3.sjr) pentru demonstrație. [Import și pornire](README.md).
 
-**Dacă lipsește proiectul L9:** profesorul ajută copilul să facă două pagini simple: pe prima, fluture cu atingere → pagina 2; pe a doua, iepure și minge cu atingere → pagina 1. Aceasta este intrarea scurtă din demo. Nu cerem recuperarea întregii lecții 9 sau importarea unui fișier.
+Copiii construiesc M1–M3 în același proiect. Nu mutăm robotul, ghivecele, plantele sau stația și nu schimbăm dimensiunile. În R1 mutăm numai Indicatorul. Resursele sunt mari și noi, incluse în SJR; nu copiem imagini separat.
 
-## Demonstrație și ritm
+Ghiveciul A este sus, B jos. Fiecare etichetă are două picături: necesarul plantei. Indicatorul albastru de pe scară arată porțiile rămase în robot. Plantele udate, jeturile și Apa de la stație sunt ascunse inițial: le alegem din lista personajelor. Stația, ghivecele și scala rămân fără cod.
 
-Arătăm demo-ul: fluturele deschide finalul, iepurele performează, apoi câinele; mingea apare la sfârșit. Întrebăm: „Cine poate anunța că s-a terminat?”. Copiii vor construi treptat acest rezultat.
+## Planul orei
 
-| Minute | Activitate | Acțiunea profesorului |
-| --- | --- | --- |
-| 0-4 | Exemplu oficial adaptat | Truc, mesaj, următorul artist. |
-| 4-7 | Redeschidem | Proiectul L9 și pagina finală. |
-| 7-14 | Misiunea 1 | Două transformări cu revenire. |
-| 14-24 | Misiunea 2 | Butonul apare după mesajul de încheiere. |
-| 24-27 | Pauză | Mimăm predarea rândului. |
-| 27-37 | Puzzle dificil | Iepure, câine, apoi întoarcere. |
-| 37-45 | Creația mea | Un final personal, cu ordinea păstrată. |
-| 45-50 | Joc complet și salvare | Două runde, o alegere explicată, redeschidere. |
+| Timp | Activitate | Rezultat |
+|---|---|---|
+| 0–5 | Poveste, demonstrație, citim necesarul | Două plante × două porții; rezervor de trei. |
+| 5–20 | M1: prima plantă | Două jeturi, A udată, o porție rămasă. |
+| 20–35 | M2: reumplerea | Robot la stație, jet de alimentare, indicator înapoi la trei. |
+| 35–55 | M3: întreaga seră, dificil pentru toți | Două plante udate automat, fără intervenții între ele. |
+| 55–60 | Probă și salvare | Stop/Steag, explicăm reumplerea, revenim în galerie. |
 
-**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+Explicăm și testăm după fiecare fir construit. Dacă un copil se blochează, deschidem în PDF programul personajului respectiv. Nu scriem programe greșite pentru a le repara. Rezervele sunt suplimentare și pornesc fiecare separat din M3; nu există atelier de creație proprie.
 
-## Exemplu oficial adaptat: Artiștii își dau rândul
+## Plicurile și temporizarea
 
-**Reper:** [Conversation](https://www.scratchjr.org/teach/activities/conversation). Preluăm ideea mai multor mesaje succesive din Conversation. În locul replicilor scrise, artiștii fac trucuri. Rulează finalul existent și urmărește mesajul trimis după fiecare truc. Copiii identifică cine anunță că următorul poate începe.
+| Culoare | Cine răspunde și ce face |
+|---|---|
+| Roșu | Jetul A execută o porție; Indicatorul face Stânga 1. |
+| Portocaliu | Jetul B execută o porție; Indicatorul face Stânga 1. |
+| Verde | A ofilită se ascunde; A udată apare. |
+| Mov | B ofilită se ascunde; B udată apare. |
+| Galben | Apa de la stație apare, așteaptă 20 și dispare. |
+| Albastru | Indicatorul revine la poziția inițială: rezervor plin. |
 
-**Model pentru demonstrație:** La intrarea pe final, iepurele își face trucul și trimite portocaliu; câinele primește, își face trucul și trimite albastru; mingea primește albastru și apare. Păstrăm inițializarea la steag și programele complete din M3.
+Așteaptă 10 reprezintă aproximativ o secundă; 5 jumătate de secundă; 20 două secunde. Arată și Ascunde au și o scurtă tranziție. Trimite așteaptă programele declanșate; astfel robotul nu pleacă în timp ce curge apa. Folosim un singur fir principal pentru Robot.
 
-**Întreabă înainte de rulare:** „Dacă aleg un truc mai lung, cum știe mingea când să apară? Urmărim plicul de după ultima acțiune, fără să ghicim o pauză.”
+Indicatorul este programat prin deplasare, fără variabile sau verificare automată a rezervorului. Dacă programul consumă prea mult, aplicația nu oprește singură udarea: copiii trebuie să citească indicatorul și să aleagă reumplerea. Înflorirea este semnul vizual al misiunii îndeplinite, nu o simulare a timpului real de creștere.
 
-Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
+La stație, după returul prin blocuri de mișcare, La poziția inițială restabilește și orientarea gurii rezervorului. Nu îl folosim pentru a sări peste drumul de întoarcere. Păstrăm Viteză normală.
 
-## Misiunea 1 Sărbătoarea mea
+## M1 — Prima plantă
 
-**Ținta:** când ajungem pe pagina 2, iepurele face două măriri egale, cu revenire după fiecare. La sfârșit rămâne normal. Mingea este încă disponibilă pentru întoarcere; în probă așteptăm tot spectacolul.
+5–20 min. Construim mai întâi Jetul A și Indicatorul, apoi cele două stări ale plantei A și traseul Robotului. Repetă 2 conține un singur Trimite roșu. Verde vine după repetare.
 
-**Model:** iepure, steag → mărime inițială → repetă 2 [mărește 4 → așteaptă 5 → micșorează 4 → așteaptă 5]. Mingea păstrează atingere → pagina 1. Valoarea 2 indică două runde; 5 la Așteaptă este aproximativ o jumătate de secundă.
+**Întrebare:** De ce mai rămâne apă după ce terminăm prima plantă?
 
-Înlocuim vechea animație de pe iepure, dacă există, ca să nu pornească două rutine simultan. Copilul construiește secvența, o pune în Repeat și verifică cele două runde. Poate alege o altă valoare moderată, egală la mărire și micșorare, sau propriul decor inclus în aplicație.
+**Indiciu / soluție:** 3 − 2 = 1. Robotul revine la stație; B rămâne ofilită.
 
-**Test propriu:** parcurg insula, privesc cele două măriri, revin prin minge și ajung din nou la final. Nu apăs Reset între runde. **Indicii:** „Ce revine la fiecare rundă?”, „Care program începe singur când ajungi pe pagină?”.
+[Soluția nativă](solutii_gradinar/m1.sjr).
 
-## Misiunea 2 Butonul așteaptă
+### Robotul grădinar
 
-**Ținta:** la sosirea pe final, mingea se ascunde și nu poate fi folosită în timpul sărbătorii. Apare numai după ultima revenire a iepurelui la normal. Apoi permite întoarcerea.
+- Steag → La poziția inițială → Arată → Viteză normală → Așteaptă 10 → Dreapta 6 → Sus 4 → Repetă 2 { Trimite roșu } → Trimite verde → Jos 4 → Stânga 6 → La poziția inițială → Spune Prima plantă este gata.
 
-| Personaj, pagina 2 | Program |
-| --- | --- |
-| Iepure | Păstrează rutina M1. După Repeat adaugă trimite albastru. |
-| Minge | Steag → ascunde. Separat: la albastru → arată. Separat: atingere → pagina 1. |
+### Indicatorul de apă
 
-Plicul albastru se pune **după întregul Repeat**, în afara lui. Dacă este în interior, butonul se poate deschide după prima rundă. Copiii compară rezultatul propriu cu ținta și aleg unde conectează semnalul; nu copiază intenționat un program greșit.
+- Steag → La poziția inițială → Arată → Viteză normală
+- Primește roșu → Stânga 1
 
-**De ce mesaj:** dacă iepurele are o pauză mai lungă sau încă o rundă, tot el anunță când a terminat. Pe minge nu punem o așteptare estimată pentru a acoperi durata spectacolului.
+### Jetul A
 
-**Test propriu:** ajung la final; urmăresc cele două măriri și apariția mingii. Încerc o atingere în locul mingii în timpul spectacolului: nu trebuie să plec de pe pagină. După apariție mă întorc și repet.
+- Steag → Ascunde
+- Primește roșu → Arată → Așteaptă 10 → Ascunde → Așteaptă 5
 
-**Indiciu:** „Cine știe sigur că iepurele a terminat?”. Ascunde și Arată au o scurtă tranziție vizuală. Atingerea se testează pe scenă, nu în lista personajelor. Un personaj ascuns poate primi un mesaj, dar nu poate fi apăsat pe scenă.
+### Planta A — ofilită
 
-## Misiunea 3 Marea finală
+- Steag → Arată
+- Primește verde → Ascunde
 
-**Puzzle dificil pentru toți:** iepurele face cele două măriri; câinele își așteaptă rândul. Când iepurele termină, câinele se micșorează, așteaptă și revine la normal. Numai apoi apare mingea. Jocul complet funcționează de două ori.
+### Planta A — udată
 
-Adăugăm Dog pe pagina 2, separat de iepure. Schimbăm plicul final al iepurelui din albastru în portocaliu. Câinele primește portocaliu și trimite albastru numai după propriul truc. Mingea păstrează receptorul albastru din M2.
+- Steag → Ascunde
+- Primește verde → Arată
 
-| Personaj | Programe pe pagina 2 |
-| --- | --- |
-| Iepure | Steag → mărime inițială → repetă 2 [mărește 4 → așteaptă 5 → micșorează 4 → așteaptă 5] → trimite portocaliu. |
-| Câine | Steag → mărime inițială. Separat: la portocaliu → mărime inițială → micșorează 4 → așteaptă 10 → mărește 4 → trimite albastru. |
-| Minge | Steag → ascunde. Separat: la albastru → arată. Separat: atingere → pagina 1. |
+**Fără cod:** Stația de reumplere, Ghiveciul A, Ghiveciul B, Planta B — ofilită, Planta B — udată, Jetul B, Apa de la stație, Scala rezervorului.
 
-Programul câinelui cu steag doar pregătește dimensiunea. Trucul lui pornește la mesaj, nu la steag. Nu păstrăm trimiterea albastră pe iepure: în acest puzzle câinele este cel care anunță sfârșitul întregului spectacol.
+## M2 — Reumplem rezervorul
 
-## Testul meu complet
+20–35 min. Păstrăm M1. Adăugăm programul Apei de la stație și răspunsul albastru al Indicatorului. Înlocuim replica finală a Robotului cu galben, albastru, apoi noua replică.
 
-1. Selectez pagina 1 și apăs steagul pentru pregătirea insulei.
-2. Descopăr câinele și mingea ca la L9, apoi intru pe final. Dacă am intrarea simplă, ating fluturele.
-3. Iepurele face două runde. Câinele rămâne normal, fără să înceapă trucul în același timp.
-4. Câinele face o micșorare și revine. Mingea rămâne indisponibilă până termină.
-5. Ating mingea apărută. Pe insulă, descoperirile sunt ascunse iar. Repet fără Reset sau un nou steag.
+**Întrebare:** Putem pleca direct la B cu porția rămasă?
 
-**Indicii progresive:** „Ce îl invită pe câine?”, „Cine trebuie să trimită ultimul plic?”, „Unde trebuie să fie plicul: în buclă sau după ea?”, „Când ai voie să folosești întoarcerea?”.
+**Indiciu / soluție:** B are nevoie de două porții. La stație reumplem până la 3: mai adăugăm 2.
 
-**Loc pentru creație:** decor, poziții și o variație scurtă a unuia dintre artiști. Păstrăm ordinea, finalul vizibil și două jocuri complete. Nu evaluăm viteza de lucru sau prezentarea în fața clasei. Fiecare copil își testează proiectul și poate explica profesorului prin gesturi sau arătarea blocurilor.
+[Soluția nativă](solutii_gradinar/m2.sjr).
 
-## Creația mea: Finalul pe care îl semnez eu
+### Robotul grădinar
 
-**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
+- Steag → La poziția inițială → Arată → Viteză normală → Așteaptă 10 → Dreapta 6 → Sus 4 → Repetă 2 { Trimite roșu } → Trimite verde → Jos 4 → Stânga 6 → La poziția inițială → Trimite galben → Trimite albastru → Spune Rezervor plin.
 
-**Spune copiilor:** „Alege ce sărbătoresc personajele și schimbă trucurile lor folosind efectele cunoscute. Poți schimba gestul, ordinea efectelor sau durata unei pauze. Păstrează ordinea artiștilor, mesajul de încheiere și întoarcerea disponibilă numai la final.”
+### Indicatorul de apă
 
-**Verificarea autorului:** Joacă două runde de pe insulă până la final și înapoi, pe propria tabletă. Arată o decizie personală și explică ce anunță ultimul mesaj. La final fiecare poate spune: «Am ales…; programul meu face…».
+- Steag → La poziția inițială → Arată → Viteză normală
+- Primește roșu → Stânga 1
+- Primește albastru → La poziția inițială
 
-**Sprijin și extensie:** Modifică un singur truc din finalul funcțional. Pentru mai multă dificultate, fă trucuri cu durate diferite și arată că ordinea rămâne corectă datorită mesajelor.
+### Jetul A
 
-Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
+- Steag → Ascunde
+- Primește roșu → Arată → Așteaptă 10 → Ascunde → Așteaptă 5
 
-**Ce urmăresc la încheiere:** Copilul justifică locul mesajului de final și demonstrează că jocul se poate relua.
+### Planta A — ofilită
 
-## Rezervă 1 Încă o dată!
+- Steag → Arată
+- Primește verde → Ascunde
 
-**8-10 minute în plus. Pornim de la M3.** Adăugăm Butterfly pe final. El și mingea apar numai când artiștii termină. Fluturele cere încă un spectacol pe aceeași pagină; mingea permite întoarcerea.
+### Planta A — udată
 
-Folosim verde pentru pregătire și pornire, portocaliu pentru rândul câinelui, albastru pentru final. Verde ajunge la toți cei patru destinatari de pe pagina 2.
+- Steag → Ascunde
+- Primește verde → Arată
 
-| Personaj | Schimbări față de M3 |
-| --- | --- |
-| Iepure | Steag → trimite verde. Rutina cu cele două măriri și plicul portocaliu începe acum La verde. |
-| Câine | Pregătirea mărimii începe La verde în loc de steag. Trucul La portocaliu rămâne. |
-| Minge | Ascunderea începe La verde în loc de steag. La albastru → arată și atingere → pagina 1 rămân. |
-| Fluture | La verde → ascunde. La albastru → arată. Atingere → trimite verde. |
+### Apa de la stație
 
-**Test propriu:** după final ating fluturele. Ambele butoane dispar, iepurele și câinele repetă în ordine, butoanele reapar. Rămân pe pagina 2. Cer încă o repetare, apoi mă întorc prin minge. **Indiciu:** „Ce trebuie pregătit la fiecare spectacol, nu doar la prima sosire?”.
+- Steag → Ascunde
+- Primește galben → Arată → Așteaptă 20 → Ascunde
 
-## Rezervă 2 Întoarcere automată
+**Fără cod:** Stația de reumplere, Ghiveciul A, Ghiveciul B, Planta B — ofilită, Planta B — udată, Jetul B, Scala rezervorului.
 
-**6-8 minute în plus. Pornim de la M3, separat de R1.** Mingea devine un cronometru ascuns: steag → ascunde; separat, la albastru → așteaptă 30 → pagina 1. Scoatem programul ei de atingere. Iepurele și câinele rămân ca în M3.
+## M3 — Întreaga seră · puzzle greu, pentru toți
 
-**Test propriu:** după câine rămânem pe final aproximativ trei secunde, apoi revenim singuri pe insulă. Acolo așteptăm încă două secunde: jocul nu se reia singur. Atingem fluturele și parcurgem o nouă rundă. 30 înseamnă trei secunde de pauză după terminare, nu durata estimată a artiștilor.
+35–55 min. Păstrăm M2. Programăm Jetul B, cele două stări ale plantei B și răspunsul portocaliu al Indicatorului. Prelungim firul Robotului: plecare spre B, două porții, mov, retur.
 
-## Dificultăți și sprijin
+**Întrebare:** Avem nevoie de patru porții, dar încap trei. Unde punem reumplerea ca întregul program să meargă cu un singur Steag?
 
-- Mingea apare prea devreme: plicul de final trebuie să fie după Repeat; în M3 îl trimite câinele.
-- Artiștii pornesc simultan: trucul câinelui începe la portocaliu. Steagul lui pregătește numai mărimea.
-- Encore nu pregătește butoanele: ambii destinatari au La verde → ascunde.
-- Întoarcerea nu reface insula: folosim Go to Page 1 și păstrăm programele de pregătire de pe pagina 1.
+**Indiciu / soluție:** După cele două porții ale lui A. La final ambele plante sunt udate, jeturile sunt ascunse, robotul este la stație și mai are 1.
 
-Rezervele sunt peste cele 50 de minute și nu înlocuiesc puzzle-ul dificil sau salvarea. La final, fiecare copil joacă, revine în galerie și redeschide. Pentru o nouă probă alege pagina 1 și apasă steagul. Profesorul poate păstra o copie prin rutina de export a clasei. Prezentările sunt opționale.
+[Soluția nativă](solutii_gradinar/m3.sjr).
 
-Înainte de clasă, probează M3 pe Lenovo: atingere, ordine, două runde și redeschidere offline. Raportul browserului: verificare/README.md.
+### Robotul grădinar
 
-**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.
+- Steag → La poziția inițială → Arată → Viteză normală → Așteaptă 10 → Dreapta 6 → Sus 4 → Repetă 2 { Trimite roșu } → Trimite verde → Jos 4 → Stânga 6 → La poziția inițială → Trimite galben → Trimite albastru → Dreapta 6 → Jos 2 → Repetă 2 { Trimite portocaliu } → Trimite mov → Sus 2 → Stânga 6 → La poziția inițială → Spune Sera este gata!
+
+### Indicatorul de apă
+
+- Steag → La poziția inițială → Arată → Viteză normală
+- Primește roșu → Stânga 1
+- Primește portocaliu → Stânga 1
+- Primește albastru → La poziția inițială
+
+### Jetul A
+
+- Steag → Ascunde
+- Primește roșu → Arată → Așteaptă 10 → Ascunde → Așteaptă 5
+
+### Planta A — ofilită
+
+- Steag → Arată
+- Primește verde → Ascunde
+
+### Planta A — udată
+
+- Steag → Ascunde
+- Primește verde → Arată
+
+### Apa de la stație
+
+- Steag → Ascunde
+- Primește galben → Arată → Așteaptă 20 → Ascunde
+
+### Jetul B
+
+- Steag → Ascunde
+- Primește portocaliu → Arată → Așteaptă 10 → Ascunde → Așteaptă 5
+
+### Planta B — ofilită
+
+- Steag → Arată
+- Primește mov → Ascunde
+
+### Planta B — udată
+
+- Steag → Ascunde
+- Primește mov → Arată
+
+**Fără cod:** Stația de reumplere, Ghiveciul A, Ghiveciul B, Scala rezervorului.
+
+## R1 — Rezervor de patru
+
+Rezervă · +5–8 min. Pornim separat din M3. La începutul probei, cu grila activă, tragem Indicatorul de la 3 la 4: noua poziție inițială este x=288. Înlocuim returul și reumplerea dintre plante cu Jos 6. Eliminăm programele nefolosite ale Apei de la stație și răspunsul albastru.
+
+**Întrebare:** Ce comenzi putem scoate dacă încap patru porții?
+
+**Indiciu / soluție:** Reumplerea și ocolul prin stație. Ordine: A, B, retur; indicatorul ajunge la 0.
+
+[Soluția nativă](solutii_gradinar/r1.sjr).
+
+### Robotul grădinar
+
+- Steag → La poziția inițială → Arată → Viteză normală → Așteaptă 10 → Dreapta 6 → Sus 4 → Repetă 2 { Trimite roșu } → Trimite verde → Jos 6 → Repetă 2 { Trimite portocaliu } → Trimite mov → Sus 2 → Stânga 6 → La poziția inițială → Spune Sera este gata!
+
+### Indicatorul de apă
+
+- Steag → La poziția inițială → Arată → Viteză normală
+- Primește roșu → Stânga 1
+- Primește portocaliu → Stânga 1
+
+### Jetul A
+
+- Steag → Ascunde
+- Primește roșu → Arată → Așteaptă 10 → Ascunde → Așteaptă 5
+
+### Planta A — ofilită
+
+- Steag → Arată
+- Primește verde → Ascunde
+
+### Planta A — udată
+
+- Steag → Ascunde
+- Primește verde → Arată
+
+### Jetul B
+
+- Steag → Ascunde
+- Primește portocaliu → Arată → Așteaptă 10 → Ascunde → Așteaptă 5
+
+### Planta B — ofilită
+
+- Steag → Arată
+- Primește mov → Ascunde
+
+### Planta B — udată
+
+- Steag → Ascunde
+- Primește mov → Arată
+
+**Fără cod:** Stația de reumplere, Ghiveciul A, Ghiveciul B, Apa de la stație, Scala rezervorului.
+
+## R2 — Două treceri
+
+Rezervă · +8–10 min. Pornim separat din M3, cu Indicatorul la 3. Plantele primesc întâi câte o porție. Robotul revine la A pentru a doua, apoi se reumple și termină B. Înlocuim repetările cu mesaje individuale în ordinea traseului.
+
+**Întrebare:** După A, B, A mai putem uda B înainte de stație?
+
+**Indiciu / soluție:** 3 − 1 − 1 − 1 = 0. Reumplem, apoi dăm ultima porție lui B. Verde vine doar la al doilea A, mov doar la al doilea B.
+
+[Soluția nativă](solutii_gradinar/r2.sjr).
+
+### Robotul grădinar
+
+- Steag → La poziția inițială → Arată → Viteză normală → Așteaptă 10 → Dreapta 6 → Sus 4 → Trimite roșu → Jos 6 → Trimite portocaliu → Sus 6 → Trimite roșu → Trimite verde → Jos 4 → Stânga 6 → La poziția inițială → Trimite galben → Trimite albastru → Dreapta 6 → Jos 2 → Trimite portocaliu → Trimite mov → Sus 2 → Stânga 6 → La poziția inițială → Spune Sera este gata!
+
+### Indicatorul de apă
+
+- Steag → La poziția inițială → Arată → Viteză normală
+- Primește roșu → Stânga 1
+- Primește portocaliu → Stânga 1
+- Primește albastru → La poziția inițială
+
+### Jetul A
+
+- Steag → Ascunde
+- Primește roșu → Arată → Așteaptă 10 → Ascunde → Așteaptă 5
+
+### Planta A — ofilită
+
+- Steag → Arată
+- Primește verde → Ascunde
+
+### Planta A — udată
+
+- Steag → Ascunde
+- Primește verde → Arată
+
+### Apa de la stație
+
+- Steag → Ascunde
+- Primește galben → Arată → Așteaptă 20 → Ascunde
+
+### Jetul B
+
+- Steag → Ascunde
+- Primește portocaliu → Arată → Așteaptă 10 → Ascunde → Așteaptă 5
+
+### Planta B — ofilită
+
+- Steag → Arată
+- Primește mov → Ascunde
+
+### Planta B — udată
+
+- Steag → Ascunde
+- Primește mov → Arată
+
+**Fără cod:** Stația de reumplere, Ghiveciul A, Ghiveciul B, Scala rezervorului.
+
+## Verificarea de la finalul orei
+
+- Un singur Steag pornește M3; fiecare plantă primește două porții.
+- Jetul este vizibil numai cât robotul este oprit lângă ghiveci.
+- Indicatorul: 3 → 2 → 1 → 3 → 2 → 1. Reumplerea este la stație.
+- Florile apar după a doua porție; robotul revine acasă, jeturile rămân ascunse.
+- Stop, apoi Steag reiau totul. Revenim în galerie, redeschidem și rulăm din nou.
+
+## Dacă un copil se blochează
+
+Planta nu se schimbă: verificăm culoarea plicului și cele două personaje, ofilită și udată. Indicatorul nu scade: îi lipsește răspunsul la roșu sau portocaliu. Robotul udă în mers: mesajele și mișcarea trebuie să fie în același fir, în ordinea din PDF. Apa stației nu ajunge în rezervor: verificăm returul și blocul La poziția inițială de la stație.
+
+În portul web, unele pictograme importate pot apărea goale. Deschidem săgeata blocului și alegem din nou aceeași culoare/viteză. Nu există un bloc „gol” de adăugat. Capturile au fost făcute în aplicație după reselectarea valorilor, fără pictograme desenate peste imagine.
+
+## Materiale și testare
+
+[PDF cu plan și toate programele](Ghid_profesor_Lectia_10.pdf) · [Lista proiectelor](solutii_gradinar/README.md) · [Raportul testării](verificare/Gradinarul_60min.md) · [Observații după oră](Observatii_dupa_lectie.md).
+
+Testele sunt în ScratchJr Desktop Reborn în browser. Un Lenovo fizic nu a fost folosit; verifică importul starterului și rularea soluției finale pe o tabletă a școlii înaintea orei.

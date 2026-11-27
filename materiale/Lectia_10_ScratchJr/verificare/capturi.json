@@ -1,0 +1,2517 @@
+[
+  {
+    "key": "r2",
+    "id": "robot",
+    "file": "r2-robot-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": -151.33334350585938,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": -78.33333587646484,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": -13.333333969116213,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": 51.66666793823242,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 30px, 0px);",
+          "w": 76,
+          "x": 116.66667175292967,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(373px, 30px, 0px);",
+          "w": 76,
+          "x": 181.6666717529297,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(438px, 30px, 0px);",
+          "w": 76,
+          "x": 246.6666717529297,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 7,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(503px, 30px, 0px);",
+          "w": 76,
+          "x": 311.66668701171875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 8,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(568px, 30px, 0px);",
+          "w": 76,
+          "x": 376.6666870117187,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(633px, 30px, 0px);",
+          "w": 76,
+          "x": 441.6666870117187,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 10,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(698px, 30px, 0px);",
+          "w": 76,
+          "x": 506.6666870117187,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 11,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(763px, 30px, 0px);",
+          "w": 76,
+          "x": 571.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 12,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(828px, 30px, 0px);",
+          "w": 76,
+          "x": 636.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 13,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(893px, 30px, 0px);",
+          "w": 76,
+          "x": 701.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 14,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(958px, 30px, 0px);",
+          "w": 76,
+          "x": 766.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 15,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1023px, 30px, 0px);",
+          "w": 76,
+          "x": 831.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 16,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1088px, 30px, 0px);",
+          "w": 76,
+          "x": 896.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 17,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1153px, 30px, 0px);",
+          "w": 76,
+          "x": 961.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 18,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1218px, 30px, 0px);",
+          "w": 76,
+          "x": 1026.666748046875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 19,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1283px, 30px, 0px);",
+          "w": 76,
+          "x": 1091.666748046875,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 20,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1348px, 30px, 0px);",
+          "w": 76,
+          "x": 1156.666748046875,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 21,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1413px, 30px, 0px);",
+          "w": 76,
+          "x": 1221.666748046875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 22,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1478px, 30px, 0px);",
+          "w": 76,
+          "x": 1286.666748046875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 23,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1543px, 30px, 0px);",
+          "w": 76,
+          "x": 1351.666748046875,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 24,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1608px, 30px, 0px);",
+          "w": 76,
+          "x": 1416.666748046875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 25,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1673px, 30px, 0px);",
+          "w": 76,
+          "x": 1481.666748046875,
+          "y": 566
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r2",
+    "id": "robot",
+    "file": "r2-robot-I2.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": -151.33334350585938,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": -78.33333587646484,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": -13.333333969116213,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": 51.66666793823242,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 30px, 0px);",
+          "w": 76,
+          "x": 116.66667175292967,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(373px, 30px, 0px);",
+          "w": 76,
+          "x": 181.6666717529297,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(438px, 30px, 0px);",
+          "w": 76,
+          "x": 246.6666717529297,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 7,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(503px, 30px, 0px);",
+          "w": 76,
+          "x": 311.66668701171875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 8,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(568px, 30px, 0px);",
+          "w": 76,
+          "x": 376.6666870117187,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(633px, 30px, 0px);",
+          "w": 76,
+          "x": 441.6666870117187,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 10,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(698px, 30px, 0px);",
+          "w": 76,
+          "x": 506.6666870117187,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 11,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(763px, 30px, 0px);",
+          "w": 76,
+          "x": 571.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 12,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(828px, 30px, 0px);",
+          "w": 76,
+          "x": 636.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 13,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(893px, 30px, 0px);",
+          "w": 76,
+          "x": 701.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 14,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(958px, 30px, 0px);",
+          "w": 76,
+          "x": 766.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 15,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1023px, 30px, 0px);",
+          "w": 76,
+          "x": 831.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 16,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1088px, 30px, 0px);",
+          "w": 76,
+          "x": 896.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 17,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1153px, 30px, 0px);",
+          "w": 76,
+          "x": 961.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 18,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1218px, 30px, 0px);",
+          "w": 76,
+          "x": 1026.666748046875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 19,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1283px, 30px, 0px);",
+          "w": 76,
+          "x": 1091.666748046875,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 20,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1348px, 30px, 0px);",
+          "w": 76,
+          "x": 1156.666748046875,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 21,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1413px, 30px, 0px);",
+          "w": 76,
+          "x": 1221.666748046875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 22,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1478px, 30px, 0px);",
+          "w": 76,
+          "x": 1286.666748046875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 23,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1543px, 30px, 0px);",
+          "w": 76,
+          "x": 1351.666748046875,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 24,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1608px, 30px, 0px);",
+          "w": 76,
+          "x": 1416.666748046875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 25,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1673px, 30px, 0px);",
+          "w": 76,
+          "x": 1481.666748046875,
+          "y": 566
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r2",
+    "id": "robot",
+    "file": "r2-robot-I3.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": 138,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": 203,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 30px, 0px);",
+          "w": 76,
+          "x": 268,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(373px, 30px, 0px);",
+          "w": 76,
+          "x": 333,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(438px, 30px, 0px);",
+          "w": 76,
+          "x": 398,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 7,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(503px, 30px, 0px);",
+          "w": 76,
+          "x": 463,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 8,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(568px, 30px, 0px);",
+          "w": 76,
+          "x": 528,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(633px, 30px, 0px);",
+          "w": 76,
+          "x": 593,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 10,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(698px, 30px, 0px);",
+          "w": 76,
+          "x": 658,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 11,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(763px, 30px, 0px);",
+          "w": 76,
+          "x": 723,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 12,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(828px, 30px, 0px);",
+          "w": 76,
+          "x": 788,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 13,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(893px, 30px, 0px);",
+          "w": 76,
+          "x": 853,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 14,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(958px, 30px, 0px);",
+          "w": 76,
+          "x": 918,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 15,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1023px, 30px, 0px);",
+          "w": 76,
+          "x": 983,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 16,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1088px, 30px, 0px);",
+          "w": 76,
+          "x": 1048,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 17,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1153px, 30px, 0px);",
+          "w": 76,
+          "x": 1113,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 18,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1218px, 30px, 0px);",
+          "w": 76,
+          "x": 1178,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 19,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1283px, 30px, 0px);",
+          "w": 76,
+          "x": 1243,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 20,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1348px, 30px, 0px);",
+          "w": 76,
+          "x": 1308,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 21,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1413px, 30px, 0px);",
+          "w": 76,
+          "x": 1373,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 22,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1478px, 30px, 0px);",
+          "w": 76,
+          "x": 1438,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 23,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1543px, 30px, 0px);",
+          "w": 76,
+          "x": 1503,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 24,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1608px, 30px, 0px);",
+          "w": 76,
+          "x": 1568,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 25,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1673px, 30px, 0px);",
+          "w": 76,
+          "x": 1633,
+          "y": 566
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r2",
+    "id": "robot",
+    "file": "r2-robot-I4.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": -429.3333435058594,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": -356.3333435058594,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": -291.3333435058594,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": -226.33334350585935,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 30px, 0px);",
+          "w": 76,
+          "x": -161.33334350585938,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(373px, 30px, 0px);",
+          "w": 76,
+          "x": -96.33333587646484,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(438px, 30px, 0px);",
+          "w": 76,
+          "x": -31.33333396911621,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 7,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(503px, 30px, 0px);",
+          "w": 76,
+          "x": 33.66666793823242,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 8,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(568px, 30px, 0px);",
+          "w": 76,
+          "x": 98.66667175292967,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(633px, 30px, 0px);",
+          "w": 76,
+          "x": 163.6666717529297,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 10,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(698px, 30px, 0px);",
+          "w": 76,
+          "x": 228.6666717529297,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 11,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(763px, 30px, 0px);",
+          "w": 76,
+          "x": 293.66668701171875,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 12,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(828px, 30px, 0px);",
+          "w": 76,
+          "x": 358.66668701171875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 13,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(893px, 30px, 0px);",
+          "w": 76,
+          "x": 423.6666870117187,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 14,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(958px, 30px, 0px);",
+          "w": 76,
+          "x": 488.6666870117187,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 15,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1023px, 30px, 0px);",
+          "w": 76,
+          "x": 553.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 16,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1088px, 30px, 0px);",
+          "w": 76,
+          "x": 618.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 17,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1153px, 30px, 0px);",
+          "w": 76,
+          "x": 683.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 18,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1218px, 30px, 0px);",
+          "w": 76,
+          "x": 748.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 19,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1283px, 30px, 0px);",
+          "w": 76,
+          "x": 813.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 20,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1348px, 30px, 0px);",
+          "w": 76,
+          "x": 878.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 21,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1413px, 30px, 0px);",
+          "w": 76,
+          "x": 943.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 22,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1478px, 30px, 0px);",
+          "w": 76,
+          "x": 1008.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 23,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1543px, 30px, 0px);",
+          "w": 76,
+          "x": 1073.666748046875,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 24,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1608px, 30px, 0px);",
+          "w": 76,
+          "x": 1138.666748046875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 25,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1673px, 30px, 0px);",
+          "w": 76,
+          "x": 1203.666748046875,
+          "y": 566
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r2",
+    "id": "indicator",
+    "file": "r2-indicator-I3.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": 138,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": 203,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 4,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 150px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 686
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 150px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 686
+        },
+        {
+          "h": 83,
+          "index": 6,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 270px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 806
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 7,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 270px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 806
+        },
+        {
+          "h": 83,
+          "index": 8,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 390px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 926
+        },
+        {
+          "h": 66,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 390px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 926
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r2",
+    "id": "jeta",
+    "file": "r2-jeta-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 2,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 150px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 686
+        },
+        {
+          "h": 66,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 150px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 686
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 150px, 0px);",
+          "w": 76,
+          "x": 138,
+          "y": 686
+        },
+        {
+          "h": 66,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 150px, 0px);",
+          "w": 76,
+          "x": 203,
+          "y": 686
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 150px, 0px);",
+          "w": 76,
+          "x": 268,
+          "y": 686
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r2",
+    "id": "jetb",
+    "file": "r2-jetb-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 2,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 150px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 686
+        },
+        {
+          "h": 66,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 150px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 686
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 150px, 0px);",
+          "w": 76,
+          "x": 138,
+          "y": 686
+        },
+        {
+          "h": 66,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 150px, 0px);",
+          "w": 76,
+          "x": 203,
+          "y": 686
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 150px, 0px);",
+          "w": 76,
+          "x": 268,
+          "y": 686
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r2",
+    "id": "umplere",
+    "file": "r2-umplere-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 2,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 150px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 686
+        },
+        {
+          "h": 66,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 150px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 686
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 150px, 0px);",
+          "w": 76,
+          "x": 138,
+          "y": 686
+        },
+        {
+          "h": 66,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 150px, 0px);",
+          "w": 76,
+          "x": 203,
+          "y": 686
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r2",
+    "id": "uscataa",
+    "file": "r2-uscataa-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 2,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 150px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 686
+        },
+        {
+          "h": 66,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 150px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 686
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r2",
+    "id": "viea",
+    "file": "r2-viea-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 2,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 150px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 686
+        },
+        {
+          "h": 66,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 150px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 686
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r2",
+    "id": "uscatab",
+    "file": "r2-uscatab-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 2,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 150px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 686
+        },
+        {
+          "h": 66,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 150px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 686
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r2",
+    "id": "vieb",
+    "file": "r2-vieb-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 2,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 150px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 686
+        },
+        {
+          "h": 66,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 150px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 686
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r1",
+    "id": "robot",
+    "file": "r1-robot-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 40,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 113,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": 178,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": 243,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 30px, 0px);",
+          "w": 76,
+          "x": 308,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(373px, 30px, 0px);",
+          "w": 76,
+          "x": 373,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(438px, 30px, 0px);",
+          "w": 76,
+          "x": 438,
+          "y": 566
+        },
+        {
+          "h": 100.03125,
+          "index": 7,
+          "style": "pointer-events: none; width: 176px; height: 100px; position: absolute; left: 0px; top: 0px; transform: translate3d(503px, 14px, 0px);",
+          "w": 176,
+          "x": 503,
+          "y": 550
+        },
+        {
+          "h": 83,
+          "index": 8,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(538px, 30px, 0px);",
+          "w": 76,
+          "x": 538,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(667px, 30px, 0px);",
+          "w": 76,
+          "x": 667,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 10,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(732px, 30px, 0px);",
+          "w": 76,
+          "x": 732,
+          "y": 566
+        },
+        {
+          "h": 100.03125,
+          "index": 11,
+          "style": "pointer-events: none; width: 176px; height: 100px; position: absolute; left: 0px; top: 0px; transform: translate3d(797px, 14px, 0px);",
+          "w": 176,
+          "x": 797,
+          "y": 550
+        },
+        {
+          "h": 83,
+          "index": 12,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(832px, 30px, 0px);",
+          "w": 76,
+          "x": 832,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 13,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(961px, 30px, 0px);",
+          "w": 76,
+          "x": 961,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 14,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1026px, 30px, 0px);",
+          "w": 76,
+          "x": 1026,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 15,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1091px, 30px, 0px);",
+          "w": 76,
+          "x": 1091,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 16,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1156px, 30px, 0px);",
+          "w": 76,
+          "x": 1156,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 17,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1221px, 30px, 0px);",
+          "w": 76,
+          "x": 1221,
+          "y": 566
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "r1",
+    "id": "robot",
+    "file": "r1-robot-I2.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 22.666667938232425,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 95.66667175292967,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": 160.6666717529297,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": 225.6666717529297,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 30px, 0px);",
+          "w": 76,
+          "x": 290.66668701171875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(373px, 30px, 0px);",
+          "w": 76,
+          "x": 355.66668701171875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(438px, 30px, 0px);",
+          "w": 76,
+          "x": 420.6666870117187,
+          "y": 566
+        },
+        {
+          "h": 100.03125,
+          "index": 7,
+          "style": "pointer-events: none; width: 176px; height: 100px; position: absolute; left: 0px; top: 0px; transform: translate3d(503px, 14px, 0px);",
+          "w": 176,
+          "x": 485.6666870117187,
+          "y": 550
+        },
+        {
+          "h": 83,
+          "index": 8,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(538px, 30px, 0px);",
+          "w": 76,
+          "x": 520.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(667px, 30px, 0px);",
+          "w": 76,
+          "x": 649.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 10,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(732px, 30px, 0px);",
+          "w": 76,
+          "x": 714.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 100.03125,
+          "index": 11,
+          "style": "pointer-events: none; width: 176px; height: 100px; position: absolute; left: 0px; top: 0px; transform: translate3d(797px, 14px, 0px);",
+          "w": 176,
+          "x": 779.6666870117188,
+          "y": 550
+        },
+        {
+          "h": 83,
+          "index": 12,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(832px, 30px, 0px);",
+          "w": 76,
+          "x": 814.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 13,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(961px, 30px, 0px);",
+          "w": 76,
+          "x": 943.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 14,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1026px, 30px, 0px);",
+          "w": 76,
+          "x": 1008.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 15,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1091px, 30px, 0px);",
+          "w": 76,
+          "x": 1073.666748046875,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 16,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1156px, 30px, 0px);",
+          "w": 76,
+          "x": 1138.666748046875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 17,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1221px, 30px, 0px);",
+          "w": 76,
+          "x": 1203.666748046875,
+          "y": 566
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "m1",
+    "id": "robot",
+    "file": "m1-robot-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 40,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 113,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": 178,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": 243,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 30px, 0px);",
+          "w": 76,
+          "x": 308,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(373px, 30px, 0px);",
+          "w": 76,
+          "x": 373,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(438px, 30px, 0px);",
+          "w": 76,
+          "x": 438,
+          "y": 566
+        },
+        {
+          "h": 100.03125,
+          "index": 7,
+          "style": "pointer-events: none; width: 176px; height: 100px; position: absolute; left: 0px; top: 0px; transform: translate3d(503px, 14px, 0px);",
+          "w": 176,
+          "x": 503,
+          "y": 550
+        },
+        {
+          "h": 83,
+          "index": 8,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(538px, 30px, 0px);",
+          "w": 76,
+          "x": 538,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(667px, 30px, 0px);",
+          "w": 76,
+          "x": 667,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 10,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(732px, 30px, 0px);",
+          "w": 76,
+          "x": 732,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 11,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(797px, 30px, 0px);",
+          "w": 76,
+          "x": 797,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 12,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(862px, 30px, 0px);",
+          "w": 76,
+          "x": 862,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 13,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(927px, 30px, 0px);",
+          "w": 76,
+          "x": 927,
+          "y": 566
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "m2",
+    "id": "robot",
+    "file": "m2-robot-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 40,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 113,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": 178,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": 243,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 30px, 0px);",
+          "w": 76,
+          "x": 308,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(373px, 30px, 0px);",
+          "w": 76,
+          "x": 373,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(438px, 30px, 0px);",
+          "w": 76,
+          "x": 438,
+          "y": 566
+        },
+        {
+          "h": 100.03125,
+          "index": 7,
+          "style": "pointer-events: none; width: 176px; height: 100px; position: absolute; left: 0px; top: 0px; transform: translate3d(503px, 14px, 0px);",
+          "w": 176,
+          "x": 503,
+          "y": 550
+        },
+        {
+          "h": 83,
+          "index": 8,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(538px, 30px, 0px);",
+          "w": 76,
+          "x": 538,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(667px, 30px, 0px);",
+          "w": 76,
+          "x": 667,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 10,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(732px, 30px, 0px);",
+          "w": 76,
+          "x": 732,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 11,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(797px, 30px, 0px);",
+          "w": 76,
+          "x": 797,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 12,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(862px, 30px, 0px);",
+          "w": 76,
+          "x": 862,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 13,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(927px, 30px, 0px);",
+          "w": 76,
+          "x": 927,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 14,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(992px, 30px, 0px);",
+          "w": 76,
+          "x": 992,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 15,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1057px, 30px, 0px);",
+          "w": 76,
+          "x": 1057,
+          "y": 566
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "m3",
+    "id": "robot",
+    "file": "m3-robot-I1.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 0,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 73,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": 138,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": 203,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 30px, 0px);",
+          "w": 76,
+          "x": 268,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(373px, 30px, 0px);",
+          "w": 76,
+          "x": 333,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(438px, 30px, 0px);",
+          "w": 76,
+          "x": 398,
+          "y": 566
+        },
+        {
+          "h": 100.03125,
+          "index": 7,
+          "style": "pointer-events: none; width: 176px; height: 100px; position: absolute; left: 0px; top: 0px; transform: translate3d(503px, 14px, 0px);",
+          "w": 176,
+          "x": 463,
+          "y": 550
+        },
+        {
+          "h": 83,
+          "index": 8,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(538px, 30px, 0px);",
+          "w": 76,
+          "x": 498,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(667px, 30px, 0px);",
+          "w": 76,
+          "x": 627,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 10,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(732px, 30px, 0px);",
+          "w": 76,
+          "x": 692,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 11,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(797px, 30px, 0px);",
+          "w": 76,
+          "x": 757,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 12,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(862px, 30px, 0px);",
+          "w": 76,
+          "x": 822,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 13,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(927px, 30px, 0px);",
+          "w": 76,
+          "x": 887,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 14,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(992px, 30px, 0px);",
+          "w": 76,
+          "x": 952,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 15,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1057px, 30px, 0px);",
+          "w": 76,
+          "x": 1017,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 16,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1122px, 30px, 0px);",
+          "w": 76,
+          "x": 1082,
+          "y": 566
+        },
+        {
+          "h": 100.03125,
+          "index": 17,
+          "style": "pointer-events: none; width: 176px; height: 100px; position: absolute; left: 0px; top: 0px; transform: translate3d(1187px, 14px, 0px);",
+          "w": 176,
+          "x": 1147,
+          "y": 550
+        },
+        {
+          "h": 83,
+          "index": 18,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1222px, 30px, 0px);",
+          "w": 76,
+          "x": 1182,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 19,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1351px, 30px, 0px);",
+          "w": 76,
+          "x": 1311,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 20,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1416px, 30px, 0px);",
+          "w": 76,
+          "x": 1376,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 21,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1481px, 30px, 0px);",
+          "w": 76,
+          "x": 1441,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 22,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1546px, 30px, 0px);",
+          "w": 76,
+          "x": 1506,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 23,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1611px, 30px, 0px);",
+          "w": 76,
+          "x": 1571,
+          "y": 566
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "m3",
+    "id": "robot",
+    "file": "m3-robot-I2.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": -367.3333435058594,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": -294.3333435058594,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": -229.33334350585935,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": -164.33334350585938,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 4,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(308px, 30px, 0px);",
+          "w": 76,
+          "x": -99.33333587646484,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(373px, 30px, 0px);",
+          "w": 76,
+          "x": -34.333335876464844,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 6,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(438px, 30px, 0px);",
+          "w": 76,
+          "x": 30.666667938232425,
+          "y": 566
+        },
+        {
+          "h": 100.03125,
+          "index": 7,
+          "style": "pointer-events: none; width: 176px; height: 100px; position: absolute; left: 0px; top: 0px; transform: translate3d(503px, 14px, 0px);",
+          "w": 176,
+          "x": 95.66667175292967,
+          "y": 550
+        },
+        {
+          "h": 83,
+          "index": 8,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(538px, 30px, 0px);",
+          "w": 76,
+          "x": 130.6666717529297,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(667px, 30px, 0px);",
+          "w": 76,
+          "x": 259.66668701171875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 10,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(732px, 30px, 0px);",
+          "w": 76,
+          "x": 324.66668701171875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 11,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(797px, 30px, 0px);",
+          "w": 76,
+          "x": 389.6666870117187,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 12,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(862px, 30px, 0px);",
+          "w": 76,
+          "x": 454.6666870117187,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 13,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(927px, 30px, 0px);",
+          "w": 76,
+          "x": 519.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 14,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(992px, 30px, 0px);",
+          "w": 76,
+          "x": 584.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 15,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1057px, 30px, 0px);",
+          "w": 76,
+          "x": 649.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 16,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1122px, 30px, 0px);",
+          "w": 76,
+          "x": 714.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 100.03125,
+          "index": 17,
+          "style": "pointer-events: none; width: 176px; height: 100px; position: absolute; left: 0px; top: 0px; transform: translate3d(1187px, 14px, 0px);",
+          "w": 176,
+          "x": 779.6666870117188,
+          "y": 550
+        },
+        {
+          "h": 83,
+          "index": 18,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1222px, 30px, 0px);",
+          "w": 76,
+          "x": 814.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 83,
+          "index": 19,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(1351px, 30px, 0px);",
+          "w": 76,
+          "x": 943.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 20,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1416px, 30px, 0px);",
+          "w": 76,
+          "x": 1008.6666870117188,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 21,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1481px, 30px, 0px);",
+          "w": 76,
+          "x": 1073.666748046875,
+          "y": 566
+        },
+        {
+          "h": 66,
+          "index": 22,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(1546px, 30px, 0px);",
+          "w": 76,
+          "x": 1138.666748046875,
+          "y": 566
+        },
+        {
+          "h": 86.3021240234375,
+          "index": 23,
+          "style": "pointer-events: none; width: 76px; height: 76px; position: absolute; left: 0px; top: 0px; transform: translate3d(1611px, 30px, 0px);",
+          "w": 76,
+          "x": 1203.666748046875,
+          "y": 566
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  },
+  {
+    "key": "m3",
+    "id": "indicator",
+    "file": "m3-indicator-I4.jpg",
+    "rects": {
+      "blocks": [
+        {
+          "h": 66,
+          "index": 0,
+          "style": "pointer-events: none; width: 84px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 30px, 0px);",
+          "w": 84,
+          "x": 40,
+          "y": 356.66668701171875
+        },
+        {
+          "h": 66,
+          "index": 1,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 30px, 0px);",
+          "w": 76,
+          "x": 113,
+          "y": 356.66668701171875
+        },
+        {
+          "h": 66,
+          "index": 2,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(178px, 30px, 0px);",
+          "w": 76,
+          "x": 178,
+          "y": 356.66668701171875
+        },
+        {
+          "h": 83,
+          "index": 3,
+          "style": "pointer-events: none; width: 76px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(243px, 30px, 0px);",
+          "w": 76,
+          "x": 243,
+          "y": 356.66668701171875
+        },
+        {
+          "h": 83,
+          "index": 4,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 150px, 0px);",
+          "w": 84,
+          "x": 40,
+          "y": 476.6666870117187
+        },
+        {
+          "h": 86.30206298828125,
+          "index": 5,
+          "style": "pointer-events: none; width: 76px; height: 81px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 150px, 0px);",
+          "w": 76,
+          "x": 113,
+          "y": 476.6666870117187
+        },
+        {
+          "h": 83,
+          "index": 6,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 270px, 0px);",
+          "w": 84,
+          "x": 40,
+          "y": 596.6666870117188
+        },
+        {
+          "h": 86.30206298828125,
+          "index": 7,
+          "style": "pointer-events: none; width: 76px; height: 81px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 270px, 0px);",
+          "w": 76,
+          "x": 113,
+          "y": 596.6666870117188
+        },
+        {
+          "h": 83,
+          "index": 8,
+          "style": "pointer-events: none; width: 84px; height: 80px; position: absolute; left: 0px; top: 0px; transform: translate3d(40px, 390px, 0px);",
+          "w": 84,
+          "x": 40,
+          "y": 716.6666870117188
+        },
+        {
+          "h": 66,
+          "index": 9,
+          "style": "pointer-events: none; width: 76px; height: 66px; position: absolute; left: 0px; top: 0px; transform: translate3d(113px, 390px, 0px);",
+          "w": 76,
+          "x": 113,
+          "y": 716.6666870117188
+        }
+      ],
+      "viewport": {
+        "h": 800,
+        "w": 1280
+      },
+      "workspace": {
+        "y": 536
+      }
+    },
+    "final": true
+  }
+]

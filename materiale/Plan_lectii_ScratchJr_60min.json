@@ -546,6 +546,60 @@
       "teacher_note": "Fără creație proprie. Puzzle-ul greu este în baza orei. Rezervele pornesc separat din M3. Verificat în browser; proba pe Lenovo rămâne necesară.",
       "student_reference": "Urmează pregătirea și capturile tuturor programelor la fiecare etapă, inclusiv rezervele. În PDF-ul cursului, Lecția 9 începe la pagina 124.",
       "footer": "Resurse incluse în starter / Construim programele pe tabletă"
+    },
+    {
+      "number": 10,
+      "revision": "27 noiembrie 2026",
+      "title": "Robotul grădinar",
+      "subtitle": "Apă pentru două plante, un rezervor de trei porții",
+      "goal": "Programăm consumul de apă, udarea numai la oprire și reumplerea la momentul potrivit.",
+      "setup": "O seră, robot și obiecte mari. Starter fără cod, 13 personaje, toate resursele incluse. Un import înaintea orei.",
+      "schedule": [
+        {
+          "minutes": "0-5",
+          "title": "Misiunea serei",
+          "text": "Instalația de udare s-a oprit. Fiecare plantă cere două porții; robotul duce trei."
+        },
+        {
+          "minutes": "5-20",
+          "title": "M1. Prima plantă",
+          "text": "Două porții la A, indicatorul scade, robotul revine. Mai are o porție."
+        },
+        {
+          "minutes": "20-35",
+          "title": "M2. Reumplerea",
+          "text": "Apa curge la stație; apoi indicatorul revine la trei."
+        },
+        {
+          "minutes": "35-55",
+          "title": "M3. Întreaga seră | dificil, pentru toți",
+          "text": "Un singur Steag: A, reumplere, B, retur. Două porții la fiecare, fără apă pe drum."
+        },
+        {
+          "minutes": "55-60",
+          "title": "Probă și salvare",
+          "text": "Stop/Steag, explicăm momentul reumplerii și redeschidem proiectul."
+        }
+      ],
+      "solutions": [
+        "Roșu / portocaliu: jetul A / B apare și dispare; Indicatorul face Stânga 1. Repetă 2 consumă două porții.",
+        "Stație → A: Dreapta 6, Sus 4. Stație → B: Dreapta 6, Jos 2. Retur prin sensurile inverse; apoi La poziția inițială.",
+        "Galben umple rezervorul; albastru resetează indicatorul. Verde termină A, mov termină B, după a doua porție."
+      ],
+      "hint": "M3: 3 → 2 → 1 → 3 → 2 → 1. Indicatorul este programat; nu oprește automat udarea la zero. Stop, apoi Steag pentru reluare.",
+      "backups": [
+        {
+          "title": "R1. Rezervor de patru | +5–8 min",
+          "text": "Indicator inițial la 4. A, apoi direct B, fără reumplere; rămân 0."
+        },
+        {
+          "title": "R2. Două treceri | +8–10 min",
+          "text": "Câte o porție: A, B, A, reumplere, B. Înflorire după a doua porție."
+        }
+      ],
+      "teacher_note": "Fără creație proprie. Puzzle greu în bază; rezervele pornesc separat din M3. Testat în browser; Lenovo fizic netestat.",
+      "student_reference": "Urmează capturile tuturor programelor, la fiecare etapă, inclusiv rezervele. În PDF-ul cursului, Lecția 10 începe la pagina 141.",
+      "footer": "Resurse incluse în starter / Construim programele pe tabletă"
     }
   ]
 }

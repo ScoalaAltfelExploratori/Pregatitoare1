@@ -67,6 +67,7 @@ from render_workshop_guide import render_appendix as workshop_appendix
 from render_factory_guide import render_appendix as factory_appendix
 from render_submarine_guide import render_appendix as submarine_appendix
 from render_recycling_guide import render_appendix as recycling_appendix
+from render_gardener_guide import render_appendix as gardener_appendix
 
 def append_lesson(writer,lesson,start):
     num=lesson['number'];plan=TEMP/f'plan-{num}-{start}.pdf';appendix=TEMP/f'visual-{num}-{start}.pdf'
@@ -74,7 +75,7 @@ def append_lesson(writer,lesson,start):
     SimpleDocTemplate(str(plan),pagesize=A4,leftMargin=34,rightMargin=34,topMargin=45,bottomMargin=42,title=lesson['title'],author='Școala altfel').build(plan_story(lesson),onFirstPage=decorate_page,onLaterPages=decorate_page)
     reader=PdfReader(str(plan));assert len(reader.pages)==1,(num,len(reader.pages))
     writer.append(reader)
-    render={1:relay_appendix,2:museum_appendix,3:bus_appendix,4:rehearsal_appendix,5:courier_appendix,6:workshop_appendix,7:factory_appendix,8:submarine_appendix,9:recycling_appendix}[num]
+    render={1:relay_appendix,2:museum_appendix,3:bus_appendix,4:rehearsal_appendix,5:courier_appendix,6:workshop_appendix,7:factory_appendix,8:submarine_appendix,9:recycling_appendix,10:gardener_appendix}[num]
     outline=render(appendix,start+1)
     writer.append(PdfReader(str(appendix)))
     writer.add_outline_item(f'Lecția {num} - {lesson["title"]} - plan',start-1)

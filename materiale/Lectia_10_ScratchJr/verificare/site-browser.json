@@ -1,0 +1,20 @@
+{
+  "desktop": {
+    "viewport": [
+      1280,
+      800
+    ],
+    "horizontalOverflow": false
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "horizontalOverflow": false
+  },
+  "imagesLoaded": 2,
+  "teacherGuideOpened": true,
+  "menuCards": 10,
+  "lesson10LinkOpened": true
+}

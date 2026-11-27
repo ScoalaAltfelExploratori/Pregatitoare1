@@ -1,6 +1,6 @@
 # Repere oficiale pentru cursul nostru ScratchJr
 
-Revizuire: 27 noiembrie 2026. Cursul de zece întâlniri folosește demonstrații scurte inspirate din resursele ScratchJr, urmate de puzzle-uri. Lecțiile 1–8 păstrează și creația personală; Lecția 9 are numai misiuni cu ținte clare. Exemplele sunt explicate în română în fiecare ghid. Legăturile de mai jos sunt pentru pregătirea profesorului; copiii pot lucra fără internet după instalare, verificare și, pentru Lecțiile 6–9, importarea starterului.
+Revizuire: 27 noiembrie 2026. Cursul de zece întâlniri folosește demonstrații scurte inspirate din resursele ScratchJr, urmate de puzzle-uri. Lecțiile 1–8 păstrează și creația personală; Lecțiile 9–10 au numai misiuni cu ținte clare. Exemplele sunt explicate în română în fiecare ghid. Legăturile de mai jos sunt pentru pregătirea profesorului; copiii pot lucra fără internet după instalare, verificare și, pentru Lecțiile 6–10, importarea starterului.
 
 | Lecții | Sursa | Ce preluăm și adaptăm |
 | --- | --- | --- |
@@ -13,7 +13,7 @@ Revizuire: 27 noiembrie 2026. Cursul de zece întâlniri folosește demonstrați
 | 7 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper pentru mesaje, viteze, Arată/Ascunde și Repetă finit. Fabrica de roboți este o poveste locală, cu montaj în paralel și resurse originale. |
 | 8 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper pentru atingere, ciocnire, mesaje, viteze și vizibilitate. Robotul submarin este o poveste locală cu pilotaj interactiv, recuperare și resurse originale. |
 | 9 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper pentru mesaje, mișcare, vizibilitate și schimbarea mărimii. Robotul de reciclare este o poveste locală, cu lot mixt și resurse originale. |
-| 10 | [Conversation](https://www.scratchjr.org/teach/activities/conversation) | Mesaje succesive; artiști cu trucuri în locul replicilor de tastat. |
+| 10 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper pentru mesaje, repetare, vizibilitate și deplasare. Robotul grădinar este o poveste locală despre consum și reumplere, cu resurse originale. |
 
 ## Cum le folosim
 
@@ -31,4 +31,4 @@ CAL ScratchJr, clasa I, © 2020-2025 DevTech Research Group, este publicat sub [
 
 Numele activităților și legăturile sunt păstrate pentru identificarea surselor. Cursul nostru nu este aprobat sau certificat de autorii materialelor oficiale.
 
-Lecțiile 6–9 folosesc resurse originale, incluse în câte un SJR de pornire. Celelalte lecții păstrează biblioteca instalată. Proveniență: [atelierul](Lectia_06_ScratchJr/resurse_atelier/README.md), [fabrica](Lectia_07_ScratchJr/resurse_fabrica/README.md), [submarinul](Lectia_08_ScratchJr/resurse_submarin/README.md), [reciclarea](Lectia_09_ScratchJr/resurse_reciclare/README.md).
+Lecțiile 6–10 folosesc resurse originale, incluse în câte un SJR de pornire. Celelalte lecții păstrează biblioteca instalată. Proveniență: [atelierul](Lectia_06_ScratchJr/resurse_atelier/README.md), [fabrica](Lectia_07_ScratchJr/resurse_fabrica/README.md), [submarinul](Lectia_08_ScratchJr/resurse_submarin/README.md), [reciclarea](Lectia_09_ScratchJr/resurse_reciclare/README.md), [sera](Lectia_10_ScratchJr/resurse_gradinar/README.md).

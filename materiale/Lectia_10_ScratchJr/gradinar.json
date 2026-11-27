@@ -1,0 +1,3216 @@
+{
+  "lesson": 10,
+  "title": "Robotul grădinar",
+  "duration": 60,
+  "revision": "v1.2",
+  "projects": [
+    {
+      "key": "start",
+      "name": "L10 Robotul grădinar - de la zero · v1.2",
+      "file": "start.sjr",
+      "sha256": "64b48dc137d9d17cec48dbcc30f1b931785633bad447a5cc13a0e6dd89e65a42",
+      "pages": [
+        {
+          "background": "ce2a4008df4846c0e91544b5c6b47723.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "statie",
+              "asset": "5bc14e0bd37854bf833b282a13851f1f.svg",
+              "name": "Stația de reumplere",
+              "size": [
+                92,
+                104
+              ],
+              "position": [
+                75,
+                86
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "ghivecia",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul A",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscataa",
+              "asset": "799ff17f98e4583223afa8c5cd222e17.svg",
+              "name": "Planta A — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "viea",
+              "asset": "1ab4500290f40bdedd4d15d53b3d60ee.svg",
+              "name": "Planta A — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "jeta",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul A",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                134
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "ghivecib",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul B",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                316
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscatab",
+              "asset": "038a568903ec0e652898ce080f35d1ca.svg",
+              "name": "Planta B — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "vieb",
+              "asset": "5335cf8966493c93457a5f7648e2e06f.svg",
+              "name": "Planta B — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "jetb",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul B",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                278
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "robot",
+              "asset": "b7e2e7e7ddd55d34b74c43adf03a0517.svg",
+              "name": "Robotul grădinar",
+              "size": [
+                140,
+                96
+              ],
+              "position": [
+                96,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "umplere",
+              "asset": "37dfb66114e18f593e74dafec9920f32.svg",
+              "name": "Apa de la stație",
+              "size": [
+                16,
+                24
+              ],
+              "position": [
+                72,
+                148
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "panou",
+              "asset": "5ac6c51707ea82a858d08d2000498e44.svg",
+              "name": "Scala rezervorului",
+              "size": [
+                156,
+                50
+              ],
+              "position": [
+                240,
+                25
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "indicator",
+              "asset": "1cbc1b172923fe03f54fb04ab1026b99.svg",
+              "name": "Indicatorul de apă",
+              "size": [
+                16,
+                23
+              ],
+              "position": [
+                264,
+                23
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m1",
+      "name": "L10 Robotul grădinar - 1. Prima plantă · v1.2",
+      "file": "m1.sjr",
+      "sha256": "aa4c6f75787d9f0be3b28e6db940e904fb86292737fe7e94037792549dddf902",
+      "pages": [
+        {
+          "background": "ce2a4008df4846c0e91544b5c6b47723.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "statie",
+              "asset": "5bc14e0bd37854bf833b282a13851f1f.svg",
+              "name": "Stația de reumplere",
+              "size": [
+                92,
+                104
+              ],
+              "position": [
+                75,
+                86
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "ghivecia",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul A",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscataa",
+              "asset": "799ff17f98e4583223afa8c5cd222e17.svg",
+              "name": "Planta A — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "viea",
+              "asset": "1ab4500290f40bdedd4d15d53b3d60ee.svg",
+              "name": "Planta A — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "jeta",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul A",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                134
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "ghivecib",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul B",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                316
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscatab",
+              "asset": "038a568903ec0e652898ce080f35d1ca.svg",
+              "name": "Planta B — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "vieb",
+              "asset": "5335cf8966493c93457a5f7648e2e06f.svg",
+              "name": "Planta B — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "jetb",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul B",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                278
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "robot",
+              "asset": "b7e2e7e7ddd55d34b74c43adf03a0517.svg",
+              "name": "Robotul grădinar",
+              "size": [
+                140,
+                96
+              ],
+              "position": [
+                96,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Red"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "back",
+                      "value": 6
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Prima plantă este gata."
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ]
+              ]
+            },
+            {
+              "id": "umplere",
+              "asset": "37dfb66114e18f593e74dafec9920f32.svg",
+              "name": "Apa de la stație",
+              "size": [
+                16,
+                24
+              ],
+              "position": [
+                72,
+                148
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "panou",
+              "asset": "5ac6c51707ea82a858d08d2000498e44.svg",
+              "name": "Scala rezervorului",
+              "size": [
+                156,
+                50
+              ],
+              "position": [
+                240,
+                25
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "indicator",
+              "asset": "1cbc1b172923fe03f54fb04ab1026b99.svg",
+              "name": "Indicatorul de apă",
+              "size": [
+                16,
+                23
+              ],
+              "position": [
+                264,
+                23
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m2",
+      "name": "L10 Robotul grădinar - 2. Reumplem rezervorul · v1.2",
+      "file": "m2.sjr",
+      "sha256": "58a2a739776b24120174d9fc940198c38e5b761156d20aef33bd8b168bd717cd",
+      "pages": [
+        {
+          "background": "ce2a4008df4846c0e91544b5c6b47723.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "statie",
+              "asset": "5bc14e0bd37854bf833b282a13851f1f.svg",
+              "name": "Stația de reumplere",
+              "size": [
+                92,
+                104
+              ],
+              "position": [
+                75,
+                86
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "ghivecia",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul A",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscataa",
+              "asset": "799ff17f98e4583223afa8c5cd222e17.svg",
+              "name": "Planta A — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "viea",
+              "asset": "1ab4500290f40bdedd4d15d53b3d60ee.svg",
+              "name": "Planta A — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "jeta",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul A",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                134
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "ghivecib",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul B",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                316
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscatab",
+              "asset": "038a568903ec0e652898ce080f35d1ca.svg",
+              "name": "Planta B — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "vieb",
+              "asset": "5335cf8966493c93457a5f7648e2e06f.svg",
+              "name": "Planta B — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "jetb",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul B",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                278
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "robot",
+              "asset": "b7e2e7e7ddd55d34b74c43adf03a0517.svg",
+              "name": "Robotul grădinar",
+              "size": [
+                140,
+                96
+              ],
+              "position": [
+                96,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Red"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "back",
+                      "value": 6
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Rezervor plin."
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ]
+              ]
+            },
+            {
+              "id": "umplere",
+              "asset": "37dfb66114e18f593e74dafec9920f32.svg",
+              "name": "Apa de la stație",
+              "size": [
+                16,
+                24
+              ],
+              "position": [
+                72,
+                148
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "panou",
+              "asset": "5ac6c51707ea82a858d08d2000498e44.svg",
+              "name": "Scala rezervorului",
+              "size": [
+                156,
+                50
+              ],
+              "position": [
+                240,
+                25
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "indicator",
+              "asset": "1cbc1b172923fe03f54fb04ab1026b99.svg",
+              "name": "Indicatorul de apă",
+              "size": [
+                16,
+                23
+              ],
+              "position": [
+                264,
+                23
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ],
+                [
+                  40,
+                  270
+                ]
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m3",
+      "name": "L10 Robotul grădinar - 3. Întreaga seră · v1.2",
+      "file": "m3.sjr",
+      "sha256": "de8d8d8497d2b912340747d3121168404a1fe1f486347ec2085c2568cd7bc56a",
+      "pages": [
+        {
+          "background": "ce2a4008df4846c0e91544b5c6b47723.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "statie",
+              "asset": "5bc14e0bd37854bf833b282a13851f1f.svg",
+              "name": "Stația de reumplere",
+              "size": [
+                92,
+                104
+              ],
+              "position": [
+                75,
+                86
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "ghivecia",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul A",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscataa",
+              "asset": "799ff17f98e4583223afa8c5cd222e17.svg",
+              "name": "Planta A — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "viea",
+              "asset": "1ab4500290f40bdedd4d15d53b3d60ee.svg",
+              "name": "Planta A — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "jeta",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul A",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                134
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "ghivecib",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul B",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                316
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscatab",
+              "asset": "038a568903ec0e652898ce080f35d1ca.svg",
+              "name": "Planta B — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "vieb",
+              "asset": "5335cf8966493c93457a5f7648e2e06f.svg",
+              "name": "Planta B — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "jetb",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul B",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                278
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "b7e2e7e7ddd55d34b74c43adf03a0517.svg",
+              "name": "Robotul grădinar",
+              "size": [
+                140,
+                96
+              ],
+              "position": [
+                96,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Red"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "back",
+                      "value": 6
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 2
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Orange"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    },
+                    {
+                      "block": "back",
+                      "value": 6
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Sera este gata!"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ]
+              ]
+            },
+            {
+              "id": "umplere",
+              "asset": "37dfb66114e18f593e74dafec9920f32.svg",
+              "name": "Apa de la stație",
+              "size": [
+                16,
+                24
+              ],
+              "position": [
+                72,
+                148
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "panou",
+              "asset": "5ac6c51707ea82a858d08d2000498e44.svg",
+              "name": "Scala rezervorului",
+              "size": [
+                156,
+                50
+              ],
+              "position": [
+                240,
+                25
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "indicator",
+              "asset": "1cbc1b172923fe03f54fb04ab1026b99.svg",
+              "name": "Indicatorul de apă",
+              "size": [
+                16,
+                23
+              ],
+              "position": [
+                264,
+                23
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ],
+                [
+                  40,
+                  270
+                ],
+                [
+                  40,
+                  390
+                ]
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r1",
+      "name": "L10 Robotul grădinar - R1. Rezervor de patru · v1.2",
+      "file": "r1.sjr",
+      "sha256": "13b3b5e2e25d148e2834adacbfebd79c8cf8abff618ebcee59d2c6b3eef77c40",
+      "pages": [
+        {
+          "background": "ce2a4008df4846c0e91544b5c6b47723.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "statie",
+              "asset": "5bc14e0bd37854bf833b282a13851f1f.svg",
+              "name": "Stația de reumplere",
+              "size": [
+                92,
+                104
+              ],
+              "position": [
+                75,
+                86
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "ghivecia",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul A",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscataa",
+              "asset": "799ff17f98e4583223afa8c5cd222e17.svg",
+              "name": "Planta A — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "viea",
+              "asset": "1ab4500290f40bdedd4d15d53b3d60ee.svg",
+              "name": "Planta A — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "jeta",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul A",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                134
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "ghivecib",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul B",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                316
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscatab",
+              "asset": "038a568903ec0e652898ce080f35d1ca.svg",
+              "name": "Planta B — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "vieb",
+              "asset": "5335cf8966493c93457a5f7648e2e06f.svg",
+              "name": "Planta B — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "jetb",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul B",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                278
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "b7e2e7e7ddd55d34b74c43adf03a0517.svg",
+              "name": "Robotul grădinar",
+              "size": [
+                140,
+                96
+              ],
+              "position": [
+                96,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Red"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "down",
+                      "value": 6
+                    },
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Orange"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    },
+                    {
+                      "block": "back",
+                      "value": 6
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Sera este gata!"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ]
+              ]
+            },
+            {
+              "id": "umplere",
+              "asset": "37dfb66114e18f593e74dafec9920f32.svg",
+              "name": "Apa de la stație",
+              "size": [
+                16,
+                24
+              ],
+              "position": [
+                72,
+                148
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "panou",
+              "asset": "5ac6c51707ea82a858d08d2000498e44.svg",
+              "name": "Scala rezervorului",
+              "size": [
+                156,
+                50
+              ],
+              "position": [
+                240,
+                25
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "indicator",
+              "asset": "1cbc1b172923fe03f54fb04ab1026b99.svg",
+              "name": "Indicatorul de apă",
+              "size": [
+                16,
+                23
+              ],
+              "position": [
+                288,
+                23
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 1
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ],
+                [
+                  40,
+                  270
+                ]
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r2",
+      "name": "L10 Robotul grădinar - R2. Două treceri · v1.2",
+      "file": "r2.sjr",
+      "sha256": "538c080ab54b5d458a5639e175ef8852eb65599f4d48d108a0231b03b224038d",
+      "pages": [
+        {
+          "background": "ce2a4008df4846c0e91544b5c6b47723.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "statie",
+              "asset": "5bc14e0bd37854bf833b282a13851f1f.svg",
+              "name": "Stația de reumplere",
+              "size": [
+                92,
+                104
+              ],
+              "position": [
+                75,
+                86
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "ghivecia",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul A",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                172
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscataa",
+              "asset": "799ff17f98e4583223afa8c5cd222e17.svg",
+              "name": "Planta A — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "viea",
+              "asset": "1ab4500290f40bdedd4d15d53b3d60ee.svg",
+              "name": "Planta A — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                118
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "jeta",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul A",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                134
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "ghivecib",
+              "asset": "6fe24c4b427002124dc8eedc8666f99d.svg",
+              "name": "Ghiveciul B",
+              "size": [
+                110,
+                54
+              ],
+              "position": [
+                360,
+                316
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "uscatab",
+              "asset": "038a568903ec0e652898ce080f35d1ca.svg",
+              "name": "Planta B — ofilită",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "vieb",
+              "asset": "5335cf8966493c93457a5f7648e2e06f.svg",
+              "name": "Planta B — udată",
+              "size": [
+                100,
+                76
+              ],
+              "position": [
+                360,
+                262
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "jetb",
+              "asset": "b9dbe21ad106c850f3d6d041db701b44.svg",
+              "name": "Jetul B",
+              "size": [
+                50,
+                50
+              ],
+              "position": [
+                334,
+                278
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 5
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "robot",
+              "asset": "b7e2e7e7ddd55d34b74c43adf03a0517.svg",
+              "name": "Robotul grădinar",
+              "size": [
+                140,
+                96
+              ],
+              "position": [
+                96,
+                204
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "down",
+                      "value": 6
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "up",
+                      "value": 6
+                    },
+                    {
+                      "block": "message",
+                      "value": "Red"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "back",
+                      "value": 6
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Yellow"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 6
+                    },
+                    {
+                      "block": "down",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    },
+                    {
+                      "block": "up",
+                      "value": 2
+                    },
+                    {
+                      "block": "back",
+                      "value": 6
+                    },
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Sera este gata!"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ]
+              ]
+            },
+            {
+              "id": "umplere",
+              "asset": "37dfb66114e18f593e74dafec9920f32.svg",
+              "name": "Apa de la stație",
+              "size": [
+                16,
+                24
+              ],
+              "position": [
+                72,
+                148
+              ],
+              "scale": 1,
+              "shown": false,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Yellow"
+                  },
+                  "actions": [
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "wait",
+                      "value": 20
+                    },
+                    {
+                      "block": "hide",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ]
+              ]
+            },
+            {
+              "id": "panou",
+              "asset": "5ac6c51707ea82a858d08d2000498e44.svg",
+              "name": "Scala rezervorului",
+              "size": [
+                156,
+                50
+              ],
+              "position": [
+                240,
+                25
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [],
+              "layout": []
+            },
+            {
+              "id": "indicator",
+              "asset": "1cbc1b172923fe03f54fb04ab1026b99.svg",
+              "name": "Indicatorul de apă",
+              "size": [
+                16,
+                23
+              ],
+              "position": [
+                264,
+                23
+              ],
+              "scale": 1,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    },
+                    {
+                      "block": "show",
+                      "value": "null"
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Red"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "back",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "home",
+                      "value": "null"
+                    }
+                  ]
+                }
+              ],
+              "layout": [
+                [
+                  40,
+                  30
+                ],
+                [
+                  40,
+                  150
+                ],
+                [
+                  40,
+                  270
+                ],
+                [
+                  40,
+                  390
+                ]
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    }
+  ]
+}

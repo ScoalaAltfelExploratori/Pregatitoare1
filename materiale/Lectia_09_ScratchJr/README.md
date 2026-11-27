@@ -32,4 +32,4 @@ Folosim resursele incluse în SJR, fără a depinde de biblioteca globală de im
 
 ## Arhiva veche
 
-[Insula misterioasă · 50 min](README_50min.md) · [Ghid vechi](ghid-profesor-50min.html) · [PDF vechi](Ghid_profesor_Lectia_09_50min.pdf) · [Cartonașe vechi](Cartonase_Lectia_09.pdf) · [ZIP vechi](../Lectia_09_ScratchJr.zip). Lecția 10 încă folosește insula din această arhivă; nu continuă robotul de reciclare.
+[Insula misterioasă · 50 min](README_50min.md) · [Ghid vechi](ghid-profesor-50min.html) · [PDF vechi](Ghid_profesor_Lectia_09_50min.pdf) · [Cartonașe vechi](Cartonase_Lectia_09.pdf) · [ZIP vechi](../Lectia_09_ScratchJr.zip). Noua Lecție 10 începe sera Robotului grădinar într-un proiect separat.

@@ -1,0 +1,1592 @@
+[
+  {
+    "key": "m1",
+    "actor": "robot",
+    "script": 0,
+    "segment": 0,
+    "page": 4,
+    "capture": "m1-robot-I1.jpg",
+    "clip": [
+      38,
+      548,
+      707,
+      106.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "key": "m1",
+    "actor": "robot",
+    "script": 0,
+    "segment": 1,
+    "page": 4,
+    "capture": "m1-robot-I1.jpg",
+    "clip": [
+      730,
+      564,
+      275,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "key": "m1",
+    "actor": "indicator",
+    "script": 0,
+    "segment": 0,
+    "page": 4,
+    "capture": "r2-indicator-I3.jpg",
+    "clip": [
+      0,
+      564,
+      281,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "key": "m1",
+    "actor": "indicator",
+    "script": 1,
+    "segment": 0,
+    "page": 4,
+    "capture": "r2-indicator-I3.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m1",
+    "actor": "jeta",
+    "script": 0,
+    "segment": 0,
+    "page": 5,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m1",
+    "actor": "jeta",
+    "script": 1,
+    "segment": 0,
+    "page": 5,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      684,
+      346,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "key": "m1",
+    "actor": "uscataa",
+    "script": 0,
+    "segment": 0,
+    "page": 5,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m1",
+    "actor": "uscataa",
+    "script": 1,
+    "segment": 0,
+    "page": 5,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m1",
+    "actor": "viea",
+    "script": 0,
+    "segment": 0,
+    "page": 5,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m1",
+    "actor": "viea",
+    "script": 1,
+    "segment": 0,
+    "page": 5,
+    "capture": "r2-viea-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "robot",
+    "script": 0,
+    "segment": 0,
+    "page": 6,
+    "capture": "m2-robot-I1.jpg",
+    "clip": [
+      38,
+      548,
+      707,
+      106.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "robot",
+    "script": 0,
+    "segment": 1,
+    "page": 6,
+    "capture": "m2-robot-I1.jpg",
+    "clip": [
+      730,
+      564,
+      405,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "indicator",
+    "script": 0,
+    "segment": 0,
+    "page": 6,
+    "capture": "r2-indicator-I3.jpg",
+    "clip": [
+      0,
+      564,
+      281,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "indicator",
+    "script": 1,
+    "segment": 0,
+    "page": 6,
+    "capture": "r2-indicator-I3.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "indicator",
+    "script": 2,
+    "segment": 0,
+    "page": 6,
+    "capture": "m3-indicator-I4.jpg",
+    "clip": [
+      38,
+      714.6666870117188,
+      153,
+      85.33331298828125
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "jeta",
+    "script": 0,
+    "segment": 0,
+    "page": 7,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "jeta",
+    "script": 1,
+    "segment": 0,
+    "page": 7,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      684,
+      346,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "uscataa",
+    "script": 0,
+    "segment": 0,
+    "page": 7,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "uscataa",
+    "script": 1,
+    "segment": 0,
+    "page": 7,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "viea",
+    "script": 0,
+    "segment": 0,
+    "page": 7,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "viea",
+    "script": 1,
+    "segment": 0,
+    "page": 7,
+    "capture": "r2-viea-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "umplere",
+    "script": 0,
+    "segment": 0,
+    "page": 8,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m2",
+    "actor": "umplere",
+    "script": 1,
+    "segment": 0,
+    "page": 8,
+    "capture": "r2-umplere-I1.jpg",
+    "clip": [
+      0,
+      684,
+      281,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "robot",
+    "script": 0,
+    "segment": 0,
+    "page": 9,
+    "capture": "m3-robot-I1.jpg",
+    "clip": [
+      0,
+      548,
+      705,
+      106.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "robot",
+    "script": 0,
+    "segment": 1,
+    "page": 9,
+    "capture": "m3-robot-I2.jpg",
+    "clip": [
+      322.66668701171875,
+      548,
+      699.0,
+      106.3021240234375
+    ],
+    "native_blocks": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "robot",
+    "script": 0,
+    "segment": 2,
+    "page": 9,
+    "capture": "m3-robot-I2.jpg",
+    "clip": [
+      1006.6666870117188,
+      564,
+      273.33331298828125,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      20,
+      21,
+      22,
+      23
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "indicator",
+    "script": 0,
+    "segment": 0,
+    "page": 10,
+    "capture": "r2-indicator-I3.jpg",
+    "clip": [
+      0,
+      564,
+      281,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "indicator",
+    "script": 1,
+    "segment": 0,
+    "page": 10,
+    "capture": "r2-indicator-I3.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "indicator",
+    "script": 2,
+    "segment": 0,
+    "page": 10,
+    "capture": "m3-indicator-I4.jpg",
+    "clip": [
+      38,
+      594.6666870117188,
+      153,
+      90.30206298828125
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "indicator",
+    "script": 3,
+    "segment": 0,
+    "page": 10,
+    "capture": "m3-indicator-I4.jpg",
+    "clip": [
+      38,
+      714.6666870117188,
+      153,
+      85.33331298828125
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "jeta",
+    "script": 0,
+    "segment": 0,
+    "page": 10,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "jeta",
+    "script": 1,
+    "segment": 0,
+    "page": 10,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      684,
+      346,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "uscataa",
+    "script": 0,
+    "segment": 0,
+    "page": 11,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "uscataa",
+    "script": 1,
+    "segment": 0,
+    "page": 11,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "viea",
+    "script": 0,
+    "segment": 0,
+    "page": 11,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "viea",
+    "script": 1,
+    "segment": 0,
+    "page": 11,
+    "capture": "r2-viea-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "umplere",
+    "script": 0,
+    "segment": 0,
+    "page": 11,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "umplere",
+    "script": 1,
+    "segment": 0,
+    "page": 11,
+    "capture": "r2-umplere-I1.jpg",
+    "clip": [
+      0,
+      684,
+      281,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "jetb",
+    "script": 0,
+    "segment": 0,
+    "page": 12,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "jetb",
+    "script": 1,
+    "segment": 0,
+    "page": 12,
+    "capture": "r2-jetb-I1.jpg",
+    "clip": [
+      0,
+      684,
+      346,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "uscatab",
+    "script": 0,
+    "segment": 0,
+    "page": 12,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "uscatab",
+    "script": 1,
+    "segment": 0,
+    "page": 12,
+    "capture": "r2-uscatab-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "vieb",
+    "script": 0,
+    "segment": 0,
+    "page": 12,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "m3",
+    "actor": "vieb",
+    "script": 1,
+    "segment": 0,
+    "page": 12,
+    "capture": "r2-vieb-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "robot",
+    "script": 0,
+    "segment": 0,
+    "page": 13,
+    "capture": "r1-robot-I1.jpg",
+    "clip": [
+      38,
+      548,
+      707,
+      106.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "robot",
+    "script": 0,
+    "segment": 1,
+    "page": 13,
+    "capture": "r1-robot-I2.jpg",
+    "clip": [
+      712.6666870117188,
+      548,
+      567.3333129882812,
+      106.3021240234375
+    ],
+    "native_blocks": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "indicator",
+    "script": 0,
+    "segment": 0,
+    "page": 13,
+    "capture": "r2-indicator-I3.jpg",
+    "clip": [
+      0,
+      564,
+      281,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "indicator",
+    "script": 1,
+    "segment": 0,
+    "page": 13,
+    "capture": "r2-indicator-I3.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "indicator",
+    "script": 2,
+    "segment": 0,
+    "page": 13,
+    "capture": "m3-indicator-I4.jpg",
+    "clip": [
+      38,
+      594.6666870117188,
+      153,
+      90.30206298828125
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "jeta",
+    "script": 0,
+    "segment": 0,
+    "page": 14,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "jeta",
+    "script": 1,
+    "segment": 0,
+    "page": 14,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      684,
+      346,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "uscataa",
+    "script": 0,
+    "segment": 0,
+    "page": 14,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "uscataa",
+    "script": 1,
+    "segment": 0,
+    "page": 14,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "viea",
+    "script": 0,
+    "segment": 0,
+    "page": 14,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "viea",
+    "script": 1,
+    "segment": 0,
+    "page": 14,
+    "capture": "r2-viea-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "jetb",
+    "script": 0,
+    "segment": 0,
+    "page": 15,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "jetb",
+    "script": 1,
+    "segment": 0,
+    "page": 15,
+    "capture": "r2-jetb-I1.jpg",
+    "clip": [
+      0,
+      684,
+      346,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "uscatab",
+    "script": 0,
+    "segment": 0,
+    "page": 15,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "uscatab",
+    "script": 1,
+    "segment": 0,
+    "page": 15,
+    "capture": "r2-uscatab-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "vieb",
+    "script": 0,
+    "segment": 0,
+    "page": 15,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r1",
+    "actor": "vieb",
+    "script": 1,
+    "segment": 0,
+    "page": 15,
+    "capture": "r2-vieb-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "robot",
+    "script": 0,
+    "segment": 0,
+    "page": 16,
+    "capture": "r2-robot-I3.jpg",
+    "clip": [
+      0,
+      564,
+      671,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "robot",
+    "script": 0,
+    "segment": 1,
+    "page": 16,
+    "capture": "r2-robot-I1.jpg",
+    "clip": [
+      504.6666870117187,
+      564,
+      730.0000610351562,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "robot",
+    "script": 0,
+    "segment": 2,
+    "page": 16,
+    "capture": "r2-robot-I4.jpg",
+    "clip": [
+      941.6666870117188,
+      564,
+      338.33331298828125,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "indicator",
+    "script": 0,
+    "segment": 0,
+    "page": 17,
+    "capture": "r2-indicator-I3.jpg",
+    "clip": [
+      0,
+      564,
+      281,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "indicator",
+    "script": 1,
+    "segment": 0,
+    "page": 17,
+    "capture": "r2-indicator-I3.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "indicator",
+    "script": 2,
+    "segment": 0,
+    "page": 17,
+    "capture": "m3-indicator-I4.jpg",
+    "clip": [
+      38,
+      594.6666870117188,
+      153,
+      90.30206298828125
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "indicator",
+    "script": 3,
+    "segment": 0,
+    "page": 17,
+    "capture": "m3-indicator-I4.jpg",
+    "clip": [
+      38,
+      714.6666870117188,
+      153,
+      85.33331298828125
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "jeta",
+    "script": 0,
+    "segment": 0,
+    "page": 17,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "jeta",
+    "script": 1,
+    "segment": 0,
+    "page": 17,
+    "capture": "r2-jeta-I1.jpg",
+    "clip": [
+      0,
+      684,
+      346,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "uscataa",
+    "script": 0,
+    "segment": 0,
+    "page": 18,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "uscataa",
+    "script": 1,
+    "segment": 0,
+    "page": 18,
+    "capture": "r2-uscataa-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "viea",
+    "script": 0,
+    "segment": 0,
+    "page": 18,
+    "capture": "r2-viea-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "viea",
+    "script": 1,
+    "segment": 0,
+    "page": 18,
+    "capture": "r2-viea-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "umplere",
+    "script": 0,
+    "segment": 0,
+    "page": 18,
+    "capture": "r2-umplere-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "umplere",
+    "script": 1,
+    "segment": 0,
+    "page": 18,
+    "capture": "r2-umplere-I1.jpg",
+    "clip": [
+      0,
+      684,
+      281,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "jetb",
+    "script": 0,
+    "segment": 0,
+    "page": 19,
+    "capture": "r2-jetb-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "jetb",
+    "script": 1,
+    "segment": 0,
+    "page": 19,
+    "capture": "r2-jetb-I1.jpg",
+    "clip": [
+      0,
+      684,
+      346,
+      90.3021240234375
+    ],
+    "native_blocks": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "uscatab",
+    "script": 0,
+    "segment": 0,
+    "page": 19,
+    "capture": "r2-uscatab-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "uscatab",
+    "script": 1,
+    "segment": 0,
+    "page": 19,
+    "capture": "r2-uscatab-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "vieb",
+    "script": 0,
+    "segment": 0,
+    "page": 19,
+    "capture": "r2-vieb-I1.jpg",
+    "clip": [
+      0,
+      564,
+      151,
+      70
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  },
+  {
+    "key": "r2",
+    "actor": "vieb",
+    "script": 1,
+    "segment": 0,
+    "page": 19,
+    "capture": "r2-vieb-I1.jpg",
+    "clip": [
+      0,
+      684,
+      151,
+      87
+    ],
+    "native_blocks": [
+      0,
+      1
+    ]
+  }
+]

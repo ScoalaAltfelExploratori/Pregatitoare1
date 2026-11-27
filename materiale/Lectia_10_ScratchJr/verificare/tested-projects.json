@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-27",
+  "revision": "v1.2",
+  "platform": "ScratchJr Desktop Reborn in browser",
+  "url": "https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html",
+  "viewport": [
+    1280,
+    800
+  ],
+  "physicalAndroid": false,
+  "projects": [
+    {
+      "key": "start",
+      "file": "start.sjr",
+      "sha256": "64b48dc137d9d17cec48dbcc30f1b931785633bad447a5cc13a0e6dd89e65a42"
+    },
+    {
+      "key": "m1",
+      "file": "m1.sjr",
+      "sha256": "aa4c6f75787d9f0be3b28e6db940e904fb86292737fe7e94037792549dddf902"
+    },
+    {
+      "key": "m2",
+      "file": "m2.sjr",
+      "sha256": "58a2a739776b24120174d9fc940198c38e5b761156d20aef33bd8b168bd717cd"
+    },
+    {
+      "key": "m3",
+      "file": "m3.sjr",
+      "sha256": "de8d8d8497d2b912340747d3121168404a1fe1f486347ec2085c2568cd7bc56a"
+    },
+    {
+      "key": "r1",
+      "file": "r1.sjr",
+      "sha256": "13b3b5e2e25d148e2834adacbfebd79c8cf8abff618ebcee59d2c6b3eef77c40"
+    },
+    {
+      "key": "r2",
+      "file": "r2.sjr",
+      "sha256": "538c080ab54b5d458a5639e175ef8852eb65599f4d48d108a0231b03b224038d"
+    }
+  ],
+  "reopened": [
+    {
+      "key": "start",
+      "characters": 13,
+      "blocks": 0
+    },
+    {
+      "key": "m1",
+      "characters": 13,
+      "blocks": 35
+    },
+    {
+      "key": "m2",
+      "characters": 13,
+      "blocks": 45
+    },
+    {
+      "key": "r1",
+      "characters": 13,
+      "blocks": 56
+    },
+    {
+      "key": "r2",
+      "characters": 13,
+      "blocks": 72
+    },
+    {
+      "key": "m3",
+      "characters": 13,
+      "blocks": 70
+    }
+  ],
+  "programCaptures": "v1.1; all programs identical in v1.2; only the static scale label changed",
+  "starterEmptyAndUnchanged": true
+}

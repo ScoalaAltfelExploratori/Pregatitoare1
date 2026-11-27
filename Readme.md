@@ -120,7 +120,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 1
 
-[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește resursele aplicației, cu patru excepții: Lecțiile 6–9 includ atelierul, fabrica de roboți, misiunea submarină și stația de reciclare în câte un starter SJR, de importat înaintea orei. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–9 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
+[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește resursele aplicației, cu cinci excepții: Lecțiile 6–10 includ atelierul, fabrica de roboți, misiunea submarină, stația de reciclare și sera în câte un starter SJR, de importat înaintea orei. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–10 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
 
 [README-ul lecției 1](materiale/Lectia_01_ScratchJr/README.md) conține instalarea pe Lenovo, construirea scenei și testarea opțională în browser. [Raportul de verificare](materiale/Lectia_01_ScratchJr/verificare/README.md) separă cele șapte proiecte finale testate în browser de probele Android și Desktop anterioare.
 
@@ -158,4 +158,4 @@ npm test
 
 ## Cursul ScratchJr: lecția 10
 
-[Marea finală - Jocul meu complet](materiale/Lectia_10_ScratchJr/README.md) continuă individual insula din arhiva de 50 de minute a lecției 9: două transformări, buton care așteaptă, apoi iepure → câine → întoarcere. Puzzle dificil și două rezerve: Encore și întoarcere automată. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [102 verificări de comportament în browser](materiale/Lectia_10_ScratchJr/verificare/README.md). Numai resurse incluse în aplicație, fără fișiere de distribuit copiilor. Cele zece pachete de lecții sunt pregătite; meniul siteului le reunește în secțiunea ScratchJr.
+[Robotul grădinar](materiale/Lectia_10_ScratchJr/index.html): 60 de minute, fără creație proprie. Udare, consum de apă și reumplere; puzzle greu în bază și două rezerve. [Starter cu resurse noi și mari](materiale/Lectia_10_ScratchJr/solutii_gradinar/start.sjr), [PDF de 20 de pagini cu toate programele](materiale/Lectia_10_ScratchJr/Ghid_profesor_Lectia_10.pdf), [ghid](materiale/Lectia_10_ScratchJr/ghid-profesor.html) și [testele în browser](materiale/Lectia_10_ScratchJr/verificare/Gradinarul_60min.md). Meniul reunește toate cele zece lecții de o oră, iar Robo rămâne separat.
