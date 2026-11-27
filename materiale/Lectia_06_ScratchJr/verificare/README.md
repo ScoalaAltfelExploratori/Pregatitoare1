@@ -1,3 +1,5 @@
+> Arhivă: Parcul cu surprize, 50 min. Pentru lecția actuală: [Robotul de inspecție - teste](Inspectie_60min.md).
+
 # Verificare - Lecția 6
 
 **PASS, 10 noiembrie 2026. Șapte proiecte, 29 verificări finale în browser.** 14 probe principale, 7 după redeschidere, 7 atingeri inactive și o construcție manuală. Aceste numere reprezintă verificări de comportament, nu numărul misiunilor.

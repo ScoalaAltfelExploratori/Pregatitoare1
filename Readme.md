@@ -120,7 +120,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 1
 
-[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește numai resurse incluse în aplicație, fără fișiere de distribuit pe tabletele copiilor. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–5 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
+[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește resursele aplicației, cu o excepție: Lecția 6 include robotul și atelierul noi într-un singur starter SJR, de importat înaintea orei. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–6 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
 
 [README-ul lecției 1](materiale/Lectia_01_ScratchJr/README.md) conține instalarea pe Lenovo, construirea scenei și testarea opțională în browser. [Raportul de verificare](materiale/Lectia_01_ScratchJr/verificare/README.md) separă cele șapte proiecte finale testate în browser de probele Android și Desktop anterioare.
 
@@ -142,11 +142,11 @@ npm test
 
 ## Cursul ScratchJr: lecția 6
 
-[Parcul cu surprize](materiale/Lectia_06_ScratchJr/README.md) introduce reacțiile la contact: paznicul, două vizite și reacția dificilă în lanț. Două rezerve: comoara care dispare și alarma la distanță. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul testelor](materiale/Lectia_06_ScratchJr/verificare/README.md).
+[Robotul de inspecție](materiale/Lectia_06_ScratchJr/README.md) are 60 de minute: contact, frânare, retragere, ocolire și oprire la stație. Toate părțile grele sunt în bază; 10 minute de creație și două rezerve. Robot și atelier noi, incluse în [starterul fără cod](materiale/Lectia_06_ScratchJr/solutii_inspectie/start.sjr): un import pe tabletă, fără imagini separate. [PDF de 12 pagini cu capturi](materiale/Lectia_06_ScratchJr/Ghid_profesor_Lectia_06.pdf) · [Teste în browser](materiale/Lectia_06_ScratchJr/verificare/Inspectie_60min.md).
 
 ## Cursul ScratchJr: lecția 7
 
-[Povestea cu două finaluri](materiale/Lectia_07_ScratchJr/README.md) introduce paginile: portal, întoarcere și puzzle cu două finaluri. Două rezerve adaugă pornirea automată la sosire și o secvență de trei scene. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul testelor](materiale/Lectia_07_ScratchJr/verificare/README.md). Ambele lecții folosesc numai biblioteca aplicației, fără distribuirea fișierelor pe tabletele copiilor.
+[Povestea cu două finaluri](materiale/Lectia_07_ScratchJr/README.md) introduce paginile: portal, întoarcere și puzzle cu două finaluri. Două rezerve adaugă pornirea automată la sosire și o secvență de trei scene. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul testelor](materiale/Lectia_07_ScratchJr/verificare/README.md). Lecția 7 folosește numai biblioteca aplicației, fără distribuirea fișierelor pe tabletele copiilor.
 
 ## Cursul ScratchJr: lecția 8
 

@@ -1,0 +1,17 @@
+{
+  "tool": "image_gen built-in",
+  "date": "2026-11-27",
+  "status": "Integrate în cele șapte proiecte SJR; importul și rularea verificate în browser la 27 noiembrie 2026. Android fizic netestat.",
+  "assets": [
+    {
+      "key": "robot",
+      "transparent_background": true,
+      "prompt": "Use case: stylized-concept. Asset type: one transparent character sprite for a ScratchJr robotics lesson for bright 6-7 year olds. Create an ORIGINAL clearly recognizable autonomous inspection robot, not a car and not a mascot. Compact engineered mobile robot with two sturdy dark rubber wheels, a low silver-and-teal chassis, a short upright sensor head with two circular camera lenses, and a clearly visible orange contact bumper at the FRONT. Front faces RIGHT. Neutral technical educational illustration, crisp generous outlines and simple colored shapes with restrained soft shading; approachable but not babyish, no mouth, no waving hands, no humanoid legs, no resemblance to a named movie character or branded robot. Full robot entirely visible, side-dominant orthographic view with only slight view of front and top; compact silhouette. Center it with a small transparent margin, no detached details or aerial antennas. Actual transparent background, no checkerboard, no ground, no cast shadow outside the robot, no scenery, no labels, no text, no watermark. All visible parts belong to this single robot. Square image."
+    },
+    {
+      "key": "atelier",
+      "transparent_background": false,
+      "prompt": "Use case: stylized-concept. Asset type: background-only stage for a ScratchJr robotics lesson, landscape 4:3 composition. A clean modern robotics testing workshop. Neutral technical educational illustration with crisp outlines and simple colored shapes, restrained soft shading, pale cool gray and muted teal, small orange engineering accents. The upper 25 percent contains a rear wall with a tidy workbench, closed storage cabinets and a few simple diagnostic screens. The lower 75 percent is a HUGE empty light warm gray testing floor, almost flat orthographic play surface, uncluttered and bright so a small teal-and-silver robot and orange obstacles remain very readable. The left and right sides of the play floor must stay fully clear. Little depth only at the back wall; no strongly converging perspective, no isometric room. Objects in the wall area small and quiet, no busy greebles. Do not include any robots, vehicles, characters, loose tools, crates, fences, barriers, charging stations, floor stripes, floor grid, route arrows, text, numbers, logos or watermarks. Movable obstacles and docking station will be added separately as programmable sprites. This image must contain ONLY the environment, ready to receive those sprites."
+    }
+  ]
+}

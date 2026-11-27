@@ -1,21 +1,16 @@
-# Observații după lecția 6
+# Observații după Lecția 6 - Robotul de inspecție
 
-Data: __________  Grupa: __________  Număr copii: __________
+Data: ____ Clasa: ____ Număr copii: ____
 
-| Observație | Singur / cu sprijin / de reluat |
-| --- | --- |
-| A construit scena din biblioteca aplicației | |
-| A ales pornirea potrivită | |
-| A anticipat ce se întâmplă | |
-| A realizat M1 și M2 | |
-| A încercat puzzle-ul dificil | |
-| A explicat legătura dintre personaje sau pagini | |
-| A repetat proba și a salvat/redeschis | |
+- Importul a fost pregătit înainte de oră pe toate tabletele? ____
+- Au deosebit contactul dintre personaje de atingerea cu degetul? ____
+- Au pus Stop la robot și retragerea înaintea ocolului? ____
+- Au observat frânarea mai devreme după mutarea barierei? ____
+- Au încercat toți cele două reacții din puzzle-ul greu? ____
+- Au păstrat 10 minute pentru propriul traseu? ____
+- Au resetat și salvat? ____
+- Rezerve folosite: viteza / două bariere / niciuna.
 
-Minute reale: scenă ___ M1 ___ M2 ___ dificil ___ salvare ___
+Minute: pregătire ____ M1 ____ M2 ____ pauză ____ M3 ____ creație ____ salvare ____
 
-Rezerve folosite: __________  Cea mai utilă întrebare de sprijin: __________
-
-Dificultăți pe Lenovo / modificări pentru data viitoare: __________
-
-Nu folosim fișa pentru clasamente. Notăm ce sprijin a ajutat și ce putem simplifica.
+Ce reluăm data viitoare: ____

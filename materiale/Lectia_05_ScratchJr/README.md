@@ -9,7 +9,7 @@ Părțile dificile sunt în lecția de bază pentru toți: încărcarea precisă
 - [Lecția pe site](index.html) și [ghidul profesorului](ghid-profesor.html).
 - [PDF de 12 pagini: plan și capturi pentru toate programele](Ghid_profesor_Lectia_05.pdf).
 - [Șapte proiecte native pentru profesor](solutii_curier/README.md), inclusiv scena fără cod.
-- [PDF-ul cursului: lecțiile 1-5](../Plan_lectii_ScratchJr_60min.pdf); Lecția 5 este la p. 50-61.
+- [PDF-ul cursului: lecțiile 1-6](../Plan_lectii_ScratchJr_60min.pdf); Lecția 5 este la p. 50-61.
 - [Raportul testării în browser](verificare/Curierul_60min.md) și [fișa de observații](Observatii_dupa_lectie.md).
 
 ## Pe tabletele copiilor

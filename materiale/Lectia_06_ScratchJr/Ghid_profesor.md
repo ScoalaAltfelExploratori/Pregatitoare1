@@ -1,142 +1,160 @@
-# Lecția 6 Parcul cu surprize
+# Lecția 6 - Robotul de inspecție
 
-50 de minute, copii de 6-7 ani. Trei misiuni, inclusiv un puzzle dificil pentru toți, și două rezerve suplimentare. Construim reacții la contact: personajele se întâlnesc pe scenă și pornesc alte acțiuni.
+**60 de minute · părțile grele în baza lecției · 10 minute de creație · două rezerve suplimentare.**
 
-## Ideea nouă: pornește la ciocnire
+[PDF cu plan și capturi](Ghid_profesor_Lectia_06.pdf) · [Proiect de pornire fără cod](solutii_inspectie/start.sjr) · [Toate soluțiile](solutii_inspectie/README.md)
 
-Blocul galben **Pornire la ciocnire / Start on Bump** pornește când personajul atinge alt personaj pe scenă. Nu este Pornire la atingere cu degetul. Nu alegem un anumit partener în acest bloc; orice personaj care îl atinge poate declanșa programul. Arătăm ambele pictograme galbene și diferența dintre ele.
+## Povestea pentru copii
 
-Un singur steag verde pornește iepurele. Câinele și fluturele așteaptă contactul. La misiunea dificilă nu folosim mesaje; la rezerva 2 combinăm contactul cu mesajul deja cunoscut.
+„Atelierul se pregătește pentru lucru. Robotul trebuie să ajungă la stația de control și să anunțe că inspecția s-a terminat. Unele zone sunt închise cu bariere, iar locul lor se poate schimba. Când atinge o barieră, robotul trebuie să se oprească, să se retragă și să o ocolească. La stația de control trebuie să se oprească definitiv. După steag, voi doar observați.”
 
-## Pregătire în aplicație
+**Ce este nou față de curier:** traseul se schimbă în urma unui contact. Simulăm un senzor de contact, ca un buton din bara de protecție. Nu detectăm obstacolul de la distanță și nu folosim camerele desenate pe robot. Este o simulare în ScratchJr, fără conectare la un robot fizic.
 
-Proiect nou, **Park**, **Rabbit**, **Dog**, toate din biblioteca instalată. Eliminăm pisica inițială dacă urmăm modelul. Adăugăm **Butterfly** la M2 și folosim **Ball** la R1. Pop este sunetul inclus; nu înregistrăm nimic. Copiii nu importă proiecte și nu descarcă resurse.
+## Înainte de oră: un singur import pe tabletă
 
-Păstrăm mărimile inițiale ale personajelor. Activăm grila. Numerele evidențiate de grilă pentru model sunt: iepure la coloana 4, câine la 11, fluture la 18, toate pe linia 5 de jos. În R1, mingea este la coloana 14, pe aceeași linie. În R2 fluturele este sus, la coloana 18, linia 11. Pozițiile și mărimile contează pentru contact; nu lipim personajele de la început.
+Această lecție folosește robotul și atelierul create pentru curs. Ele **nu sunt în biblioteca standard**. Fișierul [start.sjr](solutii_inspectie/start.sjr) conține decorul, robotul, două bariere și stația, toate fără programe. Nu copia imaginile separat.
 
-Profesorul arată poziționarea pe proiector, iar copiii numără pătrățelele. Sunt acceptate alte amplasări dacă probele arată contactul dorit și separarea după reacție. Nu cerem coordonate în pixeli copiilor. Grila ScratchJr are 20 de coloane și 15 linii; un pas mută centrul un pătrățel.
+1. Pe laptop, deschide [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html). Din galerie: **Open**, alege `start.sjr`, apoi cardul **L06 Robotul de inspecție - de la zero · 60 min**. La import nu apăsa încă o dată Open; așteaptă apariția cardului.
+2. Pe un Lenovo, descarcă `start.sjr` de pe pagina lecției. Din Descărcări/Fișiere deschide-l cu ScratchJr, dacă aplicația este oferită ca destinație. Verifică importul, salvarea și redeschiderea pe modelul folosit în clasă înainte să pregătești restul tabletelor. Browserul de pe laptop nu transferă automat proiectul pe Android. Ruta exactă de deschidere poate depinde de managerul de fișiere; nu a fost verificată pe tableta fizică.
+3. Pregătește proiectul pe fiecare tabletă înaintea orei; importul nu consumă cele 60 de minute. Copiii construiesc programele în acest proiect, nu deschid pe rând soluțiile profesorului.
+4. Testează o rulare din `m3.sjr` pe tableta de probă și verifică volumul pentru **Pop**. Lecția rămâne inteligibilă și fără sunet.
 
-## Demonstrație și regula probei
+În browser, toate fișierele au fost importate, rulate și capturate. Versiunea web a raportat o eroare la înregistrarea resurselor în biblioteca globală, însă imaginile din proiect au rămas vizibile după salvare, redeschidere și reîncărcare. De aceea pornim de la SJR-ul inclus și nu cerem căutarea robotului în galeria globală. [Detalii și limitele testării](verificare/Inspectie_60min.md).
 
-Iepure: **steag → dreapta 5**. Câine: **ciocnire → sus 5**. Atingem câinele cu degetul: nu acesta este semnalul. Apăsăm resetarea scenei, apoi steagul. Iepurele ajunge la câine; câinele urcă și se separă.
+## Pregătirea scenei - 0-8 minute
 
-**Înaintea fiecărei probe: Reset, apoi un singur steag.** Reset readuce pozițiile, mărimile și vizibilitatea. Nu tragem personajele înapoi după rulare, fiindcă putem schimba pozițiile inițiale. Așteptăm terminarea reacției. Dacă două personaje rămân suprapuse, programul la ciocnire poate porni din nou; de aceea reacția le separă sau ascunde obiectul.
+Deschidem proiectul fără cod. Jos sunt robotul, bariera și stația cu bifă. **Bariera 2**, sus în stânga, este pusă deoparte pentru a doua rezervă; nu are cod. Nu schimbăm mărimile. Fundalul este decor: contactul funcționează între personaje, nu cu dulapurile desenate pe perete.
 
-## Cele 50 de minute
+Arată trei lucruri: lista personajelor, programele separate ale fiecăruia și grila. Un pas înseamnă un pătrățel. Robotul pornește la aproximativ 3 pătrățele de marginea stângă, bariera la 9½, stația la 18½; toate pe aceeași linie, aproape de rândul 4. Pozițiile sunt deja pregătite. Grila este un ajutor, nu trebuie să reconstruim decorul.
 
-| Minute | Activitate | Acțiunea profesorului |
+**Înainte de fiecare probă:** Stop dacă rulează, **Reset Characters** sus, apoi **un singur steag**. Nu mutăm personajele în timpul rulării. Selectarea din lista din stânga deschide codul; atingerea robotului nu pornește aceste programe.
+
+Blocul galben **La ciocnire / Start on Bump** are două siluete. Nu este blocul cu degetul, care pornește la atingerea ecranului. Folosim blocul standard, fără selector de personaj. El reacționează la contact cu orice alt personaj. Barierele și stația nu trebuie să se atingă între ele.
+
+| Semnal | Cine îl trimite | Ce face robotul |
 | --- | --- | --- |
-| 0-4 | Exemplu oficial adaptat | Leapșa: contact, reacție, separare. |
-| 4-9 | Scena | Așezăm personajele pentru un contact clar. |
-| 9-17 | Misiunea 1 | Trezește paznicul. |
-| 17-24 | Misiunea 2 | Două vizite, două reacții. |
-| 24-27 | Pauză | Mimăm un semnal de contact. |
-| 27-37 | Puzzle dificil | Lanțul iepure-câine-fluture. |
-| 37-45 | Creația mea | O reacție care are sens în povestea copilului. |
-| 45-50 | Testez și salvez | Două probe și redeschidere. |
+| Portocaliu | Bariera atinsă | Oprește deplasarea, se retrage și ocolește |
+| Albastru | Stația atinsă | Oprește deplasarea, se retrage puțin și anunță finalul |
 
-**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+Plic închis = Trimite; plic deschis = Primește. Alegem culoarea din săgeata de sub plic. Blocul portocaliu **Stop**, cu mâna, oprește celelalte programe ale aceluiași personaj; firul care l-a executat continuă.
 
-## Exemplu oficial adaptat: Leapșa pornește o reacție
+## 1. Frâna de siguranță - 8-20 minute
 
-**Reper:** [Playground Games - Tag (lecția 5)](https://sites.bc.edu/devtech/wp-content/uploads/sites/181/2022/10/Playground-Games.pdf). Arată două personaje pe aceeași linie. Iepurele vine până la câine; contactul îl trezește. Folosește pozițiile modelului din ghid sau demo-ul existent. Copiii urmăresc momentul întâlnirii, fără să atingă câinele cu degetul.
+**Ținta:** steagul pornește robotul. Contactul cu bariera întrerupe mersul; robotul se retrage un pas și rămâne pe loc. Construim întâi firul barierei, apoi cele două fire separate ale robotului; probăm după ce toate sunt conectate.
 
-**Model pentru demonstrație:** Rabbit: steag → dreapta 5. Dog: la ciocnire → sus 5. Folosește pozițiile modelului din ghid. Urcarea separă personajele după contact; Pop va fi adăugat în M1.
-
-**Întreabă înainte de rulare:** „Ce a pornit câinele: degetul meu sau iepurele? Copiii arată blocul galben cu două personaje.”
-
-Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
-
-Rezervele sunt în plus: 6-8 și 8-10 minute. Nu înlocuiesc puzzle-ul dificil sau salvarea. Dacă poziționarea durează, o facem împreună. Copiii construiesc programe pentru ținte concrete, fără să copieze intenționat greșeli.
-
-## Misiunea 1 Trezește paznicul
-
-**Ținta:** după un singur steag, iepurele ajunge la câine. Câinele spune un Pop și urcă, eliberând drumul. Nu atingem câinele cu degetul și nu îi punem steag.
-
-**Soluție pentru profesor:** iepure, steag → dreapta 5. Câine, ciocnire → Pop → sus 5. Iepurele încheie la coloana 9, linia 5; câinele la coloana 11, linia 10. Personajele au suprafață, deci contactul începe înainte ca centrele să coincidă.
-
-**Verificare:** câinele stă până la contact, se aude exact un Pop, apoi câinele urcă. După terminare mai așteptăm puțin: nu apare o a doua reacție. Resetăm și repetăm.
-
-**Indicii:** „Ce îl trezește pe câine?”, „Cine trebuie să aibă blocul cu ciocnirea?”, „Cum se despart după întâlnire?”. Câinele trebuie selectat în stânga când îi construim programul.
-
-## Misiunea 2 Două vizite
-
-**Ținta:** iepurele întâlnește mai întâi câinele, apoi fluturele. Fiecare reacționează numai când este atins pe scenă. Câinele spune Pop și urcă; fluturele urcă fără sunet.
-
-**Trecere:** păstrăm programul câinelui, adăugăm Butterfly la coloana 18, linia 5, și schimbăm deplasarea iepurelui din 5 în 14. Fluture: ciocnire → sus 5. Iepurele ajunge la coloana 18; câinele și fluturele termină pe linia 10.
-
-**Verificare:** două reacții distincte, în ordinea întâlnirilor, un singur Pop. După Reset repetăm. **Indiciu:** „Dacă iepurele se oprește după prima vizită, ce trebuie schimbat?”. Cerem predicția înaintea probei.
-
-## Misiunea 3 Reacția în lanț
-
-**Puzzle dificil pentru toți.** Un singur steag. Iepurele ajunge la câine; câinele pornește spre fluture; fluturele spune Pop și urcă. Iepurele parcurge doar traseul scurt. Câinele face legătura cu fluturele. Fără mesaje și fără alte atingeri cu degetul.
-
-**Trecere de la M2:** Resetăm. Iepurele revine la dreapta 5. Înlocuim reacția câinelui; nu lăsăm vechiul program cu Pop și urcare. Adăugăm Pop la începutul reacției fluturelui. Păstrăm pozițiile inițiale 4, 11, 18 pe linia 5.
-
-- Iepure: steag → dreapta 5.
-- Câine: ciocnire → dreapta 5 → jos 2.
-- Fluture: ciocnire → Pop → sus 5.
-
-**Ținte finale:** iepure la coloana 9, linia 5; câine la coloana 16, linia 3; fluture la coloana 18, linia 10. Câinele coboară după întâlnire ca să se separe. Nu impunem ca iepurele să se fi oprit complet înainte să înceapă câinele; programul acestuia pornește chiar la contact.
-
-**Ce este dificil:** fiecare actor are propriul rol, iar traseul unui actor devine semnalul pentru următorul. Copilul trebuie să prevadă unde se întâlnesc și cum se despart. Mișcarea în jos a câinelui împiedică o nouă declanșare din contactul rămas.
-
-**Indicii progresive:** „Cine ajunge până la fluture?”, „Ce trebuie să pornească în locul urcării câinelui?”, „Cine are Pop acum?”, „Cum îl îndepărtăm pe câine după întâlnire?”. Construim mai întâi prima legătură, apoi pe a doua. Acceptăm alt traseu dacă îndeplinește aceleași condiții și nu se repetă accidental.
-
-**Verificare:** observăm iepure → câine → fluture, exact un Pop, apoi oprire. Așteptăm încă două secunde, Reset și repetăm. Toți primesc provocarea cu sprijin; nu este concurs de viteză.
-
-## Creația mea: Surpriza întâlnirii
-
-**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
-
-**Spune copiilor:** „Păstrează o întâlnire care funcționează și inventează reacția personajului atins. Alege Pop, o săritură sau un efect vizual cunoscut. Decide de ce reacționează astfel în povestea ta. Păstrează mișcarea de separare după contact.”
-
-**Verificarea autorului:** Pornește de două ori din start. Reacția trebuie să apară numai după contact. Spune ce face programul pentru ca personajele să nu rămână lipite.
-
-**Sprijin și extensie:** Adaugă un singur efect înaintea mișcării de separare. Pentru mai multă dificultate, al doilea personaj întâlnit are altă reacție. Nu schimbăm toate distanțele simultan.
-
-Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
-
-**Ce urmăresc la încheiere:** Copilul deosebește atingerea cu degetul de contactul dintre personaje.
-
-## Rezervă 1 Comoara
-
-**6-8 minute în plus.** Mingea inclusă devine comoară. Un singur steag duce iepurele la minge; la contact auzim un Pop și mingea dispare. Nu atingem mingea cu degetul. După Reset comoara reapare și jocul poate fi repetat.
-
-**Scenă:** înlocuim câinele și fluturele cu Ball la coloana 14, linia 5. Iepurele pornește din coloana 4. **Soluție:** iepure, steag → dreapta 10; minge, ciocnire → Pop → ascunde.
-
-**Verificare:** un Pop, mingea invizibilă, iepurele la coloana 14. Reset restabilește mingea. **Indiciu:** „Cine trebuie să primească blocul Ascunde?”. Mingea rămâne personaj, nu desen de fundal.
-
-## Rezervă 2 Alarma la distanță
-
-**8-10 minute în plus.** Iepurele atinge câinele. Câinele urcă, apoi trimite un mesaj. Fluturele aflat sus crește, așteaptă și revine la mărimea inițială, deși nimeni nu îl atinge.
-
-**Scenă:** iepure la 4/5, câine la 11/5, fluture la 18/11. Înlocuim programele anterioare cu cele de mai jos; fluturele nu mai are program la ciocnire.
-
-- Iepure: steag → dreapta 5.
-- Câine: ciocnire → sus 5 → trimite mesaj portocaliu.
-- Fluture: la mesaj portocaliu → mărește 4 → așteaptă 10 → mărime inițială.
-
-**Verificare:** câinele se separă și trimite un singur mesaj; fluturele crește o dată și revine. Nu se aude Pop. Reset și repetăm. **Indiciu:** „Cum poate primi fluturele vestea fără contact?”. Așteaptă 10 este aproximativ o secundă de pauză, nu zece secunde.
-
-## Dificultăți și sprijin
-
-| Ce observăm | Cum ajutăm |
+| Personaj | Program complet |
 | --- | --- |
-| Câinele pornește doar când îl atingem | Comparăm Pornire la atingere cu Pornire la ciocnire. |
-| Nimeni nu reacționează | Verificăm contactul real, mărimile, linia de plecare și conectarea blocurilor. |
-| Reacția se repetă | Personajele trebuie să se separe; la M3 păstrăm și jos 2. |
-| A doua probă este diferită | Resetăm scena înainte de steag. Nu mutăm manual personajele după rulare. |
-| Un personaj pleacă prea devreme | Îndepărtăm programele vechi și verificăm să nu existe contact inițial. |
-| Dispare personajul greșit | Selectăm mingea înainte să construim reacția ei. |
-| Pop nu se aude | Verificăm volumul media; acceptăm observarea reacției în timpul explicației. |
+| Robot de inspecție | Steag → Dreapta 20 |
+| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 |
+| Barieră | La ciocnire → Trimite portocaliu |
+| Stație de control | Fără program; nu intervine în această etapă |
+| Bariera 2 | Fără program; nu intervine în această etapă |
 
-## Încheiere și verificare
+**Partea grea, pentru toți:** Stop trebuie să fie la robot, în firul portocaliu. La barieră ar opri doar programele barierei. Stânga 1 rupe contactul, astfel încât evenimentul să nu se repete continuu. Nu este întoarcere la poziția inițială.
 
-Copilul explică cine pornește și ce declanșează următorul personaj. Revenim în galerie, redeschidem, Reset și probăm din nou. Păstrăm aceeași tabletă pentru copil. Fișa de observații urmărește evenimentul, ordinea, separarea și explicarea propriului program.
+**Probă în două poziții:** după resetare, mutăm bariera două pătrățele spre stânga, fără să schimbăm Dreapta 20. La următorul steag robotul trebuie să frâneze mai devreme. Readucem bariera la loc pentru M2. Dreapta 20 este o comandă lungă pe care contactul o întrerupe, nu distanța calculată până la obstacol. Fără reacția de contact, personajul poate trece prin barieră și reapărea din cealaltă parte a scenei.
 
-Testele din browser și dovezile sunt în verificare/README.md. Înainte de clasă, profesorul reconstruiește M1 și M3 pe un Lenovo, repetă cu Reset și verifică salvarea/redeschiderea fără internet. Nu trebuie distribuit niciun fișier pe tabletele copiilor.
+## 2. Retragere și ocolire - 20-32 minute
 
-**Referințe:** [blocurile oficiale](https://www.scratchjr.org/explore/blocks) și [activitatea oficială Start on Bump](https://www.scratchjr.org/curricula/playground/playground-5.pdf).
+**Ținta:** după frânare, robotul se retrage, emite Pop și ocolește bariera pe sus. Revine pe linia de mers, în partea cealaltă, și spune „Cale liberă!”. Extindem același fir portocaliu; păstrăm Steag și programul barierei.
 
-**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.
+| Personaj | Program complet |
+| --- | --- |
+| Robot de inspecție | Steag → Dreapta 20 |
+| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 3 → Dreapta 5 → Jos 3 → Spune Cale liberă! |
+| Barieră | La ciocnire → Trimite portocaliu |
+| Stație de control | Fără program; nu intervine în această etapă |
+| Bariera 2 | Fără program; nu intervine în această etapă |
+
+**Partea grea, pentru toți:** ordinea este Stop, retragere, urcare, traversare, coborâre. Sus 3 și Jos 3 se compensează; Dreapta 5 lasă loc pentru întregul robot, nu numai pentru centrul lui. Dacă schimbăm mărimile personajelor, trebuie recalibrat ocolul. Nu avem un motor fizic care să împiedice trecerea prin obiecte.
+
+**Probă:** atingere scurtă la început, apoi un singur ocol, fără traversarea barierei pe linia de jos. Stația și Bariera 2 rămân fără cod.
+
+## Pauză activă - 32-35 minute
+
+Un copil mimează robotul, fără să se lovească de nimeni. Profesorul spune „Contact!”. Clasa dictează: oprește, înapoi, ocolește, continuă. La „Stație!” trebuie altă reacție. Legăm fiecare reacție de evenimentul care o pornește.
+
+## 3. Inspecția completă - 35-48 minute · puzzle greu de bază
+
+**Ținta:** un steag pornește inspecția, robotul ocolește bariera, continuă până la stație și se oprește lângă ea. „Inspecție gata!” apare numai la contactul cu stația.
+
+Înlocuim replica „Cale liberă!” din M2 cu Dreapta 20. Adăugăm firul de contact al stației și al treilea fir al robotului, cu plic albastru. Nu unim cele trei declanșatoare într-un singur șir.
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot de inspecție | Steag → Dreapta 20 |
+| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 3 → Dreapta 5 → Jos 3 → Dreapta 20 |
+| Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
+| Barieră | La ciocnire → Trimite portocaliu |
+| Stație de control | La ciocnire → Trimite albastru |
+| Bariera 2 | Fără program; nu intervine în această etapă |
+
+**Partea grea, pentru toți:** două contacte au două sensuri. Portocaliu permite continuarea după ocol; albastru oprește inspecția. Stop din firul albastru întrerupe și mersul care a început în firul portocaliu. Retragerea de un pas eliberează contactul cu stația, apoi robotul stă.
+
+**Indicii:** 1. Cine a fost atins? 2. Ce culoare trimite acel personaj? 3. Are robotul un fir separat care primește aceeași culoare? 4. Stop este înaintea noii mișcări?
+
+**Probă completă:** resetare, un steag, contact cu bariera, un ocol, contact cu stația, oprire. Așteptăm și verificăm că nu repornește. Resetăm și repetăm, apoi salvăm și redeschidem. Toți încearcă acest puzzle în timpul de bază.
+
+## Creația mea - 48-58 minute
+
+Copiii aleg locul barierei și înălțimea ocolului. Păstrăm retragerea, loc pentru întregul robot și oprirea finală. Nu cerem o singură soluție. Se poate porni de la M2 dacă M3 încă are nevoie de sprijin.
+
+**Exemplul complet „Ocolul meu”:** mutăm bariera un pătrățel spre stânga față de M3; schimbăm Sus 3/Jos 3 în **Sus 4/Jos 4**. Dreapta 5 rămâne. Stația și robotul pornesc din aceleași locuri. A doua barieră rămâne sus, fără cod. Păstrăm distanță față de ea.
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot de inspecție | Steag → Dreapta 20 |
+| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 4 → Dreapta 5 → Jos 4 → Dreapta 20 |
+| Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
+| Barieră | La ciocnire → Trimite portocaliu |
+| Stație de control | La ciocnire → Trimite albastru |
+| Bariera 2 | Fără program; nu intervine în această etapă |
+
+**Probă:** robotul reacționează mai devreme, ocolește mai sus și ajunge tot la stație. Copilul explică ce două numere trebuie schimbate împreună și de ce. Nu mutăm bariera foarte aproape de pornire sau de stație: trebuie loc pentru retragere și coborâre.
+
+## Probă și salvare - 58-60 minute
+
+Resetăm și pornim o dată. Copilul arată unde se întrerupe mersul și explică diferența dintre portocaliu și albastru. Revenim în galerie pentru salvare. Nume sugerat: „Inspecție - prenume”.
+
+## Rezervă 1. Robotul merge mai repede - încă 5 minute
+
+Pornim de la M3. În firul Steag punem **Viteză rapidă** înainte de Dreapta 20; toate celelalte programe rămân complete mai jos. Predicție: unde se produce reacția și ce se schimbă în durată?
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot de inspecție | Steag → Viteză rapidă → Dreapta 20 |
+| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 3 → Dreapta 5 → Jos 3 → Dreapta 20 |
+| Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
+| Barieră | La ciocnire → Trimite portocaliu |
+| Stație de control | La ciocnire → Trimite albastru |
+| Bariera 2 | Fără program; nu intervine în această etapă |
+
+**Probă:** aceeași ordine a evenimentelor, un ocol și oprire la stație, într-un timp mai scurt. Contactul se verifică în pași de animație; la viteza mai mare punctul exact de oprire poate diferi puțin. Nu cerem același pixel. Pentru revenire la M3, selectăm explicit Viteză normală; simpla scoatere a blocului rapid nu readuce neapărat viteza.
+
+## Rezervă 2. Două zone închise - încă 10 minute
+
+Pornim de la M3, la viteza normală. Folosim **Bariera 2 deja inclusă în proiect**, nu importăm încă un fișier. Mutăm prima barieră două pătrățele spre stânga; aducem Bariera 2 de sus pe linia robotului, la 6 pătrățele spre dreapta de prima. Modelul are centrele la 7½ și 13½ pătrățele de marginea stângă. Stația rămâne la 18½.
+
+Adăugăm la Bariera 2 același La ciocnire → Trimite portocaliu. Robotul păstrează **un singur fir de evitare**, reutilizat la ambele obstacole.
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot de inspecție | Steag → Dreapta 20 |
+| Robot de inspecție | Primește portocaliu → Stop → Stânga 1 → Sunet Pop → Sus 3 → Dreapta 5 → Jos 3 → Dreapta 20 |
+| Robot de inspecție | Primește albastru → Stop → Stânga 1 → Spune Inspecție gata! |
+| Barieră | La ciocnire → Trimite portocaliu |
+| Stație de control | La ciocnire → Trimite albastru |
+| Bariera 2 | La ciocnire → Trimite portocaliu |
+
+**Probă:** două contacte, două retrageri, două ocoluri, apoi contact cu stația și oprire. Nu punem barierele lipite: robotul trebuie să coboare și să reintre pe traseu înaintea următorului contact.
+
+## Când un copil se blochează
+
+- Robotul trece prin barieră: verificăm La ciocnire la barieră, plicurile portocalii și Stop la robot. Fundalul nu detectează contacte.
+- Robotul tremură lângă obiect: verificăm Stânga 1 imediat după Stop și faptul că obiectele sunt separate la pornire.
+- Ocolul lovește bariera din nou: resetăm; păstrăm mărimile din starter și distanțele Sus 3, Dreapta 5, Jos 3.
+- Nu ajunge la stație: în M3, după coborâre trebuie Dreapta 20, în locul replicii din M2.
+- Nu se oprește la stație: aceasta trimite albastru, iar robotul primește albastru într-un fir separat cu Stop.
+- Un plic apare gol în versiunea web: apasă săgeata și selectează din nou culoarea indicată; nu există un „bloc gol” de adăugat.
+
+PDF: plan p. 1; pregătire p. 2; M1 p. 3; M2 p. 4; M3 p. 5-6; creație p. 7-8; R1 p. 9-10; R2 p. 11-12. În PDF-ul cursului adaugă 61. Capturile arată toate firele, inclusiv pe cele neschimbate.

@@ -1,18 +1,18 @@
 # Planul celor 10 lecții ScratchJr pentru copii de 6 și 7 ani
 
-**Revizie din 27 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, povești coerente și **60 de minute**. [PDF-ul cursului](Plan_lectii_ScratchJr_60min.pdf) cuprinde **Lecția 1 - Cursa cu ștafetă (p. 1-13)** și **Lecția 2 - Muzeul după închidere (p. 14-26)** și **Lecția 3 - Autobuzul spre plajă (p. 27-41)** și **Lecția 4 - Repetiția pentru spectacol (p. 42-49)** și **Lecția 5 - Robotul curier (p. 50-61)**. Fiecare are un plan concis, pregătire și capturi reale cu programele tuturor personajelor. Lecțiile 6-10 păstrează parcursul anterior de 50 de minute până la revizuire.
+**Revizie din 27 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, povești coerente și **60 de minute**. [PDF-ul cursului](Plan_lectii_ScratchJr_60min.pdf) cuprinde **Lecția 1 - Cursa cu ștafetă (p. 1-13)** și **Lecția 2 - Muzeul după închidere (p. 14-26)** și **Lecția 3 - Autobuzul spre plajă (p. 27-41)** și **Lecția 4 - Repetiția pentru spectacol (p. 42-49)** și **Lecția 5 - Robotul curier (p. 50-61)** și **Lecția 6 - Robotul de inspecție (p. 62-73)**. Fiecare are un plan concis, pregătire și capturi reale cu programele tuturor personajelor. Lecțiile 7-10 păstrează parcursul anterior de 50 de minute până la revizuire.
 
 Plan de lucru pentru 10 întâlniri, în curs de trecere de la 50 la 60 de minute, cu o tabletă Lenovo K10 de 3 GB RAM pentru fiecare copil. Copiii au parcurs deja exercițiile Robo Explorator. Cursul începe direct în ScratchJr și folosește această experiență pentru a trece de la rezolvarea unor trasee la crearea de animații, scene interactive și povești.
 
-Materialele și explicațiile pentru copii vor fi în română, cu pictograme și demonstrații scurte. Planul este o versiune de lucru, actualizată la 12 noiembrie 2026; ritmul se ajustează după primele două întâlniri.
+Materialele și explicațiile pentru copii vor fi în română, cu pictograme și demonstrații scurte. Planul este o versiune de lucru, actualizată la 27 noiembrie 2026; ritmul se ajustează după primele două întâlniri.
 
 ## Regula cursului: totul se construiește în aplicație
 
 Înaintea celor zece întâlniri practice avem [Lecția 0 — Picnicul întrerupt de ploaie](../scratchjr/lectia-0/index.html): 50 de minute la proiector, conduse de profesor în ScratchJr. Proiectul nativ are patru pagini: ocolirea gardului, culesul merelor, masa prietenilor și adăpostirea de ploaie; cinci rezerve extind povestea, repetarea și statuile. Copiii propun codul, prezic rezultatul și vin pe rând la laptop. Adunările și scăderile 0–10 sprijină deciziile din poveste: câte mere mai culegem, pentru cine le păstrăm pe cele rămase și câți prieteni mai trebuie adăpostiți. [Proiecte și instrucțiuni](Lectia_00_ScratchJr/README.md). Numerotarea lecțiilor 1–10 rămâne aceeași.
 
-Toate cele zece lecții folosesc numai personajele, fundalurile, sunetul Pop și blocurile incluse în ScratchJr. Nu cerem importuri SJR, imagini externe, conturi ale copiilor, descărcări de materiale sau copierea fișierelor pe fiecare tabletă. Instalăm aplicația o singură dată; lecțiile se pot desfășura fără internet după verificarea inițială pe K10.
+Folosim blocurile standard ScratchJr. Lecțiile 1-5 și 7-10 folosesc resursele instalate. Lecția 6 este excepția aprobată: robot și atelier noi, incluse în start.sjr împreună cu stația și două bariere. Importăm o singură dată pe fiecare tabletă, înaintea orei; nu copiem imagini separat. Verificăm importul pe K10 înainte de clasă. După pregătire nu sunt necesare descărcări în timpul lecției.
 
-Profesorul arată un pas, copiii îl fac în propriul proiect, apoi continuăm. Scenele de început se construiesc împreună în timpul lecției. Proiectele pregătite sunt referințe opționale pentru profesor.
+Profesorul arată un pas, copiii îl fac în propriul proiect, apoi continuăm. Scenele de început se construiesc împreună, cu excepția Lecției 6: pornim din atelierul importat și construim programele. Soluțiile pregătite rămân referințe opționale pentru profesor.
 
 **Decizie de proiectare, 9 noiembrie 2026:** pentru toate lecțiile folosim misiuni de construire, cu ținte concrete. Copiii nu construiesc intenționat programe greșite pentru a le repara. Depanarea apare firesc atunci când propriul proiect nu face încă ce au intenționat. Profesorul ajută prin întrebări și indicii, fără o etapă separată de copiere a unei greșeli.
 
@@ -29,7 +29,7 @@ Păstrăm aceeași tabletă pentru fiecare copil. Lecția 2 începe un muzeu nou
 | 3 | Bus, trei Child, Suburbs, Beach Day; Park la creație și rezervă | Urcare, scene, coborâre; 60 min |
 | 4 | Theatre, două Teen, Mother și Pop | Ritmuri finite, două runde dirijate, final; 60 min |
 | 5 | Gym, Car, Soccerball, Basketball; Fence la ocol | Încărcare, livrare, retur și două curse autonome; 60 min |
-| 6 | Rabbit, Dog, Butterfly, Ball, Park și Pop | Contacte și reacții, construite în aplicație |
+| 6 | Robot și atelier noi, bariere și stație în starter; Pop standard | Contact, frânare și ocolire; 60 min; un import înainte de oră |
 | 7 | Rabbit, Dog, Ball, Park, Beach Day și Beach Night | Adăugăm pagini și butoane pentru două finaluri |
 | 8 | Rabbit, Dog, Butterfly, Ball și Park | Forever și Stop: statui cu pornire și înghețare |
 | 9 | Butterfly, Dog, Ball, Rabbit, Beach Day și Beach Night | Insulă cu descoperiri, construită și testată individual |
@@ -47,9 +47,9 @@ Citirea fluentă și scrierea de replici nu sunt condiții de participare. Profe
 
 ## Ritmul unei întâlniri
 
-Lecțiile 1–5 au câte 60 de minute; ghidurile nerevizuite au câte 50. O demonstrație scurtă introduce ideea, apoi urmează misiunile de construire, pauza și provocarea dificilă. **În lecțiile refăcute păstrăm 10 minute pentru creație proprie și ultimele 2-3 minute pentru proba finală și salvare.** Explicațiile și testele se fac și pe parcursul misiunilor.
+Lecțiile 1–6 au câte 60 de minute; ghidurile nerevizuite au câte 50. O demonstrație scurtă introduce ideea, apoi urmează misiunile de construire, pauza și provocarea dificilă. **În lecțiile refăcute păstrăm 10 minute pentru creație proprie și ultimele 2-3 minute pentru proba finală și salvare.** Explicațiile și testele se fac și pe parcursul misiunilor.
 
-Atelierul nu este o recompensă pentru viteză. Fiecare copil personalizează cel mai avansat program care îi funcționează. Dacă ritmul este lent, construim o parte din M2 împreună și simplificăm scena; păstrăm încercarea provocării dificile, atelierul și salvarea. Rezervele rămân suplimentare, cu indicii și soluții. Lecțiile 1–5 au fiecare două rezerve dedicate, cu programe ilustrate.
+Atelierul nu este o recompensă pentru viteză. Fiecare copil personalizează cel mai avansat program care îi funcționează. Dacă ritmul este lent, construim o parte din M2 împreună și simplificăm scena; păstrăm încercarea provocării dificile, atelierul și salvarea. Rezervele rămân suplimentare, cu indicii și soluții. Lecțiile 1–6 au fiecare două rezerve dedicate, cu programe ilustrate.
 
 Profesorul cere o predicție înainte de rulare, o alegere făcută de copil și o explicație scurtă după probă. Alegerea trebuie să schimbe un comportament sau o regulă; decorarea poate însoți programarea. Copiii lucrează pe propriile tablete. Nu cerem schimb de proiecte sau interacțiuni între dispozitive.
 
@@ -60,13 +60,13 @@ Profesorul cere o predicție înainte de rulare, o alegere făcută de copil și
 | 3 | Blocurile Ascunde, Arată și Pagina: aplicate călătoriei | Excursia mea | 48-58 min |
 | 4 | [Ghidul blocurilor: Sunet și Control](https://www.scratchjr.org/explore/blocks) | Spectacolul meu | 47-57 min |
 | 5 | [Ghidul blocurilor: mișcare și mesaje](https://www.scratchjr.org/explore/blocks) | Traseul meu | 48-58 min |
-| 6 | [Playground Games - Tag (lecția 5)](https://sites.bc.edu/devtech/wp-content/uploads/sites/181/2022/10/Playground-Games.pdf) | Surpriza întâlnirii | 37-45 min |
+| 6 | [Ghidul blocurilor: Start on Bump și Stop](https://www.scratchjr.org/explore/blocks) | Ocolul meu | 48-58 min |
 | 7 | [Moonrise after Sunset](https://www.scratchjr.org/teach/activities/moonrise-after-sunset) | Două alegeri care spun o poveste | 37-45 min |
 | 8 | [CAL clasa I - Freeze Dance Party (lecția 16)](https://sites.bc.edu/codingasanotherlanguage/curricula/scratchjr-curricula/1st-grade-scratchjr/) | Coregrafia mea | 37-45 min |
 | 9 | [Animated Genres - proiectul Game](https://www.scratchjr.org/curricula/animatedgenres/full.pdf) | Secretul insulei mele | 37-45 min |
 | 10 | [Conversation](https://www.scratchjr.org/teach/activities/conversation) | Finalul pe care îl semnez eu | 37-45 min |
 
-Exemplele sunt adaptate la personajele și blocurile cunoscute. Nu adăugăm cerințe de descărcare, înregistrare, desen sau import. [Surse și adaptări](Surse_oficiale_ScratchJr.md).
+Exemplele sunt adaptate la personajele și blocurile cunoscute. La Lecția 6 pregătim înaintea orei un import SJR cu resursele noi; în celelalte lecții nu adăugăm cerințe de descărcare, înregistrare, desen sau import. [Surse și adaptări](Surse_oficiale_ScratchJr.md).
 
 ## Parcursul celor 10 lecții
 
@@ -77,13 +77,13 @@ Exemplele sunt adaptate la personajele și blocurile cunoscute. Nu adăugăm cer
 | 3 | Vizibilitate și schimbarea paginii | Autobuzul spre plajă, puzzle greu și două rezerve |
 | 4 | Repetare finită a unui grup și continuare după buclă | Repetiția pentru spectacol, puzzle greu și două rezerve |
 | 5 | Ciclu complet de lucru și transport sincronizat | Robotul curier: două livrări autonome, puzzle greu de bază și două rezerve |
-| 6 | Contactul pornește reacții | Parc cu surprize, lanț dificil și două rezerve |
+| 6 | Contactul întrerupe mersul și pornește evitarea | Robotul de inspecție: ocolire și oprire la stație, două rezerve |
 | 7 | Programele schimbă paginile | Poveste cu două finaluri și două rezerve |
 | 8 | Repetare continuă și întrerupere prin eveniment | Statuile fermecate, comenzi de grup și două rezerve |
 | 9 | Combinăm mesaje, vizibilitate și pagini | Insula misterioasă: descoperiri în ordine și două rezerve |
 | 10 | Mesajul de încheiere coordonează ordinea | Marea finală: artiști pe rând, întoarcere disponibilă la final și două rezerve |
 
-În parcursul refăcut, mesajele apar la ștafetă, paginile la autobuz, iar repetițiile finite la spectacol. Lecțiile 6-10 vor fi adaptate acestei progresii. Adaptăm ritmul după proiectele construite de copii. Proiectul final reunește secvențe, repetiții, mesaje și pagini. Pentru un copil care are nevoie de sprijin, profesorul simplifică intrarea pe pagina de final și construiește gradual țintele.
+În parcursul refăcut, mesajele apar la ștafetă, paginile la autobuz, iar repetițiile finite la spectacol. Lecțiile 7-10 vor fi adaptate acestei progresii. Adaptăm ritmul după proiectele construite de copii. Proiectul final reunește secvențe, repetiții, mesaje și pagini. Pentru un copil care are nevoie de sprijin, profesorul simplifică intrarea pe pagina de final și construiește gradual țintele.
 
 ## Lecția 1 Cursa cu ștafetă - 60 de minute
 
@@ -157,23 +157,22 @@ Trei copii vin din locuri diferite. Autobuzul așteaptă să urce toți; la plaj
 
 [Ghid](Lectia_05_ScratchJr/ghid-profesor.html) · [PDF de 12 pagini cu toate programele](Lectia_05_ScratchJr/Ghid_profesor_Lectia_05.pdf) · [Proiecte native](Lectia_05_ScratchJr/solutii_curier/README.md). Numai elemente instalate, fără importuri pe tabletele copiilor.
 
-## Lecția 6 Parcul cu surprize
+## Lecția 6 Robotul de inspecție
 
-**Stare:** [pachet pregătit](Lectia_06_ScratchJr/README.md), cu ghid actualizat, online și PDF, cinci cartonașe, demo, starter și cinci soluții. Toate cele șapte exemple au fost testate în browser, repetate și redeschise. Proba pe Lenovo rămâne de făcut.
+**60 de minute.** Robotul traversează atelierul și trebuie să ajungă la stația de control. La contactul cu o barieră frânează, se retrage și ocolește; la stație se oprește. Simulăm un senzor de contact, nu detecție la distanță.
 
-**Ideea:** Start on Bump pornește la contact între personaje, nu la atingerea cu degetul. Un steag pornește iepurele; ceilalți așteaptă contactul. Folosim Rabbit, Dog, Butterfly, Ball, Park și Pop, fără importuri.
+- Înainte de oră: importăm starterul cu robotul, atelierul, două bariere și stația, fără cod. Un singur fișier pe tabletă.
+- 0-8: scena și diferența dintre contact și atingerea ecranului.
+- 8-20: frânare și retragere; mutăm bariera și probăm același cod.
+- 20-32: un ocol complet; Sus 3, Dreapta 5, Jos 3 după retragere.
+- 32-35: pauză activă, două reacții la două evenimente.
+- 35-48: puzzle greu pentru toți; portocaliu ocolește, albastru oprește la stație.
+- 48-58: creație; alt loc al barierei, altă înălțime a ocolului.
+- 58-60: probă, explicație și salvare.
 
-1. **Trezește paznicul:** iepurele atinge câinele; câinele spune Pop și urcă.
-2. **Două vizite:** iepurele întâlnește pe rând câinele și fluturele; fiecare reacționează la contact.
-3. **Reacția în lanț - dificilă:** iepure → câine → fluture, un singur steag, fără mesaje; câinele duce mai departe reacția și se separă.
-4. **Rezervă 1 Comoara:** mingea spune Pop și dispare la contact; Reset o readuce.
-5. **Rezervă 2 Alarma la distanță:** contactul pornește câinele, apoi mesajul pornește transformarea fluturelui aflat departe.
+**Părțile grele sunt în baza lecției.** Două rezerve suplimentare: viteză rapidă (+5 min); două zone închise (+10 min), cu același fir de evitare folosit de două ori.
 
-**Ritm:** 0-4 exemplu oficial adaptat; 4-9 scena; 9-17 misiunea 1; 17-24 misiunea 2; 24-27 pauză; 27-37 puzzle dificil; 37-45 creația mea; 45-50 testez și salvez.
-
-**Verificare:** Reset înainte de fiecare steag. Păstrăm mărimile inițiale, verificăm contactul și separarea după reacție. Ghidul folosește numerele vizibile ale grilei. Nu construim greșeli impuse.
-
-**Creație proprie:** Surpriza întâlnirii. Păstrează o întâlnire care funcționează și inventează reacția personajului atins. Alege Pop, o săritură sau un efect vizual cunoscut. Decide de ce reacționează astfel în povestea ta. Păstrează mișcarea de separare după contact. [Ghid actualizat](Lectia_06_ScratchJr/ghid-profesor.html).
+[Ghid](Lectia_06_ScratchJr/ghid-profesor.html) · [PDF cu toate programele](Lectia_06_ScratchJr/Ghid_profesor_Lectia_06.pdf) · [Starter](Lectia_06_ScratchJr/solutii_inspectie/start.sjr) · [Teste](Lectia_06_ScratchJr/verificare/Inspectie_60min.md). Resurse noi incluse în proiect. Importul și rularea au fost testate în browser; verificarea pe Lenovo fizic se face înainte de oră.
 
 ## Lecția 7 Povestea cu două finaluri
 
@@ -277,7 +276,7 @@ Pentru fiecare întâlnire pregătim același pachet:
 - O fișă pentru profesor: obiectiv, demonstrație, întrebări, dificultăți probabile și criteriul de reușită.
 - Două cartonașe vizuale pentru exercițiile de bază, cu o cerință scurtă și rezultatul așteptat.
 - Un cartonaș cu exercițiul dificil, ținta observabilă și indicii progresive; este inclus în fiecare lecție și prezentat tuturor.
-- Un proiect demonstrativ opțional pe dispozitivul profesorului și pașii de construire din biblioteca aplicației. Nu distribuim proiecte de pornire pe tabletele copiilor.
+- Un proiect demonstrativ opțional pe dispozitivul profesorului și pașii de construire din biblioteca aplicației. Excepție: pentru Lecția 6 distribuim starterul cu resursele noi înaintea orei.
 - Întrebări și indicii pentru dificultățile care apar în proiectele construite de copii; nu pregătim programe greșite pe care copiii să le copieze.
 - O observație scurtă după predare, pentru ajustarea întâlnirii următoare.
 
@@ -293,7 +292,7 @@ Cartonașele arată ce trebuie să se întâmple. Programul complet este demonst
 
 Programarea se face în aplicația ScratchJr de pe tabletă. Siteul prezintă cerințele și exemplele; nu presupunem că poate citi sau verifica automat proiectele ScratchJr. Reușita se verifică prin demonstrație și discuție.
 
-Acest plan stabilește conținutul cursului. Pachetul lecției 1 este pregătit în [Lectia_01_ScratchJr](Lectia_01_ScratchJr/README.md), cu ghid, cartonașe și proiecte native. Lecția 2 este pregătită în [Lectia_02_ScratchJr](Lectia_02_ScratchJr/README.md), cu misiuni de construire și exercițiu dificil. Lecția 3 este pregătită în [Lectia_03_ScratchJr](Lectia_03_ScratchJr/README.md), cu urcare, călătorie între scene, coborâre și două rezerve. Lecția 4 este pregătită în [Lectia_04_ScratchJr](Lectia_04_ScratchJr/README.md), cu ritmuri finite, două runde dirijate, un puzzle greu și două rezerve. Lecția 5 este pregătită în [Lectia_05_ScratchJr](Lectia_05_ScratchJr/README.md), cu ritmuri, provocarea celor șapte sunete și două rezerve. Lecția 6 este pregătită în [Lectia_06_ScratchJr](Lectia_06_ScratchJr/README.md), cu reacții la contact, lanț dificil și două rezerve. Lecția 7 este pregătită în [Lectia_07_ScratchJr](Lectia_07_ScratchJr/README.md), cu povestea cu două finaluri și două rezerve. Lecția 8 este pregătită în [Lectia_08_ScratchJr](Lectia_08_ScratchJr/README.md), cu statui, Forever, Stop, puzzle dificil și două rezerve. Lecția 9 este pregătită în [Lectia_09_ScratchJr](Lectia_09_ScratchJr/README.md), cu insula misterioasă, lucru individual, puzzle dificil și două rezerve. Lecția 10 este pregătită în [Lectia_10_ScratchJr](Lectia_10_ScratchJr/README.md), cu marea finală, puzzle dificil și două rezerve. Toate cele zece pachete de lecții sunt pregătite. Meniul include toate cele zece lecții și păstrează Robo în secțiunea sa; observațiile din clasă vor regla dificultatea.
+Acest plan stabilește conținutul cursului. Pachetul lecției 1 este pregătit în [Lectia_01_ScratchJr](Lectia_01_ScratchJr/README.md), cu ghid, cartonașe și proiecte native. Lecția 2 este pregătită în [Lectia_02_ScratchJr](Lectia_02_ScratchJr/README.md), cu misiuni de construire și exercițiu dificil. Lecția 3 este pregătită în [Lectia_03_ScratchJr](Lectia_03_ScratchJr/README.md), cu urcare, călătorie între scene, coborâre și două rezerve. Lecția 4 este pregătită în [Lectia_04_ScratchJr](Lectia_04_ScratchJr/README.md), cu ritmuri finite, două runde dirijate, un puzzle greu și două rezerve. Lecția 5 este pregătită în [Lectia_05_ScratchJr](Lectia_05_ScratchJr/README.md), cu încărcare, două livrări autonome, retur gol și două rezerve. Lecția 6 este pregătită în [Lectia_06_ScratchJr](Lectia_06_ScratchJr/README.md), cu robotul de inspecție, contact, frânare, ocolire și două rezerve. Lecția 7 este pregătită în [Lectia_07_ScratchJr](Lectia_07_ScratchJr/README.md), cu povestea cu două finaluri și două rezerve. Lecția 8 este pregătită în [Lectia_08_ScratchJr](Lectia_08_ScratchJr/README.md), cu statui, Forever, Stop, puzzle dificil și două rezerve. Lecția 9 este pregătită în [Lectia_09_ScratchJr](Lectia_09_ScratchJr/README.md), cu insula misterioasă, lucru individual, puzzle dificil și două rezerve. Lecția 10 este pregătită în [Lectia_10_ScratchJr](Lectia_10_ScratchJr/README.md), cu marea finală, puzzle dificil și două rezerve. Toate cele zece pachete de lecții sunt pregătite. Meniul include toate cele zece lecții și păstrează Robo în secțiunea sa; observațiile din clasă vor regla dificultatea.
 
 ## Referințe pentru pregătirea profesorului
 

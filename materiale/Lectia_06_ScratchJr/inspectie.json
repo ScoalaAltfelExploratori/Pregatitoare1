@@ -1,0 +1,1061 @@
+{
+  "lesson": 6,
+  "title": "Robotul de inspecție",
+  "duration": 60,
+  "projects": [
+    {
+      "key": "start",
+      "file": "start.sjr",
+      "name": "L06 Robotul de inspecție - de la zero · 60 min",
+      "sha256": "15d91c93cc9e5823a10b4928d74890558a97a01ae598b2ed8820b2a149e7406e",
+      "pages": [
+        {
+          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot de inspecție",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                72,
+                272
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "bariera",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Barieră",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                228,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "statie",
+              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "name": "Stație de control",
+              "size": [
+                64,
+                80
+              ],
+              "position": [
+                444,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "bariera2",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Bariera 2",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                72,
+                128
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m1",
+      "file": "m1.sjr",
+      "name": "L06 Robotul de inspecție - 1. Frâna de siguranță · 60 min",
+      "sha256": "2ce0cfcf1af78aac0e0c906ef1f0e3a6b5e4e48fec134d33b25d01e32f10a78c",
+      "pages": [
+        {
+          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot de inspecție",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                72,
+                272
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 20
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "back",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bariera",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Barieră",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                228,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "statie",
+              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "name": "Stație de control",
+              "size": [
+                64,
+                80
+              ],
+              "position": [
+                444,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "bariera2",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Bariera 2",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                72,
+                128
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m2",
+      "file": "m2.sjr",
+      "name": "L06 Robotul de inspecție - 2. Retragere și ocolire · 60 min",
+      "sha256": "41b5628daf1a83624317fbbb48c7a98ea9857c82921f6c5c745847a65ed8e40c",
+      "pages": [
+        {
+          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot de inspecție",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                72,
+                272
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 20
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "back",
+                      "value": 1
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "say",
+                      "value": "Cale liberă!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bariera",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Barieră",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                228,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "statie",
+              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "name": "Stație de control",
+              "size": [
+                64,
+                80
+              ],
+              "position": [
+                444,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "bariera2",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Bariera 2",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                72,
+                128
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "m3",
+      "file": "m3.sjr",
+      "name": "L06 Robotul de inspecție - 3. Inspecția completă · 60 min",
+      "sha256": "a950c4c6c348898e427d92f0fa3e9e2b7f0f063f956fdecc655fe8922899133a",
+      "pages": [
+        {
+          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot de inspecție",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                72,
+                272
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 20
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "back",
+                      "value": 1
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 20
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "back",
+                      "value": 1
+                    },
+                    {
+                      "block": "say",
+                      "value": "Inspecție gata!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bariera",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Barieră",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                228,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "statie",
+              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "name": "Stație de control",
+              "size": [
+                64,
+                80
+              ],
+              "position": [
+                444,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bariera2",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Bariera 2",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                72,
+                128
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "creatie",
+      "file": "creatie.sjr",
+      "name": "L06 Robotul de inspecție - 4. Ocolul meu · 60 min",
+      "sha256": "a4ade86abccd551bc4b743742afa4282fcb860ce720ab40b3265af555a094771",
+      "pages": [
+        {
+          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot de inspecție",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                72,
+                272
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 20
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "back",
+                      "value": 1
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "up",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 4
+                    },
+                    {
+                      "block": "forward",
+                      "value": 20
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "back",
+                      "value": 1
+                    },
+                    {
+                      "block": "say",
+                      "value": "Inspecție gata!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bariera",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Barieră",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                204,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "statie",
+              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "name": "Stație de control",
+              "size": [
+                64,
+                80
+              ],
+              "position": [
+                444,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bariera2",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Bariera 2",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                72,
+                128
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r1",
+      "file": "r1.sjr",
+      "name": "L06 Robotul de inspecție - R1. Robotul merge mai repede · 60 min",
+      "sha256": "48cd9af9d2cf12c5396231eedd09ab351c71abaadf7dae325ef38fade32baae7",
+      "pages": [
+        {
+          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot de inspecție",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                72,
+                272
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 2
+                    },
+                    {
+                      "block": "forward",
+                      "value": 20
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "back",
+                      "value": 1
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 20
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "back",
+                      "value": 1
+                    },
+                    {
+                      "block": "say",
+                      "value": "Inspecție gata!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bariera",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Barieră",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                228,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "statie",
+              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "name": "Stație de control",
+              "size": [
+                64,
+                80
+              ],
+              "position": [
+                444,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bariera2",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Bariera 2",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                72,
+                128
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": []
+        }
+      ]
+    },
+    {
+      "key": "r2",
+      "file": "r2.sjr",
+      "name": "L06 Robotul de inspecție - R2. Două zone închise · 60 min",
+      "sha256": "4ead1c0ebcb20f8082de3863c8f7bdd4ebd5f3ef13c53287060e66a5cbda6f20",
+      "pages": [
+        {
+          "background": "634ebc14e14347a48f1c83a7ed295550.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "c7c97b91ddca73ce77e9e6f31e46271a.svg",
+              "name": "Robot de inspecție",
+              "size": [
+                96,
+                102
+              ],
+              "position": [
+                72,
+                272
+              ],
+              "scale": 0.6,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 20
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "back",
+                      "value": 1
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 20
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "stopmine",
+                      "value": "null"
+                    },
+                    {
+                      "block": "back",
+                      "value": 1
+                    },
+                    {
+                      "block": "say",
+                      "value": "Inspecție gata!"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bariera",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Barieră",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                180,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "statie",
+              "asset": "3748e483f601b2d48d7c904c6cf38123.svg",
+              "name": "Stație de control",
+              "size": [
+                64,
+                80
+              ],
+              "position": [
+                444,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bariera2",
+              "asset": "0e2ccf96d05a2846797bbf158a525495.svg",
+              "name": "Bariera 2",
+              "size": [
+                24,
+                64
+              ],
+              "position": [
+                324,
+                272
+              ],
+              "scale": 0.75,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "ontouch",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": []
+        }
+      ]
+    }
+  ]
+}

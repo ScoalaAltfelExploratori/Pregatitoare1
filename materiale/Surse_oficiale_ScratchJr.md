@@ -1,6 +1,6 @@
 # Repere oficiale pentru cursul nostru ScratchJr
 
-Revizuire: 12 noiembrie 2026. Cursul de zece întâlniri folosește demonstrații scurte inspirate din resursele ScratchJr, urmate de puzzle-urile proprii și de 8-10 minute de creație personală. Exemplele sunt explicate în română în fiecare ghid. Legăturile de mai jos sunt pentru pregătirea profesorului; copiii pot lucra fără internet după instalarea și verificarea aplicației.
+Revizuire: 27 noiembrie 2026. Cursul de zece întâlniri folosește demonstrații scurte inspirate din resursele ScratchJr, urmate de puzzle-urile proprii și de 8-10 minute de creație personală. Exemplele sunt explicate în română în fiecare ghid. Legăturile de mai jos sunt pentru pregătirea profesorului; copiii pot lucra fără internet după instalare, verificare și, pentru Lecția 6, importarea starterului.
 
 | Lecții | Sursa | Ce preluăm și adaptăm |
 | --- | --- | --- |
@@ -9,7 +9,7 @@ Revizuire: 12 noiembrie 2026. Cursul de zece întâlniri folosește demonstrați
 | 3 | [Sunset](https://www.scratchjr.org/teach/activities/sunset) | Dispariția vizuală; o legăm de trucul iepurelui, fără deplasare. |
 | 4 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper tehnic pentru Pop, Așteaptă și Repetă finit. Povestea Repetiția pentru spectacol și puzzle-urile sunt locale. |
 | 5 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper tehnic pentru mișcare, mesaje și viteze. Robotul curier este o poveste locală despre încărcare, transport și retur; simulare pe ecran. |
-| 6 | [Playground Games, lecția 5 - Tag](https://sites.bc.edu/devtech/wp-content/uploads/sites/181/2022/10/Playground-Games.pdf) | Contactul provoacă o reacție; păstrăm parcul și personajele cursului. |
+| 6 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper tehnic: Start on Bump, Stop și mesaje. Robotul de inspecție este o poveste locală, cu robot și atelier originale incluse în starter; simulare de senzor de contact. |
 | 7 | [Moonrise after Sunset](https://www.scratchjr.org/teach/activities/moonrise-after-sunset) | Continuarea poveștii pe altă pagină; folosim parcul și plaja, fără editarea fundalurilor. |
 | 8 | [CAL, clasa I, lecția 16 - Freeze Dance Party](https://sites.bc.edu/codingasanotherlanguage/curricula/scratchjr-curricula/1st-grade-scratchjr/) | Dans și înghețare, fără muzică descărcată sau înregistrată. |
 | 9 | [Animated Genres - Game](https://www.scratchjr.org/curricula/animatedgenres/full.pdf) | Un joc cu scop și reguli alese și explicate de copil. |
@@ -25,8 +25,10 @@ Din [Coding as Another Language](https://www.scratchjr.org/teach/curriculum) fol
 
 Activitățile ScratchJr și documentul Animated Genres citat sunt create de DevTech Research Group și publicate sub [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Adaptările acestor exemple din ghidurile noastre se distribuie sub aceeași licență. Am schimbat personajele, contextul, unele declanșări și cerințele de scriere sau desen, conform tabelului.
 
-Playground Games, ediția 2022 citată, este creat de DevTech Research Group, condus de Marina Bers, și publicat sub [Creative Commons Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/). Adaptarea introducerii pentru lecția 6 păstrează această licență.
+Playground Games, ediția 2022 citată, este creat de DevTech Research Group, condus de Marina Bers, și publicat sub [Creative Commons Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/). Adaptarea din arhiva „Parcul cu surprize”, versiunea veche a lecției 6, păstrează această licență.
 
 CAL ScratchJr, clasa I, © 2020-2025 DevTech Research Group, este publicat sub [Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Adaptarea introducerii pentru lecția 8 păstrează această licență.
 
 Numele activităților și legăturile sunt păstrate pentru identificarea surselor. Cursul nostru nu este aprobat sau certificat de autorii materialelor oficiale.
+
+Lecția 6 folosește resurse originale, incluse într-un singur SJR de pornire. Celelalte lecții păstrează biblioteca instalată. [Proveniența resurselor](Lectia_06_ScratchJr/resurse_robotica/README.md).

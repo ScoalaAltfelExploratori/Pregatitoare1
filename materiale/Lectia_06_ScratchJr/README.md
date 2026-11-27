@@ -1,49 +1,25 @@
-# Lecția 6 - Parcul cu surprize
+# Lecția 6 - Robotul de inspecție
 
-**50 de minute, 6-7 ani. Trei misiuni, inclusiv una dificilă pentru toți, plus două rezerve în afara celor 50 de minute.** Copiii construiesc propriile programe pentru ținte concrete.
+**60 de minute.** Robotul traversează atelierul, frânează la contact, ocolește barierele și se oprește la stația de control. Părțile grele sunt în baza lecției; păstrăm 10 minute de creație și două rezerve.
 
-## Exemplu, puzzle și creație proprie
+- [Lecția pe site](index.html) · [Ghidul profesorului](ghid-profesor.html).
+- [PDF de 12 pagini: plan concis și toate programele cu capturi](Ghid_profesor_Lectia_06.pdf).
+- [Proiectul de pornire fără cod](solutii_inspectie/start.sjr) · [Cele șase soluții](solutii_inspectie/README.md).
+- [PDF-ul cursului, lecțiile 1-6](../Plan_lectii_ScratchJr_60min.pdf); Lecția 6: p. 62-73.
+- [Testarea în browser](verificare/Inspectie_60min.md) · [Fișa de observații](Observatii_dupa_lectie.md).
 
-Deschidem cu **Leapșa pornește o reacție**, pornind de la [Playground Games - Tag (lecția 5)](https://sites.bc.edu/devtech/wp-content/uploads/sites/181/2022/10/Playground-Games.pdf). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+## Pregătirea tabletelor
 
-**Minutele 37-45: Surpriza întâlnirii** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+**Excepție față de lecțiile precedente:** robotul și atelierul sunt resurse noi, nu elemente standard. Importă o singură dată `start.sjr` pe fiecare tabletă, înaintea orei. Fișierul conține toate imaginile, stația și ambele bariere, fără programe. Nu trebuie copiate imagini separat și nu se importă fiecare misiune. Copiii construiesc programele în starter.
 
-[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_06.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+Pe Android descarcă SJR-ul și deschide-l din Fișiere/Descărcări cu ScratchJr, dacă este oferit ca aplicație. Verifică această rută pe un Lenovo înainte de distribuirea pe restul tabletelor. Importul pe Android fizic nu a fost testat aici; verifică și o rulare completă cu `m3.sjr`, salvarea și redeschiderea. După pregătirea proiectului, lecția nu are nevoie de descărcări în timpul orei.
 
-## Pregătire simplă
+## Import și test pe laptop
 
-ScratchJr instalat este suficient pentru resurse: folosim numai **Rabbit, Dog, Butterfly, Ball, Park și Pop**, din biblioteca aplicației. Fără importuri, conturi ale copiilor, fișiere de copiat, microfon sau descărcări. Scenele se construiesc împreună în timpul lecției. SJR-urile sunt doar exemple opționale pentru profesor.
+În [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html): **Open** în galerie → selectează SJR-ul → deschide noul card **L06 Robotul de inspecție** cu etapa dorită. Înainte de fiecare probă: Stop dacă rulează → Reset Characters → un steag. Starterul nu se mișcă, deoarece nu are cod. Salvează revenind în galerie.
 
-Reset înaintea fiecărei probe, apoi un singur steag. Păstrăm mărimile inițiale și pozițiile din ghid; contactul trebuie urmat de separare.
+Cele șapte fișiere au fost importate în browser. S-au verificat toate misiunile, rezervele, mutarea barierei, resetarea și redeschiderea proiectului complet. Versiunea web raportează o eroare la înregistrarea imaginilor în biblioteca globală; imaginile din proiect și rularea au funcționat inclusiv după reîncărcare. Nu trebuie găsite ulterior în galeria globală. Raportul păstrează avertismentele și observațiile efective.
 
-## Materiale
+## Arhivă
 
-- [Ghidul profesorului](Ghid_profesor.md) și [PDF de cinci pagini](Ghid_profesor_Lectia_06.pdf).
-- [Cinci cartonașe PDF](Cartonase_Lectia_06.pdf), cu ținte vizuale și fără soluțiile complete.
-- [Soluțiile și cinci proiecte SJR](solutii/lectia_06/README.md).
-- [Demo](proiecte/00_Demo_Contact.sjr) și [scenă fără programe](proiecte/01_Start_Parc.sjr).
-- [Index pentru proiector](index.html), [raportul testelor](verificare/README.md), [fișa de observații](Observatii_dupa_lectie.md).
-
-| Activitate | Puzzle |
-| --- | --- |
-| Misiunea 1 | Trezește paznicul |
-| Misiunea 2 | Două vizite |
-| Misiunea 3 - dificilă | Reacția în lanț |
-| Rezervă 1 - 6-8 minute | Comoara |
-| Rezervă 2 - 8-10 minute | Alarma la distanță |
-
-Rezervele sunt pentru cei care termină devreme. Păstrăm puzzle-ul dificil, pauza și salvarea pentru toată clasa. Nu cerem construirea unor programe greșite pentru reparare.
-
-## Testare pe PC, în browser
-
-Deschide [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/), portul comunitar folosit pentru verificări. Din galerie apasă Open și selectează un SJR de mai sus. Urmează proba din ghid, revino în galerie pentru salvare și redeschide. Browserul nu se sincronizează cu tabletele.
-
-Reset înaintea fiecărei probe, apoi un singur steag. Păstrăm mărimile inițiale și pozițiile din ghid; contactul trebuie urmat de separare.
-
-Raportul documentează testele efective, corecțiile și limitele. Testarea în browser nu este o testare a aplicației Android sau a tabletei fizice. Înainte de clasă reconstruiește M1 și M3 pe un Lenovo, verifică două rulări, salvarea și redeschiderea fără internet. Pe tabletele copiilor nu trebuie instalat nimic în afara ScratchJr.
-
-## Surse editabile
-
-`lesson.json` conține programele, cartonașele și țintele verificărilor. `Ghid_profesor.md` este sursa ghidului. `python build_pack.py` regenerează cele două PDF-uri și șapte SJR-uri; `--projects-only` generează numai proiectele. Necesită Python, reportlab, Pillow, pypdf și Arial din Windows. După modificarea programelor repetă probele în editor.
-
-[Planul celor zece lecții](../Plan_10_lectii_ScratchJr.md).
+[Parcul cu surprize - 50 min](README_50min.md) · [Ghid vechi](ghid-profesor-50min.html) · [PDF vechi](Ghid_profesor_Lectia_06_50min.pdf) · [ZIP vechi](../Lectia_06_ScratchJr.zip). Materialele noi sunt în `solutii_inspectie`.

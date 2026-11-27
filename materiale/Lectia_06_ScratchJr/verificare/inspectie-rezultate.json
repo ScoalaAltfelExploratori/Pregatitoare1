@@ -1,0 +1,102 @@
+{
+  "m1": {
+    "samples": 74,
+    "detours": 0,
+    "min_y": 221.0,
+    "final_translation": [
+      124.0,
+      221.0
+    ],
+    "movement_ms": 938
+  },
+  "m1_bariera_mutata": {
+    "samples": 74,
+    "detours": 0,
+    "min_y": 221.0,
+    "final_translation": [
+      76.0,
+      221.0
+    ],
+    "movement_ms": 569
+  },
+  "m2": {
+    "samples": 111,
+    "detours": 1,
+    "min_y": 149.0,
+    "final_translation": [
+      244.0,
+      221.0
+    ],
+    "movement_ms": 3338
+  },
+  "m3": {
+    "samples": 111,
+    "detours": 1,
+    "min_y": 149.0,
+    "final_translation": [
+      336.0,
+      221.0
+    ],
+    "movement_ms": 4414
+  },
+  "m3_reset": {
+    "samples": 111,
+    "detours": 1,
+    "min_y": 149.0,
+    "final_translation": [
+      336.0,
+      221.0
+    ],
+    "movement_ms": 4416
+  },
+  "m3_redeschis": {
+    "samples": 112,
+    "detours": 1,
+    "min_y": 149.0,
+    "final_translation": [
+      336.0,
+      221.0
+    ],
+    "movement_ms": 4479
+  },
+  "creatie": {
+    "samples": 112,
+    "detours": 1,
+    "min_y": 125.0,
+    "final_translation": [
+      336.0,
+      221.0
+    ],
+    "movement_ms": 4832
+  },
+  "r1": {
+    "samples": 111,
+    "detours": 1,
+    "min_y": 149.0,
+    "final_translation": [
+      344.0,
+      221.0
+    ],
+    "movement_ms": 2258
+  },
+  "r2": {
+    "samples": 147,
+    "detours": 2,
+    "min_y": 149.0,
+    "final_translation": [
+      336.0,
+      221.0
+    ],
+    "movement_ms": 6249
+  },
+  "start": {
+    "samples": 37,
+    "detours": 0,
+    "min_y": 221.0,
+    "final_translation": [
+      24.0,
+      221.0
+    ],
+    "movement_ms": 0
+  }
+}
