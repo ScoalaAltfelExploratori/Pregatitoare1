@@ -2,7 +2,7 @@
 
 60 de minute, copii de 6-7 ani. O echipă duce o minge la sosire: A aleargă primul, pasează către B, iar B pornește doar după predare. Mingea este mereu vizibilă și are propriile programe.
 
-[Plan și soluții ilustrate PDF](../Plan_lectii_ScratchJr_60min.pdf) · [Ghidul profesorului online](index.html#profesor) · [Proiecte demonstrative](solutii_stafeta/README.md).
+[Plan și soluții ilustrate PDF](Ghid_profesor_Lectia_01.pdf) · [Ghidul profesorului online](ghid-profesor.html) · [Proiecte demonstrative](solutii_stafeta/README.md) · [PDF-ul întregului curs](../Plan_lectii_ScratchJr_60min.pdf).
 
 ## Pregătirea clasei
 

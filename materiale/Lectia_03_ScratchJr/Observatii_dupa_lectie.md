@@ -1,40 +1,27 @@
-# Observații după lecția 3 - Atelierul de magie
+# Observații după Lecția 3 - Autobuzul spre plajă
 
-Data: __________ Grupa: __________ Număr de copii: __________
+Data: ______ Grupa: ______ Număr de copii: ______
 
-| Tableta | Pornește prin atingere | Schimbă doar personajul ales | Reapare automat | Repetă trucul complet fără resetare | Rezervă încercată |
-| --- | --- | --- | --- | --- | --- |
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+Pentru fiecare criteriu: câți copii singuri / cu indiciu / mai exersăm.
 
-S = singur, I = cu indiciu, E = mai exersăm. Rezerve: R1, R2 sau niciuna. Adaugă rânduri după nevoie; nu folosim clasamente.
+- Fiecare pasager dispare numai la ușa autobuzului: ______
+- Autobuzul așteaptă toți pasagerii: ______
+- Pagina următoare începe prin program: ______
+- Pasagerii apar numai după oprire și ajung în locuri distincte: ______
 
-## Ce observăm
+- Minute reale: pregătire ____ M1 ____ M2 ____ puzzle greu ____ creație ____ salvare ____
+- Toți au încercat puzzle-ul greu: ____
+- Rezerve folosite și timpul necesar: ____
+- Copiii au găsit personajul și firele lui în PDF: ____
+- Resetarea, salvarea și redeschiderea au funcționat: ____
+- Ce reluăm înaintea lecției următoare: ____
 
-- Confundă atingerea scenei cu selectarea miniaturii? __________
-- Au nevoie de sprijin pentru a observa o pauză sau două apariții? __________
-- Explică de ce mărimea se reface înainte de Arată? __________
-- Ce trucuri de cel mult cinci acțiuni au inventat? __________
-- Cât timp a rămas și ce rezerve am folosit? __________
-- Ce simplificăm înainte de următoarea întâlnire? __________
+## Proba pe tabletă înainte de clasă
 
-## Proba pe K10
-
-- [ ] Rabbit, Dog, Butterfly și Park sunt disponibile fără importuri.
-- [ ] Atingerea personajului de pe scenă pornește numai programul lui.
-- [ ] Steagul verde nu pornește trucurile de atingere.
-- [ ] Iepurele ascuns reapare singur după pauză.
-- [ ] M3 funcționează de două ori fără resetare între rulări.
-- [ ] Fluturele dispare și reapare de două ori; ceilalți rămân neschimbați.
-- [ ] R2 are maximum cinci acțiuni și se termină vizibil, la mărimea normală.
-- [ ] Resetarea, salvarea și redeschiderea fără internet funcționează.
+- [ ] Fiecare pasager dispare numai la ușa autobuzului.
+- [ ] Autobuzul așteaptă toți pasagerii.
+- [ ] Pagina următoare începe prin program.
+- [ ] Pasagerii apar numai după oprire și ajung în locuri distincte.
+- [ ] Blocurile se pot trage, desprinde și copia între personaje.
+- [ ] Salvarea și redeschiderea funcționează fără internet după pregătire.
+- [ ] Nu sunt necesare importuri sau imagini externe pentru această lecție.

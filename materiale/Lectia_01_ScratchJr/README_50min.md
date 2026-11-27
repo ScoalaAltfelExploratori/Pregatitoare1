@@ -1,4 +1,6 @@
-# Lecția 1 — Ne întâlnim la joacă
+# Arhivă: Lecția 1 — Ne întâlnim la joacă
+
+Aceasta este varianta veche, de 50 de minute. Pentru cursul actual folosește [Cursa cu ștafetă, 60 de minute](index.html).
 
 50 de minute, copii de 6–7 ani. Construim o scenă cu **Rabbit (iepurele), Ball (mingea) și Park (parcul)**, toate din biblioteca ScratchJr. Copiii creează două programe, rezolvă mini-puzzle-ul „Două blocuri până acasă” și inventează un final.
 
@@ -8,7 +10,7 @@ Deschidem cu **Două personaje, două programe**, pornind de la [Spooky Forest](
 
 **Minutele 35-45: Salutul inventat de mine** - 10 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
 
-[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_01.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+[Ghidul profesorului pe site](ghid-profesor-50min.html) · [Ghid PDF](Ghid_profesor_Lectia_01_50min.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
 
 ## Varianta simplă pentru clasă
 
@@ -17,14 +19,14 @@ Deschidem cu **Două personaje, două programe**, pornind de la [Spooky Forest](
 3. La lecție, fiecare copil pornește un proiect nou. Demonstrezi pe rând alegerea personajelor, a fundalului și construirea programelor.
 4. Copiii folosesc același proiect pentru toate cele trei misiuni. La final revin la galerie și îl redeschid.
 
-**Nu copiem fișiere, imagini sau proiecte pe tabletele copiilor.** Nu sunt necesare descărcări de resurse ori conturi ScratchJr ale copiilor. Regula se aplică întregului [plan de zece lecții](../Plan_10_lectii_ScratchJr.md). După instalare verificăm lucrul fără internet pe tableta reală.
+**Nu copiem fișiere, imagini sau proiecte pe tabletele copiilor.** Nu sunt necesare descărcări de resurse ori conturi ScratchJr ale copiilor. Regula descrie această variantă arhivată. În cursul actual, Lecțiile 6–10 folosesc startere cu resurse incluse. După instalare verificăm lucrul fără internet pe tableta reală.
 
 ## Materialele profesorului
 
-- [Ghidul pas cu pas](Ghid_profesor.md) și [versiunea PDF](Ghid_profesor_Lectia_01.pdf): pregătire, cele 50 de minute, demonstrații și sprijin.
+- [Ghidul pas cu pas](Ghid_profesor_50min.md) și [versiunea PDF](Ghid_profesor_Lectia_01_50min.pdf): pregătire, cele 50 de minute, demonstrații și sprijin.
 - [Cele trei cartonașe PDF](Cartonase_Lectia_01.pdf): cerințe de proiectat sau tipărit.
 - [Soluțiile misiunilor](solutii/lectia_01/README.md): programele explicate și exemple SJR opționale.
-- [Fișa de observații](Observatii_dupa_lectie.md): pentru pilot și proba K10.
+- [Fișa de observații](Observatii_dupa_lectie_50min.md): pentru pilot și proba K10.
 - [Raportul testelor și capturile](verificare/README.md): ce a fost verificat efectiv.
 
 `index.html` este un index al materialelor, nu editorul ScratchJr.
@@ -77,4 +79,4 @@ Emulatorul mai vechi `ScratchJr_Lesson1_Tablet`, cu Android 15, nu oferea aplica
 
 ## Surse editabile
 
-`lesson.json` definește exemplele; `Ghid_profesor.md` este sursa ghidului. `build_pack.py` generează cele două PDF-uri, cele șapte SJR-uri și pachetul opțional Desktop, folosind Python, reportlab, Pillow și pypdf. Rulează `python build_pack.py --projects-only` numai pentru SJR și pachetul Desktop, sau fără opțiune pentru întregul set. După modificarea programelor, repetă testele și actualizează raportul; generarea fișierelor nu înseamnă verificare în aplicație.
+Această versiune folosea `lesson.json` și `build_pack.py`. Generatorul vechi scrie și în căile ghidului curent; nu îl rula pentru actualizarea cursului. Ghidul arhivat este păstrat în [sursa de 50 de minute](Ghid_profesor_50min.md). Pentru materialele actuale, folosește [instrucțiunile de verificare și regenerare](../verificare_curs/README.md).

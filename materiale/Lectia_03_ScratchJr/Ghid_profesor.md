@@ -4,6 +4,19 @@
 
 [Plan și programe cu capturi - PDF](Ghid_profesor_Lectia_03.pdf) · [Pagina lecției](index.html) · [Proiectele profesorului](solutii_autobuz/README.md)
 
+## Locul lecției în curs
+
+**Reluăm:** Din muzeu: un eveniment poate porni mai multe personaje; ordinea contează.
+
+**Ce adăugăm:** Ascunde/Arată și continuarea poveștii pe altă pagină, cu personaje independente.
+
+**Verificăm înțelegerea:** Autobuzul așteaptă toți pasagerii; la destinație copiii apar numai după oprire.
+
+**Cum păstrăm ritmul:** Construim întâi cursa cu Ana. Abia după o probă completă adăugăm Dan și Mara; copiem firele comune și schimbăm distanțele. La pagina nouă verificăm separat poziția ușii și starea ascunsă.
+
+Pentru un fir deja înțeles: prinde-l de primul bloc și trage-l peste miniatura personajului destinatar din lista din stânga. Selectează destinatarul și verifică acea copie. Firele rămân independente; schimbă numai culoarea, distanța sau întârzierea cerută. Dacă firul dispare din greșeală, folosește Undo. [Reper oficial](https://sites.bc.edu/scratchjr/learn/).
+
+[Progresia celor zece lecții](../Progresia_cursului.md).
 ## Povestea pentru copii
 
 „Ana, Dan și Mara pleacă la plajă. Vin din locuri diferite, dar trebuie să prindă același autobuz. Șoferul nu pleacă până nu urcă toți. La plajă, autobuzul oprește înainte să coboare. Voi programați călătoria, astfel încât nimeni să nu rămână în urmă.”

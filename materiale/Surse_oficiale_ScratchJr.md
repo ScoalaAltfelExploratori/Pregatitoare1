@@ -4,15 +4,15 @@ Revizuire: 27 noiembrie 2026. Cursul de zece întâlniri folosește demonstrați
 
 | Lecții | Sursa | Ce preluăm și adaptăm |
 | --- | --- | --- |
-| 1 | [Spooky Forest](https://www.scratchjr.org/teach/activities/spooky-forest) | Programe separate pentru personaje; în curs folosim întâlnirea din parc. |
-| 2 | [Dribble a Basketball](https://www.scratchjr.org/teach/activities/dribble-a-basketball) | Săritura repetată; iepurele sare, mingea rămâne reper fix. |
-| 3 | [Sunset](https://www.scratchjr.org/teach/activities/sunset) | Dispariția vizuală; o legăm de trucul iepurelui, fără deplasare. |
+| 1 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Mișcare și mesaje, aplicate predării vizibile a mingii. Ștafeta este povestea locală a cursului. |
+| 2 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Rotire, Repetă mereu și Stop, aplicate muzeului și inspecției paznicului. |
+| 3 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Ascunde, Arată, mesaje și pagini, aplicate urcării și coborârii pasagerilor. |
 | 4 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper tehnic pentru Pop, Așteaptă și Repetă finit. Povestea Repetiția pentru spectacol și puzzle-urile sunt locale. |
 | 5 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper tehnic pentru mișcare, mesaje și viteze. Robotul curier este o poveste locală despre încărcare, transport și retur; simulare pe ecran. |
 | 6 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper tehnic: Start on Bump, mesaje, Wait, Go to Page și Stop. Robotul pregătește atelierul este o poveste locală: încărcare, curățenie și ușă automată, cu resurse originale incluse în starter. |
 | 7 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper pentru mesaje, viteze, Arată/Ascunde și Repetă finit. Fabrica de roboți este o poveste locală, cu montaj în paralel și resurse originale. |
 | 8 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper pentru atingere, ciocnire, mesaje, viteze și vizibilitate. Robotul submarin este o poveste locală cu pilotaj interactiv, recuperare și resurse originale. |
-| 9 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper pentru mesaje, mișcare, vizibilitate și schimbarea mărimii. Robotul de reciclare este o poveste locală, cu lot mixt și resurse originale. |
+| 9 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Mesaje, mișcare și vizibilitate, aplicate lotului mixt și locurilor de depunere. Fără recunoaștere automată a materialelor. |
 | 10 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper pentru mesaje, repetare, vizibilitate și deplasare. Robotul grădinar este o poveste locală despre consum și reumplere, cu resurse originale. |
 
 ## Cum le folosim
@@ -32,3 +32,5 @@ CAL ScratchJr, clasa I, © 2020-2025 DevTech Research Group, este publicat sub [
 Numele activităților și legăturile sunt păstrate pentru identificarea surselor. Cursul nostru nu este aprobat sau certificat de autorii materialelor oficiale.
 
 Lecțiile 6–10 folosesc resurse originale, incluse în câte un SJR de pornire. Celelalte lecții păstrează biblioteca instalată. Proveniență: [atelierul](Lectia_06_ScratchJr/resurse_atelier/README.md), [fabrica](Lectia_07_ScratchJr/resurse_fabrica/README.md), [submarinul](Lectia_08_ScratchJr/resurse_submarin/README.md), [reciclarea](Lectia_09_ScratchJr/resurse_reciclare/README.md), [sera](Lectia_10_ScratchJr/resurse_gradinar/README.md).
+
+Copierea firelor și a personajelor este descrisă în [ghidul oficial al interfeței](https://sites.bc.edu/scratchjr/learn/). O folosim pentru a reutiliza programe deja înțelese, apoi ajustăm culorile, distanțele sau întârzierile.

@@ -2,6 +2,19 @@
 
 60 de minute · 6–7 ani · fără creație proprie · puzzle greu în bază · două rezerve.
 
+## Locul lecției în curs
+
+**Reluăm:** Din reciclare: operații programate pe rând; din atelier: încărcarea la o stație.
+
+**Ce adăugăm:** Planificarea consumului unei resurse limitate și reumplerea înainte să se termine.
+
+**Verificăm înțelegerea:** Două porții la fiecare plantă, reumplere între ele și niciun jet în mers.
+
+**Cum păstrăm ritmul:** Construim întâi udarea plantei A. Pentru B refolosim tiparul și schimbăm plicurile. Copiii aleg momentul reumplerii urmărind indicatorul; acesta este o animație programată, nu o variabilă și nu blochează automat udarea la zero.
+
+Pentru un fir deja înțeles: prinde-l de primul bloc și trage-l peste miniatura personajului destinatar din lista din stânga. Selectează destinatarul și verifică acea copie. Firele rămân independente; schimbă numai culoarea, distanța sau întârzierea cerută. Dacă firul dispare din greșeală, folosește Undo. [Reper oficial](https://sites.bc.edu/scratchjr/learn/).
+
+[Progresia celor zece lecții](../Progresia_cursului.md).
 ## Povestea pentru copii
 
 „Instalația de udare din seră s-a oprit. Cele două plante au nevoie de câte două porții de apă. Robotul grădinar poate duce numai trei porții într-o cursă. Îi programăm drumul, pornirea jetului și întoarcerea la stație. Trebuie să terminăm ambele ghivece fără să udăm podeaua și fără să folosim apă pe care nu o mai avem.”

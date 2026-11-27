@@ -1,41 +1,27 @@
-# Observații după lecția 2
+# Observații după Lecția 2 - Muzeul după închidere
 
-Data: __________ Grupa: __________ Număr de copii: __________
+Data: ______ Grupa: ______ Număr de copii: ______
 
-| Tableta | Pune grupul în Repeat | Distinge repetări / distanță | 3 patrulări | Ținta la 6 pași | Dus la 8 pași | A doua buclă / revenire | Explică și salvează |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | | | | | | | |
-| 2 | | | | | | | |
-| 3 | | | | | | | |
-| 4 | | | | | | | |
-| 5 | | | | | | | |
-| 6 | | | | | | | |
-| 7 | | | | | | | |
-| 8 | | | | | | | |
-| 9 | | | | | | | |
-| 10 | | | | | | | |
-| 11 | | | | | | | |
-| 12 | | | | | | | |
+Pentru fiecare criteriu: câți copii singuri / cu indiciu / mai exersăm.
 
-S = singur; I = cu indiciu; E = mai exersăm. Adaugă rânduri după nevoie. La exercițiul dificil notează separat drumul dus și revenirea; o realizare parțială contează.
+- Exponatele se rotesc continuu: ______
+- Ambele stau pe toată durata inspecției: ______
+- Reiau mișcarea numai după întoarcerea paznicului: ______
+- Copilul distinge Stop din program de Stop sus: ______
+
+- Minute reale: pregătire ____ M1 ____ M2 ____ puzzle greu ____ creație ____ salvare ____
+- Toți au încercat puzzle-ul greu: ____
+- Rezerve folosite și timpul necesar: ____
+- Copiii au găsit personajul și firele lui în PDF: ____
+- Resetarea, salvarea și redeschiderea au funcționat: ____
+- Ce reluăm înaintea lecției următoare: ____
 
 ## Proba pe tabletă înainte de clasă
 
-- [ ] Rabbit, Ball și Park sunt în biblioteca aplicației.
-- [ ] Pot plasa o acțiune în cadrul Repeat și modifica numărul.
-- [ ] Pot conecta o a doua buclă după prima.
-- [ ] Grila arată iepurele la (5, 7), mingea la (11, 3), apoi la (13, 3).
-- [ ] Resetarea înainte de probă și întoarcerea prin program sunt distincte.
-- [ ] Salvarea și redeschiderea funcționează și fără internet.
-- [ ] Nu am copiat materiale pe tabletele copiilor.
-
-## Ce ajustăm după pilot
-
-- Cât a durat construirea scenei? __________
-- A fost dificilă plasarea în interiorul cadrului? __________
-- Ce a ajutat la numărarea celor șase sau opt pași? __________
-- Câți au încercat exercițiul dificil? __________
-- Câți au construit întoarcerea singuri / cu indiciu? __________
-- Au rămas minimum zece minute pentru provocarea dificilă? __________
-- Ce soluții diferite au apărut? __________
-- Ce schimbăm înainte de următoarea grupă? __________
+- [ ] Exponatele se rotesc continuu.
+- [ ] Ambele stau pe toată durata inspecției.
+- [ ] Reiau mișcarea numai după întoarcerea paznicului.
+- [ ] Copilul distinge Stop din program de Stop sus.
+- [ ] Blocurile se pot trage, desprinde și copia între personaje.
+- [ ] Salvarea și redeschiderea funcționează fără internet după pregătire.
+- [ ] Nu sunt necesare importuri sau imagini externe pentru această lecție.

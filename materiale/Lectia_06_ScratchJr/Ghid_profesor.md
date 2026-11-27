@@ -4,6 +4,19 @@
 
 [Plan și capturi PDF](Ghid_profesor_Lectia_06.pdf) · [Starter fără cod](solutii_atelier/start.sjr) · [Toate soluțiile](solutii_atelier/README.md)
 
+## Locul lecției în curs
+
+**Reluăm:** Din autobuz: două scene; din curier: operații succesive și așteptarea finalizării.
+
+**Ce adăugăm:** Reacția la contact: restul dispare numai când robotul îl atinge.
+
+**Verificăm înțelegerea:** Un rest mutat în afara traseului rămâne; ușa se ridică complet înainte de traversare.
+
+**Cum păstrăm ritmul:** Aceasta este prima creștere mare de volum. Construim un segment și un rest, apoi copiem firele la celelalte și schimbăm numai întârzierile. Testăm scena 1 și scena 2 separat înainte să le legăm la M4.
+
+Pentru un fir deja înțeles: prinde-l de primul bloc și trage-l peste miniatura personajului destinatar din lista din stânga. Selectează destinatarul și verifică acea copie. Firele rămân independente; schimbă numai culoarea, distanța sau întârzierea cerută. Dacă firul dispare din greșeală, folosește Undo. [Reper oficial](https://sites.bc.edu/scratchjr/learn/).
+
+[Progresia celor zece lecții](../Progresia_cursului.md).
 ## Povestea pentru copii
 
 „Dimineața, atelierul trebuie pregătit înainte să înceapă lucrul. Robotul are nevoie de încărcare. Pe podea au rămas resturi, iar ușa de acces este închisă. Îl programăm să se încarce, să curețe podeaua și să deschidă ușa înainte să intre. La sfârșit, un singur steag trebuie să pornească întreaga misiune.”

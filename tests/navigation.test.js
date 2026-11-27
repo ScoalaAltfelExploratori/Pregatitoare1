@@ -30,9 +30,24 @@ test('all ten course entries lead to their own lesson and downloadable materials
     assert.equal(doc.querySelector('.lesson-pager [rel=next]')?.getAttribute('href'), n < 10 ? `../Lectia_${String(n+1).padStart(2, '0')}_ScratchJr/index.html` : undefined);
     assert.ok([...doc.querySelectorAll('.lesson-pager a')].some(a => a.href === new URL('scratchjr/index.html', site).href));
     assert.equal(cards[i].querySelectorAll('.resources a').length, 3);
+    const resources = [...cards[i].querySelectorAll('.resources a')].map(a => a.href);
+    assert.ok(resources.includes(new URL(`${stem}/Ghid_profesor_Lectia_${String(n).padStart(2, '0')}.pdf`, site).href), `lesson ${n}: current individual PDF`);
+    assert.ok(resources.includes(new URL(`${stem}/ghid-profesor.html`, site).href), `lesson ${n}: teacher guide`);
     lesson.window.close();
   }
   dom.window.close();
+});
+
+test('course progression is reachable and links to all ten current guides', () => {
+  const menu = open('scratchjr/index.html'), progression = open('scratchjr/parcurs.html');
+  assert.ok([...menu.window.document.querySelectorAll('a')].some(a => a.href === new URL('scratchjr/parcurs.html', site).href));
+  assert.equal(progression.window.document.querySelectorAll('h3').length, 10);
+  const links = [...progression.window.document.querySelectorAll('a')].map(a => a.href);
+  for (let n = 1; n <= 10; n++) {
+    assert.ok(links.includes(new URL(`materiale/Lectia_${String(n).padStart(2, '0')}_ScratchJr/ghid-profesor.html`, site).href));
+  }
+  menu.window.close();
+  progression.window.close();
 });
 
 test('older lesson and home URLs preserve their choices under GitHub Pages and offline', () => {

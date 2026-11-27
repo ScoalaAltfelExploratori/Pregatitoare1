@@ -4,6 +4,19 @@
 
 [Plan și programe cu capturi](Ghid_profesor_Lectia_08.pdf) · [Proiect de pornire](solutii_submarin/start.sjr) · [Toate soluțiile](solutii_submarin/README.md).
 
+## Locul lecției în curs
+
+**Reluăm:** Din atelier: contact; din curier: obiect transportat; din fabrică: schimbarea imaginii.
+
+**Ce adăugăm:** Control interactiv prin patru butoane și trecerea între stările gol/încărcat/depus.
+
+**Verificăm înțelegerea:** Robotul și capsula rămân împreună la toate direcțiile; după depunere capsula rămâne.
+
+**Cum păstrăm ritmul:** Volumul de cod este mare, dar cele patru comenzi au același tipar. Construim și probăm o direcție, apoi repetăm tiparul cu alte plicuri. Apăsăm o dată și așteptăm mișcarea completă. Depune se folosește numai deasupra platformei.
+
+Pentru un fir deja înțeles: prinde-l de primul bloc și trage-l peste miniatura personajului destinatar din lista din stânga. Selectează destinatarul și verifică acea copie. Firele rămân independente; schimbă numai culoarea, distanța sau întârzierea cerută. Dacă firul dispare din greșeală, folosește Undo. [Reper oficial](https://sites.bc.edu/scratchjr/learn/).
+
+[Progresia celor zece lecții](../Progresia_cursului.md).
 ## Povestea pentru copii
 
 „O capsulă cu măsurători s-a desprins de la stația de cercetare și a ajuns pe fundul mării. Robotul submarin poate ajunge la ea. Noi îi construim telecomanda: trebuie să ocolească stânca, să prindă capsula și să o aducă pe platformă. După depunere, robotul trebuie să poată pleca singur la următoarea misiune.”

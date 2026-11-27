@@ -4,6 +4,19 @@
 
 [Plan și programe cu capturi](Ghid_profesor_Lectia_07.pdf) · [Starter fără cod](solutii_fabrica/start.sjr) · [Soluțiile profesorului](solutii_fabrica/README.md)
 
+## Locul lecției în curs
+
+**Reluăm:** Din atelier: mai multe personaje răspund aceluiași mesaj și operația trebuie încheiată.
+
+**Ce adăugăm:** Comparăm montajul în paralel cu montajul pe rând; piesele devin un ansamblu complet.
+
+**Verificăm înțelegerea:** Farul începe numai după ambele roți, inclusiv cea lentă; roverul pleacă după probă.
+
+**Cum păstrăm ritmul:** Ideea de așteptare nu este complet nouă. O facem explicită cu două trasee și două viteze. Piesele nu se lipesc automat: explicăm înlocuirea lor cu imaginea roverului complet.
+
+Pentru un fir deja înțeles: prinde-l de primul bloc și trage-l peste miniatura personajului destinatar din lista din stânga. Selectează destinatarul și verifică acea copie. Firele rămân independente; schimbă numai culoarea, distanța sau întârzierea cerută. Dacă firul dispare din greșeală, folosește Undo. [Reper oficial](https://sites.bc.edu/scratchjr/learn/).
+
+[Progresia celor zece lecții](../Progresia_cursului.md).
 ## Povestea pentru copii
 
 „Fabrica a primit o comandă: un rover care va transporta piese în atelier. Deocamdată avem șasiul și două roți separate. Programăm instalația să le monteze, să verifice farul și să trimită roverul la lucru. Dacă o roată se montează mai încet, roverul trebuie să o aștepte.”

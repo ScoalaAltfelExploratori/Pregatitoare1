@@ -2,6 +2,19 @@
 
 60 de minute · 6–7 ani · fără creație proprie · puzzle greu în bază · două rezerve.
 
+## Locul lecției în curs
+
+**Reluăm:** Din curier: transport și retur; din submarin: încărcat/gol și depunere vizibilă.
+
+**Ce adăugăm:** Un lot mixt cu rute alese prin mesaje și două locuri distincte în același recipient.
+
+**Verificăm înțelegerea:** Patru ambalaje sunt sortate; cele două sticle rămân alăturate, iar robotul revine gol.
+
+**Cum păstrăm ritmul:** Este o lecție de consolidare, fără bloc nou obligatoriu. La M2 și M3 reutilizăm tiparul primei livrări și modificăm ruta și culoarea. Lăsăm cele 20 de minute ale M3 pentru decizie și verificare, nu pentru rescrierea tuturor firelor.
+
+Pentru un fir deja înțeles: prinde-l de primul bloc și trage-l peste miniatura personajului destinatar din lista din stânga. Selectează destinatarul și verifică acea copie. Firele rămân independente; schimbă numai culoarea, distanța sau întârzierea cerută. Dacă firul dispare din greșeală, folosește Undo. [Reper oficial](https://sites.bc.edu/scratchjr/learn/).
+
+[Progresia celor zece lecții](../Progresia_cursului.md).
 ## Povestea pentru copii
 
 „După evenimentul din parc au rămas sticle de plastic, doze și ambalaje de hârtie. La stația de sortare, robotul poate transporta câte un obiect. Noi îi scriem comenzile: unde îl duce, când îl lasă și cum se întoarce. La final, toate ambalajele trebuie să fie în recipientul potrivit. Vor veni și două sticle: trebuie să le facem loc amândurora.”

@@ -1,43 +1,27 @@
-# Observații după lecția 1
+# Observații după Lecția 1 - Cursa cu ștafetă
 
-Data: __________  Grupa: __________  Număr de copii: __________
+Data: ______ Grupa: ______ Număr de copii: ______
 
-| Tableta | Selectează personajul corect | Ajustează mișcarea | Planifică revenirea la start | Inventează și explică finalul | Regăsește proiectul |
-| --- | --- | --- | --- | --- | --- |
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+Pentru fiecare criteriu: câți copii singuri / cu indiciu / mai exersăm.
 
-S = singur, I = cu indiciu, E = mai exersăm. Adaugă rânduri pentru restul clasei.
+- Predarea mingii se vede înainte de plecarea lui B: ______
+- Perechile de plicuri au aceleași culori: ______
+- B și mingea ocolesc gardul pe același traseu: ______
+- Copilul explică ce a schimbat la traseul propriu: ______
 
-## Ce ajustăm după pilot
+- Minute reale: pregătire ____ M1 ____ M2 ____ puzzle greu ____ creație ____ salvare ____
+- Toți au încercat puzzle-ul greu: ____
+- Rezerve folosite și timpul necesar: ____
+- Copiii au găsit personajul și firele lui în PDF: ____
+- Resetarea, salvarea și redeschiderea au funcționat: ____
+- Ce reluăm înaintea lecției următoare: ____
 
-- Câte minute au fost necesare pentru gesturile editorului? __________
-- Câți copii au realizat două programe funcționale? __________
-- Ce au înțeles despre numărul de pe săgeată și de pe săritură? __________
-- Câți copii au explicat revenirea? Câți au încercat provocarea dificilă? __________
-- Ce finaluri au inventat? __________
-- Ce a fost prea ușor? __________
-- Ce dificultate a blocat crearea? __________
-- Ce schimbăm în exemplu sau în ritm? __________
+## Proba pe tabletă înainte de clasă
 
-## Proba pe K10 înainte de clasă
-
-- [ ] Proiect nou; adaug Rabbit, Ball și Park din biblioteca aplicației.
-- [ ] Conectez și desprind blocuri cu degetul; schimb numerele.
-- [ ] Ambele personaje se apropie și sar o dată.
-- [ ] Adaug câte o săgeată; ambele personaje revin la start după săritură.
-- [ ] Probez și revenirea cu două săgeți cu numere diferite (1 + 2).
-- [ ] Două blocuri de săritură produc două sărituri.
-- [ ] Resetarea, salvarea și redeschiderea funcționează.
-- [ ] Aplicația și proiectul funcționează fără internet după instalare.
-- [ ] Nu am nevoie să copiez fișiere pe tabletele copiilor.
+- [ ] Predarea mingii se vede înainte de plecarea lui B.
+- [ ] Perechile de plicuri au aceleași culori.
+- [ ] B și mingea ocolesc gardul pe același traseu.
+- [ ] Copilul explică ce a schimbat la traseul propriu.
+- [ ] Blocurile se pot trage, desprinde și copia între personaje.
+- [ ] Salvarea și redeschiderea funcționează fără internet după pregătire.
+- [ ] Nu sunt necesare importuri sau imagini externe pentru această lecție.

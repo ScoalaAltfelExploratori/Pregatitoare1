@@ -1,6 +1,6 @@
 # Planul celor 10 lecții ScratchJr pentru copii de 6 și 7 ani
 
-**Revizie din 27 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, povești coerente și **60 de minute**. [PDF-ul cursului](Plan_lectii_ScratchJr_60min.pdf) cuprinde **Lecția 1 - Cursa cu ștafetă (p. 1-13)** și **Lecția 2 - Muzeul după închidere (p. 14-26)** și **Lecția 3 - Autobuzul spre plajă (p. 27-41)** și **Lecția 4 - Repetiția pentru spectacol (p. 42-49)** și **Lecția 5 - Robotul curier (p. 50-61)** și **Lecția 6 - Robotul pregătește atelierul (p. 62-86)** și **Lecția 7 - Fabrica de roboți: construim un rover (p. 87-104)** și **Lecția 8 - Robotul submarin (p. 105-123)** și **Lecția 9 - Robotul de reciclare (p. 124-140)** și **Lecția 10 - Robotul grădinar (p. 141-160)**. Fiecare are un plan concis, pregătire și capturi reale cu programele tuturor personajelor. Toate cele zece lecții au 60 de minute. Lecțiile 9–10 nu au creație proprie.
+**Revizie din 27 noiembrie 2026:** toate cele zece lecții sunt revizuite, cu puzzle-uri dificile, povești coerente și **60 de minute**. [PDF-ul cursului](Plan_lectii_ScratchJr_60min.pdf) cuprinde **Lecția 1 - Cursa cu ștafetă (p. 1-13)** și **Lecția 2 - Muzeul după închidere (p. 14-26)** și **Lecția 3 - Autobuzul spre plajă (p. 27-41)** și **Lecția 4 - Repetiția pentru spectacol (p. 42-49)** și **Lecția 5 - Robotul curier (p. 50-61)** și **Lecția 6 - Robotul pregătește atelierul (p. 62-86)** și **Lecția 7 - Fabrica de roboți: construim un rover (p. 87-104)** și **Lecția 8 - Robotul submarin (p. 105-123)** și **Lecția 9 - Robotul de reciclare (p. 124-140)** și **Lecția 10 - Robotul grădinar (p. 141-160)**. Fiecare are un plan concis, pregătire și capturi reale cu programele tuturor personajelor. Toate cele zece lecții au 60 de minute. Lecțiile 9–10 nu au creație proprie.
 
 Plan de lucru pentru 10 întâlniri, de câte 60 de minute, cu o tabletă Lenovo K10 de 3 GB RAM pentru fiecare copil. Copiii au parcurs deja exercițiile Robo Explorator. Cursul începe direct în ScratchJr și folosește această experiență pentru a trece de la rezolvarea unor trasee la crearea de animații, scene interactive și povești.
 
@@ -32,7 +32,7 @@ Păstrăm aceeași tabletă pentru fiecare copil. Lecția 2 începe un muzeu nou
 | 6 | Robot, încărcător, resturi, ușă și butoane în starter; Pop standard | Încărcare, curățenie și acces; 60 min; un import înainte de oră |
 | 7 | Robot industrial, șasiu, roți, rover complet, far, banc și fabrică în starter | Montaj în paralel, probă și plecare; 60 min; un import înaintea orei |
 | 8 | ROV, capsulă, platformă, stâncă, butoane și fundal subacvatic în starter | Telecomandă, recuperare, transport și depunere; 60 min; un import înaintea orei |
-| 9 | Butterfly, Dog, Ball, Rabbit, Beach Day și Beach Night | Insulă cu descoperiri, construită și testată individual |
+| 9 | Robot de reciclare, ambalaje, trei recipiente și panou în starter | Lot mixt, transport și două sticle alăturate; un import înaintea orei |
 | 10 | Robot grădinar, seră, plante, jeturi, stație și indicator | Resurse originale incluse în starter; două porții pentru fiecare plantă |
 
 Nu presupunem existența unui magazin de resurse în aplicație. Biblioteca instalată este suficientă pentru celelalte lecții; Lecțiile 6–10 adaugă resursele incluse în startere. Desenul sau înregistrarea făcute direct în editor pot fi extensii alese de copil, fără descărcări, dar nu sunt necesare pentru exercițiile de bază.
@@ -47,7 +47,7 @@ Citirea fluentă și scrierea de replici nu sunt condiții de participare. Profe
 
 ## Ritmul unei întâlniri
 
-Toate cele zece lecții au câte 60 de minute; ghidurile vechi de 50 de minute sunt în arhivă. O demonstrație scurtă introduce ideea, apoi urmează misiunile de construire, pauza și provocarea dificilă. **Lecțiile 1–8 păstrează creația proprie. Lecțiile 9–10 au numai misiuni cu ținte clare, cu puzzle-ul greu în bază și ultimele 5 minute pentru verificare și salvare.** Explicațiile și testele se fac și pe parcursul misiunilor.
+Toate cele zece lecții au câte 60 de minute; ghidurile vechi de 50 de minute sunt în arhivă. O demonstrație scurtă introduce ideea, apoi urmează misiunile de construire, provocarea dificilă. Pauzele din Lecțiile 1–5 sunt în plan; la Lecțiile 6–10 o scurtă schimbare de poziție se face în timpul explicației dintre misiuni, fără timp suplimentar. **Lecțiile 1–8 păstrează creația proprie. Lecțiile 9–10 au numai misiuni cu ținte clare, cu puzzle-ul greu în bază și ultimele 5 minute pentru verificare și salvare.** Explicațiile și testele se fac și pe parcursul misiunilor.
 
 În lecțiile 1–8, atelierul nu este o recompensă pentru viteză. Fiecare copil personalizează cel mai avansat program care îi funcționează. Dacă ritmul este lent, construim o parte din M2 împreună și simplificăm scena; păstrăm încercarea provocării dificile, atelierul și salvarea. Rezervele rămân suplimentare, cu indicii și soluții. Lecțiile 1–10 au fiecare două rezerve dedicate, cu programe ilustrate.
 
@@ -63,10 +63,10 @@ Profesorul cere o predicție înainte de rulare, o alegere făcută de copil și
 | 6 | [Ghidul blocurilor: Start on Bump și Stop](https://www.scratchjr.org/explore/blocks) | Traseul meu | 47-57 min |
 | 7 | [Ghidul blocurilor: mesaje, viteze și Repetă](https://www.scratchjr.org/explore/blocks) | Proba mea | 47-57 min |
 | 8 | [Ghidul blocurilor: evenimente, mesaje și vizibilitate](https://www.scratchjr.org/explore/blocks) | Pilotajul meu | 47-57 min |
-| 9 | [Animated Genres - proiectul Game](https://www.scratchjr.org/curricula/animatedgenres/full.pdf) | Secretul insulei mele | 37-45 min |
+| 9 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Lot mixt și două locuri la plastic; fără creație proprie | 60 min, puzzle greu în bază |
 | 10 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Udare și gestionarea apei; fără creație proprie | 60 min, puzzle greu în bază |
 
-Exemplele sunt adaptate la personajele și blocurile cunoscute. La Lecțiile 6, 7 și 8 pregătim înaintea fiecărei ore un import SJR cu resursele noi; în celelalte lecții nu adăugăm cerințe de descărcare, înregistrare, desen sau import. [Surse și adaptări](Surse_oficiale_ScratchJr.md).
+Exemplele sunt adaptate la personajele și blocurile cunoscute. La Lecțiile 6–10 pregătim înaintea fiecărei ore un import SJR cu resursele noi; Lecțiile 1–5 se construiesc din biblioteca instalată. [Surse și adaptări](Surse_oficiale_ScratchJr.md).
 
 ## Parcursul celor 10 lecții
 
@@ -80,10 +80,10 @@ Exemplele sunt adaptate la personajele și blocurile cunoscute. La Lecțiile 6, 
 | 6 | Contact, sincronizare și coordonarea mecanismelor | Robotul pregătește atelierul: încărcare, curățenie, ușă și două rezerve |
 | 7 | Operații în paralel și continuare după toate rezultatele | Fabrica de roboți: montaj, probă, plecare și două rezerve |
 | 8 | Pilotaj interactiv, contact și stări gol/încărcat | Robotul submarin: recuperare, depunere și două rezerve |
-| 9 | Combinăm mesaje, vizibilitate și pagini | Insula misterioasă: descoperiri în ordine și două rezerve |
+| 9 | Rute selectate prin mesaje și planificarea locurilor de depunere | Robotul de reciclare: lot mixt și două rezerve |
 | 10 | Consumul unei resurse și reumplerea | Robotul grădinar: două plante, patru porții, rezervor de trei |
 
-În parcursul refăcut, mesajele apar la ștafetă, paginile la autobuz, iar repetițiile finite la spectacol. Lecțiile 9-10 vor fi adaptate acestei progresii. Adaptăm ritmul după proiectele construite de copii. Proiectul final reunește secvențe, repetiții, mesaje și pagini. Pentru un copil care are nevoie de sprijin, profesorul simplifică intrarea pe pagina de final și construiește gradual țintele.
+Mesajele apar la ștafetă, animația continuă la muzeu, paginile la autobuz, repetițiile finite la spectacol și contactul la atelier. Lecțiile 7–10 combină aceste mecanisme în probleme noi. Lecția 9 consolidează transportul într-un lot mixt; Lecția 10 adaugă planificarea apei. Nu fiecare lecție introduce un bloc nou și nu fiecare proiect trebuie să aibă mai multe blocuri. [Progresia, reperele de reușită și sprijinul între lecții](Progresia_cursului.md).
 
 ## Lecția 1 Cursa cu ștafetă - 60 de minute
 
@@ -278,7 +278,7 @@ Cartonașele arată ce trebuie să se întâmple. Programul complet este demonst
 
 Programarea se face în aplicația ScratchJr de pe tabletă. Siteul prezintă cerințele și exemplele; nu presupunem că poate citi sau verifica automat proiectele ScratchJr. Reușita se verifică prin demonstrație și discuție.
 
-Acest plan stabilește conținutul cursului. Pachetul lecției 1 este pregătit în [Lectia_01_ScratchJr](Lectia_01_ScratchJr/README.md), cu ghid, cartonașe și proiecte native. Lecția 2 este pregătită în [Lectia_02_ScratchJr](Lectia_02_ScratchJr/README.md), cu misiuni de construire și exercițiu dificil. Lecția 3 este pregătită în [Lectia_03_ScratchJr](Lectia_03_ScratchJr/README.md), cu urcare, călătorie între scene, coborâre și două rezerve. Lecția 4 este pregătită în [Lectia_04_ScratchJr](Lectia_04_ScratchJr/README.md), cu ritmuri finite, două runde dirijate, un puzzle greu și două rezerve. Lecția 5 este pregătită în [Lectia_05_ScratchJr](Lectia_05_ScratchJr/README.md), cu încărcare, două livrări autonome, retur gol și două rezerve. Lecția 6 este pregătită în [Lectia_06_ScratchJr](Lectia_06_ScratchJr/README.md), cu încărcare, curățenie la contact, ușă automată și două rezerve. Lecția 7 este pregătită în [Lectia_07_ScratchJr](Lectia_07_ScratchJr/README.md), cu fabrica de roboți, montaj în paralel, probă a farului, plecare și două rezerve. Lecția 8 este pregătită în [Lectia_08_ScratchJr](Lectia_08_ScratchJr/README.md), cu telecomandă, recuperare, transport, depunere și două rezerve. Lecția 9 este pregătită în [Lectia_09_ScratchJr](Lectia_09_ScratchJr/README.md), cu robotul de reciclare, lot mixt, puzzle greu în bază și două rezerve, fără creație proprie. Lecția 10 este pregătită în [Lectia_10_ScratchJr](Lectia_10_ScratchJr/README.md), cu robotul grădinar, consum de apă, puzzle greu și două rezerve, fără creație proprie. Toate cele zece pachete de lecții sunt pregătite. Meniul include toate cele zece lecții și păstrează Robo în secțiunea sa; observațiile din clasă vor regla dificultatea.
+Acest plan stabilește conținutul cursului. Pachetul lecției 1 este pregătit în [Lectia_01_ScratchJr](Lectia_01_ScratchJr/README.md), cu ghid, capturi și proiecte native. Lecția 2 este pregătită în [Lectia_02_ScratchJr](Lectia_02_ScratchJr/README.md), cu misiuni de construire și exercițiu dificil. Lecția 3 este pregătită în [Lectia_03_ScratchJr](Lectia_03_ScratchJr/README.md), cu urcare, călătorie între scene, coborâre și două rezerve. Lecția 4 este pregătită în [Lectia_04_ScratchJr](Lectia_04_ScratchJr/README.md), cu ritmuri finite, două runde dirijate, un puzzle greu și două rezerve. Lecția 5 este pregătită în [Lectia_05_ScratchJr](Lectia_05_ScratchJr/README.md), cu încărcare, două livrări autonome, retur gol și două rezerve. Lecția 6 este pregătită în [Lectia_06_ScratchJr](Lectia_06_ScratchJr/README.md), cu încărcare, curățenie la contact, ușă automată și două rezerve. Lecția 7 este pregătită în [Lectia_07_ScratchJr](Lectia_07_ScratchJr/README.md), cu fabrica de roboți, montaj în paralel, probă a farului, plecare și două rezerve. Lecția 8 este pregătită în [Lectia_08_ScratchJr](Lectia_08_ScratchJr/README.md), cu telecomandă, recuperare, transport, depunere și două rezerve. Lecția 9 este pregătită în [Lectia_09_ScratchJr](Lectia_09_ScratchJr/README.md), cu robotul de reciclare, lot mixt, puzzle greu în bază și două rezerve, fără creație proprie. Lecția 10 este pregătită în [Lectia_10_ScratchJr](Lectia_10_ScratchJr/README.md), cu robotul grădinar, consum de apă, puzzle greu și două rezerve, fără creație proprie. Toate cele zece pachete de lecții sunt pregătite. Meniul include toate cele zece lecții și păstrează Robo în secțiunea sa; observațiile din clasă vor regla dificultatea.
 
 ## Referințe pentru pregătirea profesorului
 

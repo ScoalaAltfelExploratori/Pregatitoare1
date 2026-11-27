@@ -4,6 +4,19 @@
 
 [Plan și programe cu capturi - PDF](Ghid_profesor_Lectia_04.pdf) · [Pagina lecției](index.html) · [Proiecte editabile](solutii_spectacol/README.md)
 
+## Locul lecției în curs
+
+**Reluăm:** Din autobuz: continuarea începe după terminarea acțiunii cerute.
+
+**Ce adăugăm:** Repetarea finită a unui grup și acțiunea executată o singură dată după buclă.
+
+**Verificăm înțelegerea:** Se văd A2, B3, A2, B3, apoi un singur final.
+
+**Cum păstrăm ritmul:** Desenăm cu degetul ce intră în ramă și ce rămâne după ea. Numărul de blocuri poate scădea: dificultatea este gruparea și ordinea, nu lungimea programului.
+
+Pentru un fir deja înțeles: prinde-l de primul bloc și trage-l peste miniatura personajului destinatar din lista din stânga. Selectează destinatarul și verifică acea copie. Firele rămân independente; schimbă numai culoarea, distanța sau întârzierea cerută. Dacă firul dispare din greșeală, folosește Undo. [Reper oficial](https://sites.bc.edu/scratchjr/learn/).
+
+[Progresia celor zece lecții](../Progresia_cursului.md).
 ## Povestea pentru copii
 
 „Mira și Radu pregătesc un număr pentru spectacolul școlii. Mira bate ritmul, Radu îi răspunde. La repetiția generală, dirijoarea dă intrările: fiecare își așteaptă rândul. Trebuie să repete de două ori și să termine împreună. Voi construiți programul spectacolului.”

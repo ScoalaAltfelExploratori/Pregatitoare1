@@ -1,0 +1,62 @@
+[
+  {
+    "lesson": 1,
+    "exit": 0,
+    "error": "",
+    "output_tail": " \"save_reopen\": true,\n  \"scope\": \"Complete native examples executed in ScratchJr Desktop Reborn browser. DOM samples and real screenshots. No Android/Windows app retest; audio output not measured.\"\n}\n"
+  },
+  {
+    "lesson": 2,
+    "exit": 0,
+    "error": "",
+    "output_tail": "PASS: six scenarios in both collections and individual files; reopened hard puzzle; repeated R2 inspection without flag; empty starter; nine saved projects; matching archives; bundled assets only.\n"
+  },
+  {
+    "lesson": 3,
+    "exit": 0,
+    "error": "",
+    "output_tail": "PASS: six native journeys; boarding at door; bus waits for all; stopped before exit; slow passenger last; two stops; seven default-asset archives. Reopened: True\n"
+  },
+  {
+    "lesson": 4,
+    "exit": 0,
+    "error": "",
+    "output_tail": "bbbbaa 355 native frames: PASS\nstart (empty) 36 native frames: PASS\nmanual aa 106 native frames: PASS\nPASS: all seven native archives; bundled assets and sound; exact turns, pauses, final and replay.\n"
+  },
+  {
+    "lesson": 5,
+    "exit": 0,
+    "error": "",
+    "output_tail": " 757 ms\nr1 PASS 430 native frames; first load: 1758 ms\nr2 PASS 393 native frames; first load: 1108 ms\nPASS: six native solutions, empty starter, reset/replay, reopening, seven default-asset archives.\n"
+  },
+  {
+    "lesson": 6,
+    "exit": 0,
+    "error": "",
+    "output_tail": "PASS: eight exact packages; 14 browser runs; charge order, contact-only collection, door waiting, shorter route, emergency stops, reset/reopen, blank starter.\n"
+  },
+  {
+    "lesson": 7,
+    "exit": 0,
+    "error": "",
+    "output_tail": "PASS: 7 exact packages, 10 native-browser runs, parallel/sequential wheels, slow-wheel wait, lamp flashes, two test returns, one departure, reset/replay and reopen.\n"
+  },
+  {
+    "lesson": 8,
+    "exit": 0,
+    "error": "",
+    "output_tail": " \"precision variant\",\n    \"loaded slow / empty normal\",\n    \"automatic return\",\n    \"hidden controls ignored\",\n    \"reopen blank starter\"\n  ],\n  \"scope\": \"Browser port; physical Lenovo not tested.\"\n}\n"
+  },
+  {
+    "lesson": 9,
+    "exit": 0,
+    "error": "",
+    "output_tail": "stable pause\",\n    \"clear bins before next item\",\n    \"hidden button ignored\",\n    \"M3 and R2 replay after reopen\"\n  ],\n  \"scope\": \"ScratchJr Desktop Reborn in browser; physical Lenovo not tested.\"\n}\n"
+  },
+  {
+    "lesson": 10,
+    "exit": 0,
+    "error": "",
+    "output_tail": "\"two passes with zero remaining before refill\",\n    \"Stop/Flag replay\",\n    \"M3 replay after saving and reopening\"\n  ],\n  \"scope\": \"ScratchJr Desktop Reborn in browser; physical Lenovo not tested.\"\n}\n"
+  }
+]

@@ -20,9 +20,9 @@ Nu este un al doilea site sau un alt repository. Toate legăturile sunt relative
 [Raportul verificării meniului și legăturilor](verificare_site/README.md).
 
 
-## Lecția 3 refăcută: Autobuzul spre plajă
+## Cursul complet ScratchJr
 
-O oră, puzzle greu, creație proprie și două rezerve. [Ghid](materiale/Lectia_03_ScratchJr/ghid-profesor.html) · [Plan și programe cu capturi](materiale/Lectia_03_ScratchJr/Ghid_profesor_Lectia_03.pdf) · [Teste în browser](materiale/Lectia_03_ScratchJr/verificare/Autobuzul_60min.md). Numai elemente din aplicație, fără distribuire de fișiere pe tablete.
+[Parcurs și repere între lecții](scratchjr/parcurs.html) · [Planuri și soluții cu capturi](materiale/Plan_lectii_ScratchJr_60min.pdf) · [Verificarea întregului curs](materiale/verificare_curs/README.md). Toate lecțiile au 60 de minute, puzzle greu în bază și două rezerve. Lecțiile 1–5 folosesc biblioteca instalată; pentru 6–10 importăm înaintea orei starterul cu toate resursele. Lecțiile 9–10 nu au creație proprie.
 
 ## Cum folosim Robo
 

@@ -1,0 +1,143 @@
+{
+  "result": "PASS",
+  "review_date": "2026-11-27",
+  "lessons": [
+    {
+      "lesson": 1,
+      "title": "Cursa cu ștafetă",
+      "pdf_pages": 13,
+      "course_pages": [
+        1,
+        13
+      ],
+      "manifest_projects": 7,
+      "scripts": 29,
+      "result": "PASS"
+    },
+    {
+      "lesson": 2,
+      "title": "Muzeul după închidere",
+      "pdf_pages": 13,
+      "course_pages": [
+        14,
+        26
+      ],
+      "manifest_projects": 9,
+      "scripts": 70,
+      "result": "PASS"
+    },
+    {
+      "lesson": 3,
+      "title": "Autobuzul spre plajă",
+      "pdf_pages": 15,
+      "course_pages": [
+        27,
+        41
+      ],
+      "manifest_projects": 7,
+      "scripts": 74,
+      "result": "PASS"
+    },
+    {
+      "lesson": 4,
+      "title": "Repetiția pentru spectacol",
+      "pdf_pages": 8,
+      "course_pages": [
+        42,
+        49
+      ],
+      "manifest_projects": 7,
+      "scripts": 15,
+      "result": "PASS"
+    },
+    {
+      "lesson": 5,
+      "title": "Robotul curier",
+      "pdf_pages": 12,
+      "course_pages": [
+        50,
+        61
+      ],
+      "manifest_projects": 7,
+      "scripts": 34,
+      "result": "PASS"
+    },
+    {
+      "lesson": 6,
+      "title": "Robotul pregătește atelierul",
+      "pdf_pages": 25,
+      "course_pages": [
+        62,
+        86
+      ],
+      "manifest_projects": 8,
+      "scripts": 100,
+      "result": "PASS"
+    },
+    {
+      "lesson": 7,
+      "title": "Fabrica de roboți: construim un rover",
+      "pdf_pages": 18,
+      "course_pages": [
+        87,
+        104
+      ],
+      "manifest_projects": 7,
+      "scripts": 72,
+      "result": "PASS"
+    },
+    {
+      "lesson": 8,
+      "title": "Robotul submarin",
+      "pdf_pages": 19,
+      "course_pages": [
+        105,
+        123
+      ],
+      "manifest_projects": 7,
+      "scripts": 159,
+      "result": "PASS"
+    },
+    {
+      "lesson": 9,
+      "title": "Robotul de reciclare",
+      "pdf_pages": 17,
+      "course_pages": [
+        124,
+        140
+      ],
+      "manifest_projects": 6,
+      "scripts": 66,
+      "result": "PASS"
+    },
+    {
+      "lesson": 10,
+      "title": "Robotul grădinar",
+      "pdf_pages": 20,
+      "course_pages": [
+        141,
+        160
+      ],
+      "manifest_projects": 6,
+      "scripts": 75,
+      "result": "PASS"
+    }
+  ],
+  "native_exports": 73,
+  "extra_collections": [
+    {
+      "file": "lectia_1.sjr",
+      "sha256": "27d3b31a86c02ed6444a3db505190ff8ff3a4782dfe8c23ffccf217dcf8d8c40",
+      "result": "PASS"
+    },
+    {
+      "file": "rezerve.sjr",
+      "sha256": "d8efdb2dd4e5a3d910d411ee12eeadba78aa778cf5ebfaf305fd4f5b87c7df89",
+      "result": "PASS"
+    }
+  ],
+  "pdf_pages": 160,
+  "fresh_core_browser_runs": 10,
+  "observed_frames": 1674,
+  "scope": "Native exports and recorded ScratchJr Desktop Reborn UI observations; not an Android or classroom test."
+}

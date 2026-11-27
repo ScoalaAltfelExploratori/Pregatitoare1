@@ -4,6 +4,19 @@
 
 [PDF cu plan și toate programele ilustrate](Ghid_profesor_Lectia_05.pdf) · [Pagina lecției](index.html) · [Proiecte editabile](solutii_curier/README.md)
 
+## Locul lecției în curs
+
+**Reluăm:** Din ștafetă: transport sincronizat; din spectacol: operații care se termină înainte de continuare.
+
+**Ce adăugăm:** Un ciclu de lucru complet: încărcare, transport, depunere și retur gol, apoi altă livrare.
+
+**Verificăm înțelegerea:** Robotul nu pleacă înainte de încărcare și nu revine cu mingea încă pe plafon.
+
+**Cum păstrăm ritmul:** Validăm o livrare înainte să adăugăm baschetul. Urmărim pe rând comanda livrării și comanda transportului; sunt două niveluri de mesaje, nu două culori fără rol.
+
+Pentru un fir deja înțeles: prinde-l de primul bloc și trage-l peste miniatura personajului destinatar din lista din stânga. Selectează destinatarul și verifică acea copie. Firele rămân independente; schimbă numai culoarea, distanța sau întârzierea cerută. Dacă firul dispare din greșeală, folosește Undo. [Reper oficial](https://sites.bc.edu/scratchjr/learn/).
+
+[Progresia celor zece lecții](../Progresia_cursului.md).
 ## Povestea pentru copii
 
 „În sala de sport începe antrenamentul. Mingile sunt încă în magazie. Un vehicul automat poate duce o singură minge pe platformă. Trebuie să se încarce, să livreze mingea, să revină gol și să plece cu următoarea. Voi îl programați. După pornire, nimeni nu îl mai conduce cu mâna.”

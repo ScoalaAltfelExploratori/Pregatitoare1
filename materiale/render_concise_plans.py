@@ -13,6 +13,7 @@ from pypdf import PdfReader, PdfWriter
 
 ROOT = Path(__file__).resolve().parent
 DATA = json.loads((ROOT / 'Plan_lectii_ScratchJr_60min.json').read_text(encoding='utf-8'))
+PROGRESSION = {l['number']:l for l in json.loads((ROOT / 'Progresia_cursului.json').read_text(encoding='utf-8'))['lessons']}
 OUT = ROOT.parent / 'output' / 'pdf' / 'Plan_lectii_ScratchJr_60min.pdf'
 INK, TEAL, MUTED = map(colors.HexColor, ['#172d3e', '#087f75', '#52636f'])
 for name, file in [('Body', 'arial.ttf'), ('Bold', 'arialbd.ttf')]:
@@ -42,6 +43,7 @@ def plan_story(lesson):
     story.append(p(escape(lesson['hint']), 'small'))
     story.append(p('DOUĂ PROVOCĂRI DE REZERVĂ', 'head'))
     for item in lesson['backups']: story.append(p('<b>'+escape(item['title'])+'</b> '+escape(item['text'])))
+    story.append(p('<b>În parcursul cursului.</b> '+escape(PROGRESSION[lesson['number']]['pdf']), 'small'))
     story.append(p(escape(lesson['teacher_note']), 'small'))
     if lesson.get('student_reference'):
         story.append(p(escape(lesson['student_reference']), 'small'))
@@ -88,11 +90,10 @@ with OUT.open('wb') as stream:writer.write(stream)
 assert len(PdfReader(str(OUT)).pages)==len(writer.pages)
 shutil.copyfile(OUT,ROOT/OUT.name)
 for lesson in DATA['lessons']:
-    if lesson['number']!=DATA['lessons'][-1]['number']:continue
     single=PdfWriter();append_lesson(single,lesson,1)
     single.add_metadata({'/Title':f'Lecția {lesson["number"]} - {lesson["title"]} - Plan și programe ilustrate','/Author':'Școala altfel'})
     dest=OUT.parent/f'Ghid_profesor_Lectia_{lesson["number"]:02}.pdf'
     with dest.open('wb') as stream:single.write(stream)
     assert len(PdfReader(str(dest)).pages)==len(single.pages)
     shutil.copyfile(dest,ROOT/f'Lectia_{lesson["number"]:02}_ScratchJr'/dest.name)
-print(f'Created course PDF ({len(writer.pages)} pages) and current lesson PDF ({len(single.pages)} pages).')
+print(f'Created course PDF ({len(writer.pages)} pages) and all {len(DATA["lessons"])} individual lesson PDFs.')

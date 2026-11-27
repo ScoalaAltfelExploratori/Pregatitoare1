@@ -4,6 +4,17 @@
 
 [Plan și programe cu capturi - PDF](Ghid_profesor_Lectia_02.pdf) · [Pagina lecției](index.html) · [Proiectele profesorului](solutii_muzeu/README.md)
 
+## Locul lecției în curs
+
+**Reluăm:** Din ștafetă: fiecare personaj are codul său; plicurile de aceeași culoare lucrează împreună.
+
+**Ce adăugăm:** Animație continuă, oprirea propriilor fire și reluare după un eveniment.
+
+**Verificăm înțelegerea:** Ambele exponate stau pe tot drumul paznicului și repornesc după revenire.
+
+**Cum păstrăm ritmul:** Comparăm Stop din program cu Stop din bara de sus. Repetă mereu este un bloc de final; bucla cu număr va apărea la Lecția 4. Nu punem o continuare după trimiterea care pornește o animație infinită.
+
+[Progresia celor zece lecții](../Progresia_cursului.md).
 ## Povestea pentru copii
 
 „Muzeul s-a închis. În sala de astronomie, macheta Pământului și planeta cu inele încep să se rotească. Paznicul intră să verifice sala. Exponatele trebuie să rămână nemișcate cât timp el le inspectează. Când revine la intrare, își pot relua mișcarea. Voi programați exponatele și inspecția.”
