@@ -62,6 +62,7 @@ from render_snapshot_guide import render_appendix as relay_appendix
 from render_museum_guide import render_appendix as museum_appendix
 from render_bus_guide import render_appendix as bus_appendix
 from render_rehearsal_guide import render_appendix as rehearsal_appendix
+from render_courier_guide import render_appendix as courier_appendix
 
 def append_lesson(writer,lesson,start):
     num=lesson['number'];plan=TEMP/f'plan-{num}-{start}.pdf';appendix=TEMP/f'visual-{num}-{start}.pdf'
@@ -69,7 +70,7 @@ def append_lesson(writer,lesson,start):
     SimpleDocTemplate(str(plan),pagesize=A4,leftMargin=34,rightMargin=34,topMargin=45,bottomMargin=42,title=lesson['title'],author='Școala altfel').build(plan_story(lesson),onFirstPage=decorate_page,onLaterPages=decorate_page)
     reader=PdfReader(str(plan));assert len(reader.pages)==1,(num,len(reader.pages))
     writer.append(reader)
-    render={1:relay_appendix,2:museum_appendix,3:bus_appendix,4:rehearsal_appendix}[num]
+    render={1:relay_appendix,2:museum_appendix,3:bus_appendix,4:rehearsal_appendix,5:courier_appendix}[num]
     outline=render(appendix,start+1)
     writer.append(PdfReader(str(appendix)))
     writer.add_outline_item(f'Lecția {num} - {lesson["title"]} - plan',start-1)

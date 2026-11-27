@@ -1,0 +1,1328 @@
+{
+  "lesson": 5,
+  "title": "Robotul curier",
+  "duration": 60,
+  "projects": [
+    {
+      "key": "m1",
+      "file": "m1.sjr",
+      "name": "L05 Curier - 1. Încărcarea corectă · 60 min",
+      "sha256": "183b28439745caf496647286c041444a1cd1ada1d131b3683afa6a0e3a64081c",
+      "pages": [
+        {
+          "background": "Gym.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "Car.svg",
+              "name": "Robot curier",
+              "size": [
+                534,
+                220
+              ],
+              "position": [
+                144,
+                276
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fotbal",
+              "asset": "Soccerball.svg",
+              "name": "Minge fotbal",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                96,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Robotul curier",
+              "position": [
+                240,
+                22
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "MAGAZIE",
+              "position": [
+                72,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "ANTRENAMENT",
+              "position": [
+                408,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m2",
+      "file": "m2.sjr",
+      "name": "L05 Curier - 2. Livrare și întoarcere · 60 min",
+      "sha256": "f43a64225f62f65c5bc23a17e6e44096234f59229220115167865651c1e217f6",
+      "pages": [
+        {
+          "background": "Gym.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "Car.svg",
+              "name": "Robot curier",
+              "size": [
+                534,
+                220
+              ],
+              "position": [
+                144,
+                276
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "back",
+                      "value": 8
+                    },
+                    {
+                      "block": "say",
+                      "value": "Livrat!"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fotbal",
+              "asset": "Soccerball.svg",
+              "name": "Minge fotbal",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                96,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Robotul curier",
+              "position": [
+                240,
+                22
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "MAGAZIE",
+              "position": [
+                72,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "ANTRENAMENT",
+              "position": [
+                408,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m3",
+      "file": "m3.sjr",
+      "name": "L05 Curier - 3. Două livrări autonome · 60 min",
+      "sha256": "c453c68676e79d9ecdcf627d67e63d8cb312017a03c1314b01a58293ea9dbe2b",
+      "pages": [
+        {
+          "background": "Gym.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "Car.svg",
+              "name": "Robot curier",
+              "size": [
+                534,
+                220
+              ],
+              "position": [
+                144,
+                276
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "back",
+                      "value": 8
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "back",
+                      "value": 8
+                    },
+                    {
+                      "block": "say",
+                      "value": "Livrate!"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fotbal",
+              "asset": "Soccerball.svg",
+              "name": "Minge fotbal",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                96,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "baschet",
+              "asset": "Basketball.svg",
+              "name": "Minge baschet",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                48,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Robotul curier",
+              "position": [
+                240,
+                22
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "MAGAZIE",
+              "position": [
+                72,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "ANTRENAMENT",
+              "position": [
+                408,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "creatie",
+      "file": "creatie.sjr",
+      "name": "L05 Curier - 4. Ocolim în ambele sensuri · 60 min",
+      "sha256": "9b28f1ffaeb1af8edcf12b453d8a5c6f0e6a1ee552a04b2bc6f08825ff63d5ec",
+      "pages": [
+        {
+          "background": "Gym.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "Car.svg",
+              "name": "Robot curier",
+              "size": [
+                534,
+                220
+              ],
+              "position": [
+                144,
+                276
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "back",
+                      "value": 8
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "back",
+                      "value": 8
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    },
+                    {
+                      "block": "say",
+                      "value": "Livrate!"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fotbal",
+              "asset": "Soccerball.svg",
+              "name": "Minge fotbal",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                96,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "baschet",
+              "asset": "Basketball.svg",
+              "name": "Minge baschet",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                48,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 8
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "gard",
+              "asset": "Fence.svg",
+              "name": "Zonă închisă",
+              "size": [
+                219,
+                123
+              ],
+              "position": [
+                240,
+                276
+              ],
+              "scale": 0.24,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": [
+            {
+              "text": "Robotul curier",
+              "position": [
+                240,
+                22
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "MAGAZIE",
+              "position": [
+                72,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "ANTRENAMENT",
+              "position": [
+                408,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "r1",
+      "file": "r1.sjr",
+      "name": "L05 Curier - R1. Încărcare lentă · 60 min",
+      "sha256": "c2e3f64f5476f528ed1a099f3ae8f32f57e58c7101707ad79e5b7db999ba492b",
+      "pages": [
+        {
+          "background": "Gym.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "Car.svg",
+              "name": "Robot curier",
+              "size": [
+                534,
+                220
+              ],
+              "position": [
+                144,
+                276
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "back",
+                      "value": 8
+                    },
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "back",
+                      "value": 8
+                    },
+                    {
+                      "block": "say",
+                      "value": "Livrate!"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fotbal",
+              "asset": "Soccerball.svg",
+              "name": "Minge fotbal",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                96,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "setspeed",
+                      "value": 0
+                    },
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "setspeed",
+                      "value": 1
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "baschet",
+              "asset": "Basketball.svg",
+              "name": "Minge baschet",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                48,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Robotul curier",
+              "position": [
+                240,
+                22
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "MAGAZIE",
+              "position": [
+                72,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "ANTRENAMENT",
+              "position": [
+                408,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "r2",
+      "file": "r2.sjr",
+      "name": "L05 Curier - R2. Comanda urgentă · 60 min",
+      "sha256": "49309dcd180a679c57f50136801a2a30b71c877f6f62fc1d5664ccf61a9f0962",
+      "pages": [
+        {
+          "background": "Gym.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "Car.svg",
+              "name": "Robot curier",
+              "size": [
+                534,
+                220
+              ],
+              "position": [
+                144,
+                276
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "block": "message",
+                      "value": "Green"
+                    },
+                    {
+                      "block": "back",
+                      "value": 8
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "back",
+                      "value": 8
+                    },
+                    {
+                      "block": "say",
+                      "value": "Livrate!"
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fotbal",
+              "asset": "Soccerball.svg",
+              "name": "Minge fotbal",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                96,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 2
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 3
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "baschet",
+              "asset": "Basketball.svg",
+              "name": "Minge baschet",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                48,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Green"
+                  },
+                  "actions": [
+                    {
+                      "block": "up",
+                      "value": 3
+                    },
+                    {
+                      "block": "forward",
+                      "value": 4
+                    },
+                    {
+                      "block": "message",
+                      "value": "Purple"
+                    },
+                    {
+                      "block": "forward",
+                      "value": 5
+                    },
+                    {
+                      "block": "down",
+                      "value": 3
+                    }
+                  ]
+                },
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Purple"
+                  },
+                  "actions": [
+                    {
+                      "block": "forward",
+                      "value": 8
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Robotul curier",
+              "position": [
+                240,
+                22
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "MAGAZIE",
+              "position": [
+                72,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "ANTRENAMENT",
+              "position": [
+                408,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "start",
+      "file": "start.sjr",
+      "name": "L05 Curier - de la zero · 60 min",
+      "sha256": "e10f7582606f87c0cefefd0b450feefecd90ca7d3b6dc5419b8ccd703091a57a",
+      "pages": [
+        {
+          "background": "Gym.svg",
+          "focus": "robot",
+          "sprites": [
+            {
+              "id": "robot",
+              "asset": "Car.svg",
+              "name": "Robot curier",
+              "size": [
+                534,
+                220
+              ],
+              "position": [
+                144,
+                276
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "fotbal",
+              "asset": "Soccerball.svg",
+              "name": "Minge fotbal",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                96,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "baschet",
+              "asset": "Basketball.svg",
+              "name": "Minge baschet",
+              "size": [
+                96,
+                96
+              ],
+              "position": [
+                48,
+                312
+              ],
+              "scale": 0.25,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": [
+            {
+              "text": "Robotul curier",
+              "position": [
+                240,
+                22
+              ],
+              "size": 22,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "MAGAZIE",
+              "position": [
+                72,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            },
+            {
+              "text": "ANTRENAMENT",
+              "position": [
+                408,
+                344
+              ],
+              "size": 14,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

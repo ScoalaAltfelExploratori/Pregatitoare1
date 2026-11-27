@@ -1,6 +1,6 @@
 # Planul celor 10 lecții ScratchJr pentru copii de 6 și 7 ani
 
-**Revizie din 27 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, povești coerente și **60 de minute**. [PDF-ul cursului](Plan_lectii_ScratchJr_60min.pdf) cuprinde **Lecția 1 - Cursa cu ștafetă (p. 1-13)** și **Lecția 2 - Muzeul după închidere (p. 14-26)** și **Lecția 3 - Autobuzul spre plajă (p. 27-41)** și **Lecția 4 - Repetiția pentru spectacol (p. 42-49)**. Fiecare are un plan concis, pregătire și capturi reale cu programele tuturor personajelor. Lecțiile 5-10 păstrează parcursul anterior de 50 de minute până la revizuire.
+**Revizie din 27 noiembrie 2026:** refacem lecțiile pe rând, cu puzzle-uri mai dificile, povești coerente și **60 de minute**. [PDF-ul cursului](Plan_lectii_ScratchJr_60min.pdf) cuprinde **Lecția 1 - Cursa cu ștafetă (p. 1-13)** și **Lecția 2 - Muzeul după închidere (p. 14-26)** și **Lecția 3 - Autobuzul spre plajă (p. 27-41)** și **Lecția 4 - Repetiția pentru spectacol (p. 42-49)** și **Lecția 5 - Robotul curier (p. 50-61)**. Fiecare are un plan concis, pregătire și capturi reale cu programele tuturor personajelor. Lecțiile 6-10 păstrează parcursul anterior de 50 de minute până la revizuire.
 
 Plan de lucru pentru 10 întâlniri, în curs de trecere de la 50 la 60 de minute, cu o tabletă Lenovo K10 de 3 GB RAM pentru fiecare copil. Copiii au parcurs deja exercițiile Robo Explorator. Cursul începe direct în ScratchJr și folosește această experiență pentru a trece de la rezolvarea unor trasee la crearea de animații, scene interactive și povești.
 
@@ -16,7 +16,7 @@ Profesorul arată un pas, copiii îl fac în propriul proiect, apoi continuăm. 
 
 **Decizie de proiectare, 9 noiembrie 2026:** pentru toate lecțiile folosim misiuni de construire, cu ținte concrete. Copiii nu construiesc intenționat programe greșite pentru a le repara. Depanarea apare firesc atunci când propriul proiect nu face încă ce au intenționat. Profesorul ajută prin întrebări și indicii, fără o etapă separată de copiere a unei greșeli.
 
-**În fiecare lecție includem un exercițiu dificil.** Acesta combină mecanisme deja explicate și are un rezultat verificabil, nu înseamnă doar mai multă decorare sau copiere. Îl prezentăm tuturor, cu indicii progresive; terminarea lui fără ajutor nu este o condiție de reușită a lecției. Conținutul exact se rafinează la pregătirea fiecărei întâlniri.
+**În fiecare lecție includem un exercițiu dificil în partea de bază, pentru toți.** Toate componentele dificile au explicații și soluții complete, în timpul orei; nu le ascundem în rezerve. În lecțiile refăcute, capturile arată fiecare personaj și fiecare fir, inclusiv pe cele păstrate din etapa anterioară. Acesta combină mecanisme deja explicate și are un rezultat verificabil, nu înseamnă doar mai multă decorare sau copiere. Îl prezentăm tuturor, cu indicii progresive; terminarea lui fără ajutor nu este o condiție de reușită a lecției. Conținutul exact se rafinează la pregătirea fiecărei întâlniri.
 
 **Fiecare lecție refăcută are și două puzzle-uri de rezervă**, peste conținutul orei. Le folosim pentru cei care termină repede sau dacă întreaga clasă câștigă timp. Rezervele au cerințe, indicii și soluții; nu înlocuiesc exercițiul dificil prezentat tuturor sau timpul final de salvare.
 
@@ -28,7 +28,7 @@ Păstrăm aceeași tabletă pentru fiecare copil. Lecția 2 începe un muzeu nou
 | 2 | Earth, Planet, Father, Empty Room | Proiect nou; exponate animate, oprire și reluare după inspecție |
 | 3 | Bus, trei Child, Suburbs, Beach Day; Park la creație și rezervă | Urcare, scene, coborâre; 60 min |
 | 4 | Theatre, două Teen, Mother și Pop | Ritmuri finite, două runde dirijate, final; 60 min |
-| 5 | Rabbit, Dog, Park și Pop | Ritmuri construite în aplicație, fără înregistrări sau fișiere audio |
+| 5 | Gym, Car, Soccerball, Basketball; Fence la ocol | Încărcare, livrare, retur și două curse autonome; 60 min |
 | 6 | Rabbit, Dog, Butterfly, Ball, Park și Pop | Contacte și reacții, construite în aplicație |
 | 7 | Rabbit, Dog, Ball, Park, Beach Day și Beach Night | Adăugăm pagini și butoane pentru două finaluri |
 | 8 | Rabbit, Dog, Butterfly, Ball și Park | Forever și Stop: statui cu pornire și înghețare |
@@ -47,9 +47,9 @@ Citirea fluentă și scrierea de replici nu sunt condiții de participare. Profe
 
 ## Ritmul unei întâlniri
 
-Lecțiile 1–4 au câte 60 de minute; ghidurile nerevizuite au câte 50. O demonstrație scurtă introduce ideea, apoi urmează misiunile de construire, pauza și provocarea dificilă. **În lecțiile refăcute păstrăm 10 minute pentru creație proprie și ultimele 2-3 minute pentru proba finală și salvare.** Explicațiile și testele se fac și pe parcursul misiunilor.
+Lecțiile 1–5 au câte 60 de minute; ghidurile nerevizuite au câte 50. O demonstrație scurtă introduce ideea, apoi urmează misiunile de construire, pauza și provocarea dificilă. **În lecțiile refăcute păstrăm 10 minute pentru creație proprie și ultimele 2-3 minute pentru proba finală și salvare.** Explicațiile și testele se fac și pe parcursul misiunilor.
 
-Atelierul nu este o recompensă pentru viteză. Fiecare copil personalizează cel mai avansat program care îi funcționează. Dacă ritmul este lent, construim o parte din M2 împreună și simplificăm scena; păstrăm încercarea provocării dificile, atelierul și salvarea. Rezervele rămân suplimentare, cu indicii și soluții. Lecțiile 1–4 au fiecare două rezerve dedicate, cu programe ilustrate.
+Atelierul nu este o recompensă pentru viteză. Fiecare copil personalizează cel mai avansat program care îi funcționează. Dacă ritmul este lent, construim o parte din M2 împreună și simplificăm scena; păstrăm încercarea provocării dificile, atelierul și salvarea. Rezervele rămân suplimentare, cu indicii și soluții. Lecțiile 1–5 au fiecare două rezerve dedicate, cu programe ilustrate.
 
 Profesorul cere o predicție înainte de rulare, o alegere făcută de copil și o explicație scurtă după probă. Alegerea trebuie să schimbe un comportament sau o regulă; decorarea poate însoți programarea. Copiii lucrează pe propriile tablete. Nu cerem schimb de proiecte sau interacțiuni între dispozitive.
 
@@ -59,7 +59,7 @@ Profesorul cere o predicție înainte de rulare, o alegere făcută de copil și
 | 2 | [Ghidul blocurilor: Stop și Repetă mereu](https://www.scratchjr.org/explore/blocks) | Muzeul meu | 48-58 min |
 | 3 | Blocurile Ascunde, Arată și Pagina: aplicate călătoriei | Excursia mea | 48-58 min |
 | 4 | [Ghidul blocurilor: Sunet și Control](https://www.scratchjr.org/explore/blocks) | Spectacolul meu | 47-57 min |
-| 5 | [Dance Party](https://www.scratchjr.org/teach/activities/dance-party) | Semnătura mea sonoră | 37-45 min |
+| 5 | [Ghidul blocurilor: mișcare și mesaje](https://www.scratchjr.org/explore/blocks) | Traseul meu | 48-58 min |
 | 6 | [Playground Games - Tag (lecția 5)](https://sites.bc.edu/devtech/wp-content/uploads/sites/181/2022/10/Playground-Games.pdf) | Surpriza întâlnirii | 37-45 min |
 | 7 | [Moonrise after Sunset](https://www.scratchjr.org/teach/activities/moonrise-after-sunset) | Două alegeri care spun o poveste | 37-45 min |
 | 8 | [CAL clasa I - Freeze Dance Party (lecția 16)](https://sites.bc.edu/codingasanotherlanguage/curricula/scratchjr-curricula/1st-grade-scratchjr/) | Coregrafia mea | 37-45 min |
@@ -76,14 +76,14 @@ Exemplele sunt adaptate la personajele și blocurile cunoscute. Nu adăugăm cer
 | 2 | Animație continuă, întrerupere și reluare la semnal | Muzeul după închidere |
 | 3 | Vizibilitate și schimbarea paginii | Autobuzul spre plajă, puzzle greu și două rezerve |
 | 4 | Repetare finită a unui grup și continuare după buclă | Repetiția pentru spectacol, puzzle greu și două rezerve |
-| 5 | Programăm sunete, pauze și grupuri repetate | Coduri ritmice, salut dificil cu șapte sunete și două rezerve |
+| 5 | Ciclu complet de lucru și transport sincronizat | Robotul curier: două livrări autonome, puzzle greu de bază și două rezerve |
 | 6 | Contactul pornește reacții | Parc cu surprize, lanț dificil și două rezerve |
 | 7 | Programele schimbă paginile | Poveste cu două finaluri și două rezerve |
 | 8 | Repetare continuă și întrerupere prin eveniment | Statuile fermecate, comenzi de grup și două rezerve |
 | 9 | Combinăm mesaje, vizibilitate și pagini | Insula misterioasă: descoperiri în ordine și două rezerve |
 | 10 | Mesajul de încheiere coordonează ordinea | Marea finală: artiști pe rând, întoarcere disponibilă la final și două rezerve |
 
-În parcursul refăcut, mesajele apar la ștafetă, paginile la autobuz, iar repetițiile finite la spectacol. Lecțiile 5-10 vor fi adaptate acestei progresii. Adaptăm ritmul după proiectele construite de copii. Proiectul final reunește secvențe, repetiții, mesaje și pagini. Pentru un copil care are nevoie de sprijin, profesorul simplifică intrarea pe pagina de final și construiește gradual țintele.
+În parcursul refăcut, mesajele apar la ștafetă, paginile la autobuz, iar repetițiile finite la spectacol. Lecțiile 6-10 vor fi adaptate acestei progresii. Adaptăm ritmul după proiectele construite de copii. Proiectul final reunește secvențe, repetiții, mesaje și pagini. Pentru un copil care are nevoie de sprijin, profesorul simplifică intrarea pe pagina de final și construiește gradual țintele.
 
 ## Lecția 1 Cursa cu ștafetă - 60 de minute
 
@@ -141,25 +141,21 @@ Trei copii vin din locuri diferite. Autobuzul așteaptă să urce toți; la plaj
 
 [Ghid](Lectia_04_ScratchJr/ghid-profesor.html) · [PDF de 8 pagini cu toate programele](Lectia_04_ScratchJr/Ghid_profesor_Lectia_04.pdf) · [Proiecte native](Lectia_04_ScratchJr/solutii_spectacol/README.md). Numai elemente din aplicație, fără importuri pe tabletele copiilor.
 
-## Lecția 5 Fabrica de ritmuri
+## Lecția 5 Robotul curier
 
-**Stare:** pachet în [Lectia_05_ScratchJr](Lectia_05_ScratchJr/README.md), cu ghid actualizat, online și PDF, cinci cartonașe, demonstrație, starter și cinci soluții. [Raportul](Lectia_05_ScratchJr/verificare/README.md) descrie testele în browser, înregistrările audio și limitele. Proba pe Lenovo rămâne necesară.
+**60 de minute.** În sala de sport, un vehicul automat duce mingile din magazie la antrenament. Car reprezintă robotul. Încărcătura rămâne vizibilă: încărcare, transport, descărcare și retur gol.
 
-**Ideea nouă:** Pop este o acțiune. Refolosim Așteaptă, Repeat și mesajele pentru a controla câte sunete se aud și cum sunt grupate. Ambele personaje folosesc același sunet inclus, fără înregistrări sau sunete suplimentare din portul comunitar.
+- 0-8: scena Gym, Car și Soccerball; poziționare cu grila.
+- 8-18: încărcare precisă pe plafon; vehiculul așteaptă.
+- 18-32: transport sincronizat de 8 pași, descărcare, întoarcere fără marfă.
+- 32-35: pauză activă; când poate pleca și când poate reveni robotul?
+- 35-48: puzzle greu, în baza lecției. O atingere: fotbal, retur, baschet, retur, apoi Livrate! Adăugăm Basketball și comenzile verde/mov.
+- 48-58: creație proprie. Exemplul cu Fence include ocolul la dus și la întors.
+- 58-60: resetare, probă și salvare.
 
-**Pregătire:** proiect nou cu Rabbit, Dog și Park, fără grilă sau poziții exacte. Verificăm volumul și ascultăm pe rând. Modelele folosesc Așteaptă 3 pentru scurt, 6 pentru mediu, 12 pentru lung. Pop are propria durată; aceste valori descriu pauza. Copiilor nu le cerem calcule cu fracții.
+**Toate părțile dificile sunt pentru toți și au soluții complete.** Două rezerve suplimentare: Încărcare lentă (+5 min), cu revenire la viteza normală înainte de transport; Comanda urgentă (+10 min), baschetul livrat primul.
 
-1. **Codul secret:** la un tap pe iepure se aud două Pop apropiate, o pauză lungă și încă un Pop. Exact trei sunete, apoi liniște. Copiii construiesc după un model bătut din palme. Exemplu: atingere → Pop → așteaptă 3 → Pop → așteaptă 12 → Pop.
-2. **Patru sunete, două ritmuri:** iepurele produce patru sunete regulate; câinele, două perechi. Fiecare folosește Repeat și se testează separat. Modele: iepure, repetă 4 [Pop, așteaptă 6]; câine, repetă 2 [Pop, așteaptă 3, Pop, așteaptă 12]. Același număr, altă grupare.
-3. **Salutul secret - dificilă, pentru toți:** o atingere pornește trei perechi la iepure, apoi un singur răspuns al câinelui. Exact șapte sunete. Iepure: atingere → repetă 3 [Pop, așteaptă 3, Pop, așteaptă 12] → trimite portocaliu. Câine: la portocaliu → Pop. Mesajul este după buclă; câinele nu mai are pornire la atingere. Se oprește și se repetă fără resetare.
-
-**Două rezerve în plus:** R1, „Ecoul” (6-8 minute): iepurele cântă codul de trei sunete, apoi câinele îl repetă, după un mesaj; șase sunete, fără suprapunere sau mesaj de întoarcere. R2, „Șapte sunete, două blocuri” (8-10 minute): exact șapte sunete cu două Pop și un Repeat, într-un singur program, fără mesaje sau alte personaje active. Exemplu: repetă 6 [Pop, așteaptă 3] → Pop.
-
-**Ritm:** 0-4 exemplu oficial adaptat; 4-8 scena; 8-17 misiunea 1; 17-24 misiunea 2; 24-27 pauză; 27-37 puzzle dificil; 37-45 creația mea; 45-50 ascult și salvez.
-
-**Sprijin:** numărăm sunetele separat de blocurile verzi. Arătăm grupul care se repetă și acțiunea care apare numai la final. Atingem o dată și ascultăm până la capăt; steagul nu pornește exemplele. Păstrăm scena și înlocuim programele vechi, conform ghidului. Copiii construiesc, fără greșeli impuse.
-
-**Creație proprie:** Semnătura mea sonoră. Inventează un cod cu trei până la șase Pop și cel puțin două feluri de pauze. Bate-l întâi din palme, apoi programează-l. Tu alegi gruparea; poți folosi Repeat. Testăm pe rând, ca să putem asculta. [Ghid actualizat](Lectia_05_ScratchJr/ghid-profesor.html).
+[Ghid](Lectia_05_ScratchJr/ghid-profesor.html) · [PDF de 12 pagini cu toate programele](Lectia_05_ScratchJr/Ghid_profesor_Lectia_05.pdf) · [Proiecte native](Lectia_05_ScratchJr/solutii_curier/README.md). Numai elemente instalate, fără importuri pe tabletele copiilor.
 
 ## Lecția 6 Parcul cu surprize
 

@@ -120,7 +120,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 1
 
-[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește numai resurse incluse în aplicație, fără fișiere de distribuit pe tabletele copiilor. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–4 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
+[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește numai resurse incluse în aplicație, fără fișiere de distribuit pe tabletele copiilor. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–5 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
 
 [README-ul lecției 1](materiale/Lectia_01_ScratchJr/README.md) conține instalarea pe Lenovo, construirea scenei și testarea opțională în browser. [Raportul de verificare](materiale/Lectia_01_ScratchJr/verificare/README.md) separă cele șapte proiecte finale testate în browser de probele Android și Desktop anterioare.
 
@@ -138,7 +138,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 5
 
-[Fabrica de ritmuri](materiale/Lectia_05_ScratchJr/README.md) folosește Pop, pauze, Repeat și mesaje: un cod secret, patru sunete grupate diferit și provocarea dificilă cu trei perechi plus un răspuns. Două rezerve: ecoul și șapte sunete cu numai două blocuri Pop. Include ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul verificării audio în browser](materiale/Lectia_05_ScratchJr/verificare/README.md). Numai resurse incluse; fără fișiere de distribuit pe tablete.
+[Robotul curier](materiale/Lectia_05_ScratchJr/README.md) are 60 de minute: încărcare vizibilă, transport sincronizat, retur gol și două livrări autonome. Toate părțile dificile sunt în lecția de bază; păstrăm 10 minute de creație și două rezerve. [PDF-ul de 12 pagini](materiale/Lectia_05_ScratchJr/Ghid_profesor_Lectia_05.pdf) arată toate programele. Numai Gym, Car, Soccerball, Basketball și Fence; fără fișiere de distribuit pe tablete. [Testele în browser](materiale/Lectia_05_ScratchJr/verificare/Curierul_60min.md).
 
 ## Cursul ScratchJr: lecția 6
 

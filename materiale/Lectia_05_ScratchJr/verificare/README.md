@@ -1,3 +1,5 @@
+> Arhivă: Fabrica de ritmuri, 50 min. Pentru lecția actuală: [Robotul curier - teste](Curierul_60min.md).
+
 # Verificarea lecției 5 - Fabrica de ritmuri
 
 Data: **10 noiembrie 2026**. **Rezultat: toate cele șapte proiecte au trecut probele browserului.** Numărul sunetelor și pauzele au fost verificate și în înregistrări ale ieșirii audio reale a browserului.

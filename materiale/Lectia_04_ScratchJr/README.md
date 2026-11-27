@@ -6,7 +6,7 @@
 - [Ghid pentru profesor](ghid-profesor.html) · [Text editabil](Ghid_profesor.md)
 - [Pagina lecției](index.html) · [Cele șapte proiecte opționale](solutii_spectacol/README.md)
 - [Raportul testării în browser](verificare/Spectacolul_60min.md)
-- [PDF-ul cursului - lecțiile 1-4](../Plan_lectii_ScratchJr_60min.pdf)
+- [PDF-ul cursului - lecțiile 1-5](../Plan_lectii_ScratchJr_60min.pdf)
 
 ## Pe tabletele copiilor
 

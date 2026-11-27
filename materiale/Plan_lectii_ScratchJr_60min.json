@@ -248,6 +248,68 @@
       ],
       "teacher_note": "O oră, inclusiv 10 minute de creație. Rezervele sunt suplimentare. Copiii construiesc cu elementele aplicației; SJR-urile sunt referințe opționale pentru profesor.",
       "student_reference": "Ajutor în PDF-ul lecției: pregătire p. 2; M1 p. 3; M2 p. 4; M3 p. 5; creație p. 6; R1 p. 7; R2 p. 8. În PDF-ul cursului adaugă 41."
+    },
+    {
+      "number": 5,
+      "revision": "27 noiembrie 2026",
+      "title": "Robotul curier",
+      "subtitle": "Încărcare vizibilă, transport sincronizat și două livrări autonome",
+      "goal": "În sala de sport, vehiculul automat duce mingile din magazie la antrenament. Se încarcă, livrează și revine gol înainte de următoarea comandă.",
+      "setup": "Gym, Car și Soccerball; Basketball la M3, Fence la ocol. Toate din aplicație. Mașina reprezintă robotul; mingea are propriul cod.",
+      "schedule": [
+        {
+          "minutes": "0-8",
+          "title": "Pregătim magazia",
+          "text": "Mașină de circa 5½ pătrățele, minge de un pătrățel. Stabilim încărcarea pe plafon și locul de plecare."
+        },
+        {
+          "minutes": "8-18",
+          "title": "1. Încărcarea corectă",
+          "text": "Atingem mașina: mingea urcă 3 și merge 2 la dreapta. Se oprește pe plafon; mașina stă."
+        },
+        {
+          "minutes": "18-32",
+          "title": "2. Livrare și întoarcere",
+          "text": "Transport comun de 8 pași, descărcare și retur gol. Două fire la fiecare personaj; fără pauze ghicite."
+        },
+        {
+          "minutes": "32-35",
+          "title": "Pauză activă",
+          "text": "Mimăm încărcarea, plecarea și descărcarea. Clasa decide când poate reveni robotul."
+        },
+        {
+          "minutes": "35-48",
+          "title": "3. Două livrări autonome | dificil, pentru toți",
+          "text": "O atingere: fotbal, retur, baschet, retur, apoi Livrate! Culori și distanțe distincte pentru fiecare comandă."
+        },
+        {
+          "minutes": "48-58",
+          "title": "Traseul meu",
+          "text": "Altă magazie, alte destinații sau un ocol. Exemplul complet ocolește gardul la dus ȘI la întors."
+        },
+        {
+          "minutes": "58-60",
+          "title": "Probă și salvare",
+          "text": "Resetăm, pornim o dată și explicăm a doua comandă. Salvăm în galerie."
+        }
+      ],
+      "solutions": [
+        "M2: portocaliu încarcă fotbalul; albastru mișcă mașina și mingea împreună. După descărcare, mașina revine 8 pași.",
+        "M3, mașina: Atingere > portocaliu > Stânga 8 > verde > Stânga 8 > Livrate! Albastru și mov au fiecare firul lor de transport."
+      ],
+      "hint": "Înainte de fiecare probă: Stop, Reset Characters, apoi atinge mașina pe scenă. Trimite așteaptă programele pornite de mesaj. Steagul nu pornește proiectul.",
+      "backups": [
+        {
+          "title": "R1. Încărcare lentă | +5 min",
+          "text": "Fotbalul se încarcă lent, apoi revine la viteza normală înainte de transport."
+        },
+        {
+          "title": "R2. Comanda urgentă | +10 min",
+          "text": "Baschetul pleacă primul; schimbăm ordinea comenzilor, păstrăm retururile."
+        }
+      ],
+      "teacher_note": "Toate părțile dificile sunt în baza lecției; două rezerve sunt în plus. Copiii construiesc fără importuri. Zece minute de creație pentru fiecare.",
+      "student_reference": "Capturi: pregătire p. 2; M1 p. 3; M2 p. 4; M3 p. 5-6; creație p. 7-8; R1 p. 9-10; R2 p. 11-12. În PDF-ul cursului adaugă 49."
     }
   ]
 }

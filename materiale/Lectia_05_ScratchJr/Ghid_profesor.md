@@ -1,143 +1,154 @@
-# Lecția 5 Fabrica de ritmuri
+# Lecția 5 - Robotul curier
 
-50 de minute, copii de 6-7 ani. Trei misiuni principale, inclusiv provocarea dificilă, plus două rezerve. Copiii programează tipare pe care le aud: contează și sunetele, și liniștea dintre ele. Construiesc propriile programe, fără greșeli impuse pentru reparare.
+**60 de minute · 6-7 ani · toate părțile dificile în lecția de bază · 10 minute de creație · două rezerve.**
 
-## Ideea nouă: Pop este o acțiune
+[PDF cu plan și toate programele ilustrate](Ghid_profesor_Lectia_05.pdf) · [Pagina lecției](index.html) · [Proiecte editabile](solutii_curier/README.md)
 
-Introducem numai **Pop**, blocul verde cu difuzor. Refolosim Pornire la atingere, Așteaptă, Repeat și mesajul portocaliu. Numărul din Repeat arată de câte ori se repetă întregul grup; nu este volumul. Sunetul Pop este același la iepure și câine: nu presupunem voci sau instrumente diferite.
+## Povestea pentru copii
 
-Copilul poate construi un ritm după un model bătut din palme, poate număra ce se aude și poate arăta ce grup se repetă. În provocarea dificilă separă perechea repetată de răspunsul care apare numai la sfârșit.
+„În sala de sport începe antrenamentul. Mingile sunt încă în magazie. Un vehicul automat poate duce o singură minge pe platformă. Trebuie să se încarce, să livreze mingea, să revină gol și să plece cu următoarea. Voi îl programați. După pornire, nimeni nu îl mai conduce cu mâna.”
 
-## Pregătire numai cu resurse incluse
+**Ideea de robotică:** un ciclu de lucru complet, cu încărcare, transport, descărcare și întoarcere. Mașina **Car** reprezintă vehiculul automat; mingile sunt încărcătura. Este o simulare pe ecran, fără conectare la un robot fizic. Mișcările de încărcare reprezintă o instalație automată; nu simulăm un braț sau gravitația.
 
-Proiect nou cu **Rabbit, Dog și Park**, toate din biblioteca aplicației; eliminăm pisica inițială dacă urmăm modelul. Iepure în stânga, câine în dreapta, la mărimile inițiale. Nu folosim grila, deplasarea, personaje personalizate sau fișiere audio externe. Se poate folosi și fundalul alb.
+Față de ștafetă, aici același vehicul face două curse și se întoarce fără marfă. Mingea are propriul program: **nu se atașează automat mașinii**. Două programe identice o țin pe platformă în timpul transportului.
 
-Copiii nu importă SJR-uri, nu descarcă resurse și nu înregistrează sunete. Proiectele profesorului sunt exemple opționale. Verificăm Pop și un volum moderat înainte de lecție. La verificare ascultăm pe rând sau în perechi, ca să distingem sunetele propriei tablete.
+## Pregătirea - 0-8 minute
 
-## Demonstrație scurtă și pauze
+1. Proiect nou. Alege fundalul **Gym**, personajele **Car** și **Soccerball**. Scoate pisica. La M3 adăugăm **Basketball**; la creație, opțional **Fence**. Toate sunt în biblioteca instalată. Nicio descărcare, desen sau import obligatoriu.
+2. Activează grila. Micșorează mașina până are aproximativ **5½ pătrățele lățime**, iar mingea până are **un pătrățel diametru**. Pune blocul mov Micșorează singur în zona de cod, fără Steag sau Atingere, și apasă direct pe el; după dimensionare îl scoți. Pune mijlocul mașinii la aproximativ **6 pătrățele de marginea stângă**, jos. Lasă spre dreapta loc pentru transportul de 8 pași și încă 5 pași de descărcare a baschetului.
+3. Stabilește locul mingii pe mijlocul plafonului. Poziția de plecare a mingii de fotbal este **3 pătrățele mai jos și 2 la stânga** de acel punct. Mingea de baschet va pleca **3 mai jos și 4 la stânga**. Captura cu grilă din PDF arată modelul. Dacă mingea nu ajunge pe plafon, ajustăm poziția inițială, apoi resetăm și probăm din nou.
+4. Pune vehiculul și mingile la viteza normală. Titlurile și etichetele ABC sunt opționale; profesorul le poate scrie. Numele personajelor pot rămâne cele din bibliotecă.
 
-Profesorul bate o dată din palme. În editor construiește **iepure: atingere → Pop**. Selectează categoria verde Sunet și trage Pop după pornire. O atingere pe personajul de pe scenă produce un sunet. Miniatura din stânga selectează personajul pentru editare; nu este butonul de probă.
+**Înaintea fiecărei probe:** Stop dacă rulează, apoi **Reset Characters** (butonul albastru de sus, cu săgeata spre punctul de pornire). Abia apoi atinge mașina **pe scenă o singură dată**. Steagul nu pornește aceste programe. Selectarea mașinii în lista din stânga doar deschide codul. Așteaptă sfârșitul; nu apăsa repetat. Resetarea readuce și mingile livrate în magazie.
 
-Arătăm separat cum un Așteaptă între două Pop creează liniște. Pentru exemple folosim **3 = pauză scurtă**, **6 = pauză medie**, **12 = pauză lungă**. În ScratchJr sunt zecimi de secundă; copiilor le spunem scurt/mediu/lung, fără lecție despre fracții. Pop are propria durată, deci numărul pauzei nu este întregul interval dintre începuturile sunetelor.
+Plic închis = **Trimite**; plic deschis = **Primește**. Apasă săgeata de sub plic pentru culoare. În ScratchJr, Trimite așteaptă terminarea programelor pornite de acel mesaj înainte de următorul bloc din firul său. De aceea folosim mesaje, fără pauze ghicite.
 
-**Regula probei:** atingem o dată și ascultăm până la final. Nu apăsăm repetat în timpul ritmului. Steagul verde nu pornește exemplele. Niciun proiect nu folosește Repetă la nesfârșit. După final, o nouă atingere repetă același ritm fără resetare.
-
-## Cele 50 de minute
-
-| Minute | Activitate | Acțiunea profesorului |
+| Culoare | Ce pornește | Cine primește |
 | --- | --- | --- |
-| 0-4 | Exemplu oficial adaptat | Pop și dans scurt; anticipăm numărul sunetelor. |
-| 4-8 | Scena | Două personaje; verificăm volumul. |
-| 8-17 | Misiunea 1 | Construim codul de trei sunete. |
-| 17-24 | Misiunea 2 | Patru sunete cu două grupări. |
-| 24-27 | Pauză | Repetăm ritmul din palme. |
-| 27-37 | Puzzle dificil | Trei perechi, apoi răspunsul câinelui. |
-| 37-45 | Creația mea | Un cod sonor inventat de copil. |
-| 45-50 | Ascult și salvez | O probă pe rând, galerie și redeschidere. |
+| Portocaliu | Întreaga livrare a mingii de fotbal | Mingea de fotbal |
+| Albastru | Transportul încărcat al mingii de fotbal | Mașina ȘI mingea de fotbal |
+| Verde | Întreaga livrare a mingii de baschet | Mingea de baschet |
+| Mov | Transportul încărcat al mingii de baschet | Mașina ȘI mingea de baschet |
 
-**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
+Introducem primele două culori la M1-M2 și celelalte la M3. Blocurile mișcă spre direcțiile de pe ecran: Stânga rămâne stânga chiar dacă mașina și-a schimbat orientarea.
 
-## Exemplu oficial adaptat: Un sunet pentru fiecare pas de dans
+## 1. Încărcarea corectă - 8-18 minute
 
-**Reper:** [Dance Party](https://www.scratchjr.org/teach/activities/dance-party). Pornim de la ideea unui personaj care dansează cu sunet. Folosim numai Pop și o săritură, fără muzică descărcată sau înregistrări. Mai întâi ascultăm un Pop; apoi arătăm dansul scurt. La misiuni ne concentrăm pe ritm.
+**Ținta:** o atingere pe mașină ridică mingea din magazie și o așază vizibil pe plafon. Vehiculul încă nu pleacă.
 
-**Model pentru demonstrație:** Rabbit: atingere → Repeat 2 [Pop → sari 2 → așteaptă 6]. După două sunete și două salturi se oprește. Folosim Repeat finit, deja învățat, în locul repetării continue din activitatea originală.
-
-**Întreabă înainte de rulare:** „Câte sunete auzi? Ce se schimbă dacă pauza devine mai lungă? Săritura are și ea o durată, deci nu folosim acest model pentru a măsura numai pauza.”
-
-Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
-
-Rezervele de 6-8 și 8-10 minute sunt suplimentare. Le oferim celor care termină devreme; păstrăm provocarea dificilă pentru toți și timpul de salvare. Dacă scena durează, construim începutul M1 împreună.
-
-## Misiunea 1 Codul secret
-
-**Ținta:** la un tap pe iepure, două Pop apropiate, o pauză mai lungă, încă un Pop, apoi liniște. Exact trei sunete. Câinele nu are program.
-
-**Model pentru profesor:** atingere → Pop → așteaptă 3 → Pop → așteaptă 12 → Pop. Copiii primesc ținta sonoră și cartonașul, nu programul complet. Batem din palme codul și îl repetăm la nevoie.
-
-**Verificare:** numărăm trei sunete; al doilea și al treilea sunt separate de o pauză mai lungă decât primele două. Repetăm după final, fără resetare. Acceptăm alte valori dacă diferența dintre pauze este clară.
-
-**Indicii:** „Câte sunete ai auzit?”, „Unde este liniștea mai lungă?”, „Care bloc face liniște?”. Pop nu are un număr pentru durată; ajustăm Așteaptă.
-
-## Misiunea 2 Patru sunete, două ritmuri
-
-**Ținta:** iepurele produce patru Pop cu pauze egale. Câinele produce două perechi de Pop, cu pauza dintre perechi mai lungă. Fiecare are propriul program, pornit la atingere, și folosește Repeat.
-
-**Model:** iepure, atingere → repetă 4 [Pop, așteaptă 6]. Câine, atingere → repetă 2 [Pop, așteaptă 3, Pop, așteaptă 12]. Pauza de la sfârșitul grupului separă grupurile; ultima pauză nu adaugă sunete.
-
-**Verificare:** ascultăm iepurele până termină, apoi câinele. Fiecare are exact patru sunete. La câine auzim scurt-lung-scurt între cele patru Pop. Copilul arată grupul repetat; nu duplică manual tot programul.
-
-**Trecere:** înlocuim codul M1 al iepurelui cu ritmul regulat, apoi construim programul câinelui. Păstrăm scena. Nu lăsăm două programe la atingere pe același personaj.
-
-## Misiunea 3 Salutul secret
-
-**Provocarea dificilă, pentru toți:** un singur tap pe iepure pornește trei perechi de Pop. Între perechi sunt pauze lungi. După ultima pereche și încă o pauză lungă, câinele răspunde cu un singur Pop, pornit prin mesaj. În total auzim șapte sunete, apoi programul se oprește. A doua probă merge fără resetare.
-
-**Trecere de la M2:** ritmul de perechi trece la iepure și se repetă de trei ori. Câinele își înlocuiește programul vechi cu un singur răspuns pornit La mesaj. Iepurele are o singură pornire la atingere; câinele nu mai pornește prin atingere. Profesorul poate demonstra îndepărtarea programelor vechi prin tragere în paletă.
-
-**Soluția profesorului:**
-
-- Iepure: atingere → repetă 3 [Pop → așteaptă 3 → Pop → așteaptă 12] → trimite portocaliu.
-- Câine: la mesaj portocaliu → Pop.
-
-**Ce este dificil:** grupăm două sunete într-o singură rundă, repetăm runda de trei ori și plasăm mesajul după Repeat. Dacă mesajul este înăuntru, câinele răspunde la fiecare rundă, deci nu mai obținem șapte sunete. Aceasta este o predicție, nu cerem construirea unei greșeli.
-
-**Indicii progresive:** „Construiește întâi o pereche”, „Ce pauză separă două perechi?”, „De câte perechi ai nevoie?”, „Câinele răspunde după fiecare pereche sau după toate?”, „Unde trebuie să stea plicul?”. Numărăm 2, încă 2, încă 2, apoi 1; nu cerem tabla înmulțirii.
-
-**Verificare:** ascultăm perechile și răspunsul final; sunt exact șapte Pop. Arătăm că ultimul Pop aparține programului câinelui. Ambele personaje folosesc același sunet, deci timbrul nu dovedește cine cântă; verificăm și programele. Câinele nu trimite nimic înapoi. După final mai așteptăm puțin și confirmăm liniștea, apoi repetăm.
-
-Copilul care are nevoie de ajutor poate construi întâi o pereche și răspunsul câinelui, apoi extinde la trei perechi. Toți primesc provocarea, cu sprijin, fără clasament sau obligația de a o termina singuri.
-
-## Creația mea: Semnătura mea sonoră
-
-**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
-
-**Spune copiilor:** „Inventează un cod cu trei până la șase Pop și cel puțin două feluri de pauze. Bate-l întâi din palme, apoi programează-l. Tu alegi gruparea; poți folosi Repeat. Testăm pe rând, ca să putem asculta.”
-
-**Verificarea autorului:** Numără sunetele fără să numeri blocurile. Repetă codul după ce se încheie și explică unde este pauza lungă. Codul trebuie să se oprească singur.
-
-**Sprijin și extensie:** Păstrează trei Pop din M1 și mută pauza lungă. Pentru mai multă dificultate, câinele răspunde o singură dată după mesajul trimis la sfârșit.
-
-Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
-
-**Ce urmăresc la încheiere:** Copilul distinge numărul de sunete de felul în care sunt grupate.
-
-## Rezervă 1 Ecoul
-
-**6-8 minute în plus.** Iepurele cântă codul M1: două Pop apropiate, pauză lungă, unul. După o pauză lungă, câinele repetă exact codul. Un singur tap, șase sunete în total, fără suprapunere și fără ecou la nesfârșit.
-
-**Soluție:** iepure, atingere → Pop → așteaptă 3 → Pop → așteaptă 12 → Pop → așteaptă 12 → trimite portocaliu. Câine, la portocaliu → Pop → așteaptă 3 → Pop → așteaptă 12 → Pop. Înlocuim programele anterioare, păstrând scena.
-
-**Verificare:** două grupe identice de trei sunete, despărțite clar. **Indiciu:** „Ce trebuie să fie la fel în programul câinelui? Cine anunță că primul cod s-a terminat?”. Niciun mesaj nu se întoarce la iepure.
-
-## Rezervă 2 Șapte sunete, două blocuri
-
-**8-10 minute în plus.** Un singur program al iepurelui, pornit la atingere, produce exact șapte Pop și se oprește. Folosim **exact două blocuri Pop și un singur Repeat**. Așteptările sunt permise; nu folosim mesaje, alt personaj activ sau bucle imbricate.
-
-**Soluție posibilă:** atingere → repetă 6 [Pop → așteaptă 3] → Pop. Un bloc verde este în buclă, celălalt după ea. Șase execuții ale primului plus una a celui de-al doilea fac șapte sunete. Este acceptat și Pop înaintea unei bucle de șase, cu pauză potrivită între ele.
-
-**Verificare:** numărăm șapte sunete, apoi separat cele două blocuri verzi din program. Așteptăm finalul și repetăm. Câinele rămâne fără program, ca să nu contribuie alte sunete.
-
-**Indicii:** „Un bloc se poate auzi de mai multe ori?”, „Ce se aude o singură dată?”, „Dacă ambele Pop sunt înăuntru, poți obține șapte?”. Copiii pot număra cu degetele sau cu șapte jetoane desenate. Nu trebuie să formuleze o regulă despre numere pare.
-
-## Dificultăți și sprijin
-
-| Ce observăm | Cum ajutăm |
+| Personaj | Program complet |
 | --- | --- |
-| Nu se aude nimic | Verificăm volumul media, Pop din paleta verde și conectarea după pornire. În browser verificăm că fila nu este mută și atingem direct scena. |
-| Nu distingem ritmul | Ascultăm o tabletă pe rând; mărim diferența dintre pauza scurtă și cea lungă. |
-| Se aud mai multe sunete | Atingem numai o dată; căutăm programe vechi la atingere sau mesaj pe ambele personaje. |
-| Perechile se lipesc | Pauza lungă trebuie să fie la sfârșitul grupului repetat. |
-| Câinele răspunde de trei ori | Copilul verifică dacă mesajul este în Repeat sau după el. |
-| Răspunsul lipsește | Comparăm cele două plicuri portocalii; la câine folosim pornire La mesaj. |
-| Copilul numără doar blocurile | Arătăm că același Pop se execută din nou la fiecare rundă. |
+| Robot curier | Atingere → Trimite portocaliu |
+| Minge fotbal | Primește portocaliu → Sus 3 → Dreapta 2 |
 
-## Încheiere și verificare
+**Partea dificilă, pentru toți:** mingea trebuie să se oprească exact pe platformă, fără Ascunde sau Salt la început. „De unde pleacă și cât îi lipsește până la plafon?” Distanțele vin din scenă; dacă schimbi locul magaziei trebuie să schimbi și codul. Probă: mingea stă pe plafon, mașina rămâne pe loc.
 
-Un copil explică ce se repetă și ce se întâmplă numai la final. Revenim în galerie, redeschidem și ascultăm din nou. Păstrăm aceeași tabletă pentru copil. Fișa de observații urmărește numărarea, pauzele și poziția mesajului.
+## 2. Livrare și întoarcere - 18-32 minute
 
-Testele efectuate și limitele lor sunt în verificare/README.md. Înainte de clasă, profesorul construiește M1 și M3 pe un Lenovo, verifică sunetul, două rulări, salvarea și redeschiderea fără internet. Browserul nu certifică difuzorul, atingerea sau performanța tabletei.
+**Ținta:** mașina așteaptă încărcarea, merge cu mingea 8 pași, așteaptă descărcarea și revine goală 8 pași. Mingea rămâne la antrenament. Finalul este „Livrat!”.
 
-**Referințe:** [blocurile oficiale ScratchJr](https://www.scratchjr.org/explore/blocks) și [cartonașele oficiale](https://www.scratchjr.org/pdfs/blocks.pdf) pentru Pop, Wait, Repeat și mesaje.
+Extinde firul portocaliu al mingii; adaugă câte un fir albastru la mașină și la minge. Sunt **două programe separate la fiecare personaj**, nu un singur șir cu doi declanșatori.
 
-**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.
+| Personaj | Program complet |
+| --- | --- |
+| Robot curier | Atingere → Trimite portocaliu → Stânga 8 → Spune Livrat! |
+| Robot curier | Primește albastru → Dreapta 8 |
+| Minge fotbal | Primește portocaliu → Sus 3 → Dreapta 2 → Trimite albastru → Dreapta 3 → Jos 3 |
+| Minge fotbal | Primește albastru → Dreapta 8 |
+
+**Partea dificilă, pentru toți:** la albastru, mașina și mingea execută simultan Dreapta 8. Firul portocaliu al mingii așteaptă aceste mișcări, apoi o descarcă: Dreapta 3 și Jos 3. Abia când s-a terminat tot firul portocaliu, mașina execută Stânga 8. Nu adăugăm Așteaptă și nu întoarcem mingea cu mașina.
+
+**Indiciu:** „Ce trebuie să termine mingea înainte să se întoarcă robotul?” **Probă:** urmărește separat încărcarea, drumul împreună, descărcarea și returul gol. Pornește numai după resetare.
+
+## Pauză activă - 32-35 minute
+
+Un copil mimează vehiculul, altul magazia. „Încărcat!” permite plecarea; „Descărcat!” permite întoarcerea. Clasa spune când ar fi prea devreme să plece. Nu avem nevoie de alte materiale.
+
+## 3. Două livrări autonome - 35-48 minute · puzzle greu de bază
+
+**Ținta:** o singură atingere livrează întâi mingea de fotbal, apoi pe cea de baschet. Robotul se întoarce în magazie după fiecare cursă. Ambele mingi rămân la destinație. „Livrate!” apare numai după al doilea retur.
+
+Adaugă Basketball, la 4 pătrățele la stânga și 3 mai jos de locul de încărcare. Păstrează cele două fire ale mingii de fotbal. Adaugă cele două fire ale mingii de baschet și al treilea fir al mașinii. Extinde firul cu Atingere al mașinii.
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot curier | Atingere → Trimite portocaliu → Stânga 8 → Trimite verde → Stânga 8 → Spune Livrate! |
+| Robot curier | Primește albastru → Dreapta 8 |
+| Robot curier | Primește mov → Dreapta 8 |
+| Minge fotbal | Primește portocaliu → Sus 3 → Dreapta 2 → Trimite albastru → Dreapta 3 → Jos 3 |
+| Minge fotbal | Primește albastru → Dreapta 8 |
+| Minge baschet | Primește verde → Sus 3 → Dreapta 4 → Trimite mov → Dreapta 5 → Jos 3 |
+| Minge baschet | Primește mov → Dreapta 8 |
+
+**Partea dificilă, pentru toți:** verdele stă DUPĂ primul Stânga 8. A doua minge nu pleacă în timp ce mașina este la destinație. Mingile pornesc din locuri diferite și se descarcă în locuri diferite: fotbalul face 2 pași la încărcare și 3 la descărcare; baschetul 4 și 5. Nu schimbăm transportul comun de 8 pași.
+
+**Indicii progresive:** 1. Urmărește firul mașinii cu degetul. 2. Între cele două plicuri lipsește drumul până în magazie? 3. Verifică albastru la ambii participanți ai primei curse și mov la ambii participanți ai celei de-a doua.
+
+**Probă:** o atingere, două încărcări, două transporturi, două descărcări, două retururi. Nicio atingere suplimentară. Resetăm și repetăm; salvăm, redeschidem și repetăm din nou cu resetare.
+
+## Creația mea - 48-58 minute
+
+Copiii aleg o modificare de program: alt loc al magaziei, alte puncte de livrare sau un ocol. Păstrăm încărcarea vizibilă, două curse și întoarcerea goală. Toți au acest timp; nu este o recompensă pentru terminarea rapidă. Pot porni de la cea mai avansată variantă care le funcționează.
+
+**Exemplu complet: Ocolim în ambele sensuri.** Adaugă Fence între magazie și destinație. În model, gardul are puțin peste 2 pătrățele lățime și este pe linia mașinii, la mijlocul drumului. Transportul devine Sus 3 → Dreapta 8 → Jos 3 la **toate cele patru fire** de transport: albastru și mov la mașină, albastru la fotbal, mov la baschet. Fiecare retur gol devine Sus 3 → Stânga 8 → Jos 3. Gardul nu are cod.
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot curier | Atingere → Trimite portocaliu → Sus 3 → Stânga 8 → Jos 3 → Trimite verde → Sus 3 → Stânga 8 → Jos 3 → Spune Livrate! |
+| Robot curier | Primește albastru → Sus 3 → Dreapta 8 → Jos 3 |
+| Robot curier | Primește mov → Sus 3 → Dreapta 8 → Jos 3 |
+| Minge fotbal | Primește portocaliu → Sus 3 → Dreapta 2 → Trimite albastru → Dreapta 3 → Jos 3 |
+| Minge fotbal | Primește albastru → Sus 3 → Dreapta 8 → Jos 3 |
+| Minge baschet | Primește verde → Sus 3 → Dreapta 4 → Trimite mov → Dreapta 5 → Jos 3 |
+| Minge baschet | Primește mov → Sus 3 → Dreapta 8 → Jos 3 |
+| Zonă închisă | Fără program; obstacol vizibil |
+
+**Partea dificilă este inclusă în exemplu:** ocolește și la întoarcere! Nu lăsa Stânga 8 singur în firul mașinii. Gardul nu oprește automat personajele; ocolirea rezultă din program. La altă înălțime a ocolului, toate cele patru fire încărcate trebuie să rămână identice, cu Sus și Jos egale. Verifică și spațiul ocupat de întreaga mașină, nu numai centrul ei.
+
+## Probă și salvare - 58-60 minute
+
+Reset Characters, apoi o singură atingere. Copilul arată blocul care pornește a doua comandă și explică de ce robotul așteaptă mingea. Revenim în galerie pentru salvare. Nume sugerat: „Curierul - prenume”.
+
+## Rezervă 1. Încărcare lentă - încă 5 minute
+
+Pornim de la M3, pe traseul drept. Mingea de fotbal se încarcă lent; robotul așteaptă fără să adăugăm pauze. Înainte să trimită albastru, mingea revine la **viteza normală**, pentru a merge împreună cu mașina. Baschetul nu se schimbă. Alegem vitezele din blocul portocaliu Viteză: lentă, apoi normală.
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot curier | Atingere → Trimite portocaliu → Stânga 8 → Trimite verde → Stânga 8 → Spune Livrate! |
+| Robot curier | Primește albastru → Dreapta 8 |
+| Robot curier | Primește mov → Dreapta 8 |
+| Minge fotbal | Primește portocaliu → Viteză lentă → Sus 3 → Dreapta 2 → Viteză normală → Trimite albastru → Dreapta 3 → Jos 3 |
+| Minge fotbal | Primește albastru → Dreapta 8 |
+| Minge baschet | Primește verde → Sus 3 → Dreapta 4 → Trimite mov → Dreapta 5 → Jos 3 |
+| Minge baschet | Primește mov → Dreapta 8 |
+
+**Probă:** încărcarea durează mai mult; vehiculul rămâne pe loc. Mingea nu rămâne în urmă la transport. Finalul și cele două retururi sunt aceleași.
+
+## Rezervă 2. Comanda urgentă - încă 10 minute
+
+Pornim de la M3, pe traseul drept. Echipa de baschet are nevoie prima de minge. Inversăm numai cele două comenzi din firul Atingere: verde, retur, portocaliu, retur. Programele mingilor și firele de transport rămân complete mai jos, ca referință.
+
+| Personaj | Program complet |
+| --- | --- |
+| Robot curier | Atingere → Trimite verde → Stânga 8 → Trimite portocaliu → Stânga 8 → Spune Livrate! |
+| Robot curier | Primește albastru → Dreapta 8 |
+| Robot curier | Primește mov → Dreapta 8 |
+| Minge fotbal | Primește portocaliu → Sus 3 → Dreapta 2 → Trimite albastru → Dreapta 3 → Jos 3 |
+| Minge fotbal | Primește albastru → Dreapta 8 |
+| Minge baschet | Primește verde → Sus 3 → Dreapta 4 → Trimite mov → Dreapta 5 → Jos 3 |
+| Minge baschet | Primește mov → Dreapta 8 |
+
+**Probă:** baschetul este livrat primul. Fotbalul așteaptă returul mașinii. Fiecare minge ajunge la locul ei; „Livrate!” apare la sfârșit.
+
+## Când un copil se blochează
+
+- Mingea nu ajunge pe plafon: resetăm și verificăm poziția inițială, mărimea și cei 3 pași în sus. Nu o mutăm cu degetul în timpul probei.
+- Mingea merge, mașina rămâne: verificăm culoarea și existența firului Primește la mașină.
+- Se mișcă separat: transportul trebuie să aibă aceleași blocuri, valori și viteze la ambele personaje.
+- A doua cursă pornește din loc greșit: verdele trebuie să urmeze primul retur, nu să fie într-un fir Atingere separat.
+- La a doua probă mingile sunt la destinație: Stop, Reset Characters, apoi atinge mașina. Programele sunt construite pentru pozițiile de pornire.
+
+PDF-ul are **12 pagini**: plan p. 1; pregătire p. 2; M1 p. 3; M2 p. 4; M3 p. 5-6; creație p. 7-8; R1 p. 9-10; R2 p. 11-12. În PDF-ul cursului, adaugă 49 la aceste pagini. Fiecare variantă are toate programele, inclusiv cele neschimbate și dificile.
+
+[Testarea efectuată în browser](verificare/Curierul_60min.md). Proiectele sunt referințe opționale pentru profesor; copiii construiesc direct în aplicația deja instalată.
