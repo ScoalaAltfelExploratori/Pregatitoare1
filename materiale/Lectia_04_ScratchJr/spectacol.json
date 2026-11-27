@@ -1,0 +1,858 @@
+{
+  "lesson": 4,
+  "title": "Repetiția pentru spectacol",
+  "duration": 60,
+  "projects": [
+    {
+      "key": "m1",
+      "file": "m1.sjr",
+      "name": "L04 Repetiția - 1. Ritmul primului artist · 60 min",
+      "sha256": "5d9a9404d4cbd7820fc51935da9a849a1d3e5fc389581db104dd6ad70dcca88f",
+      "pages": [
+        {
+          "background": "Theatre.svg",
+          "focus": "a",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "TeenGirl1.svg",
+              "name": "Mira - A",
+              "size": [
+                168,
+                363
+              ],
+              "position": [
+                144,
+                216
+              ],
+              "scale": 0.32,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 3,
+                      "body": [
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "hop",
+                          "value": 1
+                        },
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "hop",
+                          "value": 1
+                        },
+                        {
+                          "block": "wait",
+                          "value": 10
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Repetiția pentru spectacol",
+              "position": [
+                240,
+                24
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m2",
+      "file": "m2.sjr",
+      "name": "L04 Repetiția - 2. Răspunsul colegului · 60 min",
+      "sha256": "3eb02f78fcaa18d8976655a303116b0c0b1f769c0d4320ec78e2264ab1ffd07b",
+      "pages": [
+        {
+          "background": "Theatre.svg",
+          "focus": "a",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "TeenGirl1.svg",
+              "name": "Mira - A",
+              "size": [
+                168,
+                363
+              ],
+              "position": [
+                144,
+                216
+              ],
+              "scale": 0.32,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onflag",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "hop",
+                          "value": 1
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "asset": "TeenBoy1.svg",
+              "name": "Radu - B",
+              "size": [
+                144,
+                407
+              ],
+              "position": [
+                336,
+                216
+              ],
+              "scale": 0.29,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 3,
+                      "body": [
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "hop",
+                          "value": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Repetiția pentru spectacol",
+              "position": [
+                240,
+                24
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "m3",
+      "file": "m3.sjr",
+      "name": "L04 Repetiția - 3. Două runde, un singur start · 60 min",
+      "sha256": "eda1c2b87d00e5659da03c36c0d171e5aceeb23fa413b0e1236246cd6ae082b4",
+      "pages": [
+        {
+          "background": "Theatre.svg",
+          "focus": "dir",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "TeenGirl1.svg",
+              "name": "Mira - A",
+              "size": [
+                168,
+                363
+              ],
+              "position": [
+                144,
+                216
+              ],
+              "scale": 0.32,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "hop",
+                          "value": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "asset": "TeenBoy1.svg",
+              "name": "Radu - B",
+              "size": [
+                144,
+                407
+              ],
+              "position": [
+                336,
+                216
+              ],
+              "scale": 0.29,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 3,
+                      "body": [
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "hop",
+                          "value": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dir",
+              "asset": "Mother.svg",
+              "name": "Dirijoare",
+              "size": [
+                224,
+                418
+              ],
+              "position": [
+                240,
+                276
+              ],
+              "scale": 0.24,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Orange"
+                        },
+                        {
+                          "block": "message",
+                          "value": "Blue"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "say",
+                      "value": "Gata!"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Repetiția pentru spectacol",
+              "position": [
+                240,
+                24
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "creatie",
+      "file": "creatie.sjr",
+      "name": "L04 Repetiția - 4. Spectacolul meu · 60 min",
+      "sha256": "3b01467d88b337ae67e9df894c25d08666b46e99fc99ff2da137417d891bfa11",
+      "pages": [
+        {
+          "background": "Theatre.svg",
+          "focus": "dir",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "TeenGirl1.svg",
+              "name": "Mira - A",
+              "size": [
+                168,
+                363
+              ],
+              "position": [
+                144,
+                216
+              ],
+              "scale": 0.32,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 3,
+                      "body": [
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "hop",
+                          "value": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "asset": "TeenBoy1.svg",
+              "name": "Radu - B",
+              "size": [
+                144,
+                407
+              ],
+              "position": [
+                336,
+                216
+              ],
+              "scale": 0.29,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "hop",
+                          "value": 1
+                        },
+                        {
+                          "block": "wait",
+                          "value": 5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dir",
+              "asset": "Mother.svg",
+              "name": "Dirijoare",
+              "size": [
+                224,
+                418
+              ],
+              "position": [
+                240,
+                276
+              ],
+              "scale": 0.24,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Orange"
+                        },
+                        {
+                          "block": "message",
+                          "value": "Blue"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "say",
+                      "value": "Gata!"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Repetiția pentru spectacol",
+              "position": [
+                240,
+                24
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "r1",
+      "file": "r1.sjr",
+      "name": "L04 Repetiția - R1. Ecoul fidel · 60 min",
+      "sha256": "0e42cb6628744faf420c8ba6913b4cec17166dcf1d004f3b2885da58136a091d",
+      "pages": [
+        {
+          "background": "Theatre.svg",
+          "focus": "dir",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "TeenGirl1.svg",
+              "name": "Mira - A",
+              "size": [
+                168,
+                363
+              ],
+              "position": [
+                144,
+                216
+              ],
+              "scale": 0.32,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hop",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hop",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "asset": "TeenBoy1.svg",
+              "name": "Radu - B",
+              "size": [
+                144,
+                407
+              ],
+              "position": [
+                336,
+                216
+              ],
+              "scale": 0.29,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hop",
+                      "value": 1
+                    },
+                    {
+                      "block": "wait",
+                      "value": 10
+                    },
+                    {
+                      "block": "playsnd",
+                      "value": "pop.mp3"
+                    },
+                    {
+                      "block": "hop",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dir",
+              "asset": "Mother.svg",
+              "name": "Dirijoare",
+              "size": [
+                224,
+                418
+              ],
+              "position": [
+                240,
+                276
+              ],
+              "scale": 0.24,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Orange"
+                        },
+                        {
+                          "block": "message",
+                          "value": "Blue"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "say",
+                      "value": "Gata!"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Repetiția pentru spectacol",
+              "position": [
+                240,
+                24
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "r2",
+      "file": "r2.sjr",
+      "name": "L04 Repetiția - R2. Bis în ordine inversă · 60 min",
+      "sha256": "a54d6c969bf16531799c091a1f804a7b8bcd2493fd0c29f4e3dbb59f07ec1ae3",
+      "pages": [
+        {
+          "background": "Theatre.svg",
+          "focus": "dir",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "TeenGirl1.svg",
+              "name": "Mira - A",
+              "size": [
+                168,
+                363
+              ],
+              "position": [
+                144,
+                216
+              ],
+              "scale": 0.32,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Orange"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "hop",
+                          "value": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "asset": "TeenBoy1.svg",
+              "name": "Radu - B",
+              "size": [
+                144,
+                407
+              ],
+              "position": [
+                336,
+                216
+              ],
+              "scale": 0.29,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onmessage",
+                    "value": "Blue"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 3,
+                      "body": [
+                        {
+                          "block": "playsnd",
+                          "value": "pop.mp3"
+                        },
+                        {
+                          "block": "hop",
+                          "value": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dir",
+              "asset": "Mother.svg",
+              "name": "Dirijoare",
+              "size": [
+                224,
+                418
+              ],
+              "position": [
+                240,
+                276
+              ],
+              "scale": 0.24,
+              "shown": true,
+              "scripts": [
+                {
+                  "trigger": {
+                    "block": "onclick",
+                    "value": "null"
+                  },
+                  "actions": [
+                    {
+                      "repeat": 2,
+                      "body": [
+                        {
+                          "block": "message",
+                          "value": "Orange"
+                        },
+                        {
+                          "block": "message",
+                          "value": "Blue"
+                        }
+                      ]
+                    },
+                    {
+                      "block": "message",
+                      "value": "Blue"
+                    },
+                    {
+                      "block": "message",
+                      "value": "Orange"
+                    },
+                    {
+                      "block": "say",
+                      "value": "Gata!"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "texts": [
+            {
+              "text": "Repetiția pentru spectacol",
+              "position": [
+                240,
+                24
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "start",
+      "file": "start.sjr",
+      "name": "L04 Repetiția - de la zero · 60 min",
+      "sha256": "43ab613d29cb8f6a0784f0be025790e11011c98ff56f6280d7f06288948e33f6",
+      "pages": [
+        {
+          "background": "Theatre.svg",
+          "focus": "dir",
+          "sprites": [
+            {
+              "id": "a",
+              "asset": "TeenGirl1.svg",
+              "name": "Mira - A",
+              "size": [
+                168,
+                363
+              ],
+              "position": [
+                144,
+                216
+              ],
+              "scale": 0.32,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "b",
+              "asset": "TeenBoy1.svg",
+              "name": "Radu - B",
+              "size": [
+                144,
+                407
+              ],
+              "position": [
+                336,
+                216
+              ],
+              "scale": 0.29,
+              "shown": true,
+              "scripts": []
+            },
+            {
+              "id": "dir",
+              "asset": "Mother.svg",
+              "name": "Dirijoare",
+              "size": [
+                224,
+                418
+              ],
+              "position": [
+                240,
+                276
+              ],
+              "scale": 0.24,
+              "shown": true,
+              "scripts": []
+            }
+          ],
+          "texts": [
+            {
+              "text": "Repetiția pentru spectacol",
+              "position": [
+                240,
+                24
+              ],
+              "size": 20,
+              "color": "#1b2a34"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

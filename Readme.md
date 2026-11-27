@@ -120,7 +120,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 1
 
-[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește numai resurse incluse în aplicație, fără fișiere de distribuit pe tabletele copiilor. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–3 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
+[Planul celor zece lecții](materiale/Plan_10_lectii_ScratchJr.md) folosește numai resurse incluse în aplicație, fără fișiere de distribuit pe tabletele copiilor. Lecția 1 este „Cursa cu ștafetă”: iepure, câine, minge și predare vizibilă. Lecțiile 1–4 au fost refăcute pentru 60 de minute, cu programe ilustrate în PDF.
 
 [README-ul lecției 1](materiale/Lectia_01_ScratchJr/README.md) conține instalarea pe Lenovo, construirea scenei și testarea opțională în browser. [Raportul de verificare](materiale/Lectia_01_ScratchJr/verificare/README.md) separă cele șapte proiecte finale testate în browser de probele Android și Desktop anterioare.
 
@@ -134,7 +134,7 @@ npm test
 
 ## Cursul ScratchJr: lecția 4
 
-[Telecomanda fermecată](materiale/Lectia_04_ScratchJr/README.md) introduce mesajele colorate: un personaj comandă altul, două butoane aleg trucuri diferite, iar provocarea dificilă leagă trei artiști într-un singur spectacol. Două rezerve explorează un mesaj pentru doi destinatari și chemarea unui personaj ascuns. Pachetul are ghid de 50 de minute, cinci cartonașe, șapte proiecte și [raportul testelor în browser](materiale/Lectia_04_ScratchJr/verificare/README.md). Folosim numai resursele incluse în aplicație; nu distribuim fișiere pe tabletele copiilor.
+[Repetiția pentru spectacol](materiale/Lectia_04_ScratchJr/README.md) are 60 de minute: ritmuri cu Repetă finit, duet, puzzle cu două runde dirijate, 10 minute de creație și două rezerve. [PDF-ul cu capturi](materiale/Lectia_04_ScratchJr/Ghid_profesor_Lectia_04.pdf) arată programele tuturor personajelor; cele șapte proiecte folosesc numai Theatre, Teen, Mother și Pop. [Raportul testării în browser](materiale/Lectia_04_ScratchJr/verificare/Spectacolul_60min.md).
 
 ## Cursul ScratchJr: lecția 5
 

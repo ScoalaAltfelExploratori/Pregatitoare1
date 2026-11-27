@@ -7,7 +7,7 @@ Revizuire: 12 noiembrie 2026. Cursul de zece întâlniri folosește demonstrați
 | 1 | [Spooky Forest](https://www.scratchjr.org/teach/activities/spooky-forest) | Programe separate pentru personaje; în curs folosim întâlnirea din parc. |
 | 2 | [Dribble a Basketball](https://www.scratchjr.org/teach/activities/dribble-a-basketball) | Săritura repetată; iepurele sare, mingea rămâne reper fix. |
 | 3 | [Sunset](https://www.scratchjr.org/teach/activities/sunset) | Dispariția vizuală; o legăm de trucul iepurelui, fără deplasare. |
-| 4 | [Meet and Greet](https://www.scratchjr.org/teach/activities/meet-and-greet) | Mesajul pornește programul altui personaj; folosim efecte vizuale în locul dialogului scris. |
+| 4 | [Ghidul blocurilor](https://www.scratchjr.org/explore/blocks) | Reper tehnic pentru Pop, Așteaptă și Repetă finit. Povestea Repetiția pentru spectacol și puzzle-urile sunt locale. |
 | 5 | [Dance Party](https://www.scratchjr.org/teach/activities/dance-party) | Asocierea sunetului cu acțiunea; Pop și Repeat finit, fără înregistrări. |
 | 6 | [Playground Games, lecția 5 - Tag](https://sites.bc.edu/devtech/wp-content/uploads/sites/181/2022/10/Playground-Games.pdf) | Contactul provoacă o reacție; păstrăm parcul și personajele cursului. |
 | 7 | [Moonrise after Sunset](https://www.scratchjr.org/teach/activities/moonrise-after-sunset) | Continuarea poveștii pe altă pagină; folosim parcul și plaja, fără editarea fundalurilor. |

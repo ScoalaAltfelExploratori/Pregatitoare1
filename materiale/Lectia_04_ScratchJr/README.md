@@ -1,61 +1,31 @@
-# Lecția 4 - Telecomanda fermecată
+# Lecția 4 - Repetiția pentru spectacol
 
-**50 de minute, 6-7 ani. Trei misiuni principale, inclusiv una dificilă, plus două rezerve.** Copiii folosesc mesaje colorate pentru a comanda alte personaje și pentru a lega trucuri într-un spectacol.
+**60 de minute, doar biblioteca ScratchJr.** Doi artiști repetă un număr pentru spectacol. Construim ritmuri finite, schimbul de replici și două runde dirijate, cu un final clar.
 
-## Exemplu, puzzle și creație proprie
+- [Plan concis și programe cu capturi - PDF](Ghid_profesor_Lectia_04.pdf)
+- [Ghid pentru profesor](ghid-profesor.html) · [Text editabil](Ghid_profesor.md)
+- [Pagina lecției](index.html) · [Cele șapte proiecte opționale](solutii_spectacol/README.md)
+- [Raportul testării în browser](verificare/Spectacolul_60min.md)
+- [PDF-ul cursului - lecțiile 1-4](../Plan_lectii_ScratchJr_60min.pdf)
 
-Deschidem cu **Un semnal îi dă rândul celuilalt**, pornind de la [Meet and Greet](https://www.scratchjr.org/teach/activities/meet-and-greet). Păstrăm misiunile, puzzle-ul dificil și rezervele existente.
+## Pe tabletele copiilor
 
-**Minutele 37-45: Telecomanda inventată de mine** - 8 minute rezervate tuturor, cu alegeri de programare și o probă proprie. Copilul poate porni de la orice misiune care îi funcționează. Numai resurse incluse în aplicație, fără importuri pe tabletele copiilor.
+ScratchJr instalat este suficient. Proiect nou: Theatre, două personaje Teen și Mother; sunetul Pop. Nu se copiază fișiere, nu se înregistrează sunete și nu sunt necesare descărcări. Adăugăm personajele treptat: Mira la M1, Radu la M2, dirijoarea la M3.
 
-[Ghidul profesorului pe site](ghid-profesor.html) · [Ghid PDF](Ghid_profesor_Lectia_04.pdf) · [Surse și adaptări](../Surse_oficiale_ScratchJr.md)
+M1-M2: Steag. M3, creația și rezervele: o atingere pe dirijoarea de pe scenă. Așteptăm finalul; după o oprire în mijlocul programului folosim resetarea.
 
-## Pregătirea simplă a clasei
+## Ora și rezervele
 
-ScratchJr este deja instalat. Creăm un proiect nou cu **Rabbit, Dog și Park** din biblioteca aplicației; la misiunea 2 adăugăm **Butterfly**. Eliminăm pisica inițială dacă folosim exact modelul. Lăsăm loc între personaje, la dimensiunile inițiale; nu cerem grilă sau poziții exacte.
+0-8 pregătire; 8-20 motivul repetat; 20-32 duetul; 32-35 pauză; 35-47 puzzle greu; 47-57 creație; 57-60 verificare și salvare.
 
-Nu copiem fișiere pe tablete, nu importăm proiecte și nu descărcăm resurse. Mesajele sunt semnale în interiorul proiectului; nu folosesc internetul, conturi sau text de scris. Personajele rămân pe loc.
+Puzzle greu: A2, B3, A2, B3, apoi final. R1: ecou cu aceeași pauză (+5 min). R2: bis B-A după cele două runde (+10 min). Rezervele sunt în plus față de oră.
 
-## Materialele profesorului
+## Pentru profesor, pe laptop
 
-- [Ghidul pas cu pas](Ghid_profesor.md) și [PDF-ul](Ghid_profesor_Lectia_04.pdf): ritm, demonstrație, indicii și soluții.
-- [Cinci cartonașe PDF](Cartonase_Lectia_04.pdf): cerințe vizuale, fără programele complete.
-- [Soluțiile explicate și cele cinci proiecte SJR](solutii/lectia_04/README.md).
-- [Demo](proiecte/00_Demo_Mesaj.sjr), [scenă fără programe](proiecte/01_Start_Telecomanda.sjr), [index pentru browser](index.html).
-- [Raportul verificării](verificare/README.md) și [fișa de observații](Observatii_dupa_lectie.md).
+În [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/app/home.html), folosește **Open** din galerie și alege un SJR din lista de proiecte. Pentru demonstrație pornește cu `start.sjr`, scena fără cod, sau reconstruiește direct un proiect nou. PDF-ul arată programele tuturor personajelor; nu trebuie instalat nimic suplimentar pe tablete.
 
-| Activitate | Ținta |
-| --- | --- |
-| M1 Magia la distanță | Atingerea iepurelui comandă câinelui creșterea și revenirea la normal |
-| M2 Două butoane | Iepurele comandă creșterea câinelui; fluturele comandă dispariția și revenirea lui |
-| M3 Spectacolul în lanț - dificilă | Un singur tap: iepure, apoi câine, apoi fluture; două rulări fără resetare |
-| R1 Un semnal, două surprize | O singură culoare și un singur mesaj pornesc două trucuri |
-| R2 De-a v-ați ascunselea | Iepurele ascunde câinele; fluturele îl arată, chiar dacă este ascuns |
+Capturile provin din aplicația din browser. Probele automate verifică mișcările și blocurile evidențiate la execuție; nu reprezintă o ascultare a difuzoarelor sau o probă pe Lenovo fizic. Înainte de oră, rulează M1 pe o tabletă și confirmă volumul Pop.
 
-Rezervele de 6-8 și 8-10 minute sunt **în plus față de cele 50 de minute**. Păstrăm provocarea dificilă pentru toți, pauza și ultimele cinci minute de salvare. Copiii construiesc; nu copiază programe greșite pentru a le repara.
+## Arhivă
 
-## Detalii importante
-
-Trimite mesaj și Pornire la mesaj sunt două blocuri galbene diferite. La expeditor punem atingere → trimite; la destinatar, la mesaj → acțiuni. Selectăm culoarea de sub plic. Exemplul folosește portocaliu și albastru; orice două culori distincte sunt acceptate dacă se potrivesc la capete.
-
-Culoarea identifică programele care răspund, nu un anumit personaj. Mai multe personaje pot asculta aceeași culoare. Un personaj ascuns poate primi mesaj. La M2 câinele are două secvențe separate; la M3 fiecare personaj are un singur program, iar fluturele nu mai pornește prin atingere.
-
-Trecem de la o misiune la alta păstrând scena și înlocuind programele care își schimbă rolul. Ghidul explică exact ce păstrăm. O atingere pe scenă, apoi așteptăm finalul; miniatura din stânga selectează pentru editare. Steagul verde nu pornește exemplele. La demo efectul se acumulează, deci resetăm între probe; soluțiile complete se pot repeta fără resetare.
-
-## Testare pe PC în browser
-
-Deschide [ScratchJr Desktop Reborn](https://richiesamlie.github.io/ScratchJr-Desktop-Reborn/play/), portul comunitar pentru browser. Din galerie, apasă Open, selectează un SJR și deschide proiectul. Atinge iepurele pe scenă; la M2 și R2 încearcă și fluturele, pe rând. La M3 atingi numai iepurele și urmărești toți cei trei artiști.
-
-La final revino la galerie pentru salvare, redeschide și repetă. Browserul nu se sincronizează cu tabletele. Aceste fișiere sunt numai pentru pregătirea profesorului; copiii construiesc în aplicație.
-
-**Verificat în browser la 10 noiembrie 2026:** toate cele șapte proiecte, cele cinci soluții, repetarea, ordinea lanțului dificil și salvarea/redeschiderea au trecut probele. Am construit și testat manual legătura cu mesaj albastru, inclusiv selectarea culorii la ambele capete. Vezi [raportul](verificare/README.md) pentru dovezi și limite. Lecția 4 nu a fost rulată în aplicația oficială Android; testarea în browser nu înlocuiește proba tactilă și offline pe Lenovo.
-
-## Proba pe Lenovo înainte de clasă
-
-Construiește M1 din soluții și atinge iepurele. Apoi construiește M3 și rulează de două ori fără resetare. La R2 verifică revenirea câinelui ascuns prin atingerea fluturelui. Revino în galerie și redeschide proiectul fără internet. Nu este necesar să imporți fișiere pe tabletă.
-
-## Surse editabile
-
-`lesson.json` definește misiunile, personajele, programele și scenariile de verificare. `Ghid_profesor.md` este sursa ghidului. `python build_pack.py` generează cele două PDF-uri și șapte SJR-uri; `--projects-only` generează numai proiectele. Necesită Python, reportlab, Pillow, pypdf și Arial din Windows. După schimbarea programelor repetă testele în editor.
-
-[Planul celor zece lecții](../Plan_10_lectii_ScratchJr.md). Mesajele sunt introduse aici; lecția 7 va extinde folosirea lor.
+Vechea lecție de 50 de minute: [Telecomanda fermecată](README_50min.md), [ghid](ghid-profesor-50min.html), [PDF](Ghid_profesor_Lectia_04_50min.pdf), [pachet ZIP](../Lectia_04_ScratchJr.zip). Aceste materiale rămân separat de noua repetiție.

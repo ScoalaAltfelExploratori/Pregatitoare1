@@ -26,7 +26,7 @@ Rezerve peste durata orei: **Exponatul somnoros** (+5 min) și **Inspecție pe r
 
 13 pagini: plan p. 1; pregătire p. 2; M1 p. 3; M2 p. 4-5; M3 p. 6-7; creație p. 8-9; R1 p. 10-11; R2 p. 12-13. Include capturi reale ale programelor fiecărui personaj, la fiecare etapă.
 
-[PDF-ul cursului](../Plan_lectii_ScratchJr_60min.pdf) păstrează Lecția 1 la p. 1-13 și Lecția 2 la p. 14-26; Lecția 3 este la p. 27-41. Lecțiile 4-10 nu au fost încă refăcute în formatul de 60 de minute.
+[PDF-ul cursului](../Plan_lectii_ScratchJr_60min.pdf) păstrează Lecția 1 la p. 1-13 și Lecția 2 la p. 14-26; Lecția 3 este la p. 27-41, iar Lecția 4 la p. 42-49. Lecțiile 5-10 nu au fost încă refăcute în formatul de 60 de minute.
 
 ## Proiectele profesorului
 

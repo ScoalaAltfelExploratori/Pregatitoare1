@@ -7,7 +7,7 @@
 - [Pagina lecției](index.html)
 - [Cele șase exemple și proiectul fără cod](solutii_autobuz/README.md)
 - [Ce am verificat în browser](verificare/Autobuzul_60min.md)
-- [PDF-ul cursului, lecțiile 1-3](../Plan_lectii_ScratchJr_60min.pdf)
+- [PDF-ul cursului, lecțiile 1-4](../Plan_lectii_ScratchJr_60min.pdf)
 
 ## Pe tabletele copiilor
 

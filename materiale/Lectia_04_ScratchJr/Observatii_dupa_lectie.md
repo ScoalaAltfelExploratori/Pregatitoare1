@@ -1,24 +1,18 @@
-# Observații după lecția 4
+# Observații după Lecția 4 - Repetiția pentru spectacol
 
-Data: __________  Clasa: __________  Număr de copii: __________
+Data: __________ Clasa: __________ Număr de copii: __________
 
-## Ce au reușit
+- Au pus întregul motiv în buclă? __________
+- Au deosebit înălțimea Sari 1 de numărul Repetă 3? __________
+- Au construit A-B-A-B și finalul după buclă? __________
+- Ce indiciu a ajutat la puzzle-ul greu? __________
+- Ce au schimbat în cele 10 minute de creație? __________
+- Au reluat, salvat și redeschis proiectul? __________
 
-- Au distins personajul atins de personajul care execută trucul? __________
-- Au potrivit culorile la expeditor și destinatar? __________
-- Au construit două programe separate la câine în M2? __________
-- Au explicat de ce mesajul vine după truc în M3? __________
-- Au încercat provocarea dificilă și ce indiciu a ajutat? __________
-- Au repetat proiectul fără resetare și l-au regăsit în galerie? __________
+Minute: pregătire ____ M1 ____ M2 ____ pauză ____ M3 ____ creație ____ salvare ____
 
-## Ritm și sprijin
+Rezerve folosite: niciuna / Ecoul fidel / Bis în ordine inversă.
 
-Minute pentru scenă: ____  M1: ____  M2: ____  M3: ____  Salvare: ____
+Dificultăți cu bucla, culorile, sunetul sau atingerile repetate: __________
 
-Rezerve folosite: niciuna / un semnal / de-a v-ați ascunselea. __________
-
-Dificultăți cu selectarea personajului, culorile, programele vechi, atingerile repetate sau tableta: __________
-
-O creație sau explicație interesantă a copilului: __________
-
-Ce reluăm înainte de lecția 5: __________
+Ce reluăm înainte de Lecția 5: __________

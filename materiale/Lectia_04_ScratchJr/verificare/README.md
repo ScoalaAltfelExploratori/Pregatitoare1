@@ -1,3 +1,5 @@
+> Arhivă: Telecomanda fermecată, 50 min. Pentru lecția refăcută: [Repetiția pentru spectacol - teste](Spectacolul_60min.md).
+
 # Verificarea lecției 4 - Telecomanda fermecată
 
 Data: **10 noiembrie 2026**.

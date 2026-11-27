@@ -186,6 +186,68 @@
       ],
       "teacher_note": "O oră, inclusiv 10 minute de creație. Rezervele sunt suplimentare. Copiii construiesc direct în ScratchJr, fără importuri sau resurse externe.",
       "student_reference": "Ajutor: pregătire p. 2-3; M1 p. 4; M2 p. 5-6; M3 p. 7-8; creație p. 9-10; R1 p. 11-12; R2 p. 13-15. În PDF-ul cursului adaugă 26."
+    },
+    {
+      "number": 4,
+      "revision": "27 noiembrie 2026",
+      "title": "Repetiția pentru spectacol",
+      "subtitle": "Ritmuri finite, intrări pe rând și două runde dirijate",
+      "goal": "Doi artiști repetă un număr pentru spectacolul școlii. Grupăm acțiuni în Repetă, așteptăm rândul fiecăruia și încheiem după un număr precis de runde.",
+      "setup": "Theatre; Teen cu pantaloni albaștri (Mira - A), Teen cu pantaloni gri (Radu - B), Mother (Dirijoare). Numai Pop. Adăugăm personajele treptat, fără importuri.",
+      "schedule": [
+        {
+          "minutes": "0-8",
+          "title": "Povestea și scena",
+          "text": "Adăugăm Mira. O bătaie: Pop și Sari 1. Descoperim rama portocalie Repetă și numărul de repetări."
+        },
+        {
+          "minutes": "8-20",
+          "title": "1. Ritmul primului artist",
+          "text": "Două bătăi și pauză, tot motivul de trei ori. Șase bătăi, apoi oprire. Pauza intră în buclă."
+        },
+        {
+          "minutes": "20-32",
+          "title": "2. Răspunsul colegului",
+          "text": "Adăugăm Radu. A face două bătăi, apoi trimite albastru; B răspunde cu trei. Fără suprapunere."
+        },
+        {
+          "minutes": "32-35",
+          "title": "Pauză activă",
+          "text": "Două grupuri bat ritmurile din palme. Profesorul dirijează două runde; copiii identifică grupul A-B."
+        },
+        {
+          "minutes": "35-47",
+          "title": "3. Două runde, un singur start | dificil",
+          "text": "O atingere pe dirijoare: A2, B3, A2, B3, apoi Gata! Buclă pentru runde, fără secvențe copiate sau pauze ghicite."
+        },
+        {
+          "minutes": "47-57",
+          "title": "Spectacolul meu",
+          "text": "Inventăm ritmuri și gesturi: alte numere, pauze sau înălțimi. Păstrăm intrările pe rând și finalul."
+        },
+        {
+          "minutes": "57-60",
+          "title": "Probă și salvare",
+          "text": "Prezicem ordinea, testăm, salvăm în galerie și redeschidem. Arătăm blocul care decide numărul rundelor."
+        }
+      ],
+      "solutions": [
+        "M1: Steag > Repetă 3 { Pop, Sari 1, Pop, Sari 1, Așteaptă 10 }. M2: A repetă 2 { Pop, Sari 1 }, apoi albastru; B repetă 3 { Pop, Sari 1 } la albastru.",
+        "M3: A primește portocaliu și nu mai trimite albastru. Dirijoare: Atingere > Repetă 2 { portocaliu, albastru } > Spune Gata! B păstrează codul din M2."
+      ],
+      "hint": "Trimite așteaptă programul destinatarului. Numărul buclei nu este înălțimea săriturii. Replica de final stă după buclă; niciun artist nu are Repetă mereu.",
+      "backups": [
+        {
+          "title": "R1. Ecoul fidel | +5 min",
+          "text": "B repetă exact ritmul lui A, inclusiv pauza dintre cele două bătăi. Două runde."
+        },
+        {
+          "title": "R2. Bis în ordine inversă | +10 min",
+          "text": "După două runde A-B, un singur bis B-A, apoi final. Plicurile bisului stau după buclă."
+        }
+      ],
+      "teacher_note": "O oră, inclusiv 10 minute de creație. Rezervele sunt suplimentare. Copiii construiesc cu elementele aplicației; SJR-urile sunt referințe opționale pentru profesor.",
+      "student_reference": "Ajutor în PDF-ul lecției: pregătire p. 2; M1 p. 3; M2 p. 4; M3 p. 5; creație p. 6; R1 p. 7; R2 p. 8. În PDF-ul cursului adaugă 41."
     }
   ]
 }

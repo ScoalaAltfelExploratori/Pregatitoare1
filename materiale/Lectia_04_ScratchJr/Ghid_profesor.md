@@ -1,142 +1,113 @@
-# Lecția 4 Telecomanda fermecată
+# Lecția 4 - Repetiția pentru spectacol
 
-50 de minute, copii de 6-7 ani. Trei misiuni principale, inclusiv una dificilă, plus două rezerve de 14-18 minute. Folosim trucurile vizuale din lecția 3 pentru a construi legături între personaje. Copiii creează programele; nu copiază greșeli intenționate.
+**60 de minute · 6-7 ani · puzzle greu, 10 minute de creație și două rezerve.**
 
-## Ce învățăm
+[Plan și programe cu capturi - PDF](Ghid_profesor_Lectia_04.pdf) · [Pagina lecției](index.html) · [Proiecte editabile](solutii_spectacol/README.md)
 
-Un personaj trimite un mesaj colorat, iar un alt program pornește când primește aceeași culoare. Mesajul este un semnal în proiect, nu o scrisoare de scris sau de trimis pe internet. Introducem numai două blocuri noi: **Trimite mesaj / Send Message** și **Pornire la mesaj / Start on Message**.
+## Povestea pentru copii
 
-Copilul poate arăta cine trimite, cine primește și ce acțiune pornește. În provocarea dificilă decide unde pune mesajul, astfel încât următorul artist să înceapă după terminarea trucului curent.
+„Mira și Radu pregătesc un număr pentru spectacolul școlii. Mira bate ritmul, Radu îi răspunde. La repetiția generală, dirijoarea dă intrările: fiecare își așteaptă rândul. Trebuie să repete de două ori și să termine împreună. Voi construiți programul spectacolului.”
 
-## Pregătire fără fișiere pe tablete
+Noutatea față de ștafetă, muzeu și autobuz: **Repetă de un număr precis de ori**, cu mai multe acțiuni în interior. La muzeu, Repetă mereu continua până la oprire. Aici bucla se termină singură și programul continuă cu blocurile de după ea.
 
-Proiect nou cu **Rabbit, Dog și Park** din biblioteca aplicației; eliminăm pisica inițială dacă folosim exact modelul. Iepure în stânga, câine în dreapta, la mărimile inițiale. Lăsăm spațiu pentru creștere. Grila și pozițiile exacte nu sunt necesare. La misiunea 2 adăugăm **Butterfly**, sus, între cele două personaje.
+## Pregătirea - 0-8 minute
 
-Copiii nu importă SJR-uri, nu descarcă imagini și nu au nevoie de conturi. Toate resursele sunt incluse în aplicație. Proiectele din pachet sunt referințe opționale pentru profesor. Copilul poate folosi alt fundal inclus sau fundalul alb.
+1. Proiect nou, fundal **Theatre**, personajul **Teen** cu bluză roșie și pantaloni albaștri: **Mira - A**. Scoate pisica dacă urmezi modelul.
+2. Pune Mira în stânga scenei, cu loc deasupra pentru săritură. La M2 adaugă celălalt **Teen**, cu tricou roșu și pantaloni gri: **Radu - B**, în dreapta. La M3 adaugă **Mother**, în față, la mijloc: **Dirijoare**.
+3. Personajele au aproximativ 5 pătrățele înălțime; dirijoarea 4. Pozițiile exacte nu schimbă ritmurile. Păstrează viteza normală. Titlul ABC și numele pot fi scrise de profesor; nu sunt condiții pentru funcționare.
+4. În categoria verde folosim **Pop**, deja în aplicație. Nu apăsăm microfonul, nu înregistrăm și nu descărcăm sunete. O bătaie în exemple este **Pop → Sari 1**: sunet, apoi o săritură vizibilă.
 
-## Demonstrația celor două capete
+**Sari 1** stabilește înălțimea unei sărituri. **Repetă 3** stabilește de câte ori executăm grupul. **Așteaptă 10** înseamnă aproximativ o secundă.
 
-Înainte de tabletă, profesorul spune „portocaliu”, iar un copil convenit ridică mâinile. În editor arată numai mecanismul: **iepure: atingere → trimite portocaliu; câine: la mesaj portocaliu → mărește 2**. Atinge iepurele pe scenă, apoi arată programul câinelui. Efectul demonstrației se acumulează: folosește resetarea înainte de o altă probă.
+**Cum construim bucla:** trage Repetă din categoria portocalie, conectează-l după declanșator, apoi pune blocurile în spațiul din interior. Rama se lărgește. Apasă numărul din partea dreaptă a buclei pentru a-l schimba. Un bloc lipit după săgeata de închidere se execută o singură dată, după toate repetările.
 
-Ambele blocuri noi sunt în categoria galbenă. Trimite mesaj se conectează după pornire; Pornire la mesaj este începutul unei secvențe. Apasă selectorul de culoare de sub plic pentru a alege portocaliu sau albastru. Nu confundăm acest bloc cu Pornire la ciocnire. Culoarea expeditorului și cea a destinatarului trebuie să coincidă.
+Pentru o probă: Stop sus dacă rulează, apoi Reset Characters. **M1-M2 pornesc cu Steagul sus. Din M3 pornim printr-o singură atingere pe dirijoarea de pe scenă.** Selectarea ei în lista din stânga doar arată codul. Așteptăm sfârșitul înainte de o nouă atingere.
 
-Mesajul nu numește un personaj: pornește programele de aceeași culoare de pe pagina curentă, inclusiv la personaje ascunse. În misiunile de bază alegem intenționat cine ascultă; prima rezervă explorează doi destinatari.
+## 1. Ritmul primului artist - 8-20 minute
 
-**Regula probei:** atingem o singură dată personajul de comandă pe scenă, apoi așteptăm finalul. Miniatura din stânga selectează personajul pentru editare. Steagul verde nu pornește exemplele lecției. Resetarea este o probă nouă, nu o parte a soluției.
+**Ținta:** două bătăi, pauză; tot motivul de trei ori, apoi liniște. Șase bătăi în total.
 
-## Cele 50 de minute
-
-| Minute | Activitate | Acțiunea profesorului |
-| --- | --- | --- |
-| 0-4 | Exemplu oficial adaptat | Un mesaj, o reacție vizibilă. |
-| 4-8 | Scena | Iepure și câine; două capete ale legăturii. |
-| 8-17 | Misiunea 1 | Comanda și revenirea la normal. |
-| 17-24 | Misiunea 2 | Al doilea buton și altă culoare. |
-| 24-27 | Pauză | Mimăm trimiterea și primirea. |
-| 27-37 | Puzzle dificil | Lanțul celor trei artiști. |
-| 37-45 | Creația mea | Comenzi sau trucuri proprii în lanț. |
-| 45-50 | Explic și salvez | Urmărim un mesaj, salvăm și redeschidem. |
-
-**Păstrăm timp pentru fiecare:** oferim tuturor încercarea puzzle-ului dificil și indicii progresive. Dacă lucrul merge mai lent, construim M2 împreună și simplificăm pregătirea scenei; nu luăm minutele atelierului sau ale salvării. La ora atelierului, copilul personalizează ultima variantă care funcționează. Rezervele și soluțiile lor rămân suplimentare, după o alegere personală sau într-o întâlnire următoare; nu sunt obligații pentru toată clasa.
-
-## Exemplu oficial adaptat: Un semnal îi dă rândul celuilalt
-
-**Reper:** [Meet and Greet](https://www.scratchjr.org/teach/activities/meet-and-greet). Adaptăm salutul dintre personaje la o comandă vizuală. Păstrăm ideea mesajului, folosim iepurele și câinele deja cunoscuți și eliminăm dialogul de tastat. Arată ambele capete ale legăturii înainte de rulare.
-
-**Model pentru demonstrație:** Rabbit: atingere → trimite portocaliu. Dog: la mesaj portocaliu → mărește 2. Este demonstrația scurtă din ghid; resetăm mărimea între probe. Revenirea automată va fi construită de copii în M1.
-
-**Întreabă înainte de rulare:** „Pe cine ating și cine face trucul? Copilul urmărește culoarea dintre cele două programe.”
-
-Exemplul este inclus în timpul de demonstrație sau în introducerea misiunii indicate; nu este o misiune suplimentară. Profesorul îl pregătește în ScratchJr, folosind biblioteca instalată. Copiii construiesc propriile proiecte; nu au fișiere de importat și nu trebuie să deschidă site-ul oficial în timpul lecției.
-
-## Misiunea 1 Magia la distanță
-
-**Ținta:** un tap pe iepure face câinele să crească, să rămână mare o clipă și să revină la normal. Iepurele rămâne neschimbat. Copiii aleg blocurile trucului, folosind ce știu din lecția 3.
-
-**Model:** iepure, atingere → trimite portocaliu. Câine, la mesaj portocaliu → mărește 4 → așteaptă 10 → mărimea inițială. Așteaptă 10 este aproximativ o secundă; nu predăm fracții. Numărul 4 este un exemplu, nu singura alegere corectă.
-
-**Verificare:** atingem numai iepurele. Câinele execută trucul și revine normal; o a doua atingere repetă fără resetare. Atingerea câinelui și steagul nu trebuie să pornească acest program.
-
-**Indicii:** „Cine primește atingerea?”, „Cine face trucul?”, „Ce culoare trebuie să fie la ambele capete?”. Dacă lucrează pe personajul greșit, copilul verifică miniatura selectată.
-
-## Misiunea 2 Două butoane
-
-**Ținta:** iepurele comandă creșterea câinelui; fluturele comandă dispariția lui scurtă și revenirea automată. Iepurele și fluturele rămân neschimbați. Se testează pe rând, după terminarea fiecărui truc.
-
-**Model:** păstrăm M1. Fluture, atingere → trimite albastru. Câinele primește o a doua secvență: la mesaj albastru → ascunde → așteaptă 10 → arată. Are acum **două programe separate**, fiecare cu propriul bloc de pornire. Nu conectăm cele două porniri în același șir.
-
-**Verificare:** iepure, fluture, din nou iepure, din nou fluture; câinele răspunde corect și rămâne normal și vizibil după fiecare truc. Nu folosim două culori pentru simplă decorare: ele aleg programe diferite.
-
-**Indicii:** „Cum află câinele ce truc i-ai cerut?”, „Unde începe al doilea program?”, „Ce se întâmplă dacă ambele programe ascultă aceeași culoare?”. Ultima întrebare este o predicție; nu cerem să construiască o eroare.
-
-## Misiunea 3 Spectacolul în lanț
-
-**Provocarea dificilă, pentru toți:** atingem numai iepurele. El crește, așteaptă și revine normal. Abia apoi câinele dispare și reapare. După revenirea câinelui, fluturele crește și revine normal. La final toți sunt vizibili și normali; întregul spectacol funcționează la un nou tap, fără resetare.
-
-**Trecerea de la M2:** păstrăm scena, dar construim alte roluri. Iepurele devine primul artist; câinele păstrează un singur program, la portocaliu; fluturele are acum pornire la albastru, în locul atingerii. Îndepărtăm secvențele vechi care nu mai fac parte din acest spectacol. Profesorul arată cum se trage o secvență înapoi în paletă. Nu lăsăm programe vechi de aceeași culoare să pornească accidental.
-
-**Soluție pentru profesor, trei programe:**
-
-- Iepure: atingere → mărește 4 → așteaptă 10 → mărimea inițială → trimite portocaliu.
-- Câine: la mesaj portocaliu → ascunde → așteaptă 10 → arată → trimite albastru.
-- Fluture: la mesaj albastru → mărește 4 → așteaptă 10 → mărimea inițială.
-
-**Reușită:** câinele nu începe cât iepurele este mare; fluturele nu începe cât câinele este ascuns sau încă reapare. Mesajul este după ultima acțiune a celui care predă rândul. Nu rezolvăm ordinea prin pornirea tuturor la steag și ghicirea unor așteptări lungi.
-
-**Indicii, pe rând:** „Cine începe primul?”, „Cine poate anunța că a terminat?”, „Unde pui plicul?”, „Ce pornește fluturele?”. Construim și probăm întâi legătura iepure-câine, apoi adăugăm a doua. Nu arătăm toate cele trei soluții înainte de încercarea copiilor.
-
-**Probă:** un tap, mâinile jos, descriem cele trei momente. După final repetăm fără resetare. Ultimul personaj nu trimite un mesaj înapoi; spectacolul trebuie să se oprească. Copilul care are nevoie de sprijin poate încheia cu primele două personaje și explica locul celui de-al treilea. Toți primesc provocarea, fără clasament.
-
-## Creația mea: Telecomanda inventată de mine
-
-**Minutele 37-45: 8 minute pentru fiecare copil.** Acest timp este inclus în cele 50 de minute și nu depinde de terminarea puzzle-ului dificil. Copilul continuă cea mai avansată variantă care îi funcționează, chiar dacă este numai M1. Nu trebuie să înceapă alt proiect.
-
-**Spune copiilor:** „Personalizează programul care îți funcționează. Dacă ai telecomanda, alege trucuri diferite pentru cele două culori. Dacă ai lanțul, inventează alte trucuri pentru artiști și păstrează plicurile la sfârșit. Tu alegi efectele și pauzele; la final personajele sunt vizibile și la mărimea inițială.”
-
-**Verificarea autorului:** Probează fiecare buton separat, de două ori. Explică ce comandă ai inventat și ce culoare o pornește. Dacă ai construit deja lanțul dificil, poți personaliza trucurile din el, păstrând plicurile la sfârșit, fără să reconstruiești telecomanda.
-
-**Sprijin și extensie:** Personalizează o singură comandă funcțională. Pentru mai multă dificultate, ambele comenzi produc câte două efecte și pot fi folosite în orice ordine, după terminarea trucului anterior.
-
-Profesorul cere o alegere de comportament sau de regulă; schimbarea decorului poate însoți acea alegere. Nu proiectează o soluție de copiat pentru acest atelier. Soluțiile puzzle-urilor rămân reperele profesorului; creația personală poate avea mai multe rezultate corecte.
-
-**Ce urmăresc la încheiere:** Copilul arată expeditorul, receptorul și culorile care se potrivesc.
-
-## Rezervă 1 Un semnal, două surprize
-
-**6-8 minute suplimentar.** La un tap pe iepure, câinele crește iar fluturele dispare o clipă. Trucurile pornesc împreună; la final amândoi sunt normali și vizibili. Folosim **o singură culoare și un singur bloc de trimitere**.
-
-**Soluție:** iepure, atingere → trimite portocaliu. Câine, la portocaliu → mărește 4 → așteaptă 10 → mărimea inițială. Fluture, la portocaliu → ascunde → așteaptă 10 → arată. Câinele nu mai trimite albastru; fluturele ascultă acum portocaliu.
-
-**Verificare:** vedem câinele mare în timp ce fluturele este ascuns. Nu cerem finalizare exact simultană. Două rulări fără resetare. **Indiciu:** „Poate același semnal să fie auzit de doi artiști?”.
-
-## Rezervă 2 De-a v-ați ascunselea
-
-**8-10 minute suplimentar.** Un tap pe iepure ascunde câinele; el rămâne ascuns cât așteptăm. Un tap pe fluture îl arată. Ambele personaje de comandă rămân vizibile și nemodificate. Nu atingem câinele și nu folosim resetarea pentru revenire.
-
-**Soluție:** iepure, atingere → trimite portocaliu; fluture, atingere → trimite albastru. Câinele are două programe: la portocaliu → ascunde; la albastru → arată. Înlocuim trucurile precedente ale câinelui cu aceste două comenzi. Nu există revenire automată prin Așteaptă.
-
-**Verificare:** atingem iepurele, așteptăm și vedem că rămâne ascuns; atingem fluturele și reapare. Repetăm fără resetare. Încercăm și două comenzi Ascunde la rând, apoi Arată; sau Arată când este deja vizibil. Nu se inversează starea la fiecare tap: fiecare buton are un rol fix.
-
-**Indiciu:** „Cine poate primi atingerea când câinele nu se vede?”. Mesajul ajunge și la un personaj ascuns. Copilul poate inventa altă pereche de comenzi după ce demonstrează această țintă.
-
-## Dificultăți și sprijin
-
-| Ce observăm | Cum ajutăm |
+| Personaj | Program complet |
 | --- | --- |
-| Nu reacționează destinatarul | Comparăm culorile și verificăm dacă programul lui începe La mesaj. |
-| Reacționează cine nu trebuie | Căutăm toate pornirile de acea culoare pe această pagină. |
-| Trucul pornește numai prin atingerea câinelui | La câine trebuie Pornire la mesaj, nu Pornire la atingere. |
-| Două trucuri se suprapun la M2 | Atingem o dată și așteptăm finalul înainte de cealaltă comandă. |
-| Lanțul începe prea devreme | Copilul compară locul plicului cu ultima acțiune a artistului. |
-| Apar reacții din misiunea veche | Verificăm câte secvențe sunt sub fiecare personaj și eliminăm cele nefolosite. |
-| Câinele rămâne ascuns la rezervă | Este intenționat la R2; îl chemăm cu fluturele, fără resetare. |
+| Mira - A | Steag → Repetă 3 { Pop → Sari 1 → Pop → Sari 1 → Așteaptă 10 } |
 
-## Încheiere și verificare
+Construiește întâi motivul de două bătăi. Copiii îl mimează, apoi îl cuprind în Repetă 3. Nu copiem șase blocuri Pop. Acoladele din text arată interiorul buclei; nu sunt blocuri separate.
 
-Un coleg prezice cine va reacționa; autorul atinge un singur personaj și explică un plic. Revenim în galerie, redeschidem și probăm din nou. Păstrăm aceeași tabletă pentru copil.
+**Întrebare:** „Ce trebuie să se audă din nou: numai ultima bătaie sau tot motivul?” **Indiciu:** și pauza stă în ramă. **Probă:** urmărim trei grupuri de câte două sărituri și pauza dintre grupuri. Apoi programul se oprește singur.
 
-Testele și limitele lor sunt în verificare/README.md. Browserul comunitar nu certifică atingerea cu degetul, fluiditatea sau funcționarea offline pe Lenovo. Înainte de clasă, profesorul construiește legătura simplă și lanțul în aplicația oficială, apoi verifică salvarea și redeschiderea fără internet.
+## 2. Răspunsul colegului - 20-32 minute
 
-**Referințe:** [blocurile oficiale ScratchJr](https://www.scratchjr.org/explore/blocks) și [cartonașele oficiale](https://www.scratchjr.org/pdfs/blocks.pdf) pentru Send Message, Start on Message și blocurile de aspect.
+**Ținta:** Mira face două bătăi; abia după aceea Radu face trei. Un singur Steag pornește totul.
 
-**Surse și adaptări:** [reperele oficiale și creditele cursului](../Surse_oficiale_ScratchJr.md). Exemplele sunt adaptări pentru acest curs, nu traduceri oficiale.
+Adaugă Radu. Pentru duet, înlocuiește motivul Mirei cu bucla scurtă de mai jos; nu lăsa vechiul fir cu Steag să ruleze în paralel.
+
+| Personaj | Program complet |
+| --- | --- |
+| Mira - A | Steag → Repetă 2 { Pop → Sari 1 } → Trimite albastru |
+| Radu - B | Primește albastru → Repetă 3 { Pop → Sari 1 } |
+
+**Întrebare:** „Unde punem mesajul ca Radu să nu întrerupă?” **Indiciu:** după închiderea buclei. **Probă:** două sărituri la A, trei la B, fără suprapunere. Plic închis = trimite; plic deschis = primește. Culorile trebuie să coincidă.
+
+## Pauză activă - 32-35 minute
+
+O jumătate de clasă bate de două ori din palme; cealaltă răspunde de trei ori. Profesorul dirijează două runde și arată finalul. Copiii identifică grupul care se repetă: A apoi B.
+
+## 3. Două runde, un singur start - 35-47 minute - puzzle greu
+
+**Ținta:** atingem dirijoarea o singură dată. Ordinea este **A, B, A, B**. A face două bătăi, B trei. Dirijoarea spune „Gata!” numai la final. Folosim o buclă pentru runde, fără copierea întregii secvențe și fără pauze ghicite între artiști.
+
+Adaugă Mother ca dirijoare. Mira primește acum portocaliu în loc de Steag și nu mai trimite albastru: dirijoarea dă ambele intrări. Radu își păstrează programul din M2.
+
+| Personaj | Program complet |
+| --- | --- |
+| Mira - A | Primește portocaliu → Repetă 2 { Pop → Sari 1 } |
+| Radu - B | Primește albastru → Repetă 3 { Pop → Sari 1 } |
+| Dirijoare | Atingere → Repetă 2 { Trimite portocaliu → Trimite albastru } → Spune „Gata!” |
+
+**De ce funcționează:** în ScratchJr, Trimite așteaptă terminarea programelor pornite de mesaj. Portocaliul așteaptă ritmul Mirei; albastrul așteaptă ritmul lui Radu. După două runde, bucla se închide și urmează replica. Niciun program al artiștilor nu conține Repetă mereu.
+
+**Indicii, pe rând:** „Ce formează o rundă?”; „Cine dă rândul lui B?”; „Ce trebuie să rămână în afara buclei?” Arată soluția din PDF numai după o încercare.
+
+**Probă:** A2, B3, A2, B3, apoi „Gata!”. Sunt 5 bătăi pe rundă și 10 în spectacol; numerele verifică programul, nu formează un test de matematică separat. Repetă proba după ce se termină. Dacă oprești în mijlocul unei sărituri, resetează înainte de reluare.
+
+## Spectacolul meu - 47-57 minute
+
+Copilul schimbă ritmul unuia sau al ambilor artiști: numărul bătăilor, locul pauzei, înălțimea săriturii. Poate alege alte personaje din biblioteca aplicației. Păstrează două runde, intrările pe rând și finalul.
+
+**Exemplu posibil, nu model obligatoriu:** Mira: Primește portocaliu → Repetă 3 { Pop → Sari 1 }. Radu: Primește albastru → Repetă 2 { Pop → Sari 1 → Așteaptă 5 }. Dirijoarea păstrează codul din M3. Ordinea devine A3, B2, A3, B2; B are o pauză scurtă după fiecare bătaie.
+
+Dacă nu a terminat M3, copilul personalizează duetul funcțional din M2. Toți păstrează timpul de creație. În clasă, volumul poate fi redus; săriturile fac ritmul vizibil.
+
+## Probă și salvare - 57-60 minute
+
+Copilul prezice ordinea, rulează o dată și arată blocul care decide numărul rundelor. Revine în galerie pentru salvare și redeschide proiectul. Profesorul urmărește: bucla cuprinde grupul dorit, artiștii intră pe rând, finalul apare după ultima rundă.
+
+## R1. Ecoul fidel - rezervă, încă 5 minute
+
+**Ținta:** Radu repetă exact ritmul Mirei, inclusiv pauza din mijloc. Două runde, pe rând.
+
+| Personaj | Program complet |
+| --- | --- |
+| Mira - A | Primește portocaliu → Pop → Sari 1 → Așteaptă 10 → Pop → Sari 1 |
+| Radu - B | Primește albastru → Pop → Sari 1 → Așteaptă 10 → Pop → Sari 1 |
+| Dirijoare | Atingere → Repetă 2 { Trimite portocaliu → Trimite albastru } → Spune „Gata!” |
+
+**Indiciu:** același număr de sunete nu este suficient; contează locul pauzei. **Probă:** A2, B2, A2, B2; o pauză lungă între cele două bătăi ale fiecărei intervenții. Amândoi rămân pe loc.
+
+## R2. Bis în ordine inversă - rezervă, încă 10 minute
+
+**Ținta:** cele două runde normale sunt urmate de un singur bis în ordinea B, A. Abia apoi apare „Gata!”.
+
+| Personaj | Program complet |
+| --- | --- |
+| Mira - A | Primește portocaliu → Repetă 2 { Pop → Sari 1 } |
+| Radu - B | Primește albastru → Repetă 3 { Pop → Sari 1 } |
+| Dirijoare | Atingere → Repetă 2 { Trimite portocaliu → Trimite albastru } → Trimite albastru → Trimite portocaliu → Spune „Gata!” |
+
+**Indiciu:** bisul se pune după buclă. **Probă:** A2, B3, A2, B3, B3, A2. Cele două intervenții consecutive ale lui B sunt corecte: una închide runda, cealaltă începe bisul. Nu adăugăm altă atingere.
+
+## Materiale și verificare
+
+PDF-ul are un plan de o pagină, pregătire și capturi reale cu programele fiecărui personaj la toate cele șase etape. Proiectele SJR sunt opționale pentru profesor; elevii construiesc din biblioteca aplicației, fără importuri. Reper pentru pregătire: [ghidul oficial al blocurilor](https://www.scratchjr.org/explore/blocks), categoriile Sunet și Control.
+
+[Raportul probelor în browser](verificare/Spectacolul_60min.md). Testarea urmărește execuția, ordinea, pauzele și oprirea în ScratchJr Desktop Reborn. Confirmă local volumul Pop înainte de oră.
